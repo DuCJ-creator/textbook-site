@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>片語總覽 Phrase Bank</title>
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .bank-head { background: var(--ink); color: var(--paper); padding: 28px 20px 22px; }
+  .bank-head .inner { max-width: 980px; margin: 0 auto; }
+  .bank-head h1 { font-family: var(--serif); font-size: 2rem; font-weight: 700; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .bank-head .sub { font-size: 0.85rem; color: #d8cfba; }
+  .bank-head .back { color: #c9bfa9; text-decoration: none; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
+
+  .filter-bar {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--paper); border-bottom: 2px solid var(--ink);
+    padding: 12px 20px;
+  }
+  .filter-bar .inner { max-width: 980px; margin: 0 auto; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .filter-bar label { font-size: 0.78rem; font-weight: 600; color: var(--ink-soft); }
+  .filter-bar select {
+    font-family: var(--sans); font-size: 0.82rem; padding: 7px 10px;
+    border: 1.5px solid var(--ink); border-radius: 7px; background: var(--card); color: var(--ink);
+  }
+
+  .empty-state { padding: 50px 20px; text-align: center; color: var(--ink-soft); font-size: 0.88rem; }
+</style>
+</head>
+<body>
+
+  <div class="bank-head">
+    <div class="inner">
+      <a class="back" href="index.html">← 課程總覽</a>
+      <h1 style="margin-top:8px;">片語總覽 Phrase Bank</h1>
+      <div class="sub">彙整所有已上架課程的片語，可跨課搜尋、切換測驗模式複習</div>
+    </div>
+  </div>
+
+  <div class="filter-bar">
+    <div class="inner">
+      <label for="bookFilter">冊次</label>
+      <select id="bookFilter"><option value="">全部</option></select>
+      <label for="lessonFilter">課程</label>
+      <select id="lessonFilter"><option value="">全部</option></select>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="loading-msg" id="loadingMsg">彙整所有課程片語中…</div>
+
+    <div id="phraseArea" style="display:none;">
+      <div class="phrase-toolbar">
+        <input type="text" class="search-box" id="phraseSearch" placeholder="搜尋片語（英文或中文）…" />
+        <div class="mode-toggle">
+          <button id="browseBtn" class="active">瀏覽模式</button>
+          <button id="quizBtn">測驗模式</button>
+        </div>
+      </div>
+      <div class="phrase-count" id="phraseCount"></div>
+      <div class="phrase-grid" id="phraseGrid"></div>
+    </div>
+  </div>
+
+<script src="js/loader.js"></script>
+<script src="js/phrase-widget.js"></script>
+<script>
+  let ALL_ITEMS = [];
+  let LESSON_META = [];
+
+  Loader.fetchAllPublishedLessons()
+    .then(lessons => {
+      LESSON_META = lessons.map(l => ({ book: l._book, lesson: l._lesson, title: l.title }));
+
+      ALL_ITEMS = lessons.flatMap(l =>
+        (l.phrases?.items || []).map(item => ({ ...item, _book: l._book, _lesson: l._lesson }))
+      );
+
+      document.getElementById("loadingMsg").style.display = "none";
+
+      if (!ALL_ITEMS.length) {
+        document.getElementById("loadingMsg").className = "empty-state";
+        document.getElementById("loadingMsg").style.display = "block";
+        document.getElementById("loadingMsg").textContent = "目前還沒有已上架課程的片語資料。";
+        return;
+      }
+
+      document.getElementById("phraseArea").style.display = "block";
+      buildFilters();
+      renderFiltered();
+    })
+    .catch(err => {
+      document.getElementById("loadingMsg").className = "error-msg";
+      document.getElementById("loadingMsg").textContent = "資料載入失敗：" + err.message + "（請確認此頁面透過本機伺服器或 GitHub Pages 開啟）";
+    });
+
+  function buildFilters() {
+    const bookSelect = document.getElementById("bookFilter");
+    const lessonSelect = document.getElementById("lessonFilter");
+
+    const books = [...new Set(LESSON_META.map(m => m.book))].sort();
+    books.forEach(b => {
+      const opt = document.createElement("option");
+      opt.value = b;
+      opt.textContent = b.toUpperCase();
+      bookSelect.appendChild(opt);
+    });
+
+    bookSelect.addEventListener("change", () => {
+      refreshLessonOptions();
+      renderFiltered();
+    });
+    lessonSelect.addEventListener("change", renderFiltered);
+
+    refreshLessonOptions();
+  }
+
+  function refreshLessonOptions() {
+    const bookVal = document.getElementById("bookFilter").value;
+    const lessonSelect = document.getElementById("lessonFilter");
+    lessonSelect.innerHTML = '<option value="">全部</option>';
+
+    const lessons = LESSON_META
+      .filter(m => !bookVal || m.book === bookVal)
+      .sort((a, b) => a.lesson.localeCompare(b.lesson));
+
+    lessons.forEach(m => {
+      const opt = document.createElement("option");
+      opt.value = m.lesson;
+      opt.textContent = `${m.lesson.toUpperCase()}${m.title ? " · " + m.title : ""}`;
+      lessonSelect.appendChild(opt);
+    });
+  }
+
+  // PhraseWidget 本身沒有「冊/課篩選」概念（單課頁不需要），
+  // 所以在跨課頁面這裡自己做一層篩選，篩完的結果才交給 widget 渲染。
+  function renderFiltered() {
+    const bookVal = document.getElementById("bookFilter").value;
+    const lessonVal = document.getElementById("lessonFilter").value;
+
+    const filtered = ALL_ITEMS.filter(item => {
+      if (bookVal && item._book !== bookVal) return false;
+      if (lessonVal && item._lesson !== lessonVal) return false;
+      return true;
+    });
+
+    PhraseWidget.render({
+      gridId: "phraseGrid",
+      countId: "phraseCount",
+      searchInputId: "phraseSearch",
+      browseBtnId: "browseBtn",
+      quizBtnId: "quizBtn",
+      items: filtered
+    });
+  }
+</script>
+</body>
+</html>

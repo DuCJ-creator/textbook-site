@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>尚未上架 · 英文課程補充教材</title>
+<style>
+  :root {
+    --paper: #f6f1e7;
+    --paper-line: #e2d9c4;
+    --ink: #2b2621;
+    --ink-soft: #6b6154;
+    --accent: #c9622f;
+    --accent-soft: #f0d8c6;
+    --card: #fffdf9;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Noto Serif TC", Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); }
+  body {
+    min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px;
+  }
+  .panel {
+    max-width: 460px; width: 100%; text-align: center;
+    background: var(--card); border: 1.5px solid var(--ink); border-radius: 12px;
+    padding: 40px 32px;
+  }
+  .mark {
+    width: 56px; height: 56px; margin: 0 auto 18px;
+    border: 1.5px solid var(--ink); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif); font-size: 1.6rem; font-weight: 700; background: var(--paper);
+  }
+  h1 { font-family: var(--serif); font-size: 1.4rem; margin: 0 0 8px; }
+  .lesson-tag {
+    display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 14px;
+  }
+  p.msg { font-size: 0.92rem; line-height: 1.7; color: var(--ink-soft); margin: 0 0 24px; }
+  a.back {
+    display: inline-block; font-family: var(--sans); font-size: 0.85rem; font-weight: 600;
+    text-decoration: none; border: 1.5px solid var(--ink); border-radius: 8px;
+    padding: 10px 20px; color: var(--ink); transition: background .12s ease;
+  }
+  a.back:hover { background: var(--accent-soft); }
+</style>
+</head>
+<body>
+  <div class="panel">
+    <div class="mark">📖</div>
+    <div class="lesson-tag" id="lessonTag">課程</div>
+    <h1>這一課還在製作中</h1>
+    <p class="msg">補充內容尚未上架，之後會陸續補上單字、片語、文法與課文結構的線上互動版本。</p>
+    <a class="back" href="index.html">← 回到課程總覽</a>
+  </div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const book = (params.get("book") || "").toUpperCase();
+  const lesson = (params.get("lesson") || "").toUpperCase();
+  if (book && lesson) {
+    document.getElementById("lessonTag").textContent = `${book} ${lesson}`;
+  } else {
+    document.getElementById("lessonTag").style.display = "none";
+  }
+</script>
+</body>
+</html>

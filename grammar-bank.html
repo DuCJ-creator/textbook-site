@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>句型總覽 Grammar Bank</title>
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .bank-head { background: var(--ink); color: var(--paper); padding: 28px 20px 22px; }
+  .bank-head .inner { max-width: 980px; margin: 0 auto; }
+  .bank-head h1 { font-family: var(--serif); font-size: 2rem; font-weight: 700; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .bank-head .sub { font-size: 0.85rem; color: #d8cfba; }
+  .bank-head .back { color: #c9bfa9; text-decoration: none; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
+
+  .filter-bar {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--paper); border-bottom: 2px solid var(--ink);
+    padding: 12px 20px;
+  }
+  .filter-bar .inner { max-width: 980px; margin: 0 auto; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .filter-bar label { font-size: 0.78rem; font-weight: 600; color: var(--ink-soft); }
+  .filter-bar select {
+    font-family: var(--sans); font-size: 0.82rem; padding: 7px 10px;
+    border: 1.5px solid var(--ink); border-radius: 7px; background: var(--card); color: var(--ink);
+  }
+  .filter-bar .result-count { font-size: 0.78rem; color: var(--ink-soft); margin-left: auto; }
+
+  .practice-hint {
+    font-size: 0.8rem; color: var(--ink-soft); background: var(--accent-soft); border: 1px solid var(--accent);
+    border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; display: none;
+  }
+  .practice-hint.show { display: block; }
+
+  .empty-state { padding: 50px 20px; text-align: center; color: var(--ink-soft); font-size: 0.88rem; }
+</style>
+</head>
+<body>
+
+  <div class="bank-head">
+    <div class="inner">
+      <a class="back" href="index.html">← 課程總覽</a>
+      <h1 style="margin-top:8px;">句型總覽 Grammar Bank</h1>
+      <div class="sub">彙整所有已上架課程的句型分類，適合考前總複習</div>
+    </div>
+  </div>
+
+  <div class="filter-bar">
+    <div class="inner">
+      <label for="bookFilter">冊次</label>
+      <select id="bookFilter"><option value="">全部</option></select>
+      <label for="lessonFilter">課程</label>
+      <select id="lessonFilter"><option value="">全部</option></select>
+      <span class="result-count" id="resultCount"></span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="loading-msg" id="loadingMsg">彙整所有課程句型中…</div>
+
+    <div id="sortArea" style="display:none;">
+      <p class="practice-hint" id="practiceHint">
+        句子量較大時建議先用上方篩選縮小範圍，再切換「練習模式」拖曳分類；預設先以「顯示模式」瀏覽。
+      </p>
+
+      <div class="sort-toolbar">
+        <button class="btn primary" id="sortModeBtn">練習模式</button>
+        <button class="btn" id="displayModeBtn">顯示模式</button>
+        <button class="btn" id="resetSortBtn">重新開始</button>
+        <button class="btn" id="checkSortBtn">對答案</button>
+        <span class="sort-status" id="sortStatus"></span>
+      </div>
+
+      <div class="card sentence-pool" id="sentencePool"></div>
+      <div class="sort-baskets" id="sortBaskets"></div>
+
+      <div class="sentence-display-list" id="sentenceDisplayList"></div>
+    </div>
+  </div>
+
+<script src="js/loader.js"></script>
+<script src="js/sentence-sort.js"></script>
+<script>
+  let ALL_ITEMS = [];
+  let LESSON_META = [];
+
+  Loader.fetchAllPublishedLessons()
+    .then(lessons => {
+      LESSON_META = lessons.map(l => ({ book: l._book, lesson: l._lesson, title: l.title }));
+
+      ALL_ITEMS = lessons.flatMap(l =>
+        (l.grammar?.sentence_structures?.items || []).map(item => ({ ...item, _book: l._book, _lesson: l._lesson }))
+      );
+
+      document.getElementById("loadingMsg").style.display = "none";
+
+      if (!ALL_ITEMS.length) {
+        document.getElementById("loadingMsg").className = "empty-state";
+        document.getElementById("loadingMsg").style.display = "block";
+        document.getElementById("loadingMsg").textContent = "目前還沒有已上架課程的句型資料。";
+        return;
+      }
+
+      document.getElementById("sortArea").style.display = "block";
+      buildFilters();
+      renderFiltered();
+    })
+    .catch(err => {
+      document.getElementById("loadingMsg").className = "error-msg";
+      document.getElementById("loadingMsg").textContent = "資料載入失敗：" + err.message + "（請確認此頁面透過本機伺服器或 GitHub Pages 開啟）";
+    });
+
+  function buildFilters() {
+    const bookSelect = document.getElementById("bookFilter");
+    const lessonSelect = document.getElementById("lessonFilter");
+
+    const books = [...new Set(LESSON_META.map(m => m.book))].sort();
+    books.forEach(b => {
+      const opt = document.createElement("option");
+      opt.value = b;
+      opt.textContent = b.toUpperCase();
+      bookSelect.appendChild(opt);
+    });
+
+    bookSelect.addEventListener("change", () => {
+      refreshLessonOptions();
+      renderFiltered();
+    });
+    lessonSelect.addEventListener("change", renderFiltered);
+
+    refreshLessonOptions();
+  }
+
+  function refreshLessonOptions() {
+    const bookVal = document.getElementById("bookFilter").value;
+    const lessonSelect = document.getElementById("lessonFilter");
+    lessonSelect.innerHTML = '<option value="">全部</option>';
+
+    const lessons = LESSON_META
+      .filter(m => !bookVal || m.book === bookVal)
+      .sort((a, b) => a.lesson.localeCompare(b.lesson));
+
+    lessons.forEach(m => {
+      const opt = document.createElement("option");
+      opt.value = m.lesson;
+      opt.textContent = `${m.lesson.toUpperCase()}${m.title ? " · " + m.title : ""}`;
+      lessonSelect.appendChild(opt);
+    });
+  }
+
+  function renderFiltered() {
+    const bookVal = document.getElementById("bookFilter").value;
+    const lessonVal = document.getElementById("lessonFilter").value;
+
+    const filtered = ALL_ITEMS.filter(item => {
+      if (bookVal && item._book !== bookVal) return false;
+      if (lessonVal && item._lesson !== lessonVal) return false;
+      return true;
+    });
+
+    document.getElementById("resultCount").textContent = `共 ${filtered.length} 句`;
+
+    // 句子量大時（全部課程混在一起）提醒使用者先篩選再做拖曳練習
+    document.getElementById("practiceHint").classList.toggle("show", filtered.length > 30);
+
+    SentenceSort.render({
+      poolId: "sentencePool",
+      basketsId: "sortBaskets",
+      displayListId: "sentenceDisplayList",
+      sortModeBtnId: "sortModeBtn",
+      displayModeBtnId: "displayModeBtn",
+      resetBtnId: "resetSortBtn",
+      checkBtnId: "checkSortBtn",
+      statusId: "sortStatus",
+      toolbarSelector: ".sort-toolbar",
+      items: filtered
+    });
+
+    // 跨課總覽預設用顯示模式開啟（瀏覽優先），單課頁才預設練習模式
+    document.getElementById("displayModeBtn").click();
+  }
+</script>
+</body>
+</html>

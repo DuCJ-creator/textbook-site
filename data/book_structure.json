@@ -1,0 +1,10 @@
+{
+  "_comment": "這份檔案定義整個課程的固定架構（幾冊、每冊幾課），與實際內容無關。scripts/sync_from_sheets.py 每次同步時會讀取這份檔案，疊加 data/ 底下實際存在的課程內容與上架狀態，重新產生 data/index.json。這份檔案本身不會被同步腳本改動，需要調整冊數/課數時直接手動編輯這裡。",
+  "books": [
+    { "id": "b1", "title": "Book 1", "lesson_count": 9 },
+    { "id": "b2", "title": "Book 2", "lesson_count": 9 },
+    { "id": "b3", "title": "Book 3", "lesson_count": 9 },
+    { "id": "b4", "title": "Book 4", "lesson_count": 9 },
+    { "id": "b5", "title": "Book 5", "lesson_count": 6 }
+  ]
+}

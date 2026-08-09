@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>課程補充內容 · 線上互動版</title>
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  /* ===== lesson.html 專用（Part 4 文字排版、Word Family 獨立頁連結卡） ===== */
+  .genre-card { padding: 20px 22px; }
+  .genre-text {
+    font-size: 0.95rem; line-height: 1.85; white-space: pre-wrap;
+    font-family: var(--serif);
+  }
+
+  .vocab-link-card {
+    display: flex; align-items: center; gap: 16px;
+    padding: 18px 20px; text-decoration: none; color: inherit;
+    transition: border-color .12s ease, background .12s ease;
+  }
+  .vocab-link-card:hover { border-color: var(--accent); background: var(--accent-soft); }
+  .vocab-link-card .icon {
+    width: 44px; height: 44px; flex: 0 0 auto; border-radius: 9px;
+    background: var(--sage-soft); color: var(--sage);
+    display: flex; align-items: center; justify-content: center; font-size: 1.3rem;
+  }
+  .vocab-link-card .text .t { font-family: var(--serif); font-size: 1.05rem; font-weight: 700; margin-bottom: 2px; }
+  .vocab-link-card .text .d { font-size: 0.8rem; color: var(--ink-soft); }
+  .vocab-link-card .arrow { margin-left: auto; font-size: 1.1rem; color: var(--ink-soft); }
+</style>
+</head>
+<body>
+
+  <div class="lesson-head">
+    <div class="inner">
+      <div class="breadcrumb"><a href="index.html" style="color:#c9bfa9; text-decoration:none;">← 課程總覽</a> &nbsp;/&nbsp; <span id="breadcrumb">Book · Lesson</span></div>
+      <h1 id="lessonTitle">Loading…</h1>
+      <div class="sub">課程補充內容 · 線上互動版</div>
+    </div>
+  </div>
+
+  <nav class="part-nav">
+    <div class="inner" id="partNavInner">
+      <button data-part="p1" class="active">I. Word Family</button>
+      <button data-part="p2">II. Phrases &amp; Collocations</button>
+      <button data-part="p3">III. Essential Grammar</button>
+      <button data-part="p4">IV. Text Genre &amp; Structure</button>
+    </div>
+  </nav>
+
+  <div class="wrap">
+
+    <div class="loading-msg" id="loadingMsg">課程資料載入中…</div>
+
+    <!-- ================= PART I: Word Family ================= -->
+    <section class="part active" id="part-p1">
+      <h2 class="part-title">I. Word Family</h2>
+      <p class="part-desc">單字家族有獨立的完整瀏覽頁面，點下方卡片開啟。</p>
+
+      <a class="card vocab-link-card" id="vocabLinkCard" href="#">
+        <span class="icon">📖</span>
+        <span class="text">
+          <span class="t">開啟 Word Family 頁面</span>
+          <span class="d" id="vocabLinkDesc">在獨立頁面瀏覽本課完整單字家族表格</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+    </section>
+
+    <!-- ================= PART II: Phrases & Collocations ================= -->
+    <section class="part" id="part-p2">
+      <h2 class="part-title">II. Phrases &amp; Collocations</h2>
+      <p class="part-desc">瀏覽模式可直接看中文與例句；測驗模式會蓋住中文和例句，點卡片自我測驗。</p>
+
+      <div class="phrase-toolbar">
+        <input type="text" class="search-box" id="phraseSearch" placeholder="搜尋片語（英文或中文）…" />
+        <div class="mode-toggle">
+          <button id="browseBtn" class="active">瀏覽模式</button>
+          <button id="quizBtn">測驗模式</button>
+        </div>
+      </div>
+      <div class="phrase-count" id="phraseCount"></div>
+      <div class="phrase-grid" id="phraseGrid"></div>
+    </section>
+
+    <!-- ================= PART III: Essential Grammar ================= -->
+    <section class="part" id="part-p3">
+      <h2 class="part-title">III. Essential Grammar</h2>
+      <p class="part-desc">文法重點與句型結構分類練習。</p>
+
+      <h3 class="part-title" style="font-size:1.2rem;">1. Key Grammar Points</h3>
+      <div id="grammarPoints"></div>
+
+      <h3 class="part-title" style="font-size:1.2rem; margin-top:28px;">2. Sentence Structures</h3>
+      <p class="part-desc">先練習把句子拖到正確的分類籃，完成後按「對答案」查看結果；也可以直接切換到「顯示模式」瀏覽分類好的例句。</p>
+
+      <div class="sort-toolbar">
+        <button class="btn primary" id="sortModeBtn">練習模式</button>
+        <button class="btn" id="displayModeBtn">顯示模式</button>
+        <button class="btn" id="resetSortBtn">重新開始</button>
+        <button class="btn" id="checkSortBtn">對答案</button>
+        <span class="sort-status" id="sortStatus"></span>
+      </div>
+
+      <div class="card sentence-pool" id="sentencePool"></div>
+      <div class="sort-baskets" id="sortBaskets"></div>
+
+      <div class="sentence-display-list" id="sentenceDisplayList"></div>
+    </section>
+
+    <!-- ================= PART IV: Text Genre and Structure ================= -->
+    <section class="part" id="part-p4">
+      <h2 class="part-title">IV. Text Genre and Structure</h2>
+      <p class="part-desc">認識這一課課文的體裁與結構。</p>
+
+      <div class="card genre-card">
+        <div class="genre-text" id="genreText">—</div>
+      </div>
+    </section>
+
+  </div>
+
+<script src="js/loader.js"></script>
+<script src="js/phrase-widget.js"></script>
+<script src="js/sentence-sort.js"></script>
+<script>
+  const bookId = Loader.getUrlParam("book", "b1");
+  const lessonId = Loader.getUrlParam("lesson", "l1");
+
+  let LESSON = null;
+
+  Loader.fetchLessonData(bookId, lessonId)
+    .then(data => {
+      LESSON = data;
+      document.getElementById("loadingMsg").style.display = "none";
+      initPage();
+    })
+    .catch(err => {
+      document.getElementById("loadingMsg").className = "error-msg";
+      document.getElementById("loadingMsg").textContent =
+        "課程資料載入失敗：" + err.message + "（請確認此頁面透過本機伺服器或 GitHub Pages 開啟，而非直接雙擊開啟檔案）";
+    });
+
+  function initPage() {
+    document.getElementById("breadcrumb").textContent = `${LESSON.book} · ${LESSON.lesson}`;
+    document.title = `${LESSON.book} ${LESSON.lesson} · ${LESSON.title || ""} — 課程補充內容`;
+    document.getElementById("lessonTitle").textContent =
+      `${LESSON.book} ${LESSON.lesson}${LESSON.title ? ": " + LESSON.title : ""}`;
+
+    initWordFamilyLink();
+    initPhrases();
+    initGrammar();
+    initTextGenre();
+  }
+
+  /* ===== Part nav switching ===== */
+  document.getElementById("partNavInner").addEventListener("click", e => {
+    const btn = e.target.closest("button[data-part]");
+    if (!btn) return;
+    document.querySelectorAll(".part-nav button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    document.querySelectorAll("section.part").forEach(s => s.classList.remove("active"));
+    document.getElementById("part-" + btn.dataset.part).classList.add("active");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  /* ===== Part I: Word Family — 獨立頁面連結 ===== */
+  function initWordFamilyLink() {
+    const link = document.getElementById("vocabLinkCard");
+    link.href = `word-family.html?book=${bookId}&lesson=${lessonId}`;
+    const count = (LESSON.vocabulary?.rows || []).length;
+    document.getElementById("vocabLinkDesc").textContent =
+      count ? `本課共 ${count} 組單字家族` : "這一課的單字家族尚未建立";
+  }
+
+  /* ===== Part II: Phrases ===== */
+  function initPhrases() {
+    PhraseWidget.render({
+      gridId: "phraseGrid",
+      countId: "phraseCount",
+      searchInputId: "phraseSearch",
+      browseBtnId: "browseBtn",
+      quizBtnId: "quizBtn",
+      items: LESSON.phrases?.items || []
+    });
+  }
+
+  /* ===== Part III: Grammar (points + sentence sort) ===== */
+  function initGrammar() {
+    GrammarPoints.render({
+      containerId: "grammarPoints",
+      points: LESSON.grammar?.points || []
+    });
+
+    SentenceSort.render({
+      poolId: "sentencePool",
+      basketsId: "sortBaskets",
+      displayListId: "sentenceDisplayList",
+      sortModeBtnId: "sortModeBtn",
+      displayModeBtnId: "displayModeBtn",
+      resetBtnId: "resetSortBtn",
+      checkBtnId: "checkSortBtn",
+      statusId: "sortStatus",
+      toolbarSelector: ".sort-toolbar",
+      items: LESSON.grammar?.sentence_structures?.items || []
+    });
+  }
+
+  /* ===== Part IV: Text Genre — 純文字優美呈現，不解析結構 ===== */
+  function initTextGenre() {
+    const text = LESSON.text_genre?.raw_text || "（尚未提供內容）";
+    document.getElementById("genreText").textContent = text;
+  }
+</script>
+</body>
+</html>

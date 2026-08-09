@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>單字總覽 Vocabulary Bank</title>
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  /* ===== Bank page 專用（篩選列、來源標籤等，其餘沿用 style.css） ===== */
+  .bank-head {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 28px 20px 22px;
+  }
+  .bank-head .inner { max-width: 980px; margin: 0 auto; }
+  .bank-head h1 { font-family: var(--serif); font-size: 2rem; font-weight: 700; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .bank-head .sub { font-size: 0.85rem; color: #d8cfba; }
+  .bank-head .back { color: #c9bfa9; text-decoration: none; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
+
+  .filter-bar {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--paper); border-bottom: 2px solid var(--ink);
+    padding: 12px 20px;
+  }
+  .filter-bar .inner { max-width: 980px; margin: 0 auto; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .filter-bar label { font-size: 0.78rem; font-weight: 600; color: var(--ink-soft); }
+  .filter-bar select {
+    font-family: var(--sans); font-size: 0.82rem; padding: 7px 10px;
+    border: 1.5px solid var(--ink); border-radius: 7px; background: var(--card); color: var(--ink);
+  }
+  .filter-bar .result-count { font-size: 0.78rem; color: var(--ink-soft); margin-left: auto; }
+
+  .detail-source {
+    display: inline-block; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.04em;
+    color: var(--blue); background: var(--blue-soft); padding: 2px 8px; border-radius: 999px;
+    margin-left: 8px;
+  }
+
+  .empty-state { padding: 50px 20px; text-align: center; color: var(--ink-soft); font-size: 0.88rem; }
+</style>
+</head>
+<body>
+
+  <div class="bank-head">
+    <div class="inner">
+      <a class="back" href="index.html">← 課程總覽</a>
+      <h1 style="margin-top:8px;">單字總覽 Vocabulary Bank</h1>
+      <div class="sub">彙整所有已上架課程的單字家族，跨課複習不必逐課翻找</div>
+    </div>
+  </div>
+
+  <div class="filter-bar">
+    <div class="inner">
+      <label for="bookFilter">冊次</label>
+      <select id="bookFilter"><option value="">全部</option></select>
+      <label for="lessonFilter">課程</label>
+      <select id="lessonFilter"><option value="">全部</option></select>
+      <span class="result-count" id="resultCount"></span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="loading-msg" id="loadingMsg">彙整所有課程單字中…</div>
+
+    <div class="table-scroll" id="tableWrap" style="display:none;">
+      <table class="wf-table" id="wfTable">
+        <thead>
+          <tr>
+            <th style="width:26%">Verb 動詞</th>
+            <th style="width:26%">Noun 名詞</th>
+            <th style="width:26%">Adjective 形容詞</th>
+            <th style="width:22%">Adverb 副詞</th>
+          </tr>
+        </thead>
+        <tbody id="wfBody"></tbody>
+      </table>
+    </div>
+
+    <div class="detail-panel" id="detailPanel">
+      <div class="detail-head">
+        <span class="detail-word">—</span>
+        <span class="pos-tag">—</span>
+        <span class="detail-source" style="display:none;"></span>
+        <button class="speak-btn" title="播放發音">🔊</button>
+      </div>
+      <div class="detail-zh">—</div>
+      <div class="detail-example">
+        <span class="lbl">Example</span>
+        <span class="detail-example-text">—</span>
+      </div>
+      <div class="switch-others"></div>
+    </div>
+  </div>
+
+<script src="js/loader.js"></script>
+<script src="js/vocab-widget.js"></script>
+<script>
+  let ALL_ROWS = [];       // 全部課程的 vocabulary rows，每列已標記 _book/_lesson
+  let LESSON_META = [];    // 用來組出篩選選單
+
+  Loader.fetchAllPublishedLessons()
+    .then(lessons => {
+      LESSON_META = lessons.map(l => ({ book: l._book, lesson: l._lesson, title: l.title }));
+
+      ALL_ROWS = lessons.flatMap(l =>
+        (l.vocabulary?.rows || []).map(row => ({ ...row, _book: l._book, _lesson: l._lesson }))
+      );
+
+      document.getElementById("loadingMsg").style.display = "none";
+
+      if (!ALL_ROWS.length) {
+        document.getElementById("loadingMsg").className = "empty-state";
+        document.getElementById("loadingMsg").style.display = "block";
+        document.getElementById("loadingMsg").textContent = "目前還沒有已上架課程的單字資料。";
+        return;
+      }
+
+      document.getElementById("tableWrap").style.display = "block";
+      buildFilters();
+      applyFilter();
+    })
+    .catch(err => {
+      document.getElementById("loadingMsg").className = "error-msg";
+      document.getElementById("loadingMsg").textContent = "資料載入失敗：" + err.message + "（請確認此頁面透過本機伺服器或 GitHub Pages 開啟）";
+    });
+
+  function buildFilters() {
+    const bookSelect = document.getElementById("bookFilter");
+    const lessonSelect = document.getElementById("lessonFilter");
+
+    const books = [...new Set(LESSON_META.map(m => m.book))].sort();
+    books.forEach(b => {
+      const opt = document.createElement("option");
+      opt.value = b;
+      opt.textContent = b.toUpperCase();
+      bookSelect.appendChild(opt);
+    });
+
+    bookSelect.addEventListener("change", () => {
+      refreshLessonOptions();
+      applyFilter();
+    });
+    lessonSelect.addEventListener("change", applyFilter);
+
+    refreshLessonOptions();
+  }
+
+  function refreshLessonOptions() {
+    const bookVal = document.getElementById("bookFilter").value;
+    const lessonSelect = document.getElementById("lessonFilter");
+    lessonSelect.innerHTML = '<option value="">全部</option>';
+
+    const lessons = LESSON_META
+      .filter(m => !bookVal || m.book === bookVal)
+      .sort((a, b) => a.lesson.localeCompare(b.lesson));
+
+    lessons.forEach(m => {
+      const opt = document.createElement("option");
+      opt.value = m.lesson;
+      opt.textContent = `${m.lesson.toUpperCase()}${m.title ? " · " + m.title : ""}`;
+      lessonSelect.appendChild(opt);
+    });
+  }
+
+  function applyFilter() {
+    const bookVal = document.getElementById("bookFilter").value;
+    const lessonVal = document.getElementById("lessonFilter").value;
+
+    const filtered = ALL_ROWS.filter(row => {
+      if (bookVal && row._book !== bookVal) return false;
+      if (lessonVal && row._lesson !== lessonVal) return false;
+      return true;
+    });
+
+    document.getElementById("resultCount").textContent = `共 ${filtered.length} 個字群`;
+
+    VocabWidget.render({
+      tableBodyId: "wfBody",
+      panelId: "detailPanel",
+      rows: filtered
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+{
+  "books": [
+    {
+      "id": "b1",
+      "title": "Book 1",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "Firsts in Life",
+          "status": "published",
+          "data": "data/b1/l1.json"
+        },
+        {
+          "id": "l2",
+          "title": "",
+          "status": "published",
+          "data": "data/b1/l2.json"
+        },
+        {
+          "id": "l3",
+          "title": "",
+          "status": "published",
+          "data": "data/b1/l3.json"
+        },
+        {
+          "id": "l4",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l5",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l6",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l7",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l8",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l9",
+          "title": "",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "id": "b2",
+      "title": "Book 2",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l2",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l3",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l4",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l5",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l6",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l7",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l8",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l9",
+          "title": "",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "id": "b3",
+      "title": "Book 3",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l2",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l3",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l4",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l5",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l6",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l7",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l8",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l9",
+          "title": "",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "id": "b4",
+      "title": "Book 4",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l2",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l3",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l4",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l5",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l6",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l7",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l8",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l9",
+          "title": "",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "id": "b5",
+      "title": "Book 5",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l2",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l3",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l4",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l5",
+          "title": "",
+          "status": "draft"
+        },
+        {
+          "id": "l6",
+          "title": "",
+          "status": "draft"
+        }
+      ]
+    }
+  ],
+  "cross_lesson_tools": [
+    {
+      "id": "vocab-bank",
+      "title": "單字總覽 Vocabulary Bank",
+      "status": "coming_soon"
+    },
+    {
+      "id": "phrase-bank",
+      "title": "片語總覽 Phrase Bank",
+      "status": "coming_soon"
+    },
+    {
+      "id": "grammar-bank",
+      "title": "句型總覽 Grammar Bank",
+      "status": "coming_soon"
+    }
+  ]
+}

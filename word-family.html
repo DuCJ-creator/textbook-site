@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Word Family · 課程補充內容</title>
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .wf-head { background: var(--ink); color: var(--paper); padding: 28px 20px 22px; }
+  .wf-head .inner { max-width: 980px; margin: 0 auto; }
+  .wf-head h1 { font-family: var(--serif); font-size: 1.8rem; font-weight: 700; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .wf-head .sub { font-size: 0.85rem; color: #d8cfba; }
+  .wf-head .back { color: #c9bfa9; text-decoration: none; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
+</style>
+</head>
+<body>
+
+  <div class="wf-head">
+    <div class="inner">
+      <div class="breadcrumb">
+        <a class="back" href="index.html">← 課程總覽</a>
+        &nbsp;/&nbsp;
+        <a class="back" id="lessonBackLink" href="lesson.html">← 回課程頁</a>
+      </div>
+      <h1 id="pageTitle" style="margin-top:8px;">Word Family</h1>
+      <div class="sub">點格子看例句、中文意思與發音 · 空白格代表該詞性沒有常用字形</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="loading-msg" id="loadingMsg">單字資料載入中…</div>
+
+    <div class="table-scroll" id="tableWrap" style="display:none;">
+      <table class="wf-table" id="wfTable">
+        <thead>
+          <tr>
+            <th style="width:26%">Verb 動詞</th>
+            <th style="width:26%">Noun 名詞</th>
+            <th style="width:26%">Adjective 形容詞</th>
+            <th style="width:22%">Adverb 副詞</th>
+          </tr>
+        </thead>
+        <tbody id="wfBody"></tbody>
+      </table>
+    </div>
+
+    <div class="detail-panel" id="detailPanel">
+      <div class="detail-head">
+        <span class="detail-word">—</span>
+        <span class="pos-tag">—</span>
+        <span class="detail-source" style="display:none;"></span>
+        <button class="speak-btn" title="播放發音">🔊</button>
+      </div>
+      <div class="detail-zh">—</div>
+      <div class="detail-example">
+        <span class="lbl">Example</span>
+        <span class="detail-example-text">—</span>
+      </div>
+      <div class="switch-others"></div>
+    </div>
+  </div>
+
+<script src="js/loader.js"></script>
+<script src="js/vocab-widget.js"></script>
+<script>
+  const bookId = Loader.getUrlParam("book", "b1");
+  const lessonId = Loader.getUrlParam("lesson", "l1");
+
+  document.getElementById("lessonBackLink").href = `lesson.html?book=${bookId}&lesson=${lessonId}`;
+
+  Loader.fetchLessonData(bookId, lessonId)
+    .then(data => {
+      document.getElementById("loadingMsg").style.display = "none";
+
+      document.title = `Word Family · ${data.book} ${data.lesson} ${data.title || ""}`;
+      document.getElementById("pageTitle").textContent =
+        `Word Family — ${data.book} ${data.lesson}${data.title ? ": " + data.title : ""}`;
+
+      const rows = data.vocabulary?.rows || [];
+      if (!rows.length) {
+        document.getElementById("loadingMsg").className = "empty-state";
+        document.getElementById("loadingMsg").style.display = "block";
+        document.getElementById("loadingMsg").textContent = "這一課的單字家族尚未建立。";
+        return;
+      }
+
+      document.getElementById("tableWrap").style.display = "block";
+      VocabWidget.render({
+        tableBodyId: "wfBody",
+        panelId: "detailPanel",
+        rows: rows
+      });
+    })
+    .catch(err => {
+      document.getElementById("loadingMsg").className = "error-msg";
+      document.getElementById("loadingMsg").textContent =
+        "資料載入失敗：" + err.message + "（請確認此頁面透過本機伺服器或 GitHub Pages 開啟）";
+    });
+</script>
+</body>
+</html>

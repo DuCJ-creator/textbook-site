@@ -1,0 +1,197 @@
+{
+  "book": "B1",
+  "lesson": "L2",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": []
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [
+      {
+        "id": "b1l2-g1",
+        "title": "It is + adj. (+ for sb.) + to VR....",
+        "examples": [
+          "It is important for students to be on time for class.",
+          "It is necessary for everyone to make good use of his or her time.",
+          "It was hard (for anyone) to finish the math exam in time."
+        ]
+      },
+      {
+        "id": "b1l2-g2",
+        "title": "have/has + V.pp: present perfect tense",
+        "examples": [
+          "The company has successfully opened three new branches recently.",
+          "Rick has never been to the United States.",
+          "A team of scientists has worked on the cure for AIDS for more than thirty years."
+        ]
+      }
+    ],
+    "sentence_structures": {
+      "items": [
+        {
+          "id": "b1l2-s001",
+          "sentence": "It is not easy to tell you this, but I still need to say it.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"but\")"
+        },
+        {
+          "id": "b1l2-s002",
+          "sentence": "I'm leaving you.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b1l2-s003",
+          "sentence": "Our relationship has been mostly satisfying, but I'm afraid it's over.",
+          "type": "compound-complex",
+          "pattern": "Compound-Complex sentence (with \"but\" + Noun clause)"
+        },
+        {
+          "id": "b1l2-s004",
+          "sentence": "Leaving you really breaks my heart because we've had some great times together.",
+          "type": "complex",
+          "pattern": "Adverbial clause (because...)"
+        },
+        {
+          "id": "b1l2-s005",
+          "sentence": "When you're around, I am never bored.",
+          "type": "complex",
+          "pattern": "Adverbial clause (When...)"
+        },
+        {
+          "id": "b1l2-s006",
+          "sentence": "There is always something to do.",
+          "type": "simple",
+          "pattern": "There be... (特殊倒裝句)"
+        },
+        {
+          "id": "b1l2-s007",
+          "sentence": "You inspire me to connect with others and to communicate better.",
+          "type": "simple",
+          "pattern": "S + Vt + O + OC"
+        },
+        {
+          "id": "b1l2-s008",
+          "sentence": "I can ask you anything and you will probably help me find the answer.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"and\")"
+        },
+        {
+          "id": "b1l2-s009",
+          "sentence": "You've introduced me to so much—new music, new games, new knowledge, new friends, and more.",
+          "type": "simple",
+          "pattern": "S + Vt + iO + dO"
+        },
+        {
+          "id": "b1l2-s010",
+          "sentence": "In fact, things have been totally different since you came into my life.",
+          "type": "complex",
+          "pattern": "Adverbial clause (since...)"
+        },
+        {
+          "id": "b1l2-s011",
+          "sentence": "When I wake up, you are there to go through my friends' updates on Facebook and Instagram with me.",
+          "type": "complex",
+          "pattern": "Adverbial clause (When...)"
+        },
+        {
+          "id": "b1l2-s012",
+          "sentence": "Also, I check my LINE app again and again throughout the day.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b1l2-s013",
+          "sentence": "And when it doesn't show any new messages, I still refresh the screen, just in case I miss something.",
+          "type": "complex",
+          "pattern": "Adverbial clause (when... / in case...)"
+        },
+        {
+          "id": "b1l2-s014",
+          "sentence": "All this might sound romantic, but it is difficult for me to focus on school, and my grades are getting worse!",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"but\" & \"and\")"
+        },
+        {
+          "id": "b1l2-s015",
+          "sentence": "In addition, having you around is really hurting my relationships with my friends and family.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b1l2-s016",
+          "sentence": "When my friends and I hang out, I turn to you for Instagram updates and ignore everyone else.",
+          "type": "complex",
+          "pattern": "Adverbial clause (When...)"
+        },
+        {
+          "id": "b1l2-s017",
+          "sentence": "My friends try to talk to me, but I don't even reply because I am too busy paying attention to you.",
+          "type": "compound-complex",
+          "pattern": "Compound-Complex sentence (with \"but\" + Adverbial clause)"
+        },
+        {
+          "id": "b1l2-s018",
+          "sentence": "I'm worried that they are going to stop inviting me out!",
+          "type": "complex",
+          "pattern": "Noun clause (that...)"
+        },
+        {
+          "id": "b1l2-s019",
+          "sentence": "I can't deny that you are always by my side, and I love it when we play games or respond to messages together.",
+          "type": "compound-complex",
+          "pattern": "Compound-Complex sentence (Noun clause + Adverbial clause)"
+        },
+        {
+          "id": "b1l2-s020",
+          "sentence": "But doing this late into the night means I seldom speak to my family!",
+          "type": "complex",
+          "pattern": "Noun clause (means [that]...)"
+        },
+        {
+          "id": "b1l2-s021",
+          "sentence": "That's really not a good way to build a relationship with anybody, and my parents are both angry and disappointed with me.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"and\")"
+        },
+        {
+          "id": "b1l2-s022",
+          "sentence": "Please don't take any of this personally.",
+          "type": "simple",
+          "pattern": "Imperative sentence (S + Vt + O)"
+        },
+        {
+          "id": "b1l2-s023",
+          "sentence": "You're truly wonderful and I'll miss you terribly.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"and\")"
+        },
+        {
+          "id": "b1l2-s024",
+          "sentence": "But right now, I really need to focus on my studies, spend more time with my friends, and become a real part of my family again.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b1l2-s025",
+          "sentence": "I hope you understand.",
+          "type": "complex",
+          "pattern": "Noun clause (hope [that]...)"
+        },
+        {
+          "id": "b1l2-s026",
+          "sentence": "For the last time, goodbye....",
+          "type": "simple",
+          "pattern": "Interjection / Exclamatory expression"
+        }
+      ]
+    }
+  },
+  "text_genre": {
+    "raw_text": "This is a letter (an informal one). \nFor the layout of a formal/official/business letter, please refer to 5.1 below. \nSummary: \nSally is writing a letter to break up with her smartphone, John. She appreciates the joy and excitement he has brought to her life, but she feels overwhelmed by the constant need to stay connected through social media and messaging apps, leading her to neglect other important aspects of her life, in particular, her relationships with friends and family and her academic performance. Sally hopes that John will understand her decision and wishes him well."
+  }
+}
