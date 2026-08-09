@@ -1694,7 +1694,7 @@
       "items": [
         {
           "id": "b1l1-s001",
-          "sentence": "In this month's Longteng Senior High School News, our reporter Jeremy interviews three students about some memorable first-time experiences in their lives.",
+          "sentence": "In this month’s Longteng Senior High School News, our reporter Jeremy interviews three students about some memorable first-time experiences in their lives.",
           "type": "simple",
           "pattern": "S + Vt + O"
         },
@@ -1778,7 +1778,7 @@
         },
         {
           "id": "b1l1-s015",
-          "sentence": "However, I didn't take the task seriously and skipped several group meetings.",
+          "sentence": "However, I didn’t take the task seriously and skipped several group meetings.",
           "type": "compound",
           "pattern": "Compound sentence (with \"and\")"
         },
@@ -1820,7 +1820,7 @@
         },
         {
           "id": "b1l1-s022",
-          "sentence": "The city's streets were busy, and delicious foods like Korean barbecue and kimchi were all around me.",
+          "sentence": "The city’s streets were busy, and delicious foods like Korean barbecue and kimchi were all around me.",
           "type": "compound",
           "pattern": "Compound sentence (with \"and\")"
         },
@@ -1850,7 +1850,7 @@
         },
         {
           "id": "b1l1-s027",
-          "sentence": "At the end of the trip, I left with a lot of great memories, and I can't wait to go back someday!",
+          "sentence": "At the end of the trip, I left with a lot of great memories, and I can’t wait to go back someday!",
           "type": "compound",
           "pattern": "Compound sentence (with \"and\")"
         },

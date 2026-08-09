@@ -4,10 +4,1873 @@
   "title": "",
   "status": "published",
   "vocabulary": {
-    "rows": []
+    "rows": [
+      {
+        "id": "b1l2-v01",
+        "verb": [
+          {
+            "en": "relate",
+            "zh": "有關；使有聯繫；講述",
+            "example": "The report relates the rise in sales to the new campaign."
+          }
+        ],
+        "noun": [
+          {
+            "en": "relation",
+            "zh": "關係；關聯",
+            "example": "There is a close relation between sleep and health."
+          },
+          {
+            "en": "relationship",
+            "zh": "關係；人際關係",
+            "example": "Trust is important in every relationship."
+          },
+          {
+            "en": "relative",
+            "zh": "親戚；親屬",
+            "example": "A relative from Canada is visiting us this week."
+          }
+        ],
+        "adj": [
+          {
+            "en": "relative",
+            "zh": "相對的；比較上的；相關的",
+            "example": "The two countries enjoyed a period of relative peace."
+          }
+        ],
+        "adv": [
+          {
+            "en": "relatively",
+            "zh": "相對地；比較而言",
+            "example": "The test was relatively easy."
+          }
+        ]
+      },
+      {
+        "id": "b1l2-v02",
+        "verb": [
+          {
+            "en": "satisfy",
+            "zh": "使滿意；滿足",
+            "example": "The solution should satisfy both sides."
+          }
+        ],
+        "noun": [
+          {
+            "en": "satisfaction",
+            "zh": "滿意；滿足感",
+            "example": "She smiled with satisfaction after finishing the project."
+          }
+        ],
+        "adj": [
+          {
+            "en": "satisfactory",
+            "zh": "令人滿意的；足夠好的",
+            "example": "His work has reached a satisfactory standard."
+          },
+          {
+            "en": "satisfied",
+            "zh": "感到滿意的",
+            "example": "The customers were satisfied with the service."
+          },
+          {
+            "en": "satisfying",
+            "zh": "令人滿足的；令人滿意的",
+            "example": "Solving a difficult problem can be very satisfying."
+          }
+        ],
+        "adv": [
+          {
+            "en": "satisfactorily",
+            "zh": "令人滿意地；圓滿地",
+            "example": "The complaint was resolved satisfactorily."
+          }
+        ]
+      },
+      {
+        "id": "b1l2-v03",
+        "verb": [],
+        "noun": [
+          {
+            "en": "inspiration",
+            "zh": "靈感；鼓舞人心的人或事",
+            "example": "Nature is a constant source of inspiration for her art."
+          }
+        ],
+        "adj": [
+          {
+            "en": "inspiring",
+            "zh": "鼓舞人心的；啟發人的",
+            "example": "The coach gave an inspiring speech before the game."
+          },
+          {
+            "en": "inspired",
+            "zh": "受到啟發的；有創意的",
+            "example": "I felt inspired after visiting the exhibition."
+          },
+          {
+            "en": "inspirational",
+            "zh": "激勵人心的；啟發性的",
+            "example": "Her life story is truly inspirational."
+          }
+        ],
+        "adv": [
+          {
+            "en": "inspirationally",
+            "zh": "鼓舞人心地；富啟發性地",
+            "example": "She spoke inspirationally about overcoming failure."
+          }
+        ]
+      },
+      {
+        "id": "b1l2-v04",
+        "verb": [
+          {
+            "en": "connect",
+            "zh": "連接；聯繫；使產生關聯",
+            "example": "This bridge connects the island to the mainland."
+          }
+        ],
+        "noun": [
+          {
+            "en": "connection",
+            "zh": "連接；關係；聯絡",
+            "example": "The internet connection is unstable today."
+          },
+          {
+            "en": "connective",
+            "zh": "連接詞；連接物",
+            "example": "Use a connective to join the two clauses."
+          }
+        ],
+        "adj": [
+          {
+            "en": "connective",
+            "zh": "連接的；具有聯結作用的",
+            "example": "The tissue forms a connective layer around the organ."
+          }
+        ],
+        "adv": [
+          {
+            "en": "connectively",
+            "zh": "連接地；以相互關聯的方式",
+            "example": "The ideas are arranged connectively rather than separately."
+          }
+        ]
+      },
+      {
+        "id": "b1l2-v05",
+        "verb": [
+          {
+            "en": "communicate",
+            "zh": "溝通；傳達",
+            "example": "Please communicate your concerns clearly."
+          }
+        ],
+        "noun": [
+          {
+            "en": "communication",
+            "zh": "溝通；傳播；訊息交流",
+            "example": "Good communication prevents many misunderstandings."
+          }
+        ],
+        "adj": [
+          {
+            "en": "communicative",
+            "zh": "善於溝通的；傳達資訊的",
+            "example": "The new student is friendly and communicative."
+          }
+        ],
+        "adv": [
+          {
+            "en": "communicatively",
+            "zh": "在溝通方面；以溝通方式",
+            "example": "The children develop communicatively through group play."
+          }
+        ]
+      },
+      {
+        "id": "b1l2-v06",
+        "verb": [
+          {
+            "en": "introduce",
+            "zh": "介紹；引進；提出",
+            "example": "Let me introduce you to our new teacher."
+          }
+        ],
+        "noun": [
+          {
+            "en": "introduction",
+            "zh": "介紹；引言；引進",
+            "example": "The book begins with a short introduction."
+          }
+        ],
+        "adj": [
+          {
+            "en": "introductory",
+            "zh": "介紹性的；入門的",
+            "example": "This is an introductory course in psychology."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l2-v07",
+        "verb": [
+          {
+            "en": "message",
+            "zh": "傳訊息給；用訊息通知",
+            "example": "Message me when you arrive."
+          }
+        ],
+        "noun": [
+          {
+            "en": "message",
+            "zh": "訊息；口信；要旨",
+            "example": "I left a message on your phone."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b1l2-v08",
+        "verb": [
+          {
+            "en": "refresh",
+            "zh": "使恢復精神；更新；重新整理",
+            "example": "A short walk can refresh your mind."
+          }
+        ],
+        "noun": [
+          {
+            "en": "refreshment",
+            "zh": "茶點；飲料；恢復精神",
+            "example": "Light refreshments will be served after the meeting."
+          }
+        ],
+        "adj": [
+          {
+            "en": "refreshing",
+            "zh": "令人精神一振的；清新的",
+            "example": "The cool breeze felt refreshing."
+          },
+          {
+            "en": "refreshed",
+            "zh": "恢復精神的；精神煥發的",
+            "example": "I felt refreshed after a good night's sleep."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l2-v09",
+        "verb": [],
+        "noun": [
+          {
+            "en": "romance",
+            "zh": "浪漫情懷；愛情故事；戀情",
+            "example": "The novel is a romance set in Paris."
+          }
+        ],
+        "adj": [
+          {
+            "en": "romantic",
+            "zh": "浪漫的；愛情的",
+            "example": "They had a romantic dinner by the sea."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l2-v10",
+        "verb": [
+          {
+            "en": "focus",
+            "zh": "集中；聚焦",
+            "example": "Try to focus on one task at a time."
+          }
+        ],
+        "noun": [
+          {
+            "en": "focus",
+            "zh": "焦點；重點；專注",
+            "example": "Student safety is our main focus."
+          }
+        ],
+        "adj": [
+          {
+            "en": "focused",
+            "zh": "專注的；目標明確的",
+            "example": "She remained focused during the long exam."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l2-v11",
+        "verb": [
+          {
+            "en": "ignore",
+            "zh": "忽視；不理會",
+            "example": "Do not ignore the warning signs."
+          }
+        ],
+        "noun": [
+          {
+            "en": "ignorance",
+            "zh": "無知；不了解",
+            "example": "His mistake resulted from ignorance of the rules."
+          }
+        ],
+        "adj": [
+          {
+            "en": "ignorant",
+            "zh": "無知的；不了解的",
+            "example": "I was ignorant of the change in schedule."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l2-v12",
+        "verb": [
+          {
+            "en": "attend",
+            "zh": "出席；參加；照料",
+            "example": "More than two hundred people attended the event."
+          }
+        ],
+        "noun": [
+          {
+            "en": "attention",
+            "zh": "注意；關注；照料",
+            "example": "Please pay attention to the instructions."
+          }
+        ],
+        "adj": [
+          {
+            "en": "attentive",
+            "zh": "專心的；體貼的；留意的",
+            "example": "The students were quiet and attentive."
+          }
+        ],
+        "adv": [
+          {
+            "en": "attentively",
+            "zh": "專心地；留意地",
+            "example": "Everyone listened attentively to the speaker."
+          }
+        ]
+      },
+      {
+        "id": "b1l2-v13",
+        "verb": [
+          {
+            "en": "deny",
+            "zh": "否認；拒絕給予",
+            "example": "He denied taking the missing money."
+          }
+        ],
+        "noun": [
+          {
+            "en": "denial",
+            "zh": "否認；拒絕",
+            "example": "Her denial surprised everyone in the room."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b1l2-v14",
+        "verb": [
+          {
+            "en": "respond",
+            "zh": "回答；回應；作出反應",
+            "example": "Please respond to the invitation by Monday."
+          }
+        ],
+        "noun": [
+          {
+            "en": "response",
+            "zh": "回答；回應；反應",
+            "example": "We received a positive response from the school."
+          }
+        ],
+        "adj": [
+          {
+            "en": "responsive",
+            "zh": "反應迅速的；積極回應的",
+            "example": "The support team is friendly and responsive."
+          }
+        ],
+        "adv": [
+          {
+            "en": "responsively",
+            "zh": "反應迅速地；積極回應地",
+            "example": "The website adjusts responsively to different screen sizes."
+          }
+        ]
+      },
+      {
+        "id": "b1l2-v15",
+        "verb": [
+          {
+            "en": "disappoint",
+            "zh": "使失望",
+            "example": "I do not want to disappoint my team."
+          }
+        ],
+        "noun": [
+          {
+            "en": "disappointment",
+            "zh": "失望；令人失望的人或事",
+            "example": "The cancellation was a great disappointment."
+          }
+        ],
+        "adj": [
+          {
+            "en": "disappointing",
+            "zh": "令人失望的",
+            "example": "The final result was disappointing."
+          },
+          {
+            "en": "disappointed",
+            "zh": "感到失望的",
+            "example": "We were disappointed with the service."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l2-v16",
+        "verb": [
+          {
+            "en": "personalize",
+            "zh": "使個人化；為個人訂製",
+            "example": "You can personalize the card with a photo."
+          }
+        ],
+        "noun": [
+          {
+            "en": "person",
+            "zh": "人；個人",
+            "example": "She is the right person for the job."
+          }
+        ],
+        "adj": [
+          {
+            "en": "personal",
+            "zh": "個人的；私人的",
+            "example": "Please do not share your personal information online."
+          }
+        ],
+        "adv": [
+          {
+            "en": "personally",
+            "zh": "就個人而言；親自地",
+            "example": "Personally, I prefer the first design."
+          }
+        ]
+      }
+    ]
   },
   "phrases": {
-    "items": []
+    "items": [
+      {
+        "id": "b1l2-p001",
+        "phrase": "be used to sth.",
+        "pos": "ph.",
+        "zh": "習慣於某事",
+        "example_en": "I am used to the cold weather here.",
+        "example_zh": "我已經習慣這裡寒冷的天氣。"
+      },
+      {
+        "id": "b1l2-p002",
+        "phrase": "bank account",
+        "pos": "ph.",
+        "zh": "銀行帳戶",
+        "example_en": "She opened a bank account yesterday.",
+        "example_zh": "她昨天開了一個銀行帳戶。"
+      },
+      {
+        "id": "b1l2-p003",
+        "phrase": "withdraw money",
+        "pos": "ph.",
+        "zh": "提款；領錢",
+        "example_en": "I need to withdraw money from the ATM.",
+        "example_zh": "我需要從提款機領錢。"
+      },
+      {
+        "id": "b1l2-p004",
+        "phrase": "be afraid of",
+        "pos": "ph.",
+        "zh": "害怕……",
+        "example_en": "My little brother is afraid of dogs.",
+        "example_zh": "我的弟弟害怕狗。"
+      },
+      {
+        "id": "b1l2-p005",
+        "phrase": "be scared of",
+        "pos": "ph.",
+        "zh": "害怕……",
+        "example_en": "She is scared of walking alone at night.",
+        "example_zh": "她害怕晚上獨自行走。"
+      },
+      {
+        "id": "b1l2-p006",
+        "phrase": "adapt to the new environment",
+        "pos": "ph.",
+        "zh": "適應新環境",
+        "example_en": "It took him a month to adapt to the new environment.",
+        "example_zh": "他花了一個月適應新環境。"
+      },
+      {
+        "id": "b1l2-p007",
+        "phrase": "leave for one’s vacation",
+        "pos": "ph.",
+        "zh": "動身去度假",
+        "example_en": "They will leave for their vacation on Friday.",
+        "example_zh": "他們星期五將動身去度假。"
+      },
+      {
+        "id": "b1l2-p008",
+        "phrase": "break one’s heart",
+        "pos": "ph.",
+        "zh": "使某人心碎",
+        "example_en": "The sad ending broke my heart.",
+        "example_zh": "悲傷的結局使我心碎。"
+      },
+      {
+        "id": "b1l2-p009",
+        "phrase": "have great times",
+        "pos": "ph.",
+        "zh": "度過許多美好時光",
+        "example_en": "We had great times together in junior high school.",
+        "example_zh": "我們國中時一起度過許多美好時光。"
+      },
+      {
+        "id": "b1l2-p010",
+        "phrase": "have a great time",
+        "pos": "ph.",
+        "zh": "玩得很開心；過得愉快",
+        "example_en": "We had a great time at the beach.",
+        "example_zh": "我們在海邊玩得很開心。"
+      },
+      {
+        "id": "b1l2-p011",
+        "phrase": "fall asleep",
+        "pos": "ph.",
+        "zh": "入睡",
+        "example_en": "I fell asleep while reading the book.",
+        "example_zh": "我看書時睡著了。"
+      },
+      {
+        "id": "b1l2-p012",
+        "phrase": "halfway through",
+        "pos": "ph.",
+        "zh": "在……進行到一半時",
+        "example_en": "Halfway through the movie, the power went out.",
+        "example_zh": "電影播到一半時停電了。"
+      },
+      {
+        "id": "b1l2-p013",
+        "phrase": "attend a summer camp",
+        "pos": "ph.",
+        "zh": "參加夏令營",
+        "example_en": "My sister will attend a summer camp in July.",
+        "example_zh": "我妹妹七月會參加夏令營。"
+      },
+      {
+        "id": "b1l2-p014",
+        "phrase": "help sb. do",
+        "pos": "ph.",
+        "zh": "幫助某人做……",
+        "example_en": "Can you help me carry these boxes?",
+        "example_zh": "你可以幫我搬這些箱子嗎？"
+      },
+      {
+        "id": "b1l2-p015",
+        "phrase": "help sb. with sth.",
+        "pos": "ph.",
+        "zh": "在某事上幫助某人",
+        "example_en": "Dad helped me with my math homework.",
+        "example_zh": "爸爸幫我做數學作業。"
+      },
+      {
+        "id": "b1l2-p016",
+        "phrase": "go to a movie",
+        "pos": "ph.",
+        "zh": "去看電影",
+        "example_en": "Would you like to go to a movie tonight?",
+        "example_zh": "你今晚想去看電影嗎？"
+      },
+      {
+        "id": "b1l2-p017",
+        "phrase": "leave a message unread",
+        "pos": "ph.",
+        "zh": "讓訊息保持未讀",
+        "example_en": "He was busy and left my message unread.",
+        "example_zh": "他很忙，所以沒有讀我的訊息。"
+      },
+      {
+        "id": "b1l2-p018",
+        "phrase": "turn down an invitation",
+        "pos": "ph.",
+        "zh": "拒絕邀請",
+        "example_en": "She turned down the invitation politely.",
+        "example_zh": "她禮貌地拒絕了邀請。"
+      },
+      {
+        "id": "b1l2-p019",
+        "phrase": "during a school trip",
+        "pos": "ph.",
+        "zh": "在校外教學期間",
+        "example_en": "We took many photos during the school trip.",
+        "example_zh": "我們在校外教學期間拍了很多照片。"
+      },
+      {
+        "id": "b1l2-p020",
+        "phrase": "photography tip",
+        "pos": "ph.",
+        "zh": "攝影技巧；攝影小祕訣",
+        "example_en": "This photography tip will make your pictures clearer.",
+        "example_zh": "這個攝影技巧會讓你的照片更清晰。"
+      },
+      {
+        "id": "b1l2-p021",
+        "phrase": "capture a picture",
+        "pos": "ph.",
+        "zh": "拍下照片",
+        "example_en": "She captured a picture of the sunset.",
+        "example_zh": "她拍下了一張夕陽的照片。"
+      },
+      {
+        "id": "b1l2-p022",
+        "phrase": "come into one’s life",
+        "pos": "ph.",
+        "zh": "走進某人的生命",
+        "example_en": "That teacher came into my life at the right time.",
+        "example_zh": "那位老師在最適當的時候走進我的生命。"
+      },
+      {
+        "id": "b1l2-p023",
+        "phrase": "wake up",
+        "pos": "ph.",
+        "zh": "醒來；叫醒",
+        "example_en": "I wake up at six every morning.",
+        "example_zh": "我每天早上六點醒來。"
+      },
+      {
+        "id": "b1l2-p024",
+        "phrase": "go through updates",
+        "pos": "ph.",
+        "zh": "瀏覽更新內容",
+        "example_en": "I went through the updates before class.",
+        "example_zh": "我上課前瀏覽了更新內容。"
+      },
+      {
+        "id": "b1l2-p025",
+        "phrase": "again and again",
+        "pos": "ph.",
+        "zh": "一再地；反覆地",
+        "example_en": "He practiced the difficult part again and again.",
+        "example_zh": "他一再練習那個困難的部分。"
+      },
+      {
+        "id": "b1l2-p026",
+        "phrase": "throughout the day",
+        "pos": "ph.",
+        "zh": "一整天；全天",
+        "example_en": "The weather changed throughout the day.",
+        "example_zh": "天氣一整天都在變化。"
+      },
+      {
+        "id": "b1l2-p027",
+        "phrase": "refresh the screen",
+        "pos": "ph.",
+        "zh": "重新整理畫面",
+        "example_en": "Refresh the screen to see the latest post.",
+        "example_zh": "重新整理畫面即可看到最新貼文。"
+      },
+      {
+        "id": "b1l2-p028",
+        "phrase": "just in case",
+        "pos": "ph.",
+        "zh": "以防萬一",
+        "example_en": "Take an umbrella just in case.",
+        "example_zh": "帶把傘以防萬一。"
+      },
+      {
+        "id": "b1l2-p029",
+        "phrase": "focus on school",
+        "pos": "ph.",
+        "zh": "專心於課業",
+        "example_en": "He decided to focus on school this semester.",
+        "example_zh": "他決定這學期專心於課業。"
+      },
+      {
+        "id": "b1l2-p030",
+        "phrase": "get worse",
+        "pos": "ph.",
+        "zh": "變得更糟",
+        "example_en": "Her cold got worse last night.",
+        "example_zh": "她的感冒昨晚變得更嚴重。"
+      },
+      {
+        "id": "b1l2-p031",
+        "phrase": "have a nightmare",
+        "pos": "ph.",
+        "zh": "做惡夢",
+        "example_en": "I had a nightmare about getting lost.",
+        "example_zh": "我做了一個迷路的惡夢。"
+      },
+      {
+        "id": "b1l2-p032",
+        "phrase": "go to sleep",
+        "pos": "ph.",
+        "zh": "入睡；去睡覺",
+        "example_en": "I usually go to sleep before eleven.",
+        "example_zh": "我通常十一點前睡覺。"
+      },
+      {
+        "id": "b1l2-p033",
+        "phrase": "sound of birds chirping",
+        "pos": "ph.",
+        "zh": "鳥兒啁啾的聲音",
+        "example_en": "The sound of birds chirping woke me up.",
+        "example_zh": "鳥兒啁啾的聲音把我叫醒了。"
+      },
+      {
+        "id": "b1l2-p034",
+        "phrase": "over and over again",
+        "pos": "ph.",
+        "zh": "一次又一次地",
+        "example_en": "She listened to the song over and over again.",
+        "example_zh": "她一次又一次地聽那首歌。"
+      },
+      {
+        "id": "b1l2-p035",
+        "phrase": "time and time again",
+        "pos": "ph.",
+        "zh": "屢次；一再地",
+        "example_en": "He has warned us time and time again.",
+        "example_zh": "他已經一再警告我們。"
+      },
+      {
+        "id": "b1l2-p036",
+        "phrase": "class leader",
+        "pos": "ph.",
+        "zh": "班長",
+        "example_en": "Our class leader collected the homework.",
+        "example_zh": "我們的班長收了作業。"
+      },
+      {
+        "id": "b1l2-p037",
+        "phrase": "theme song",
+        "pos": "ph.",
+        "zh": "主題曲",
+        "example_en": "This is the theme song of the movie.",
+        "example_zh": "這是那部電影的主題曲。"
+      },
+      {
+        "id": "b1l2-p038",
+        "phrase": "give a perfect performance",
+        "pos": "ph.",
+        "zh": "帶來完美的演出",
+        "example_en": "The band gave a perfect performance last night.",
+        "example_zh": "那個樂團昨晚帶來了完美的演出。"
+      },
+      {
+        "id": "b1l2-p039",
+        "phrase": "rehearse for the concert",
+        "pos": "ph.",
+        "zh": "為音樂會排練",
+        "example_en": "The students are rehearsing for the concert.",
+        "example_zh": "學生們正在為音樂會排練。"
+      },
+      {
+        "id": "b1l2-p040",
+        "phrase": "alarm going off",
+        "pos": "ph.",
+        "zh": "鬧鐘響起",
+        "example_en": "I heard my alarm going off at six.",
+        "example_zh": "我六點時聽見鬧鐘響了。"
+      },
+      {
+        "id": "b1l2-p041",
+        "phrase": "think about",
+        "pos": "ph.",
+        "zh": "思考；考慮",
+        "example_en": "Think about your answer before you speak.",
+        "example_zh": "回答之前先想一想。"
+      },
+      {
+        "id": "b1l2-p042",
+        "phrase": "adventure awaiting",
+        "pos": "ph.",
+        "zh": "等待著的冒險",
+        "example_en": "A new adventure is awaiting us.",
+        "example_zh": "一場新的冒險正等待著我們。"
+      },
+      {
+        "id": "b1l2-p043",
+        "phrase": "be open-minded",
+        "pos": "ph.",
+        "zh": "思想開放；願意接受新觀念",
+        "example_en": "Be open-minded when you meet people from other cultures.",
+        "example_zh": "遇到不同文化的人時，要抱持開放的態度。"
+      },
+      {
+        "id": "b1l2-p044",
+        "phrase": "make the most of every moment",
+        "pos": "ph.",
+        "zh": "充分把握每一刻",
+        "example_en": "We should make the most of every moment together.",
+        "example_zh": "我們應該充分把握相聚的每一刻。"
+      },
+      {
+        "id": "b1l2-p045",
+        "phrase": "remind oneself to",
+        "pos": "ph.",
+        "zh": "提醒自己要……",
+        "example_en": "I remind myself to stay calm before a test.",
+        "example_zh": "我提醒自己考試前要保持冷靜。"
+      },
+      {
+        "id": "b1l2-p046",
+        "phrase": "in addition",
+        "pos": "ph.",
+        "zh": "此外；另外",
+        "example_en": "In addition, the hotel offers free breakfast.",
+        "example_zh": "此外，這間飯店提供免費早餐。"
+      },
+      {
+        "id": "b1l2-p047",
+        "phrase": "have someone around",
+        "pos": "ph.",
+        "zh": "有某人在身邊",
+        "example_en": "It feels good to have family around.",
+        "example_zh": "有家人在身邊感覺很好。"
+      },
+      {
+        "id": "b1l2-p048",
+        "phrase": "hang out",
+        "pos": "ph.",
+        "zh": "閒晃；一起消磨時間",
+        "example_en": "We often hang out after school.",
+        "example_zh": "我們放學後常一起閒晃。"
+      },
+      {
+        "id": "b1l2-p049",
+        "phrase": "turn to sb. for",
+        "pos": "ph.",
+        "zh": "向某人尋求……",
+        "example_en": "I turned to my teacher for advice.",
+        "example_zh": "我向老師尋求建議。"
+      },
+      {
+        "id": "b1l2-p050",
+        "phrase": "be busy doing",
+        "pos": "ph.",
+        "zh": "忙於做……",
+        "example_en": "Mom is busy preparing dinner.",
+        "example_zh": "媽媽正忙著準備晚餐。"
+      },
+      {
+        "id": "b1l2-p051",
+        "phrase": "pay attention to",
+        "pos": "ph.",
+        "zh": "注意……",
+        "example_en": "Please pay attention to the road.",
+        "example_zh": "請注意路況。"
+      },
+      {
+        "id": "b1l2-p052",
+        "phrase": "by one’s side",
+        "pos": "ph.",
+        "zh": "在某人身邊",
+        "example_en": "Her best friend stayed by her side.",
+        "example_zh": "她最好的朋友一直陪在她身邊。"
+      },
+      {
+        "id": "b1l2-p053",
+        "phrase": "respond to messages",
+        "pos": "ph.",
+        "zh": "回覆訊息",
+        "example_en": "I respond to messages after work.",
+        "example_zh": "我下班後回覆訊息。"
+      },
+      {
+        "id": "b1l2-p054",
+        "phrase": "late into the night",
+        "pos": "ph.",
+        "zh": "直到深夜",
+        "example_en": "They talked late into the night.",
+        "example_zh": "他們一直聊到深夜。"
+      },
+      {
+        "id": "b1l2-p055",
+        "phrase": "a good way to",
+        "pos": "ph.",
+        "zh": "做……的好方法",
+        "example_en": "Walking is a good way to stay healthy.",
+        "example_zh": "走路是保持健康的好方法。"
+      },
+      {
+        "id": "b1l2-p056",
+        "phrase": "build a relationship with",
+        "pos": "ph.",
+        "zh": "與……建立關係",
+        "example_en": "It takes time to build a relationship with new classmates.",
+        "example_zh": "與新同學建立關係需要時間。"
+      },
+      {
+        "id": "b1l2-p057",
+        "phrase": "be disappointed with",
+        "pos": "ph.",
+        "zh": "對……感到失望",
+        "example_en": "The coach was disappointed with our performance.",
+        "example_zh": "教練對我們的表現感到失望。"
+      },
+      {
+        "id": "b1l2-p058",
+        "phrase": "stay up late",
+        "pos": "ph.",
+        "zh": "熬夜",
+        "example_en": "Do not stay up late before the exam.",
+        "example_zh": "考試前不要熬夜。"
+      },
+      {
+        "id": "b1l2-p059",
+        "phrase": "as soon as",
+        "pos": "ph.",
+        "zh": "一……就……",
+        "example_en": "Call me as soon as you arrive.",
+        "example_zh": "你一到就打電話給我。"
+      },
+      {
+        "id": "b1l2-p060",
+        "phrase": "answer the phone",
+        "pos": "ph.",
+        "zh": "接電話",
+        "example_en": "No one answered the phone.",
+        "example_zh": "沒有人接電話。"
+      },
+      {
+        "id": "b1l2-p061",
+        "phrase": "three hours in a row",
+        "pos": "ph.",
+        "zh": "連續三小時",
+        "example_en": "He studied for three hours in a row.",
+        "example_zh": "他連續讀了三小時的書。"
+      },
+      {
+        "id": "b1l2-p062",
+        "phrase": "take a break",
+        "pos": "ph.",
+        "zh": "休息一下",
+        "example_en": "Let’s take a break after this lesson.",
+        "example_zh": "這堂課結束後我們休息一下吧。"
+      },
+      {
+        "id": "b1l2-p063",
+        "phrase": "take a rest",
+        "pos": "ph.",
+        "zh": "休息",
+        "example_en": "You look tired, so take a rest.",
+        "example_zh": "你看起來很累，休息一下吧。"
+      },
+      {
+        "id": "b1l2-p064",
+        "phrase": "give up",
+        "pos": "ph.",
+        "zh": "放棄",
+        "example_en": "Do not give up on your dream.",
+        "example_zh": "不要放棄你的夢想。"
+      },
+      {
+        "id": "b1l2-p065",
+        "phrase": "had better do",
+        "pos": "ph.",
+        "zh": "最好做……",
+        "example_en": "You had better bring a jacket.",
+        "example_zh": "你最好帶件外套。"
+      },
+      {
+        "id": "b1l2-p066",
+        "phrase": "catch the first train",
+        "pos": "ph.",
+        "zh": "趕上第一班火車",
+        "example_en": "We woke up early to catch the first train.",
+        "example_zh": "我們早起去趕第一班火車。"
+      },
+      {
+        "id": "b1l2-p067",
+        "phrase": "do yoga",
+        "pos": "ph.",
+        "zh": "做瑜伽",
+        "example_en": "My aunt does yoga every morning.",
+        "example_zh": "我阿姨每天早上做瑜伽。"
+      },
+      {
+        "id": "b1l2-p068",
+        "phrase": "relieve stress",
+        "pos": "ph.",
+        "zh": "紓解壓力",
+        "example_en": "Listening to music helps me relieve stress.",
+        "example_zh": "聽音樂能幫助我紓解壓力。"
+      },
+      {
+        "id": "b1l2-p069",
+        "phrase": "make a stupid mistake",
+        "pos": "ph.",
+        "zh": "犯愚蠢的錯誤",
+        "example_en": "I made a stupid mistake on the test.",
+        "example_zh": "我在考試中犯了一個愚蠢的錯誤。"
+      },
+      {
+        "id": "b1l2-p070",
+        "phrase": "visit someone’s place",
+        "pos": "ph.",
+        "zh": "拜訪某人的住處",
+        "example_en": "We visited our uncle’s place on Sunday.",
+        "example_zh": "我們星期日去了叔叔家。"
+      },
+      {
+        "id": "b1l2-p071",
+        "phrase": "say hello to",
+        "pos": "ph.",
+        "zh": "向……打招呼",
+        "example_en": "Please say hello to your parents for me.",
+        "example_zh": "請代我向你的父母問好。"
+      },
+      {
+        "id": "b1l2-p072",
+        "phrase": "change the diaper",
+        "pos": "ph.",
+        "zh": "換尿布",
+        "example_en": "Dad learned how to change the diaper.",
+        "example_zh": "爸爸學會了怎麼換尿布。"
+      },
+      {
+        "id": "b1l2-p073",
+        "phrase": "at the same time",
+        "pos": "ph.",
+        "zh": "同時",
+        "example_en": "They arrived at the same time.",
+        "example_zh": "他們同時抵達。"
+      },
+      {
+        "id": "b1l2-p074",
+        "phrase": "draw with crayons",
+        "pos": "ph.",
+        "zh": "用蠟筆畫畫",
+        "example_en": "The children drew with crayons on the paper.",
+        "example_zh": "孩子們用蠟筆在紙上畫畫。"
+      },
+      {
+        "id": "b1l2-p075",
+        "phrase": "take…personally",
+        "pos": "ph.",
+        "zh": "把……視為針對自己",
+        "example_en": "Do not take his comment personally.",
+        "example_zh": "不要把他的評論當成針對你。"
+      },
+      {
+        "id": "b1l2-p076",
+        "phrase": "right now",
+        "pos": "ph.",
+        "zh": "現在；立刻",
+        "example_en": "I am doing my homework right now.",
+        "example_zh": "我現在正在寫作業。"
+      },
+      {
+        "id": "b1l2-p077",
+        "phrase": "focus on one’s studies",
+        "pos": "ph.",
+        "zh": "專心於某人的學業",
+        "example_en": "She wants to focus on her studies this year.",
+        "example_zh": "她今年想專心於學業。"
+      },
+      {
+        "id": "b1l2-p078",
+        "phrase": "for the last time",
+        "pos": "ph.",
+        "zh": "最後一次",
+        "example_en": "I saw him for the last time in June.",
+        "example_zh": "我最後一次見到他是在六月。"
+      },
+      {
+        "id": "b1l2-p079",
+        "phrase": "spend money on",
+        "pos": "ph.",
+        "zh": "把錢花在……上",
+        "example_en": "He spends too much money on games.",
+        "example_zh": "他在遊戲上花太多錢。"
+      },
+      {
+        "id": "b1l2-p080",
+        "phrase": "career woman",
+        "pos": "ph.",
+        "zh": "職業女性",
+        "example_en": "She is a successful career woman.",
+        "example_zh": "她是一位成功的職業女性。"
+      },
+      {
+        "id": "b1l2-p081",
+        "phrase": "balance work and family life",
+        "pos": "ph.",
+        "zh": "平衡工作與家庭生活",
+        "example_en": "It is not easy to balance work and family life.",
+        "example_zh": "平衡工作與家庭生活並不容易。"
+      },
+      {
+        "id": "b1l2-p082",
+        "phrase": "for the first time",
+        "pos": "ph.",
+        "zh": "第一次",
+        "example_en": "I traveled abroad for the first time last year.",
+        "example_zh": "我去年第一次出國旅行。"
+      },
+      {
+        "id": "b1l2-p083",
+        "phrase": "unique flavor",
+        "pos": "ph.",
+        "zh": "獨特的風味",
+        "example_en": "This tea has a unique flavor.",
+        "example_zh": "這種茶有獨特的風味。"
+      },
+      {
+        "id": "b1l2-p084",
+        "phrase": "join the school team",
+        "pos": "ph.",
+        "zh": "加入校隊",
+        "example_en": "Kevin hopes to join the school team.",
+        "example_zh": "凱文希望加入校隊。"
+      },
+      {
+        "id": "b1l2-p085",
+        "phrase": "step out of one’s comfort zone",
+        "pos": "ph.",
+        "zh": "走出某人的舒適圈",
+        "example_en": "Trying new things helps you step out of your comfort zone.",
+        "example_zh": "嘗試新事物能幫助你走出舒適圈。"
+      },
+      {
+        "id": "b1l2-p086",
+        "phrase": "take on new challenges",
+        "pos": "ph.",
+        "zh": "接受新的挑戰",
+        "example_en": "She is ready to take on new challenges.",
+        "example_zh": "她已準備好接受新的挑戰。"
+      },
+      {
+        "id": "b1l2-p087",
+        "phrase": "feel heartbroken",
+        "pos": "ph.",
+        "zh": "感到心碎",
+        "example_en": "He felt heartbroken after the breakup.",
+        "example_zh": "分手後他感到心碎。"
+      },
+      {
+        "id": "b1l2-p088",
+        "phrase": "restate one’s stance",
+        "pos": "ph.",
+        "zh": "重申某人的立場",
+        "example_en": "The speaker restated her stance clearly.",
+        "example_zh": "那位講者清楚地重申了她的立場。"
+      },
+      {
+        "id": "b1l2-p089",
+        "phrase": "be in a relationship",
+        "pos": "ph.",
+        "zh": "正在交往；有戀愛關係",
+        "example_en": "They have been in a relationship for two years.",
+        "example_zh": "他們已經交往兩年了。"
+      },
+      {
+        "id": "b1l2-p090",
+        "phrase": "have a relationship with",
+        "pos": "ph.",
+        "zh": "與……有關係／交往",
+        "example_en": "She has a close relationship with her sister.",
+        "example_zh": "她和妹妹關係親密。"
+      },
+      {
+        "id": "b1l2-p091",
+        "phrase": "on-off relationship",
+        "pos": "ph.",
+        "zh": "分分合合的關係",
+        "example_en": "They had an on-off relationship for years.",
+        "example_zh": "他們多年來一直分分合合。"
+      },
+      {
+        "id": "b1l2-p092",
+        "phrase": "in relation to sth.",
+        "pos": "ph.",
+        "zh": "關於某事；與某事相關",
+        "example_en": "I have a question in relation to the new rule.",
+        "example_zh": "我有一個關於新規定的問題。"
+      },
+      {
+        "id": "b1l2-p093",
+        "phrase": "a relation between A and B",
+        "pos": "ph.",
+        "zh": "A 與 B 之間的關係",
+        "example_en": "Scientists found a relation between sleep and memory.",
+        "example_zh": "科學家發現睡眠與記憶之間的關係。"
+      },
+      {
+        "id": "b1l2-p094",
+        "phrase": "relate A to B",
+        "pos": "ph.",
+        "zh": "把 A 與 B 聯繫起來",
+        "example_en": "The lesson relates history to modern life.",
+        "example_zh": "這堂課把歷史與現代生活聯繫起來。"
+      },
+      {
+        "id": "b1l2-p095",
+        "phrase": "take up a habit",
+        "pos": "ph.",
+        "zh": "開始養成某個習慣",
+        "example_en": "He took up the habit of reading before bed.",
+        "example_zh": "他開始養成睡前閱讀的習慣。"
+      },
+      {
+        "id": "b1l2-p096",
+        "phrase": "iced tea",
+        "pos": "ph.",
+        "zh": "冰茶",
+        "example_en": "I ordered a glass of iced tea.",
+        "example_zh": "我點了一杯冰茶。"
+      },
+      {
+        "id": "b1l2-p097",
+        "phrase": "with satisfaction",
+        "pos": "ph.",
+        "zh": "滿意地",
+        "example_en": "She smiled with satisfaction at her work.",
+        "example_zh": "她滿意地看著自己的作品微笑。"
+      },
+      {
+        "id": "b1l2-p098",
+        "phrase": "inspire sb. with sth.",
+        "pos": "ph.",
+        "zh": "以某事激勵某人",
+        "example_en": "The coach inspired us with his words.",
+        "example_zh": "教練用他的話激勵我們。"
+      },
+      {
+        "id": "b1l2-p099",
+        "phrase": "bravery and strength",
+        "pos": "ph.",
+        "zh": "勇氣與力量",
+        "example_en": "Her story gave us bravery and strength.",
+        "example_zh": "她的故事給了我們勇氣與力量。"
+      },
+      {
+        "id": "b1l2-p100",
+        "phrase": "be inspired by",
+        "pos": "ph.",
+        "zh": "受到……啟發",
+        "example_en": "I was inspired by my art teacher.",
+        "example_zh": "我受到美術老師的啟發。"
+      },
+      {
+        "id": "b1l2-p101",
+        "phrase": "take an art class",
+        "pos": "ph.",
+        "zh": "上美術課",
+        "example_en": "I plan to take an art class this summer.",
+        "example_zh": "我計畫今年夏天去上美術課。"
+      },
+      {
+        "id": "b1l2-p102",
+        "phrase": "draw inspiration from",
+        "pos": "ph.",
+        "zh": "從……汲取靈感",
+        "example_en": "The designer draws inspiration from nature.",
+        "example_zh": "這位設計師從大自然汲取靈感。"
+      },
+      {
+        "id": "b1l2-p103",
+        "phrase": "write poetry",
+        "pos": "ph.",
+        "zh": "寫詩",
+        "example_en": "She likes to write poetry in her free time.",
+        "example_zh": "她喜歡在空閒時寫詩。"
+      },
+      {
+        "id": "b1l2-p104",
+        "phrase": "connect with sb.",
+        "pos": "ph.",
+        "zh": "與某人建立連結",
+        "example_en": "Music helps me connect with other people.",
+        "example_zh": "音樂幫助我與他人建立連結。"
+      },
+      {
+        "id": "b1l2-p105",
+        "phrase": "connect A to B",
+        "pos": "ph.",
+        "zh": "把 A 連接到 B",
+        "example_en": "Connect the printer to the computer.",
+        "example_zh": "把印表機連接到電腦。"
+      },
+      {
+        "id": "b1l2-p106",
+        "phrase": "connect the dots",
+        "pos": "ph.",
+        "zh": "串聯線索；融會貫通",
+        "example_en": "Once we connected the dots, we understood the problem.",
+        "example_zh": "我們把線索串聯起來後，就了解問題了。"
+      },
+      {
+        "id": "b1l2-p107",
+        "phrase": "the connection between A and B",
+        "pos": "ph.",
+        "zh": "A 與 B 之間的關聯",
+        "example_en": "We discussed the connection between exercise and health.",
+        "example_zh": "我們討論了運動與健康之間的關聯。"
+      },
+      {
+        "id": "b1l2-p108",
+        "phrase": "communicate with",
+        "pos": "ph.",
+        "zh": "與……溝通",
+        "example_en": "Parents should communicate with their children.",
+        "example_zh": "父母應該與孩子溝通。"
+      },
+      {
+        "id": "b1l2-p109",
+        "phrase": "all over the world",
+        "pos": "ph.",
+        "zh": "世界各地",
+        "example_en": "People all over the world use smartphones.",
+        "example_zh": "世界各地的人都使用智慧型手機。"
+      },
+      {
+        "id": "b1l2-p110",
+        "phrase": "a means of communication",
+        "pos": "ph.",
+        "zh": "一種溝通方式",
+        "example_en": "Language is an important means of communication.",
+        "example_zh": "語言是一種重要的溝通方式。"
+      },
+      {
+        "id": "b1l2-p111",
+        "phrase": "introduce sb. to sth.",
+        "pos": "ph.",
+        "zh": "使某人初次接觸某事物",
+        "example_en": "My teacher introduced me to classical music.",
+        "example_zh": "老師讓我初次接觸古典音樂。"
+      },
+      {
+        "id": "b1l2-p112",
+        "phrase": "new feature",
+        "pos": "ph.",
+        "zh": "新功能；新特色",
+        "example_en": "The app has a useful new feature.",
+        "example_zh": "這個應用程式有一項實用的新功能。"
+      },
+      {
+        "id": "b1l2-p113",
+        "phrase": "introduce A to B",
+        "pos": "ph.",
+        "zh": "把 A 介紹給 B",
+        "example_en": "Let me introduce my friend Amy to you.",
+        "example_zh": "讓我把我的朋友艾美介紹給你。"
+      },
+      {
+        "id": "b1l2-p114",
+        "phrase": "an introduction to",
+        "pos": "ph.",
+        "zh": "……的入門介紹",
+        "example_en": "This book is an introduction to computer science.",
+        "example_zh": "這本書是電腦科學的入門介紹。"
+      },
+      {
+        "id": "b1l2-p115",
+        "phrase": "throughout the year",
+        "pos": "ph.",
+        "zh": "全年；一整年",
+        "example_en": "The museum holds special events throughout the year.",
+        "example_zh": "這間博物館全年都舉辦特別活動。"
+      },
+      {
+        "id": "b1l2-p116",
+        "phrase": "all through",
+        "pos": "ph.",
+        "zh": "從頭到尾；整整",
+        "example_en": "It rained all through the night.",
+        "example_zh": "雨下了一整夜。"
+      },
+      {
+        "id": "b1l2-p117",
+        "phrase": "send a text message to",
+        "pos": "ph.",
+        "zh": "傳簡訊給……",
+        "example_en": "I sent a text message to my mother.",
+        "example_zh": "我傳了一則簡訊給媽媽。"
+      },
+      {
+        "id": "b1l2-p118",
+        "phrase": "instant messaging",
+        "pos": "ph.",
+        "zh": "即時通訊",
+        "example_en": "Instant messaging makes communication faster.",
+        "example_zh": "即時通訊讓溝通更快速。"
+      },
+      {
+        "id": "b1l2-p119",
+        "phrase": "refresh Facebook Feeds",
+        "pos": "ph.",
+        "zh": "重新整理 Facebook 動態消息",
+        "example_en": "She refreshed her Facebook Feeds during lunch.",
+        "example_zh": "她午餐時重新整理了 Facebook 動態消息。"
+      },
+      {
+        "id": "b1l2-p120",
+        "phrase": "up to date",
+        "pos": "ph.",
+        "zh": "最新的；跟上時代的",
+        "example_en": "Keep your contact information up to date.",
+        "example_zh": "請讓你的聯絡資料保持最新。"
+      },
+      {
+        "id": "b1l2-p121",
+        "phrase": "refresh sb. with",
+        "pos": "ph.",
+        "zh": "以……使某人恢復精神",
+        "example_en": "The short break refreshed us with new energy.",
+        "example_zh": "短暫的休息讓我們重新充滿活力。"
+      },
+      {
+        "id": "b1l2-p122",
+        "phrase": "develop a romantic relationship",
+        "pos": "ph.",
+        "zh": "發展戀愛關係",
+        "example_en": "The two characters develop a romantic relationship.",
+        "example_zh": "這兩個角色發展出戀愛關係。"
+      },
+      {
+        "id": "b1l2-p123",
+        "phrase": "romance novel",
+        "pos": "ph.",
+        "zh": "愛情小說",
+        "example_en": "My aunt enjoys reading romance novels.",
+        "example_zh": "我阿姨喜歡閱讀愛情小說。"
+      },
+      {
+        "id": "b1l2-p124",
+        "phrase": "focus one’s mind on",
+        "pos": "ph.",
+        "zh": "集中某人的心思於……",
+        "example_en": "Focus your mind on the task in front of you.",
+        "example_zh": "把心思集中在眼前的任務上。"
+      },
+      {
+        "id": "b1l2-p125",
+        "phrase": "the main focus",
+        "pos": "ph.",
+        "zh": "主要焦點",
+        "example_en": "Safety is the main focus of the meeting.",
+        "example_zh": "安全是這場會議的主要焦點。"
+      },
+      {
+        "id": "b1l2-p126",
+        "phrase": "totally ignore",
+        "pos": "ph.",
+        "zh": "完全忽略",
+        "example_en": "He totally ignored my warning.",
+        "example_zh": "他完全忽略了我的警告。"
+      },
+      {
+        "id": "b1l2-p127",
+        "phrase": "make a silly face at",
+        "pos": "ph.",
+        "zh": "對……做鬼臉",
+        "example_en": "The child made a silly face at his sister.",
+        "example_zh": "那個孩子對妹妹做了個鬼臉。"
+      },
+      {
+        "id": "b1l2-p128",
+        "phrase": "out of ignorance",
+        "pos": "ph.",
+        "zh": "出於無知",
+        "example_en": "He made that comment out of ignorance.",
+        "example_zh": "他出於無知說了那句話。"
+      },
+      {
+        "id": "b1l2-p129",
+        "phrase": "make jokes about",
+        "pos": "ph.",
+        "zh": "拿……開玩笑",
+        "example_en": "Do not make jokes about other people’s looks.",
+        "example_zh": "不要拿別人的外表開玩笑。"
+      },
+      {
+        "id": "b1l2-p130",
+        "phrase": "draw one’s attention to",
+        "pos": "ph.",
+        "zh": "使某人注意到……",
+        "example_en": "The sign drew our attention to the danger.",
+        "example_zh": "那個標誌使我們注意到危險。"
+      },
+      {
+        "id": "b1l2-p131",
+        "phrase": "attract one’s attention",
+        "pos": "ph.",
+        "zh": "吸引某人的注意",
+        "example_en": "The bright colors attracted my attention.",
+        "example_zh": "鮮豔的顏色吸引了我的注意。"
+      },
+      {
+        "id": "b1l2-p132",
+        "phrase": "deny doing",
+        "pos": "ph.",
+        "zh": "否認做過……",
+        "example_en": "He denied breaking the window.",
+        "example_zh": "他否認打破了窗戶。"
+      },
+      {
+        "id": "b1l2-p133",
+        "phrase": "respond to sb/sth. with",
+        "pos": "ph.",
+        "zh": "以……回應某人／某事",
+        "example_en": "She responded to the news with a smile.",
+        "example_zh": "她以微笑回應那個消息。"
+      },
+      {
+        "id": "b1l2-p134",
+        "phrase": "smiling sticker",
+        "pos": "ph.",
+        "zh": "微笑貼圖",
+        "example_en": "He sent me a smiling sticker.",
+        "example_zh": "他傳給我一張微笑貼圖。"
+      },
+      {
+        "id": "b1l2-p135",
+        "phrase": "work late",
+        "pos": "ph.",
+        "zh": "工作到很晚",
+        "example_en": "My father had to work late yesterday.",
+        "example_zh": "我爸爸昨天必須工作到很晚。"
+      },
+      {
+        "id": "b1l2-p136",
+        "phrase": "make no response to",
+        "pos": "ph.",
+        "zh": "對……沒有回應",
+        "example_en": "She made no response to my question.",
+        "example_zh": "她對我的問題沒有回應。"
+      },
+      {
+        "id": "b1l2-p137",
+        "phrase": "in response to",
+        "pos": "ph.",
+        "zh": "作為對……的回應",
+        "example_en": "The school changed the rule in response to complaints.",
+        "example_zh": "學校為回應抱怨而更改了規定。"
+      },
+      {
+        "id": "b1l2-p138",
+        "phrase": "disappoint sb.",
+        "pos": "ph.",
+        "zh": "使某人失望",
+        "example_en": "I do not want to disappoint my parents.",
+        "example_zh": "我不想讓父母失望。"
+      },
+      {
+        "id": "b1l2-p139",
+        "phrase": "reply to one’s message",
+        "pos": "ph.",
+        "zh": "回覆某人的訊息",
+        "example_en": "Please reply to my message when you are free.",
+        "example_zh": "你有空時請回覆我的訊息。"
+      },
+      {
+        "id": "b1l2-p140",
+        "phrase": "to one’s great disappointment",
+        "pos": "ph.",
+        "zh": "令某人大失所望的是",
+        "example_en": "To my great disappointment, the concert was canceled.",
+        "example_zh": "令我大失所望的是，音樂會取消了。"
+      },
+      {
+        "id": "b1l2-p141",
+        "phrase": "complain about",
+        "pos": "ph.",
+        "zh": "抱怨……",
+        "example_en": "Customers complained about the slow service.",
+        "example_zh": "顧客抱怨服務太慢。"
+      },
+      {
+        "id": "b1l2-p142",
+        "phrase": "personal experience",
+        "pos": "ph.",
+        "zh": "個人經驗",
+        "example_en": "She wrote the story from personal experience.",
+        "example_zh": "她根據個人經驗寫了這個故事。"
+      },
+      {
+        "id": "b1l2-p143",
+        "phrase": "TV commercial",
+        "pos": "ph.",
+        "zh": "電視廣告",
+        "example_en": "I saw the product in a TV commercial.",
+        "example_zh": "我在電視廣告中看到那項產品。"
+      },
+      {
+        "id": "b1l2-p144",
+        "phrase": "one after another",
+        "pos": "ph.",
+        "zh": "一個接一個地",
+        "example_en": "The students entered the room one after another.",
+        "example_zh": "學生們一個接一個走進教室。"
+      },
+      {
+        "id": "b1l2-p145",
+        "phrase": "increase one’s popularity",
+        "pos": "ph.",
+        "zh": "提高某人的受歡迎程度",
+        "example_en": "The song increased the singer’s popularity.",
+        "example_zh": "那首歌提高了這位歌手的知名度。"
+      },
+      {
+        "id": "b1l2-p146",
+        "phrase": "no longer in a relationship with",
+        "pos": "ph.",
+        "zh": "不再與……交往",
+        "example_en": "She is no longer in a relationship with Tom.",
+        "example_zh": "她已不再和湯姆交往。"
+      },
+      {
+        "id": "b1l2-p147",
+        "phrase": "break up",
+        "pos": "ph.",
+        "zh": "分手；結束關係",
+        "example_en": "They decided to break up last month.",
+        "example_zh": "他們上個月決定分手。"
+      },
+      {
+        "id": "b1l2-p148",
+        "phrase": "candlelit dinner",
+        "pos": "ph.",
+        "zh": "燭光晚餐",
+        "example_en": "They enjoyed a candlelit dinner by the sea.",
+        "example_zh": "他們在海邊享用燭光晚餐。"
+      },
+      {
+        "id": "b1l2-p149",
+        "phrase": "propose to sb.",
+        "pos": "ph.",
+        "zh": "向某人求婚",
+        "example_en": "He proposed to her on her birthday.",
+        "example_zh": "他在她生日那天向她求婚。"
+      },
+      {
+        "id": "b1l2-p150",
+        "phrase": "refresh one’s FB page constantly",
+        "pos": "ph.",
+        "zh": "不斷重新整理某人的臉書頁面",
+        "example_en": "He refreshed his FB page constantly for updates.",
+        "example_zh": "他不斷重新整理自己的臉書頁面以查看更新。"
+      },
+      {
+        "id": "b1l2-p151",
+        "phrase": "be addicted to",
+        "pos": "ph.",
+        "zh": "沉迷於……",
+        "example_en": "Some teenagers are addicted to online games.",
+        "example_zh": "有些青少年沉迷於線上遊戲。"
+      },
+      {
+        "id": "b1l2-p152",
+        "phrase": "Lego brick",
+        "pos": "ph.",
+        "zh": "樂高積木",
+        "example_en": "I stepped on a Lego brick.",
+        "example_zh": "我踩到了一塊樂高積木。"
+      },
+      {
+        "id": "b1l2-p153",
+        "phrase": "role model",
+        "pos": "ph.",
+        "zh": "榜樣；典範",
+        "example_en": "My older sister is my role model.",
+        "example_zh": "我的姊姊是我的榜樣。"
+      },
+      {
+        "id": "b1l2-p154",
+        "phrase": "in fact",
+        "pos": "ph.",
+        "zh": "事實上",
+        "example_en": "In fact, I have never been there.",
+        "example_zh": "事實上，我從未去過那裡。"
+      },
+      {
+        "id": "b1l2-p155",
+        "phrase": "the middle of summer",
+        "pos": "ph.",
+        "zh": "盛夏；夏季中旬",
+        "example_en": "The town is crowded in the middle of summer.",
+        "example_zh": "這座城鎮在盛夏時很擁擠。"
+      },
+      {
+        "id": "b1l2-p156",
+        "phrase": "go through the list of winners",
+        "pos": "ph.",
+        "zh": "查看得獎者名單",
+        "example_en": "We went through the list of winners carefully.",
+        "example_zh": "我們仔細查看了得獎者名單。"
+      },
+      {
+        "id": "b1l2-p157",
+        "phrase": "what’s more",
+        "pos": "ph.",
+        "zh": "而且；更重要的是",
+        "example_en": "The hotel is clean, and what’s more, it is affordable.",
+        "example_zh": "這間飯店很乾淨，而且價格實惠。"
+      },
+      {
+        "id": "b1l2-p158",
+        "phrase": "on top of that",
+        "pos": "ph.",
+        "zh": "除此之外；而且",
+        "example_en": "The bus was late, and on top of that, it was crowded.",
+        "example_zh": "公車誤點了，而且還很擁擠。"
+      },
+      {
+        "id": "b1l2-p159",
+        "phrase": "look better in darker colors",
+        "pos": "ph.",
+        "zh": "穿深色看起來更好看",
+        "example_en": "You look better in darker colors.",
+        "example_zh": "你穿深色看起來更好看。"
+      },
+      {
+        "id": "b1l2-p160",
+        "phrase": "get lost in a strange place",
+        "pos": "ph.",
+        "zh": "在陌生的地方迷路",
+        "example_en": "I got lost in a strange place during the trip.",
+        "example_zh": "我旅行時在一個陌生的地方迷路了。"
+      },
+      {
+        "id": "b1l2-p161",
+        "phrase": "go through the novel to the end",
+        "pos": "ph.",
+        "zh": "把小說從頭讀到尾",
+        "example_en": "She went through the novel to the end in one day.",
+        "example_zh": "她一天內把那本小說讀完了。"
+      },
+      {
+        "id": "b1l2-p162",
+        "phrase": "course in computer science",
+        "pos": "ph.",
+        "zh": "電腦科學課程",
+        "example_en": "He is taking a course in computer science.",
+        "example_zh": "他正在修一門電腦科學課程。"
+      },
+      {
+        "id": "b1l2-p163",
+        "phrase": "doze off in class",
+        "pos": "ph.",
+        "zh": "在課堂上打瞌睡",
+        "example_en": "I dozed off in class because I was tired.",
+        "example_zh": "我因為太累而在課堂上打瞌睡。"
+      },
+      {
+        "id": "b1l2-p164",
+        "phrase": "have a bad cold",
+        "pos": "ph.",
+        "zh": "得重感冒",
+        "example_en": "She has a bad cold and needs to rest.",
+        "example_zh": "她得了重感冒，需要休息。"
+      },
+      {
+        "id": "b1l2-p165",
+        "phrase": "put personal information on social media",
+        "pos": "ph.",
+        "zh": "把個人資料放在社群媒體上",
+        "example_en": "Do not put personal information on social media.",
+        "example_zh": "不要把個人資料放在社群媒體上。"
+      },
+      {
+        "id": "b1l2-p166",
+        "phrase": "social networking",
+        "pos": "ph.",
+        "zh": "社群網路；社交網絡",
+        "example_en": "Social networking has changed how people communicate.",
+        "example_zh": "社群網路改變了人們溝通的方式。"
+      },
+      {
+        "id": "b1l2-p167",
+        "phrase": "apologize to sb. for",
+        "pos": "ph.",
+        "zh": "為……向某人道歉",
+        "example_en": "I apologized to my friend for being late.",
+        "example_zh": "我為遲到向朋友道歉。"
+      },
+      {
+        "id": "b1l2-p168",
+        "phrase": "lie to sb.",
+        "pos": "ph.",
+        "zh": "對某人說謊",
+        "example_en": "You should never lie to your parents.",
+        "example_zh": "你不應該對父母說謊。"
+      },
+      {
+        "id": "b1l2-p169",
+        "phrase": "talk to sb. on the phone",
+        "pos": "ph.",
+        "zh": "和某人講電話",
+        "example_en": "I talked to my cousin on the phone last night.",
+        "example_zh": "我昨晚和表哥講電話。"
+      },
+      {
+        "id": "b1l2-p170",
+        "phrase": "prepare for the final exam",
+        "pos": "ph.",
+        "zh": "準備期末考",
+        "example_en": "The students are preparing for the final exam.",
+        "example_zh": "學生們正在準備期末考。"
+      },
+      {
+        "id": "b1l2-p171",
+        "phrase": "break one’s leg",
+        "pos": "ph.",
+        "zh": "摔斷某人的腿",
+        "example_en": "He broke his leg while skiing.",
+        "example_zh": "他滑雪時摔斷了腿。"
+      },
+      {
+        "id": "b1l2-p172",
+        "phrase": "hang out with friends",
+        "pos": "ph.",
+        "zh": "和朋友一起玩",
+        "example_en": "I like to hang out with friends on weekends.",
+        "example_zh": "我喜歡週末和朋友一起玩。"
+      },
+      {
+        "id": "b1l2-p173",
+        "phrase": "release a movie",
+        "pos": "ph.",
+        "zh": "發行／上映一部電影",
+        "example_en": "The studio will release a movie next month.",
+        "example_zh": "那間電影公司下個月會上映一部電影。"
+      },
+      {
+        "id": "b1l2-p174",
+        "phrase": "dream company",
+        "pos": "ph.",
+        "zh": "夢想中的公司",
+        "example_en": "She hopes to work for her dream company.",
+        "example_zh": "她希望進入夢想中的公司工作。"
+      }
+    ]
   },
   "grammar": {
     "points": [
@@ -40,25 +1903,25 @@
         },
         {
           "id": "b1l2-s002",
-          "sentence": "I'm leaving you.",
+          "sentence": "I’m leaving you.",
           "type": "simple",
           "pattern": "S + Vt + O"
         },
         {
           "id": "b1l2-s003",
-          "sentence": "Our relationship has been mostly satisfying, but I'm afraid it's over.",
+          "sentence": "Our relationship has been mostly satisfying, but I’m afraid it’s over.",
           "type": "compound-complex",
           "pattern": "Compound-Complex sentence (with \"but\" + Noun clause)"
         },
         {
           "id": "b1l2-s004",
-          "sentence": "Leaving you really breaks my heart because we've had some great times together.",
+          "sentence": "Leaving you really breaks my heart because we’ve had some great times together.",
           "type": "complex",
           "pattern": "Adverbial clause (because...)"
         },
         {
           "id": "b1l2-s005",
-          "sentence": "When you're around, I am never bored.",
+          "sentence": "When you’re around, I am never bored.",
           "type": "complex",
           "pattern": "Adverbial clause (When...)"
         },
@@ -82,7 +1945,7 @@
         },
         {
           "id": "b1l2-s009",
-          "sentence": "You've introduced me to so much—new music, new games, new knowledge, new friends, and more.",
+          "sentence": "You’ve introduced me to so much—new music, new games, new knowledge, new friends, and more.",
           "type": "simple",
           "pattern": "S + Vt + iO + dO"
         },
@@ -94,7 +1957,7 @@
         },
         {
           "id": "b1l2-s011",
-          "sentence": "When I wake up, you are there to go through my friends' updates on Facebook and Instagram with me.",
+          "sentence": "When I wake up, you are there to go through my friends’ updates on Facebook and Instagram with me.",
           "type": "complex",
           "pattern": "Adverbial clause (When...)"
         },
@@ -106,7 +1969,7 @@
         },
         {
           "id": "b1l2-s013",
-          "sentence": "And when it doesn't show any new messages, I still refresh the screen, just in case I miss something.",
+          "sentence": "And when it doesn’t show any new messages, I still refresh the screen, just in case I miss something.",
           "type": "complex",
           "pattern": "Adverbial clause (when... / in case...)"
         },
@@ -130,19 +1993,19 @@
         },
         {
           "id": "b1l2-s017",
-          "sentence": "My friends try to talk to me, but I don't even reply because I am too busy paying attention to you.",
+          "sentence": "My friends try to talk to me, but I don’t even reply because I am too busy paying attention to you.",
           "type": "compound-complex",
           "pattern": "Compound-Complex sentence (with \"but\" + Adverbial clause)"
         },
         {
           "id": "b1l2-s018",
-          "sentence": "I'm worried that they are going to stop inviting me out!",
+          "sentence": "I’m worried that they are going to stop inviting me out!",
           "type": "complex",
           "pattern": "Noun clause (that...)"
         },
         {
           "id": "b1l2-s019",
-          "sentence": "I can't deny that you are always by my side, and I love it when we play games or respond to messages together.",
+          "sentence": "I can’t deny that you are always by my side, and I love it when we play games or respond to messages together.",
           "type": "compound-complex",
           "pattern": "Compound-Complex sentence (Noun clause + Adverbial clause)"
         },
@@ -154,19 +2017,19 @@
         },
         {
           "id": "b1l2-s021",
-          "sentence": "That's really not a good way to build a relationship with anybody, and my parents are both angry and disappointed with me.",
+          "sentence": "That’s really not a good way to build a relationship with anybody, and my parents are both angry and disappointed with me.",
           "type": "compound",
           "pattern": "Compound sentence (with \"and\")"
         },
         {
           "id": "b1l2-s022",
-          "sentence": "Please don't take any of this personally.",
+          "sentence": "Please don’t take any of this personally.",
           "type": "simple",
           "pattern": "Imperative sentence (S + Vt + O)"
         },
         {
           "id": "b1l2-s023",
-          "sentence": "You're truly wonderful and I'll miss you terribly.",
+          "sentence": "You’re truly wonderful and I’ll miss you terribly.",
           "type": "compound",
           "pattern": "Compound sentence (with \"and\")"
         },
