@@ -56,18 +56,41 @@
   <div class="wrap">
     <div class="loading-msg" id="loadingMsg">彙整所有課程單字中…</div>
 
-    <div id="explorerArea" style="display:none;">
-      <nav class="family-rail" id="familyRail" aria-label="選擇字族"></nav>
-
-      <div class="family-heading">
-        <div>
-          <p class="breadcrumb" style="margin-bottom:2px;">CURRENT FAMILY</p>
-          <h2 id="familyName">—</h2>
-        </div>
-        <p id="familyProgress">—</p>
+    <div id="explorerWrap" style="display:none;">
+      <div class="mode-toggle vocab-mode-switch">
+        <button id="familyModeBtn" class="active">探索字族</button>
+        <button id="tableModeBtn">完整表格</button>
       </div>
 
-      <div class="pos-grid" id="posGrid"></div>
+      <div id="explorerArea">
+        <nav class="family-rail" id="familyRail" aria-label="選擇字族"></nav>
+
+        <div class="family-heading">
+          <div>
+            <p class="breadcrumb" style="margin-bottom:2px;">CURRENT FAMILY</p>
+            <h2 id="familyName">—</h2>
+          </div>
+          <p id="familyProgress">—</p>
+        </div>
+
+        <div class="pos-grid" id="posGrid"></div>
+      </div>
+
+      <div id="tableArea" style="display:none;">
+        <div class="vocab-table-scroll">
+          <table class="vocab-table">
+            <thead>
+              <tr>
+                <th style="width:26%">Verb 動詞</th>
+                <th style="width:26%">Noun 名詞</th>
+                <th style="width:26%">Adjective 形容詞</th>
+                <th style="width:22%">Adverb 副詞</th>
+              </tr>
+            </thead>
+            <tbody id="vocabTableBody"></tbody>
+          </table>
+        </div>
+      </div>
 
       <div class="detail-panel" id="detailPanel">
         <div class="detail-head">
@@ -90,6 +113,8 @@
 <script>
   let ALL_ROWS = [];       // 全部課程的 vocabulary rows，每列已標記 _book/_lesson
   let LESSON_META = [];    // 用來組出篩選選單
+  let CURRENT_FILTERED = [];
+  let vocabMode = "family";
 
   Loader.fetchAllPublishedLessons()
     .then(lessons => {
@@ -108,9 +133,12 @@
         return;
       }
 
-      document.getElementById("explorerArea").style.display = "block";
+      document.getElementById("explorerWrap").style.display = "block";
       buildFilters();
       applyFilter();
+
+      document.getElementById("familyModeBtn").addEventListener("click", () => setVocabMode("family"));
+      document.getElementById("tableModeBtn").addEventListener("click", () => setVocabMode("table"));
     })
     .catch(err => {
       document.getElementById("loadingMsg").className = "error-msg";
@@ -159,13 +187,13 @@
     const bookVal = document.getElementById("bookFilter").value;
     const lessonVal = document.getElementById("lessonFilter").value;
 
-    const filtered = ALL_ROWS.filter(row => {
+    CURRENT_FILTERED = ALL_ROWS.filter(row => {
       if (bookVal && row._book !== bookVal) return false;
       if (lessonVal && row._lesson !== lessonVal) return false;
       return true;
     });
 
-    document.getElementById("resultCount").textContent = `共 ${filtered.length} 個字族`;
+    document.getElementById("resultCount").textContent = `共 ${CURRENT_FILTERED.length} 個字族`;
 
     VocabWidget.render({
       railId: "familyRail",
@@ -173,8 +201,35 @@
       progressId: "familyProgress",
       gridId: "posGrid",
       panelId: "detailPanel",
-      rows: filtered
+      rows: CURRENT_FILTERED
     });
+
+    // 篩選條件改變時，如果目前正在看表格模式，表格內容也要跟著重新渲染
+    if (vocabMode === "table") {
+      VocabWidget.renderTable({
+        tableBodyId: "vocabTableBody",
+        panelId: "detailPanel",
+        rows: CURRENT_FILTERED
+      });
+    }
+  }
+
+  function setVocabMode(mode) {
+    vocabMode = mode;
+    document.getElementById("familyModeBtn").classList.toggle("active", mode === "family");
+    document.getElementById("tableModeBtn").classList.toggle("active", mode === "table");
+    document.getElementById("explorerArea").style.display = mode === "family" ? "block" : "none";
+    document.getElementById("tableArea").style.display = mode === "table" ? "block" : "none";
+
+    if (mode === "table") {
+      // 跨課總覽的篩選結果可能常變動，表格模式每次切換過去都重新渲染，
+      // 確保跟目前篩選結果一致（不像單課頁面資料固定，可以只渲染一次）
+      VocabWidget.renderTable({
+        tableBodyId: "vocabTableBody",
+        panelId: "detailPanel",
+        rows: CURRENT_FILTERED
+      });
+    }
   }
 </script>
 </body>

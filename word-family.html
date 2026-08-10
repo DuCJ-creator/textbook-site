@@ -37,18 +37,41 @@
   <div class="wrap">
     <div class="loading-msg" id="loadingMsg">單字資料載入中…</div>
 
-    <div id="explorerArea" style="display:none;">
-      <nav class="family-rail" id="familyRail" aria-label="選擇字族"></nav>
-
-      <div class="family-heading">
-        <div>
-          <p class="breadcrumb" style="margin-bottom:2px;">CURRENT FAMILY</p>
-          <h2 id="familyName">—</h2>
-        </div>
-        <p id="familyProgress">—</p>
+    <div id="explorerWrap" style="display:none;">
+      <div class="mode-toggle vocab-mode-switch">
+        <button id="familyModeBtn" class="active">探索字族</button>
+        <button id="tableModeBtn">完整表格</button>
       </div>
 
-      <div class="pos-grid" id="posGrid"></div>
+      <div id="explorerArea">
+        <nav class="family-rail" id="familyRail" aria-label="選擇字族"></nav>
+
+        <div class="family-heading">
+          <div>
+            <p class="breadcrumb" style="margin-bottom:2px;">CURRENT FAMILY</p>
+            <h2 id="familyName">—</h2>
+          </div>
+          <p id="familyProgress">—</p>
+        </div>
+
+        <div class="pos-grid" id="posGrid"></div>
+      </div>
+
+      <div id="tableArea" style="display:none;">
+        <div class="vocab-table-scroll">
+          <table class="vocab-table">
+            <thead>
+              <tr>
+                <th style="width:26%">Verb 動詞</th>
+                <th style="width:26%">Noun 名詞</th>
+                <th style="width:26%">Adjective 形容詞</th>
+                <th style="width:22%">Adverb 副詞</th>
+              </tr>
+            </thead>
+            <tbody id="vocabTableBody"></tbody>
+          </table>
+        </div>
+      </div>
 
       <div class="detail-panel" id="detailPanel">
         <div class="detail-head">
@@ -74,6 +97,8 @@
 
   document.getElementById("lessonBackLink").href = `lesson.html?book=${bookId}&lesson=${lessonId}`;
 
+  let CURRENT_ROWS = [];
+
   Loader.fetchLessonData(bookId, lessonId)
     .then(data => {
       document.getElementById("loadingMsg").style.display = "none";
@@ -83,6 +108,7 @@
         `Word Family — ${data.book} ${data.lesson}${data.title ? ": " + data.title : ""}`;
 
       const rows = data.vocabulary?.rows || [];
+      CURRENT_ROWS = rows;
       if (!rows.length) {
         document.getElementById("loadingMsg").className = "empty-state";
         document.getElementById("loadingMsg").style.display = "block";
@@ -90,7 +116,7 @@
         return;
       }
 
-      document.getElementById("explorerArea").style.display = "block";
+      document.getElementById("explorerWrap").style.display = "block";
       VocabWidget.render({
         railId: "familyRail",
         nameId: "familyName",
@@ -100,12 +126,34 @@
         countId: "wordCount",
         rows: rows
       });
+
+      document.getElementById("familyModeBtn").addEventListener("click", () => setVocabMode("family"));
+      document.getElementById("tableModeBtn").addEventListener("click", () => setVocabMode("table"));
     })
     .catch(err => {
       document.getElementById("loadingMsg").className = "error-msg";
       document.getElementById("loadingMsg").textContent =
         "資料載入失敗：" + err.message + "（請確認此頁面透過本機伺服器或 GitHub Pages 開啟）";
     });
+
+  let tableRendered = false;
+
+  function setVocabMode(mode) {
+    document.getElementById("familyModeBtn").classList.toggle("active", mode === "family");
+    document.getElementById("tableModeBtn").classList.toggle("active", mode === "table");
+    document.getElementById("explorerArea").style.display = mode === "family" ? "block" : "none";
+    document.getElementById("tableArea").style.display = mode === "table" ? "block" : "none";
+
+    if (mode === "table" && !tableRendered) {
+      // 表格只在第一次切換過去時渲染，之後重複切換不用重新產生 DOM
+      VocabWidget.renderTable({
+        tableBodyId: "vocabTableBody",
+        panelId: "detailPanel",
+        rows: CURRENT_ROWS
+      });
+      tableRendered = true;
+    }
+  }
 </script>
 </body>
 </html>
