@@ -180,6 +180,30 @@ section.part.active { display: block; }
   border: 1px dashed var(--paper-line); border-radius: 13px; font-size: 0.85rem;
 }
 
+/* ===================== Vocabulary widget: family/table mode switcher ===================== */
+.vocab-mode-switch { margin-bottom: 16px; }
+.vocab-table-scroll { overflow-x: auto; border-radius: var(--radius); border: 1px solid var(--paper-line); background: var(--card); box-shadow: var(--shadow); }
+table.vocab-table { border-collapse: collapse; width: 100%; min-width: 640px; }
+.vocab-table th {
+  font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700;
+  color: #fff; background: var(--accent); padding: 12px 14px; text-align: left;
+}
+.vocab-table th:first-child { border-radius: var(--radius) 0 0 0; }
+.vocab-table th:last-child { border-radius: 0 var(--radius) 0 0; }
+.vocab-table td { border-bottom: 1px solid var(--paper-line); border-right: 1px solid var(--paper-line); vertical-align: top; padding: 6px; }
+.vocab-table td:last-child { border-right: none; }
+.vocab-table tr:last-child td { border-bottom: none; }
+.table-word-btn {
+  display: block; width: 100%; padding: 8px 10px; margin-bottom: 4px; text-align: left;
+  border: 1px solid transparent; border-radius: 10px; background: transparent; cursor: pointer;
+  transition: background .12s ease, border-color .12s ease;
+}
+.table-word-btn:last-child { margin-bottom: 0; }
+.table-word-btn:hover { background: var(--accent-soft); }
+.table-word-btn.active { border-color: var(--accent); background: var(--accent-soft); }
+.table-word-btn strong { font-family: var(--serif); font-size: 0.95rem; font-weight: 700; color: var(--ink); }
+.table-cell-empty { display: block; padding: 8px 10px; color: #cfc6b3; }
+
 /* ===================== Vocabulary widget: detail panel ===================== */
 .detail-panel {
   margin-top: 16px; border: 1.5px solid var(--ink); border-radius: 10px; background: var(--card);
@@ -270,8 +294,9 @@ section.part.active { display: block; }
 
 .sentence-pool {
   display: flex; flex-wrap: wrap; gap: 10px; padding: 16px; margin-bottom: 16px;
-  min-height: 50px;
+  min-height: 50px; transition: border-color .12s ease, background .12s ease;
 }
+.sentence-pool.dragover { border-color: var(--accent) !important; background: var(--gold-soft); }
 .sentence-chip {
   position: relative;
   font-family: var(--serif); font-size: 0.88rem; line-height: 1.4;
