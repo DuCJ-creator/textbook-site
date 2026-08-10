@@ -4,10 +4,1656 @@
   "title": "",
   "status": "published",
   "vocabulary": {
-    "rows": []
+    "rows": [
+      {
+        "id": "b1l3-v01",
+        "verb": [
+          {
+            "en": "wonder",
+            "zh": "想知道；感到疑惑",
+            "example": "I wonder why the sky changes color at sunset."
+          }
+        ],
+        "noun": [
+          {
+            "en": "wonder",
+            "zh": "驚奇；奇觀；奇蹟",
+            "example": "The child stared at the stars in wonder."
+          }
+        ],
+        "adj": [
+          {
+            "en": "wonderful",
+            "zh": "美好的；精彩的；令人驚嘆的",
+            "example": "We had a wonderful time at the beach."
+          }
+        ],
+        "adv": [
+          {
+            "en": "wonderfully",
+            "zh": "非常好地；精彩地",
+            "example": "The musicians played wonderfully together."
+          }
+        ]
+      },
+      {
+        "id": "b1l3-v02",
+        "verb": [
+          {
+            "en": "amaze",
+            "zh": "使驚奇；使驚訝",
+            "example": "Her ability to remember names amazes me."
+          }
+        ],
+        "noun": [
+          {
+            "en": "amazement",
+            "zh": "驚奇；驚訝",
+            "example": "To our amazement, the little boat survived the storm."
+          }
+        ],
+        "adj": [
+          {
+            "en": "amazing",
+            "zh": "令人驚奇的；很棒的",
+            "example": "The view from the mountain was amazing."
+          },
+          {
+            "en": "amazed",
+            "zh": "感到驚訝的",
+            "example": "I was amazed by how quickly she learned."
+          }
+        ],
+        "adv": [
+          {
+            "en": "amazingly",
+            "zh": "令人驚訝地；驚人地",
+            "example": "Amazingly, no one was injured in the accident."
+          }
+        ]
+      },
+      {
+        "id": "b1l3-v03",
+        "verb": [
+          {
+            "en": "average",
+            "zh": "平均為；求平均值",
+            "example": "The team averaged three goals per game last season."
+          }
+        ],
+        "noun": [
+          {
+            "en": "average",
+            "zh": "平均數；平均水準",
+            "example": "The class average was eighty-two points."
+          }
+        ],
+        "adj": [
+          {
+            "en": "average",
+            "zh": "平均的；普通的；一般的",
+            "example": "The average temperature in July is quite high."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l3-v04",
+        "verb": [
+          {
+            "en": "nap",
+            "zh": "小睡；打盹",
+            "example": "I usually nap for twenty minutes after lunch."
+          }
+        ],
+        "noun": [
+          {
+            "en": "nap",
+            "zh": "小睡；午睡",
+            "example": "A short nap helped me feel more alert."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b1l3-v05",
+        "verb": [
+          {
+            "en": "float",
+            "zh": "漂浮；浮動",
+            "example": "A few leaves floated on the surface of the pond."
+          }
+        ],
+        "noun": [
+          {
+            "en": "float",
+            "zh": "浮板；浮標；花車",
+            "example": "The festival parade included a colorful dragon float."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b1l3-v06",
+        "verb": [
+          {
+            "en": "avoid",
+            "zh": "避免；避開",
+            "example": "Try to avoid using your phone while driving."
+          }
+        ],
+        "noun": [
+          {
+            "en": "avoidance",
+            "zh": "避免；迴避",
+            "example": "Careful planning can help with the avoidance of delays."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b1l3-v07",
+        "verb": [
+          {
+            "en": "breathe",
+            "zh": "呼吸",
+            "example": "Breathe slowly and relax your shoulders."
+          }
+        ],
+        "noun": [
+          {
+            "en": "breath",
+            "zh": "呼吸；一口氣",
+            "example": "Take a deep breath before you begin."
+          }
+        ],
+        "adj": [
+          {
+            "en": "breathless",
+            "zh": "喘不過氣的；屏息的",
+            "example": "We were breathless after running up the stairs."
+          },
+          {
+            "en": "breathtaking",
+            "zh": "令人屏息的；壯觀的",
+            "example": "The waterfall was absolutely breathtaking."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l3-v08",
+        "verb": [
+          {
+            "en": "wake",
+            "zh": "醒來；喚醒",
+            "example": "I usually wake at six in the morning."
+          },
+          {
+            "en": "awake",
+            "zh": "喚醒；使覺醒",
+            "example": "The loud noise awoke everyone in the house."
+          },
+          {
+            "en": "awaken",
+            "zh": "喚醒；使意識到",
+            "example": "The documentary awakened public interest in the issue."
+          }
+        ],
+        "noun": [],
+        "adj": [
+          {
+            "en": "awake",
+            "zh": "醒著的；警覺的",
+            "example": "I was still awake at midnight."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l3-v09",
+        "verb": [
+          {
+            "en": "impress",
+            "zh": "使留下深刻印象；使欽佩",
+            "example": "Her confidence impressed the interviewers."
+          }
+        ],
+        "noun": [
+          {
+            "en": "impression",
+            "zh": "印象；感想；壓痕",
+            "example": "My first impression of the city was very positive."
+          },
+          {
+            "en": "impressionism",
+            "zh": "印象主義；印象派",
+            "example": "Impressionism changed the way many artists used light and color."
+          },
+          {
+            "en": "impressionist",
+            "zh": "印象派畫家；印象主義者",
+            "example": "Monet was a leading French impressionist."
+          }
+        ],
+        "adj": [
+          {
+            "en": "impressive",
+            "zh": "令人印象深刻的；令人欽佩的",
+            "example": "The students gave an impressive performance."
+          },
+          {
+            "en": "impressionistic",
+            "zh": "印象派的；重整體印象而非細節的",
+            "example": "The novel gives an impressionistic picture of city life."
+          }
+        ],
+        "adv": [
+          {
+            "en": "impressively",
+            "zh": "令人印象深刻地；出色地",
+            "example": "The new player performed impressively in her first match."
+          },
+          {
+            "en": "impressionistically",
+            "zh": "以印象派手法；著重整體印象地",
+            "example": "The landscape was painted impressionistically with loose brushstrokes."
+          }
+        ]
+      },
+      {
+        "id": "b1l3-v10",
+        "verb": [
+          {
+            "en": "distance",
+            "zh": "使疏遠；與……保持距離",
+            "example": "She distanced herself from the argument."
+          }
+        ],
+        "noun": [
+          {
+            "en": "distance",
+            "zh": "距離；遠方；差距",
+            "example": "The station is within walking distance of the hotel."
+          }
+        ],
+        "adj": [
+          {
+            "en": "distant",
+            "zh": "遙遠的；疏遠的；久遠的",
+            "example": "We could see a distant island on the horizon."
+          }
+        ],
+        "adv": [
+          {
+            "en": "distantly",
+            "zh": "在遠處；冷淡地",
+            "example": "A bell rang distantly across the valley."
+          }
+        ]
+      },
+      {
+        "id": "b1l3-v11",
+        "verb": [
+          {
+            "en": "journey",
+            "zh": "旅行；跋涉",
+            "example": "They journeyed across the desert by camel."
+          }
+        ],
+        "noun": [
+          {
+            "en": "journey",
+            "zh": "旅程；旅行；歷程",
+            "example": "The train journey took nearly five hours."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b1l3-v12",
+        "verb": [
+          {
+            "en": "fly",
+            "zh": "飛；駕駛飛機；搭飛機",
+            "example": "We will fly to Tokyo tomorrow morning."
+          }
+        ],
+        "noun": [
+          {
+            "en": "flight",
+            "zh": "飛行；航班；逃離",
+            "example": "Our flight was delayed by heavy rain."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b1l3-v13",
+        "verb": [
+          {
+            "en": "vary",
+            "zh": "變化；相異；使多樣化",
+            "example": "Prices vary according to the season."
+          }
+        ],
+        "noun": [
+          {
+            "en": "variety",
+            "zh": "多樣性；種類",
+            "example": "The market sells a wide variety of fresh fruit."
+          }
+        ],
+        "adj": [
+          {
+            "en": "various",
+            "zh": "各種不同的；多方面的",
+            "example": "Students discussed the issue from various viewpoints."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l3-v14",
+        "verb": [
+          {
+            "en": "create",
+            "zh": "創造；建立；製作",
+            "example": "The students created a short video for the project."
+          }
+        ],
+        "noun": [
+          {
+            "en": "creature",
+            "zh": "生物；動物；人",
+            "example": "The deep sea is home to many unusual creatures."
+          },
+          {
+            "en": "creativity",
+            "zh": "創造力；創意",
+            "example": "The activity encourages imagination and creativity."
+          }
+        ],
+        "adj": [
+          {
+            "en": "creative",
+            "zh": "有創意的；創造性的",
+            "example": "She found a creative solution to the problem."
+          }
+        ],
+        "adv": [
+          {
+            "en": "creatively",
+            "zh": "有創意地；創造性地",
+            "example": "The team used recycled materials creatively."
+          }
+        ]
+      },
+      {
+        "id": "b1l3-v15",
+        "verb": [],
+        "noun": [
+          {
+            "en": "expert",
+            "zh": "專家；行家",
+            "example": "We asked a computer expert for advice."
+          },
+          {
+            "en": "expertise",
+            "zh": "專業知識；專門技能",
+            "example": "Her expertise in design helped the project succeed."
+          }
+        ],
+        "adj": [
+          {
+            "en": "expert",
+            "zh": "熟練的；專業的",
+            "example": "The injured climber needed expert medical care."
+          }
+        ],
+        "adv": [
+          {
+            "en": "expertly",
+            "zh": "熟練地；專業地",
+            "example": "The chef expertly prepared the delicate fish."
+          }
+        ]
+      },
+      {
+        "id": "b1l3-v16",
+        "verb": [
+          {
+            "en": "survive",
+            "zh": "生存；倖存；挺過",
+            "example": "Few plants can survive in such a dry climate."
+          }
+        ],
+        "noun": [
+          {
+            "en": "survival",
+            "zh": "生存；倖存；存活物",
+            "example": "Clean water is essential for survival."
+          }
+        ],
+        "adj": [
+          {
+            "en": "surviving",
+            "zh": "仍然存在的；倖存的",
+            "example": "The surviving passengers were taken to a hospital."
+          }
+        ],
+        "adv": []
+      }
+    ]
   },
   "phrases": {
-    "items": []
+    "items": [
+      {
+        "id": "b1l3-p001",
+        "phrase": "in fact",
+        "pos": "ph.",
+        "zh": "事實上",
+        "example_en": "In fact, this is my first time here.",
+        "example_zh": "事實上，這是我第一次來這裡。"
+      },
+      {
+        "id": "b1l3-p002",
+        "phrase": "on average",
+        "pos": "ph.",
+        "zh": "平均而言",
+        "example_en": "On average, I exercise three times a week.",
+        "example_zh": "平均而言，我每週運動三次。"
+      },
+      {
+        "id": "b1l3-p003",
+        "phrase": "do one’s best",
+        "pos": "ph.",
+        "zh": "盡某人最大的努力",
+        "example_en": "I will do my best in the competition.",
+        "example_zh": "我會在比賽中盡最大的努力。"
+      },
+      {
+        "id": "b1l3-p004",
+        "phrase": "scuba diving",
+        "pos": "ph.",
+        "zh": "水肺潛水",
+        "example_en": "We went scuba diving near the island.",
+        "example_zh": "我們在島嶼附近進行水肺潛水。"
+      },
+      {
+        "id": "b1l3-p005",
+        "phrase": "give …a try",
+        "pos": "ph.",
+        "zh": "試試……",
+        "example_en": "You should give scuba diving a try.",
+        "example_zh": "你應該試試看水肺潛水。"
+      },
+      {
+        "id": "b1l3-p006",
+        "phrase": "some of the",
+        "pos": "ph.",
+        "zh": "其中一些……",
+        "example_en": "Some of the students joined the club.",
+        "example_zh": "其中一些學生加入了社團。"
+      },
+      {
+        "id": "b1l3-p007",
+        "phrase": "go on a field trip",
+        "pos": "ph.",
+        "zh": "去校外教學",
+        "example_en": "Our class will go on a field trip tomorrow.",
+        "example_zh": "我們班明天要去校外教學。"
+      },
+      {
+        "id": "b1l3-p008",
+        "phrase": "following day",
+        "pos": "ph.",
+        "zh": "隔天；次日",
+        "example_en": "We returned home the following day.",
+        "example_zh": "我們隔天回到家。"
+      },
+      {
+        "id": "b1l3-p009",
+        "phrase": "operate a machine",
+        "pos": "ph.",
+        "zh": "操作機器",
+        "example_en": "Only trained workers can operate this machine.",
+        "example_zh": "只有受過訓練的員工能操作這部機器。"
+      },
+      {
+        "id": "b1l3-p010",
+        "phrase": "as a matter of fact",
+        "pos": "ph.",
+        "zh": "事實上",
+        "example_en": "As a matter of fact, I have met her before.",
+        "example_zh": "事實上，我以前見過她。"
+      },
+      {
+        "id": "b1l3-p011",
+        "phrase": "participate in a mission",
+        "pos": "ph.",
+        "zh": "參與任務",
+        "example_en": "She hopes to participate in a space mission.",
+        "example_zh": "她希望參與太空任務。"
+      },
+      {
+        "id": "b1l3-p012",
+        "phrase": "space mission",
+        "pos": "ph.",
+        "zh": "太空任務",
+        "example_en": "The space mission lasted six months.",
+        "example_zh": "這項太空任務持續了六個月。"
+      },
+      {
+        "id": "b1l3-p013",
+        "phrase": "main character",
+        "pos": "ph.",
+        "zh": "主角",
+        "example_en": "The main character learns an important lesson.",
+        "example_zh": "主角學到了重要的一課。"
+      },
+      {
+        "id": "b1l3-p014",
+        "phrase": "sand pit",
+        "pos": "ph.",
+        "zh": "沙坑",
+        "example_en": "The children played in the sand pit.",
+        "example_zh": "孩子們在沙坑裡玩。"
+      },
+      {
+        "id": "b1l3-p015",
+        "phrase": "none of my business",
+        "pos": "ph.",
+        "zh": "不關我的事",
+        "example_en": "Their argument is none of my business.",
+        "example_zh": "他們的爭執不關我的事。"
+      },
+      {
+        "id": "b1l3-p016",
+        "phrase": "historic city",
+        "pos": "ph.",
+        "zh": "歷史名城",
+        "example_en": "We spent two days exploring the historic city.",
+        "example_zh": "我們花了兩天探索這座歷史名城。"
+      },
+      {
+        "id": "b1l3-p017",
+        "phrase": "immerse oneself in",
+        "pos": "ph.",
+        "zh": "使自己沉浸於……",
+        "example_en": "She immersed herself in the local culture.",
+        "example_zh": "她讓自己沉浸在當地文化中。"
+      },
+      {
+        "id": "b1l3-p018",
+        "phrase": "diverse cultures",
+        "pos": "ph.",
+        "zh": "多元文化",
+        "example_en": "The festival celebrates diverse cultures.",
+        "example_zh": "這個節慶展現多元文化。"
+      },
+      {
+        "id": "b1l3-p019",
+        "phrase": "explore new places",
+        "pos": "ph.",
+        "zh": "探索新地方",
+        "example_en": "Traveling allows us to explore new places.",
+        "example_zh": "旅行讓我們能探索新的地方。"
+      },
+      {
+        "id": "b1l3-p020",
+        "phrase": "enrich one’s life",
+        "pos": "ph.",
+        "zh": "豐富某人的生活",
+        "example_en": "Reading can enrich your life.",
+        "example_zh": "閱讀可以豐富你的生活。"
+      },
+      {
+        "id": "b1l3-p021",
+        "phrase": "downtown area",
+        "pos": "ph.",
+        "zh": "市中心地區",
+        "example_en": "The downtown area is busy at night.",
+        "example_zh": "市中心地區晚上很熱鬧。"
+      },
+      {
+        "id": "b1l3-p022",
+        "phrase": "bustling market",
+        "pos": "ph.",
+        "zh": "熙來攘往的市場",
+        "example_en": "We bought snacks at the bustling market.",
+        "example_zh": "我們在熱鬧的市場買了點心。"
+      },
+      {
+        "id": "b1l3-p023",
+        "phrase": "fresh produce",
+        "pos": "ph.",
+        "zh": "新鮮農產品",
+        "example_en": "This store sells fresh produce from local farms.",
+        "example_zh": "這家商店販售當地農場的新鮮農產品。"
+      },
+      {
+        "id": "b1l3-p024",
+        "phrase": "float on one’s back",
+        "pos": "ph.",
+        "zh": "仰躺漂浮",
+        "example_en": "She learned to float on her back.",
+        "example_zh": "她學會了仰躺漂浮。"
+      },
+      {
+        "id": "b1l3-p025",
+        "phrase": "hold hands",
+        "pos": "ph.",
+        "zh": "牽手",
+        "example_en": "The children held hands while crossing the street.",
+        "example_zh": "孩子們過馬路時牽著手。"
+      },
+      {
+        "id": "b1l3-p026",
+        "phrase": "avoid doing",
+        "pos": "ph.",
+        "zh": "避免做……",
+        "example_en": "Try to avoid using your phone while walking.",
+        "example_zh": "走路時盡量避免使用手機。"
+      },
+      {
+        "id": "b1l3-p027",
+        "phrase": "hold on to each other",
+        "pos": "ph.",
+        "zh": "彼此緊握",
+        "example_en": "They held on to each other in the strong wind.",
+        "example_zh": "他們在強風中彼此緊握。"
+      },
+      {
+        "id": "b1l3-p028",
+        "phrase": "in order to",
+        "pos": "ph.",
+        "zh": "為了……",
+        "example_en": "We left early in order to catch the train.",
+        "example_zh": "我們提早出門以便趕上火車。"
+      },
+      {
+        "id": "b1l3-p029",
+        "phrase": "become familiar with",
+        "pos": "ph.",
+        "zh": "熟悉……",
+        "example_en": "You will soon become familiar with the new system.",
+        "example_zh": "你很快就會熟悉新系統。"
+      },
+      {
+        "id": "b1l3-p030",
+        "phrase": "show…around",
+        "pos": "ph.",
+        "zh": "帶……四處參觀",
+        "example_en": "I will show you around the school.",
+        "example_zh": "我會帶你參觀學校。"
+      },
+      {
+        "id": "b1l3-p031",
+        "phrase": "advanced equipment",
+        "pos": "ph.",
+        "zh": "先進設備",
+        "example_en": "The hospital uses advanced equipment.",
+        "example_zh": "這家醫院使用先進設備。"
+      },
+      {
+        "id": "b1l3-p032",
+        "phrase": "at a time",
+        "pos": "ph.",
+        "zh": "一次；每次",
+        "example_en": "Please carry two boxes at a time.",
+        "example_zh": "請一次搬兩個箱子。"
+      },
+      {
+        "id": "b1l3-p033",
+        "phrase": "look out for predators",
+        "pos": "ph.",
+        "zh": "提防掠食者",
+        "example_en": "Small animals must look out for predators.",
+        "example_zh": "小動物必須提防掠食者。"
+      },
+      {
+        "id": "b1l3-p034",
+        "phrase": "one…the other",
+        "pos": "ph.",
+        "zh": "一個……另一個……",
+        "example_en": "I have two bags; one is blue and the other is red.",
+        "example_zh": "我有兩個袋子，一個是藍色，另一個是紅色。"
+      },
+      {
+        "id": "b1l3-p035",
+        "phrase": "stay awake",
+        "pos": "ph.",
+        "zh": "保持清醒",
+        "example_en": "I drank some tea to stay awake.",
+        "example_zh": "我喝了一些茶來保持清醒。"
+      },
+      {
+        "id": "b1l3-p036",
+        "phrase": "on the lookout for danger",
+        "pos": "ph.",
+        "zh": "警戒危險",
+        "example_en": "The guards are always on the lookout for danger.",
+        "example_zh": "守衛總是警戒著危險。"
+      },
+      {
+        "id": "b1l3-p037",
+        "phrase": "as soon as possible",
+        "pos": "ph.",
+        "zh": "儘快",
+        "example_en": "Please call me back as soon as possible.",
+        "example_zh": "請儘快回電給我。"
+      },
+      {
+        "id": "b1l3-p038",
+        "phrase": "handle a problem",
+        "pos": "ph.",
+        "zh": "處理問題",
+        "example_en": "She handled the problem calmly.",
+        "example_zh": "她冷靜地處理了問題。"
+      },
+      {
+        "id": "b1l3-p039",
+        "phrase": "deal with a problem",
+        "pos": "ph.",
+        "zh": "處理問題",
+        "example_en": "We need to deal with this problem today.",
+        "example_zh": "我們今天需要處理這個問題。"
+      },
+      {
+        "id": "b1l3-p040",
+        "phrase": "one by one",
+        "pos": "ph.",
+        "zh": "一個接一個地",
+        "example_en": "The students entered the room one by one.",
+        "example_zh": "學生們一個接一個地進入教室。"
+      },
+      {
+        "id": "b1l3-p041",
+        "phrase": "urgent case",
+        "pos": "ph.",
+        "zh": "緊急案件；緊急情況",
+        "example_en": "The doctor had to handle an urgent case.",
+        "example_zh": "醫生必須處理一個緊急病例。"
+      },
+      {
+        "id": "b1l3-p042",
+        "phrase": "Western pop music",
+        "pos": "ph.",
+        "zh": "西洋流行音樂",
+        "example_en": "My sister enjoys Western pop music.",
+        "example_zh": "我妹妹喜歡西洋流行音樂。"
+      },
+      {
+        "id": "b1l3-p043",
+        "phrase": "stay healthy",
+        "pos": "ph.",
+        "zh": "保持健康",
+        "example_en": "Eating well helps you stay healthy.",
+        "example_zh": "均衡飲食有助於保持健康。"
+      },
+      {
+        "id": "b1l3-p044",
+        "phrase": "take a long break",
+        "pos": "ph.",
+        "zh": "休息很長一段時間",
+        "example_en": "After the project, we took a long break.",
+        "example_zh": "專案結束後，我們休息了很長一段時間。"
+      },
+      {
+        "id": "b1l3-p045",
+        "phrase": "customer complaint",
+        "pos": "ph.",
+        "zh": "顧客投訴",
+        "example_en": "The manager responded to the customer complaint.",
+        "example_zh": "經理回應了顧客的投訴。"
+      },
+      {
+        "id": "b1l3-p046",
+        "phrase": "stay energetic",
+        "pos": "ph.",
+        "zh": "保持活力",
+        "example_en": "Regular exercise helps me stay energetic.",
+        "example_zh": "規律運動幫助我保持活力。"
+      },
+      {
+        "id": "b1l3-p047",
+        "phrase": "stay overnight",
+        "pos": "ph.",
+        "zh": "過夜",
+        "example_en": "We stayed overnight at a mountain cabin.",
+        "example_zh": "我們在山中小屋過夜。"
+      },
+      {
+        "id": "b1l3-p048",
+        "phrase": "in the wilderness",
+        "pos": "ph.",
+        "zh": "在荒野中",
+        "example_en": "Few people can survive alone in the wilderness.",
+        "example_zh": "很少有人能獨自在荒野中生存。"
+      },
+      {
+        "id": "b1l3-p049",
+        "phrase": "try another route",
+        "pos": "ph.",
+        "zh": "嘗試另一條路線",
+        "example_en": "The road is closed, so let’s try another route.",
+        "example_zh": "道路封閉了，所以我們走另一條路線吧。"
+      },
+      {
+        "id": "b1l3-p050",
+        "phrase": "the next day",
+        "pos": "ph.",
+        "zh": "隔天；第二天",
+        "example_en": "The next day, the weather became sunny.",
+        "example_zh": "隔天天氣轉晴了。"
+      },
+      {
+        "id": "b1l3-p051",
+        "phrase": "migratory bird",
+        "pos": "ph.",
+        "zh": "候鳥",
+        "example_en": "The swallow is a migratory bird.",
+        "example_zh": "燕子是一種候鳥。"
+      },
+      {
+        "id": "b1l3-p052",
+        "phrase": "for example",
+        "pos": "ph.",
+        "zh": "例如",
+        "example_en": "Some fruits, for example oranges, are rich in vitamin C.",
+        "example_zh": "有些水果，例如柳橙，富含維生素 C。"
+      },
+      {
+        "id": "b1l3-p053",
+        "phrase": "keep doing",
+        "pos": "ph.",
+        "zh": "持續做……",
+        "example_en": "Keep practicing and you will improve.",
+        "example_zh": "持續練習，你就會進步。"
+      },
+      {
+        "id": "b1l3-p054",
+        "phrase": "over a great distance",
+        "pos": "ph.",
+        "zh": "跨越很長的距離",
+        "example_en": "Whales can communicate over a great distance.",
+        "example_zh": "鯨魚能跨越很長的距離溝通。"
+      },
+      {
+        "id": "b1l3-p055",
+        "phrase": "to and from",
+        "pos": "ph.",
+        "zh": "往返",
+        "example_en": "Buses carry students to and from school.",
+        "example_zh": "公車接送學生往返學校。"
+      },
+      {
+        "id": "b1l3-p056",
+        "phrase": "along the way",
+        "pos": "ph.",
+        "zh": "沿途；過程中",
+        "example_en": "We stopped at a small town along the way.",
+        "example_zh": "我們沿途在一座小鎮停留。"
+      },
+      {
+        "id": "b1l3-p057",
+        "phrase": "in flight",
+        "pos": "ph.",
+        "zh": "飛行中",
+        "example_en": "The bird changes direction in flight.",
+        "example_zh": "這隻鳥在飛行中改變方向。"
+      },
+      {
+        "id": "b1l3-p058",
+        "phrase": "according to studies",
+        "pos": "ph.",
+        "zh": "根據研究",
+        "example_en": "According to studies, sleep improves memory.",
+        "example_zh": "根據研究，睡眠能改善記憶力。"
+      },
+      {
+        "id": "b1l3-p059",
+        "phrase": "be able to",
+        "pos": "ph.",
+        "zh": "能夠……",
+        "example_en": "She will be able to join us tomorrow.",
+        "example_zh": "她明天能夠加入我們。"
+      },
+      {
+        "id": "b1l3-p060",
+        "phrase": "up to",
+        "pos": "ph.",
+        "zh": "多達；直到",
+        "example_en": "The hall can hold up to five hundred people.",
+        "example_zh": "這座大廳最多可容納五百人。"
+      },
+      {
+        "id": "b1l3-p061",
+        "phrase": "wide variety of",
+        "pos": "ph.",
+        "zh": "各式各樣的……",
+        "example_en": "The market sells a wide variety of fruit.",
+        "example_zh": "這個市場販售各式各樣的水果。"
+      },
+      {
+        "id": "b1l3-p062",
+        "phrase": "animal kingdom",
+        "pos": "ph.",
+        "zh": "動物界",
+        "example_en": "The blue whale is the largest animal in the animal kingdom.",
+        "example_zh": "藍鯨是動物界中最大的動物。"
+      },
+      {
+        "id": "b1l3-p063",
+        "phrase": "avoid danger",
+        "pos": "ph.",
+        "zh": "避開危險",
+        "example_en": "Animals use their senses to avoid danger.",
+        "example_zh": "動物運用感官避開危險。"
+      },
+      {
+        "id": "b1l3-p064",
+        "phrase": "an expert at",
+        "pos": "ph.",
+        "zh": "擅長……的專家",
+        "example_en": "She is an expert at solving difficult problems.",
+        "example_zh": "她是解決難題的專家。"
+      },
+      {
+        "id": "b1l3-p065",
+        "phrase": "survive in the wild",
+        "pos": "ph.",
+        "zh": "在野外生存",
+        "example_en": "These animals can survive in the wild.",
+        "example_zh": "這些動物能在野外生存。"
+      },
+      {
+        "id": "b1l3-p066",
+        "phrase": "sound quality",
+        "pos": "ph.",
+        "zh": "音質",
+        "example_en": "These headphones have excellent sound quality.",
+        "example_zh": "這副耳機的音質極佳。"
+      },
+      {
+        "id": "b1l3-p067",
+        "phrase": "achieve one’s goal",
+        "pos": "ph.",
+        "zh": "達成某人的目標",
+        "example_en": "Hard work helped her achieve her goal.",
+        "example_zh": "努力幫助她達成了目標。"
+      },
+      {
+        "id": "b1l3-p068",
+        "phrase": "stay focused",
+        "pos": "ph.",
+        "zh": "保持專注",
+        "example_en": "Turn off your phone to stay focused.",
+        "example_zh": "關掉手機以保持專注。"
+      },
+      {
+        "id": "b1l3-p069",
+        "phrase": "complain about",
+        "pos": "ph.",
+        "zh": "抱怨……",
+        "example_en": "He often complains about the weather.",
+        "example_zh": "他常抱怨天氣。"
+      },
+      {
+        "id": "b1l3-p070",
+        "phrase": "quit the job",
+        "pos": "ph.",
+        "zh": "辭職",
+        "example_en": "She quit the job to pursue her dream.",
+        "example_zh": "她辭職去追求夢想。"
+      },
+      {
+        "id": "b1l3-p071",
+        "phrase": "reach the summit",
+        "pos": "ph.",
+        "zh": "抵達山頂",
+        "example_en": "The climbers reached the summit before noon.",
+        "example_zh": "登山者在中午前抵達山頂。"
+      },
+      {
+        "id": "b1l3-p072",
+        "phrase": "get along with",
+        "pos": "ph.",
+        "zh": "與……相處融洽",
+        "example_en": "I get along well with my classmates.",
+        "example_zh": "我和同學相處得很好。"
+      },
+      {
+        "id": "b1l3-p073",
+        "phrase": "disagree with",
+        "pos": "ph.",
+        "zh": "不同意……",
+        "example_en": "I disagree with his opinion.",
+        "example_zh": "我不同意他的看法。"
+      },
+      {
+        "id": "b1l3-p074",
+        "phrase": "master the difficult piece",
+        "pos": "ph.",
+        "zh": "精通這首困難的曲子",
+        "example_en": "She practiced daily to master the difficult piece.",
+        "example_zh": "她每天練習，以精通這首困難的曲子。"
+      },
+      {
+        "id": "b1l3-p075",
+        "phrase": "Taiwanese opera",
+        "pos": "ph.",
+        "zh": "歌仔戲；臺灣歌仔戲",
+        "example_en": "My grandmother enjoys watching Taiwanese opera.",
+        "example_zh": "我奶奶喜歡看歌仔戲。"
+      },
+      {
+        "id": "b1l3-p076",
+        "phrase": "be exposed to",
+        "pos": "ph.",
+        "zh": "接觸到……",
+        "example_en": "Children should be exposed to different cultures.",
+        "example_zh": "孩子應該接觸不同的文化。"
+      },
+      {
+        "id": "b1l3-p077",
+        "phrase": "used to do",
+        "pos": "ph.",
+        "zh": "過去常常做……",
+        "example_en": "I used to walk to school every day.",
+        "example_zh": "我以前每天走路上學。"
+      },
+      {
+        "id": "b1l3-p078",
+        "phrase": "traditional culture",
+        "pos": "ph.",
+        "zh": "傳統文化",
+        "example_en": "The festival helps preserve traditional culture.",
+        "example_zh": "這個節慶有助於保存傳統文化。"
+      },
+      {
+        "id": "b1l3-p079",
+        "phrase": "face many setbacks",
+        "pos": "ph.",
+        "zh": "面臨許多挫折",
+        "example_en": "The team faced many setbacks during the season.",
+        "example_zh": "球隊在賽季中面臨許多挫折。"
+      },
+      {
+        "id": "b1l3-p080",
+        "phrase": "practice tirelessly",
+        "pos": "ph.",
+        "zh": "不懈地練習",
+        "example_en": "The dancer practiced tirelessly for the show.",
+        "example_zh": "那位舞者為了表演不懈地練習。"
+      },
+      {
+        "id": "b1l3-p081",
+        "phrase": "through constant hard work",
+        "pos": "ph.",
+        "zh": "透過持續不懈的努力",
+        "example_en": "He improved through constant hard work.",
+        "example_zh": "他透過持續不懈的努力而進步。"
+      },
+      {
+        "id": "b1l3-p082",
+        "phrase": "perfect one’s skill",
+        "pos": "ph.",
+        "zh": "精進某人的技能",
+        "example_en": "Years of training helped her perfect her skill.",
+        "example_zh": "多年的訓練幫助她精進技能。"
+      },
+      {
+        "id": "b1l3-p083",
+        "phrase": "lose weight",
+        "pos": "ph.",
+        "zh": "減重",
+        "example_en": "He exercises regularly to lose weight.",
+        "example_zh": "他規律運動以減重。"
+      },
+      {
+        "id": "b1l3-p084",
+        "phrase": "wonder about sth",
+        "pos": "ph.",
+        "zh": "想知道某事；對某事感到好奇",
+        "example_en": "I often wonder about life in space.",
+        "example_zh": "我常對太空中的生活感到好奇。"
+      },
+      {
+        "id": "b1l3-p085",
+        "phrase": "in amazement",
+        "pos": "ph.",
+        "zh": "驚訝地",
+        "example_en": "The children stared at the magician in amazement.",
+        "example_zh": "孩子們驚訝地盯著魔術師。"
+      },
+      {
+        "id": "b1l3-p086",
+        "phrase": "above average",
+        "pos": "ph.",
+        "zh": "高於平均",
+        "example_en": "Her test score was above average.",
+        "example_zh": "她的考試成績高於平均。"
+      },
+      {
+        "id": "b1l3-p087",
+        "phrase": "below average",
+        "pos": "ph.",
+        "zh": "低於平均",
+        "example_en": "Rainfall this year is below average.",
+        "example_zh": "今年的降雨量低於平均。"
+      },
+      {
+        "id": "b1l3-p088",
+        "phrase": "national average",
+        "pos": "ph.",
+        "zh": "全國平均",
+        "example_en": "The city’s income is higher than the national average.",
+        "example_zh": "這座城市的收入高於全國平均。"
+      },
+      {
+        "id": "b1l3-p089",
+        "phrase": "an average of",
+        "pos": "ph.",
+        "zh": "平均……",
+        "example_en": "The museum receives an average of two thousand visitors a day.",
+        "example_zh": "這間博物館平均每天接待兩千名訪客。"
+      },
+      {
+        "id": "b1l3-p090",
+        "phrase": "on average",
+        "pos": "ph.",
+        "zh": "平均而言",
+        "example_en": "Students spend two hours on homework on average.",
+        "example_zh": "學生平均花兩小時寫作業。"
+      },
+      {
+        "id": "b1l3-p091",
+        "phrase": "high price",
+        "pos": "ph.",
+        "zh": "高價",
+        "example_en": "The high price stopped me from buying the bag.",
+        "example_zh": "高昂的價格讓我沒有買那個包包。"
+      },
+      {
+        "id": "b1l3-p092",
+        "phrase": "average teenager",
+        "pos": "ph.",
+        "zh": "一般青少年",
+        "example_en": "The average teenager uses a smartphone every day.",
+        "example_zh": "一般青少年每天都會使用智慧型手機。"
+      },
+      {
+        "id": "b1l3-p093",
+        "phrase": "stay up late",
+        "pos": "ph.",
+        "zh": "熬夜",
+        "example_en": "Do not stay up late before the test.",
+        "example_zh": "考試前不要熬夜。"
+      },
+      {
+        "id": "b1l3-p094",
+        "phrase": "take a nap",
+        "pos": "ph.",
+        "zh": "小睡；午睡",
+        "example_en": "I usually take a nap after lunch.",
+        "example_zh": "我通常午餐後小睡一下。"
+      },
+      {
+        "id": "b1l3-p095",
+        "phrase": "float across the sky",
+        "pos": "ph.",
+        "zh": "飄過天空",
+        "example_en": "White clouds floated across the sky.",
+        "example_zh": "白雲飄過天空。"
+      },
+      {
+        "id": "b1l3-p096",
+        "phrase": "get stuck in the traffic jam",
+        "pos": "ph.",
+        "zh": "困在塞車中",
+        "example_en": "We got stuck in the traffic jam for an hour.",
+        "example_zh": "我們困在塞車中一小時。"
+      },
+      {
+        "id": "b1l3-p097",
+        "phrase": "board the boat",
+        "pos": "ph.",
+        "zh": "登船",
+        "example_en": "Passengers began to board the boat at nine.",
+        "example_zh": "乘客九點開始登船。"
+      },
+      {
+        "id": "b1l3-p098",
+        "phrase": "below the surface",
+        "pos": "ph.",
+        "zh": "在表面之下",
+        "example_en": "Many colorful fish live below the surface.",
+        "example_zh": "許多色彩繽紛的魚生活在水面下。"
+      },
+      {
+        "id": "b1l3-p099",
+        "phrase": "breathe in",
+        "pos": "ph.",
+        "zh": "吸氣；吸入",
+        "example_en": "Breathe in slowly through your nose.",
+        "example_zh": "慢慢用鼻子吸氣。"
+      },
+      {
+        "id": "b1l3-p100",
+        "phrase": "go mountain climbing",
+        "pos": "ph.",
+        "zh": "去爬山",
+        "example_en": "We plan to go mountain climbing this weekend.",
+        "example_zh": "我們計畫這週末去爬山。"
+      },
+      {
+        "id": "b1l3-p101",
+        "phrase": "breathe fresh air",
+        "pos": "ph.",
+        "zh": "呼吸新鮮空氣",
+        "example_en": "Let’s go outside and breathe fresh air.",
+        "example_zh": "我們到外面呼吸新鮮空氣吧。"
+      },
+      {
+        "id": "b1l3-p102",
+        "phrase": "breathe life into sb./sth.",
+        "pos": "ph.",
+        "zh": "為某人／某事注入活力",
+        "example_en": "The new coach breathed life into the team.",
+        "example_zh": "新教練為球隊注入了活力。"
+      },
+      {
+        "id": "b1l3-p103",
+        "phrase": "out of breath",
+        "pos": "ph.",
+        "zh": "上氣不接下氣",
+        "example_en": "I was out of breath after running upstairs.",
+        "example_zh": "跑上樓後，我上氣不接下氣。"
+      },
+      {
+        "id": "b1l3-p104",
+        "phrase": "keep…awake",
+        "pos": "ph.",
+        "zh": "使……保持清醒",
+        "example_en": "The loud music kept me awake all night.",
+        "example_zh": "吵鬧的音樂讓我整晚無法入睡。"
+      },
+      {
+        "id": "b1l3-p105",
+        "phrase": "wide awake",
+        "pos": "ph.",
+        "zh": "完全清醒",
+        "example_en": "I was still wide awake at midnight.",
+        "example_zh": "午夜時我仍然完全清醒。"
+      },
+      {
+        "id": "b1l3-p106",
+        "phrase": "awake from a deep sleep",
+        "pos": "ph.",
+        "zh": "從熟睡中醒來",
+        "example_en": "She awoke from a deep sleep when the phone rang.",
+        "example_zh": "電話響時，她從熟睡中醒來。"
+      },
+      {
+        "id": "b1l3-p107",
+        "phrase": "awake sb.",
+        "pos": "ph.",
+        "zh": "喚醒某人",
+        "example_en": "The thunder awoke the baby.",
+        "example_zh": "雷聲驚醒了嬰兒。"
+      },
+      {
+        "id": "b1l3-p108",
+        "phrase": "impress sb. with",
+        "pos": "ph.",
+        "zh": "以……使某人留下深刻印象",
+        "example_en": "She impressed us with her beautiful voice.",
+        "example_zh": "她以美妙的歌聲令我們印象深刻。"
+      },
+      {
+        "id": "b1l3-p109",
+        "phrase": "leave a(n)...impression on sb.",
+        "pos": "ph.",
+        "zh": "給某人留下……的印象",
+        "example_en": "The city left a deep impression on me.",
+        "example_zh": "這座城市給我留下了深刻的印象。"
+      },
+      {
+        "id": "b1l3-p110",
+        "phrase": "distance between",
+        "pos": "ph.",
+        "zh": "……之間的距離",
+        "example_en": "The distance between the two towns is twenty kilometers.",
+        "example_zh": "這兩座城鎮之間的距離是二十公里。"
+      },
+      {
+        "id": "b1l3-p111",
+        "phrase": "within walking distance",
+        "pos": "ph.",
+        "zh": "在步行可達的距離內",
+        "example_en": "The station is within walking distance of my home.",
+        "example_zh": "車站在我家步行可達的距離內。"
+      },
+      {
+        "id": "b1l3-p112",
+        "phrase": "be distant from",
+        "pos": "ph.",
+        "zh": "離……遙遠；與……疏遠",
+        "example_en": "The village is distant from the nearest city.",
+        "example_zh": "這座村莊離最近的城市很遠。"
+      },
+      {
+        "id": "b1l3-p113",
+        "phrase": "go on a journey around the world",
+        "pos": "ph.",
+        "zh": "展開環遊世界的旅程",
+        "example_en": "They hope to go on a journey around the world.",
+        "example_zh": "他們希望展開環遊世界的旅程。"
+      },
+      {
+        "id": "b1l3-p114",
+        "phrase": "take flight for the first time",
+        "pos": "ph.",
+        "zh": "首次起飛",
+        "example_en": "The young bird took flight for the first time.",
+        "example_zh": "那隻幼鳥首次展翅飛翔。"
+      },
+      {
+        "id": "b1l3-p115",
+        "phrase": "red-eye flight",
+        "pos": "ph.",
+        "zh": "紅眼航班；夜間航班",
+        "example_en": "We took a red-eye flight to New York.",
+        "example_zh": "我們搭紅眼航班前往紐約。"
+      },
+      {
+        "id": "b1l3-p116",
+        "phrase": "vary in sth.",
+        "pos": "ph.",
+        "zh": "在某方面有所不同",
+        "example_en": "These phones vary in size and price.",
+        "example_zh": "這些手機在尺寸和價格上有所不同。"
+      },
+      {
+        "id": "b1l3-p117",
+        "phrase": "smartphone case",
+        "pos": "ph.",
+        "zh": "智慧型手機保護殼",
+        "example_en": "I bought a new smartphone case.",
+        "example_zh": "我買了一個新的手機保護殼。"
+      },
+      {
+        "id": "b1l3-p118",
+        "phrase": "basic function",
+        "pos": "ph.",
+        "zh": "基本功能",
+        "example_en": "Calling is a basic function of a phone.",
+        "example_zh": "通話是電話的基本功能。"
+      },
+      {
+        "id": "b1l3-p119",
+        "phrase": "for various reasons",
+        "pos": "ph.",
+        "zh": "由於各種原因",
+        "example_en": "People travel abroad for various reasons.",
+        "example_zh": "人們因各種原因出國旅行。"
+      },
+      {
+        "id": "b1l3-p120",
+        "phrase": "poor weather",
+        "pos": "ph.",
+        "zh": "惡劣天氣",
+        "example_en": "The game was canceled because of poor weather.",
+        "example_zh": "比賽因天候不佳而取消。"
+      },
+      {
+        "id": "b1l3-p121",
+        "phrase": "lack of interest",
+        "pos": "ph.",
+        "zh": "缺乏興趣",
+        "example_en": "He quit the class because of a lack of interest.",
+        "example_zh": "他因缺乏興趣而退出課程。"
+      },
+      {
+        "id": "b1l3-p122",
+        "phrase": "living creature",
+        "pos": "ph.",
+        "zh": "生物",
+        "example_en": "Every living creature needs water.",
+        "example_zh": "每一種生物都需要水。"
+      },
+      {
+        "id": "b1l3-p123",
+        "phrase": "creature comfort",
+        "pos": "ph.",
+        "zh": "物質享受；生活舒適品",
+        "example_en": "The cabin had few creature comforts.",
+        "example_zh": "那間小屋幾乎沒有什麼生活舒適設施。"
+      },
+      {
+        "id": "b1l3-p124",
+        "phrase": "survive from season to season",
+        "pos": "ph.",
+        "zh": "一季又一季地生存",
+        "example_en": "Wild animals must find food to survive from season to season.",
+        "example_zh": "野生動物必須尋找食物，才能一季又一季地生存。"
+      },
+      {
+        "id": "b1l3-p125",
+        "phrase": "survive a plane crash",
+        "pos": "ph.",
+        "zh": "在空難中生還",
+        "example_en": "Only a few passengers survived the plane crash.",
+        "example_zh": "只有少數乘客在空難中生還。"
+      },
+      {
+        "id": "b1l3-p126",
+        "phrase": "a low chance of survival",
+        "pos": "ph.",
+        "zh": "存活機率低",
+        "example_en": "The injured animal had a low chance of survival.",
+        "example_zh": "那隻受傷動物的存活機率很低。"
+      },
+      {
+        "id": "b1l3-p127",
+        "phrase": "in the middle of the night",
+        "pos": "ph.",
+        "zh": "在半夜",
+        "example_en": "The baby woke up in the middle of the night.",
+        "example_zh": "嬰兒在半夜醒來。"
+      },
+      {
+        "id": "b1l3-p128",
+        "phrase": "tell the truth",
+        "pos": "ph.",
+        "zh": "說實話",
+        "example_en": "You should always tell the truth.",
+        "example_zh": "你應該永遠說實話。"
+      },
+      {
+        "id": "b1l3-p129",
+        "phrase": "passion for",
+        "pos": "ph.",
+        "zh": "對……的熱情",
+        "example_en": "She has a passion for music.",
+        "example_zh": "她對音樂充滿熱情。"
+      },
+      {
+        "id": "b1l3-p130",
+        "phrase": "summer camp",
+        "pos": "ph.",
+        "zh": "夏令營",
+        "example_en": "My brother made many friends at summer camp.",
+        "example_zh": "我弟弟在夏令營交了許多朋友。"
+      },
+      {
+        "id": "b1l3-p131",
+        "phrase": "participate in a variety of activities",
+        "pos": "ph.",
+        "zh": "參與各種活動",
+        "example_en": "Campers participate in a variety of activities.",
+        "example_zh": "營隊學員會參與各種活動。"
+      },
+      {
+        "id": "b1l3-p132",
+        "phrase": "avoid the traffic jam",
+        "pos": "ph.",
+        "zh": "避開塞車",
+        "example_en": "We left early to avoid the traffic jam.",
+        "example_zh": "我們提早出門以避開塞車。"
+      },
+      {
+        "id": "b1l3-p133",
+        "phrase": "keep a lookout for",
+        "pos": "ph.",
+        "zh": "留意；警戒……",
+        "example_en": "Keep a lookout for falling rocks.",
+        "example_zh": "請留意落石。"
+      },
+      {
+        "id": "b1l3-p134",
+        "phrase": "falling rock",
+        "pos": "ph.",
+        "zh": "落石",
+        "example_en": "The sign warns drivers about falling rocks.",
+        "example_zh": "這個標誌警告駕駛注意落石。"
+      },
+      {
+        "id": "b1l3-p135",
+        "phrase": "after a rainstorm",
+        "pos": "ph.",
+        "zh": "暴雨過後",
+        "example_en": "The river rose quickly after a rainstorm.",
+        "example_zh": "暴雨過後河水迅速上漲。"
+      },
+      {
+        "id": "b1l3-p136",
+        "phrase": "for instance",
+        "pos": "ph.",
+        "zh": "例如",
+        "example_en": "Some birds, for instance penguins, cannot fly.",
+        "example_zh": "有些鳥類，例如企鵝，不會飛。"
+      },
+      {
+        "id": "b1l3-p137",
+        "phrase": "blow away",
+        "pos": "ph.",
+        "zh": "吹走",
+        "example_en": "The wind may blow away the papers.",
+        "example_zh": "風可能會把紙張吹走。"
+      },
+      {
+        "id": "b1l3-p138",
+        "phrase": "blown away by the strong wind",
+        "pos": "ph.",
+        "zh": "被強風吹走",
+        "example_en": "The umbrella was blown away by the strong wind.",
+        "example_zh": "雨傘被強風吹走了。"
+      },
+      {
+        "id": "b1l3-p139",
+        "phrase": "meet the deadline",
+        "pos": "ph.",
+        "zh": "如期完成；趕上截止期限",
+        "example_en": "We worked late to meet the deadline.",
+        "example_zh": "我們工作到很晚，以趕上截止期限。"
+      },
+      {
+        "id": "b1l3-p140",
+        "phrase": "have no idea",
+        "pos": "ph.",
+        "zh": "完全不知道",
+        "example_en": "I have no idea where he went.",
+        "example_zh": "我完全不知道他去了哪裡。"
+      },
+      {
+        "id": "b1l3-p141",
+        "phrase": "go online",
+        "pos": "ph.",
+        "zh": "上網",
+        "example_en": "I went online to check the train schedule.",
+        "example_zh": "我上網查看火車時刻表。"
+      },
+      {
+        "id": "b1l3-p142",
+        "phrase": "look for information",
+        "pos": "ph.",
+        "zh": "尋找資訊",
+        "example_en": "Students went online to look for information.",
+        "example_zh": "學生們上網尋找資訊。"
+      },
+      {
+        "id": "b1l3-p143",
+        "phrase": "play an important role",
+        "pos": "ph.",
+        "zh": "扮演重要角色",
+        "example_en": "Teachers play an important role in our lives.",
+        "example_zh": "老師在我們的生活中扮演重要角色。"
+      },
+      {
+        "id": "b1l3-p144",
+        "phrase": "American pop music",
+        "pos": "ph.",
+        "zh": "美國流行音樂",
+        "example_en": "He listens to American pop music every day.",
+        "example_zh": "他每天都聽美國流行音樂。"
+      },
+      {
+        "id": "b1l3-p145",
+        "phrase": "electronic product",
+        "pos": "ph.",
+        "zh": "電子產品",
+        "example_en": "This store sells many electronic products.",
+        "example_zh": "這家商店販售許多電子產品。"
+      },
+      {
+        "id": "b1l3-p146",
+        "phrase": "the Summer Olympic Games",
+        "pos": "ph.",
+        "zh": "夏季奧林匹克運動會",
+        "example_en": "Athletes from many countries join the Summer Olympic Games.",
+        "example_zh": "許多國家的運動員參加夏季奧林匹克運動會。"
+      },
+      {
+        "id": "b1l3-p147",
+        "phrase": "natural habitat",
+        "pos": "ph.",
+        "zh": "自然棲息地",
+        "example_en": "Forests are the natural habitat of many animals.",
+        "example_zh": "森林是許多動物的自然棲息地。"
+      },
+      {
+        "id": "b1l3-p148",
+        "phrase": "graduation trip",
+        "pos": "ph.",
+        "zh": "畢業旅行",
+        "example_en": "Our class will visit Tainan on our graduation trip.",
+        "example_zh": "我們班畢業旅行會去臺南。"
+      },
+      {
+        "id": "b1l3-p149",
+        "phrase": "be divided into",
+        "pos": "ph.",
+        "zh": "被分成……",
+        "example_en": "The class is divided into four groups.",
+        "example_zh": "全班被分成四組。"
+      },
+      {
+        "id": "b1l3-p150",
+        "phrase": "complex concept",
+        "pos": "ph.",
+        "zh": "複雜的概念",
+        "example_en": "The teacher explained the complex concept clearly.",
+        "example_zh": "老師清楚地解釋了這個複雜的概念。"
+      }
+    ]
   },
   "grammar": {
     "points": [
@@ -41,7 +1687,7 @@
         },
         {
           "id": "b1l3-s002",
-          "sentence": "You might be surprised when you read some of the following amazing facts about animals' sleeping habits.",
+          "sentence": "You might be surprised when you read some of the following amazing facts about animals’ sleeping habits.",
           "type": "complex",
           "pattern": "Adverbial clause (when...)"
         },
@@ -65,7 +1711,7 @@
         },
         {
           "id": "b1l3-s006",
-          "sentence": "However, there are often predators around, and a giraffe can't stand up from this position very quickly.",
+          "sentence": "However, there are often predators around, and a giraffe can’t stand up from this position very quickly.",
           "type": "compound",
           "pattern": "Compound sentence (with \"and\")"
         },
@@ -77,7 +1723,7 @@
         },
         {
           "id": "b1l3-s008",
-          "sentence": "Sea otters, one of the world's cutest animals, perhaps have the cutest sleeping position.",
+          "sentence": "Sea otters, one of the world’s cutest animals, perhaps have the cutest sleeping position.",
           "type": "simple",
           "pattern": "S + Vt + O"
         },
