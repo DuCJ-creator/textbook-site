@@ -73,13 +73,19 @@ const SentenceSort = (function () {
     boundEls: new Set() // 記錄哪些元素已經綁過事件，避免重複 render() 時疊加監聽器
   };
 
-  function shuffle(arr) {
-    const a = [...arr];
-    for (let i = a.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
+  // 依編號（displayNo）由小到大排序，讓練習模式的句子照講義順序出現，
+  // 不再隨機打亂——方便老師與學生對照紙本教材逐句練習。
+  // 若 id 沒有可辨識的編號格式，保留原始陣列順序（用原始索引位置排序）。
+  function sortByNo(items) {
+    return items
+      .map((item, i) => ({ item, no: Number(displayNo(item, i)), origIndex: i }))
+      .sort((a, b) => {
+        if (Number.isNaN(a.no) && Number.isNaN(b.no)) return a.origIndex - b.origIndex;
+        if (Number.isNaN(a.no)) return 1;
+        if (Number.isNaN(b.no)) return -1;
+        return a.no - b.no;
+      })
+      .map(x => x.item);
   }
 
   // 從 item.id（例如 "b1l1-s004"）取出編號給使用者看；沒有編號格式就用陣列序位代替
@@ -91,7 +97,7 @@ const SentenceSort = (function () {
 
   function render(options) {
     state.items = options.items || [];
-    state.sortItems = shuffle(state.items);
+    state.sortItems = sortByNo(state.items);
     state.placement = {};
     state.els = {
       pool: document.getElementById(options.poolId),
@@ -161,6 +167,18 @@ const SentenceSort = (function () {
       });
       wrap.appendChild(basket);
     });
+
+    // 題目池本身也要能接收 drop：把句子從籃子拖回池子，等同取消分類。
+    // 這樣拉錯籃子時可以直接拖回池子重新選，不用先按「重新開始」整批重來。
+    const pool = state.els.pool;
+    pool.addEventListener("dragover", e => { e.preventDefault(); pool.classList.add("dragover"); });
+    pool.addEventListener("dragleave", () => pool.classList.remove("dragover"));
+    pool.addEventListener("drop", e => {
+      e.preventDefault();
+      pool.classList.remove("dragover");
+      if (!state.draggedId) return;
+      removeFromBasket(state.draggedId);
+    });
   }
 
   function renderPool() {
@@ -168,14 +186,16 @@ const SentenceSort = (function () {
     pool.innerHTML = "";
     state.sortItems.forEach((item, i) => {
       if (state.placement[item.id]) return;
-      pool.appendChild(makeChip(item, i));
+      pool.appendChild(makeChip(item, i, null));
     });
     if (!pool.children.length) {
       pool.innerHTML = '<span style="color:var(--ink-soft); font-size:.82rem;">全部句子都已分類，按「對答案」查看結果。</span>';
     }
   }
 
-  function makeChip(item, indexInOriginal) {
+  // 建立一個可拖曳的句子卡片。currentType 是 null 代表卡片目前在題目池裡，
+  // 否則代表卡片目前在某個分類籃裡——兩種情況都要能繼續拖曳（拉出去重新分類）。
+  function makeChip(item, indexInOriginal, currentType) {
     const chip = document.createElement("div");
     chip.className = "sentence-chip";
     chip.draggable = true;
@@ -196,16 +216,22 @@ const SentenceSort = (function () {
     if (state.els.status) state.els.status.textContent = "";
   }
 
+  // 把句子從目前的分類籃移回題目池（取消分類）
+  function removeFromBasket(id) {
+    if (!state.placement[id]) return; // 本來就在池子裡，不用處理
+    delete state.placement[id];
+    renderPool();
+    renderBasketContents();
+    if (state.els.status) state.els.status.textContent = "";
+  }
+
   function renderBasketContents() {
     state.els.baskets.querySelectorAll(".basket").forEach(basket => {
       const type = basket.dataset.type;
       basket.querySelectorAll(".sentence-chip").forEach(c => c.remove());
       state.sortItems.forEach((item, i) => {
         if (state.placement[item.id] !== type) return;
-        const chip = document.createElement("div");
-        chip.className = "sentence-chip";
-        chip.innerHTML = `<span class="s-no">${Loader.escapeHtml(displayNo(item, i))}</span>${Loader.escapeHtml(item.sentence)}`;
-        basket.appendChild(chip);
+        basket.appendChild(makeChip(item, i, type));
       });
     });
   }
@@ -218,9 +244,16 @@ const SentenceSort = (function () {
   }
 
   function checkSort() {
-    let correct = 0;
     const total = Object.keys(state.placement).length;
+    const unplaced = state.sortItems.length - total;
 
+    // 允許還沒分類完就提交，但先確認一次，避免誤觸「對答案」漏看還沒做的句子
+    if (unplaced > 0) {
+      const proceed = window.confirm(`還有 ${unplaced} 句尚未分類，確定要提交查看結果嗎？`);
+      if (!proceed) return;
+    }
+
+    let correct = 0;
     state.els.baskets.querySelectorAll(".basket").forEach(basket => {
       const type = basket.dataset.type;
       basket.querySelectorAll(".sentence-chip").forEach(chip => chip.remove());
@@ -237,7 +270,6 @@ const SentenceSort = (function () {
       });
     });
 
-    const unplaced = state.sortItems.length - total;
     if (state.els.status) {
       state.els.status.textContent = `答對 ${correct} / ${state.sortItems.length}${unplaced > 0 ? `（尚有 ${unplaced} 句未分類）` : ""}`;
       state.els.status.style.color = (correct === state.sortItems.length && unplaced === 0) ? "var(--sage)" : "#c23b3b";

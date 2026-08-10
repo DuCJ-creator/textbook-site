@@ -181,8 +181,81 @@ const VocabWidget = (function () {
     const speakBtn = panel.querySelector(".speak-btn");
     if (speakBtn) speakBtn.onclick = () => Loader.speakText(entry.en);
 
+    // 點選單字就自動播放發音，發音按鈕保留讓使用者可以重複播放
+    Loader.speakText(entry.en);
+
     if (state.onSelect) state.onSelect(entry, row);
   }
 
-  return { render };
+  // ===================================================================
+  // 完整表格模式：像早期版本的表格結構，方便整課單字一次瀏覽（overview）。
+  // 與字族探索模式共用同一份 rows 資料，只是換一種排版方式呈現。
+  // 用法：VocabWidget.renderTable({ tableBodyId, panelId, rows, onSelect })
+  // ===================================================================
+  function renderTable(options) {
+    const rows = options.rows || state.rows;
+    const tbody = document.getElementById(options.tableBodyId);
+    const panel = document.getElementById(options.panelId) || state.els.panel;
+    if (!tbody) {
+      console.error("VocabWidget.renderTable: table body element not found:", options.tableBodyId);
+      return;
+    }
+
+    tbody.innerHTML = "";
+    rows.forEach(row => {
+      const tr = document.createElement("tr");
+      POS_ORDER.forEach(pos => {
+        const td = document.createElement("td");
+        const entries = row[pos] || [];
+        if (!entries.length) {
+          td.innerHTML = `<span class="table-cell-empty">&nbsp;</span>`;
+        } else {
+          td.innerHTML = entries.map((entry, i) =>
+            `<button type="button" class="table-word-btn" data-pos="${pos}" data-idx="${i}"><strong>${Loader.escapeHtml(entry.en)}</strong></button>`
+          ).join("");
+          td.querySelectorAll(".table-word-btn").forEach(btn => {
+            const i = Number(btn.dataset.idx);
+            btn.addEventListener("click", () => {
+              tbody.querySelectorAll(".table-word-btn.active").forEach(b => b.classList.remove("active"));
+              btn.classList.add("active");
+              showWordInPanel(panel, row, pos, entries, i, options.onSelect);
+            });
+          });
+        }
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+  }
+
+  // 表格模式專用的詳情顯示（跟字族模式共用同一個 detail-panel markup，
+  // 但不需要 renderFamily 那套「高亮四欄卡片」邏輯，所以獨立一個輕量版本）
+  function showWordInPanel(panel, row, pos, entries, idx, onSelect) {
+    if (!panel) return;
+    const entry = entries[idx];
+
+    panel.classList.add("show");
+    panel.querySelector(".detail-word").textContent = entry.en;
+    panel.querySelector(".pos-tag").textContent = `${POS_LABELS[pos]} ${POS_LABELS_ZH[pos]}`;
+    panel.querySelector(".detail-zh").textContent = entry.zh || "（尚未提供中文意思）";
+    panel.querySelector(".detail-example-text").textContent = entry.example || "（尚未提供例句）";
+
+    const sourceTag = panel.querySelector(".detail-source");
+    if (sourceTag) {
+      if (row._book && row._lesson) {
+        sourceTag.textContent = `來自 ${row._book.toUpperCase()} ${row._lesson.toUpperCase()}`;
+        sourceTag.style.display = "";
+      } else {
+        sourceTag.style.display = "none";
+      }
+    }
+
+    const speakBtn = panel.querySelector(".speak-btn");
+    if (speakBtn) speakBtn.onclick = () => Loader.speakText(entry.en);
+    Loader.speakText(entry.en);
+
+    if (onSelect) onSelect(entry, row);
+  }
+
+  return { render, renderTable };
 })();
