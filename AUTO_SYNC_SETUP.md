@@ -85,6 +85,12 @@ schedule:
   的發布連結失效（例如你不小心把某份 Sheet 取消「發布到網路」），或
   Sheets 的欄位被改動導致格式不符（腳本假設的欄位順序見
   `scripts/sync_from_sheets.py` 開頭的說明）。
+- **Actions 顯示成功（綠色勾），但 repo 完全沒有新 commit**：這是已修正過的
+  已知問題——舊版 workflow 用 `git diff --quiet` 判斷有沒有變化，但這個
+  指令偵測不到「全新、從未被 git 追蹤過的檔案」（例如第一次同步出一個
+  全新的冊或全新的課）。已改用 `git status --porcelain`，同時涵蓋既有
+  檔案的修改與全新檔案的新增。如果你是從舊版專案升級，記得同步更新
+  `.github/workflows/sync-sheets.yml`。
 - **改了 Sheets 但網站沒更新**：先確認 Actions 有沒有成功跑完並 commit
   （看 repo 的 commit 紀錄，自動 commit 訊息會是
   `chore: sync course data from Google Sheets [automated]`）；

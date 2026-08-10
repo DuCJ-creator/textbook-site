@@ -63,10 +63,14 @@
       </p>
 
       <div class="sort-toolbar">
-        <button class="btn primary" id="sortModeBtn">練習模式</button>
-        <button class="btn" id="displayModeBtn">顯示模式</button>
-        <button class="btn" id="resetSortBtn">重新開始</button>
-        <button class="btn" id="checkSortBtn">對答案</button>
+        <div class="mode-toggle mode-switch">
+          <button id="sortModeBtn" class="active">練習模式</button>
+          <button id="displayModeBtn">顯示模式</button>
+        </div>
+        <div class="sort-actions" style="display:flex; gap:8px;">
+          <button class="btn" id="resetSortBtn">重新開始</button>
+          <button class="btn" id="checkSortBtn">對答案</button>
+        </div>
         <span class="sort-status" id="sortStatus"></span>
       </div>
 
@@ -171,7 +175,8 @@
       resetBtnId: "resetSortBtn",
       checkBtnId: "checkSortBtn",
       statusId: "sortStatus",
-      toolbarSelector: ".sort-toolbar",
+      modeSwitchSelector: ".mode-switch",
+      actionsSelector: ".sort-actions",
       items: filtered
     });
 

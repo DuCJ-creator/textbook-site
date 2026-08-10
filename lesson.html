@@ -33,7 +33,8 @@
 
   <div class="lesson-head">
     <div class="inner">
-      <div class="breadcrumb"><a href="index.html" style="color:#c9bfa9; text-decoration:none;">← 課程總覽</a> &nbsp;/&nbsp; <span id="breadcrumb">Book · Lesson</span></div>
+      <div class="brand-line">🍃 Tr. Shirley Du's High School English Course · Textbook Supplements Online</div>
+      <div class="breadcrumb"><a href="index.html" style="color:rgba(255,255,255,.85); text-decoration:none;">← 課程總覽</a> &nbsp;/&nbsp; <span id="breadcrumb">Book · Lesson</span></div>
       <h1 id="lessonTitle">Loading…</h1>
       <div class="sub">課程補充內容 · 線上互動版</div>
     </div>
@@ -55,13 +56,13 @@
     <!-- ================= PART I: Word Family ================= -->
     <section class="part active" id="part-p1">
       <h2 class="part-title">I. Word Family</h2>
-      <p class="part-desc">單字家族有獨立的完整瀏覽頁面，點下方卡片開啟。</p>
+      <p class="part-desc">單字家族有獨立的完整探索頁面，點下方卡片開啟。</p>
 
       <a class="card vocab-link-card" id="vocabLinkCard" href="#">
         <span class="icon">📖</span>
         <span class="text">
           <span class="t">開啟 Word Family 頁面</span>
-          <span class="d" id="vocabLinkDesc">在獨立頁面瀏覽本課完整單字家族表格</span>
+          <span class="d" id="vocabLinkDesc">在獨立頁面探索本課完整單字家族</span>
         </span>
         <span class="arrow">→</span>
       </a>
@@ -78,6 +79,7 @@
           <button id="browseBtn" class="active">瀏覽模式</button>
           <button id="quizBtn">測驗模式</button>
         </div>
+        <button class="btn" id="starredOnlyBtn">☆ 只看已收藏</button>
       </div>
       <div class="phrase-count" id="phraseCount"></div>
       <div class="phrase-grid" id="phraseGrid"></div>
@@ -95,10 +97,14 @@
       <p class="part-desc">先練習把句子拖到正確的分類籃，完成後按「對答案」查看結果；也可以直接切換到「顯示模式」瀏覽分類好的例句。</p>
 
       <div class="sort-toolbar">
-        <button class="btn primary" id="sortModeBtn">練習模式</button>
-        <button class="btn" id="displayModeBtn">顯示模式</button>
-        <button class="btn" id="resetSortBtn">重新開始</button>
-        <button class="btn" id="checkSortBtn">對答案</button>
+        <div class="mode-toggle mode-switch">
+          <button id="sortModeBtn" class="active">練習模式</button>
+          <button id="displayModeBtn">顯示模式</button>
+        </div>
+        <div class="sort-actions" style="display:flex; gap:8px;">
+          <button class="btn" id="resetSortBtn">重新開始</button>
+          <button class="btn" id="checkSortBtn">對答案</button>
+        </div>
         <span class="sort-status" id="sortStatus"></span>
       </div>
 
@@ -181,6 +187,7 @@
       searchInputId: "phraseSearch",
       browseBtnId: "browseBtn",
       quizBtnId: "quizBtn",
+      starredOnlyBtnId: "starredOnlyBtn",
       items: LESSON.phrases?.items || []
     });
   }
@@ -201,7 +208,8 @@
       resetBtnId: "resetSortBtn",
       checkBtnId: "checkSortBtn",
       statusId: "sortStatus",
-      toolbarSelector: ".sort-toolbar",
+      modeSwitchSelector: ".mode-switch",
+      actionsSelector: ".sort-actions",
       items: LESSON.grammar?.sentence_structures?.items || []
     });
   }

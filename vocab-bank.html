@@ -6,37 +6,31 @@
 <title>單字總覽 Vocabulary Bank</title>
 <link rel="stylesheet" href="css/style.css" />
 <style>
-  /* ===== Bank page 專用（篩選列、來源標籤等，其餘沿用 style.css） ===== */
-  .bank-head {
-    background: var(--ink);
-    color: var(--paper);
-    padding: 28px 20px 22px;
-  }
-  .bank-head .inner { max-width: 980px; margin: 0 auto; }
-  .bank-head h1 { font-family: var(--serif); font-size: 2rem; font-weight: 700; margin: 0 0 4px; letter-spacing: -0.01em; }
-  .bank-head .sub { font-size: 0.85rem; color: #d8cfba; }
-  .bank-head .back { color: #c9bfa9; text-decoration: none; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
+  .bank-head { background: linear-gradient(135deg, var(--accent-dark), var(--accent)); color: #fff; padding: 30px 20px 26px; border-radius: 0 0 28px 28px; }
+  .bank-head .inner { max-width: 1000px; margin: 0 auto; }
+  .bank-head h1 { font-family: var(--serif); font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .bank-head .sub { font-size: 0.85rem; color: rgba(255,255,255,.82); }
+  .bank-head .back { color: rgba(255,255,255,.82); text-decoration: none; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
 
   .filter-bar {
     position: sticky; top: 0; z-index: 50;
-    background: var(--paper); border-bottom: 2px solid var(--ink);
+    background: rgba(255, 253, 248, .92); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--paper-line);
     padding: 12px 20px;
   }
-  .filter-bar .inner { max-width: 980px; margin: 0 auto; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-  .filter-bar label { font-size: 0.78rem; font-weight: 600; color: var(--ink-soft); }
+  .filter-bar .inner { max-width: 1000px; margin: 0 auto; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .filter-bar label { font-size: 0.78rem; font-weight: 700; color: var(--ink-soft); }
   .filter-bar select {
-    font-family: var(--sans); font-size: 0.82rem; padding: 7px 10px;
-    border: 1.5px solid var(--ink); border-radius: 7px; background: var(--card); color: var(--ink);
+    font-family: var(--sans); font-size: 0.82rem; padding: 8px 12px;
+    border: 1px solid var(--paper-line); border-radius: 999px; background: var(--card); color: var(--ink);
   }
   .filter-bar .result-count { font-size: 0.78rem; color: var(--ink-soft); margin-left: auto; }
 
   .detail-source {
     display: inline-block; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.04em;
-    color: var(--blue); background: var(--blue-soft); padding: 2px 8px; border-radius: 999px;
+    color: var(--accent-dark); background: var(--blue-soft); padding: 2px 8px; border-radius: 999px;
     margin-left: 8px;
   }
-
-  .empty-state { padding: 50px 20px; text-align: center; color: var(--ink-soft); font-size: 0.88rem; }
 </style>
 </head>
 <body>
@@ -62,33 +56,32 @@
   <div class="wrap">
     <div class="loading-msg" id="loadingMsg">彙整所有課程單字中…</div>
 
-    <div class="table-scroll" id="tableWrap" style="display:none;">
-      <table class="wf-table" id="wfTable">
-        <thead>
-          <tr>
-            <th style="width:26%">Verb 動詞</th>
-            <th style="width:26%">Noun 名詞</th>
-            <th style="width:26%">Adjective 形容詞</th>
-            <th style="width:22%">Adverb 副詞</th>
-          </tr>
-        </thead>
-        <tbody id="wfBody"></tbody>
-      </table>
-    </div>
+    <div id="explorerArea" style="display:none;">
+      <nav class="family-rail" id="familyRail" aria-label="選擇字族"></nav>
 
-    <div class="detail-panel" id="detailPanel">
-      <div class="detail-head">
-        <span class="detail-word">—</span>
-        <span class="pos-tag">—</span>
-        <span class="detail-source" style="display:none;"></span>
-        <button class="speak-btn" title="播放發音">🔊</button>
+      <div class="family-heading">
+        <div>
+          <p class="breadcrumb" style="margin-bottom:2px;">CURRENT FAMILY</p>
+          <h2 id="familyName">—</h2>
+        </div>
+        <p id="familyProgress">—</p>
       </div>
-      <div class="detail-zh">—</div>
-      <div class="detail-example">
-        <span class="lbl">Example</span>
-        <span class="detail-example-text">—</span>
+
+      <div class="pos-grid" id="posGrid"></div>
+
+      <div class="detail-panel" id="detailPanel">
+        <div class="detail-head">
+          <span class="detail-word">—</span>
+          <span class="pos-tag">—</span>
+          <span class="detail-source" style="display:none;"></span>
+          <button class="speak-btn" title="播放發音">🔊 發音</button>
+        </div>
+        <div class="detail-zh">—</div>
+        <div class="detail-example">
+          <span class="lbl">Example</span>
+          <span class="detail-example-text">—</span>
+        </div>
       </div>
-      <div class="switch-others"></div>
     </div>
   </div>
 
@@ -115,7 +108,7 @@
         return;
       }
 
-      document.getElementById("tableWrap").style.display = "block";
+      document.getElementById("explorerArea").style.display = "block";
       buildFilters();
       applyFilter();
     })
@@ -172,10 +165,13 @@
       return true;
     });
 
-    document.getElementById("resultCount").textContent = `共 ${filtered.length} 個字群`;
+    document.getElementById("resultCount").textContent = `共 ${filtered.length} 個字族`;
 
     VocabWidget.render({
-      tableBodyId: "wfBody",
+      railId: "familyRail",
+      nameId: "familyName",
+      progressId: "familyProgress",
+      gridId: "posGrid",
       panelId: "detailPanel",
       rows: filtered
     });

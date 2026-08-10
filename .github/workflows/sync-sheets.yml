@@ -39,8 +39,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # 只有 data/ 底下真的有變動才 commit，避免每次排程都產生空 commit
-          if git diff --quiet -- data/; then
+          # 用 git status --porcelain 而不是 git diff：
+          # git diff 只會比對「已經被 git 追蹤過的檔案」內容有沒有變，
+          # 對於全新出現的檔案（例如第一次同步出全新一冊、全新一課的 json）
+          # 完全偵測不到，因為那些檔案根本還沒被 git 認得（untracked）。
+          # git status --porcelain 同時涵蓋「已追蹤檔案的修改」與「全新未追蹤的檔案」，
+          # 這裡 data/ 底下如果有任何新增/修改，輸出就不會是空字串。
+          if [ -z "$(git status --porcelain -- data/)" ]; then
             echo "No changes to data/ — nothing to commit."
           else
             git add data/
