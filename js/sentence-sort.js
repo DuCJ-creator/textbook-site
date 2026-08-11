@@ -33,6 +33,73 @@
    no 欄位或原始順序），方便老師與學生對照講義。
 =========================================================== */
 
+/* ===========================================================
+   ListenText — 「聽課文」按鈕 + 播放器
+
+   播放對應課程的完整課文錄音（老師另外準備的 mp3，放在
+   data/textaudio/{book}{lesson}.mp3，例如 data/textaudio/b1l1.mp3）。
+
+   用法：
+     ListenText.render({
+       containerId: "listenTextArea",
+       book: "b1",
+       lesson: "l1"
+     });
+
+   因為不是每一課都一定有錄音檔，這個元件會先用 HEAD 請求檢查檔案
+   是否存在，存在才顯示播放器；不存在就完全不顯示任何東西（不會出現
+   一顆點了沒反應或報錯的壞按鈕）。跨課總覽頁面通常混合多課內容，
+   沒有單一對應的課文可聽，所以這個元件只在單課頁面（lesson.html）
+   使用，不提供給 grammar-bank.html。
+=========================================================== */
+
+const ListenText = (function () {
+  function render(options) {
+    const container = document.getElementById(options.containerId);
+    if (!container) return;
+
+    const audioPath = `data/textaudio/${options.book}${options.lesson}.mp3`;
+
+    // HEAD 請求只確認檔案存不存在，不會下載整個音檔內容
+    fetch(audioPath, { method: "HEAD" })
+      .then(res => {
+        if (!res.ok) return; // 檔案不存在，維持容器空白
+        renderPlayer(container, audioPath);
+      })
+      .catch(() => {
+        // 網路錯誤或伺服器不支援 HEAD（例如某些純靜態託管環境），
+        // 退而改用實際載入 audio 元素本身來判斷，交給瀏覽器處理錯誤事件
+        renderPlayerWithFallbackCheck(container, audioPath);
+      });
+  }
+
+  function renderPlayer(container, audioPath) {
+    container.innerHTML = `
+      <div class="listen-text-bar">
+        <span class="listen-text-label">🎧 聽課文</span>
+        <audio controls preload="none" src="${Loader.escapeHtml(audioPath)}"></audio>
+      </div>
+    `;
+  }
+
+  // 當 HEAD 請求本身失敗（不代表檔案一定不存在）時的備援：
+  // 直接嘗試建立 audio 元素，用瀏覽器原生的 error 事件判斷檔案是否真的載入得了。
+  function renderPlayerWithFallbackCheck(container, audioPath) {
+    container.innerHTML = `
+      <div class="listen-text-bar">
+        <span class="listen-text-label">🎧 聽課文</span>
+        <audio controls preload="none" src="${Loader.escapeHtml(audioPath)}"></audio>
+      </div>
+    `;
+    const audioEl = container.querySelector("audio");
+    audioEl.addEventListener("error", () => {
+      container.innerHTML = ""; // 確定載入失敗，清空、不顯示壞掉的播放器
+    }, { once: true });
+  }
+
+  return { render };
+})();
+
 const GrammarPoints = (function () {
   function render(options) {
     const wrap = document.getElementById(options.containerId);

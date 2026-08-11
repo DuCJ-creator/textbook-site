@@ -159,8 +159,13 @@ const PhraseWidget = (function () {
         ? `<div class="num">${p._book.toUpperCase()} ${p._lesson.toUpperCase()} · ${String(i + 1).padStart(2, "0")}</div>`
         : `<div class="num">${String(i + 1).padStart(2, "0")}</div>`;
 
+      // 發音按鈕只在瀏覽模式顯示：測驗模式下例句是刻意模糊隱藏的答案，
+      // 若這時候還能播放例句語音，等於用聲音洩題，所以測驗模式不放這顆按鈕。
+      const speakBtnHtml = isQuiz ? "" : `<button type="button" class="phrase-speak-btn" aria-label="播放片語與例句發音" title="播放發音">🔊</button>`;
+
       card.innerHTML = `
         <button type="button" class="star-btn${isStarred ? " starred" : ""}" aria-label="收藏這個片語" title="收藏">${isStarred ? "★" : "☆"}</button>
+        ${speakBtnHtml}
         ${sourceTag}
         <div class="ph">${Loader.escapeHtml(p.phrase)}</div>
         <div class="zh">${Loader.escapeHtml(p.zh || "")}</div>
@@ -174,6 +179,15 @@ const PhraseWidget = (function () {
         e.stopPropagation();
         toggleStar(p.id);
       });
+
+      const speakBtn = card.querySelector(".phrase-speak-btn");
+      if (speakBtn) {
+        speakBtn.addEventListener("click", e => {
+          e.stopPropagation();
+          // 先讀片語，唸完接著自動讀例句，一鍵連播
+          Loader.speakSequence([p.phrase, p.example_en]);
+        });
+      }
 
       if (isQuiz) {
         card.addEventListener("click", () => {

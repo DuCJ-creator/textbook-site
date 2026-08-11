@@ -2,7 +2,8 @@
    loader.js — 共用工具
    給 lesson.html 以及未來的 *-bank.html 共用：
    - escapeHtml：安全輸出使用者/教材文字
-   - speakText：文字轉語音（Web Speech API）
+   - speakText：文字轉語音（Web Speech API），單段
+   - speakSequence：依序播放多段文字（例如先讀片語、再讀例句）
    - getUrlParam：讀取網址參數
    - fetchLessonData：抓取單一課程 json
    - fetchAllPublishedLessons：抓取 index.json 裡所有已發布課程的完整資料
@@ -17,14 +18,44 @@ const Loader = (function () {
       .replace(/"/g, "&quot;").replace(/'/g, "&#039;");
   }
 
+  function makeUtterance(text) {
+    const utter = new SpeechSynthesisUtterance(text);
+    utter.lang = "en-US";
+    utter.rate = 0.9;
+    return utter;
+  }
+
   function speakText(text) {
     if (!text || !("speechSynthesis" in window)) return;
     try {
       window.speechSynthesis.cancel();
-      const utter = new SpeechSynthesisUtterance(text);
-      utter.lang = "en-US";
-      utter.rate = 0.9;
-      window.speechSynthesis.speak(utter);
+      window.speechSynthesis.speak(makeUtterance(text));
+    } catch (e) { /* speech synthesis unavailable */ }
+  }
+
+  /**
+   * 依序播放多段文字，前一段唸完才唸下一段（用 utterance 的 onend 事件串接）。
+   * 用於「先讀片語、再讀例句」這種一鍵連播情境。
+   * 會先 cancel 掉任何進行中的語音，確保連續點擊按鈕時不會疊加播放。
+   * 空字串或 undefined 的段落會被跳過，不會插入靜音停頓。
+   * @param {string[]} texts 依播放順序排列的文字陣列
+   */
+  function speakSequence(texts) {
+    if (!("speechSynthesis" in window)) return;
+    const queue = (texts || []).filter(t => t && String(t).trim());
+    if (!queue.length) return;
+
+    try {
+      window.speechSynthesis.cancel();
+      let i = 0;
+      const playNext = () => {
+        if (i >= queue.length) return;
+        const utter = makeUtterance(queue[i]);
+        i += 1;
+        if (i < queue.length) utter.onend = playNext;
+        window.speechSynthesis.speak(utter);
+      };
+      playNext();
     } catch (e) { /* speech synthesis unavailable */ }
   }
 
@@ -95,6 +126,7 @@ const Loader = (function () {
   return {
     escapeHtml,
     speakText,
+    speakSequence,
     getUrlParam,
     fetchLessonData,
     fetchIndex,
