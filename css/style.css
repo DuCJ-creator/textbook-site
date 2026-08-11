@@ -251,7 +251,7 @@ table.vocab-table { border-collapse: collapse; width: 100%; min-width: 640px; }
 }
 .phrase-card:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(28,50,37,.09); }
 .phrase-card .num { font-size: 0.64rem; color: var(--ink-soft); font-family: var(--mono); }
-.phrase-card .ph { font-family: var(--serif); font-size: 1.05rem; font-weight: 700; margin: 2px 28px 5px 0; }
+.phrase-card .ph { font-family: var(--serif); font-size: 1.05rem; font-weight: 700; margin: 2px 60px 5px 0; }
 .phrase-card .zh { font-size: 0.85rem; color: var(--ink-soft); margin-bottom: 6px; }
 .phrase-card .ex { font-size: 0.8rem; line-height: 1.45; padding-top: 8px; border-top: 1px dashed var(--paper-line); }
 .phrase-card .ex-zh { font-size: 0.78rem; color: var(--ink-soft); margin-top: 2px; }
@@ -266,6 +266,15 @@ table.vocab-table { border-collapse: collapse; width: 100%; min-width: 640px; }
 .star-btn:hover { transform: scale(1.15); }
 .star-btn.starred { color: var(--gold); }
 
+.phrase-speak-btn {
+  position: absolute; top: 12px; right: 44px;
+  width: 30px; height: 30px; border-radius: 999px; border: none;
+  background: var(--accent-soft); cursor: pointer; font-size: 0.85rem;
+  color: var(--accent-dark); display: flex; align-items: center; justify-content: center;
+  transition: transform .15s ease, background .15s ease;
+}
+.phrase-speak-btn:hover { transform: scale(1.1); background: var(--accent); color: #fff; }
+
 /* quiz mode reveal */
 .phrase-card.quiz .zh, .phrase-card.quiz .ex { filter: blur(5px); user-select: none; transition: filter .15s ease; }
 .phrase-card.quiz.revealed .zh, .phrase-card.quiz.revealed .ex { filter: none; }
@@ -274,6 +283,14 @@ table.vocab-table { border-collapse: collapse; width: 100%; min-width: 640px; }
 .phrase-card.quiz.revealed .reveal-hint { display: none; }
 
 /* ===================== Grammar & sentence-sort widget ===================== */
+.listen-text-bar {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding: 12px 16px; margin-bottom: 16px; border-radius: var(--radius);
+  background: var(--gold-soft); border: 1px solid var(--gold);
+}
+.listen-text-label { font-size: 0.85rem; font-weight: 700; color: #6b5300; flex: 0 0 auto; }
+.listen-text-bar audio { flex: 1 1 240px; min-width: 200px; height: 36px; }
+
 .grammar-point { padding: 16px 18px; margin-bottom: 12px; border-left: 4px solid #d94f4f; }
 .grammar-point h3 { font-family: var(--serif); font-size: 1.08rem; margin: 0 0 8px; color: #c23b3b; font-weight: 700; }
 .grammar-point ul { margin: 0; padding-left: 20px; }
