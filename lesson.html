@@ -96,6 +96,8 @@
       <h3 class="part-title" style="font-size:1.2rem; margin-top:28px;">2. Sentence Structures</h3>
       <p class="part-desc">先練習把句子拖到正確的分類籃，完成後按「對答案」查看結果；也可以直接切換到「顯示模式」瀏覽分類好的例句。</p>
 
+      <div id="listenTextArea"></div>
+
       <div class="sort-toolbar">
         <div class="mode-toggle mode-switch">
           <button id="sortModeBtn" class="active">練習模式</button>
@@ -197,6 +199,12 @@
     GrammarPoints.render({
       containerId: "grammarPoints",
       points: LESSON.grammar?.points || []
+    });
+
+    ListenText.render({
+      containerId: "listenTextArea",
+      book: bookId,
+      lesson: lessonId
     });
 
     SentenceSort.render({
