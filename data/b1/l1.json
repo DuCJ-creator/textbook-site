@@ -1699,97 +1699,97 @@
       "items": [
         {
           "id": "b1l1-s001",
-          "sentence": "In this month’s Longteng Senior High School News, our reporter Jeremy interviews three students about some memorable first-time experiences in their lives.",
+          "sentence": "In this month’s Longteng Senior High School News, our reporter Jeremy *interviews* three students about some memorable first-time experiences in their lives.",
           "type": "simple",
-          "pattern": "S + Vt + O"
+          "pattern": "S + Vt + O (imperative; with S being \"you\")"
         },
         {
           "id": "b1l1-s002",
-          "sentence": "Read their replies below.",
+          "sentence": "*Read* their replies below.",
           "type": "simple",
           "pattern": "Imperative sentence (S + Vt + O)"
         },
         {
           "id": "b1l1-s003",
-          "sentence": "A few years ago, I took an online class for the first time.",
+          "sentence": "A few years ago, I *took* an online class for the first time.",
           "type": "simple",
           "pattern": "S + Vt + O"
         },
         {
           "id": "b1l1-s004",
-          "sentence": "I never thought that I could take classes in my pajamas!",
+          "sentence": "I never *thought* that I could take classes in my pajamas!",
           "type": "complex",
           "pattern": "Noun clause (that...)"
         },
         {
           "id": "b1l1-s005",
-          "sentence": "I also enjoyed using online tools such as Kahoot! and Quizlet.",
+          "sentence": "I also *enjoyed* using online tools such as Kahoot! and Quizlet.",
           "type": "simple",
           "pattern": "S + Vt + O"
         },
         {
           "id": "b1l1-s006",
-          "sentence": "There were some memorable moments, too.",
+          "sentence": "There *were* some memorable moments, too.",
           "type": "simple",
           "pattern": "There be... (特殊倒裝句)"
         },
         {
           "id": "b1l1-s007",
-          "sentence": "Once, my grandmother suddenly came into the room.",
+          "sentence": "Once, my grandmother suddenly *came* into the room.",
           "type": "simple",
           "pattern": "S + Vi"
         },
         {
           "id": "b1l1-s008",
-          "sentence": "She yelled at me to try her perfect beef noodles.",
+          "sentence": "She *yelled at* me to try her perfect beef noodles.",
           "type": "simple",
           "pattern": "S + Vt + O + OC"
         },
         {
           "id": "b1l1-s009",
-          "sentence": "My microphone was on, so the rest of the students heard it and started laughing.",
+          "sentence": "My microphone *was* on, so the rest of the students *heard* it and *started* laughing.",
           "type": "compound",
           "pattern": "Compound sentence (with \"so\")"
         },
         {
           "id": "b1l1-s010",
-          "sentence": "Another time, our teacher accidentally turned on a funny filter on her camera.",
+          "sentence": "Another time, our teacher accidentally *turned on* a funny filter on her camera.",
           "type": "simple",
           "pattern": "S + Vt + O"
         },
         {
           "id": "b1l1-s011",
-          "sentence": "She looked like an alien on the screen, so my classmates and I had another good laugh.",
+          "sentence": "She *looked* like an alien on the screen, so my classmates and I *had* another good laugh.",
           "type": "compound",
           "pattern": "Compound sentence (with \"so\")"
         },
         {
           "id": "b1l1-s012",
-          "sentence": "Online lessons were fun sometimes, but I still found that I enjoyed seeing others in person more.",
+          "sentence": "Online lessons *were* fun sometimes, but I still *found* that I enjoyed seeing others in person more.",
           "type": "compound-complex",
           "pattern": "Compound-Complex sentence (with \"but\" + Noun clause)"
         },
         {
           "id": "b1l1-s013",
-          "sentence": "I can still recall my first crash-and-burn moment in school.",
+          "sentence": "I *can* still *recall* my first crash-and-burn moment in school.",
           "type": "simple",
           "pattern": "S + Vt + O"
         },
         {
           "id": "b1l1-s014",
-          "sentence": "For a group presentation last year, I was the speaker for my team.",
+          "sentence": "For a group presentation last year, I *was* the speaker for my team.",
           "type": "simple",
           "pattern": "S + Vl + C"
         },
         {
           "id": "b1l1-s015",
-          "sentence": "However, I didn’t take the task seriously and skipped several group meetings.",
+          "sentence": "However, I *didn’t take* the task seriously and *skipped* several group meetings.",
           "type": "compound",
           "pattern": "Compound sentence (with \"and\")"
         },
         {
           "id": "b1l1-s016",
-          "sentence": "When the time came for me to step onto the stage, I was nervous and unprepared.",
+          "sentence": "When the time came for me to step onto the stage, I *was* nervous and unprepared.",
           "type": "complex",
           "pattern": "Adverbial clause (When...)"
         },
