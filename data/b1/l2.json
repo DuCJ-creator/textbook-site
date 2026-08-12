@@ -265,12 +265,28 @@
       },
       {
         "id": "b1l2-v09",
-        "verb": [],
+        "verb": [
+          {
+            "en": "romanticize",
+            "zh": "(使)浪漫化；傳奇化",
+            "example": "I am not a person who romanticizes life."
+          }
+        ],
         "noun": [
           {
             "en": "romance",
             "zh": "浪漫情懷；愛情故事；戀情",
             "example": "The novel is a romance set in Paris."
+          },
+          {
+            "en": "romanticism",
+            "zh": "浪漫主義",
+            "example": "How much do you know about romanticism?"
+          },
+          {
+            "en": "romanticist",
+            "zh": "浪漫主義者",
+            "example": "He calls himself a romanticist."
           }
         ],
         "adj": [
