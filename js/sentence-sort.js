@@ -130,6 +130,21 @@ const SentenceSort = (function () {
   };
   const TYPE_ORDER = ["simple", "compound", "complex", "compound-complex"];
 
+  /**
+   * 把句子文字裡用 *word* 標記的主動詞轉成紅色粗體顯示。
+   * 例如 CSV 裡寫 "I never thought that I *could* take classes"，
+   * 會渲染成：I never thought that I <span class="main-verb">could</span> take classes
+   *
+   * 一定要先做 HTML escape 再處理星號標記——句子本身可能含有 <, >, & 等字元，
+   * 若順序顛倒，escape 會把我們自己插入的 <span> 標籤也跳脫掉，變成顯示文字。
+   * 星號本身不是 HTML 特殊字元，escape 不會影響它，所以這個順序是安全的。
+   */
+  function markMainVerb(sentence) {
+    const escaped = Loader.escapeHtml(sentence);
+    // 非貪婪比對 *...*，允許一句話裡有多組標記（例如複合句多個動詞都想標）
+    return escaped.replace(/\*(.+?)\*/g, '<span class="main-verb">$1</span>');
+  }
+
   let state = {
     items: [],
     sortItems: [],
@@ -267,7 +282,7 @@ const SentenceSort = (function () {
     chip.className = "sentence-chip";
     chip.draggable = true;
     chip.dataset.id = item.id;
-    chip.innerHTML = `<span class="s-no">${Loader.escapeHtml(displayNo(item, indexInOriginal))}</span>${Loader.escapeHtml(item.sentence)}`;
+    chip.innerHTML = `<span class="s-no">${Loader.escapeHtml(displayNo(item, indexInOriginal))}</span>${markMainVerb(item.sentence)}`;
     chip.addEventListener("dragstart", () => {
       state.draggedId = item.id;
       chip.classList.add("dragging");
@@ -329,7 +344,7 @@ const SentenceSort = (function () {
         const chip = document.createElement("div");
         const isCorrect = item.type === type;
         chip.className = "sentence-chip " + (isCorrect ? "correct" : "incorrect");
-        chip.innerHTML = `<span class="s-no">${Loader.escapeHtml(displayNo(item, i))}</span>${Loader.escapeHtml(item.sentence)}<span class="pattern-tag">${
+        chip.innerHTML = `<span class="s-no">${Loader.escapeHtml(displayNo(item, i))}</span>${markMainVerb(item.sentence)}<span class="pattern-tag">${
           isCorrect ? "✓ 正確" : "✗ 應屬於：" + TYPE_LABELS[item.type]
         }（${Loader.escapeHtml(item.pattern)}）</span>`;
         basket.appendChild(chip);
@@ -363,7 +378,7 @@ const SentenceSort = (function () {
           ${items.map(it => `
             <div class="sentence-row">
               <span class="s-no-cell">${Loader.escapeHtml(displayNo(it, it._origIndex))}</span>
-              <span class="s-text-cell">${Loader.escapeHtml(it.sentence)}</span>
+              <span class="s-text-cell">${markMainVerb(it.sentence)}</span>
               <span class="s-pattern-cell">${Loader.escapeHtml(it.pattern)}</span>
             </div>
           `).join("")}

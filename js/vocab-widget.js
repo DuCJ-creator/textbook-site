@@ -47,8 +47,12 @@ const VocabWidget = (function () {
     return POS_ORDER.flatMap(pos => (row[pos] || []).map(e => ({ ...e, pos })));
   }
 
-  // 用字族裡第一個有內容的字詞當作這個標籤的顯示名稱
+  // 字族標籤顯示 word-base 本身（例如 "memory"），不是字族裡任何一個實際字形
+  // （像 "memorize"、"memorial" 都只是這個字根衍生出的詞性變化）。
+  // 如果資料還沒重新同步、row.base 是空的，才退而用字族裡第一個有內容的字當備援，
+  // 避免舊資料在你重跑同步腳本之前完全顯示空白。
   function familyLabel(row) {
+    if (row.base) return row.base;
     const words = familyWords(row);
     return words.length ? words[0].en : "—";
   }
