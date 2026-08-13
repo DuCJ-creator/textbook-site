@@ -1784,8 +1784,8 @@
         {
           "id": "b1l1-s015",
           "sentence": "However, I *didn’t take* the task seriously and *skipped* several group meetings.",
-          "type": "compound",
-          "pattern": "Compound sentence (with \"and\")"
+          "type": "simple",
+          "pattern": "S + Vt + O (with a compound predicate)"
         },
         {
           "id": "b1l1-s016",
@@ -1837,7 +1837,7 @@
         },
         {
           "id": "b1l1-s024",
-          "sentence": "I *visited* several old buildings and \"dressed up\" in traditional Korean clothes.",
+          "sentence": "I *visited* several old buildings and *dressed up* in traditional Korean clothes.",
           "type": "simple",
           "pattern": "S + Vt + O (with a compound predicate)"
         },
