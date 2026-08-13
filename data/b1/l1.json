@@ -1795,79 +1795,79 @@
         },
         {
           "id": "b1l1-s017",
-          "sentence": "Of course, I ruined the presentation and felt embarrassed in front of my classmates and teacher.",
-          "type": "compound",
-          "pattern": "Compound sentence (with \"and\")"
+          "sentence": "Of course, I *ruined* the presentation and *felt* embarrassed in front of my classmates and teacher.",
+          "type": "simple",
+          "pattern": "S + Vt + O (with a compound predicate)"
         },
         {
           "id": "b1l1-s018",
-          "sentence": "We got a very low grade, and I felt depressed about letting the team down.",
+          "sentence": "We *got* a very low grade, and I *felt* depressed about letting the team down.",
           "type": "compound",
           "pattern": "Compound sentence (with \"and\")"
         },
         {
           "id": "b1l1-s019",
-          "sentence": "The failure really upset me, but I reflected on it and learned from my mistake.",
+          "sentence": "The failure really *upset* me, but I *reflected on* it and *learned from* my mistake.",
           "type": "compound",
           "pattern": "Compound sentence (with \"but\")"
         },
         {
           "id": "b1l1-s020",
-          "sentence": "These days, this memory reminds me to prepare well and make sure that I always put my team first!",
+          "sentence": "These days, this memory *reminds* me to prepare well and make sure that I always put my team first!",
           "type": "complex",
           "pattern": "S + Vt + O + OC / Noun clause"
         },
         {
           "id": "b1l1-s021",
-          "sentence": "My first trip abroad—to Seoul, South Korea—was unforgettable.",
+          "sentence": "My first trip abroad—to Seoul, South Korea—*was* unforgettable.",
           "type": "simple",
           "pattern": "S + Vl + C"
         },
         {
           "id": "b1l1-s022",
-          "sentence": "The city’s streets were busy, and delicious foods like Korean barbecue and kimchi were all around me.",
+          "sentence": "The city’s streets *were* busy, and delicious foods like Korean barbecue and kimchi *were* all around me.",
           "type": "compound",
           "pattern": "Compound sentence (with \"and\")"
         },
         {
           "id": "b1l1-s023",
-          "sentence": "I soon realized that the markets were a treat for my other senses since cheerful K-pop and colorful clothes were everywhere.",
+          "sentence": "I soon *realized* that the markets were a treat for my other senses since cheerful K-pop and colorful clothes were everywhere.",
           "type": "complex",
           "pattern": "Noun clause (that...) + Adverbial clause (since...)"
         },
         {
           "id": "b1l1-s024",
-          "sentence": "I visited several old buildings and dressed up in traditional Korean clothes.",
+          "sentence": "I *visited* several old buildings and \"dressed up\" in traditional Korean clothes.",
           "type": "simple",
           "pattern": "S + Vt + O (with a compound predicate)"
         },
         {
           "id": "b1l1-s025",
-          "sentence": "While I was there, I tried to talk to locals.",
+          "sentence": "While I was there, I *tried to* talk to locals.",
           "type": "complex",
           "pattern": "Adverbial clause (While...)"
         },
         {
           "id": "b1l1-s026",
-          "sentence": "My Korean was poor, but fortunately, everyone was very friendly.",
+          "sentence": "My Korean *was* poor, but fortunately, everyone *was* very friendly.",
           "type": "compound",
           "pattern": "Compound sentence (with \"but\")"
         },
         {
           "id": "b1l1-s027",
-          "sentence": "At the end of the trip, I left with a lot of great memories, and I can’t wait to go back someday!",
+          "sentence": "At the end of the trip, I *left* with a lot of great memories, and I *can’t wait* to go back someday!",
           "type": "compound",
           "pattern": "Compound sentence (with \"and\")"
         },
         {
           "id": "b1l1-s028",
-          "sentence": "High school is full of firsts, and you may all have unforgettable ones like Robbie, Claire, and Nancy.",
+          "sentence": "High school *is* full of firsts, and you *may* all *have* unforgettable ones like Robbie, Claire, and Nancy.",
           "type": "compound",
           "pattern": "Compound sentence (with \"and\")"
         },
         {
           "id": "b1l1-s029",
-          "sentence": "Share yours with us if you have any funny, embarrassing, or wonderful experiences!",
+          "sentence": "*Share* yours with us if you have any funny, embarrassing, or wonderful experiences!",
           "type": "complex",
           "pattern": "Imperative sentence + Adverbial clause (if...)"
         }
