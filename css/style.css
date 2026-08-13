@@ -309,9 +309,22 @@ table.vocab-table { border-collapse: collapse; width: 100%; min-width: 640px; }
 .btn.active:hover { background: #ddab3d; }
 .sort-status { font-size: 0.78rem; color: var(--sage); font-weight: 700; }
 
+/* 句子池（左）與分類籃（右）並排，讓拖曳距離短、方向直觀——
+   不用像之前那樣把籃子放在題目池下方，還要往下捲頁才能拖到目標。
+   寬螢幕才並排；螢幕較窄（例如手機直向）改回上下排列，
+   因為硬擠並排會讓兩邊都太窄，反而更難操作。 */
+.sort-workspace {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 760px) {
+  .sort-workspace { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); align-items: start; }
+}
+
 .sentence-pool {
-  display: flex; flex-wrap: wrap; gap: 10px; padding: 16px; margin-bottom: 16px;
-  min-height: 50px; transition: border-color .12s ease, background .12s ease;
+  display: flex; flex-wrap: wrap; align-content: flex-start; gap: 10px; padding: 16px;
+  min-height: 260px; transition: border-color .12s ease, background .12s ease;
 }
 .sentence-pool.dragover { border-color: var(--accent) !important; background: var(--gold-soft); }
 .sentence-chip {
@@ -330,8 +343,16 @@ table.vocab-table { border-collapse: collapse; width: 100%; min-width: 640px; }
 .sentence-chip:active { cursor: grabbing; }
 .sentence-chip.dragging { opacity: 0.4; }
 
+/* 主動詞標記（來自句子文字裡的 *word* 語法，見 sentence-sort.js 的 markMainVerb） */
+.main-verb {
+  color: #c23b3b; font-weight: 800;
+}
+
 .sort-baskets {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;
+}
+@media (max-width: 480px) {
+  .sort-baskets { grid-template-columns: 1fr; }
 }
 .basket {
   border: 2px dashed var(--paper-line); border-radius: var(--radius); padding: 14px;
