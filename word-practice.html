@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>單字練習 · 課程補充內容</title>
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .wp-head { background: linear-gradient(135deg, var(--accent-dark), var(--accent)); color: #fff; padding: 30px 20px 26px; border-radius: 0 0 28px 28px; }
+  .wp-head .inner { max-width: 1000px; margin: 0 auto; }
+  .wp-head h1 { font-family: var(--serif); font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .wp-head .sub { font-size: 0.85rem; color: rgba(255,255,255,.82); }
+  .wp-head .back { color: rgba(255,255,255,.82); text-decoration: none; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
+
+  /* ===== Mode select screen ===== */
+  .mode-select { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+  .mode-pick-card {
+    text-align: left; border: 1px solid var(--paper-line); border-radius: var(--radius);
+    background: var(--card); box-shadow: var(--shadow); padding: 22px; cursor: pointer;
+    transition: transform .15s ease;
+  }
+  .mode-pick-card:hover { transform: translateY(-3px); border-color: var(--accent); }
+  .mode-pick-card .icon { font-size: 1.8rem; margin-bottom: 10px; }
+  .mode-pick-card h3 { font-family: var(--serif); font-size: 1.1rem; margin: 0 0 6px; }
+  .mode-pick-card p { font-size: 0.8rem; color: var(--ink-soft); margin: 0; line-height: 1.6; }
+
+  /* ===== Game shell ===== */
+  .wp-hud {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
+    padding: 12px 16px; margin-bottom: 16px; border-radius: var(--radius);
+    background: var(--card); border: 1px solid var(--paper-line); box-shadow: var(--shadow);
+  }
+  .wp-hud-group { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .wp-stat { min-width: 70px; padding: 6px 12px; border-radius: 999px; background: var(--accent-soft); text-align: center; }
+  .wp-stat span { display: block; font-size: 0.6rem; color: var(--ink-soft); letter-spacing: 0.08em; text-transform: uppercase; }
+  .wp-stat strong { font-size: 1rem; color: var(--accent-dark); }
+  .wp-hearts { font-size: 0.95rem; letter-spacing: 1px; }
+  .wp-hud button.icon-btn {
+    border: 1px solid var(--paper-line); border-radius: 999px; background: var(--card);
+    padding: 7px 12px; cursor: pointer; font-size: 0.85rem;
+  }
+
+  /* ===== Arena: falling word ===== */
+  .wp-arena {
+    position: relative; overflow: hidden; min-height: 420px;
+    border-radius: var(--radius); border: 1px solid var(--paper-line);
+    background: linear-gradient(180deg, var(--accent-soft), var(--paper));
+    box-shadow: var(--shadow); margin-bottom: 16px;
+  }
+  .wp-ground {
+    position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: var(--accent);
+  }
+  .wp-banner {
+    position: absolute; z-index: 10; left: 50%; top: 16px; transform: translate(-50%, -12px);
+    opacity: 0; background: var(--accent); color: #fff; border-radius: 999px; padding: 8px 18px;
+    font-weight: 700; font-size: 0.85rem; transition: .2s;
+  }
+  .wp-banner.show { opacity: 1; transform: translate(-50%, 0); }
+
+  .wp-falling {
+    position: absolute; left: 50%; transform: translateX(-50%);
+    width: min(88%, 420px); text-align: center; cursor: default;
+    border: 1px solid var(--accent); border-radius: var(--radius);
+    background: var(--card); box-shadow: 0 10px 26px rgba(39,103,73,.18);
+    padding: 18px; transition: top .08s linear;
+  }
+  .wp-falling .meaning { font-family: var(--serif); font-size: 1.3rem; font-weight: 700; }
+  .wp-falling .pos-tag { margin-top: 6px; }
+  .wp-falling .letters {
+    margin-top: 14px; font-family: var(--mono); font-size: 1.15rem; letter-spacing: 3px; font-weight: 700;
+  }
+  .wp-falling .letters .hint { color: var(--gold); }
+  .wp-falling .letters .filled { color: var(--accent-dark); }
+  .wp-falling.correct { animation: wp-pop .4s ease forwards; }
+  .wp-falling.wrong-shake { animation: wp-shake .3s ease; }
+  @keyframes wp-pop { 60% { transform: translateX(-50%) scale(1.15); } to { transform: translateX(-50%) scale(0); opacity: 0; } }
+  @keyframes wp-shake { 25% { margin-left: -8px; } 75% { margin-left: 8px; } }
+
+  /* Typing keyboard */
+  .wp-keyboard { display: grid; gap: 6px; margin: 18px auto 0; width: min(560px, 100%); }
+  .wp-keyrow { display: flex; justify-content: center; gap: 5px; }
+  .wp-key {
+    min-width: 30px; flex: 0 1 44px; border: 1px solid var(--paper-line); background: var(--card);
+    border-radius: 8px; padding: 10px 3px; font-size: 0.78rem; font-weight: 700; cursor: pointer;
+  }
+  .wp-key:hover { background: var(--accent-soft); border-color: var(--accent); }
+
+  /* ===== Results ===== */
+  .wp-results { text-align: center; padding: 30px 20px; }
+  .wp-results .trophy { font-size: 2.6rem; }
+  .wp-results h2 { font-family: var(--serif); font-size: 1.8rem; margin: 8px 0; }
+  .wp-result-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 10px; margin: 22px 0; max-width: 520px; margin-left: auto; margin-right: auto; }
+  .wp-result-card { background: var(--card); border: 1px solid var(--paper-line); border-radius: 14px; padding: 12px; }
+  .wp-result-card strong { display: block; font-size: 1.25rem; color: var(--accent-dark); font-family: var(--serif); }
+  .wp-result-card span { font-size: 0.6rem; color: var(--ink-soft); letter-spacing: 0.06em; text-transform: uppercase; }
+  .wp-result-actions { display: flex; justify-content: center; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+
+  <div class="wp-head">
+    <div class="inner">
+      <div class="breadcrumb">
+        <a class="back" href="index.html">← 課程總覽</a>
+        &nbsp;/&nbsp;
+        <a class="back" id="lessonBackLink" href="lesson.html">← 回課程頁</a>
+        &nbsp;/&nbsp;
+        <a class="back" id="wordFamilyBackLink" href="word-family.html">← Word Family</a>
+      </div>
+      <h1 id="pageTitle" style="margin-top:8px;">單字練習</h1>
+      <div class="sub">用本課單字家族練習辨識、拼寫與聽寫</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="loading-msg" id="loadingMsg">單字資料載入中…</div>
+    <div id="gameArea" style="display:none;"></div>
+  </div>
+
+<script src="js/loader.js"></script>
+<script src="js/word-practice.js"></script>
+<script>
+  const bookId = Loader.getUrlParam("book", "b1");
+  const lessonId = Loader.getUrlParam("lesson", "l1");
+
+  document.getElementById("lessonBackLink").href = `lesson.html?book=${bookId}&lesson=${lessonId}`;
+  document.getElementById("wordFamilyBackLink").href = `word-family.html?book=${bookId}&lesson=${lessonId}`;
+
+  Loader.fetchLessonData(bookId, lessonId)
+    .then(data => {
+      document.getElementById("loadingMsg").style.display = "none";
+
+      document.title = `單字練習 · ${data.book} ${data.lesson} ${data.title || ""}`;
+      document.getElementById("pageTitle").textContent =
+        `單字練習 — ${data.book} ${data.lesson}${data.title ? ": " + data.title : ""}`;
+
+      const rows = data.vocabulary?.rows || [];
+      if (!rows.length) {
+        document.getElementById("loadingMsg").className = "empty-state";
+        document.getElementById("loadingMsg").style.display = "block";
+        document.getElementById("loadingMsg").textContent = "這一課的單字家族尚未建立，無法進行練習。";
+        return;
+      }
+
+      document.getElementById("gameArea").style.display = "block";
+      WordPractice.init({ containerId: "gameArea", rows });
+    })
+    .catch(err => {
+      document.getElementById("loadingMsg").className = "error-msg";
+      document.getElementById("loadingMsg").textContent =
+        "資料載入失敗：" + err.message + "（請確認此頁面透過本機伺服器或 GitHub Pages 開啟）";
+    });
+</script>
+<script src="js/notepad.js"></script>
+<script>Notepad.mount();</script>
+</body>
+</html>

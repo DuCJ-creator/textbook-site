@@ -38,9 +38,12 @@
     <div class="loading-msg" id="loadingMsg">單字資料載入中…</div>
 
     <div id="explorerWrap" style="display:none;">
-      <div class="mode-toggle vocab-mode-switch">
-        <button id="familyModeBtn" class="active">探索字族</button>
-        <button id="tableModeBtn">完整表格</button>
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:16px;">
+        <div class="mode-toggle vocab-mode-switch">
+          <button id="familyModeBtn" class="active">探索字族</button>
+          <button id="tableModeBtn">完整表格</button>
+        </div>
+        <a class="btn primary" id="practiceLink" href="#">🎮 拼寫／聽寫練習</a>
       </div>
 
       <div id="explorerArea">
@@ -96,6 +99,7 @@
   const lessonId = Loader.getUrlParam("lesson", "l1");
 
   document.getElementById("lessonBackLink").href = `lesson.html?book=${bookId}&lesson=${lessonId}`;
+  document.getElementById("practiceLink").href = `word-practice.html?book=${bookId}&lesson=${lessonId}`;
 
   let CURRENT_ROWS = [];
 
@@ -155,5 +159,7 @@
     }
   }
 </script>
+<script src="js/notepad.js"></script>
+<script>Notepad.mount();</script>
 </body>
 </html>
