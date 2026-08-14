@@ -1681,145 +1681,145 @@
       "items": [
         {
           "id": "b1l3-s001",
-          "sentence": "You may know that brown bears hibernate and that goldfish sleep without closing their eyes, but have you ever wondered how other animals sleep?",
+          "sentence": "You *may know* that brown bears hibernate and that goldfish sleep without closing their eyes, but *have* you ever *wondered* how other animals sleep?",
           "type": "compound-complex",
           "pattern": "Compound-Complex sentence (with \"but\" + Noun clauses)"
         },
         {
           "id": "b1l3-s002",
-          "sentence": "You might be surprised when you read some of the following amazing facts about animals’ sleeping habits.",
+          "sentence": "You *might be surprised* when you read some of the following amazing facts about animals’ sleeping habits.",
           "type": "complex",
           "pattern": "Adverbial clause (when...)"
         },
         {
           "id": "b1l3-s003",
-          "sentence": "Unlike most mammals, giraffes sleep very little.",
+          "sentence": "Unlike most mammals, giraffes *sleep* very little.",
           "type": "simple",
           "pattern": "S + Vi"
         },
         {
           "id": "b1l3-s004",
-          "sentence": "In fact, it is reported that some giraffes sleep only thirty minutes a day on average.",
+          "sentence": "In fact, it *is reported* that some giraffes sleep only thirty minutes a day on average.",
           "type": "complex",
           "pattern": "Noun clause (that...) / It (dummy subject)"
         },
         {
           "id": "b1l3-s005",
-          "sentence": "When a giraffe sleeps, it curls its long neck and lays its head on its hip.",
+          "sentence": "When a giraffe sleeps, it *curls* its long neck and *lays* its head on its hip.",
           "type": "complex",
           "pattern": "Adverbial clause (When...)"
         },
         {
           "id": "b1l3-s006",
-          "sentence": "However, there are often predators around, and a giraffe can’t stand up from this position very quickly.",
+          "sentence": "However, there *are* often predators around, and a giraffe *can’t stand up* from this position very quickly.",
           "type": "compound",
           "pattern": "Compound sentence (with \"and\")"
         },
         {
           "id": "b1l3-s007",
-          "sentence": "Therefore, a giraffe never naps for too long.",
+          "sentence": "Therefore, a giraffe never *naps* for too long.",
           "type": "simple",
           "pattern": "S + Vi"
         },
         {
           "id": "b1l3-s008",
-          "sentence": "Sea otters, one of the world’s cutest animals, perhaps have the cutest sleeping position.",
+          "sentence": "Sea otters, one of the world’s cutest animals, perhaps *have* the cutest sleeping position.",
           "type": "simple",
           "pattern": "S + Vt + O"
         },
         {
           "id": "b1l3-s009",
-          "sentence": "Groups of sea otters float on their backs and hold hands while they are sleeping!",
+          "sentence": "Groups of sea otters *float* on their backs and *hold* hands while they are sleeping!",
           "type": "complex",
           "pattern": "Adverbial clause (while...)"
         },
         {
           "id": "b1l3-s010",
-          "sentence": "They can rest on the land, but they are much safer in the water.",
+          "sentence": "They *can rest on* the land, but they *are* much safer in the water.",
           "type": "compound",
           "pattern": "Compound sentence (with \"but\")"
         },
         {
           "id": "b1l3-s011",
-          "sentence": "To avoid floating away, they lock their little paws together and hold on to each other.",
+          "sentence": "To avoid floating away, they *lock* their little paws together and *hold on to* each other.",
           "type": "simple",
-          "pattern": "S + Vt + O"
+          "pattern": "S + Vt + O (with a compound predicate)"
         },
         {
           "id": "b1l3-s012",
-          "sentence": "Dolphins have one of the most amazing sleeping secrets: only half their brain is asleep at one time!",
+          "sentence": "Dolphins *have* one of the most amazing sleeping secrets: only half their brain *is* asleep at one time!",
           "type": "compound",
           "pattern": "Compound sentence (with a colon)"
         },
         {
           "id": "b1l3-s013",
-          "sentence": "One of the reasons for this is that they must swim to the surface once every twenty minutes to breathe.",
+          "sentence": "One of the reasons for this *is* that they must swim to the surface once every twenty minutes to breathe.",
           "type": "complex",
           "pattern": "Noun clause (that...)"
         },
         {
           "id": "b1l3-s014",
-          "sentence": "They also have to look out for sharks and other predators.",
+          "sentence": "They also *have to look out for* sharks and other predators.",
           "type": "simple",
           "pattern": "S + Vt + O"
         },
         {
           "id": "b1l3-s015",
-          "sentence": "When one half of their brain goes to sleep, the other half stays awake to help them swim, breathe, and be on the lookout for danger.",
+          "sentence": "When one half of their brain goes to sleep, the other half *stays* awake to help them swim, breathe, and be on the lookout for danger.",
           "type": "complex",
           "pattern": "Adverbial clause (When...)"
         },
         {
           "id": "b1l3-s016",
-          "sentence": "Some migratory birds have yet another impressive way of sleeping: they sleep up in the sky!",
+          "sentence": "Some migratory birds *have* yet another impressive way of sleeping: they *sleep* up in the sky!",
           "type": "compound",
           "pattern": "Compound sentence (with a colon)"
         },
         {
           "id": "b1l3-s017",
-          "sentence": "For example, Alpine swifts have to keep flying for a long time over a great distance during their journeys to and from Africa.",
+          "sentence": "For example, Alpine swifts *have to keep* flying for a long time over a great distance during their journeys to and from Africa.",
           "type": "simple",
           "pattern": "S + Vt + O"
         },
         {
           "id": "b1l3-s018",
-          "sentence": "Along the way, they eat insects in the air and take little naps while in flight.",
+          "sentence": "Along the way, they *eat* insects in the air and *take* little naps while in flight.",
           "type": "simple",
           "pattern": "S + Vt + O (with a compound predicate)"
         },
         {
           "id": "b1l3-s019",
-          "sentence": "This habit can save their lives since they may be caught by wild animals if they land.",
+          "sentence": "This habit *can save* their lives since they may be caught by wild animals if they land.",
           "type": "complex",
           "pattern": "Adverbial clauses (since... / if...)"
         },
         {
           "id": "b1l3-s020",
-          "sentence": "According to studies, these amazing little birds may be able to stay in the air for up to two hundred days without needing to land and get some sleep.",
+          "sentence": "According to studies, these amazing little birds *may be* able to stay in the air for up to two hundred days without needing to land and get some sleep.",
           "type": "simple",
           "pattern": "S + Vl + C"
         },
         {
           "id": "b1l3-s021",
-          "sentence": "The sleeping habits of the giraffe, sea otter, dolphin, and Alpine swift may seem quite amazing.",
+          "sentence": "The sleeping habits of the giraffe, sea otter, dolphin, and Alpine swift *may seem* quite amazing.",
           "type": "simple",
           "pattern": "S + Vl + C"
         },
         {
           "id": "b1l3-s022",
-          "sentence": "Yet these are just four examples.",
+          "sentence": "Yet these *are* just four examples.",
           "type": "simple",
           "pattern": "S + Vl + C"
         },
         {
           "id": "b1l3-s023",
-          "sentence": "The wide variety of sleeping habits in the animal kingdom shows how different creatures have different ways of avoiding danger.",
+          "sentence": "The wide variety of sleeping habits in the animal kingdom *shows* how different creatures have different ways of avoiding danger.",
           "type": "complex",
           "pattern": "Noun clause (how...)"
         },
         {
           "id": "b1l3-s024",
-          "sentence": "As you can see, each animal is an expert at surviving in the wild.",
+          "sentence": "As you can see, each animal *is* an expert at surviving in the wild.",
           "type": "complex",
           "pattern": "Adverbial clause (As...)"
         }
