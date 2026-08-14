@@ -422,7 +422,7 @@ table.vocab-table { border-collapse: collapse; width: 100%; min-width: 640px; }
 .empty-state { padding: 50px 20px; text-align: center; color: var(--ink-soft); font-size: 0.88rem; }
 
 @media print {
-  .part-nav, .speak-btn, .mode-toggle, .search-box, .sort-toolbar { display: none !important; }
+  .part-nav, .speak-btn, .mode-toggle, .search-box, .sort-toolbar, .notepad-fab, .notepad-panel { display: none !important; }
   section.part { display: block !important; }
   body { padding: 0; }
 }
@@ -432,3 +432,46 @@ table.vocab-table { border-collapse: collapse; width: 100%; min-width: 640px; }
   .part-title { font-size: 1.25rem; }
   .sentence-display-list .s-pattern-cell { display: none; }
 }
+
+/* ===================== Notepad (floating, on every page) ===================== */
+.notepad-fab {
+  position: fixed; z-index: 200; right: 20px; bottom: 20px;
+  width: 56px; height: 56px; border-radius: 999px; border: none;
+  background: var(--accent); color: #fff; font-size: 1.4rem; cursor: pointer;
+  box-shadow: 0 10px 28px rgba(39,103,73,.32);
+  display: flex; align-items: center; justify-content: center;
+  transition: transform .15s ease;
+}
+.notepad-fab:hover { transform: translateY(-2px) scale(1.05); }
+
+.notepad-panel {
+  position: fixed; z-index: 199; right: 20px; bottom: 86px;
+  width: min(340px, calc(100vw - 40px)); height: min(420px, calc(100vh - 140px));
+  background: var(--card); border: 1px solid var(--paper-line); border-radius: var(--radius);
+  box-shadow: var(--shadow); display: flex; flex-direction: column;
+  opacity: 0; pointer-events: none; transform: translateY(12px) scale(.97);
+  transition: opacity .15s ease, transform .15s ease;
+}
+.notepad-panel.open { opacity: 1; pointer-events: auto; transform: translateY(0) scale(1); }
+
+.notepad-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 14px; border-bottom: 1px solid var(--paper-line);
+  font-family: var(--serif); font-weight: 700; font-size: 0.95rem;
+}
+.notepad-close {
+  border: none; background: transparent; cursor: pointer; font-size: 1rem;
+  color: var(--ink-soft); width: 26px; height: 26px; border-radius: 999px;
+}
+.notepad-close:hover { background: var(--accent-soft); }
+
+.notepad-textarea {
+  flex: 1; border: none; resize: none; padding: 12px 14px;
+  font-family: var(--sans); font-size: 0.85rem; line-height: 1.6; color: var(--ink);
+  background: transparent; outline: none;
+}
+
+.notepad-footer {
+  padding: 6px 14px 10px; text-align: right;
+}
+.notepad-status { font-size: 0.68rem; color: var(--ink-soft); }
