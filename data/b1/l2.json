@@ -1949,19 +1949,19 @@
         },
         {
           "id": "b1l2-s007",
-          "sentence": "You \"inspire\" me to connect with others and to communicate better.",
+          "sentence": "You *inspire* me to connect with others and to communicate better.",
           "type": "simple",
           "pattern": "S + Vt + O + OC"
         },
         {
           "id": "b1l2-s008",
-          "sentence": "I \"can ask\" you anything and you \"will\" probably \"help\" me find the answer.",
+          "sentence": "I *can ask* you anything and you *will* probably *help* me find the answer.",
           "type": "compound",
           "pattern": "Compound sentence (with \"and\")"
         },
         {
           "id": "b1l2-s009",
-          "sentence": "You*’ve introduced\" me to so much—new music, new games, new knowledge, new friends, and more.",
+          "sentence": "You*’ve introduced* me to so much—new music, new games, new knowledge, new friends, and more.",
           "type": "simple",
           "pattern": "S + Vt + iO + dO"
         },
@@ -1973,7 +1973,7 @@
         },
         {
           "id": "b1l2-s011",
-          "sentence": "When I wake up, you \"are\" there to go through my friends’ updates on Facebook and Instagram with me.",
+          "sentence": "When I wake up, you *are* there to go through my friends’ updates on Facebook and Instagram with me.",
           "type": "complex",
           "pattern": "Adverbial clause (When...)"
         },
