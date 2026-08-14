@@ -1925,25 +1925,25 @@
         },
         {
           "id": "b1l2-s003",
-          "sentence": "Our relationship \"has been\" mostly satisfying, but I\"’m\" afraid it’s over.",
+          "sentence": "Our relationship *has been* mostly satisfying, but I*’m* afraid it’s over.",
           "type": "compound-complex",
           "pattern": "Compound-Complex sentence (with \"but\" + Noun clause)"
         },
         {
           "id": "b1l2-s004",
-          "sentence": "Leaving you really \"breaks\" my heart because we’ve had some great times together.",
+          "sentence": "Leaving you really *breaks* my heart because we’ve had some great times together.",
           "type": "complex",
           "pattern": "Adverbial clause (because...)"
         },
         {
           "id": "b1l2-s005",
-          "sentence": "When you’re around, I \"am\" never bored.",
+          "sentence": "When you’re around, I *am* never bored.",
           "type": "complex",
           "pattern": "Adverbial clause (When...)"
         },
         {
           "id": "b1l2-s006",
-          "sentence": "There \"is\" always something to do.",
+          "sentence": "There *is* always something to do.",
           "type": "simple",
           "pattern": "There be... (特殊倒裝句)"
         },
