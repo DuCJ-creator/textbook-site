@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -32,6 +33,38 @@
   .practice-hint.show { display: block; }
 
   .empty-state { padding: 50px 20px; text-align: center; color: var(--ink-soft); font-size: 0.88rem; }
+
+  /* 分類框內容過多時，各分類獨立捲動，不再把整個頁面向下撐長。 */
+  #sortBaskets {
+    align-items: start;
+  }
+  #sortBaskets > * {
+    max-height: min(68vh, 720px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: var(--ink-soft) transparent;
+  }
+  #sortBaskets > *::-webkit-scrollbar {
+    width: 9px;
+  }
+  #sortBaskets > *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  #sortBaskets > *::-webkit-scrollbar-thumb {
+    background: var(--ink-soft);
+    border: 2px solid transparent;
+    border-radius: 999px;
+    background-clip: padding-box;
+  }
+
+  @media (max-width: 720px) {
+    #sortBaskets > * {
+      max-height: 56vh;
+    }
+  }
 </style>
 </head>
 <body>
