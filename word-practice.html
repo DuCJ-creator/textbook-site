@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -66,15 +67,40 @@
   .wp-shooter.shooter-recoil { animation: wp-recoil .25s ease; }
   @keyframes wp-recoil { 30% { transform: translateX(-50%) translateY(4px) rotate(-8deg); } }
 
-  /* 掉落物：只顯示未知字母的圓點，具體提示（中文/詞性/首字母）改放在下方固定提示列 */
+  /* 掉落物：中文與詞性在上，首字母豆莢在下，整組一起緩慢落下 */
   .wp-falling {
     position: absolute; left: 50%; transform: translateX(-50%);
-    text-align: center; cursor: default;
-    border: 1px solid var(--accent); border-radius: 999px;
-    background: var(--card); box-shadow: 0 8px 20px rgba(39,103,73,.16);
-    padding: 12px 20px; transition: top .08s linear;
+    width: min(92%, 520px); text-align: center; cursor: default;
+    transition: top .08s linear; filter: drop-shadow(0 9px 14px rgba(39,103,73,.16));
   }
-  .wp-falling-word { font-family: var(--mono); font-size: 1.1rem; letter-spacing: 3px; color: var(--accent-dark); font-weight: 700; }
+  .wp-falling-clue {
+    display: inline-block; min-width: 150px; margin-bottom: 8px; padding: 8px 14px;
+    border: 1px solid var(--paper-line); border-radius: 14px; background: rgba(255,255,255,.94);
+  }
+  .wp-falling-meaning { font-family: var(--serif); font-size: 1.08rem; font-weight: 700; }
+  .wp-falling-clue .pos-tag { display: inline-block; margin-top: 3px; }
+  .wp-pod {
+    position: relative; min-height: 54px; padding: 8px 18px 8px 54px;
+    border: 3px solid #276749; border-radius: 48% 52% 48% 52% / 60% 60% 40% 40%;
+    background: linear-gradient(180deg, #a8d66d 0%, #65ad55 55%, #4a8f43 100%);
+    box-shadow: inset 0 5px 8px rgba(255,255,255,.3), inset 0 -5px 8px rgba(23,83,50,.24);
+  }
+  .wp-pod::after {
+    content: ""; position: absolute; right: -13px; top: 11px; width: 22px; height: 14px;
+    border-top: 5px solid #276749; border-radius: 50%; transform: rotate(20deg);
+  }
+  .wp-pod-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 1.65rem; }
+  .wp-pod-slots { display: flex; justify-content: center; align-items: center; gap: clamp(3px, 1vw, 8px); }
+  .wp-pod-slot {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: clamp(20px, 6vw, 31px); height: clamp(20px, 6vw, 31px); flex: 0 1 31px;
+    border-radius: 50%; font-family: var(--mono); font-size: clamp(.72rem, 3vw, 1rem); font-weight: 800;
+    text-transform: lowercase; box-sizing: border-box;
+  }
+  .wp-pod-slot.empty { border: 2px dashed rgba(255,255,255,.72); background: rgba(39,103,73,.16); }
+  .wp-pod-slot.hint { color: #704f00; background: #ffe08a; border: 2px solid #d3a928; }
+  .wp-pod-slot.filled { color: #17472e; background: #e7f8c9; border: 2px solid #3e874e; animation: wp-pea-in .24s ease; }
+  @keyframes wp-pea-in { from { transform: scale(.25); opacity: .2; } 70% { transform: scale(1.16); } }
   .wp-falling.correct { animation: wp-pop .4s ease forwards; }
   .wp-falling.wrong-shake { animation: wp-shake .3s ease; }
   @keyframes wp-pop { 60% { transform: translateX(-50%) scale(1.15); } to { transform: translateX(-50%) scale(0); opacity: 0; } }
@@ -101,8 +127,14 @@
   @keyframes wp-burst-fly {
     to { transform: translate(calc(-50% + var(--bx)), calc(-50% + var(--by))) scale(.2); opacity: 0; }
   }
+  .wp-miss-label {
+    position: absolute; z-index: 11; transform: translate(-50%, -50%); pointer-events: none;
+    color: #b42318; font: 900 1rem/1 var(--sans); letter-spacing: .12em;
+    text-shadow: 0 2px 0 #fff; animation: wp-miss-float .62s ease-out forwards;
+  }
+  @keyframes wp-miss-float { to { transform: translate(-50%, -36px) rotate(-8deg); opacity: 0; } }
 
-  /* ===== Fixed hint bar (中文/詞性/首字母提示，常駐不隨掉落物移動) ===== */
+  /* ===== 操作提示列 ===== */
   .wp-hintbar {
     text-align: center; padding: 16px 18px; border-radius: var(--radius);
     background: var(--card); border: 1px solid var(--paper-line); box-shadow: var(--shadow);
@@ -119,6 +151,7 @@
     display: block; margin: 0 auto 10px; border: 1px solid var(--paper-line); background: var(--accent-soft);
     border-radius: 999px; padding: 6px 14px; font-size: 0.78rem; font-weight: 700; cursor: pointer;
   }
+  .wp-instruction { color: var(--ink-soft); font-size: .8rem; line-height: 1.55; }
 
   /* Typing keyboard */
   .wp-keyboard { display: grid; gap: 6px; margin: 0 auto; width: min(560px, 100%); }
