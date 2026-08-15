@@ -2500,75 +2500,75 @@
         },
         {
           "id": "b3l3-s012",
-          "sentence": "The king of the gods chose the second one, believing there must be juicy meat underneath the fat, but instead he ended up with nothing but bones.",
+          "sentence": "The king of the gods *chose* the second one, believing there must be juicy meat underneath the fat, but instead he *ended up with* nothing but bones.",
           "type": "compound-complex",
           "pattern": "Compound-Complex sentence (with \"but\" + Noun clause object)"
         },
         {
           "id": "b3l3-s013",
-          "sentence": "As a result, from that day on, humans would keep the meat for themselves and burn animal bones as an offering to the gods.",
+          "sentence": "As a result, from that day on, humans *would keep* the meat for themselves and *burn* animal bones as an offering to the gods.",
           "type": "simple",
           "pattern": "Compound predicate (would keep... and burn...)"
         },
         {
           "id": "b3l3-s014",
-          "sentence": "Angry about being tricked, Zeus took fire away from humankind.",
+          "sentence": "Angry about being tricked, Zeus *took* fire *away* from humankind.",
           "type": "simple",
-          "pattern": "Participle phrase (Angry...) + S + Vt + O"
+          "pattern": "Participle phrase (Angry...)  S + Vt + O"
         },
         {
           "id": "b3l3-s015",
-          "sentence": "Without it, humans began to starve and freeze.",
+          "sentence": "Without it, humans *began* to starve and freeze.",
           "type": "simple",
           "pattern": "S + Vt + O"
         },
         {
           "id": "b3l3-s016",
-          "sentence": "Unable to make tools or weapons, they had to live in caves and often fell victim to wild beasts.",
+          "sentence": "Unable to make tools or weapons, they *had to live in* caves and often *fell victim to* wild beasts.",
           "type": "simple",
-          "pattern": "Participle phrase (Unable to...) + Compound predicate"
+          "pattern": "Participle phrase (Unable to...) S+Vt+O  (Compound predicate)"
         },
         {
           "id": "b3l3-s017",
-          "sentence": "Prometheus saw how miserable they were and decided to help.",
+          "sentence": "Prometheus *saw* how miserable they were and *decided* to help.",
           "type": "complex",
-          "pattern": "Noun clause (how miserable...) inside compound predicate"
+          "pattern": "Noun clause (how miserable...) S+Vt+O  (Compound predicate)"
         },
         {
           "id": "b3l3-s018",
-          "sentence": "He took a stalk of fennel and lit its hollow center with fire that he had stolen from the sun.",
+          "sentence": "He *took* a stalk of fennel and *lit* its hollow center with fire that he had stolen from the sun.",
           "type": "complex",
-          "pattern": "Relative clause (that...) inside compound predicate"
+          "pattern": "Relative clause (that...) S+Vt+O  (Compound predicate)"
         },
         {
           "id": "b3l3-s019",
-          "sentence": "Then, he gave humans this stalk with the fire inside it.",
+          "sentence": "Then, he *gave* humans this stalk with the fire inside it.",
           "type": "simple",
           "pattern": "S + Vt + iO + dO"
         },
         {
           "id": "b3l3-s020",
-          "sentence": "Furious about Prometheus’s theft, Zeus punished the Titan by banishing him to a place far to the east.",
+          "sentence": "Furious about Prometheus’s theft, Zeus *punished* the Titan by banishing him to a place far to the east.",
           "type": "simple",
           "pattern": "Participle phrase (Furious...) + S + Vt + O"
         },
         {
           "id": "b3l3-s021",
-          "sentence": "There, Prometheus was chained to a rock, and an eagle sent by Zeus fed on Prometheus’s liver.",
+          "sentence": "There, Prometheus *was chained to* a rock, and an eagle sent by Zeus *fed on* Prometheus’s liver.",
           "type": "compound",
           "pattern": "Compound sentence (with \"and\")"
         },
         {
           "id": "b3l3-s022",
-          "sentence": "Though his liver kept growing back, the eagle would return every day to gnaw at it again, torturing Prometheus until the end of time.",
+          "sentence": "Though his liver kept growing back, the eagle *would return* every day to gnaw at it again, torturing Prometheus until the end of time.",
           "type": "complex",
-          "pattern": "Adverbial clause (Though...) + Participle clause"
+          "pattern": "Adverbial clause (Though...) S+Vi, Participle clause"
         },
         {
           "id": "b3l3-s023",
-          "sentence": "Through his sacrifice, Prometheus, who gave humans not only the ability to stand upright but also the gift of fire, which set the stage for human civilization, came to be known in later centuries as the “Champion of Humankind.”",
+          "sentence": "Through his sacrifice, Prometheus, who gave humans not only the ability to stand upright but also the gift of fire, which set the stage for human civilization, *came to* be known in later centuries as the “Champion of Humankind.”",
           "type": "complex",
-          "pattern": "Relative clauses (who... / which...)"
+          "pattern": "Relative clauses (who... / which...) S + Vt + O"
         }
       ]
     }
