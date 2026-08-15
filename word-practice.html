@@ -42,10 +42,10 @@
 
   /* ===== Arena: falling word ===== */
   .wp-arena {
-    position: relative; overflow: hidden; min-height: 420px;
+    position: relative; overflow: hidden; min-height: 340px;
     border-radius: var(--radius); border: 1px solid var(--paper-line);
     background: linear-gradient(180deg, var(--accent-soft), var(--paper));
-    box-shadow: var(--shadow); margin-bottom: 16px;
+    box-shadow: var(--shadow); margin-bottom: 12px;
   }
   .wp-ground {
     position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: var(--accent);
@@ -57,27 +57,71 @@
   }
   .wp-banner.show { opacity: 1; transform: translate(-50%, 0); }
 
+  /* 射手：固定站在畫面底部中央，正是豆子發射的起點 */
+  .wp-shooter {
+    position: absolute; z-index: 5; left: 50%; bottom: 14px; transform: translateX(-50%);
+    font-size: 1.9rem; filter: drop-shadow(0 4px 6px rgba(0,0,0,.15));
+    transition: transform .12s ease;
+  }
+  .wp-shooter.shooter-recoil { animation: wp-recoil .25s ease; }
+  @keyframes wp-recoil { 30% { transform: translateX(-50%) translateY(4px) rotate(-8deg); } }
+
+  /* 掉落物：只顯示未知字母的圓點，具體提示（中文/詞性/首字母）改放在下方固定提示列 */
   .wp-falling {
     position: absolute; left: 50%; transform: translateX(-50%);
-    width: min(88%, 420px); text-align: center; cursor: default;
-    border: 1px solid var(--accent); border-radius: var(--radius);
-    background: var(--card); box-shadow: 0 10px 26px rgba(39,103,73,.18);
-    padding: 18px; transition: top .08s linear;
+    text-align: center; cursor: default;
+    border: 1px solid var(--accent); border-radius: 999px;
+    background: var(--card); box-shadow: 0 8px 20px rgba(39,103,73,.16);
+    padding: 12px 20px; transition: top .08s linear;
   }
-  .wp-falling .meaning { font-family: var(--serif); font-size: 1.3rem; font-weight: 700; }
-  .wp-falling .pos-tag { margin-top: 6px; }
-  .wp-falling .letters {
-    margin-top: 14px; font-family: var(--mono); font-size: 1.15rem; letter-spacing: 3px; font-weight: 700;
-  }
-  .wp-falling .letters .hint { color: var(--gold); }
-  .wp-falling .letters .filled { color: var(--accent-dark); }
+  .wp-falling-word { font-family: var(--mono); font-size: 1.1rem; letter-spacing: 3px; color: var(--accent-dark); font-weight: 700; }
   .wp-falling.correct { animation: wp-pop .4s ease forwards; }
   .wp-falling.wrong-shake { animation: wp-shake .3s ease; }
   @keyframes wp-pop { 60% { transform: translateX(-50%) scale(1.15); } to { transform: translateX(-50%) scale(0); opacity: 0; } }
   @keyframes wp-shake { 25% { margin-left: -8px; } 75% { margin-left: 8px; } }
 
+  /* 豆子飛行軌跡：從射手位置飛向目標，用 CSS 變數 --dx/--dy 決定飛行方向與距離 */
+  .wp-pea {
+    position: absolute; z-index: 8; width: 12px; height: 12px; border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #d8f0c8, var(--accent) 70%);
+    box-shadow: 0 0 6px rgba(39,103,73,.5);
+    transform: translate(-50%, -50%); pointer-events: none;
+    transition: transform .2s cubic-bezier(.25,.7,.3,1), opacity .2s;
+  }
+  .wp-pea.miss { background: radial-gradient(circle at 30% 30%, #ffd9d0, #c23b3b 70%); }
+  .wp-pea.fly { transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(.6); opacity: .85; }
+
+  /* 命中爆裂粒子：命中瞬間向外噴散的小點 */
+  .wp-burst {
+    position: absolute; z-index: 9; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--gold); pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: wp-burst-fly .4s ease-out forwards;
+  }
+  @keyframes wp-burst-fly {
+    to { transform: translate(calc(-50% + var(--bx)), calc(-50% + var(--by))) scale(.2); opacity: 0; }
+  }
+
+  /* ===== Fixed hint bar (中文/詞性/首字母提示，常駐不隨掉落物移動) ===== */
+  .wp-hintbar {
+    text-align: center; padding: 16px 18px; border-radius: var(--radius);
+    background: var(--card); border: 1px solid var(--paper-line); box-shadow: var(--shadow);
+    margin-bottom: 16px;
+  }
+  .wp-hint-meaning { font-family: var(--serif); font-size: 1.3rem; font-weight: 700; }
+  .wp-hintbar .pos-tag { margin-top: 6px; display: inline-block; }
+  .wp-hintbar .letters {
+    margin-top: 14px; font-family: var(--mono); font-size: 1.15rem; letter-spacing: 3px; font-weight: 700;
+  }
+  .wp-hintbar .letters .hint { color: var(--gold); }
+  .wp-hintbar .letters .filled { color: var(--accent-dark); }
+  .wp-replay-btn {
+    display: block; margin: 0 auto 10px; border: 1px solid var(--paper-line); background: var(--accent-soft);
+    border-radius: 999px; padding: 6px 14px; font-size: 0.78rem; font-weight: 700; cursor: pointer;
+  }
+
   /* Typing keyboard */
-  .wp-keyboard { display: grid; gap: 6px; margin: 18px auto 0; width: min(560px, 100%); }
+  .wp-keyboard { display: grid; gap: 6px; margin: 0 auto; width: min(560px, 100%); }
   .wp-keyrow { display: flex; justify-content: center; gap: 5px; }
   .wp-key {
     min-width: 30px; flex: 0 1 44px; border: 1px solid var(--paper-line); background: var(--card);
@@ -108,7 +152,7 @@
         <a class="back" id="wordFamilyBackLink" href="word-family.html">← Word Family</a>
       </div>
       <h1 id="pageTitle" style="margin-top:8px;">單字練習</h1>
-      <div class="sub">用本課單字家族練習辨識、拼寫與聽寫</div>
+      <div class="sub">用本課單字家族練習拼寫與聽寫</div>
     </div>
   </div>
 

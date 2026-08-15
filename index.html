@@ -206,6 +206,27 @@
         </div>`;
     });
 
+  // English Basics：六個外部文法/單字資源，點卡片在頁面內用 iframe 開啟
+  ExternalViewer.render({
+    containerId: "englishBasicsArea",
+    cards: [
+      { title: "Grammar Lemon Tree 文法檸檬樹", url: "https://ducj-creator.github.io/Shirley-Grammar/" },
+      { title: "Grammar with Songs 聽歌學文法", url: "https://ducj-creator.github.io/Shirley-AI-Music-Studio/learning/index.html" },
+      { title: "Irregular Verbs 動詞不規則", url: "https://ducj-creator.github.io/Shirley-Grammar/irregular/verbs/" },
+      { title: "Irregular Nouns 名詞不規則", url: "https://ducj-creator.github.io/Shirley-Grammar/irregular/nouns/" },
+      { title: "Common Polysemes 一詞多意", url: "https://ducj-creator.github.io/Shirley-Grammar/polysemy" },
+      { title: "Roots & Affixes 詞根詞綴", url: "https://ducj-creator.github.io/Shirley-Grammar/root%20and%20affix/" }
+    ]
+  });
+
+  // Vocabulary Basics：單一外部資源
+  ExternalViewer.render({
+    containerId: "vocabularyBasicsArea",
+    cards: [
+      { title: "Vocabulary Basics 單字基礎", url: "https://ducj-creator.github.io/shirleyvocab.html#home" }
+    ]
+  });
+
   function escapeHtml(str) {
     return String(str ?? "")
       .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
