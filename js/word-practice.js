@@ -110,6 +110,8 @@ const WordPractice = (function () {
     state.locked = false;
     state.current = null;
     state.typed = "";
+    state.visualTyped = "";
+    state.finishing = false;
     state.hintLen = 1;
     state.fallStart = 0;
     state.fallDuration = 12;
@@ -189,9 +191,11 @@ const WordPractice = (function () {
     if (!state.queue.length) { finish("練習完成！"); return; }
     state.current = state.queue.shift();
     state.locked = false;
+    state.finishing = false;
     // 拼寫與聽寫都預先給第一個字母。
     state.hintLen = 1;
     state.typed = state.current.en.slice(0, state.hintLen);
+    state.visualTyped = state.typed;
 
     els.arena.querySelectorAll(".wp-falling").forEach(el => el.remove());
 
@@ -236,7 +240,8 @@ const WordPractice = (function () {
     const startTop = -140;
     const nearGroundTop = Math.max(80, arenaHeight - els.currentCard.offsetHeight - 54);
     els.currentCard.style.top = (startTop + progress * (nearGroundTop - startTop)) + "px";
-    if (progress >= 1 && !state.locked) {
+    // 最後幾顆豆子仍在飛行時先等動畫完成，避免已打完卻在落地瞬間扣命。
+    if (progress >= 1 && !state.locked && !state.finishing) {
       missRound();
       return;
     }
@@ -248,10 +253,11 @@ const WordPractice = (function () {
     const hintEl = document.getElementById("wpHintLetters");
     if (!podEl && !hintEl) return;
     const word = state.current.en;
+    const displayed = state.visualTyped;
     const podParts = [];
     const hintParts = [];
     for (let i = 0; i < word.length; i++) {
-      if (i < state.typed.length) {
+      if (i < displayed.length) {
         const letterClass = i < state.hintLen ? "hint" : "filled";
         podParts.push(`<span class="wp-pod-slot ${letterClass}">${Loader.escapeHtml(word[i])}</span>`);
         hintParts.push(`<span class="${letterClass}">${Loader.escapeHtml(word[i])}</span>`);
@@ -330,7 +336,7 @@ const WordPractice = (function () {
   }
 
   function handleLetter(ch) {
-    if (!state.active || state.locked) return;
+    if (!state.active || state.locked || state.finishing) return;
     const word = state.current.en;
     const expected = (word[state.typed.length] || "").toLowerCase();
     const isHit = !!expected && expected === ch.toLowerCase();
@@ -342,14 +348,15 @@ const WordPractice = (function () {
     launchPea(isHit);
 
     if (isHit) {
-      // 等豆子飛到豆莢後才填入字母，讓「發射 → 填滿」的動作清楚可見。
-      state.locked = true;
+      // 輸入判定立即前進，動畫則稍後填字：快速連續打字不會再漏接按鍵。
+      const acceptedLetter = word[state.typed.length];
+      state.typed += acceptedLetter;
+      if (state.typed.length >= word.length) state.finishing = true;
       setTimeout(() => {
-        if (!state.active || !els.currentCard || !els.currentCard.isConnected) return;
-        state.typed += word[state.typed.length];
+        if (!state.active || state.locked || !els.currentCard || !els.currentCard.isConnected) return;
+        state.visualTyped += acceptedLetter;
         renderLetters();
-        state.locked = false;
-        if (state.typed.length >= word.length) solveTyping();
+        if (state.visualTyped.length >= word.length) solveTyping();
       }, 220);
     } else {
       state.misses++;
