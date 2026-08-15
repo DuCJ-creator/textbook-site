@@ -6,11 +6,8 @@
 
    兩種模式（刻意不做「辨識模式」——同一字族裡動詞/名詞常常同形同義，
    例如 reply、memory，中文提示無法用語意區分該選哪個詞性的答案）：
-   - spelling：中文＋詞性＋首字母提示常駐在畫面下方固定區域，
-     不會隨掉落物一起往下移動——避免玩家要等掉落物出現在視線範圍
-     才看得到提示，浪費反應時間。
-   - dictation：跟 spelling 差異只在提示區改成「聽發音」，不直接顯示
-     首字母（但仍顯示中文與詞性），先唸出發音再讓玩家輸入。
+   - spelling：掉落的豆莢上方顯示中文、詞性，豆莢內先給首字母。
+   - dictation：同樣給首字母，並可播放／重播單字發音。
 
    互動改成「豌豆射手」風格：玩家固定在畫面底部，輸入正確字母時，
    會從底部發射一顆「豆子」往上飛，命中掉落物上對應的字母位置會有
@@ -93,7 +90,7 @@ const WordPractice = (function () {
         <button type="button" class="mode-pick-card" id="pickDictation">
           <div class="icon">🔊</div>
           <h3>聽寫模式</h3>
-          <p>聽發音、看中文與詞性，用鍵盤拼出完整單字。</p>
+          <p>聽發音、看中文、詞性與首字母，用鍵盤拼出完整單字。</p>
         </button>
       </div>
     `;
@@ -107,12 +104,13 @@ const WordPractice = (function () {
     state.score = 0;
     state.correct = 0;
     state.wrong = 0;
+    state.misses = 0;
     state.lives = 5;
     state.active = true;
     state.locked = false;
     state.current = null;
     state.typed = "";
-    state.hintLen = 0;
+    state.hintLen = 1;
     state.fallStart = 0;
     state.fallDuration = 12;
     renderGameShell();
@@ -125,6 +123,7 @@ const WordPractice = (function () {
         <div class="wp-hud-group">
           <div class="wp-stat"><span>Score</span><strong id="wpScore">0</strong></div>
           <div class="wp-stat"><span>Correct</span><strong id="wpCorrect">0</strong></div>
+          <div class="wp-stat"><span>Miss</span><strong id="wpMisses">0</strong></div>
         </div>
         <div class="wp-hearts" id="wpHearts"></div>
         <div class="wp-hud-group">
@@ -143,6 +142,7 @@ const WordPractice = (function () {
     els.shooter = document.getElementById("wpShooter");
     els.scoreEl = document.getElementById("wpScore");
     els.correctEl = document.getElementById("wpCorrect");
+    els.missesEl = document.getElementById("wpMisses");
     els.heartsEl = document.getElementById("wpHearts");
     els.bannerEl = document.getElementById("wpBanner");
     els.hintbar = document.getElementById("wpHintbar");
@@ -174,6 +174,7 @@ const WordPractice = (function () {
   function updateHud() {
     els.scoreEl.textContent = state.score;
     els.correctEl.textContent = state.correct;
+    els.missesEl.textContent = state.misses;
     els.heartsEl.textContent = "💚".repeat(Math.max(0, state.lives)) + "🤍".repeat(Math.max(0, 5 - state.lives));
   }
 
@@ -188,31 +189,35 @@ const WordPractice = (function () {
     if (!state.queue.length) { finish("練習完成！"); return; }
     state.current = state.queue.shift();
     state.locked = false;
-    state.hintLen = state.mode === "spelling" ? 1 : 0;
+    // 拼寫與聽寫都預先給第一個字母。
+    state.hintLen = 1;
     state.typed = state.current.en.slice(0, state.hintLen);
 
     els.arena.querySelectorAll(".wp-falling").forEach(el => el.remove());
 
-    // 提示區（中文、詞性、首字母提示）固定在畫面下方，不隨掉落物移動，
-    // 玩家一進入回合就能立刻看到全部線索，不用等掉落物落到視線範圍。
+    // 下方只保留操作提示；中文、詞性與首字母會和豆莢一起掉落。
     els.hintbar.innerHTML = `
       ${state.mode === "dictation" ? `<button type="button" class="wp-replay-btn" id="wpReplayBtn">🔊 再聽一次</button>` : ""}
-      <div class="wp-hint-meaning">${Loader.escapeHtml(state.current.zh)}</div>
-      <span class="pos-tag">${POS_LABELS_ZH[state.current.pos] || state.current.pos}</span>
-      <div class="letters" id="wpLetters"></div>
+      <div class="wp-instruction">依序輸入字母，把豆子射進掉落的豆莢裡；射錯會顯示 MISS，但豆莢會繼續掉落。</div>
     `;
     if (state.mode === "dictation") {
       document.getElementById("wpReplayBtn").addEventListener("click", () => Loader.speakText(state.current.en));
     }
-    renderLetters();
     if (state.mode === "dictation") Loader.speakText(state.current.en);
 
     const card = document.createElement("div");
     card.className = "wp-falling";
-    card.style.top = "-90px";
-    card.innerHTML = `<span class="wp-falling-word">${"● ".repeat(state.current.en.length).trim()}</span>`;
+    card.style.top = "-140px";
+    card.innerHTML = `
+      <div class="wp-falling-clue">
+        <div class="wp-falling-meaning">${Loader.escapeHtml(state.current.zh)}</div>
+        <span class="pos-tag">${POS_LABELS_ZH[state.current.pos] || Loader.escapeHtml(state.current.pos)}</span>
+      </div>
+      <div class="wp-pod" id="wpLetters" aria-label="單字豆莢"></div>
+    `;
     els.arena.appendChild(card);
     els.currentCard = card;
+    renderLetters();
 
     state.fallStart = performance.now();
     state.fallDuration = Math.max(9, 14 - (state.correct + state.wrong) * 0.3);
@@ -224,7 +229,9 @@ const WordPractice = (function () {
     if (!state.active || !els.currentCard || !els.currentCard.isConnected) return;
     const arenaHeight = els.arena.clientHeight;
     const progress = Math.min(1, (now - state.fallStart) / 1000 / state.fallDuration);
-    els.currentCard.style.top = (-90 + progress * (arenaHeight - 130)) + "px";
+    const startTop = -140;
+    const nearGroundTop = Math.max(80, arenaHeight - els.currentCard.offsetHeight - 54);
+    els.currentCard.style.top = (startTop + progress * (nearGroundTop - startTop)) + "px";
     if (progress >= 1 && !state.locked) {
       missRound();
       return;
@@ -239,12 +246,12 @@ const WordPractice = (function () {
     const parts = [];
     for (let i = 0; i < word.length; i++) {
       if (i < state.typed.length) {
-        parts.push(`<span class="${i < state.hintLen ? "hint" : "filled"}">${Loader.escapeHtml(word[i])}</span>`);
+        parts.push(`<span class="wp-pod-slot ${i < state.hintLen ? "hint" : "filled"}">${Loader.escapeHtml(word[i])}</span>`);
       } else {
-        parts.push("_");
+        parts.push('<span class="wp-pod-slot empty" aria-hidden="true"></span>');
       }
     }
-    el.innerHTML = parts.join(" ");
+    el.innerHTML = `<span class="wp-pod-icon" aria-hidden="true">🫛</span><span class="wp-pod-slots">${parts.join("")}</span>`;
   }
 
   function handleKeydown(e) {
@@ -300,19 +307,42 @@ const WordPractice = (function () {
     }
   }
 
+  function showMiss(targetX, targetY) {
+    const miss = document.createElement("span");
+    miss.className = "wp-miss-label";
+    miss.textContent = "MISS";
+    miss.style.left = targetX + "px";
+    miss.style.top = targetY + "px";
+    els.arena.appendChild(miss);
+    setTimeout(() => miss.remove(), 650);
+  }
+
   function handleLetter(ch) {
     if (!state.active || state.locked) return;
     const word = state.current.en;
     const expected = (word[state.typed.length] || "").toLowerCase();
     const isHit = !!expected && expected === ch.toLowerCase();
 
+    const arenaRect = els.arena.getBoundingClientRect();
+    const targetRect = els.currentCard.getBoundingClientRect();
+    const targetX = targetRect.left - arenaRect.left + targetRect.width / 2;
+    const targetY = targetRect.top - arenaRect.top + targetRect.height / 2;
     launchPea(isHit);
 
     if (isHit) {
-      state.typed += word[state.typed.length];
-      renderLetters();
-      if (state.typed.length >= word.length) solveTyping();
+      // 等豆子飛到豆莢後才填入字母，讓「發射 → 填滿」的動作清楚可見。
+      state.locked = true;
+      setTimeout(() => {
+        if (!state.active || !els.currentCard || !els.currentCard.isConnected) return;
+        state.typed += word[state.typed.length];
+        renderLetters();
+        state.locked = false;
+        if (state.typed.length >= word.length) solveTyping();
+      }, 220);
     } else {
+      state.misses++;
+      updateHud();
+      showMiss(targetX, targetY - 24);
       els.currentCard.classList.remove("wrong-shake");
       void els.currentCard.offsetWidth;
       els.currentCard.classList.add("wrong-shake");
@@ -339,7 +369,7 @@ const WordPractice = (function () {
     state.locked = true;
     state.wrong++;
     state.lives--;
-    showBanner(`時間到，正確拼法是 ${state.current.en}`);
+    showBanner(`豆莢落地！正確拼法是 ${state.current.en}`);
     sfxMiss();
     updateHud();
     if (state.lives <= 0) { setTimeout(() => finish("生命值用完了"), 900); return; }
@@ -364,7 +394,8 @@ const WordPractice = (function () {
         <div class="wp-result-grid">
           <div class="wp-result-card"><strong>${state.score}</strong><span>Score</span></div>
           <div class="wp-result-card"><strong>${state.correct}</strong><span>答對</span></div>
-          <div class="wp-result-card"><strong>${state.wrong}</strong><span>答錯</span></div>
+          <div class="wp-result-card"><strong>${state.misses}</strong><span>MISS</span></div>
+          <div class="wp-result-card"><strong>${state.wrong}</strong><span>掉落</span></div>
           <div class="wp-result-card"><strong>${accuracy}%</strong><span>正確率</span></div>
         </div>
         <div class="wp-result-actions">
