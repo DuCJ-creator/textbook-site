@@ -2434,67 +2434,67 @@
       "items": [
         {
           "id": "b3l3-s001",
-          "sentence": "At a time when there were all-powerful gods in the universe, a Titan known as Prometheus created human beings out of clay.",
+          "sentence": "At a time when there were all-powerful gods in the universe, a Titan known as Prometheus *created* human beings out of clay.",
           "type": "complex",
           "pattern": "Adjective clause modifying \"time\" (when there were...)"
         },
         {
           "id": "b3l3-s002",
-          "sentence": "His brother Epimetheus then gave all living creatures on earth different qualities.",
+          "sentence": "His brother Epimetheus then *gave* all living creatures on earth different qualities.",
           "type": "simple",
           "pattern": "S + Vt + iO + dO"
         },
         {
           "id": "b3l3-s003",
-          "sentence": "Epimetheus gave animals speed, strength, fur, and wings.",
+          "sentence": "Epimetheus *gave* animals speed, strength, fur, and wings.",
           "type": "simple",
           "pattern": "S + Vt + iO + dO"
         },
         {
           "id": "b3l3-s004",
-          "sentence": "By the time he got to human beings, however, he had run out of gifts.",
+          "sentence": "By the time he got to human beings, however, he *had run out of* gifts.",
           "type": "complex",
           "pattern": "Adverbial clause (By the time...)"
         },
         {
           "id": "b3l3-s005",
-          "sentence": "To make up for their weaker state, Prometheus enabled them to stand upright like the gods.",
+          "sentence": "To make up for their weaker state, Prometheus *enabled* them to stand upright like the gods.",
           "type": "simple",
           "pattern": "S + Vt + O + OC"
         },
         {
           "id": "b3l3-s006",
-          "sentence": "Not only kind but also generous, he gave them fire too so that they could keep warm, cook food, and make tools.",
+          "sentence": "Not only kind but also generous, he *gave* them fire too so that they could keep warm, cook food, and make tools.",
           "type": "complex",
           "pattern": "Adverbial clause (so that...) / Adjective phrase"
         },
         {
           "id": "b3l3-s007",
-          "sentence": "However, Prometheus’s love for humankind brought him into conflict with Zeus, the king of the Olympian gods.",
+          "sentence": "However, Prometheus’s love for humankind *brought* him into conflict with Zeus, the king of the Olympian gods.",
           "type": "simple",
           "pattern": "S + Vt + O"
         },
         {
           "id": "b3l3-s008",
-          "sentence": "When the gods and humans met at Mecone to decide on the distribution of sacrifices that humans should make to the gods, Prometheus tricked Zeus for the benefit of humans.",
+          "sentence": "When the gods and humans met at Mecone to decide on the distribution of sacrifices that humans should make to the gods, Prometheus *tricked* Zeus for the benefit of humans.",
           "type": "complex",
           "pattern": "Adverbial clause (When...) + Relative clause (that...)"
         },
         {
           "id": "b3l3-s009",
-          "sentence": "He slaughtered a bull and created two offerings.",
+          "sentence": "He *slaughtered* a bull and *created* two offerings.",
           "type": "simple",
           "pattern": "Compound predicate (slaughtered... and created...)"
         },
         {
           "id": "b3l3-s010",
-          "sentence": "One was a pile of beef hidden inside a bull’s stomach, and the other was a pile of bones covered in shiny fat.",
+          "sentence": "One *was* a pile of beef hidden inside a bull’s stomach, and the other *was* a pile of bones covered in shiny fat.",
           "type": "compound",
           "pattern": "Compound sentence (with \"and\")"
         },
         {
           "id": "b3l3-s011",
-          "sentence": "He then asked Zeus to choose one.",
+          "sentence": "He then *asked* Zeus to choose one.",
           "type": "simple",
           "pattern": "S + Vt + O + OC"
         },
