@@ -1,17 +1,21 @@
 /* ===========================================================
-   word-practice.js — 單字拼寫 / 聽寫練習
+   word-practice.js — 單字拼寫 / 聽寫練習（豌豆射手風格）
 
    資料來源：整課的 vocabulary.rows（word family），攤平成單字清單
-   {en, zh, pos} 後供兩種模式使用。設計理念參考老師提供的「隕石」
-   遊戲範例，但重新用本站既有的淡金＋綠色視覺語言呈現，並簡化成
-   單頁流程（不含關卡選擇、CSV 載入等原範例的額外系統）。
+   {en, zh, pos} 後供兩種模式使用。
 
    兩種模式（刻意不做「辨識模式」——同一字族裡動詞/名詞常常同形同義，
-   例如 reply、memory，中文提示無法用語意區分該選哪個詞性的答案，
-   四選一的題目會產生無法公平判定的情況）：
-   - spelling：畫面顯示中文＋詞性＋首字母，用鍵盤輸入完整拼字
-   - dictation：畫面顯示中文＋詞性，先唸出發音，再用鍵盤輸入拼字
-     （跟 spelling 的差異只在提供的線索是「聽到的發音」而非文字提示）
+   例如 reply、memory，中文提示無法用語意區分該選哪個詞性的答案）：
+   - spelling：中文＋詞性＋首字母提示常駐在畫面下方固定區域，
+     不會隨掉落物一起往下移動——避免玩家要等掉落物出現在視線範圍
+     才看得到提示，浪費反應時間。
+   - dictation：跟 spelling 差異只在提示區改成「聽發音」，不直接顯示
+     首字母（但仍顯示中文與詞性），先唸出發音再讓玩家輸入。
+
+   互動改成「豌豆射手」風格：玩家固定在畫面底部，輸入正確字母時，
+   會從底部發射一顆「豆子」往上飛，命中掉落物上對應的字母位置會有
+   爆裂粒子效果與音效；輸入錯誤時豆子會偏斜射歪、伴隨低沉的錯誤音效，
+   營造遊戲緊迫感與節奏感。
 
    離開頁面不保存進度／最高分，每次重新進入都是全新一輪（設計決定）。
 
@@ -23,6 +27,7 @@ const WordPractice = (function () {
 
   let els = {};
   let state = null;
+  let audioCtx = null;
 
   function flattenWords(rows) {
     const POS_ORDER = ["verb", "noun", "adj", "adv"];
@@ -45,6 +50,26 @@ const WordPractice = (function () {
     }
     return a;
   }
+
+  // 簡易音效：不依賴外部音檔，用 Web Audio API 產生短促的嗶聲，
+  // 分成「命中」（高音、清脆）與「失誤」（低音、沉悶）兩種音色。
+  function beep(freq, duration) {
+    try {
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      audioCtx = audioCtx || new Ctx();
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.frequency.value = freq;
+      gain.gain.setValueAtTime(0.06, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+      osc.connect(gain).connect(audioCtx.destination);
+      osc.start();
+      osc.stop(audioCtx.currentTime + duration);
+    } catch (e) { /* Web Audio 不可用時安靜略過，不影響遊戲邏輯 */ }
+  }
+  function sfxHit() { beep(720, 0.07); setTimeout(() => beep(980, 0.06), 45); }
+  function sfxMiss() { beep(160, 0.12); }
+  function sfxComplete() { [520, 660, 880].forEach((f, i) => setTimeout(() => beep(f, 0.1), i * 80)); }
 
   function init(options) {
     els.container = document.getElementById(options.containerId);
@@ -108,17 +133,42 @@ const WordPractice = (function () {
       </div>
       <div class="wp-arena" id="wpArena">
         <div class="wp-banner" id="wpBanner"></div>
+        <div class="wp-shooter" id="wpShooter">🌱</div>
         <div class="wp-ground"></div>
       </div>
+      <div class="wp-hintbar" id="wpHintbar"></div>
+      <div class="wp-keyboard" id="wpKeyboard"></div>
     `;
     els.arena = document.getElementById("wpArena");
+    els.shooter = document.getElementById("wpShooter");
     els.scoreEl = document.getElementById("wpScore");
     els.correctEl = document.getElementById("wpCorrect");
     els.heartsEl = document.getElementById("wpHearts");
     els.bannerEl = document.getElementById("wpBanner");
+    els.hintbar = document.getElementById("wpHintbar");
     document.getElementById("wpQuit").addEventListener("click", () => finish("已結束練習"));
     document.addEventListener("keydown", handleKeydown);
+    renderKeyboard();
     updateHud();
+  }
+
+  function renderKeyboard() {
+    const kb = document.getElementById("wpKeyboard");
+    if (!kb) return;
+    kb.innerHTML = "";
+    ["qwertyuiop", "asdfghjkl", "zxcvbnm"].forEach(row => {
+      const r = document.createElement("div");
+      r.className = "wp-keyrow";
+      [...row].forEach(ch => {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "wp-key";
+        b.textContent = ch.toUpperCase();
+        b.addEventListener("click", () => handleLetter(ch));
+        r.appendChild(b);
+      });
+      kb.appendChild(r);
+    });
   }
 
   function updateHud() {
@@ -138,27 +188,32 @@ const WordPractice = (function () {
     if (!state.queue.length) { finish("練習完成！"); return; }
     state.current = state.queue.shift();
     state.locked = false;
-    state.hintLen = 1;
+    state.hintLen = state.mode === "spelling" ? 1 : 0;
     state.typed = state.current.en.slice(0, state.hintLen);
 
     els.arena.querySelectorAll(".wp-falling").forEach(el => el.remove());
-    els.arena.querySelectorAll(".wp-keyboard").forEach(el => el.remove());
 
-    const card = document.createElement("div");
-    card.className = "wp-falling";
-    card.style.top = "-140px";
-    card.innerHTML = `
-      ${state.mode === "dictation" ? '<div style="font-size:.75rem; color:var(--ink-soft); margin-bottom:6px;">🔊 播放中…</div>' : ""}
-      <div class="meaning">${Loader.escapeHtml(state.current.zh)}</div>
+    // 提示區（中文、詞性、首字母提示）固定在畫面下方，不隨掉落物移動，
+    // 玩家一進入回合就能立刻看到全部線索，不用等掉落物落到視線範圍。
+    els.hintbar.innerHTML = `
+      ${state.mode === "dictation" ? `<button type="button" class="wp-replay-btn" id="wpReplayBtn">🔊 再聽一次</button>` : ""}
+      <div class="wp-hint-meaning">${Loader.escapeHtml(state.current.zh)}</div>
       <span class="pos-tag">${POS_LABELS_ZH[state.current.pos] || state.current.pos}</span>
       <div class="letters" id="wpLetters"></div>
     `;
-    els.arena.appendChild(card);
+    if (state.mode === "dictation") {
+      document.getElementById("wpReplayBtn").addEventListener("click", () => Loader.speakText(state.current.en));
+    }
     renderLetters();
-    renderKeyboard();
     if (state.mode === "dictation") Loader.speakText(state.current.en);
 
+    const card = document.createElement("div");
+    card.className = "wp-falling";
+    card.style.top = "-90px";
+    card.innerHTML = `<span class="wp-falling-word">${"● ".repeat(state.current.en.length).trim()}</span>`;
+    els.arena.appendChild(card);
     els.currentCard = card;
+
     state.fallStart = performance.now();
     state.fallDuration = Math.max(9, 14 - (state.correct + state.wrong) * 0.3);
     cancelAnimationFrame(state.raf);
@@ -169,7 +224,7 @@ const WordPractice = (function () {
     if (!state.active || !els.currentCard || !els.currentCard.isConnected) return;
     const arenaHeight = els.arena.clientHeight;
     const progress = Math.min(1, (now - state.fallStart) / 1000 / state.fallDuration);
-    els.currentCard.style.top = (-140 + progress * (arenaHeight - 40)) + "px";
+    els.currentCard.style.top = (-90 + progress * (arenaHeight - 130)) + "px";
     if (progress >= 1 && !state.locked) {
       missRound();
       return;
@@ -192,35 +247,68 @@ const WordPractice = (function () {
     el.innerHTML = parts.join(" ");
   }
 
-  function renderKeyboard() {
-    const kb = document.createElement("div");
-    kb.className = "wp-keyboard";
-    ["qwertyuiop", "asdfghjkl", "zxcvbnm"].forEach(row => {
-      const r = document.createElement("div");
-      r.className = "wp-keyrow";
-      [...row].forEach(ch => {
-        const b = document.createElement("button");
-        b.type = "button";
-        b.className = "wp-key";
-        b.textContent = ch.toUpperCase();
-        b.addEventListener("click", () => handleLetter(ch));
-        r.appendChild(b);
-      });
-      kb.appendChild(r);
-    });
-    els.arena.appendChild(kb);
-  }
-
   function handleKeydown(e) {
     if (!state || !state.active) return;
     if (/^[a-zA-Z]$/.test(e.key)) handleLetter(e.key.toLowerCase());
+  }
+
+  // 從射手位置發射一顆豆子往目標飛去，飛行結束後才真正判定命中／落空，
+  // 讓輸入結果有「飛行時間」的視覺回饋，而不是瞬間變化。
+  function launchPea(hit) {
+    if (!els.shooter || !els.currentCard || !els.currentCard.isConnected) return;
+    const arenaRect = els.arena.getBoundingClientRect();
+    const shooterRect = els.shooter.getBoundingClientRect();
+    const targetRect = els.currentCard.getBoundingClientRect();
+
+    const startX = shooterRect.left - arenaRect.left + shooterRect.width / 2;
+    const startY = shooterRect.top - arenaRect.top + shooterRect.height / 2;
+    // 命中時瞄準掉落物中心；失手時故意偏移一段距離，做出「射歪」的感覺
+    const targetX = targetRect.left - arenaRect.left + targetRect.width / 2 + (hit ? 0 : (Math.random() < 0.5 ? -1 : 1) * 60);
+    const targetY = targetRect.top - arenaRect.top + targetRect.height / 2 + (hit ? 0 : -40);
+
+    const pea = document.createElement("div");
+    pea.className = "wp-pea" + (hit ? "" : " miss");
+    pea.style.left = startX + "px";
+    pea.style.top = startY + "px";
+    pea.style.setProperty("--dx", (targetX - startX) + "px");
+    pea.style.setProperty("--dy", (targetY - startY) + "px");
+    els.arena.appendChild(pea);
+    requestAnimationFrame(() => pea.classList.add("fly"));
+
+    setTimeout(() => {
+      pea.remove();
+      if (hit) {
+        spawnHitBurst(targetX, targetY);
+        sfxHit();
+      } else {
+        sfxMiss();
+      }
+    }, 220);
+  }
+
+  function spawnHitBurst(x, y) {
+    for (let i = 0; i < 6; i++) {
+      const p = document.createElement("span");
+      p.className = "wp-burst";
+      p.style.left = x + "px";
+      p.style.top = y + "px";
+      const angle = (i / 6) * Math.PI * 2;
+      p.style.setProperty("--bx", Math.cos(angle) * 26 + "px");
+      p.style.setProperty("--by", Math.sin(angle) * 26 + "px");
+      els.arena.appendChild(p);
+      setTimeout(() => p.remove(), 420);
+    }
   }
 
   function handleLetter(ch) {
     if (!state.active || state.locked) return;
     const word = state.current.en;
     const expected = (word[state.typed.length] || "").toLowerCase();
-    if (expected && expected === ch.toLowerCase()) {
+    const isHit = !!expected && expected === ch.toLowerCase();
+
+    launchPea(isHit);
+
+    if (isHit) {
       state.typed += word[state.typed.length];
       renderLetters();
       if (state.typed.length >= word.length) solveTyping();
@@ -228,6 +316,9 @@ const WordPractice = (function () {
       els.currentCard.classList.remove("wrong-shake");
       void els.currentCard.offsetWidth;
       els.currentCard.classList.add("wrong-shake");
+      els.shooter.classList.remove("shooter-recoil");
+      void els.shooter.offsetWidth;
+      els.shooter.classList.add("shooter-recoil");
     }
   }
 
@@ -238,8 +329,9 @@ const WordPractice = (function () {
     state.correct++;
     showBanner("拼對了！+15");
     els.currentCard.classList.add("correct");
+    sfxComplete();
     updateHud();
-    setTimeout(nextRound, 800);
+    setTimeout(nextRound, 750);
   }
 
   function missRound() {
@@ -248,6 +340,7 @@ const WordPractice = (function () {
     state.wrong++;
     state.lives--;
     showBanner(`時間到，正確拼法是 ${state.current.en}`);
+    sfxMiss();
     updateHud();
     if (state.lives <= 0) { setTimeout(() => finish("生命值用完了"), 900); return; }
     setTimeout(nextRound, 900);
