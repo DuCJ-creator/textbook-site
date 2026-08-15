@@ -195,9 +195,13 @@ const WordPractice = (function () {
 
     els.arena.querySelectorAll(".wp-falling").forEach(el => el.remove());
 
-    // 下方只保留操作提示；中文、詞性與首字母會和豆莢一起掉落。
+    // 中文、詞性與首字母同時顯示在下方固定提示區，避免等待豆莢進場；
+    // 掉落物本身也保留同一組提示，讓視線移到場內後仍能直接判讀。
     els.hintbar.innerHTML = `
       ${state.mode === "dictation" ? `<button type="button" class="wp-replay-btn" id="wpReplayBtn">🔊 再聽一次</button>` : ""}
+      <div class="wp-hint-meaning">${Loader.escapeHtml(state.current.zh)}</div>
+      <span class="pos-tag">${POS_LABELS_ZH[state.current.pos] || Loader.escapeHtml(state.current.pos)}</span>
+      <div class="letters" id="wpHintLetters" aria-label="固定單字提示"></div>
       <div class="wp-instruction">依序輸入字母，把豆子射進掉落的豆莢裡；射錯會顯示 MISS，但豆莢會繼續掉落。</div>
     `;
     if (state.mode === "dictation") {
@@ -213,7 +217,7 @@ const WordPractice = (function () {
         <div class="wp-falling-meaning">${Loader.escapeHtml(state.current.zh)}</div>
         <span class="pos-tag">${POS_LABELS_ZH[state.current.pos] || Loader.escapeHtml(state.current.pos)}</span>
       </div>
-      <div class="wp-pod" id="wpLetters" aria-label="單字豆莢"></div>
+      <div class="wp-pod" id="wpPodLetters" aria-label="單字豆莢"></div>
     `;
     els.arena.appendChild(card);
     els.currentCard = card;
@@ -240,18 +244,26 @@ const WordPractice = (function () {
   }
 
   function renderLetters() {
-    const el = document.getElementById("wpLetters");
-    if (!el) return;
+    const podEl = document.getElementById("wpPodLetters");
+    const hintEl = document.getElementById("wpHintLetters");
+    if (!podEl && !hintEl) return;
     const word = state.current.en;
-    const parts = [];
+    const podParts = [];
+    const hintParts = [];
     for (let i = 0; i < word.length; i++) {
       if (i < state.typed.length) {
-        parts.push(`<span class="wp-pod-slot ${i < state.hintLen ? "hint" : "filled"}">${Loader.escapeHtml(word[i])}</span>`);
+        const letterClass = i < state.hintLen ? "hint" : "filled";
+        podParts.push(`<span class="wp-pod-slot ${letterClass}">${Loader.escapeHtml(word[i])}</span>`);
+        hintParts.push(`<span class="${letterClass}">${Loader.escapeHtml(word[i])}</span>`);
       } else {
-        parts.push('<span class="wp-pod-slot empty" aria-hidden="true"></span>');
+        podParts.push('<span class="wp-pod-slot empty" aria-hidden="true"></span>');
+        hintParts.push("_");
       }
     }
-    el.innerHTML = `<span class="wp-pod-icon" aria-hidden="true">🫛</span><span class="wp-pod-slots">${parts.join("")}</span>`;
+    if (podEl) {
+      podEl.innerHTML = `<span class="wp-pod-icon" aria-hidden="true">🫛</span><span class="wp-pod-slots">${podParts.join("")}</span>`;
+    }
+    if (hintEl) hintEl.innerHTML = hintParts.join(" ");
   }
 
   function handleKeydown(e) {
