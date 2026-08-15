@@ -357,18 +357,33 @@ table.vocab-table { border-collapse: collapse; width: 100%; min-width: 640px; }
 .basket {
   border: 2px dashed var(--paper-line); border-radius: var(--radius); padding: 14px;
   min-height: 130px; background: var(--card);
+  max-height: min(68vh, 720px); overflow-x: hidden; overflow-y: auto;
+  align-self: start; box-sizing: border-box;
+  overscroll-behavior-y: contain; scrollbar-gutter: stable;
+  scrollbar-width: thin; scrollbar-color: var(--ink-soft) transparent;
   transition: border-color .12s ease, background .12s ease;
+}
+.basket::-webkit-scrollbar { width: 9px; }
+.basket::-webkit-scrollbar-track { background: transparent; }
+.basket::-webkit-scrollbar-thumb {
+  background: var(--ink-soft); border: 2px solid transparent;
+  border-radius: 999px; background-clip: padding-box;
 }
 .basket.dragover { border-color: var(--accent); background: var(--accent-soft); }
 .basket h4 {
   font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 700;
   color: var(--ink-soft); margin: 0 0 8px;
+  position: sticky; top: 0; z-index: 1; background: var(--card); padding: 2px 0 6px;
 }
 .basket .sentence-chip { display: block; margin-bottom: 8px; cursor: default; max-width: none; }
 .basket .sentence-chip.correct { background: var(--sage-soft); border-color: var(--sage); }
 .basket .sentence-chip.incorrect { background: #f3d9d0; border-color: var(--accent); }
 .basket .sentence-chip .pattern-tag {
   display: block; font-size: 0.66rem; color: var(--ink-soft); margin-top: 3px; font-family: var(--sans);
+}
+
+@media (max-width: 720px) {
+  .basket { max-height: 56vh; }
 }
 
 .sentence-display-list { display: none; flex-direction: column; gap: 8px; }
