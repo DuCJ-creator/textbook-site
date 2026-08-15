@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -134,7 +133,7 @@
   }
   @keyframes wp-miss-float { to { transform: translate(-50%, -36px) rotate(-8deg); opacity: 0; } }
 
-  /* ===== 操作提示列 ===== */
+  /* ===== 固定提示列（不用等待豆莢落入視線） ===== */
   .wp-hintbar {
     text-align: center; padding: 16px 18px; border-radius: var(--radius);
     background: var(--card); border: 1px solid var(--paper-line); box-shadow: var(--shadow);
@@ -151,7 +150,7 @@
     display: block; margin: 0 auto 10px; border: 1px solid var(--paper-line); background: var(--accent-soft);
     border-radius: 999px; padding: 6px 14px; font-size: 0.78rem; font-weight: 700; cursor: pointer;
   }
-  .wp-instruction { color: var(--ink-soft); font-size: .8rem; line-height: 1.55; }
+  .wp-instruction { margin-top: 10px; color: var(--ink-soft); font-size: .8rem; line-height: 1.55; }
 
   /* Typing keyboard */
   .wp-keyboard { display: grid; gap: 6px; margin: 0 auto; width: min(560px, 100%); }
