@@ -186,9 +186,12 @@ def rebuild_index_json():
     index_data = {
         "books": books,
         "cross_lesson_tools": [
-            {"id": "vocab-bank", "title": "單字總覽 Vocabulary Bank", "status": "coming_soon"},
-            {"id": "phrase-bank", "title": "片語總覽 Phrase Bank", "status": "coming_soon"},
-            {"id": "grammar-bank", "title": "句型總覽 Grammar Bank", "status": "coming_soon"},
+            {"id": "vocab-index", "title": "單字字典索引 Vocabulary Index", "url": "vocab-index.html", "status": "available"},
+            {"id": "phrase-index", "title": "片語字典索引 Phrase Index", "url": "phrase-index.html", "status": "available"},
+            {"id": "grammar-index", "title": "文法重點索引 Grammar Index", "url": "grammar-index.html", "status": "available"},
+            {"id": "vocab-bank", "title": "單字探索 Vocabulary Bank", "url": "vocab-bank.html", "status": "available"},
+            {"id": "phrase-bank", "title": "片語練習 Phrase Bank", "url": "phrase-bank.html", "status": "available"},
+            {"id": "grammar-bank", "title": "句型練習 Grammar Bank", "url": "grammar-bank.html", "status": "available"},
         ],
     }
 
@@ -256,7 +259,7 @@ def sync_word_family(registry):
 
         vocab_rows = []
         for i, base in enumerate(base_order, start=1):
-            vocab_rows.append({"id": f"{book}{lesson}-v{i:02d}", **base_groups[base]})
+            vocab_rows.append({"id": f"{book}{lesson}-v{i:02d}", "base": base, **base_groups[base]})
 
         data.setdefault("vocabulary", {})["rows"] = vocab_rows
         touched.append((book, lesson, len(vocab_rows)))
