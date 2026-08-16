@@ -482,6 +482,11 @@
             "en": "personalize",
             "zh": "使個人化；為個人訂製",
             "example": "You can personalize the card with a photo."
+          },
+          {
+            "en": "personify",
+            "zh": "將...擬人化",
+            "example": "The river was personified as a goddess."
           }
         ],
         "noun": [
@@ -489,6 +494,11 @@
             "en": "person",
             "zh": "人；個人",
             "example": "She is the right person for the job."
+          },
+          {
+            "en": "personification",
+            "zh": "擬人化；化身",
+            "example": "Cupid is the personification of love."
           }
         ],
         "adj": [
@@ -1908,7 +1918,7 @@
     "points": [
       {
         "id": "b1l2-g1",
-        "title": "It is + adj. (+ for sb.) + to VR....",
+        "title": "It is + adj. (+ for sb.) + to VR....\nIt作虛主詞置句首；to do 作主詞置句末，以平衡句子結構。",
         "examples": [
           "It is important for students to be on time for class.",
           "It is necessary for everyone to make good use of his or her time.",
@@ -1917,7 +1927,7 @@
       },
       {
         "id": "b1l2-g2",
-        "title": "have/has + V.pp: present perfect tense",
+        "title": "have/has + V.pp: present perfect tense\n現在完成式",
         "examples": [
           "The company has successfully opened three new branches recently.",
           "Rick has never been to the United States.",
