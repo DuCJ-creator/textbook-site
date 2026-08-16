@@ -97,6 +97,7 @@
 <script>
   const bookId = Loader.getUrlParam("book", "b1");
   const lessonId = Loader.getUrlParam("lesson", "l1");
+  const highlightBase = Loader.getUrlParam("highlight", ""); // 從字典索引跳轉進來時，指定要展開哪個字族
 
   document.getElementById("lessonBackLink").href = `lesson.html?book=${bookId}&lesson=${lessonId}`;
   document.getElementById("practiceLink").href = `word-practice.html?book=${bookId}&lesson=${lessonId}`;
@@ -128,7 +129,8 @@
         gridId: "posGrid",
         panelId: "detailPanel",
         countId: "wordCount",
-        rows: rows
+        rows: rows,
+        initialBase: highlightBase
       });
 
       document.getElementById("familyModeBtn").addEventListener("click", () => setVocabMode("family"));

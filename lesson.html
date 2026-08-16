@@ -136,6 +136,10 @@
 <script>
   const bookId = Loader.getUrlParam("book", "b1");
   const lessonId = Loader.getUrlParam("lesson", "l1");
+  // 從字典索引跳轉進來時帶的參數：highlight 指定要定位的片語/文法點 id，
+  // jumpTo 指定要自動切到哪個 Part 分頁（"p2" = Phrases, "p3" = Grammar）
+  const highlightId = Loader.getUrlParam("highlight", "");
+  const jumpToPart = Loader.getUrlParam("jumpTo", "");
 
   let LESSON = null;
 
@@ -161,6 +165,19 @@
     initPhrases();
     initGrammar();
     initTextGenre();
+
+    if (jumpToPart) switchToPart(jumpToPart);
+  }
+
+  // 切換到指定的 Part 分頁，跟點擊分頁按鈕的邏輯一致（抽成函式方便
+  // 頁面初始化時也能直接呼叫，不用模擬點擊事件）
+  function switchToPart(partKey) {
+    const btn = document.querySelector(`.part-nav button[data-part="${partKey}"]`);
+    if (!btn) return;
+    document.querySelectorAll(".part-nav button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    document.querySelectorAll("section.part").forEach(s => s.classList.remove("active"));
+    document.getElementById("part-" + partKey).classList.add("active");
   }
 
   /* ===== Part nav switching ===== */
@@ -192,6 +209,7 @@
       browseBtnId: "browseBtn",
       quizBtnId: "quizBtn",
       starredOnlyBtnId: "starredOnlyBtn",
+      highlightId: jumpToPart === "p2" ? highlightId : null,
       items: LESSON.phrases?.items || []
     });
   }
@@ -200,7 +218,8 @@
   function initGrammar() {
     GrammarPoints.render({
       containerId: "grammarPoints",
-      points: LESSON.grammar?.points || []
+      points: LESSON.grammar?.points || [],
+      highlightId: jumpToPart === "p3" ? highlightId : null
     });
 
     ListenText.render({

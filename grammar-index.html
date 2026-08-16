@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>文法字典索引 · Grammar Index</title>
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .idx-head { background: linear-gradient(135deg, var(--accent-dark), var(--accent)); color: #fff; padding: 30px 20px 26px; border-radius: 0 0 28px 28px; }
+  .idx-head .inner { max-width: 900px; margin: 0 auto; }
+  .idx-head h1 { font-family: var(--serif); font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .idx-head .sub { font-size: 0.85rem; color: rgba(255,255,255,.82); }
+  .idx-head .back { color: rgba(255,255,255,.82); text-decoration: none; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
+
+  .idx-toolbar {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(255, 253, 248, .92); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--paper-line);
+    padding: 12px 20px;
+  }
+  .idx-toolbar .inner { max-width: 900px; margin: 0 auto; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+
+  .idx-list { display: flex; flex-direction: column; }
+  .idx-row {
+    display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+    padding: 11px 4px; border-bottom: 1px solid var(--paper-line);
+    text-decoration: none; color: inherit;
+    transition: background .12s ease, padding-left .12s ease;
+  }
+  .idx-row:hover { background: var(--accent-soft); padding-left: 10px; }
+  .idx-row .idx-term { font-family: var(--serif); font-size: 0.98rem; font-weight: 700; color: #c23b3b; flex: 1 1 260px; }
+  .idx-row .idx-source {
+    font-size: 0.66rem; font-weight: 700; letter-spacing: 0.05em; color: var(--accent-dark);
+    background: var(--blue-soft); padding: 2px 9px; border-radius: 999px; flex: 0 0 auto;
+  }
+
+  .idx-count { font-size: 0.78rem; color: var(--ink-soft); margin: 14px 4px 8px; }
+</style>
+</head>
+<body>
+
+  <div class="idx-head">
+    <div class="inner">
+      <a class="back" href="index.html">← 課程總覽</a>
+      <h1 style="margin-top:8px;">文法重點索引</h1>
+      <div class="sub">查任何一個文法規則，點下去直接跳到它所在的課程——不用先知道出自哪一課</div>
+    </div>
+  </div>
+
+  <div class="idx-toolbar">
+    <div class="inner">
+      <input type="text" class="search-box" id="idxSearch" placeholder="搜尋文法規則…" style="flex:1 1 240px;" />
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="loading-msg" id="loadingMsg">整理全部文法重點中…</div>
+    <div class="idx-count" id="idxCount" style="display:none;"></div>
+    <div class="idx-list" id="idxList"></div>
+  </div>
+
+<script src="js/loader.js"></script>
+<script>
+  let ALL_ENTRIES = [];
+
+  Loader.fetchAllPublishedLessons()
+    .then(lessons => {
+      ALL_ENTRIES = lessons.flatMap(lesson =>
+        (lesson.grammar?.points || []).map(gp => ({
+          id: gp.id,
+          title: gp.title,
+          book: lesson._book,
+          lesson: lesson._lesson
+        }))
+      );
+
+      document.getElementById("loadingMsg").style.display = "none";
+      document.getElementById("idxCount").style.display = "block";
+
+      if (!ALL_ENTRIES.length) {
+        document.getElementById("idxCount").textContent = "目前還沒有已上架課程的文法重點資料。";
+        return;
+      }
+
+      document.getElementById("idxSearch").addEventListener("input", renderList);
+      renderList();
+    })
+    .catch(err => {
+      document.getElementById("loadingMsg").className = "error-msg";
+      document.getElementById("loadingMsg").textContent =
+        "資料載入失敗：" + err.message + "（請確認此頁面透過本機伺服器或 GitHub Pages 開啟）";
+    });
+
+  function renderList() {
+    const query = document.getElementById("idxSearch").value.trim().toLowerCase();
+    const filtered = ALL_ENTRIES.filter(e => !query || e.title.toLowerCase().includes(query));
+
+    document.getElementById("idxCount").textContent = `共 ${filtered.length} 個文法重點${query ? "（已篩選）" : ""}`;
+
+    const list = document.getElementById("idxList");
+    list.innerHTML = "";
+    filtered.forEach(e => {
+      const a = document.createElement("a");
+      a.className = "idx-row";
+      a.href = `lesson.html?book=${e.book}&lesson=${e.lesson}&jumpTo=p3&highlight=${encodeURIComponent(e.id)}`;
+      a.innerHTML = `
+        <span class="idx-term">${Loader.escapeHtml(e.title)}</span>
+        <span class="idx-source">${e.book.toUpperCase()} ${e.lesson.toUpperCase()}</span>
+      `;
+      list.appendChild(a);
+    });
+  }
+</script>
+<script src="js/notepad.js"></script>
+<script>Notepad.mount();</script>
+</body>
+</html>

@@ -172,11 +172,8 @@
     <div class="section-title"><span>跨課總覽工具</span><span class="rule"></span></div>
     <div class="tool-grid" id="toolGrid"></div>
 
-    <div class="section-title"><span>English Basics 英文基礎</span><span class="rule"></span></div>
-    <div id="englishBasicsArea"></div>
-
-    <div class="section-title"><span>Vocabulary Basics 單字基礎</span><span class="rule"></span></div>
-    <div id="vocabularyBasicsArea"></div>
+    <div class="section-title"><span>Beyond Textbooks 教材之上</span><span class="rule"></span></div>
+    <div id="beyondTextbooksArea"></div>
 
   </div>
 
@@ -206,24 +203,13 @@
         </div>`;
     });
 
-  // English Basics：六個外部文法/單字資源，點卡片在頁面內用 iframe 開啟
+  // Beyond Textbooks：三個延伸學習資源，點卡片在頁面內用 iframe 開啟
   ExternalViewer.render({
-    containerId: "englishBasicsArea",
+    containerId: "beyondTextbooksArea",
     cards: [
-      { title: "Grammar Lemon Tree 文法檸檬樹", url: "https://ducj-creator.github.io/Shirley-Grammar/" },
-      { title: "Grammar with Songs 聽歌學文法", url: "https://ducj-creator.github.io/Shirley-AI-Music-Studio/learning/index.html" },
-      { title: "Irregular Verbs 動詞不規則", url: "https://ducj-creator.github.io/Shirley-Grammar/irregular/verbs/" },
-      { title: "Irregular Nouns 名詞不規則", url: "https://ducj-creator.github.io/Shirley-Grammar/irregular/nouns/" },
-      { title: "Common Polysemes 一詞多意", url: "https://ducj-creator.github.io/Shirley-Grammar/polysemy" },
-      { title: "Roots & Affixes 詞根詞綴", url: "https://ducj-creator.github.io/Shirley-Grammar/root%20and%20affix/" }
-    ]
-  });
-
-  // Vocabulary Basics：單一外部資源
-  ExternalViewer.render({
-    containerId: "vocabularyBasicsArea",
-    cards: [
-      { title: "Vocabulary Basics 單字基礎", url: "https://ducj-creator.github.io/shirleyvocab.html#home" }
+      { title: "Grammar Basics 文法基礎", url: "https://ducj-creator.github.io/gbasics.html" },
+      { title: "Vocabulary Basics 單字基礎", url: "https://ducj-creator.github.io/shirleyvocab.html#home" },
+      { title: "Hexagon Warrior 英文六邊形戰士", url: "https://ducj-creator.github.io/hexagonw.html" }
     ]
   });
 
@@ -309,14 +295,18 @@
       const comingSoon = tool.status === "coming_soon";
       const a = document.createElement("a");
       a.className = "tool-card";
-      a.href = comingSoon ? "#" : `${tool.id}.html`;
+      a.href = comingSoon ? "#" : (tool.url || `${tool.id}.html`);
       if (comingSoon) {
         a.addEventListener("click", e => e.preventDefault());
       }
+      const isIndex = tool.id.endsWith("-index");
+      const desc = comingSoon
+        ? "彙整所有已上架課程的內容，正在製作中。"
+        : (isIndex ? "查任何一個項目，直接跳到出處課程" : "跨課瀏覽與練習");
       a.innerHTML = `
         ${comingSoon ? '<span class="badge">即將推出</span>' : ""}
         <div class="t-title">${escapeHtml(tool.title)}</div>
-        <div class="t-desc">${comingSoon ? "彙整所有已上架課程的內容，正在製作中。" : "點擊瀏覽"}</div>
+        <div class="t-desc">${desc}</div>
       `;
       wrap.appendChild(a);
     });
