@@ -2097,6 +2097,6 @@
     }
   },
   "text_genre": {
-    "raw_text": "This is a letter (an informal one). \nFor the layout of a formal/official/business letter, please refer to 5.1 below. \nSummary: \nSally is writing a letter to break up with her smartphone, John. She appreciates the joy and excitement he has brought to her life, but she feels overwhelmed by the constant need to stay connected through social media and messaging apps, leading her to neglect other important aspects of her life, in particular, her relationships with friends and family and her academic performance. Sally hopes that John will understand her decision and wishes him well."
+    "raw_text": "This is a *letter* (an informal one). \n*Summary*: \nSally is writing a letter to break up with her smartphone, John. She appreciates the joy and excitement he has brought to her life, but she feels overwhelmed by the constant need to stay connected through social media and messaging apps, leading her to neglect other important aspects of her life, in particular, her relationships with friends and family and her academic performance. Sally hopes that John will understand her decision and wishes him well."
   }
 }
