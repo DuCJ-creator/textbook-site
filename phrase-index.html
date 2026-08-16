@@ -22,8 +22,9 @@
 
   .idx-list { display: flex; flex-direction: column; }
   .idx-row {
+    position: relative;
     display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
-    padding: 11px 4px; border-bottom: 1px solid var(--paper-line);
+    padding: 11px 34px 11px 4px; border-bottom: 1px solid var(--paper-line);
     text-decoration: none; color: inherit;
     transition: background .12s ease, padding-left .12s ease;
   }
@@ -34,6 +35,15 @@
     font-size: 0.66rem; font-weight: 700; letter-spacing: 0.05em; color: var(--accent-dark);
     background: var(--blue-soft); padding: 2px 9px; border-radius: 999px; flex: 0 0 auto;
   }
+  .idx-star-btn {
+    position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+    width: 28px; height: 28px; border-radius: 999px; border: none;
+    background: transparent; cursor: pointer; font-size: 1rem;
+    color: #d8cfa8; display: flex; align-items: center; justify-content: center;
+    transition: transform .15s ease, color .15s ease;
+  }
+  .idx-star-btn:hover { transform: translateY(-50%) scale(1.15); }
+  .idx-star-btn.starred { color: var(--gold); }
 
   .idx-count { font-size: 0.78rem; color: var(--ink-soft); margin: 14px 4px 8px; }
 </style>
@@ -51,6 +61,7 @@
   <div class="idx-toolbar">
     <div class="inner">
       <input type="text" class="search-box" id="idxSearch" placeholder="搜尋片語或中文意思…" style="flex:1 1 240px;" />
+      <button type="button" class="btn" id="idxStarredOnlyBtn">☆ 只看已收藏</button>
     </div>
   </div>
 
@@ -62,7 +73,10 @@
 
 <script src="js/loader.js"></script>
 <script>
+  const STAR_KEY = "phraseStarredIds"; // 跟 phrase-widget.js 共用同一個 key，兩邊標星狀態互通
   let ALL_ENTRIES = [];
+  let starredIds = Loader.loadStarredSet(STAR_KEY);
+  let starredOnly = false;
 
   Loader.fetchAllPublishedLessons()
     .then(lessons => {
@@ -87,6 +101,7 @@
       }
 
       document.getElementById("idxSearch").addEventListener("input", renderList);
+      document.getElementById("idxStarredOnlyBtn").addEventListener("click", toggleStarredOnly);
       renderList();
     })
     .catch(err => {
@@ -95,18 +110,44 @@
         "資料載入失敗：" + err.message + "（請確認此頁面透過本機伺服器或 GitHub Pages 開啟）";
     });
 
+  function toggleStarredOnly() {
+    starredOnly = !starredOnly;
+    const btn = document.getElementById("idxStarredOnlyBtn");
+    btn.classList.toggle("active", starredOnly);
+    btn.textContent = starredOnly ? "★ 只看已收藏" : "☆ 只看已收藏";
+    renderList();
+  }
+
+  function toggleStar(id) {
+    if (starredIds.has(id)) starredIds.delete(id);
+    else starredIds.add(id);
+    Loader.saveStarredSet(STAR_KEY, starredIds);
+    renderList();
+  }
+
   function renderList() {
     const query = document.getElementById("idxSearch").value.trim().toLowerCase();
-    const filtered = ALL_ENTRIES.filter(e => {
+    let filtered = ALL_ENTRIES.filter(e => {
       if (!query) return true;
       return e.phrase.toLowerCase().includes(query) || e.zh.includes(query);
     });
+    if (starredOnly) filtered = filtered.filter(e => starredIds.has(e.id));
 
-    document.getElementById("idxCount").textContent = `共 ${filtered.length} 個片語${query ? "（已篩選）" : ""}`;
+    const parts = [`共 ${filtered.length} 個片語`];
+    if (query) parts.push("已篩選");
+    if (starredOnly) parts.push("只看收藏");
+    document.getElementById("idxCount").textContent = parts.join("・");
 
     const list = document.getElementById("idxList");
     list.innerHTML = "";
+
+    if (!filtered.length && starredOnly) {
+      list.innerHTML = '<p style="color:var(--ink-soft); font-size:.85rem; padding:20px 4px;">還沒有收藏任何片語，點每一列右側的星星即可收藏。</p>';
+      return;
+    }
+
     filtered.forEach(e => {
+      const isStarred = starredIds.has(e.id);
       const a = document.createElement("a");
       a.className = "idx-row";
       a.href = `lesson.html?book=${e.book}&lesson=${e.lesson}&jumpTo=p2&highlight=${encodeURIComponent(e.id)}`;
@@ -114,7 +155,13 @@
         <span class="idx-term">${Loader.escapeHtml(e.phrase)}</span>
         <span class="idx-meaning">${Loader.escapeHtml(e.zh)}</span>
         <span class="idx-source">${e.book.toUpperCase()} ${e.lesson.toUpperCase()}</span>
+        <button type="button" class="idx-star-btn${isStarred ? " starred" : ""}" aria-label="收藏這個片語" title="收藏">${isStarred ? "★" : "☆"}</button>
       `;
+      a.querySelector(".idx-star-btn").addEventListener("click", ev => {
+        ev.preventDefault();
+        ev.stopPropagation();
+        toggleStar(e.id);
+      });
       list.appendChild(a);
     });
   }
