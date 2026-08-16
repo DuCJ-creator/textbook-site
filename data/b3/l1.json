@@ -481,15 +481,1793 @@
     ]
   },
   "phrases": {
-    "items": []
+    "items": [
+      {
+        "id": "b3l1-p001",
+        "phrase": "be employed by",
+        "pos": "ph.",
+        "zh": "受僱於……",
+        "example_en": "She is employed by a global company.",
+        "example_zh": "她受僱於一家跨國公司。"
+      },
+      {
+        "id": "b3l1-p002",
+        "phrase": "dress up as",
+        "pos": "ph.",
+        "zh": "裝扮成……",
+        "example_en": "He dressed up as a clown for the party.",
+        "example_zh": "他在派對上裝扮成小丑。"
+      },
+      {
+        "id": "b3l1-p003",
+        "phrase": "suffer from",
+        "pos": "ph.",
+        "zh": "罹患；受……之苦",
+        "example_en": "Many people suffer from back pain.",
+        "example_zh": "許多人受背痛之苦。"
+      },
+      {
+        "id": "b3l1-p004",
+        "phrase": "terminal illness",
+        "pos": "ph.",
+        "zh": "末期疾病；絕症",
+        "example_en": "The patient was diagnosed with a terminal illness.",
+        "example_zh": "那名病人被診斷出罹患末期疾病。"
+      },
+      {
+        "id": "b3l1-p005",
+        "phrase": "ease one’s pain",
+        "pos": "ph.",
+        "zh": "減輕某人的痛苦",
+        "example_en": "Music helped ease her pain.",
+        "example_zh": "音樂幫助減輕她的痛苦。"
+      },
+      {
+        "id": "b3l1-p006",
+        "phrase": "tremendously rewarding",
+        "pos": "ph.",
+        "zh": "非常有成就感的",
+        "example_en": "Helping children can be tremendously rewarding.",
+        "example_zh": "幫助孩子可能非常有成就感。"
+      },
+      {
+        "id": "b3l1-p007",
+        "phrase": "be able to",
+        "pos": "ph.",
+        "zh": "能夠……",
+        "example_en": "She will be able to return tomorrow.",
+        "example_zh": "她明天就能回來。"
+      },
+      {
+        "id": "b3l1-p008",
+        "phrase": "attract sb’s attention",
+        "pos": "ph.",
+        "zh": "吸引某人的注意",
+        "example_en": "The bright sign attracted my attention.",
+        "example_zh": "鮮豔的招牌吸引了我的注意。"
+      },
+      {
+        "id": "b3l1-p009",
+        "phrase": "people in need",
+        "pos": "ph.",
+        "zh": "有需要的人",
+        "example_en": "The charity provides meals for people in need.",
+        "example_zh": "這個慈善團體為有需要的人提供餐點。"
+      },
+      {
+        "id": "b3l1-p010",
+        "phrase": "be capable of",
+        "pos": "ph.",
+        "zh": "有能力……",
+        "example_en": "This machine is capable of lifting heavy boxes.",
+        "example_zh": "這部機器能夠抬起重箱子。"
+      },
+      {
+        "id": "b3l1-p011",
+        "phrase": "surgical mask",
+        "pos": "ph.",
+        "zh": "外科口罩",
+        "example_en": "The nurse put on a surgical mask.",
+        "example_zh": "護理師戴上了外科口罩。"
+      },
+      {
+        "id": "b3l1-p012",
+        "phrase": "point at…with the index finger",
+        "pos": "ph.",
+        "zh": "用食指指著……",
+        "example_en": "The child pointed at the moon with his index finger.",
+        "example_zh": "那個孩子用食指指著月亮。"
+      },
+      {
+        "id": "b3l1-p013",
+        "phrase": "bring bad luck to",
+        "pos": "ph.",
+        "zh": "為……帶來厄運",
+        "example_en": "Some people believe the number brings bad luck to them.",
+        "example_zh": "有些人相信那個數字會為他們帶來厄運。"
+      },
+      {
+        "id": "b3l1-p014",
+        "phrase": "maintain a sense of humor",
+        "pos": "ph.",
+        "zh": "保持幽默感",
+        "example_en": "He maintained a sense of humor during hard times.",
+        "example_zh": "他在艱難時期仍保持幽默感。"
+      },
+      {
+        "id": "b3l1-p015",
+        "phrase": "be an exception",
+        "pos": "ph.",
+        "zh": "是例外",
+        "example_en": "Everyone must follow the rule, and you are not an exception.",
+        "example_zh": "每個人都必須遵守規則，你也不例外。"
+      },
+      {
+        "id": "b3l1-p016",
+        "phrase": "light up the atmosphere",
+        "pos": "ph.",
+        "zh": "活絡氣氛",
+        "example_en": "Her jokes lit up the atmosphere.",
+        "example_zh": "她的笑話活絡了氣氛。"
+      },
+      {
+        "id": "b3l1-p017",
+        "phrase": "show up",
+        "pos": "ph.",
+        "zh": "出現；到場",
+        "example_en": "He did not show up for the meeting.",
+        "example_zh": "他沒有出席會議。"
+      },
+      {
+        "id": "b3l1-p018",
+        "phrase": "burst out laughing",
+        "pos": "ph.",
+        "zh": "突然大笑",
+        "example_en": "We burst out laughing at his joke.",
+        "example_zh": "我們聽到他的笑話後突然大笑。"
+      },
+      {
+        "id": "b3l1-p019",
+        "phrase": "tell bedtime stories",
+        "pos": "ph.",
+        "zh": "講睡前故事",
+        "example_en": "Dad tells us bedtime stories every night.",
+        "example_zh": "爸爸每天晚上都講睡前故事給我們聽。"
+      },
+      {
+        "id": "b3l1-p020",
+        "phrase": "be permitted to",
+        "pos": "ph.",
+        "zh": "被允許……",
+        "example_en": "Visitors are not permitted to take photos.",
+        "example_zh": "訪客不被允許拍照。"
+      },
+      {
+        "id": "b3l1-p021",
+        "phrase": "have physical contact with",
+        "pos": "ph.",
+        "zh": "與……有肢體接觸",
+        "example_en": "Avoid having physical contact with sick people.",
+        "example_zh": "避免與生病的人有肢體接觸。"
+      },
+      {
+        "id": "b3l1-p022",
+        "phrase": "pass on germs to",
+        "pos": "ph.",
+        "zh": "把病菌傳給……",
+        "example_en": "You may pass on germs to others when you cough.",
+        "example_zh": "咳嗽時你可能把病菌傳給別人。"
+      },
+      {
+        "id": "b3l1-p023",
+        "phrase": "the reasoning behind",
+        "pos": "ph.",
+        "zh": "……背後的理由",
+        "example_en": "I understand the reasoning behind the rule.",
+        "example_zh": "我了解這項規定背後的理由。"
+      },
+      {
+        "id": "b3l1-p024",
+        "phrase": "convey love, empathy, and warmth",
+        "pos": "ph.",
+        "zh": "傳達愛、同理心與溫暖",
+        "example_en": "A hug can convey love, empathy, and warmth.",
+        "example_zh": "擁抱能傳達愛、同理心與溫暖。"
+      },
+      {
+        "id": "b3l1-p025",
+        "phrase": "a heartfelt embrace",
+        "pos": "ph.",
+        "zh": "真摯的擁抱",
+        "example_en": "She gave her friend a heartfelt embrace.",
+        "example_zh": "她給朋友一個真摯的擁抱。"
+      },
+      {
+        "id": "b3l1-p026",
+        "phrase": "serve home-made dessert",
+        "pos": "ph.",
+        "zh": "供應自製甜點",
+        "example_en": "The café serves home-made desserts.",
+        "example_zh": "這家咖啡館供應自製甜點。"
+      },
+      {
+        "id": "b3l1-p027",
+        "phrase": "a well-known YouTuber",
+        "pos": "ph.",
+        "zh": "知名 YouTuber",
+        "example_en": "A well-known YouTuber visited our school.",
+        "example_zh": "一位知名 YouTuber 造訪了我們學校。"
+      },
+      {
+        "id": "b3l1-p028",
+        "phrase": "shoot a video",
+        "pos": "ph.",
+        "zh": "拍攝影片",
+        "example_en": "They shot a video in the park.",
+        "example_zh": "他們在公園拍攝了一段影片。"
+      },
+      {
+        "id": "b3l1-p029",
+        "phrase": "avoid infection",
+        "pos": "ph.",
+        "zh": "避免感染",
+        "example_en": "Wash your hands often to avoid infection.",
+        "example_zh": "勤洗手以避免感染。"
+      },
+      {
+        "id": "b3l1-p030",
+        "phrase": "wear protective clothing",
+        "pos": "ph.",
+        "zh": "穿防護衣",
+        "example_en": "Workers must wear protective clothing.",
+        "example_zh": "工作人員必須穿防護衣。"
+      },
+      {
+        "id": "b3l1-p031",
+        "phrase": "turn down an invitation directly",
+        "pos": "ph.",
+        "zh": "直接拒絕邀請",
+        "example_en": "She did not want to turn down the invitation directly.",
+        "example_zh": "她不想直接拒絕邀請。"
+      },
+      {
+        "id": "b3l1-p032",
+        "phrase": "ensure safety on campus",
+        "pos": "ph.",
+        "zh": "確保校園安全",
+        "example_en": "The new rules help ensure safety on campus.",
+        "example_zh": "新規定有助於確保校園安全。"
+      },
+      {
+        "id": "b3l1-p033",
+        "phrase": "faculty member",
+        "pos": "ph.",
+        "zh": "教職員",
+        "example_en": "Every faculty member received the notice.",
+        "example_zh": "每位教職員都收到了通知。"
+      },
+      {
+        "id": "b3l1-p034",
+        "phrase": "food-delivery service",
+        "pos": "ph.",
+        "zh": "外送服務",
+        "example_en": "We used a food-delivery service for dinner.",
+        "example_zh": "我們晚餐使用了外送服務。"
+      },
+      {
+        "id": "b3l1-p035",
+        "phrase": "give…a second chance at life",
+        "pos": "ph.",
+        "zh": "給……重獲新生的機會",
+        "example_en": "The operation gave him a second chance at life.",
+        "example_zh": "這場手術給了他重獲新生的機會。"
+      },
+      {
+        "id": "b3l1-p036",
+        "phrase": "half-open door",
+        "pos": "ph.",
+        "zh": "半開的門",
+        "example_en": "She looked through the half-open door.",
+        "example_zh": "她從半開的門向內看。"
+      },
+      {
+        "id": "b3l1-p037",
+        "phrase": "frail voice",
+        "pos": "ph.",
+        "zh": "虛弱的聲音",
+        "example_en": "The old man spoke in a frail voice.",
+        "example_zh": "老人用虛弱的聲音說話。"
+      },
+      {
+        "id": "b3l1-p038",
+        "phrase": "prompt …to",
+        "pos": "ph.",
+        "zh": "促使……做……",
+        "example_en": "The news prompted her to take action.",
+        "example_zh": "這則消息促使她採取行動。"
+      },
+      {
+        "id": "b3l1-p039",
+        "phrase": "push open the door",
+        "pos": "ph.",
+        "zh": "推開門",
+        "example_en": "He pushed open the door quietly.",
+        "example_zh": "他輕輕推開門。"
+      },
+      {
+        "id": "b3l1-p040",
+        "phrase": "lie in bed",
+        "pos": "ph.",
+        "zh": "躺在床上",
+        "example_en": "She lay in bed reading all morning.",
+        "example_zh": "她整個早上躺在床上看書。"
+      },
+      {
+        "id": "b3l1-p041",
+        "phrase": "look extremely weak and pale",
+        "pos": "ph.",
+        "zh": "看起來非常虛弱且蒼白",
+        "example_en": "The patient looked extremely weak and pale.",
+        "example_zh": "那名病人看起來非常虛弱且蒼白。"
+      },
+      {
+        "id": "b3l1-p042",
+        "phrase": "be confined to a hospital bed",
+        "pos": "ph.",
+        "zh": "臥病在醫院病床上",
+        "example_en": "He was confined to a hospital bed for weeks.",
+        "example_zh": "他臥病在醫院病床上數週。"
+      },
+      {
+        "id": "b3l1-p043",
+        "phrase": "cheer…up",
+        "pos": "ph.",
+        "zh": "使……振作",
+        "example_en": "Her visit cheered the patient up.",
+        "example_zh": "她的探訪使病人振作起來。"
+      },
+      {
+        "id": "b3l1-p044",
+        "phrase": "do some magic tricks",
+        "pos": "ph.",
+        "zh": "表演一些魔術",
+        "example_en": "The clown did some magic tricks for the children.",
+        "example_zh": "小丑為孩子們表演了一些魔術。"
+      },
+      {
+        "id": "b3l1-p045",
+        "phrase": "be about to",
+        "pos": "ph.",
+        "zh": "即將……",
+        "example_en": "The show is about to begin.",
+        "example_zh": "表演即將開始。"
+      },
+      {
+        "id": "b3l1-p046",
+        "phrase": "have no idea",
+        "pos": "ph.",
+        "zh": "完全不知道",
+        "example_en": "I have no idea where he went.",
+        "example_zh": "我完全不知道他去了哪裡。"
+      },
+      {
+        "id": "b3l1-p047",
+        "phrase": "clap hands",
+        "pos": "ph.",
+        "zh": "拍手",
+        "example_en": "The audience clapped their hands loudly.",
+        "example_zh": "觀眾大聲拍手。"
+      },
+      {
+        "id": "b3l1-p048",
+        "phrase": "focus on",
+        "pos": "ph.",
+        "zh": "專注於……",
+        "example_en": "Please focus on your homework.",
+        "example_zh": "請專心寫作業。"
+      },
+      {
+        "id": "b3l1-p049",
+        "phrase": "dare to",
+        "pos": "ph.",
+        "zh": "敢於……",
+        "example_en": "She dared to speak the truth.",
+        "example_zh": "她敢於說出真相。"
+      },
+      {
+        "id": "b3l1-p050",
+        "phrase": "draw a self-portrait",
+        "pos": "ph.",
+        "zh": "畫自畫像",
+        "example_en": "The student drew a self-portrait in art class.",
+        "example_zh": "那名學生在美術課畫了一幅自畫像。"
+      },
+      {
+        "id": "b3l1-p051",
+        "phrase": "on the newly-painted wall",
+        "pos": "ph.",
+        "zh": "在新粉刷的牆上",
+        "example_en": "Someone drew a line on the newly-painted wall.",
+        "example_zh": "有人在新粉刷的牆上畫了一條線。"
+      },
+      {
+        "id": "b3l1-p052",
+        "phrase": "couldn’t help crying out loud",
+        "pos": "ph.",
+        "zh": "忍不住放聲大哭",
+        "example_en": "She couldn’t help crying out loud after hearing the news.",
+        "example_zh": "她聽到消息後忍不住放聲大哭。"
+      },
+      {
+        "id": "b3l1-p053",
+        "phrase": "join the group discussion",
+        "pos": "ph.",
+        "zh": "加入小組討論",
+        "example_en": "Everyone should join the group discussion.",
+        "example_zh": "每個人都應該加入小組討論。"
+      },
+      {
+        "id": "b3l1-p054",
+        "phrase": "on time",
+        "pos": "ph.",
+        "zh": "準時",
+        "example_en": "Please arrive at school on time.",
+        "example_zh": "請準時到學校。"
+      },
+      {
+        "id": "b3l1-p055",
+        "phrase": "delete a file",
+        "pos": "ph.",
+        "zh": "刪除檔案",
+        "example_en": "I accidentally deleted an important file.",
+        "example_zh": "我不小心刪除了一個重要檔案。"
+      },
+      {
+        "id": "b3l1-p056",
+        "phrase": "wake up",
+        "pos": "ph.",
+        "zh": "醒來；叫醒",
+        "example_en": "I wake up at six every morning.",
+        "example_zh": "我每天早上六點醒來。"
+      },
+      {
+        "id": "b3l1-p057",
+        "phrase": "be tied to",
+        "pos": "ph.",
+        "zh": "被綁在……；與……有關",
+        "example_en": "The dog was tied to a tree.",
+        "example_zh": "那隻狗被綁在樹上。"
+      },
+      {
+        "id": "b3l1-p058",
+        "phrase": "keep calm",
+        "pos": "ph.",
+        "zh": "保持冷靜",
+        "example_en": "Keep calm during an emergency.",
+        "example_zh": "緊急情況時要保持冷靜。"
+      },
+      {
+        "id": "b3l1-p059",
+        "phrase": "stay alert",
+        "pos": "ph.",
+        "zh": "保持警覺",
+        "example_en": "Drivers must stay alert at night.",
+        "example_zh": "駕駛夜間必須保持警覺。"
+      },
+      {
+        "id": "b3l1-p060",
+        "phrase": "head out the door for school",
+        "pos": "ph.",
+        "zh": "出門上學",
+        "example_en": "He headed out the door for school at seven.",
+        "example_zh": "他七點出門上學。"
+      },
+      {
+        "id": "b3l1-p061",
+        "phrase": "be late for school",
+        "pos": "ph.",
+        "zh": "上學遲到",
+        "example_en": "She was late for school again.",
+        "example_zh": "她上學又遲到了。"
+      },
+      {
+        "id": "b3l1-p062",
+        "phrase": "be against the rule",
+        "pos": "ph.",
+        "zh": "違反規定",
+        "example_en": "Using a phone in class is against the rule.",
+        "example_zh": "上課使用手機違反規定。"
+      },
+      {
+        "id": "b3l1-p063",
+        "phrase": "do some coloring",
+        "pos": "ph.",
+        "zh": "塗色",
+        "example_en": "The children did some coloring after lunch.",
+        "example_zh": "孩子們午餐後畫圖塗色。"
+      },
+      {
+        "id": "b3l1-p064",
+        "phrase": "get drowsy",
+        "pos": "ph.",
+        "zh": "感到昏昏欲睡",
+        "example_en": "I get drowsy after a large meal.",
+        "example_zh": "吃完大餐後我會昏昏欲睡。"
+      },
+      {
+        "id": "b3l1-p065",
+        "phrase": "rise to one’s feet",
+        "pos": "ph.",
+        "zh": "站起來",
+        "example_en": "He rose to his feet and spoke.",
+        "example_zh": "他站起來發言。"
+      },
+      {
+        "id": "b3l1-p066",
+        "phrase": "get ready to",
+        "pos": "ph.",
+        "zh": "準備好要……",
+        "example_en": "We are getting ready to leave.",
+        "example_zh": "我們正準備離開。"
+      },
+      {
+        "id": "b3l1-p067",
+        "phrase": "stretch out one’s arms",
+        "pos": "ph.",
+        "zh": "伸展某人的手臂",
+        "example_en": "She stretched out her arms and yawned.",
+        "example_zh": "她伸展雙臂並打了個呵欠。"
+      },
+      {
+        "id": "b3l1-p068",
+        "phrase": "the look of hope",
+        "pos": "ph.",
+        "zh": "希望的神情",
+        "example_en": "I saw the look of hope in his eyes.",
+        "example_zh": "我在他眼中看見希望的神情。"
+      },
+      {
+        "id": "b3l1-p069",
+        "phrase": "no longer",
+        "pos": "ph.",
+        "zh": "不再",
+        "example_en": "He no longer works here.",
+        "example_zh": "他不再在這裡工作。"
+      },
+      {
+        "id": "b3l1-p070",
+        "phrase": "not…anymore/any longer",
+        "pos": "ph.",
+        "zh": "不再……",
+        "example_en": "She does not live here anymore.",
+        "example_zh": "她已經不住在這裡了。"
+      },
+      {
+        "id": "b3l1-p071",
+        "phrase": "be caught doing",
+        "pos": "ph.",
+        "zh": "被抓到正在做……",
+        "example_en": "He was caught cheating on the test.",
+        "example_zh": "他被抓到考試作弊。"
+      },
+      {
+        "id": "b3l1-p072",
+        "phrase": "break the rule",
+        "pos": "ph.",
+        "zh": "違反規則",
+        "example_en": "You will be punished if you break the rule.",
+        "example_zh": "如果你違反規則，就會受罰。"
+      },
+      {
+        "id": "b3l1-p073",
+        "phrase": "after all",
+        "pos": "ph.",
+        "zh": "畢竟",
+        "example_en": "Do not be too hard on him; after all, he is still young.",
+        "example_zh": "別對他太嚴厲，畢竟他還年輕。"
+      },
+      {
+        "id": "b3l1-p074",
+        "phrase": "reveal a scandal",
+        "pos": "ph.",
+        "zh": "揭露醜聞",
+        "example_en": "The reporter revealed a political scandal.",
+        "example_zh": "記者揭露了一樁政治醜聞。"
+      },
+      {
+        "id": "b3l1-p075",
+        "phrase": "withdraw from the election",
+        "pos": "ph.",
+        "zh": "退出選舉",
+        "example_en": "The candidate withdrew from the election.",
+        "example_zh": "那名候選人退出了選舉。"
+      },
+      {
+        "id": "b3l1-p076",
+        "phrase": "post false information online",
+        "pos": "ph.",
+        "zh": "在網路上發布不實資訊",
+        "example_en": "Do not post false information online.",
+        "example_zh": "不要在網路上發布不實資訊。"
+      },
+      {
+        "id": "b3l1-p077",
+        "phrase": "be against community guidelines on the platform",
+        "pos": "ph.",
+        "zh": "違反平台的社群規範",
+        "example_en": "The post was against community guidelines on the platform.",
+        "example_zh": "該貼文違反了平台的社群規範。"
+      },
+      {
+        "id": "b3l1-p078",
+        "phrase": "eat out for dinner",
+        "pos": "ph.",
+        "zh": "外出吃晚餐",
+        "example_en": "We ate out for dinner last night.",
+        "example_zh": "我們昨晚外出吃晚餐。"
+      },
+      {
+        "id": "b3l1-p079",
+        "phrase": "cheat on the final exam",
+        "pos": "ph.",
+        "zh": "期末考作弊",
+        "example_en": "He was caught cheating on the final exam.",
+        "example_zh": "他被抓到在期末考作弊。"
+      },
+      {
+        "id": "b3l1-p080",
+        "phrase": "be extremely ashamed",
+        "pos": "ph.",
+        "zh": "感到非常羞愧",
+        "example_en": "She was extremely ashamed of her behavior.",
+        "example_zh": "她對自己的行為感到非常羞愧。"
+      },
+      {
+        "id": "b3l1-p081",
+        "phrase": "utter a word",
+        "pos": "ph.",
+        "zh": "說一句話",
+        "example_en": "He was too shocked to utter a word.",
+        "example_zh": "他震驚得一句話也說不出來。"
+      },
+      {
+        "id": "b3l1-p082",
+        "phrase": "provide for one’s family",
+        "pos": "ph.",
+        "zh": "養家",
+        "example_en": "He works hard to provide for his family.",
+        "example_zh": "他努力工作養家。"
+      },
+      {
+        "id": "b3l1-p083",
+        "phrase": "dance with the Devil",
+        "pos": "ph.",
+        "zh": "與魔鬼共舞；從事危險的事",
+        "example_en": "Cheating others is like dancing with the Devil.",
+        "example_zh": "欺騙別人就像與魔鬼共舞。"
+      },
+      {
+        "id": "b3l1-p084",
+        "phrase": "be caught on the spot",
+        "pos": "ph.",
+        "zh": "被當場抓到",
+        "example_en": "The thief was caught on the spot.",
+        "example_zh": "小偷被當場抓到。"
+      },
+      {
+        "id": "b3l1-p085",
+        "phrase": "be brought to justice",
+        "pos": "ph.",
+        "zh": "被繩之以法",
+        "example_en": "The criminal was finally brought to justice.",
+        "example_zh": "罪犯終於被繩之以法。"
+      },
+      {
+        "id": "b3l1-p086",
+        "phrase": "go against the rules",
+        "pos": "ph.",
+        "zh": "違反規定",
+        "example_en": "His actions went against the rules.",
+        "example_zh": "他的行為違反了規定。"
+      },
+      {
+        "id": "b3l1-p087",
+        "phrase": "apologize to",
+        "pos": "ph.",
+        "zh": "向……道歉",
+        "example_en": "You should apologize to your teacher.",
+        "example_zh": "你應該向老師道歉。"
+      },
+      {
+        "id": "b3l1-p088",
+        "phrase": "confide sth. to sb.",
+        "pos": "ph.",
+        "zh": "向某人吐露某事",
+        "example_en": "She confided her worries to her mother.",
+        "example_zh": "她向母親吐露自己的擔憂。"
+      },
+      {
+        "id": "b3l1-p089",
+        "phrase": "play with",
+        "pos": "ph.",
+        "zh": "和……玩；玩弄……",
+        "example_en": "The child likes to play with blocks.",
+        "example_zh": "那個孩子喜歡玩積木。"
+      },
+      {
+        "id": "b3l1-p090",
+        "phrase": "go hungry",
+        "pos": "ph.",
+        "zh": "挨餓",
+        "example_en": "No child should go hungry.",
+        "example_zh": "不應有孩子挨餓。"
+      },
+      {
+        "id": "b3l1-p091",
+        "phrase": "think of",
+        "pos": "ph.",
+        "zh": "想起；認為",
+        "example_en": "What do you think of this idea?",
+        "example_zh": "你覺得這個想法如何？"
+      },
+      {
+        "id": "b3l1-p092",
+        "phrase": "hesitate to",
+        "pos": "ph.",
+        "zh": "猶豫是否要……",
+        "example_en": "Do not hesitate to ask for help.",
+        "example_zh": "不要猶豫，儘管求助。"
+      },
+      {
+        "id": "b3l1-p093",
+        "phrase": "be of any assistance",
+        "pos": "ph.",
+        "zh": "能提供任何協助",
+        "example_en": "Please call me if I can be of any assistance.",
+        "example_zh": "如果我能提供任何協助，請打給我。"
+      },
+      {
+        "id": "b3l1-p094",
+        "phrase": "pass away",
+        "pos": "ph.",
+        "zh": "去世",
+        "example_en": "Her grandfather passed away last year.",
+        "example_zh": "她的祖父去年去世了。"
+      },
+      {
+        "id": "b3l1-p095",
+        "phrase": "thank…for",
+        "pos": "ph.",
+        "zh": "為……感謝……",
+        "example_en": "I thanked her for her kindness.",
+        "example_zh": "我感謝她的善意。"
+      },
+      {
+        "id": "b3l1-p096",
+        "phrase": "make a difference",
+        "pos": "ph.",
+        "zh": "帶來改變；發揮影響",
+        "example_en": "A small act can make a difference.",
+        "example_zh": "小小的行動也能帶來改變。"
+      },
+      {
+        "id": "b3l1-p097",
+        "phrase": "a place worth visiting",
+        "pos": "ph.",
+        "zh": "值得造訪的地方",
+        "example_en": "Tainan is a place worth visiting.",
+        "example_zh": "臺南是一個值得造訪的地方。"
+      },
+      {
+        "id": "b3l1-p098",
+        "phrase": "home to many distinctive animals",
+        "pos": "ph.",
+        "zh": "許多獨特動物的棲息地",
+        "example_en": "The island is home to many distinctive animals.",
+        "example_zh": "這座島是許多獨特動物的棲息地。"
+      },
+      {
+        "id": "b3l1-p099",
+        "phrase": "marine creatures",
+        "pos": "ph.",
+        "zh": "海洋生物",
+        "example_en": "Plastic waste harms marine creatures.",
+        "example_zh": "塑膠垃圾會傷害海洋生物。"
+      },
+      {
+        "id": "b3l1-p100",
+        "phrase": "spend too much time on",
+        "pos": "ph.",
+        "zh": "花太多時間在……上",
+        "example_en": "He spends too much time on video games.",
+        "example_zh": "他花太多時間玩電玩。"
+      },
+      {
+        "id": "b3l1-p101",
+        "phrase": "extracurricular activities",
+        "pos": "ph.",
+        "zh": "課外活動",
+        "example_en": "She takes part in many extracurricular activities.",
+        "example_zh": "她參加許多課外活動。"
+      },
+      {
+        "id": "b3l1-p102",
+        "phrase": "a crucial part of one’s life",
+        "pos": "ph.",
+        "zh": "某人生活中重要的一部分",
+        "example_en": "Music is a crucial part of her life.",
+        "example_zh": "音樂是她生活中重要的一部分。"
+      },
+      {
+        "id": "b3l1-p103",
+        "phrase": "a mission of importance",
+        "pos": "ph.",
+        "zh": "一項重要的任務",
+        "example_en": "Protecting the forest is a mission of importance.",
+        "example_zh": "保護森林是一項重要任務。"
+      },
+      {
+        "id": "b3l1-p104",
+        "phrase": "a necklace of value",
+        "pos": "ph.",
+        "zh": "一條有價值的項鍊",
+        "example_en": "She kept the necklace of value in a safe.",
+        "example_zh": "她把那條有價值的項鍊放在保險箱裡。"
+      },
+      {
+        "id": "b3l1-p105",
+        "phrase": "take care of",
+        "pos": "ph.",
+        "zh": "照顧；處理",
+        "example_en": "He takes care of his younger sister.",
+        "example_zh": "他照顧妹妹。"
+      },
+      {
+        "id": "b3l1-p106",
+        "phrase": "a bouquet of flowers",
+        "pos": "ph.",
+        "zh": "一束花",
+        "example_en": "He gave her a bouquet of flowers.",
+        "example_zh": "他送給她一束花。"
+      },
+      {
+        "id": "b3l1-p107",
+        "phrase": "graduation ceremony",
+        "pos": "ph.",
+        "zh": "畢業典禮",
+        "example_en": "Our graduation ceremony is next Friday.",
+        "example_zh": "我們的畢業典禮在下週五。"
+      },
+      {
+        "id": "b3l1-p108",
+        "phrase": "fulfill one’s dream",
+        "pos": "ph.",
+        "zh": "實現某人的夢想",
+        "example_en": "She worked hard to fulfill her dream.",
+        "example_zh": "她努力實現自己的夢想。"
+      },
+      {
+        "id": "b3l1-p109",
+        "phrase": "follow the rule",
+        "pos": "ph.",
+        "zh": "遵守規則",
+        "example_en": "Everyone must follow the rule.",
+        "example_zh": "每個人都必須遵守規則。"
+      },
+      {
+        "id": "b3l1-p110",
+        "phrase": "care for",
+        "pos": "ph.",
+        "zh": "照顧；關心",
+        "example_en": "Nurses care for sick patients.",
+        "example_zh": "護理師照顧生病的患者。"
+      },
+      {
+        "id": "b3l1-p111",
+        "phrase": "run into",
+        "pos": "ph.",
+        "zh": "偶遇；碰上",
+        "example_en": "I ran into an old friend yesterday.",
+        "example_zh": "我昨天偶遇一位老朋友。"
+      },
+      {
+        "id": "b3l1-p112",
+        "phrase": "leave…with…",
+        "pos": "ph.",
+        "zh": "把……留給……；使……帶著……",
+        "example_en": "The story left me with a deep impression.",
+        "example_zh": "這個故事給我留下深刻印象。"
+      },
+      {
+        "id": "b3l1-p113",
+        "phrase": "be informed that",
+        "pos": "ph.",
+        "zh": "被告知……",
+        "example_en": "We were informed that the flight was canceled.",
+        "example_zh": "我們被告知航班取消了。"
+      },
+      {
+        "id": "b3l1-p114",
+        "phrase": "serve the customers",
+        "pos": "ph.",
+        "zh": "服務顧客",
+        "example_en": "The staff serve the customers politely.",
+        "example_zh": "員工有禮貌地服務顧客。"
+      },
+      {
+        "id": "b3l1-p115",
+        "phrase": "ask for a raise",
+        "pos": "ph.",
+        "zh": "要求加薪",
+        "example_en": "He plans to ask for a raise.",
+        "example_zh": "他計畫要求加薪。"
+      },
+      {
+        "id": "b3l1-p116",
+        "phrase": "work overtime",
+        "pos": "ph.",
+        "zh": "加班",
+        "example_en": "She often works overtime on Fridays.",
+        "example_zh": "她星期五常加班。"
+      },
+      {
+        "id": "b3l1-p117",
+        "phrase": "in order to",
+        "pos": "ph.",
+        "zh": "為了……",
+        "example_en": "We left early in order to arrive on time.",
+        "example_zh": "我們提早出發，以便準時抵達。"
+      },
+      {
+        "id": "b3l1-p118",
+        "phrase": "finish on time",
+        "pos": "ph.",
+        "zh": "準時完成",
+        "example_en": "We must finish the project on time.",
+        "example_zh": "我們必須準時完成專案。"
+      },
+      {
+        "id": "b3l1-p119",
+        "phrase": "find employment",
+        "pos": "ph.",
+        "zh": "找到工作",
+        "example_en": "It can be difficult to find employment.",
+        "example_zh": "找到工作有時並不容易。"
+      },
+      {
+        "id": "b3l1-p120",
+        "phrase": "university/college degree",
+        "pos": "ph.",
+        "zh": "大學學位",
+        "example_en": "This job requires a university degree.",
+        "example_zh": "這份工作需要大學學位。"
+      },
+      {
+        "id": "b3l1-p121",
+        "phrase": "global corporation",
+        "pos": "ph.",
+        "zh": "跨國企業",
+        "example_en": "She works for a global corporation.",
+        "example_zh": "她在一家跨國企業工作。"
+      },
+      {
+        "id": "b3l1-p122",
+        "phrase": "corporate planning",
+        "pos": "ph.",
+        "zh": "企業規劃",
+        "example_en": "Corporate planning is important for growth.",
+        "example_zh": "企業規劃對成長很重要。"
+      },
+      {
+        "id": "b3l1-p123",
+        "phrase": "suffer from a heart condition",
+        "pos": "ph.",
+        "zh": "罹患心臟疾病",
+        "example_en": "He suffers from a heart condition.",
+        "example_zh": "他罹患心臟疾病。"
+      },
+      {
+        "id": "b3l1-p124",
+        "phrase": "cut down on fatty foods",
+        "pos": "ph.",
+        "zh": "少吃高脂肪食物",
+        "example_en": "The doctor told him to cut down on fatty foods.",
+        "example_zh": "醫生叫他少吃高脂肪食物。"
+      },
+      {
+        "id": "b3l1-p125",
+        "phrase": "terminal cancer",
+        "pos": "ph.",
+        "zh": "末期癌症",
+        "example_en": "The patient was diagnosed with terminal cancer.",
+        "example_zh": "那名病人被診斷出末期癌症。"
+      },
+      {
+        "id": "b3l1-p126",
+        "phrase": "make the most of",
+        "pos": "ph.",
+        "zh": "充分利用……",
+        "example_en": "We should make the most of our time together.",
+        "example_zh": "我們應該充分利用相處的時間。"
+      },
+      {
+        "id": "b3l1-p127",
+        "phrase": "the time left",
+        "pos": "ph.",
+        "zh": "剩下的時間",
+        "example_en": "She spent the time left with her family.",
+        "example_zh": "她把剩下的時間留給家人。"
+      },
+      {
+        "id": "b3l1-p128",
+        "phrase": "get off the bus",
+        "pos": "ph.",
+        "zh": "下公車",
+        "example_en": "I got off the bus at the next stop.",
+        "example_zh": "我在下一站下公車。"
+      },
+      {
+        "id": "b3l1-p129",
+        "phrase": "terminal building",
+        "pos": "ph.",
+        "zh": "航廈大樓",
+        "example_en": "We waited inside the terminal building.",
+        "example_zh": "我們在航廈大樓內等候。"
+      },
+      {
+        "id": "b3l1-p130",
+        "phrase": "these days",
+        "pos": "ph.",
+        "zh": "近來；現在",
+        "example_en": "People shop online more often these days.",
+        "example_zh": "近來人們更常在網路上購物。"
+      },
+      {
+        "id": "b3l1-p131",
+        "phrase": "suffer from illnesses",
+        "pos": "ph.",
+        "zh": "罹患疾病",
+        "example_en": "Some people suffer from illnesses caused by stress.",
+        "example_zh": "有些人罹患壓力所造成的疾病。"
+      },
+      {
+        "id": "b3l1-p132",
+        "phrase": "unhealthy lifestyle",
+        "pos": "ph.",
+        "zh": "不健康的生活方式",
+        "example_en": "An unhealthy lifestyle can cause disease.",
+        "example_zh": "不健康的生活方式可能引發疾病。"
+      },
+      {
+        "id": "b3l1-p133",
+        "phrase": "mental illness",
+        "pos": "ph.",
+        "zh": "心理疾病；精神疾病",
+        "example_en": "Mental illness should be treated seriously.",
+        "example_zh": "心理疾病應該被認真看待。"
+      },
+      {
+        "id": "b3l1-p134",
+        "phrase": "fall ill",
+        "pos": "ph.",
+        "zh": "生病",
+        "example_en": "She fell ill after the long trip.",
+        "example_zh": "長途旅行後她生病了。"
+      },
+      {
+        "id": "b3l1-p135",
+        "phrase": "take a whole week off from one’s job",
+        "pos": "ph.",
+        "zh": "請整整一週的假",
+        "example_en": "He took a whole week off from his job.",
+        "example_zh": "他向公司請了整整一週的假。"
+      },
+      {
+        "id": "b3l1-p136",
+        "phrase": "tremendously thankful",
+        "pos": "ph.",
+        "zh": "非常感激",
+        "example_en": "I am tremendously thankful for your help.",
+        "example_zh": "我非常感激你的幫助。"
+      },
+      {
+        "id": "b3l1-p137",
+        "phrase": "a tremendous amount of",
+        "pos": "ph.",
+        "zh": "大量的……",
+        "example_en": "The project requires a tremendous amount of time.",
+        "example_zh": "這個專案需要大量時間。"
+      },
+      {
+        "id": "b3l1-p138",
+        "phrase": "do a tremendous amount of work",
+        "pos": "ph.",
+        "zh": "完成大量工作",
+        "example_en": "The team did a tremendous amount of work.",
+        "example_zh": "團隊完成了大量工作。"
+      },
+      {
+        "id": "b3l1-p139",
+        "phrase": "take a break over Christmas",
+        "pos": "ph.",
+        "zh": "在聖誕節期間休息",
+        "example_en": "The company will take a break over Christmas.",
+        "example_zh": "公司將在聖誕節期間休息。"
+      },
+      {
+        "id": "b3l1-p140",
+        "phrase": "burst into laughter",
+        "pos": "ph.",
+        "zh": "突然大笑",
+        "example_en": "The class burst into laughter.",
+        "example_zh": "全班突然大笑。"
+      },
+      {
+        "id": "b3l1-p141",
+        "phrase": "burst into tears",
+        "pos": "ph.",
+        "zh": "突然哭起來",
+        "example_en": "She burst into tears after hearing the news.",
+        "example_zh": "她聽到消息後突然哭了起來。"
+      },
+      {
+        "id": "b3l1-p142",
+        "phrase": "roar with laughter",
+        "pos": "ph.",
+        "zh": "放聲大笑",
+        "example_en": "The audience roared with laughter at the joke.",
+        "example_zh": "觀眾聽到笑話後放聲大笑。"
+      },
+      {
+        "id": "b3l1-p143",
+        "phrase": "come around the corner",
+        "pos": "ph.",
+        "zh": "從轉角出現",
+        "example_en": "A car came around the corner quickly.",
+        "example_zh": "一輛車快速從轉角出現。"
+      },
+      {
+        "id": "b3l1-p144",
+        "phrase": "dress in zombie costumes",
+        "pos": "ph.",
+        "zh": "穿著殭屍服裝",
+        "example_en": "They dressed in zombie costumes for Halloween.",
+        "example_zh": "他們萬聖節穿著殭屍服裝。"
+      },
+      {
+        "id": "b3l1-p145",
+        "phrase": "frighten sb. to death",
+        "pos": "ph.",
+        "zh": "把某人嚇壞",
+        "example_en": "The thunder frightened me to death.",
+        "example_zh": "雷聲把我嚇壞了。"
+      },
+      {
+        "id": "b3l1-p146",
+        "phrase": "run away in fright",
+        "pos": "ph.",
+        "zh": "驚恐地逃跑",
+        "example_en": "The cat ran away in fright.",
+        "example_zh": "那隻貓驚恐地逃跑了。"
+      },
+      {
+        "id": "b3l1-p147",
+        "phrase": "come into contact with",
+        "pos": "ph.",
+        "zh": "接觸到……",
+        "example_en": "Travelers come into contact with many cultures.",
+        "example_zh": "旅人會接觸到許多文化。"
+      },
+      {
+        "id": "b3l1-p148",
+        "phrase": "keep in contact",
+        "pos": "ph.",
+        "zh": "保持聯絡",
+        "example_en": "We keep in contact after graduation.",
+        "example_zh": "畢業後我們仍保持聯絡。"
+      },
+      {
+        "id": "b3l1-p149",
+        "phrase": "eye contact",
+        "pos": "ph.",
+        "zh": "眼神接觸",
+        "example_en": "Good eye contact shows confidence.",
+        "example_zh": "良好的眼神接觸展現自信。"
+      },
+      {
+        "id": "b3l1-p150",
+        "phrase": "reply to",
+        "pos": "ph.",
+        "zh": "回覆……",
+        "example_en": "Please reply to my email today.",
+        "example_zh": "請今天回覆我的電子郵件。"
+      },
+      {
+        "id": "b3l1-p151",
+        "phrase": "contact by phone",
+        "pos": "ph.",
+        "zh": "以電話聯絡",
+        "example_en": "You can contact us by phone.",
+        "example_zh": "你可以用電話聯絡我們。"
+      },
+      {
+        "id": "b3l1-p152",
+        "phrase": "contact lenses",
+        "pos": "ph.",
+        "zh": "隱形眼鏡",
+        "example_en": "She wears contact lenses instead of glasses.",
+        "example_zh": "她戴隱形眼鏡而不是眼鏡。"
+      },
+      {
+        "id": "b3l1-p153",
+        "phrase": "kill the germs",
+        "pos": "ph.",
+        "zh": "殺死病菌",
+        "example_en": "Soap helps kill the germs on your hands.",
+        "example_zh": "肥皂有助於殺死手上的病菌。"
+      },
+      {
+        "id": "b3l1-p154",
+        "phrase": "cause a serious eye infection",
+        "pos": "ph.",
+        "zh": "造成嚴重眼部感染",
+        "example_en": "Dirty lenses can cause a serious eye infection.",
+        "example_zh": "不乾淨的鏡片可能造成嚴重眼部感染。"
+      },
+      {
+        "id": "b3l1-p155",
+        "phrase": "turn on a heater",
+        "pos": "ph.",
+        "zh": "打開暖氣機",
+        "example_en": "He turned on a heater to warm the room.",
+        "example_zh": "他打開暖氣機讓房間變暖。"
+      },
+      {
+        "id": "b3l1-p156",
+        "phrase": "fall ill",
+        "pos": "ph.",
+        "zh": "生病",
+        "example_en": "Several students fell ill last week.",
+        "example_zh": "幾名學生上週生病了。"
+      },
+      {
+        "id": "b3l1-p157",
+        "phrase": "prompt sb. to",
+        "pos": "ph.",
+        "zh": "促使某人……",
+        "example_en": "Her tears prompted him to apologize.",
+        "example_zh": "她的眼淚促使他道歉。"
+      },
+      {
+        "id": "b3l1-p158",
+        "phrase": "flash of light",
+        "pos": "ph.",
+        "zh": "一道閃光",
+        "example_en": "A flash of light crossed the sky.",
+        "example_zh": "一道閃光劃過天空。"
+      },
+      {
+        "id": "b3l1-p159",
+        "phrase": "take a look around",
+        "pos": "ph.",
+        "zh": "四處看看",
+        "example_en": "Let’s take a look around the museum.",
+        "example_zh": "我們四處看看這間博物館吧。"
+      },
+      {
+        "id": "b3l1-p160",
+        "phrase": "prompt reply",
+        "pos": "ph.",
+        "zh": "迅速回覆",
+        "example_en": "Thank you for your prompt reply.",
+        "example_zh": "感謝你的迅速回覆。"
+      },
+      {
+        "id": "b3l1-p161",
+        "phrase": "be confined to a wheelchair",
+        "pos": "ph.",
+        "zh": "行動受限於輪椅",
+        "example_en": "He has been confined to a wheelchair since the accident.",
+        "example_zh": "事故後他一直只能靠輪椅行動。"
+      },
+      {
+        "id": "b3l1-p162",
+        "phrase": "confine A to b",
+        "pos": "ph.",
+        "zh": "把 A 限制在 B",
+        "example_en": "The injury confined him to bed.",
+        "example_zh": "傷勢使他只能臥床。"
+      },
+      {
+        "id": "b3l1-p163",
+        "phrase": "deal with",
+        "pos": "ph.",
+        "zh": "處理；應付",
+        "example_en": "She knows how to deal with pressure.",
+        "example_zh": "她知道如何應付壓力。"
+      },
+      {
+        "id": "b3l1-p164",
+        "phrase": "a sparkle in the eyes",
+        "pos": "ph.",
+        "zh": "眼中的光芒",
+        "example_en": "There was a sparkle in her eyes.",
+        "example_zh": "她眼中閃耀著光芒。"
+      },
+      {
+        "id": "b3l1-p165",
+        "phrase": "sparkle under the light of the setting sun",
+        "pos": "ph.",
+        "zh": "在夕陽下閃耀",
+        "example_en": "The sea sparkled under the light of the setting sun.",
+        "example_zh": "大海在夕陽下閃耀。"
+      },
+      {
+        "id": "b3l1-p166",
+        "phrase": "On one’s return from abroad",
+        "pos": "ph.",
+        "zh": "某人從國外回來時",
+        "example_en": "On his return from abroad, he visited his parents.",
+        "example_zh": "他從國外回來時拜訪了父母。"
+      },
+      {
+        "id": "b3l1-p167",
+        "phrase": "do one’s military service",
+        "pos": "ph.",
+        "zh": "服兵役",
+        "example_en": "He will do his military service next year.",
+        "example_zh": "他明年將服兵役。"
+      },
+      {
+        "id": "b3l1-p168",
+        "phrase": "feel drowsy",
+        "pos": "ph.",
+        "zh": "感到昏昏欲睡",
+        "example_en": "I feel drowsy after taking this medicine.",
+        "example_zh": "我吃了這個藥後感到昏昏欲睡。"
+      },
+      {
+        "id": "b3l1-p169",
+        "phrase": "corporate finance",
+        "pos": "ph.",
+        "zh": "企業財務",
+        "example_en": "She is studying corporate finance.",
+        "example_zh": "她正在學習企業財務。"
+      },
+      {
+        "id": "b3l1-p170",
+        "phrase": "stretch one’s arm high up",
+        "pos": "ph.",
+        "zh": "把某人的手臂高高伸起",
+        "example_en": "He stretched his arm high up to reach the shelf.",
+        "example_zh": "他把手臂高高伸起去拿架上的東西。"
+      },
+      {
+        "id": "b3l1-p171",
+        "phrase": "elastic band",
+        "pos": "ph.",
+        "zh": "橡皮筋；彈力帶",
+        "example_en": "She tied the papers with an elastic band.",
+        "example_zh": "她用橡皮筋綁住紙張。"
+      },
+      {
+        "id": "b3l1-p172",
+        "phrase": "offer to",
+        "pos": "ph.",
+        "zh": "主動提出……",
+        "example_en": "He offered to carry my bag.",
+        "example_zh": "他主動提出幫我拿包包。"
+      },
+      {
+        "id": "b3l1-p173",
+        "phrase": "take…for a walk",
+        "pos": "ph.",
+        "zh": "帶……去散步",
+        "example_en": "I take my dog for a walk every evening.",
+        "example_zh": "我每天晚上帶狗去散步。"
+      },
+      {
+        "id": "b3l1-p174",
+        "phrase": "refuse a job offer",
+        "pos": "ph.",
+        "zh": "拒絕工作機會",
+        "example_en": "She refused the job offer politely.",
+        "example_zh": "她禮貌地拒絕了工作機會。"
+      },
+      {
+        "id": "b3l1-p175",
+        "phrase": "be met with refusal",
+        "pos": "ph.",
+        "zh": "遭到拒絕",
+        "example_en": "His request was met with refusal.",
+        "example_zh": "他的請求遭到拒絕。"
+      },
+      {
+        "id": "b3l1-p176",
+        "phrase": "hesitate about the decision",
+        "pos": "ph.",
+        "zh": "對這項決定猶豫不決",
+        "example_en": "She hesitated about the decision for days.",
+        "example_zh": "她對這項決定猶豫了好幾天。"
+      },
+      {
+        "id": "b3l1-p177",
+        "phrase": "not…at all",
+        "pos": "ph.",
+        "zh": "一點也不……",
+        "example_en": "I am not tired at all.",
+        "example_zh": "我一點也不累。"
+      },
+      {
+        "id": "b3l1-p178",
+        "phrase": "right away",
+        "pos": "ph.",
+        "zh": "立刻；馬上",
+        "example_en": "Please call the doctor right away.",
+        "example_zh": "請立刻打電話給醫生。"
+      },
+      {
+        "id": "b3l1-p179",
+        "phrase": "call out the answer to the question",
+        "pos": "ph.",
+        "zh": "大聲說出問題的答案",
+        "example_en": "Tom called out the answer to the question.",
+        "example_zh": "湯姆大聲說出問題的答案。"
+      },
+      {
+        "id": "b3l1-p180",
+        "phrase": "without hesitation",
+        "pos": "ph.",
+        "zh": "毫不猶豫地",
+        "example_en": "She agreed without hesitation.",
+        "example_zh": "她毫不猶豫地同意了。"
+      },
+      {
+        "id": "b3l1-p181",
+        "phrase": "be filled with laugher",
+        "pos": "ph.",
+        "zh": "充滿笑聲",
+        "example_en": "The room was filled with laughter.",
+        "example_zh": "房間裡充滿笑聲。"
+      },
+      {
+        "id": "b3l1-p182",
+        "phrase": "exchange student",
+        "pos": "ph.",
+        "zh": "交換學生",
+        "example_en": "We welcomed an exchange student from Canada.",
+        "example_zh": "我們歡迎一位來自加拿大的交換學生。"
+      },
+      {
+        "id": "b3l1-p183",
+        "phrase": "to sb’s shock",
+        "pos": "ph.",
+        "zh": "令某人震驚的是",
+        "example_en": "To my shock, the door was unlocked.",
+        "example_zh": "令我震驚的是，門沒有鎖。"
+      },
+      {
+        "id": "b3l1-p184",
+        "phrase": "pass out",
+        "pos": "ph.",
+        "zh": "昏倒；分發",
+        "example_en": "He passed out from the heat.",
+        "example_zh": "他因炎熱而昏倒。"
+      },
+      {
+        "id": "b3l1-p185",
+        "phrase": "be optimistic",
+        "pos": "ph.",
+        "zh": "保持樂觀",
+        "example_en": "Try to be optimistic about the future.",
+        "example_zh": "試著對未來保持樂觀。"
+      },
+      {
+        "id": "b3l1-p186",
+        "phrase": "be pessimistic",
+        "pos": "ph.",
+        "zh": "感到悲觀",
+        "example_en": "Do not be pessimistic about the result.",
+        "example_zh": "不要對結果感到悲觀。"
+      },
+      {
+        "id": "b3l1-p187",
+        "phrase": "refuse sb’s request",
+        "pos": "ph.",
+        "zh": "拒絕某人的請求",
+        "example_en": "The manager refused his request.",
+        "example_zh": "經理拒絕了他的請求。"
+      },
+      {
+        "id": "b3l1-p188",
+        "phrase": "tremendously different from",
+        "pos": "ph.",
+        "zh": "與……大不相同",
+        "example_en": "City life is tremendously different from country life.",
+        "example_zh": "城市生活與鄉村生活大不相同。"
+      },
+      {
+        "id": "b3l1-p189",
+        "phrase": "documentary on ocean pollution",
+        "pos": "ph.",
+        "zh": "海洋污染紀錄片",
+        "example_en": "We watched a documentary on ocean pollution.",
+        "example_zh": "我們看了一部海洋污染紀錄片。"
+      },
+      {
+        "id": "b3l1-p190",
+        "phrase": "plastic straws and bags",
+        "pos": "ph.",
+        "zh": "塑膠吸管與塑膠袋",
+        "example_en": "Plastic straws and bags harm marine animals.",
+        "example_zh": "塑膠吸管與塑膠袋會傷害海洋動物。"
+      },
+      {
+        "id": "b3l1-p191",
+        "phrase": "take a nap",
+        "pos": "ph.",
+        "zh": "小睡；午睡",
+        "example_en": "I usually take a nap after lunch.",
+        "example_zh": "我通常午餐後小睡一下。"
+      },
+      {
+        "id": "b3l1-p192",
+        "phrase": "be in contact with",
+        "pos": "ph.",
+        "zh": "與……有聯絡／接觸",
+        "example_en": "She is still in contact with her classmates.",
+        "example_zh": "她仍與同學保持聯絡。"
+      },
+      {
+        "id": "b3l1-p193",
+        "phrase": "under pressure",
+        "pos": "ph.",
+        "zh": "承受壓力",
+        "example_en": "He works well under pressure.",
+        "example_zh": "他在壓力下仍能好好工作。"
+      },
+      {
+        "id": "b3l1-p194",
+        "phrase": "ghost story",
+        "pos": "ph.",
+        "zh": "鬼故事",
+        "example_en": "Grandpa told us a scary ghost story.",
+        "example_zh": "祖父講了一個可怕的鬼故事給我們聽。"
+      },
+      {
+        "id": "b3l1-p195",
+        "phrase": "college application",
+        "pos": "ph.",
+        "zh": "大學申請",
+        "example_en": "She finished her college application yesterday.",
+        "example_zh": "她昨天完成了大學申請。"
+      },
+      {
+        "id": "b3l1-p196",
+        "phrase": "ask…out on a date",
+        "pos": "ph.",
+        "zh": "邀請……約會",
+        "example_en": "He asked Amy out on a date.",
+        "example_zh": "他邀請艾美出去約會。"
+      },
+      {
+        "id": "b3l1-p197",
+        "phrase": "turn sb. down",
+        "pos": "ph.",
+        "zh": "拒絕某人",
+        "example_en": "She turned him down politely.",
+        "example_zh": "她禮貌地拒絕了他。"
+      },
+      {
+        "id": "b3l1-p198",
+        "phrase": "be in a relationship",
+        "pos": "ph.",
+        "zh": "正在交往",
+        "example_en": "They have been in a relationship for two years.",
+        "example_zh": "他們已經交往兩年。"
+      },
+      {
+        "id": "b3l1-p199",
+        "phrase": "unlock the door",
+        "pos": "ph.",
+        "zh": "把門解鎖",
+        "example_en": "He unlocked the door with a key.",
+        "example_zh": "他用鑰匙把門打開。"
+      },
+      {
+        "id": "b3l1-p200",
+        "phrase": "give sb. a huge fright",
+        "pos": "ph.",
+        "zh": "把某人嚇一大跳",
+        "example_en": "The loud noise gave me a huge fright.",
+        "example_zh": "巨大的聲響把我嚇了一大跳。"
+      },
+      {
+        "id": "b3l1-p201",
+        "phrase": "sit up with",
+        "pos": "ph.",
+        "zh": "熬夜陪伴……",
+        "example_en": "She sat up with her sick child all night.",
+        "example_zh": "她整晚沒睡，陪伴生病的孩子。"
+      },
+      {
+        "id": "b3l1-p202",
+        "phrase": "Turndown a proposal",
+        "pos": "ph.",
+        "zh": "拒絕求婚／提議",
+        "example_en": "She turned down the proposal.",
+        "example_zh": "她拒絕了那項提議。"
+      },
+      {
+        "id": "b3l1-p203",
+        "phrase": "in a bad mood",
+        "pos": "ph.",
+        "zh": "心情不好",
+        "example_en": "He is in a bad mood today.",
+        "example_zh": "他今天心情不好。"
+      },
+      {
+        "id": "b3l1-p204",
+        "phrase": "be dumped by",
+        "pos": "ph.",
+        "zh": "被……甩掉",
+        "example_en": "He was dumped by his girlfriend.",
+        "example_zh": "他被女朋友甩了。"
+      },
+      {
+        "id": "b3l1-p205",
+        "phrase": "be asked personal questions",
+        "pos": "ph.",
+        "zh": "被問私人問題",
+        "example_en": "She dislikes being asked personal questions.",
+        "example_zh": "她不喜歡被問私人問題。"
+      },
+      {
+        "id": "b3l1-p206",
+        "phrase": "bad manners",
+        "pos": "ph.",
+        "zh": "沒禮貌的行為",
+        "example_en": "Interrupting others is bad manners.",
+        "example_zh": "打斷別人是沒禮貌的行為。"
+      },
+      {
+        "id": "b3l1-p207",
+        "phrase": "cheat on tests",
+        "pos": "ph.",
+        "zh": "考試作弊",
+        "example_en": "Students should never cheat on tests.",
+        "example_zh": "學生絕不應該考試作弊。"
+      },
+      {
+        "id": "b3l1-p208",
+        "phrase": "take immediate action",
+        "pos": "ph.",
+        "zh": "立即採取行動",
+        "example_en": "We must take immediate action to stop the fire.",
+        "example_zh": "我們必須立即採取行動滅火。"
+      },
+      {
+        "id": "b3l1-p209",
+        "phrase": "take on a challenge",
+        "pos": "ph.",
+        "zh": "接受挑戰",
+        "example_en": "She is ready to take on a new challenge.",
+        "example_zh": "她已準備好接受新的挑戰。"
+      },
+      {
+        "id": "b3l1-p210",
+        "phrase": "lead by 3 points",
+        "pos": "ph.",
+        "zh": "領先三分",
+        "example_en": "Our team leads by three points.",
+        "example_zh": "我們隊領先三分。"
+      },
+      {
+        "id": "b3l1-p211",
+        "phrase": "be satisfied with",
+        "pos": "ph.",
+        "zh": "對……感到滿意",
+        "example_en": "The customer was satisfied with the service.",
+        "example_zh": "顧客對服務感到滿意。"
+      },
+      {
+        "id": "b3l1-p212",
+        "phrase": "be proud of",
+        "pos": "ph.",
+        "zh": "以……為榮",
+        "example_en": "Her parents are proud of her.",
+        "example_zh": "她的父母以她為榮。"
+      },
+      {
+        "id": "b3l1-p213",
+        "phrase": "get rid of loneliness",
+        "pos": "ph.",
+        "zh": "擺脫孤獨",
+        "example_en": "Joining a club helped him get rid of loneliness.",
+        "example_zh": "加入社團幫助他擺脫孤獨。"
+      },
+      {
+        "id": "b3l1-p214",
+        "phrase": "play a musical instrument",
+        "pos": "ph.",
+        "zh": "演奏樂器",
+        "example_en": "Every student learns to play a musical instrument.",
+        "example_zh": "每位學生都學習演奏一種樂器。"
+      },
+      {
+        "id": "b3l1-p215",
+        "phrase": "take notes",
+        "pos": "ph.",
+        "zh": "做筆記",
+        "example_en": "I take notes during every lesson.",
+        "example_zh": "我每堂課都做筆記。"
+      },
+      {
+        "id": "b3l1-p216",
+        "phrase": "in public",
+        "pos": "ph.",
+        "zh": "在公共場合",
+        "example_en": "It is rude to shout in public.",
+        "example_zh": "在公共場合大喊很沒禮貌。"
+      },
+      {
+        "id": "b3l1-p217",
+        "phrase": "overcome tremendous challenges",
+        "pos": "ph.",
+        "zh": "克服巨大挑戰",
+        "example_en": "The athlete overcame tremendous challenges.",
+        "example_zh": "那位運動員克服了巨大挑戰。"
+      },
+      {
+        "id": "b3l1-p218",
+        "phrase": "win the championship",
+        "pos": "ph.",
+        "zh": "贏得冠軍",
+        "example_en": "Our team won the championship last year.",
+        "example_zh": "我們隊去年贏得了冠軍。"
+      },
+      {
+        "id": "b3l1-p219",
+        "phrase": "pass on valuable experience to",
+        "pos": "ph.",
+        "zh": "把寶貴經驗傳授給……",
+        "example_en": "Senior workers pass on valuable experience to new staff.",
+        "example_zh": "資深員工把寶貴經驗傳授給新進人員。"
+      },
+      {
+        "id": "b3l1-p220",
+        "phrase": "junior employee",
+        "pos": "ph.",
+        "zh": "資淺員工；初階員工",
+        "example_en": "The junior employee asked many questions.",
+        "example_zh": "那位資淺員工問了許多問題。"
+      }
+    ]
   },
   "grammar": {
-    "points": [],
+    "points": [
+      {
+        "id": "b3l1-g1",
+        "title": "S + find/consider/feel/think... + it + adj./N + to + VR \nit 作虛受詞+受詞補語+ to do作真正受詞",
+        "examples": [
+          "Many fans think it a great achievement to win three championships.",
+          "Most parents feel it unacceptable to leave young children at home alone."
+        ]
+      },
+      {
+        "id": "b3l1-g2",
+        "title": "It seems that…/It appears that…\nit 作虛主詞；that子句為真正主詞置後",
+        "examples": [
+          "It seems that he is not feeling well.",
+          "It appeared that she was satisfied with her performance."
+        ]
+      }
+    ],
     "sentence_structures": {
       "items": []
     }
   },
   "text_genre": {
-    "raw_text": ""
+    "raw_text": "A dynamic character graphic organizer\nA dynamic character is someone who changes significantly inside as a story unfolds. They learn important lessons, grow emotionally, or alter their way of thinking because of the experiences and challenges they face.   “The Day I Broke the Rule” is a narrative depicting the changes “I” experienced, with the turning point being the sick boy Billy asking for a hug, which was against the rule due to hygiene concerns. “I” broke the rule by giving Billy a hug, as nothing could convey love, empathy, and warmth like a heartfelt embrace. It follows the structure below: \nCharacter at the Beginning: what I did; what I knew; how I felt\nTurning point:  Billy asked if he could get a hug\nCharacter at the End: what I did; what I knew; how I felt"
   }
 }
