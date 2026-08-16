@@ -1,0 +1,495 @@
+{
+  "book": "B3",
+  "lesson": "L1",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b3l1-v01",
+        "base": "employ",
+        "verb": [
+          {
+            "en": "employ",
+            "zh": "雇用；使用",
+            "example": "The company employs more than two hundred people."
+          }
+        ],
+        "noun": [
+          {
+            "en": "employment",
+            "zh": "就業；工作；雇用",
+            "example": "The new factory will create employment for local residents."
+          },
+          {
+            "en": "unemployment",
+            "zh": "失業；失業率",
+            "example": "Unemployment has fallen steadily this year."
+          },
+          {
+            "en": "employer",
+            "zh": "雇主；僱用者",
+            "example": "Your employer must provide a safe workplace."
+          },
+          {
+            "en": "employee",
+            "zh": "員工；受僱者",
+            "example": "Each employee receives regular training."
+          }
+        ],
+        "adj": [
+          {
+            "en": "employed",
+            "zh": "受雇的；有工作的",
+            "example": "Most graduates were employed within six months."
+          },
+          {
+            "en": "unemployed",
+            "zh": "失業的；沒有工作的",
+            "example": "He was unemployed for nearly a year."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l1-v02",
+        "base": "corporate",
+        "verb": [],
+        "noun": [
+          {
+            "en": "corporation",
+            "zh": "公司；法人；企業",
+            "example": "The corporation opened a new office in Taipei."
+          }
+        ],
+        "adj": [
+          {
+            "en": "corporate",
+            "zh": "公司的；企業的",
+            "example": "She works in the corporate finance department."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l1-v03",
+        "base": "suffer",
+        "verb": [
+          {
+            "en": "suffer",
+            "zh": "遭受；受苦；忍受",
+            "example": "Many farmers suffered heavy losses after the storm."
+          }
+        ],
+        "noun": [
+          {
+            "en": "suffering",
+            "zh": "痛苦；苦難",
+            "example": "The charity works to reduce human suffering."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l1-v04",
+        "base": "terminal",
+        "verb": [],
+        "noun": [
+          {
+            "en": "terminal",
+            "zh": "終點站；航廈；終端機",
+            "example": "We waited for our flight in the international terminal."
+          }
+        ],
+        "adj": [
+          {
+            "en": "terminal",
+            "zh": "末期的；終端的；最終的",
+            "example": "The patient was diagnosed with a terminal illness."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l1-v05",
+        "base": "ill",
+        "verb": [],
+        "noun": [
+          {
+            "en": "illness",
+            "zh": "疾病；生病",
+            "example": "She returned to work after a long illness."
+          }
+        ],
+        "adj": [
+          {
+            "en": "ill",
+            "zh": "生病的；不健康的",
+            "example": "He became seriously ill during the trip."
+          }
+        ],
+        "adv": [
+          {
+            "en": "ill",
+            "zh": "壞地；不利地；惡劣地",
+            "example": "It is unfair to speak ill of someone who is absent."
+          }
+        ]
+      },
+      {
+        "id": "b3l1-v06",
+        "base": "tremendous",
+        "verb": [],
+        "noun": [],
+        "adj": [
+          {
+            "en": "tremendous",
+            "zh": "巨大的；極好的；驚人的",
+            "example": "The project was a tremendous success."
+          }
+        ],
+        "adv": [
+          {
+            "en": "tremendously",
+            "zh": "非常；極大地；驚人地",
+            "example": "The team has improved tremendously this season."
+          }
+        ]
+      },
+      {
+        "id": "b3l1-v07",
+        "base": "laugh",
+        "verb": [
+          {
+            "en": "laugh",
+            "zh": "笑；嘲笑",
+            "example": "Everyone laughed at the comedian's joke."
+          }
+        ],
+        "noun": [
+          {
+            "en": "laugh",
+            "zh": "笑聲；笑",
+            "example": "His story gave us all a good laugh."
+          },
+          {
+            "en": "laughter",
+            "zh": "笑聲；歡笑",
+            "example": "The room was filled with children's laughter."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l1-v08",
+        "base": "fright",
+        "verb": [
+          {
+            "en": "frighten",
+            "zh": "使害怕；使受驚",
+            "example": "The sudden noise frightened the baby."
+          }
+        ],
+        "noun": [
+          {
+            "en": "fright",
+            "zh": "驚嚇；恐懼",
+            "example": "She gave a cry of fright when the lights went out."
+          }
+        ],
+        "adj": [
+          {
+            "en": "frightened",
+            "zh": "害怕的；受驚的",
+            "example": "The frightened dog hid under the table."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l1-v09",
+        "base": "contact",
+        "verb": [
+          {
+            "en": "contact",
+            "zh": "聯絡；接觸",
+            "example": "Please contact the office if you have any questions."
+          }
+        ],
+        "noun": [
+          {
+            "en": "contact",
+            "zh": "聯絡；接觸；聯絡人",
+            "example": "I have remained in contact with my former classmates."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l1-v10",
+        "base": "warm",
+        "verb": [
+          {
+            "en": "warm",
+            "zh": "使溫暖；加熱；變暖",
+            "example": "Warm the soup gently before serving it."
+          }
+        ],
+        "noun": [
+          {
+            "en": "warmth",
+            "zh": "溫暖；熱情；暖意",
+            "example": "We appreciated the warmth of their welcome."
+          }
+        ],
+        "adj": [
+          {
+            "en": "warm",
+            "zh": "溫暖的；熱情的",
+            "example": "It was a warm and sunny afternoon."
+          }
+        ],
+        "adv": [
+          {
+            "en": "warmly",
+            "zh": "溫暖地；熱情地",
+            "example": "The guests were warmly welcomed at the door."
+          }
+        ]
+      },
+      {
+        "id": "b3l1-v11",
+        "base": "frail",
+        "verb": [],
+        "noun": [
+          {
+            "en": "frailty",
+            "zh": "虛弱；脆弱；弱點",
+            "example": "Age had increased his physical frailty."
+          }
+        ],
+        "adj": [
+          {
+            "en": "frail",
+            "zh": "虛弱的；脆弱的",
+            "example": "The frail bridge could not support a heavy truck."
+          }
+        ],
+        "adv": [
+          {
+            "en": "frailly",
+            "zh": "虛弱地；脆弱地",
+            "example": "The elderly woman smiled frailly from her chair."
+          }
+        ]
+      },
+      {
+        "id": "b3l1-v12",
+        "base": "prompt",
+        "verb": [
+          {
+            "en": "prompt",
+            "zh": "促使；提示；提醒",
+            "example": "The question prompted him to reconsider his decision."
+          }
+        ],
+        "noun": [
+          {
+            "en": "prompt",
+            "zh": "提示；提詞；提示語",
+            "example": "The teacher gave the student a helpful prompt."
+          },
+          {
+            "en": "prompter",
+            "zh": "提詞者；提示裝置",
+            "example": "The actor glanced at the prompter when he forgot his line."
+          }
+        ],
+        "adj": [
+          {
+            "en": "prompt",
+            "zh": "迅速的；準時的；即刻的",
+            "example": "Thank you for your prompt reply."
+          }
+        ],
+        "adv": [
+          {
+            "en": "promptly",
+            "zh": "迅速地；準時地；立即",
+            "example": "The meeting started promptly at nine."
+          }
+        ]
+      },
+      {
+        "id": "b3l1-v13",
+        "base": "confine",
+        "verb": [
+          {
+            "en": "confine",
+            "zh": "限制；使局限；禁閉",
+            "example": "The doctor advised him to confine his activities to light exercise."
+          }
+        ],
+        "noun": [
+          {
+            "en": "confinement",
+            "zh": "限制；禁閉；拘禁",
+            "example": "The animal became restless during its confinement."
+          }
+        ],
+        "adj": [
+          {
+            "en": "confined",
+            "zh": "受限制的；狹窄的；被禁閉的",
+            "example": "Working in a confined space requires special training."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l1-v14",
+        "base": "sparkle",
+        "verb": [
+          {
+            "en": "sparkle",
+            "zh": "閃耀；閃爍；生氣勃勃",
+            "example": "The stars sparkled in the clear night sky."
+          }
+        ],
+        "noun": [
+          {
+            "en": "sparkle",
+            "zh": "閃耀；光彩；活力",
+            "example": "The diamond had a brilliant sparkle."
+          }
+        ],
+        "adj": [
+          {
+            "en": "sparkling",
+            "zh": "閃閃發光的；氣泡的；精彩的",
+            "example": "They served sparkling water with dinner."
+          },
+          {
+            "en": "sparkly",
+            "zh": "亮晶晶的；閃閃發光的",
+            "example": "She wore a sparkly silver dress to the party."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l1-v15",
+        "base": "hug",
+        "verb": [
+          {
+            "en": "hug",
+            "zh": "擁抱；抱緊",
+            "example": "She hugged her friend after the long separation."
+          }
+        ],
+        "noun": [
+          {
+            "en": "hug",
+            "zh": "擁抱",
+            "example": "The child gave his mother a big hug."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l1-v16",
+        "base": "drowsy",
+        "verb": [],
+        "noun": [
+          {
+            "en": "drowsiness",
+            "zh": "睡意；昏昏欲睡",
+            "example": "This medicine may cause drowsiness."
+          }
+        ],
+        "adj": [
+          {
+            "en": "drowsy",
+            "zh": "昏昏欲睡的；困倦的",
+            "example": "The warm room made me feel drowsy."
+          }
+        ],
+        "adv": [
+          {
+            "en": "drowsily",
+            "zh": "昏昏欲睡地；困倦地",
+            "example": "He answered the phone drowsily."
+          }
+        ]
+      },
+      {
+        "id": "b3l1-v17",
+        "base": "refuse",
+        "verb": [
+          {
+            "en": "refuse",
+            "zh": "拒絕；不肯",
+            "example": "She refused to sign the document."
+          }
+        ],
+        "noun": [
+          {
+            "en": "refusal",
+            "zh": "拒絕；回絕",
+            "example": "His refusal to cooperate delayed the project."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l1-v18",
+        "base": "hesitate",
+        "verb": [
+          {
+            "en": "hesitate",
+            "zh": "猶豫；遲疑",
+            "example": "Do not hesitate to ask for help."
+          }
+        ],
+        "noun": [
+          {
+            "en": "hesitation",
+            "zh": "猶豫；遲疑",
+            "example": "After a brief hesitation, she accepted the offer."
+          }
+        ],
+        "adj": [
+          {
+            "en": "hesitant",
+            "zh": "猶豫的；遲疑的",
+            "example": "He seemed hesitant about joining the team."
+          }
+        ],
+        "adv": [
+          {
+            "en": "hesitantly",
+            "zh": "猶豫地；遲疑地",
+            "example": "She hesitantly raised her hand to answer."
+          }
+        ]
+      }
+    ]
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": []
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}

@@ -112,7 +112,8 @@
         {
           "id": "l1",
           "title": "",
-          "status": "draft"
+          "status": "published",
+          "data": "data/b3/l1.json"
         },
         {
           "id": "l2",
