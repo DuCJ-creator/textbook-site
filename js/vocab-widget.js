@@ -81,13 +81,31 @@ const VocabWidget = (function () {
         : "尚未建立";
     }
 
-    state.currentFamilyIndex = 0;
+    // 支援外部指定「一進來就展開哪個字族」（依 word-base 值比對），
+    // 這是跨課字典索引點進來時用的：找不到對應的字族就照常展開第一個，
+    // 不會讓頁面卡在空白或報錯。
+    let initialIndex = 0;
+    if (options.initialBase) {
+      const found = state.rows.findIndex(r => r.base === options.initialBase);
+      if (found >= 0) initialIndex = found;
+    }
+
+    state.currentFamilyIndex = initialIndex;
     renderRail();
     if (state.rows.length) {
-      renderFamily(0);
+      renderFamily(initialIndex);
+      if (options.initialBase) scrollFamilyIntoView();
     } else {
       state.els.grid.innerHTML = '<p style="color:var(--ink-soft); font-size:.88rem;">這一課的單字家族尚未建立。</p>';
       state.els.panel.classList.remove("show");
+    }
+  }
+
+  // 從字典索引跳轉進來時，把目前展開的字族區塊捲動到視窗可見範圍，
+  // 避免使用者跳頁後還要自己往下找內容在哪裡
+  function scrollFamilyIntoView() {
+    if (state.els.grid && state.els.grid.scrollIntoView) {
+      setTimeout(() => state.els.grid.scrollIntoView({ behavior: "smooth", block: "start" }), 100);
     }
   }
 

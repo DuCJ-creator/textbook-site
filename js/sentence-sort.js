@@ -111,13 +111,31 @@ const GrammarPoints = (function () {
     (options.points || []).forEach(gp => {
       const div = document.createElement("div");
       div.className = "card grammar-point";
+      div.dataset.id = gp.id;
       div.innerHTML = `
         <h3>${Loader.escapeHtml(gp.title)}</h3>
         <ul>${gp.examples.map(ex => `<li>${Loader.escapeHtml(ex)}</li>`).join("")}</ul>
       `;
       wrap.appendChild(div);
     });
+
+    // 從字典索引跳轉進來時，捲動到目標文法點並短暫高亮
+    if (options.highlightId) {
+      const target = wrap.querySelector(`[data-id="${cssEscape(options.highlightId)}"]`);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "smooth", block: "center" });
+          target.classList.add("just-highlighted");
+          setTimeout(() => target.classList.remove("just-highlighted"), 2200);
+        }, 100);
+      }
+    }
   }
+
+  function cssEscape(str) {
+    return String(str).replace(/[^a-zA-Z0-9_-]/g, "\\$&");
+  }
+
   return { render };
 })();
 

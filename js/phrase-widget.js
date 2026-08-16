@@ -49,12 +49,18 @@ const PhraseWidget = (function () {
     revealedIds: new Set(),
     starredIds: loadStarredIds(),
     starredOnly: false,
+    highlightId: null,     // 從字典索引跳轉進來時，指定要捲動並高亮哪張卡片
+    highlighted: false,     // 已經捲動高亮過一次就不重複，避免每次 renderList 都重捲畫面
     els: {},
     boundEls: new Set() // 記錄哪些元素已經綁過事件，避免重複 render() 時疊加監聽器
   };
 
   function render(options) {
     state.items = options.items || [];
+    if (options.highlightId) {
+      state.highlightId = options.highlightId;
+      state.highlighted = false; // 每次帶新的 highlightId 進來就重新允許捲動一次
+    }
     state.els = {
       grid: document.getElementById(options.gridId),
       count: document.getElementById(options.countId),
@@ -154,6 +160,7 @@ const PhraseWidget = (function () {
       const isRevealed = state.revealedIds.has(p.id);
       const isStarred = state.starredIds.has(p.id);
       card.className = "phrase-card" + (isQuiz ? " quiz" : "") + (isRevealed ? " revealed" : "");
+      card.dataset.id = p.id;
 
       const sourceTag = (p._book && p._lesson)
         ? `<div class="num">${p._book.toUpperCase()} ${p._lesson.toUpperCase()} · ${String(i + 1).padStart(2, "0")}</div>`
@@ -199,6 +206,26 @@ const PhraseWidget = (function () {
 
       grid.appendChild(card);
     });
+
+    // 從字典索引跳轉進來時，捲動到目標卡片並短暫高亮，方便使用者立刻看到
+    // 是哪一則片語；只在第一次渲染時捲動一次，之後篩選/切換模式不會重複跳動畫面。
+    if (state.highlightId && !state.highlighted) {
+      const target = grid.querySelector(`[data-id="${cssEscape(state.highlightId)}"]`);
+      if (target) {
+        state.highlighted = true;
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "smooth", block: "center" });
+          target.classList.add("just-highlighted");
+          setTimeout(() => target.classList.remove("just-highlighted"), 2200);
+        }, 100);
+      }
+    }
+  }
+
+  // 簡易版 CSS.escape：只處理片語 id 會用到的字元（英數字、連字號），
+  // 避免直接把使用者可控字串塞進 querySelector 字串造成選擇器語法錯誤
+  function cssEscape(str) {
+    return String(str).replace(/[^a-zA-Z0-9_-]/g, "\\$&");
   }
 
   return { render };
