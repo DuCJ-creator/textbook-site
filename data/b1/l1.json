@@ -7,6 +7,7 @@
     "rows": [
       {
         "id": "b1l1-v01",
+        "base": "memory",
         "verb": [
           {
             "en": "memorize",
@@ -47,6 +48,7 @@
       },
       {
         "id": "b1l1-v02",
+        "base": "reply",
         "verb": [
           {
             "en": "reply",
@@ -66,6 +68,7 @@
       },
       {
         "id": "b1l1-v03",
+        "base": "yell",
         "verb": [
           {
             "en": "yell",
@@ -85,6 +88,7 @@
       },
       {
         "id": "b1l1-v04",
+        "base": "perfect",
         "verb": [
           {
             "en": "perfect",
@@ -141,6 +145,7 @@
       },
       {
         "id": "b1l1-v05",
+        "base": "accident",
         "verb": [],
         "noun": [
           {
@@ -166,6 +171,7 @@
       },
       {
         "id": "b1l1-v06",
+        "base": "fail",
         "verb": [
           {
             "en": "fail",
@@ -185,6 +191,7 @@
       },
       {
         "id": "b1l1-v07",
+        "base": "recall",
         "verb": [
           {
             "en": "recall",
@@ -204,6 +211,7 @@
       },
       {
         "id": "b1l1-v08",
+        "base": "present",
         "verb": [
           {
             "en": "present",
@@ -234,6 +242,7 @@
       },
       {
         "id": "b1l1-v09",
+        "base": "ruin",
         "verb": [
           {
             "en": "ruin",
@@ -253,6 +262,7 @@
       },
       {
         "id": "b1l1-v10",
+        "base": "embarrass",
         "verb": [
           {
             "en": "embarrass",
@@ -283,6 +293,7 @@
       },
       {
         "id": "b1l1-v11",
+        "base": "depress",
         "verb": [
           {
             "en": "depress",
@@ -313,6 +324,7 @@
       },
       {
         "id": "b1l1-v12",
+        "base": "upset",
         "verb": [
           {
             "en": "upset",
@@ -332,6 +344,7 @@
       },
       {
         "id": "b1l1-v13",
+        "base": "reflect",
         "verb": [
           {
             "en": "reflect",
@@ -363,6 +376,7 @@
       },
       {
         "id": "b1l1-v14",
+        "base": "remind",
         "verb": [
           {
             "en": "remind",
@@ -382,6 +396,7 @@
       },
       {
         "id": "b1l1-v15",
+        "base": "realize",
         "verb": [
           {
             "en": "realize",
@@ -401,6 +416,7 @@
       },
       {
         "id": "b1l1-v16",
+        "base": "tradition",
         "verb": [],
         "noun": [
           {
@@ -426,6 +442,7 @@
       },
       {
         "id": "b1l1-v17",
+        "base": "fortune",
         "verb": [],
         "noun": [
           {

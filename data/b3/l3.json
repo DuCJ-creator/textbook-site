@@ -7,6 +7,7 @@
     "rows": [
       {
         "id": "b3l3-v01",
+        "base": "human",
         "verb": [],
         "noun": [
           {
@@ -51,6 +52,7 @@
       },
       {
         "id": "b3l3-v02",
+        "base": "able",
         "verb": [
           {
             "en": "enable",
@@ -96,6 +98,7 @@
       },
       {
         "id": "b3l3-v03",
+        "base": "generous",
         "verb": [],
         "noun": [
           {
@@ -121,6 +124,7 @@
       },
       {
         "id": "b3l3-v04",
+        "base": "conflict",
         "verb": [
           {
             "en": "conflict",
@@ -146,6 +150,7 @@
       },
       {
         "id": "b3l3-v05",
+        "base": "distribute",
         "verb": [
           {
             "en": "distribute",
@@ -171,6 +176,7 @@
       },
       {
         "id": "b3l3-v06",
+        "base": "benefit",
         "verb": [
           {
             "en": "benefit",
@@ -207,6 +213,7 @@
       },
       {
         "id": "b3l3-v07",
+        "base": "slaughter",
         "verb": [
           {
             "en": "slaughter",
@@ -226,6 +233,7 @@
       },
       {
         "id": "b3l3-v08",
+        "base": "victim",
         "verb": [
           {
             "en": "victimize",
@@ -250,6 +258,7 @@
       },
       {
         "id": "b3l3-v09",
+        "base": "misery",
         "verb": [],
         "noun": [
           {
@@ -275,6 +284,7 @@
       },
       {
         "id": "b3l3-v10",
+        "base": "fury",
         "verb": [],
         "noun": [
           {
@@ -300,6 +310,7 @@
       },
       {
         "id": "b3l3-v11",
+        "base": "punish",
         "verb": [
           {
             "en": "punish",
@@ -319,6 +330,7 @@
       },
       {
         "id": "b3l3-v12",
+        "base": "torture",
         "verb": [
           {
             "en": "torture",
@@ -350,6 +362,7 @@
       },
       {
         "id": "b3l3-v13",
+        "base": "civil",
         "verb": [
           {
             "en": "civilize",

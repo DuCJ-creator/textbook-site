@@ -7,6 +7,7 @@
     "rows": [
       {
         "id": "b1l2-v01",
+        "base": "relate",
         "verb": [
           {
             "en": "relate",
@@ -48,6 +49,7 @@
       },
       {
         "id": "b1l2-v02",
+        "base": "satisfy",
         "verb": [
           {
             "en": "satisfy",
@@ -89,6 +91,7 @@
       },
       {
         "id": "b1l2-v03",
+        "base": "inspire",
         "verb": [],
         "noun": [
           {
@@ -124,6 +127,7 @@
       },
       {
         "id": "b1l2-v04",
+        "base": "connect",
         "verb": [
           {
             "en": "connect",
@@ -160,6 +164,7 @@
       },
       {
         "id": "b1l2-v05",
+        "base": "communicate",
         "verb": [
           {
             "en": "communicate",
@@ -191,6 +196,7 @@
       },
       {
         "id": "b1l2-v06",
+        "base": "introduce",
         "verb": [
           {
             "en": "introduce",
@@ -216,6 +222,7 @@
       },
       {
         "id": "b1l2-v07",
+        "base": "message",
         "verb": [
           {
             "en": "message",
@@ -235,6 +242,7 @@
       },
       {
         "id": "b1l2-v08",
+        "base": "refresh",
         "verb": [
           {
             "en": "refresh",
@@ -265,6 +273,7 @@
       },
       {
         "id": "b1l2-v09",
+        "base": "romance",
         "verb": [
           {
             "en": "romanticize",
@@ -300,6 +309,7 @@
       },
       {
         "id": "b1l2-v10",
+        "base": "focus",
         "verb": [
           {
             "en": "focus",
@@ -325,6 +335,7 @@
       },
       {
         "id": "b1l2-v11",
+        "base": "ignore",
         "verb": [
           {
             "en": "ignore",
@@ -350,6 +361,7 @@
       },
       {
         "id": "b1l2-v12",
+        "base": "attend",
         "verb": [
           {
             "en": "attend",
@@ -381,6 +393,7 @@
       },
       {
         "id": "b1l2-v13",
+        "base": "deny",
         "verb": [
           {
             "en": "deny",
@@ -400,6 +413,7 @@
       },
       {
         "id": "b1l2-v14",
+        "base": "respond",
         "verb": [
           {
             "en": "respond",
@@ -431,6 +445,7 @@
       },
       {
         "id": "b1l2-v15",
+        "base": "disappoint",
         "verb": [
           {
             "en": "disappoint",
@@ -461,6 +476,7 @@
       },
       {
         "id": "b1l2-v16",
+        "base": "person",
         "verb": [
           {
             "en": "personalize",

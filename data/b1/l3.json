@@ -7,6 +7,7 @@
     "rows": [
       {
         "id": "b1l3-v01",
+        "base": "wonder",
         "verb": [
           {
             "en": "wonder",
@@ -38,6 +39,7 @@
       },
       {
         "id": "b1l3-v02",
+        "base": "amaze",
         "verb": [
           {
             "en": "amaze",
@@ -74,6 +76,7 @@
       },
       {
         "id": "b1l3-v03",
+        "base": "average",
         "verb": [
           {
             "en": "average",
@@ -99,6 +102,7 @@
       },
       {
         "id": "b1l3-v04",
+        "base": "nap",
         "verb": [
           {
             "en": "nap",
@@ -118,6 +122,7 @@
       },
       {
         "id": "b1l3-v05",
+        "base": "float",
         "verb": [
           {
             "en": "float",
@@ -137,6 +142,7 @@
       },
       {
         "id": "b1l3-v06",
+        "base": "avoid",
         "verb": [
           {
             "en": "avoid",
@@ -156,6 +162,7 @@
       },
       {
         "id": "b1l3-v07",
+        "base": "breath",
         "verb": [
           {
             "en": "breathe",
@@ -186,6 +193,7 @@
       },
       {
         "id": "b1l3-v08",
+        "base": "wake",
         "verb": [
           {
             "en": "wake",
@@ -215,6 +223,7 @@
       },
       {
         "id": "b1l3-v09",
+        "base": "impress",
         "verb": [
           {
             "en": "impress",
@@ -266,6 +275,7 @@
       },
       {
         "id": "b1l3-v10",
+        "base": "distance",
         "verb": [
           {
             "en": "distance",
@@ -297,6 +307,7 @@
       },
       {
         "id": "b1l3-v11",
+        "base": "journey",
         "verb": [
           {
             "en": "journey",
@@ -316,6 +327,7 @@
       },
       {
         "id": "b1l3-v12",
+        "base": "fly",
         "verb": [
           {
             "en": "fly",
@@ -335,6 +347,7 @@
       },
       {
         "id": "b1l3-v13",
+        "base": "vary",
         "verb": [
           {
             "en": "vary",
@@ -360,6 +373,7 @@
       },
       {
         "id": "b1l3-v14",
+        "base": "create",
         "verb": [
           {
             "en": "create",
@@ -396,6 +410,7 @@
       },
       {
         "id": "b1l3-v15",
+        "base": "expert",
         "verb": [],
         "noun": [
           {
@@ -426,6 +441,7 @@
       },
       {
         "id": "b1l3-v16",
+        "base": "survive",
         "verb": [
           {
             "en": "survive",
