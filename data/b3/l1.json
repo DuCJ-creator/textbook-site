@@ -2264,7 +2264,206 @@
       }
     ],
     "sentence_structures": {
-      "items": []
+      "items": [
+        {
+          "id": "b3l1-s001",
+          "sentence": "A few years ago, I *was employed* by the McDonald’s Corporation.",
+          "type": "simple",
+          "pattern": "S + Vt + O (with  a passive transformation)"
+        },
+        {
+          "id": "b3l1-s002",
+          "sentence": "On “Ronald Day,” I *would dress up* as Ronald McDonald and *visit* the community hospital’s sick children.",
+          "type": "simple",
+          "pattern": "S + Vt + O (Compound verb)"
+        },
+        {
+          "id": "b3l1-s003",
+          "sentence": "Most of these young patients *were suffering* from terminal illnesses.",
+          "type": "simple",
+          "pattern": "S + Vi  (followed by a prepositional modifier)"
+        },
+        {
+          "id": "b3l1-s004",
+          "sentence": "Thus, I *would try* my best to ease their pain.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b3l1-s005",
+          "sentence": "And I *found* it tremendously rewarding to be able to bring some laughter to the kids.",
+          "type": "simple",
+          "pattern": "S + Vt + O (dummy it) + OC"
+        },
+        {
+          "id": "b3l1-s006",
+          "sentence": "One of the rules of my job *was* never to visit the children alone when I was dressed as Ronald, for I *might frighten* them with my painted face and red wig.",
+          "type": "compound-complex",
+          "pattern": "Compound-Complex sentence (with \"for\" + Adverbial clause)"
+        },
+        {
+          "id": "b3l1-s007",
+          "sentence": "I *wasn’t permitted* to have any physical contact with the children either, since doing so might pass on germs to them.",
+          "type": "complex",
+          "pattern": "Adverbial clause (since...)"
+        },
+        {
+          "id": "b3l1-s008",
+          "sentence": "Though I understood the reasoning behind these rules, I also *felt* that sometimes nothing could convey love, empathy, and warmth like a heartfelt embrace.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Though...) + Noun clause (that...)"
+        },
+        {
+          "id": "b3l1-s009",
+          "sentence": "Once, as I was leaving the hospital after finishing my work for the day, I *heard* a voice coming from a half-open door.",
+          "type": "complex",
+          "pattern": "Adverbial clause (as...) + S + Vt + O + Participle"
+        },
+        {
+          "id": "b3l1-s010",
+          "sentence": "“Ronald,” the frail voice *called*, prompting me to push open the door and go in.",
+          "type": "simple",
+          "pattern": "S + Vt + Participle clause"
+        },
+        {
+          "id": "b3l1-s011",
+          "sentence": "I *found* a small boy of about five lying in bed and looking extremely weak and pale.",
+          "type": "simple",
+          "pattern": "S + Vt + O + OC (Participle)"
+        },
+        {
+          "id": "b3l1-s012",
+          "sentence": "“His name is Billy,” his parents *told* me, smiling.",
+          "type": "complex",
+          "pattern": "Direct speech (Noun clause) + S + Vt + iO"
+        },
+        {
+          "id": "b3l1-s013",
+          "sentence": "It *was* really heartbreaking to see such a young boy confined to a hospital bed.",
+          "type": "simple",
+          "pattern": "It (dummy subject) + Vl + C"
+        },
+        {
+          "id": "b3l1-s014",
+          "sentence": "I *knew* I had to do anything I could to cheer little Billy up, so I *stayed* and *did* some magic tricks for him.",
+          "type": "compound-complex",
+          "pattern": "Compound-Complex sentence (with \"so\" + Noun / Relative clauses)"
+        },
+        {
+          "id": "b3l1-s015",
+          "sentence": "A sparkle soon *came* to his eyes and I *asked* if I could do anything else for him.",
+          "type": "compound-complex",
+          "pattern": "Compound-Complex sentence (with \"and\" + Noun clause)"
+        },
+        {
+          "id": "b3l1-s016",
+          "sentence": "Billy *replied*, “Ronald, can I have a hug?”",
+          "type": "complex",
+          "pattern": "Direct speech (Noun clause) + S + Vt"
+        },
+        {
+          "id": "b3l1-s017",
+          "sentence": "Although having to turn him down pained me deeply, I *had* no choice.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Although...)"
+        },
+        {
+          "id": "b3l1-s018",
+          "sentence": "I *told* Billy that it was against the rules and then quickly *added* that we could do some coloring instead.",
+          "type": "complex",
+          "pattern": "Compound verb + Noun clauses (that...)"
+        },
+        {
+          "id": "b3l1-s019",
+          "sentence": "A while later, it *appeared* that he was getting drowsy, so I *rose* to my feet to get ready to leave.",
+          "type": "compound-complex",
+          "pattern": "Compound-Complex sentence (with \"so\" + Noun clause)"
+        },
+        {
+          "id": "b3l1-s020",
+          "sentence": "That *was* when he stretched out his tiny arms to hug me.",
+          "type": "complex",
+          "pattern": "Noun clause (when...)"
+        },
+        {
+          "id": "b3l1-s021",
+          "sentence": "I *was* about to refuse again, but then I *saw* the look of hope in his eyes.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"but\")"
+        },
+        {
+          "id": "b3l1-s022",
+          "sentence": "Suddenly, I *realized* I no longer cared if I was caught breaking the rules.",
+          "type": "complex",
+          "pattern": "Noun clauses / Adverbial clause (if...)"
+        },
+        {
+          "id": "b3l1-s023",
+          "sentence": "Some things in life, after all, *were* more important.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b3l1-s024",
+          "sentence": "I *picked* him *up* and *held* him in my arms.",
+          "type": "simple",
+          "pattern": "S + Vt + O (Compound verb)"
+        },
+        {
+          "id": "b3l1-s025",
+          "sentence": "After that, we *talked* and *talked*.",
+          "type": "simple",
+          "pattern": "S + Vi (Repeated verb)"
+        },
+        {
+          "id": "b3l1-s026",
+          "sentence": "He *confided* his worries to me.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b3l1-s027",
+          "sentence": "He *was* afraid that his little brother would have no one to play with.",
+          "type": "complex",
+          "pattern": "Noun clause (that...)"
+        },
+        {
+          "id": "b3l1-s028",
+          "sentence": "Also, he *was* scared that his dog would go hungry because he had hidden all its bones.",
+          "type": "complex",
+          "pattern": "Noun clause (that...) + Adverbial clause (because...)"
+        },
+        {
+          "id": "b3l1-s029",
+          "sentence": "It *seemed* that Billy knew he would never be going home.",
+          "type": "complex",
+          "pattern": "It (dummy subject) + Noun clauses"
+        },
+        {
+          "id": "b3l1-s030",
+          "sentence": "And yet, even then, he *was* only *thinking of* others.",
+          "type": "simple",
+          "pattern": "S + Vt + O  phrasal verb"
+        },
+        {
+          "id": "b3l1-s031",
+          "sentence": "When I finally stood up to leave, I *gave* Billy’s parents my number and *told* them not to hesitate to call me if I could be of any assistance.",
+          "type": "complex",
+          "pattern": "Adverbial clause (When...) + S + Vt + iO + dO"
+        },
+        {
+          "id": "b3l1-s032",
+          "sentence": "Two days later, I *received* a call from Billy’s mom, who told me her son had passed away.",
+          "type": "complex",
+          "pattern": "Relative clause (who...) + Noun clause"
+        },
+        {
+          "id": "b3l1-s033",
+          "sentence": "She *wanted* to thank me for making a difference in his life, for he*’d said* to her, “Mommy, I don’t mind if I can’t see Santa this year because I’ve hugged Ronald.”",
+          "type": "compound-complex",
+          "pattern": "Compound-Complex sentence (with \"for\" + Noun / Adverbial clauses)"
+        }
+      ]
     }
   },
   "text_genre": {
