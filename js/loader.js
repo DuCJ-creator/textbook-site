@@ -123,6 +123,28 @@ const Loader = (function () {
     return results.filter(Boolean);
   }
 
+  /**
+   * 通用的「星標收藏」localStorage 存取工具。不同種類的內容（單字、片語）
+   * 各自用不同的 key，避免混在一起；同一種內容的 key 在所有頁面共用，
+   * 這樣在字典索引頁標星、去對應的 bank 頁面或單課頁面也會看到已標星狀態。
+   */
+  function loadStarredSet(storageKey) {
+    try {
+      const raw = localStorage.getItem(storageKey);
+      return raw ? new Set(JSON.parse(raw)) : new Set();
+    } catch (e) {
+      return new Set();
+    }
+  }
+
+  function saveStarredSet(storageKey, set) {
+    try {
+      localStorage.setItem(storageKey, JSON.stringify([...set]));
+    } catch (e) {
+      // localStorage 可能因隱私模式或空間不足而寫入失敗，安靜忽略即可
+    }
+  }
+
   return {
     escapeHtml,
     speakText,
@@ -130,6 +152,8 @@ const Loader = (function () {
     getUrlParam,
     fetchLessonData,
     fetchIndex,
-    fetchAllPublishedLessons
+    fetchAllPublishedLessons,
+    loadStarredSet,
+    saveStarredSet
   };
 })();

@@ -26,28 +26,11 @@
 const PhraseWidget = (function () {
   const STORAGE_KEY = "phraseStarredIds";
 
-  function loadStarredIds() {
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      return raw ? new Set(JSON.parse(raw)) : new Set();
-    } catch (e) {
-      return new Set();
-    }
-  }
-
-  function saveStarredIds(set) {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify([...set]));
-    } catch (e) {
-      // localStorage 可能因隱私模式或空間不足而寫入失敗，安靜忽略即可，不影響其他功能
-    }
-  }
-
   let state = {
     items: [],
     mode: "browse",       // 'browse' | 'quiz'
     revealedIds: new Set(),
-    starredIds: loadStarredIds(),
+    starredIds: Loader.loadStarredSet(STORAGE_KEY),
     starredOnly: false,
     highlightId: null,     // 從字典索引跳轉進來時，指定要捲動並高亮哪張卡片
     highlighted: false,     // 已經捲動高亮過一次就不重複，避免每次 renderList 都重捲畫面
@@ -124,7 +107,7 @@ const PhraseWidget = (function () {
   function toggleStar(id) {
     if (state.starredIds.has(id)) state.starredIds.delete(id);
     else state.starredIds.add(id);
-    saveStarredIds(state.starredIds);
+    Loader.saveStarredSet(STORAGE_KEY, state.starredIds);
     renderList();
   }
 
