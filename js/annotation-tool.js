@@ -1,6 +1,6 @@
 /**
  * 全域標註工具 (js/annotation-tool.js)
- * 提供畫筆、Highlighter 螢光筆、橡皮擦、一鍵清空、文字標註與截圖匯出功能 (支援 iPad 觸控)
+ * 提供畫筆、Highlighter 螢光筆 (正片疊底不遮字)、橡皮擦、一鍵清空、文字標註與截圖匯出功能 (支援 iPad 觸控)
  */
 class AnnotationToolCore {
   constructor() {
@@ -30,7 +30,9 @@ class AnnotationToolCore {
         height: 100vh;
         z-index: 9998;
         pointer-events: none;
-        touch-action: none; /* 防止 iPad 繪圖時滾動畫面 */
+        touch-action: none;
+        /* 正片疊底核心設定：確保螢光筆完全透出網頁上的文字 */
+        mix-blend-mode: multiply;
       }
       .annotation-fab {
         position: fixed;
@@ -125,7 +127,6 @@ class AnnotationToolCore {
     document.head.appendChild(style);
   }
 
-  // 自動建立 UI HTML 結構
   injectUI() {
     if (document.getElementById('annotationCanvas')) return;
 
@@ -150,12 +151,12 @@ class AnnotationToolCore {
       <div class="color-palette">
         <div class="color-option selected" data-color="#000000" style="background: #000000"></div>
         <div class="color-option" data-color="#FFEB3B" style="background: #FFEB3B"></div>
-        <div class="color-option" data-color="#FF0000" style="background: #FF0000"></div>
-        <div class="color-option" data-color="#0000FF" style="background: #0000FF"></div>
-        <div class="color-option" data-color="#00FF00" style="background: #00FF00"></div>
+        <div class="color-option" data-color="#FF5722" style="background: #FF5722"></div>
+        <div class="color-option" data-color="#2196F3" style="background: #2196F3"></div>
+        <div class="color-option" data-color="#4CAF50" style="background: #4CAF50"></div>
       </div>
-      <button id="penBtn" class="annotation-btn tool-active" style="background:#e2e3e5; color:#1b1e21;">✏️ 畫筆</button>
-      <button id="highlightBtn" class="annotation-btn" style="background:#fff3cd; color:#856404;">🖍️ Highlighter</button>
+      <button id="penBtn" class="annotation-btn tool-active" style="background:#e2e3e5; color:#1b1e21;">✏️ 劃線筆</button>
+      <button id="highlightBtn" class="annotation-btn" style="background:#fff3cd; color:#856404;">🖍️ 螢光筆</button>
       <button id="eraserBtn" class="annotation-btn" style="background:#e2e3e5; color:#383d41;">🧹 橡皮擦</button>
       <button id="clearBtn" class="annotation-btn" style="background:#f8d7da; color:#721c24;">🗑️ 清空畫布</button>
       <button id="textBtn" class="annotation-btn" style="background:#e2e3e5; color:#1b1e21;">📝 添加文字</button>
@@ -192,7 +193,6 @@ class AnnotationToolCore {
     }
   }
 
-  // 取得相對座標 (同時相容 滑鼠 與 iPad 觸控)
   getPos(e) {
     if (e.touches && e.touches.length > 0) {
       return { x: e.touches[0].clientX, y: e.touches[0].clientY };
@@ -203,13 +203,11 @@ class AnnotationToolCore {
   setupEventListeners() {
     window.addEventListener('resize', () => this.resizeCanvas());
 
-    // 滑鼠事件
     this.canvas.addEventListener('mousedown', (e) => this.startDrawing(e));
     this.canvas.addEventListener('mousemove', (e) => this.draw(e));
     this.canvas.addEventListener('mouseup', () => this.stopDrawing());
     this.canvas.addEventListener('mouseleave', () => this.stopDrawing());
 
-    // iPad Touch 觸控事件
     this.canvas.addEventListener('touchstart', (e) => {
       if (!this.isActive) return;
       e.preventDefault();
@@ -255,7 +253,6 @@ class AnnotationToolCore {
       activeBtn?.classList.add('tool-active');
     };
 
-    // 顏色選擇
     document.querySelectorAll('.color-option').forEach(btn => {
       btn.addEventListener('click', (e) => {
         this.selectColor(e.target.dataset.color);
@@ -269,38 +266,32 @@ class AnnotationToolCore {
       });
     });
 
-    // 畫筆模式
     penBtn?.addEventListener('click', () => {
       this.currentTool = 'pen';
       updateToolUI(penBtn);
     });
 
-    // Highlighter 螢光筆模式
     highlightBtn?.addEventListener('click', () => {
       this.currentTool = 'highlighter';
       updateToolUI(highlightBtn);
     });
 
-    // 橡皮擦模式
     eraserBtn?.addEventListener('click', () => {
       this.currentTool = 'eraser';
       updateToolUI(eraserBtn);
     });
 
-    // 清空畫布
     document.getElementById('clearBtn')?.addEventListener('click', () => {
       if (confirm('確定要清空所有畫筆與備註嗎？')) {
         this.clearAll();
       }
     });
 
-    // 添加文字
     document.getElementById('textBtn')?.addEventListener('click', () => {
       if (!this.isActive) toggleBtn.click();
       this.addTextAnnotation();
     });
 
-    // 導出截圖
     document.getElementById('exportBtn')?.addEventListener('click', () => {
       this.exportScreenshot()
         .then(dataUrl => {
@@ -329,7 +320,6 @@ class AnnotationToolCore {
     const pos = this.getPos(e);
 
     if (this.currentTool === 'eraser') {
-      // 橡皮擦：清除筆劃
       this.ctx.globalCompositeOperation = 'destination-out';
       this.ctx.lineWidth = 30;
       this.ctx.lineCap = 'round';
@@ -337,17 +327,17 @@ class AnnotationToolCore {
       this.ctx.lineTo(pos.x, pos.y);
       this.ctx.stroke();
     } else if (this.currentTool === 'highlighter') {
-      // Highlighter 螢光筆：透明半透明畫筆 + destination-over（劃在已有筆跡下方）或半透明覆蓋
+      // 螢光筆使用完全不透明鮮豔色，配合 CSS 的 multiply 混合，透光度極佳且不擋字
       this.ctx.globalCompositeOperation = 'source-over';
-      const color = this.currentColor === '#000000' ? '#FFEB3B' : this.currentColor; 
-      this.ctx.strokeStyle = color + '66'; // 40% 透明度
-      this.ctx.lineWidth = 20;
+      const color = (this.currentColor === '#000000') ? '#FFEB3B' : this.currentColor; 
+      this.ctx.strokeStyle = color;
+      this.ctx.lineWidth = 22;
       this.ctx.lineCap = 'square';
       this.ctx.lineJoin = 'miter';
       this.ctx.lineTo(pos.x, pos.y);
       this.ctx.stroke();
     } else {
-      // 普通畫筆 (Pen)
+      // 普通劃線筆
       this.ctx.globalCompositeOperation = 'source-over';
       this.ctx.strokeStyle = this.currentColor;
       this.ctx.lineWidth = 3;
@@ -454,6 +444,9 @@ class AnnotationToolCore {
         const exportCtx = exportCanvas.getContext('2d');
 
         exportCtx.drawImage(pageCanvas, 0, 0);
+
+        // 導出時套用正片疊底混合效果
+        exportCtx.globalCompositeOperation = 'multiply';
         exportCtx.drawImage(this.canvas, 0, 0);
 
         resolve(exportCanvas.toDataURL('image/png'));
