@@ -1,20 +1,30 @@
+/**
+ * 標註工具 Core Logic (js/annotation-tool.js)
+ */
 class AnnotationTool {
   constructor() {
     this.isActive = false;
-    this.currentTool = 'pen';
+    this.currentTool = 'pen'; // 'pen' | 'shape'
     this.currentColor = '#000000';
     this.isHighlight = false;
-    this.shapes = ['rectangle', 'arrow', 'circle'];
-    this.currentShape = null;
+    this.currentShape = null; // 'rectangle' | 'circle' | 'arrow'
     this.isDrawing = false;
-    this.lastX = 0;
-    this.lastY = 0;
+    this.startX = 0;
+    this.startY = 0;
     this.textAnnotations = [];
-    
-    this.canvas = document.createElement('canvas');
-    this.canvas.className = 'annotation-canvas';
-    document.body.appendChild(this.canvas);
+
+    // 初始化畫布
+    this.canvas = document.getElementById('annotationCanvas') || document.createElement('canvas');
+    if (!this.canvas.parentNode) {
+      this.canvas.id = 'annotationCanvas';
+      this.canvas.className = 'annotation-canvas';
+      document.body.appendChild(this.canvas);
+    }
     this.ctx = this.canvas.getContext('2d');
+
+    // 暫存畫布（用於即時預覽形狀拉伸與重繪）
+    this.offscreenCanvas = document.createElement('canvas');
+    this.offscreenCtx = this.offscreenCanvas.getContext('2d');
   }
 
   init() {
@@ -23,115 +33,132 @@ class AnnotationTool {
   }
 
   resizeCanvas() {
-    this.canvas.width = window.innerWidth;
-    this.canvas.height = window.innerHeight;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    // 當尺寸改變時備份繪圖內容
+    const tempCanvas = document.createElement('canvas');
+    tempCanvas.width = this.canvas.width;
+    tempCanvas.height = this.canvas.height;
+    if (this.canvas.width > 0 && this.canvas.height > 0) {
+      tempCanvas.getContext('2d').drawImage(this.canvas, 0, 0);
+    }
+
+    this.canvas.width = width;
+    this.canvas.height = height;
+    this.offscreenCanvas.width = width;
+    this.offscreenCanvas.height = height;
+
+    // 還原繪圖內容
+    if (tempCanvas.width > 0 && tempCanvas.height > 0) {
+      this.ctx.drawImage(tempCanvas, 0, 0);
+    }
   }
 
   setupEventListeners() {
-    // 視窗大小調整
     window.addEventListener('resize', () => this.resizeCanvas());
 
-    // 畫布繪圖事件
     this.canvas.addEventListener('mousedown', (e) => this.startDrawing(e));
     this.canvas.addEventListener('mousemove', (e) => this.draw(e));
     this.canvas.addEventListener('mouseup', () => this.stopDrawing());
-    this.canvas.addEventListener('mouseout', () => this.stopDrawing());
-
-    // 初始化工具列按鈕（由mount方法注入）
+    this.canvas.addEventListener('mouseleave', () => this.stopDrawing());
   }
 
-  // 繪圖相關方法
   startDrawing(e) {
     if (!this.isActive) return;
     this.isDrawing = true;
-    [this.lastX, this.lastY] = [e.clientX, e.clientY];
+    this.startX = e.clientX;
+    this.startY = e.clientY;
+
+    // 開始新路徑或備份主畫布內容（供形狀即時重繪使用）
+    if (this.currentTool === 'pen') {
+      this.ctx.beginPath();
+      this.ctx.moveTo(this.startX, this.startY);
+    } else if (this.currentTool === 'shape') {
+      this.offscreenCtx.clearRect(0, 0, this.offscreenCanvas.width, this.offscreenCanvas.height);
+      this.offscreenCtx.drawImage(this.canvas, 0, 0);
+    }
   }
 
   draw(e) {
     if (!this.isDrawing || !this.isActive) return;
-    
-    this.ctx.strokeStyle = this.isHighlight ? this.currentColor + '4D' : this.currentColor;
-    this.ctx.lineWidth = this.isHighlight ? 15 : 3;
-    this.ctx.fillStyle = this.currentColor + '66';
-    
+
+    const strokeColor = this.isHighlight ? this.currentColor + '4D' : this.currentColor;
+    const lineWidth = this.isHighlight ? 15 : 3;
+    const fillColor = this.currentColor + '33';
+
     if (this.currentTool === 'pen') {
-      this.drawFreehand(e);
+      this.ctx.strokeStyle = strokeColor;
+      this.ctx.lineWidth = lineWidth;
+      this.ctx.lineCap = 'round';
+      this.ctx.lineJoin = 'round';
+      this.ctx.lineTo(e.clientX, e.clientY);
+      this.ctx.stroke();
     } else if (this.currentTool === 'shape') {
-      this.drawShape(e);
+      // 繪製形狀時先還原離屏畫布，避免拉伸時軌跡重疊
+      this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+      this.ctx.drawImage(this.offscreenCanvas, 0, 0);
+
+      this.ctx.strokeStyle = strokeColor;
+      this.ctx.fillStyle = fillColor;
+      this.ctx.lineWidth = lineWidth;
+
+      this.drawShape(this.ctx, this.startX, this.startY, e.clientX, e.clientY);
     }
-    
-    [this.lastX, this.lastY] = [e.clientX, e.clientY];
   }
 
-  drawFreehand(e) {
-    this.ctx.beginPath();
-    this.ctx.moveTo(this.lastX, this.lastY);
-    this.ctx.lineTo(e.clientX, e.clientY);
-    this.ctx.stroke();
-  }
-
-  drawShape(e) {
-    // 清除臨時繪製
-    const tempCanvas = document.createElement('canvas');
-    tempCanvas.width = this.canvas.width;
-    tempCanvas.height = this.canvas.height;
-    const tempCtx = tempCanvas.getContext('2d');
-    
-    // 根據形狀類型繪製
-    switch(this.currentShape) {
+  drawShape(ctx, fromX, fromY, toX, toY) {
+    ctx.beginPath();
+    switch (this.currentShape) {
       case 'rectangle':
-        tempCtx.rect(this.lastX, this.lastY, e.clientX - this.lastX, e.clientY - this.lastY);
+        ctx.rect(fromX, fromY, toX - fromX, toY - fromY);
+        ctx.fill();
+        ctx.stroke();
         break;
-      case 'circle':
-        const radius = Math.sqrt(Math.pow(e.clientX - this.lastX, 2) + Math.pow(e.clientY - this.lastY, 2));
-        tempCtx.arc(this.lastX, this.lastY, radius, 0, Math.PI * 2);
+
+      case 'circle': {
+        const radius = Math.sqrt(Math.pow(toX - fromX, 2) + Math.pow(toY - fromY, 2));
+        ctx.arc(fromX, fromY, radius, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.stroke();
         break;
+      }
+
       case 'arrow':
-        this.drawArrow(tempCtx, this.lastX, this.lastY, e.clientX, e.clientY);
+        this.drawArrow(ctx, fromX, fromY, toX, toY);
         break;
     }
-    
-    // 應用樣式並繪製
-    tempCtx.strokeStyle = this.ctx.strokeStyle;
-    tempCtx.lineWidth = this.ctx.lineWidth;
-    tempCtx.fillStyle = this.ctx.fillStyle;
-    
-    if (['rectangle', 'circle'].includes(this.currentShape)) {
-      tempCtx.fill();
-    }
-    tempCtx.stroke();
-    
-    // 合併到主畫布
-    this.ctx.drawImage(tempCanvas, 0, 0);
   }
 
   drawArrow(ctx, fromX, fromY, toX, toY) {
     const headLength = 15;
     const angle = Math.atan2(toY - fromY, toX - fromX);
-    
-    // 繪製箭線
+
     ctx.beginPath();
     ctx.moveTo(fromX, fromY);
     ctx.lineTo(toX, toY);
-    
-    // 繪製箭頭
+    ctx.stroke();
+
+    ctx.beginPath();
     ctx.moveTo(toX, toY);
     ctx.lineTo(
       toX - headLength * Math.cos(angle - Math.PI / 6),
       toY - headLength * Math.sin(angle - Math.PI / 6)
     );
-    ctx.moveTo(toX, toY);
     ctx.lineTo(
       toX - headLength * Math.cos(angle + Math.PI / 6),
       toY - headLength * Math.sin(angle + Math.PI / 6)
     );
+    ctx.closePath();
+    ctx.fillStyle = ctx.strokeStyle;
+    ctx.fill();
   }
 
   stopDrawing() {
     this.isDrawing = false;
   }
 
-  // 工具列操作方法
+  // ===== 工具列與狀態操作 =====
   toggleMode() {
     this.isActive = !this.isActive;
     this.canvas.style.pointerEvents = this.isActive ? 'auto' : 'none';
@@ -148,85 +175,101 @@ class AnnotationTool {
   }
 
   setShape(shape) {
-    this.currentShape = shape;
-    this.currentTool = 'shape';
+    if (this.currentShape === shape && this.currentTool === 'shape') {
+      this.currentTool = 'pen';
+      this.currentShape = null;
+    } else {
+      this.currentShape = shape;
+      this.currentTool = 'shape';
+    }
   }
 
-  // 文字標註方法
+  // ===== 文字標註 =====
   addTextAnnotation() {
     if (!this.isActive) return;
-    
+
     const textDiv = document.createElement('div');
     textDiv.className = 'text-annotation';
     textDiv.textContent = '點擊編輯文字';
     textDiv.contentEditable = true;
-    
-    // 設定隨機初始位置
-    textDiv.style.left = `${window.innerWidth * 0.3 + Math.random() * window.innerWidth * 0.4}px`;
-    textDiv.style.top = `${window.innerHeight * 0.3 + Math.random() * window.innerHeight * 0.4}px`;
-    
-    // 添加拖曳功能
+
+    textDiv.style.left = `${window.innerWidth * 0.3 + Math.random() * window.innerWidth * 0.2}px`;
+    textDiv.style.top = `${window.innerHeight * 0.3 + Math.random() * window.innerHeight * 0.2}px`;
+
     this.setupDraggable(textDiv);
-    
     document.body.appendChild(textDiv);
     this.textAnnotations.push(textDiv);
+
+    setTimeout(() => textDiv.focus(), 0);
   }
 
   setupDraggable(element) {
     let isDragging = false;
-    let offsetX, offsetY;
-    
+    let offsetX = 0;
+    let offsetY = 0;
+
     element.addEventListener('mousedown', (e) => {
+      // 若點擊時處於編輯狀態，暫不觸發拖曳
+      if (document.activeElement === element) return;
       isDragging = true;
       offsetX = e.clientX - element.getBoundingClientRect().left;
       offsetY = e.clientY - element.getBoundingClientRect().top;
       e.stopPropagation();
     });
-    
-    document.addEventListener('mousemove', (e) => {
+
+    const onMouseMove = (e) => {
       if (isDragging) {
         element.style.left = `${e.clientX - offsetX}px`;
         element.style.top = `${e.clientY - offsetY}px`;
       }
-    });
-    
-    document.addEventListener('mouseup', () => {
+    };
+
+    const onMouseUp = () => {
       isDragging = false;
-    });
+    };
+
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
   }
 
-  // 導出截圖
+  // ===== 導出截圖 =====
   exportScreenshot() {
     return new Promise((resolve, reject) => {
+      if (typeof html2canvas === 'undefined') {
+        reject(new Error('未找到 html2canvas 套件'));
+        return;
+      }
+
       html2canvas(document.body, {
         allowTaint: true,
         useCORS: true,
         windowWidth: window.innerWidth,
         windowHeight: window.innerHeight,
-        scale: 1
+        scale: 1,
+        ignoreElements: (element) => {
+          return element.id === 'annotationFab' || element.id === 'annotationPanel';
+        }
       }).then(pageCanvas => {
         const exportCanvas = document.createElement('canvas');
         exportCanvas.width = window.innerWidth;
         exportCanvas.height = window.innerHeight;
         const exportCtx = exportCanvas.getContext('2d');
-        
-        exportCtx.fillStyle = 'white';
-        exportCtx.fillRect(0, 0, exportCanvas.width, exportCanvas.height);
+
+        // 疊加網頁底圖與 Canvas 標註繪圖
         exportCtx.drawImage(pageCanvas, 0, 0);
         exportCtx.drawImage(this.canvas, 0, 0);
-        
+
         resolve(exportCanvas.toDataURL('image/png'));
       }).catch(reject);
     });
   }
 }
 
-// 初始化並導出
+// 實例化並導出給全域使用
 const annotationTool = new AnnotationTool();
 
 document.addEventListener('DOMContentLoaded', () => {
   annotationTool.init();
 });
 
-// 暴露給全局使用（與其他模組相同）
 window.AnnotationTool = annotationTool;
