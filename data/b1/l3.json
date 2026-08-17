@@ -211,7 +211,13 @@
             "example": "The documentary awakened public interest in the issue."
           }
         ],
-        "noun": [],
+        "noun": [
+          {
+            "en": "wake",
+            "zh": "(航只航行時的)尾流，航跡",
+            "example": "New safety rules were put in place in the wake of the accident."
+          }
+        ],
         "adj": [
           {
             "en": "awake",
