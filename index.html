@@ -6,8 +6,11 @@
 <title>Shirley Du老師的高中英文充電站</title>
 <link rel="stylesheet" href="css/style.css" />
 <style>
-  /* 臨時過渡樣式（將移入style.css） */
+  /* 修正 site-head 背景色，避免白底白字 */
   .site-head {
+    background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+    color: #ffffff;
+    padding: 30px 20px 26px;
     border-radius: 0 0 28px 28px;
   }
   .site-head .inner { max-width: 1040px; margin: 0 auto; }
@@ -21,7 +24,7 @@
   }
   .site-head h1 {
     font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700;
-    margin: 0 0 10px; letter-spacing: -0.01em; line-height: 1.15;
+    margin: 0 0 10px; letter-spacing: -0.01em; line-height: 1.15; color: #ffffff;
   }
   .site-head p { font-size: 0.92rem; color: rgba(255,255,255,.85); max-width: 560px; line-height: 1.6; margin: 0; }
 
@@ -163,7 +166,6 @@
   </div>
 
   <div class="wrap">
-
     <div class="progress-strip" id="progressStrip"></div>
 
     <div class="section-title"><span>選擇冊次</span><span class="rule"></span></div>
@@ -176,7 +178,6 @@
 
     <div class="section-title"><span>Beyond Textbooks 教材之上</span><span class="rule"></span></div>
     <div id="beyondTextbooksArea"></div>
-
   </div>
 
   <footer class="site-foot">
@@ -187,7 +188,7 @@
   <script src="js/loader.js"></script>
   <script src="js/external-viewer.js"></script>
   <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-  
+
   <script>
     const INDEX_URL = "data/index.json";
 
@@ -204,11 +205,10 @@
       .catch(err => {
         document.getElementById("bookList").innerHTML =
           `<div style="padding:20px; color:var(--accent); font-size:0.85rem;">
-            課程清單載入失敗：${escapeHtml(err.message)}（請確認此頁面透過本機伺服器或 GitHub Pages 開啟，而非直接雙擊開啟檔案）
+            課程清單載入失敗：${escapeHtml(err.message)}（請確認此頁面透過本機伺服器或 GitHub Pages 開啟）
           </div>`;
       });
 
-    // Beyond Textbooks：三個延伸學習資源，點卡片在頁面內用 iframe 開啟
     ExternalViewer.render({
       containerId: "beyondTextbooksArea",
       cards: [
@@ -267,7 +267,7 @@
 
         const list = document.createElement("div");
         list.className = "lesson-list";
-        book.lessons.forEach((lesson, i) => {
+        book.lessons.forEach((lesson) => {
           const isPublished = lesson.status === "published";
           const displayTitle = isPublished ? lesson.title : "尚未上架";
           const href = isPublished
@@ -289,7 +289,6 @@
         wrap.appendChild(card);
       });
 
-      // 預設展開第一個有已發布課程的冊次，方便使用者立即看到內容
       const firstWithPublished = data.books.findIndex(b => b.lessons.some(l => l.status === "published"));
       const target = wrap.children[firstWithPublished >= 0 ? firstWithPublished : 0];
       if (target) target.classList.add("expanded");
@@ -314,17 +313,18 @@
       });
     }
   </script>
-  
+
   <script src="js/notepad.js"></script>
   <script>Notepad.mount();</script>
 
-  <!-- ===== 標註工具組件 (Annotation Tool) ===== -->
-  <!-- 1. 浮動按鈕 (FAB) -->
-  <button id="annotationFab" class="annotation-fab">✏️</button>
+  <!-- ===== 標註工具 HTML 元件 ===== -->
+  <!-- 全螢幕標註 Canvas (放置在按鈕前，確保 DOM 載入) -->
+  <canvas id="annotationCanvas" class="annotation-canvas"></canvas>
 
-  <!-- 2. 標註工具面板 -->
+  <button id="annotationFab" class="annotation-fab" title="開啟標註工具">✏️</button>
+
   <div id="annotationPanel" class="annotation-toolbar">
-    <button id="toggleAnnotation" class="annotation-btn annotation-mode">標註模式</button>
+    <button id="toggleAnnotation" class="annotation-btn annotation-mode">開啟繪圖</button>
     <div class="color-palette">
       <div class="color-option selected" data-color="#000000" style="background: #000000"></div>
       <div class="color-option" data-color="#FF0000" style="background: #FF0000"></div>
@@ -336,28 +336,35 @@
     <button id="exportBtn" class="annotation-btn export-btn">導出截圖</button>
   </div>
 
-  <!-- 3. 畫布區域 -->
-  <canvas id="annotationCanvas" class="annotation-canvas"></canvas>
-
-  <!-- 4. 標註工具 JavaScript 與事件初始化 -->
+  <!-- 載入標註 JS 並綁定完整事件 -->
   <script src="js/annotation-tool.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // FAB 點擊開關面板邏輯
       const fab = document.getElementById('annotationFab');
       const panel = document.getElementById('annotationPanel');
+      const toggleBtn = document.getElementById('toggleAnnotation');
+
+      // FAB 切換工具列顯示/隱藏
       if (fab && panel) {
         fab.addEventListener('click', () => {
           panel.classList.toggle('active');
         });
       }
 
-      // 工具列事件綁定
-      document.getElementById('toggleAnnotation').addEventListener('click', () => {
-        const newText = AnnotationTool.toggleMode();
-        document.getElementById('toggleAnnotation').textContent = newText;
-      });
-      
+      // 點擊「開啟繪圖/退出標註」模式按鈕
+      if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+          const btnText = AnnotationTool.toggleMode();
+          toggleBtn.textContent = btnText;
+          if (AnnotationTool.isActive) {
+            toggleBtn.style.background = '#c23b3b'; // 開啟狀態呈現紅色（提示可退出）
+          } else {
+            toggleBtn.style.background = 'var(--accent)';
+          }
+        });
+      }
+
+      // 顏色選擇器
       document.querySelectorAll('.color-option').forEach(btn => {
         btn.addEventListener('click', (e) => {
           AnnotationTool.selectColor(e.target.dataset.color);
@@ -366,26 +373,25 @@
           );
         });
       });
-      
-      document.getElementById('highlightBtn').addEventListener('click', () => {
-        const newColor = AnnotationTool.toggleHighlight();
-        document.getElementById('highlightBtn').style.backgroundColor = newColor;
+
+      // 螢光筆按鈕
+      document.getElementById('highlightBtn')?.addEventListener('click', () => {
+        const isHighlight = AnnotationTool.toggleHighlight();
+        const btn = document.getElementById('highlightBtn');
+        btn.style.outline = isHighlight ? '2px solid var(--accent)' : 'none';
       });
-      
-      document.getElementById('textBtn').addEventListener('click', () => {
+
+      // 文字標註按鈕
+      document.getElementById('textBtn')?.addEventListener('click', () => {
+        if (!AnnotationTool.isActive) {
+          // 若尚未開啟標註模式，自動觸發開啟
+          toggleBtn.click();
+        }
         AnnotationTool.addTextAnnotation();
       });
-      
-      document.querySelectorAll('.shape-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          AnnotationTool.setShape(e.target.dataset.shape);
-          document.querySelectorAll('.shape-btn').forEach(b => 
-            b.classList.toggle('active', b === e.target)
-          );
-        });
-      });
-      
-      document.getElementById('exportBtn').addEventListener('click', () => {
+
+      // 導出截圖
+      document.getElementById('exportBtn')?.addEventListener('click', () => {
         AnnotationTool.exportScreenshot()
           .then(dataUrl => {
             const link = document.createElement('a');
