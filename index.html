@@ -306,14 +306,9 @@
       if (comingSoon) {
         a.addEventListener("click", e => e.preventDefault());
       }
-      const isIndex = tool.id.endsWith("-index");
-      const desc = comingSoon
-        ? "彙整所有已上架課程的內容，正在製作中。"
-        : (isIndex ? "查任何一個項目，直接跳到出處課程" : "跨課瀏覽與練習");
       a.innerHTML = `
         ${comingSoon ? '<span class="badge">即將推出</span>' : ""}
         <div class="t-title">${escapeHtml(tool.title)}</div>
-        <div class="t-desc">${desc}</div>
       `;
       wrap.appendChild(a);
     });
