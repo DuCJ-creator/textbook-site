@@ -118,7 +118,8 @@
         {
           "id": "l2",
           "title": "",
-          "status": "draft"
+          "status": "published",
+          "data": "data/b3/l2.json"
         },
         {
           "id": "l3",

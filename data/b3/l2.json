@@ -1,0 +1,470 @@
+{
+  "book": "B3",
+  "lesson": "L2",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b3l2-v01",
+        "base": "innovate",
+        "verb": [
+          {
+            "en": "innovate",
+            "zh": "創新；改革",
+            "example": "The company must innovate to remain competitive."
+          }
+        ],
+        "noun": [
+          {
+            "en": "innovation",
+            "zh": "創新；新方法；新產品",
+            "example": "This innovation could reduce energy use."
+          }
+        ],
+        "adj": [
+          {
+            "en": "innovative",
+            "zh": "創新的；富創意的",
+            "example": "The team developed an innovative teaching method."
+          }
+        ],
+        "adv": [
+          {
+            "en": "innovatively",
+            "zh": "創新地；富創意地",
+            "example": "The designers used the small space innovatively."
+          }
+        ]
+      },
+      {
+        "id": "b3l2-v02",
+        "base": "promise",
+        "verb": [
+          {
+            "en": "promise",
+            "zh": "承諾；答應；預示",
+            "example": "She promised to return the book tomorrow."
+          }
+        ],
+        "noun": [
+          {
+            "en": "promise",
+            "zh": "承諾；希望；潛力",
+            "example": "He kept his promise to help us."
+          }
+        ],
+        "adj": [
+          {
+            "en": "promising",
+            "zh": "有希望的；有前途的",
+            "example": "The experiment produced promising results."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l2-v03",
+        "base": "capable",
+        "verb": [],
+        "noun": [
+          {
+            "en": "capability",
+            "zh": "能力；性能",
+            "example": "The device has the capability to record video."
+          }
+        ],
+        "adj": [
+          {
+            "en": "capable",
+            "zh": "有能力的；能幹的",
+            "example": "She is capable of managing the project alone."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l2-v04",
+        "base": "collaborate",
+        "verb": [
+          {
+            "en": "collaborate",
+            "zh": "合作；協作",
+            "example": "The two schools collaborated on a science project."
+          }
+        ],
+        "noun": [
+          {
+            "en": "collaboration",
+            "zh": "合作；協作",
+            "example": "The exhibition was created through international collaboration."
+          }
+        ],
+        "adj": [
+          {
+            "en": "collaborative",
+            "zh": "合作的；協作的",
+            "example": "The class uses a collaborative learning approach."
+          }
+        ],
+        "adv": [
+          {
+            "en": "collaboratively",
+            "zh": "合作地；協同地",
+            "example": "Students worked collaboratively to solve the problem."
+          }
+        ]
+      },
+      {
+        "id": "b3l2-v05",
+        "base": "graduate",
+        "verb": [
+          {
+            "en": "graduate",
+            "zh": "畢業",
+            "example": "She will graduate from university next year."
+          }
+        ],
+        "noun": [
+          {
+            "en": "graduation",
+            "zh": "畢業；畢業典禮",
+            "example": "The whole family attended his graduation."
+          },
+          {
+            "en": "graduate",
+            "zh": "畢業生；研究生",
+            "example": "The company hired a recent engineering graduate."
+          }
+        ],
+        "adj": [
+          {
+            "en": "graduated",
+            "zh": "分級的；逐漸變化的；有刻度的",
+            "example": "The colors form a graduated pattern from light to dark."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l2-v06",
+        "base": "construct",
+        "verb": [
+          {
+            "en": "construct",
+            "zh": "建造；構成；建立",
+            "example": "Workers are constructing a new bridge."
+          }
+        ],
+        "noun": [
+          {
+            "en": "construction",
+            "zh": "建造；建築；結構",
+            "example": "Construction of the new library begins next month."
+          },
+          {
+            "en": "constructor",
+            "zh": "建造者；建構函式",
+            "example": "The program calls a constructor when an object is created."
+          }
+        ],
+        "adj": [
+          {
+            "en": "constructive",
+            "zh": "建設性的；有助益的",
+            "example": "The teacher gave us constructive feedback."
+          }
+        ],
+        "adv": [
+          {
+            "en": "constructively",
+            "zh": "建設性地；積極地",
+            "example": "The two sides discussed the issue constructively."
+          }
+        ]
+      },
+      {
+        "id": "b3l2-v07",
+        "base": "slight",
+        "verb": [
+          {
+            "en": "slight",
+            "zh": "怠慢；輕視",
+            "example": "Do not slight her contribution to the project."
+          }
+        ],
+        "noun": [
+          {
+            "en": "slight",
+            "zh": "怠慢；輕視",
+            "example": "She regarded the comment as a personal slight."
+          }
+        ],
+        "adj": [
+          {
+            "en": "slight",
+            "zh": "輕微的；少量的；纖細的",
+            "example": "There is a slight chance of rain this afternoon."
+          }
+        ],
+        "adv": [
+          {
+            "en": "slightly",
+            "zh": "稍微地；略微地",
+            "example": "The room is slightly warmer today."
+          }
+        ]
+      },
+      {
+        "id": "b3l2-v08",
+        "base": "rank",
+        "verb": [
+          {
+            "en": "rank",
+            "zh": "排列；評定等級",
+            "example": "The magazine ranked the city among the best places to live."
+          }
+        ],
+        "noun": [
+          {
+            "en": "ranking",
+            "zh": "排名；名次",
+            "example": "The university improved its international ranking."
+          },
+          {
+            "en": "rank",
+            "zh": "等級；軍階；行列",
+            "example": "She rose to the rank of captain."
+          }
+        ],
+        "adj": [
+          {
+            "en": "rank",
+            "zh": "惡臭的；茂盛雜亂的；極端的",
+            "example": "A rank smell came from the old refrigerator."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l2-v09",
+        "base": "unique",
+        "verb": [],
+        "noun": [
+          {
+            "en": "uniqueness",
+            "zh": "獨特性；唯一性",
+            "example": "The building's uniqueness attracts many visitors."
+          }
+        ],
+        "adj": [
+          {
+            "en": "unique",
+            "zh": "獨特的；唯一的",
+            "example": "Each culture has its own unique traditions."
+          }
+        ],
+        "adv": [
+          {
+            "en": "uniquely",
+            "zh": "獨特地；特有地",
+            "example": "The rooms are uniquely decorated."
+          }
+        ]
+      },
+      {
+        "id": "b3l2-v10",
+        "base": "adjust",
+        "verb": [
+          {
+            "en": "adjust",
+            "zh": "調整；適應",
+            "example": "Please adjust the chair to a comfortable height."
+          }
+        ],
+        "noun": [
+          {
+            "en": "adjustment",
+            "zh": "調整；適應",
+            "example": "Moving to a new school required some adjustment."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l2-v11",
+        "base": "rely",
+        "verb": [
+          {
+            "en": "rely",
+            "zh": "依靠；信賴",
+            "example": "We rely on public transportation every day."
+          }
+        ],
+        "noun": [
+          {
+            "en": "reliance",
+            "zh": "依賴；信賴",
+            "example": "Excessive reliance on technology can cause problems."
+          }
+        ],
+        "adj": [
+          {
+            "en": "reliable",
+            "zh": "可靠的；可信賴的",
+            "example": "We need reliable information before making a decision."
+          },
+          {
+            "en": "unreliable",
+            "zh": "不可靠的；不可信的",
+            "example": "The old bus service is slow and unreliable."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l2-v12",
+        "base": "feedback",
+        "verb": [
+          {
+            "en": "feedback",
+            "zh": "回饋；提供意見（較少見的動詞用法）",
+            "example": "Please feedback your comments to the project team."
+          }
+        ],
+        "noun": [
+          {
+            "en": "feedback",
+            "zh": "回饋；意見",
+            "example": "Your feedback will help us improve the course."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l2-v13",
+        "base": "element",
+        "verb": [],
+        "noun": [
+          {
+            "en": "element",
+            "zh": "元素；要素；成分",
+            "example": "Trust is an essential element of teamwork."
+          }
+        ],
+        "adj": [
+          {
+            "en": "elementary",
+            "zh": "基本的；初級的；小學的",
+            "example": "The course teaches elementary computer skills."
+          }
+        ],
+        "adv": [
+          {
+            "en": "elementarily",
+            "zh": "基本地；以初步方式（少見）",
+            "example": "The theorem can be proved elementarily."
+          }
+        ]
+      },
+      {
+        "id": "b3l2-v14",
+        "base": "stable",
+        "verb": [
+          {
+            "en": "stabilize",
+            "zh": "使穩定；穩定下來",
+            "example": "The medicine helped stabilize the patient's condition."
+          }
+        ],
+        "noun": [
+          {
+            "en": "stability",
+            "zh": "穩定；穩定性",
+            "example": "The new policy aims to improve economic stability."
+          },
+          {
+            "en": "unstability",
+            "zh": "不穩定；不穩定性（較少見；通常用 instability）",
+            "example": "The structure showed signs of unstability during the test."
+          }
+        ],
+        "adj": [
+          {
+            "en": "stable",
+            "zh": "穩定的；牢固的",
+            "example": "The patient's condition is now stable."
+          },
+          {
+            "en": "unstable",
+            "zh": "不穩定的；不牢固的",
+            "example": "The ladder felt unstable on the uneven ground."
+          }
+        ],
+        "adv": [
+          {
+            "en": "stably",
+            "zh": "穩定地；牢固地",
+            "example": "The aircraft flew stably despite the strong wind."
+          },
+          {
+            "en": "unstably",
+            "zh": "不穩定地；搖晃地",
+            "example": "The table stood unstably on the uneven floor."
+          }
+        ]
+      },
+      {
+        "id": "b3l2-v15",
+        "base": "explore",
+        "verb": [
+          {
+            "en": "explore",
+            "zh": "探索；探討",
+            "example": "Scientists are exploring new ways to store energy."
+          }
+        ],
+        "noun": [
+          {
+            "en": "exploration",
+            "zh": "探索；探勘",
+            "example": "Space exploration has expanded our understanding of the universe."
+          },
+          {
+            "en": "explorer",
+            "zh": "探險家；探索者",
+            "example": "The explorer recorded every stage of the journey."
+          }
+        ],
+        "adj": [
+          {
+            "en": "explorative",
+            "zh": "探索性的；探究性的（較少見）",
+            "example": "The workshop encourages an explorative approach to learning."
+          }
+        ],
+        "adv": [
+          {
+            "en": "exploratively",
+            "zh": "探索性地；以探究方式（少見）",
+            "example": "The students approached the materials exploratively."
+          }
+        ]
+      }
+    ]
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": []
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}
