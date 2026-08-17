@@ -1,14 +1,13 @@
 /**
  * 全域標註工具 (js/annotation-tool.js)
- * 提供畫筆、螢光筆、文字標註與截圖匯出功能
+ * 提供畫筆、螢光筆、橡皮擦、一鍵清空、文字標註與截圖匯出功能
  */
 class AnnotationToolCore {
   constructor() {
     this.isActive = false;
-    this.currentTool = 'pen'; // 'pen' | 'shape'
+    this.currentTool = 'pen'; // 'pen' | 'eraser'
     this.currentColor = '#000000';
     this.isHighlight = false;
-    this.currentShape = null; 
     this.isDrawing = false;
     this.startX = 0;
     this.startY = 0;
@@ -16,8 +15,6 @@ class AnnotationToolCore {
 
     this.canvas = null;
     this.ctx = null;
-    this.offscreenCanvas = document.createElement('canvas');
-    this.offscreenCtx = this.offscreenCanvas.getContext('2d');
   }
 
   // 自動注入所需的 CSS 樣式
@@ -67,14 +64,14 @@ class AnnotationToolCore {
         box-shadow: 0 6px 20px rgba(0,0,0,0.15);
         display: none;
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
         z-index: 9999;
-        width: 160px;
+        width: 165px;
       }
       .annotation-toolbar.active { display: flex; }
       
       .annotation-btn {
-        padding: 8px 12px;
+        padding: 8px 10px;
         border: none;
         border-radius: 6px;
         background: #2d5a27;
@@ -83,9 +80,13 @@ class AnnotationToolCore {
         cursor: pointer;
         font-size: 0.85rem;
         text-align: center;
+        transition: all 0.2s ease;
       }
       .annotation-btn.active-mode {
         background: #c23b3b !important;
+      }
+      .annotation-btn.tool-active {
+        box-shadow: 0 0 0 2px #2d5a27;
       }
       
       .color-palette {
@@ -94,8 +95,8 @@ class AnnotationToolCore {
         padding: 4px 0;
       }
       .color-option {
-        width: 24px;
-        height: 24px;
+        width: 22px;
+        height: 22px;
         border-radius: 50%;
         cursor: pointer;
         border: 2px solid transparent;
@@ -108,7 +109,7 @@ class AnnotationToolCore {
       .text-annotation {
         position: fixed;
         z-index: 9999;
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(255, 255, 255, 0.95);
         border: 1px dashed #2d5a27;
         padding: 6px 10px;
         border-radius: 4px;
@@ -126,14 +127,12 @@ class AnnotationToolCore {
   injectUI() {
     if (document.getElementById('annotationCanvas')) return;
 
-    // 建立 Canvas
     this.canvas = document.createElement('canvas');
     this.canvas.id = 'annotationCanvas';
     this.canvas.className = 'annotation-canvas';
     document.body.appendChild(this.canvas);
     this.ctx = this.canvas.getContext('2d');
 
-    // 建立 Floating Action Button (FAB)
     const fab = document.createElement('button');
     fab.id = 'annotationFab';
     fab.className = 'annotation-fab';
@@ -141,7 +140,6 @@ class AnnotationToolCore {
     fab.innerHTML = '✏️';
     document.body.appendChild(fab);
 
-    // 建立 Toolbar
     const panel = document.createElement('div');
     panel.id = 'annotationPanel';
     panel.className = 'annotation-toolbar';
@@ -154,7 +152,9 @@ class AnnotationToolCore {
         <div class="color-option" data-color="#00FF00" style="background: #00FF00"></div>
       </div>
       <button id="highlightBtn" class="annotation-btn" style="background:#fff3cd; color:#856404;">螢光筆</button>
-      <button id="textBtn" class="annotation-btn" style="background:#f8d7da; color:#721c24;">添加文字</button>
+      <button id="eraserBtn" class="annotation-btn" style="background:#e2e3e5; color:#383d41;">🧹 橡皮擦</button>
+      <button id="clearBtn" class="annotation-btn" style="background:#f8d7da; color:#721c24;">🗑️ 清空畫布</button>
+      <button id="textBtn" class="annotation-btn" style="background:#e2e3e5; color:#1b1e21;">添加文字</button>
       <button id="exportBtn" class="annotation-btn" style="background:#2d5a27;">導出截圖</button>
     `;
     document.body.appendChild(panel);
@@ -182,8 +182,6 @@ class AnnotationToolCore {
 
     this.canvas.width = width;
     this.canvas.height = height;
-    this.offscreenCanvas.width = width;
-    this.offscreenCanvas.height = height;
 
     if (tempCanvas.width > 0 && tempCanvas.height > 0) {
       this.ctx.drawImage(tempCanvas, 0, 0);
@@ -203,6 +201,8 @@ class AnnotationToolCore {
     const fab = document.getElementById('annotationFab');
     const panel = document.getElementById('annotationPanel');
     const toggleBtn = document.getElementById('toggleAnnotation');
+    const eraserBtn = document.getElementById('eraserBtn');
+    const highlightBtn = document.getElementById('highlightBtn');
 
     if (fab && panel) {
       fab.addEventListener('click', () => {
@@ -223,21 +223,45 @@ class AnnotationToolCore {
       });
     }
 
+    // 顏色選擇
     document.querySelectorAll('.color-option').forEach(btn => {
       btn.addEventListener('click', (e) => {
         this.selectColor(e.target.dataset.color);
+        this.currentTool = 'pen';
+        eraserBtn?.classList.remove('tool-active');
         document.querySelectorAll('.color-option').forEach(b => 
           b.classList.toggle('selected', b === e.target)
         );
       });
     });
 
-    document.getElementById('highlightBtn')?.addEventListener('click', () => {
+    // 螢光筆
+    highlightBtn?.addEventListener('click', () => {
+      this.currentTool = 'pen';
+      eraserBtn?.classList.remove('tool-active');
       const isHighlight = this.toggleHighlight();
-      const btn = document.getElementById('highlightBtn');
-      btn.style.outline = isHighlight ? '2px solid #856404' : 'none';
+      highlightBtn.style.outline = isHighlight ? '2px solid #856404' : 'none';
     });
 
+    // 橡皮擦切換
+    eraserBtn?.addEventListener('click', () => {
+      if (this.currentTool === 'eraser') {
+        this.currentTool = 'pen';
+        eraserBtn.classList.remove('tool-active');
+      } else {
+        this.currentTool = 'eraser';
+        eraserBtn.classList.add('tool-active');
+      }
+    });
+
+    // 清空畫布
+    document.getElementById('clearBtn')?.addEventListener('click', () => {
+      if (confirm('確定要清空所有畫筆與備註嗎？')) {
+        this.clearAll();
+      }
+    });
+
+    // 添加文字
     document.getElementById('textBtn')?.addEventListener('click', () => {
       if (!this.isActive) {
         toggleBtn.click();
@@ -245,6 +269,7 @@ class AnnotationToolCore {
       this.addTextAnnotation();
     });
 
+    // 導出截圖
     document.getElementById('exportBtn')?.addEventListener('click', () => {
       this.exportScreenshot()
         .then(dataUrl => {
@@ -266,19 +291,27 @@ class AnnotationToolCore {
     this.startX = e.clientX;
     this.startY = e.clientY;
 
-    if (this.currentTool === 'pen') {
-      this.ctx.beginPath();
-      this.ctx.moveTo(this.startX, this.startY);
-    }
+    this.ctx.beginPath();
+    this.ctx.moveTo(this.startX, this.startY);
   }
 
   draw(e) {
     if (!this.isDrawing || !this.isActive) return;
 
-    const strokeColor = this.isHighlight ? this.currentColor + '80' : this.currentColor;
-    const lineWidth = this.isHighlight ? 16 : 3;
+    if (this.currentTool === 'eraser') {
+      // 使用 destination-out 擦除畫布上已畫的內容
+      this.ctx.globalCompositeOperation = 'destination-out';
+      this.ctx.lineWidth = 28;
+      this.ctx.lineCap = 'round';
+      this.ctx.lineJoin = 'round';
+      this.ctx.lineTo(e.clientX, e.clientY);
+      this.ctx.stroke();
+    } else {
+      // 正常繪畫模式
+      this.ctx.globalCompositeOperation = 'source-over';
+      const strokeColor = this.isHighlight ? this.currentColor + '80' : this.currentColor;
+      const lineWidth = this.isHighlight ? 16 : 3;
 
-    if (this.currentTool === 'pen') {
       this.ctx.strokeStyle = strokeColor;
       this.ctx.lineWidth = lineWidth;
       this.ctx.lineCap = 'round';
@@ -290,11 +323,14 @@ class AnnotationToolCore {
 
   stopDrawing() {
     this.isDrawing = false;
+    // 重設回預設疊加模式
+    if (this.ctx) {
+      this.ctx.globalCompositeOperation = 'source-over';
+    }
   }
 
   toggleMode() {
     this.isActive = !this.isActive;
-    // 開啟繪圖時，Canvas 開啟 pointer-events 接收繪畫事件，否則維持穿透讓網頁正常點擊
     this.canvas.style.pointerEvents = this.isActive ? 'auto' : 'none';
     return this.isActive;
   }
@@ -306,6 +342,14 @@ class AnnotationToolCore {
   toggleHighlight() {
     this.isHighlight = !this.isHighlight;
     return this.isHighlight;
+  }
+
+  clearAll() {
+    // 清空 Canvas 畫布
+    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    // 清除所有 HTML 文字標註
+    this.textAnnotations.forEach(el => el.remove());
+    this.textAnnotations = [];
   }
 
   addTextAnnotation() {
@@ -383,7 +427,6 @@ class AnnotationToolCore {
   }
 }
 
-// 暴露全域單例物件與 mount 方法，跟 notepad.js 使用方式保持一致
 const AnnotationTool = {
   instance: null,
   mount() {
