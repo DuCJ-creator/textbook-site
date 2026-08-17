@@ -1,6 +1,7 @@
 /**
  * 全域標註工具 (js/annotation-tool.js)
- * 提供畫筆、Highlighter 螢光筆 (正片疊底不遮字)、橡皮擦、一鍵清空、文字標註與截圖匯出功能 (支援 iPad 觸控)
+ * 提供畫筆、Highlighter 螢光筆 (正片疊底)、橡皮擦、一鍵清空、文字標註與截圖匯出
+ * 支援 iPad 觸控，並在繪圖時自動鎖定頁面滑動以確保筆跡對齊
  */
 class AnnotationToolCore {
   constructor() {
@@ -14,9 +15,10 @@ class AnnotationToolCore {
 
     this.canvas = null;
     this.ctx = null;
+    this.savedScrollY = 0;
   }
 
-  // 自動注入所需的 CSS 樣式
+  // 自動注入 CSS 樣式
   injectStyles() {
     if (document.getElementById('annotation-tool-styles')) return;
     const style = document.createElement('style');
@@ -31,9 +33,15 @@ class AnnotationToolCore {
         z-index: 9998;
         pointer-events: none;
         touch-action: none;
-        /* 正片疊底核心設定：確保螢光筆完全透出網頁上的文字 */
         mix-blend-mode: multiply;
       }
+      
+      /* 繪圖模式下鎖定網頁滑動 */
+      body.annotation-locked {
+        overflow: hidden !important;
+        touch-action: none !important;
+      }
+
       .annotation-fab {
         position: fixed;
         bottom: 90px;
@@ -156,7 +164,7 @@ class AnnotationToolCore {
         <div class="color-option" data-color="#4CAF50" style="background: #4CAF50"></div>
       </div>
       <button id="penBtn" class="annotation-btn tool-active" style="background:#e2e3e5; color:#1b1e21;">✏️ 劃線筆</button>
-      <button id="highlightBtn" class="annotation-btn" style="background:#fff3cd; color:#856404;">🖍️ 螢光筆</button>
+      <button id="highlightBtn" class="annotation-btn" style="background:#fff3cd; color:#856404;">🖍️ Highlighter</button>
       <button id="eraserBtn" class="annotation-btn" style="background:#e2e3e5; color:#383d41;">🧹 橡皮擦</button>
       <button id="clearBtn" class="annotation-btn" style="background:#f8d7da; color:#721c24;">🗑️ 清空畫布</button>
       <button id="textBtn" class="annotation-btn" style="background:#e2e3e5; color:#1b1e21;">📝 添加文字</button>
@@ -327,7 +335,6 @@ class AnnotationToolCore {
       this.ctx.lineTo(pos.x, pos.y);
       this.ctx.stroke();
     } else if (this.currentTool === 'highlighter') {
-      // 螢光筆使用完全不透明鮮豔色，配合 CSS 的 multiply 混合，透光度極佳且不擋字
       this.ctx.globalCompositeOperation = 'source-over';
       const color = (this.currentColor === '#000000') ? '#FFEB3B' : this.currentColor; 
       this.ctx.strokeStyle = color;
@@ -337,7 +344,6 @@ class AnnotationToolCore {
       this.ctx.lineTo(pos.x, pos.y);
       this.ctx.stroke();
     } else {
-      // 普通劃線筆
       this.ctx.globalCompositeOperation = 'source-over';
       this.ctx.strokeStyle = this.currentColor;
       this.ctx.lineWidth = 3;
@@ -358,6 +364,14 @@ class AnnotationToolCore {
   toggleMode() {
     this.isActive = !this.isActive;
     this.canvas.style.pointerEvents = this.isActive ? 'auto' : 'none';
+
+    // 控制網頁滑動鎖定
+    if (this.isActive) {
+      document.body.classList.add('annotation-locked');
+    } else {
+      document.body.classList.remove('annotation-locked');
+    }
+
     return this.isActive;
   }
 
@@ -444,8 +458,6 @@ class AnnotationToolCore {
         const exportCtx = exportCanvas.getContext('2d');
 
         exportCtx.drawImage(pageCanvas, 0, 0);
-
-        // 導出時套用正片疊底混合效果
         exportCtx.globalCompositeOperation = 'multiply';
         exportCtx.drawImage(this.canvas, 0, 0);
 
