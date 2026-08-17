@@ -289,7 +289,13 @@
             "example": "Moving to a new school required some adjustment."
           }
         ],
-        "adj": [],
+        "adj": [
+          {
+            "en": "adjustable",
+            "zh": "可調整的",
+            "example": "The height of the bicycle seat is adjustable."
+          }
+        ],
         "adv": []
       },
       {
