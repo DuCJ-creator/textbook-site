@@ -7,22 +7,23 @@ class AnnotationTool {
     this.currentTool = 'pen'; // 'pen' | 'shape'
     this.currentColor = '#000000';
     this.isHighlight = false;
-    this.currentShape = null; // 'rectangle' | 'circle' | 'arrow'
+    this.currentShape = null; 
     this.isDrawing = false;
     this.startX = 0;
     this.startY = 0;
     this.textAnnotations = [];
 
-    // 初始化畫布
-    this.canvas = document.getElementById('annotationCanvas') || document.createElement('canvas');
-    if (!this.canvas.parentNode) {
+    // 綁定或建立 Canvas
+    this.canvas = document.getElementById('annotationCanvas');
+    if (!this.canvas) {
+      this.canvas = document.createElement('canvas');
       this.canvas.id = 'annotationCanvas';
       this.canvas.className = 'annotation-canvas';
       document.body.appendChild(this.canvas);
     }
     this.ctx = this.canvas.getContext('2d');
 
-    // 暫存畫布（用於即時預覽形狀拉伸與重繪）
+    // 暫存畫布（用於預覽）
     this.offscreenCanvas = document.createElement('canvas');
     this.offscreenCtx = this.offscreenCanvas.getContext('2d');
   }
@@ -36,7 +37,6 @@ class AnnotationTool {
     const width = window.innerWidth;
     const height = window.innerHeight;
 
-    // 當尺寸改變時備份繪圖內容
     const tempCanvas = document.createElement('canvas');
     tempCanvas.width = this.canvas.width;
     tempCanvas.height = this.canvas.height;
@@ -49,7 +49,6 @@ class AnnotationTool {
     this.offscreenCanvas.width = width;
     this.offscreenCanvas.height = height;
 
-    // 還原繪圖內容
     if (tempCanvas.width > 0 && tempCanvas.height > 0) {
       this.ctx.drawImage(tempCanvas, 0, 0);
     }
@@ -70,7 +69,6 @@ class AnnotationTool {
     this.startX = e.clientX;
     this.startY = e.clientY;
 
-    // 開始新路徑或備份主畫布內容（供形狀即時重繪使用）
     if (this.currentTool === 'pen') {
       this.ctx.beginPath();
       this.ctx.moveTo(this.startX, this.startY);
@@ -83,9 +81,8 @@ class AnnotationTool {
   draw(e) {
     if (!this.isDrawing || !this.isActive) return;
 
-    const strokeColor = this.isHighlight ? this.currentColor + '4D' : this.currentColor;
-    const lineWidth = this.isHighlight ? 15 : 3;
-    const fillColor = this.currentColor + '33';
+    const strokeColor = this.isHighlight ? this.currentColor + '80' : this.currentColor;
+    const lineWidth = this.isHighlight ? 16 : 3;
 
     if (this.currentTool === 'pen') {
       this.ctx.strokeStyle = strokeColor;
@@ -95,14 +92,11 @@ class AnnotationTool {
       this.ctx.lineTo(e.clientX, e.clientY);
       this.ctx.stroke();
     } else if (this.currentTool === 'shape') {
-      // 繪製形狀時先還原離屏畫布，避免拉伸時軌跡重疊
       this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
       this.ctx.drawImage(this.offscreenCanvas, 0, 0);
 
       this.ctx.strokeStyle = strokeColor;
-      this.ctx.fillStyle = fillColor;
       this.ctx.lineWidth = lineWidth;
-
       this.drawShape(this.ctx, this.startX, this.startY, e.clientX, e.clientY);
     }
   }
@@ -111,15 +105,12 @@ class AnnotationTool {
     ctx.beginPath();
     switch (this.currentShape) {
       case 'rectangle':
-        ctx.rect(fromX, fromY, toX - fromX, toY - fromY);
-        ctx.fill();
-        ctx.stroke();
+        ctx.strokeRect(fromX, fromY, toX - fromX, toY - fromY);
         break;
 
       case 'circle': {
         const radius = Math.sqrt(Math.pow(toX - fromX, 2) + Math.pow(toY - fromY, 2));
         ctx.arc(fromX, fromY, radius, 0, Math.PI * 2);
-        ctx.fill();
         ctx.stroke();
         break;
       }
@@ -158,11 +149,11 @@ class AnnotationTool {
     this.isDrawing = false;
   }
 
-  // ===== 工具列與狀態操作 =====
   toggleMode() {
     this.isActive = !this.isActive;
+    // 切換畫布滑鼠穿透屬性：開啟標註模式時捕捉滑鼠事件
     this.canvas.style.pointerEvents = this.isActive ? 'auto' : 'none';
-    return this.isActive ? '退出標註' : '標註模式';
+    return this.isActive ? '退出標註' : '開啟繪圖';
   }
 
   selectColor(color) {
@@ -171,7 +162,7 @@ class AnnotationTool {
 
   toggleHighlight() {
     this.isHighlight = !this.isHighlight;
-    return this.isHighlight ? '#FFC107' : '#FFEB3B';
+    return this.isHighlight;
   }
 
   setShape(shape) {
@@ -184,17 +175,14 @@ class AnnotationTool {
     }
   }
 
-  // ===== 文字標註 =====
   addTextAnnotation() {
-    if (!this.isActive) return;
-
     const textDiv = document.createElement('div');
     textDiv.className = 'text-annotation';
-    textDiv.textContent = '點擊編輯文字';
+    textDiv.textContent = '點擊輸入備註';
     textDiv.contentEditable = true;
 
-    textDiv.style.left = `${window.innerWidth * 0.3 + Math.random() * window.innerWidth * 0.2}px`;
-    textDiv.style.top = `${window.innerHeight * 0.3 + Math.random() * window.innerHeight * 0.2}px`;
+    textDiv.style.left = `${window.innerWidth * 0.3 + Math.random() * 50}px`;
+    textDiv.style.top = `${window.innerHeight * 0.3 + Math.random() * 50}px`;
 
     this.setupDraggable(textDiv);
     document.body.appendChild(textDiv);
@@ -209,7 +197,6 @@ class AnnotationTool {
     let offsetY = 0;
 
     element.addEventListener('mousedown', (e) => {
-      // 若點擊時處於編輯狀態，暫不觸發拖曳
       if (document.activeElement === element) return;
       isDragging = true;
       offsetX = e.clientX - element.getBoundingClientRect().left;
@@ -232,7 +219,6 @@ class AnnotationTool {
     document.addEventListener('mouseup', onMouseUp);
   }
 
-  // ===== 導出截圖 =====
   exportScreenshot() {
     return new Promise((resolve, reject) => {
       if (typeof html2canvas === 'undefined') {
@@ -255,7 +241,6 @@ class AnnotationTool {
         exportCanvas.height = window.innerHeight;
         const exportCtx = exportCanvas.getContext('2d');
 
-        // 疊加網頁底圖與 Canvas 標註繪圖
         exportCtx.drawImage(pageCanvas, 0, 0);
         exportCtx.drawImage(this.canvas, 0, 0);
 
@@ -265,7 +250,6 @@ class AnnotationTool {
   }
 }
 
-// 實例化並導出給全域使用
 const annotationTool = new AnnotationTool();
 
 document.addEventListener('DOMContentLoaded', () => {
