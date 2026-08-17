@@ -186,12 +186,12 @@ def rebuild_index_json():
     index_data = {
         "books": books,
         "cross_lesson_tools": [
-            {"id": "vocab-index", "title": "單字字典索引 Vocabulary Index", "url": "vocab-index.html", "status": "available"},
-            {"id": "phrase-index", "title": "片語字典索引 Phrase Index", "url": "phrase-index.html", "status": "available"},
-            {"id": "grammar-index", "title": "文法重點索引 Grammar Index", "url": "grammar-index.html", "status": "available"},
-            {"id": "vocab-bank", "title": "單字探索 Vocabulary Bank", "url": "vocab-bank.html", "status": "available"},
-            {"id": "phrase-bank", "title": "片語練習 Phrase Bank", "url": "phrase-bank.html", "status": "available"},
-            {"id": "grammar-bank", "title": "句型練習 Grammar Bank", "url": "grammar-bank.html", "status": "available"},
+            {"id": "vocab-index", "title": "教材同源詞索引 Word Family Index", "url": "vocab-index.html", "status": "available"},
+            {"id": "phrase-index", "title": "教材片語索引 Phrase Index", "url": "phrase-index.html", "status": "available"},
+            {"id": "grammar-index", "title": "教材核心文法索引 Essential Grammar Index", "url": "grammar-index.html", "status": "available"},
+            {"id": "vocab-bank", "title": "教材同源詞匯總探索 Word Family Bank", "url": "vocab-bank.html", "status": "available"},
+            {"id": "phrase-bank", "title": "教材片語匯總探索 Phrase Bank", "url": "phrase-bank.html", "status": "available"},
+            {"id": "grammar-bank", "title": "課文句型分類探索 Sentence Bank（Structure-Classified）", "url": "grammar-bank.html", "status": "available"},
         ],
     }
 
