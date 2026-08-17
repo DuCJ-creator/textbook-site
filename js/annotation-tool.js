@@ -1,13 +1,12 @@
 /**
  * 全域標註工具 (js/annotation-tool.js)
- * 提供畫筆、螢光筆、橡皮擦、一鍵清空、文字標註與截圖匯出功能
+ * 提供畫筆、Highlighter 螢光筆、橡皮擦、一鍵清空、文字標註與截圖匯出功能 (支援 iPad 觸控)
  */
 class AnnotationToolCore {
   constructor() {
     this.isActive = false;
-    this.currentTool = 'pen'; // 'pen' | 'eraser'
+    this.currentTool = 'pen'; // 'pen' | 'highlighter' | 'eraser'
     this.currentColor = '#000000';
-    this.isHighlight = false;
     this.isDrawing = false;
     this.startX = 0;
     this.startY = 0;
@@ -31,6 +30,7 @@ class AnnotationToolCore {
         height: 100vh;
         z-index: 9998;
         pointer-events: none;
+        touch-action: none; /* 防止 iPad 繪圖時滾動畫面 */
       }
       .annotation-fab {
         position: fixed;
@@ -66,7 +66,7 @@ class AnnotationToolCore {
         flex-direction: column;
         gap: 8px;
         z-index: 9999;
-        width: 165px;
+        width: 175px;
       }
       .annotation-toolbar.active { display: flex; }
       
@@ -86,7 +86,8 @@ class AnnotationToolCore {
         background: #c23b3b !important;
       }
       .annotation-btn.tool-active {
-        box-shadow: 0 0 0 2px #2d5a27;
+        outline: 2px solid #2d5a27;
+        box-shadow: 0 0 6px rgba(0,0,0,0.2);
       }
       
       .color-palette {
@@ -99,11 +100,11 @@ class AnnotationToolCore {
         height: 22px;
         border-radius: 50%;
         cursor: pointer;
-        border: 2px solid transparent;
+        border: 2px solid #ccc;
       }
       .color-option.selected {
         border-color: #333;
-        transform: scale(1.15);
+        transform: scale(1.2);
       }
       
       .text-annotation {
@@ -118,6 +119,7 @@ class AnnotationToolCore {
         font-size: 1rem;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         cursor: move;
+        touch-action: none;
       }
     `;
     document.head.appendChild(style);
@@ -147,15 +149,17 @@ class AnnotationToolCore {
       <button id="toggleAnnotation" class="annotation-btn">開啟繪圖</button>
       <div class="color-palette">
         <div class="color-option selected" data-color="#000000" style="background: #000000"></div>
+        <div class="color-option" data-color="#FFEB3B" style="background: #FFEB3B"></div>
         <div class="color-option" data-color="#FF0000" style="background: #FF0000"></div>
         <div class="color-option" data-color="#0000FF" style="background: #0000FF"></div>
         <div class="color-option" data-color="#00FF00" style="background: #00FF00"></div>
       </div>
-      <button id="highlightBtn" class="annotation-btn" style="background:#fff3cd; color:#856404;">螢光筆</button>
+      <button id="penBtn" class="annotation-btn tool-active" style="background:#e2e3e5; color:#1b1e21;">✏️ 畫筆</button>
+      <button id="highlightBtn" class="annotation-btn" style="background:#fff3cd; color:#856404;">🖍️ Highlighter</button>
       <button id="eraserBtn" class="annotation-btn" style="background:#e2e3e5; color:#383d41;">🧹 橡皮擦</button>
       <button id="clearBtn" class="annotation-btn" style="background:#f8d7da; color:#721c24;">🗑️ 清空畫布</button>
-      <button id="textBtn" class="annotation-btn" style="background:#e2e3e5; color:#1b1e21;">添加文字</button>
-      <button id="exportBtn" class="annotation-btn" style="background:#2d5a27;">導出截圖</button>
+      <button id="textBtn" class="annotation-btn" style="background:#e2e3e5; color:#1b1e21;">📝 添加文字</button>
+      <button id="exportBtn" class="annotation-btn" style="background:#2d5a27;">📸 導出截圖</button>
     `;
     document.body.appendChild(panel);
   }
@@ -188,26 +192,49 @@ class AnnotationToolCore {
     }
   }
 
+  // 取得相對座標 (同時相容 滑鼠 與 iPad 觸控)
+  getPos(e) {
+    if (e.touches && e.touches.length > 0) {
+      return { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    }
+    return { x: e.clientX, y: e.clientY };
+  }
+
   setupEventListeners() {
     window.addEventListener('resize', () => this.resizeCanvas());
 
+    // 滑鼠事件
     this.canvas.addEventListener('mousedown', (e) => this.startDrawing(e));
     this.canvas.addEventListener('mousemove', (e) => this.draw(e));
     this.canvas.addEventListener('mouseup', () => this.stopDrawing());
     this.canvas.addEventListener('mouseleave', () => this.stopDrawing());
+
+    // iPad Touch 觸控事件
+    this.canvas.addEventListener('touchstart', (e) => {
+      if (!this.isActive) return;
+      e.preventDefault();
+      this.startDrawing(e);
+    }, { passive: false });
+
+    this.canvas.addEventListener('touchmove', (e) => {
+      if (!this.isActive) return;
+      e.preventDefault();
+      this.draw(e);
+    }, { passive: false });
+
+    this.canvas.addEventListener('touchend', () => this.stopDrawing());
   }
 
   bindUIEvents() {
     const fab = document.getElementById('annotationFab');
     const panel = document.getElementById('annotationPanel');
     const toggleBtn = document.getElementById('toggleAnnotation');
-    const eraserBtn = document.getElementById('eraserBtn');
+    const penBtn = document.getElementById('penBtn');
     const highlightBtn = document.getElementById('highlightBtn');
+    const eraserBtn = document.getElementById('eraserBtn');
 
     if (fab && panel) {
-      fab.addEventListener('click', () => {
-        panel.classList.toggle('active');
-      });
+      fab.addEventListener('click', () => panel.classList.toggle('active'));
     }
 
     if (toggleBtn) {
@@ -223,35 +250,41 @@ class AnnotationToolCore {
       });
     }
 
+    const updateToolUI = (activeBtn) => {
+      [penBtn, highlightBtn, eraserBtn].forEach(b => b?.classList.remove('tool-active'));
+      activeBtn?.classList.add('tool-active');
+    };
+
     // 顏色選擇
     document.querySelectorAll('.color-option').forEach(btn => {
       btn.addEventListener('click', (e) => {
         this.selectColor(e.target.dataset.color);
-        this.currentTool = 'pen';
-        eraserBtn?.classList.remove('tool-active');
+        if (this.currentTool === 'eraser') {
+          this.currentTool = 'pen';
+          updateToolUI(penBtn);
+        }
         document.querySelectorAll('.color-option').forEach(b => 
           b.classList.toggle('selected', b === e.target)
         );
       });
     });
 
-    // 螢光筆
-    highlightBtn?.addEventListener('click', () => {
+    // 畫筆模式
+    penBtn?.addEventListener('click', () => {
       this.currentTool = 'pen';
-      eraserBtn?.classList.remove('tool-active');
-      const isHighlight = this.toggleHighlight();
-      highlightBtn.style.outline = isHighlight ? '2px solid #856404' : 'none';
+      updateToolUI(penBtn);
     });
 
-    // 橡皮擦切換
+    // Highlighter 螢光筆模式
+    highlightBtn?.addEventListener('click', () => {
+      this.currentTool = 'highlighter';
+      updateToolUI(highlightBtn);
+    });
+
+    // 橡皮擦模式
     eraserBtn?.addEventListener('click', () => {
-      if (this.currentTool === 'eraser') {
-        this.currentTool = 'pen';
-        eraserBtn.classList.remove('tool-active');
-      } else {
-        this.currentTool = 'eraser';
-        eraserBtn.classList.add('tool-active');
-      }
+      this.currentTool = 'eraser';
+      updateToolUI(eraserBtn);
     });
 
     // 清空畫布
@@ -263,9 +296,7 @@ class AnnotationToolCore {
 
     // 添加文字
     document.getElementById('textBtn')?.addEventListener('click', () => {
-      if (!this.isActive) {
-        toggleBtn.click();
-      }
+      if (!this.isActive) toggleBtn.click();
       this.addTextAnnotation();
     });
 
@@ -278,18 +309,16 @@ class AnnotationToolCore {
           link.href = dataUrl;
           link.click();
         })
-        .catch(err => {
-          console.error('導出失敗:', err);
-          alert('截圖導出失敗: ' + err.message);
-        });
+        .catch(err => alert('截圖導出失敗: ' + err.message));
     });
   }
 
   startDrawing(e) {
     if (!this.isActive) return;
     this.isDrawing = true;
-    this.startX = e.clientX;
-    this.startY = e.clientY;
+    const pos = this.getPos(e);
+    this.startX = pos.x;
+    this.startY = pos.y;
 
     this.ctx.beginPath();
     this.ctx.moveTo(this.startX, this.startY);
@@ -297,33 +326,40 @@ class AnnotationToolCore {
 
   draw(e) {
     if (!this.isDrawing || !this.isActive) return;
+    const pos = this.getPos(e);
 
     if (this.currentTool === 'eraser') {
-      // 使用 destination-out 擦除畫布上已畫的內容
+      // 橡皮擦：清除筆劃
       this.ctx.globalCompositeOperation = 'destination-out';
-      this.ctx.lineWidth = 28;
+      this.ctx.lineWidth = 30;
       this.ctx.lineCap = 'round';
       this.ctx.lineJoin = 'round';
-      this.ctx.lineTo(e.clientX, e.clientY);
+      this.ctx.lineTo(pos.x, pos.y);
+      this.ctx.stroke();
+    } else if (this.currentTool === 'highlighter') {
+      // Highlighter 螢光筆：透明半透明畫筆 + destination-over（劃在已有筆跡下方）或半透明覆蓋
+      this.ctx.globalCompositeOperation = 'source-over';
+      const color = this.currentColor === '#000000' ? '#FFEB3B' : this.currentColor; 
+      this.ctx.strokeStyle = color + '66'; // 40% 透明度
+      this.ctx.lineWidth = 20;
+      this.ctx.lineCap = 'square';
+      this.ctx.lineJoin = 'miter';
+      this.ctx.lineTo(pos.x, pos.y);
       this.ctx.stroke();
     } else {
-      // 正常繪畫模式
+      // 普通畫筆 (Pen)
       this.ctx.globalCompositeOperation = 'source-over';
-      const strokeColor = this.isHighlight ? this.currentColor + '80' : this.currentColor;
-      const lineWidth = this.isHighlight ? 16 : 3;
-
-      this.ctx.strokeStyle = strokeColor;
-      this.ctx.lineWidth = lineWidth;
+      this.ctx.strokeStyle = this.currentColor;
+      this.ctx.lineWidth = 3;
       this.ctx.lineCap = 'round';
       this.ctx.lineJoin = 'round';
-      this.ctx.lineTo(e.clientX, e.clientY);
+      this.ctx.lineTo(pos.x, pos.y);
       this.ctx.stroke();
     }
   }
 
   stopDrawing() {
     this.isDrawing = false;
-    // 重設回預設疊加模式
     if (this.ctx) {
       this.ctx.globalCompositeOperation = 'source-over';
     }
@@ -339,15 +375,8 @@ class AnnotationToolCore {
     this.currentColor = color;
   }
 
-  toggleHighlight() {
-    this.isHighlight = !this.isHighlight;
-    return this.isHighlight;
-  }
-
   clearAll() {
-    // 清空 Canvas 畫布
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    // 清除所有 HTML 文字標註
     this.textAnnotations.forEach(el => el.remove());
     this.textAnnotations = [];
   }
@@ -373,27 +402,33 @@ class AnnotationToolCore {
     let offsetX = 0;
     let offsetY = 0;
 
-    element.addEventListener('mousedown', (e) => {
+    const startDrag = (e) => {
       if (document.activeElement === element) return;
       isDragging = true;
-      offsetX = e.clientX - element.getBoundingClientRect().left;
-      offsetY = e.clientY - element.getBoundingClientRect().top;
+      const pos = this.getPos(e);
+      offsetX = pos.x - element.getBoundingClientRect().left;
+      offsetY = pos.y - element.getBoundingClientRect().top;
       e.stopPropagation();
-    });
+    };
 
-    const onMouseMove = (e) => {
+    const moveDrag = (e) => {
       if (isDragging) {
-        element.style.left = `${e.clientX - offsetX}px`;
-        element.style.top = `${e.clientY - offsetY}px`;
+        const pos = this.getPos(e);
+        element.style.left = `${pos.x - offsetX}px`;
+        element.style.top = `${pos.y - offsetY}px`;
       }
     };
 
-    const onMouseUp = () => {
-      isDragging = false;
-    };
+    const stopDrag = () => { isDragging = false; };
 
-    document.addEventListener('mousemove', onMouseMove);
-    document.addEventListener('mouseup', onMouseUp);
+    element.addEventListener('mousedown', startDrag);
+    element.addEventListener('touchstart', startDrag, { passive: false });
+
+    document.addEventListener('mousemove', moveDrag);
+    document.addEventListener('touchmove', moveDrag, { passive: false });
+
+    document.addEventListener('mouseup', stopDrag);
+    document.addEventListener('touchend', stopDrag);
   }
 
   exportScreenshot() {
