@@ -1,7 +1,8 @@
 /**
- * 標註工具 Core Logic (js/annotation-tool.js)
+ * 全域標註工具 (js/annotation-tool.js)
+ * 提供畫筆、螢光筆、文字標註與截圖匯出功能
  */
-class AnnotationTool {
+class AnnotationToolCore {
   constructor() {
     this.isActive = false;
     this.currentTool = 'pen'; // 'pen' | 'shape'
@@ -13,27 +14,162 @@ class AnnotationTool {
     this.startY = 0;
     this.textAnnotations = [];
 
-    // 綁定或建立 Canvas
-    this.canvas = document.getElementById('annotationCanvas');
-    if (!this.canvas) {
-      this.canvas = document.createElement('canvas');
-      this.canvas.id = 'annotationCanvas';
-      this.canvas.className = 'annotation-canvas';
-      document.body.appendChild(this.canvas);
-    }
-    this.ctx = this.canvas.getContext('2d');
-
-    // 暫存畫布（用於預覽）
+    this.canvas = null;
+    this.ctx = null;
     this.offscreenCanvas = document.createElement('canvas');
     this.offscreenCtx = this.offscreenCanvas.getContext('2d');
   }
 
+  // 自動注入所需的 CSS 樣式
+  injectStyles() {
+    if (document.getElementById('annotation-tool-styles')) return;
+    const style = document.createElement('style');
+    style.id = 'annotation-tool-styles';
+    style.textContent = `
+      .annotation-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9998;
+        pointer-events: none;
+      }
+      .annotation-fab {
+        position: fixed;
+        bottom: 90px;
+        right: 20px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #2d5a27;
+        color: #fff;
+        border: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        cursor: pointer;
+        z-index: 9999;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s ease;
+      }
+      .annotation-fab:hover { transform: scale(1.08); }
+      
+      .annotation-toolbar {
+        position: fixed;
+        bottom: 145px;
+        right: 20px;
+        background: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 12px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 9999;
+        width: 160px;
+      }
+      .annotation-toolbar.active { display: flex; }
+      
+      .annotation-btn {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 6px;
+        background: #2d5a27;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 0.85rem;
+        text-align: center;
+      }
+      .annotation-btn.active-mode {
+        background: #c23b3b !important;
+      }
+      
+      .color-palette {
+        display: flex;
+        justify-content: space-between;
+        padding: 4px 0;
+      }
+      .color-option {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid transparent;
+      }
+      .color-option.selected {
+        border-color: #333;
+        transform: scale(1.15);
+      }
+      
+      .text-annotation {
+        position: fixed;
+        z-index: 9999;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px dashed #2d5a27;
+        padding: 6px 10px;
+        border-radius: 4px;
+        min-width: 80px;
+        outline: none;
+        font-size: 1rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        cursor: move;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  // 自動建立 UI HTML 結構
+  injectUI() {
+    if (document.getElementById('annotationCanvas')) return;
+
+    // 建立 Canvas
+    this.canvas = document.createElement('canvas');
+    this.canvas.id = 'annotationCanvas';
+    this.canvas.className = 'annotation-canvas';
+    document.body.appendChild(this.canvas);
+    this.ctx = this.canvas.getContext('2d');
+
+    // 建立 Floating Action Button (FAB)
+    const fab = document.createElement('button');
+    fab.id = 'annotationFab';
+    fab.className = 'annotation-fab';
+    fab.title = '開啟標註工具';
+    fab.innerHTML = '✏️';
+    document.body.appendChild(fab);
+
+    // 建立 Toolbar
+    const panel = document.createElement('div');
+    panel.id = 'annotationPanel';
+    panel.className = 'annotation-toolbar';
+    panel.innerHTML = `
+      <button id="toggleAnnotation" class="annotation-btn">開啟繪圖</button>
+      <div class="color-palette">
+        <div class="color-option selected" data-color="#000000" style="background: #000000"></div>
+        <div class="color-option" data-color="#FF0000" style="background: #FF0000"></div>
+        <div class="color-option" data-color="#0000FF" style="background: #0000FF"></div>
+        <div class="color-option" data-color="#00FF00" style="background: #00FF00"></div>
+      </div>
+      <button id="highlightBtn" class="annotation-btn" style="background:#fff3cd; color:#856404;">螢光筆</button>
+      <button id="textBtn" class="annotation-btn" style="background:#f8d7da; color:#721c24;">添加文字</button>
+      <button id="exportBtn" class="annotation-btn" style="background:#2d5a27;">導出截圖</button>
+    `;
+    document.body.appendChild(panel);
+  }
+
   init() {
+    this.injectStyles();
+    this.injectUI();
     this.resizeCanvas();
     this.setupEventListeners();
+    this.bindUIEvents();
   }
 
   resizeCanvas() {
+    if (!this.canvas) return;
     const width = window.innerWidth;
     const height = window.innerHeight;
 
@@ -63,6 +199,67 @@ class AnnotationTool {
     this.canvas.addEventListener('mouseleave', () => this.stopDrawing());
   }
 
+  bindUIEvents() {
+    const fab = document.getElementById('annotationFab');
+    const panel = document.getElementById('annotationPanel');
+    const toggleBtn = document.getElementById('toggleAnnotation');
+
+    if (fab && panel) {
+      fab.addEventListener('click', () => {
+        panel.classList.toggle('active');
+      });
+    }
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        const isActive = this.toggleMode();
+        if (isActive) {
+          toggleBtn.textContent = '退出標註';
+          toggleBtn.classList.add('active-mode');
+        } else {
+          toggleBtn.textContent = '開啟繪圖';
+          toggleBtn.classList.remove('active-mode');
+        }
+      });
+    }
+
+    document.querySelectorAll('.color-option').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        this.selectColor(e.target.dataset.color);
+        document.querySelectorAll('.color-option').forEach(b => 
+          b.classList.toggle('selected', b === e.target)
+        );
+      });
+    });
+
+    document.getElementById('highlightBtn')?.addEventListener('click', () => {
+      const isHighlight = this.toggleHighlight();
+      const btn = document.getElementById('highlightBtn');
+      btn.style.outline = isHighlight ? '2px solid #856404' : 'none';
+    });
+
+    document.getElementById('textBtn')?.addEventListener('click', () => {
+      if (!this.isActive) {
+        toggleBtn.click();
+      }
+      this.addTextAnnotation();
+    });
+
+    document.getElementById('exportBtn')?.addEventListener('click', () => {
+      this.exportScreenshot()
+        .then(dataUrl => {
+          const link = document.createElement('a');
+          link.download = '教材標註-' + new Date().toISOString().slice(0, 10) + '.png';
+          link.href = dataUrl;
+          link.click();
+        })
+        .catch(err => {
+          console.error('導出失敗:', err);
+          alert('截圖導出失敗: ' + err.message);
+        });
+    });
+  }
+
   startDrawing(e) {
     if (!this.isActive) return;
     this.isDrawing = true;
@@ -72,9 +269,6 @@ class AnnotationTool {
     if (this.currentTool === 'pen') {
       this.ctx.beginPath();
       this.ctx.moveTo(this.startX, this.startY);
-    } else if (this.currentTool === 'shape') {
-      this.offscreenCtx.clearRect(0, 0, this.offscreenCanvas.width, this.offscreenCanvas.height);
-      this.offscreenCtx.drawImage(this.canvas, 0, 0);
     }
   }
 
@@ -91,58 +285,7 @@ class AnnotationTool {
       this.ctx.lineJoin = 'round';
       this.ctx.lineTo(e.clientX, e.clientY);
       this.ctx.stroke();
-    } else if (this.currentTool === 'shape') {
-      this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-      this.ctx.drawImage(this.offscreenCanvas, 0, 0);
-
-      this.ctx.strokeStyle = strokeColor;
-      this.ctx.lineWidth = lineWidth;
-      this.drawShape(this.ctx, this.startX, this.startY, e.clientX, e.clientY);
     }
-  }
-
-  drawShape(ctx, fromX, fromY, toX, toY) {
-    ctx.beginPath();
-    switch (this.currentShape) {
-      case 'rectangle':
-        ctx.strokeRect(fromX, fromY, toX - fromX, toY - fromY);
-        break;
-
-      case 'circle': {
-        const radius = Math.sqrt(Math.pow(toX - fromX, 2) + Math.pow(toY - fromY, 2));
-        ctx.arc(fromX, fromY, radius, 0, Math.PI * 2);
-        ctx.stroke();
-        break;
-      }
-
-      case 'arrow':
-        this.drawArrow(ctx, fromX, fromY, toX, toY);
-        break;
-    }
-  }
-
-  drawArrow(ctx, fromX, fromY, toX, toY) {
-    const headLength = 15;
-    const angle = Math.atan2(toY - fromY, toX - fromX);
-
-    ctx.beginPath();
-    ctx.moveTo(fromX, fromY);
-    ctx.lineTo(toX, toY);
-    ctx.stroke();
-
-    ctx.beginPath();
-    ctx.moveTo(toX, toY);
-    ctx.lineTo(
-      toX - headLength * Math.cos(angle - Math.PI / 6),
-      toY - headLength * Math.sin(angle - Math.PI / 6)
-    );
-    ctx.lineTo(
-      toX - headLength * Math.cos(angle + Math.PI / 6),
-      toY - headLength * Math.sin(angle + Math.PI / 6)
-    );
-    ctx.closePath();
-    ctx.fillStyle = ctx.strokeStyle;
-    ctx.fill();
   }
 
   stopDrawing() {
@@ -151,9 +294,9 @@ class AnnotationTool {
 
   toggleMode() {
     this.isActive = !this.isActive;
-    // 切換畫布滑鼠穿透屬性：開啟標註模式時捕捉滑鼠事件
+    // 開啟繪圖時，Canvas 開啟 pointer-events 接收繪畫事件，否則維持穿透讓網頁正常點擊
     this.canvas.style.pointerEvents = this.isActive ? 'auto' : 'none';
-    return this.isActive ? '退出標註' : '開啟繪圖';
+    return this.isActive;
   }
 
   selectColor(color) {
@@ -165,24 +308,14 @@ class AnnotationTool {
     return this.isHighlight;
   }
 
-  setShape(shape) {
-    if (this.currentShape === shape && this.currentTool === 'shape') {
-      this.currentTool = 'pen';
-      this.currentShape = null;
-    } else {
-      this.currentShape = shape;
-      this.currentTool = 'shape';
-    }
-  }
-
   addTextAnnotation() {
     const textDiv = document.createElement('div');
     textDiv.className = 'text-annotation';
     textDiv.textContent = '點擊輸入備註';
     textDiv.contentEditable = true;
 
-    textDiv.style.left = `${window.innerWidth * 0.3 + Math.random() * 50}px`;
-    textDiv.style.top = `${window.innerHeight * 0.3 + Math.random() * 50}px`;
+    textDiv.style.left = `${window.innerWidth * 0.3 + Math.random() * 30}px`;
+    textDiv.style.top = `${window.innerHeight * 0.3 + Math.random() * 30}px`;
 
     this.setupDraggable(textDiv);
     document.body.appendChild(textDiv);
@@ -250,10 +383,19 @@ class AnnotationTool {
   }
 }
 
-const annotationTool = new AnnotationTool();
+// 暴露全域單例物件與 mount 方法，跟 notepad.js 使用方式保持一致
+const AnnotationTool = {
+  instance: null,
+  mount() {
+    if (!this.instance) {
+      this.instance = new AnnotationToolCore();
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => this.instance.init());
+    } else {
+      this.instance.init();
+    }
+  }
+};
 
-document.addEventListener('DOMContentLoaded', () => {
-  annotationTool.init();
-});
-
-window.AnnotationTool = annotationTool;
+window.AnnotationTool = AnnotationTool;
