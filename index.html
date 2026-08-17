@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="css/style.css" />
 <style>
   /* 臨時過渡樣式（將移入style.css） */
+  .site-head {
     border-radius: 0 0 28px 28px;
   }
   .site-head .inner { max-width: 1040px; margin: 0 auto; }
@@ -182,206 +183,222 @@
     Prepared by Shirley Du@CHHS
   </footer>
 
-<script src="js/loader.js"></script>
-<script src="js/external-viewer.js"></script>
-<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-<script>
-  const INDEX_URL = "data/index.json";
+  <!-- 核心與第三方套件 Script -->
+  <script src="js/loader.js"></script>
+  <script src="js/external-viewer.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  
+  <script>
+    const INDEX_URL = "data/index.json";
 
-  fetch(INDEX_URL)
-    .then(res => {
-      if (!res.ok) throw new Error("HTTP " + res.status);
-      return res.json();
-    })
-    .then(data => {
-      renderProgress(data);
-      renderBooks(data);
-      renderTools(data);
-    })
-    .catch(err => {
-      document.getElementById("bookList").innerHTML =
-        `<div style="padding:20px; color:var(--accent); font-size:0.85rem;">
-          課程清單載入失敗：${escapeHtml(err.message)}（請確認此頁面透過本機伺服器或 GitHub Pages 開啟，而非直接雙擊開啟檔案）
-        </div>`;
+    fetch(INDEX_URL)
+      .then(res => {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(data => {
+        renderProgress(data);
+        renderBooks(data);
+        renderTools(data);
+      })
+      .catch(err => {
+        document.getElementById("bookList").innerHTML =
+          `<div style="padding:20px; color:var(--accent); font-size:0.85rem;">
+            課程清單載入失敗：${escapeHtml(err.message)}（請確認此頁面透過本機伺服器或 GitHub Pages 開啟，而非直接雙擊開啟檔案）
+          </div>`;
+      });
+
+    // Beyond Textbooks：三個延伸學習資源，點卡片在頁面內用 iframe 開啟
+    ExternalViewer.render({
+      containerId: "beyondTextbooksArea",
+      cards: [
+        { title: "Grammar Basics 文法基礎", url: "https://ducj-creator.github.io/gbasics.html" },
+        { title: "Vocabulary Basics 單字基礎", url: "https://ducj-creator.github.io/shirleyvocab.html#home" },
+        { title: "Hexagon Warrior 英文六邊形戰士", url: "https://ducj-creator.github.io/hexagonw.html" },
+        { title: "To 1Campus", url: "https://1campus.net/intl?lang=zh-TW" },
+        { title: "To Tr. Shirley Du", url: "https://shirley-du-app.vercel.app/" }
+      ]
     });
 
-  // Beyond Textbooks：三個延伸學習資源，點卡片在頁面內用 iframe 開啟
-  ExternalViewer.render({
-    containerId: "beyondTextbooksArea",
-    cards: [
-      { title: "Grammar Basics 文法基礎", url: "https://ducj-creator.github.io/gbasics.html" },
-      { title: "Vocabulary Basics 單字基礎", url: "https://ducj-creator.github.io/shirleyvocab.html#home" },
-      { title: "Hexagon Warrior 英文六邊形戰士", url: "https://ducj-creator.github.io/hexagonw.html" },
-      { title: "To 1Campus", url: "https://1campus.net/intl?lang=zh-TW" },
-      { title: "To Tr. Shirley Du", url: "https://shirley-du-app.vercel.app/" }
-    ]
-  });
+    function escapeHtml(str) {
+      return String(str ?? "")
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    }
 
-  function escapeHtml(str) {
-    return String(str ?? "")
-      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;").replace(/'/g, "&#039;");
-  }
+    function renderProgress(data) {
+      const allLessons = data.books.flatMap(b => b.lessons);
+      const published = allLessons.filter(l => l.status === "published").length;
+      const total = allLessons.length;
 
-  function renderProgress(data) {
-    const allLessons = data.books.flatMap(b => b.lessons);
-    const published = allLessons.filter(l => l.status === "published").length;
-    const total = allLessons.length;
-
-    const strip = document.getElementById("progressStrip");
-    strip.innerHTML = `
-      <div class="stat"><span class="n">${data.books.length}</span><span class="l">冊</span></div>
-      <div class="stat"><span class="n">${total}</span><span class="l">課總數</span></div>
-      <div class="stat"><span class="n">${published}</span><span class="l">已上架</span></div>
-    `;
-  }
-
-  function renderBooks(data) {
-    const wrap = document.getElementById("bookList");
-    wrap.innerHTML = "";
-
-    data.books.forEach(book => {
-      const publishedCount = book.lessons.filter(l => l.status === "published").length;
-      const total = book.lessons.length;
-      const pct = total ? Math.round((publishedCount / total) * 100) : 0;
-
-      const card = document.createElement("div");
-      card.className = "book-card";
-
-      const head = document.createElement("button");
-      head.type = "button";
-      head.className = "book-head";
-      head.innerHTML = `
-        <span class="book-num">${book.id.replace("b", "")}</span>
-        <span class="book-meta">
-          <span class="title">${escapeHtml(book.title)}</span>
-          <span class="sub">共 ${total} 課 · 已上架 ${publishedCount} 課</span>
-        </span>
-        <span class="book-progress-bar"><span class="fill" style="width:${pct}%"></span></span>
-        <span class="chevron">▸</span>
+      const strip = document.getElementById("progressStrip");
+      strip.innerHTML = `
+        <div class="stat"><span class="n">${data.books.length}</span><span class="l">冊</span></div>
+        <div class="stat"><span class="n">${total}</span><span class="l">課總數</span></div>
+        <div class="stat"><span class="n">${published}</span><span class="l">已上架</span></div>
       `;
-      head.addEventListener("click", () => card.classList.toggle("expanded"));
+    }
 
-      const list = document.createElement("div");
-      list.className = "lesson-list";
-      book.lessons.forEach((lesson, i) => {
-        const isPublished = lesson.status === "published";
-        const displayTitle = isPublished ? lesson.title : "尚未上架";
-        const href = isPublished
-          ? `lesson.html?book=${book.id}&lesson=${lesson.id}`
-          : `coming-soon.html?book=${book.id}&lesson=${lesson.id}`;
+    function renderBooks(data) {
+      const wrap = document.getElementById("bookList");
+      wrap.innerHTML = "";
 
-        const a = document.createElement("a");
-        a.className = "lesson-item" + (isPublished ? "" : " is-draft");
-        a.href = href;
-        a.innerHTML = `
-          <div class="l-num">${book.id.toUpperCase()} ${lesson.id.toUpperCase()}</div>
-          <div class="l-title">${escapeHtml(displayTitle)}</div>
+      data.books.forEach(book => {
+        const publishedCount = book.lessons.filter(l => l.status === "published").length;
+        const total = book.lessons.length;
+        const pct = total ? Math.round((publishedCount / total) * 100) : 0;
+
+        const card = document.createElement("div");
+        card.className = "book-card";
+
+        const head = document.createElement("button");
+        head.type = "button";
+        head.className = "book-head";
+        head.innerHTML = `
+          <span class="book-num">${book.id.replace("b", "")}</span>
+          <span class="book-meta">
+            <span class="title">${escapeHtml(book.title)}</span>
+            <span class="sub">共 ${total} 課 · 已上架 ${publishedCount} 課</span>
+          </span>
+          <span class="book-progress-bar"><span class="fill" style="width:${pct}%"></span></span>
+          <span class="chevron">▸</span>
         `;
-        list.appendChild(a);
-      });
+        head.addEventListener("click", () => card.classList.toggle("expanded"));
 
-      card.appendChild(head);
-      card.appendChild(list);
-      wrap.appendChild(card);
-    });
+        const list = document.createElement("div");
+        list.className = "lesson-list";
+        book.lessons.forEach((lesson, i) => {
+          const isPublished = lesson.status === "published";
+          const displayTitle = isPublished ? lesson.title : "尚未上架";
+          const href = isPublished
+            ? `lesson.html?book=${book.id}&lesson=${lesson.id}`
+            : `coming-soon.html?book=${book.id}&lesson=${lesson.id}`;
 
-    // 預設展開第一個有已發布課程的冊次，方便使用者立即看到內容
-    const firstWithPublished = data.books.findIndex(b => b.lessons.some(l => l.status === "published"));
-    const target = wrap.children[firstWithPublished >= 0 ? firstWithPublished : 0];
-    if (target) target.classList.add("expanded");
-  }
-
-  function renderTools(data) {
-    const wrap = document.getElementById("toolGrid");
-    wrap.innerHTML = "";
-    data.cross_lesson_tools.forEach(tool => {
-      const comingSoon = tool.status === "coming_soon";
-      const a = document.createElement("a");
-      a.className = "tool-card";
-      a.href = comingSoon ? "#" : (tool.url || `${tool.id}.html`);
-      if (comingSoon) {
-        a.addEventListener("click", e => e.preventDefault());
-      }
-      a.innerHTML = `
-        ${comingSoon ? '<span class="badge">即將推出</span>' : ""}
-        <div class="t-title">${escapeHtml(tool.title)}</div>
-      `;
-      wrap.appendChild(a);
-    });
-  }
-</script>
-<script src="js/notepad.js"></script>
-<script>Notepad.mount();</script>
-
-<!-- 標註工具樣式已移至 css/style.css -->
-
-<!-- 標註工具 HTML -->
-<div class="annotation-toolbar">
-  <button id="toggleAnnotation" class="annotation-btn annotation-mode">標註模式</button>
-  <div class="color-palette">
-    <div class="color-option selected" data-color="#000000" style="background: #000000"></div>
-    <div class="color-option" data-color="#FF0000" style="background: #FF0000"></div>
-    <div class="color-option" data-color="#0000FF" style="background: #0000FF"></div>
-    <div class="color-option" data-color="#00FF00" style="background: #00FF00"></div>
-  </div>
-  <button id="highlightBtn" class="annotation-btn highlight-btn">螢光筆</button>
-  <button id="textBtn" class="annotation-btn text-btn">添加文字</button>
-  <button id="exportBtn" class="annotation-btn export-btn">導出截圖</button>
-</div>
-<canvas id="annotationCanvas" class="annotation-canvas"></canvas>
-
-<!-- 標註工具 JavaScript -->
-<script src="js/annotation-tool.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    // 工具列事件綁定
-    document.getElementById('toggleAnnotation').addEventListener('click', () => {
-      const newText = AnnotationTool.toggleMode();
-      document.getElementById('toggleAnnotation').textContent = newText;
-    });
-    
-    document.querySelectorAll('.color-option').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        AnnotationTool.selectColor(e.target.dataset.color);
-        document.querySelectorAll('.color-option').forEach(b => 
-          b.classList.toggle('selected', b === e.target)
-        );
-      });
-    });
-    
-    document.getElementById('highlightBtn').addEventListener('click', () => {
-      const newColor = AnnotationTool.toggleHighlight();
-      document.getElementById('highlightBtn').style.backgroundColor = newColor;
-    });
-    
-    document.getElementById('textBtn').addEventListener('click', () => {
-      AnnotationTool.addTextAnnotation();
-    });
-    
-    document.querySelectorAll('.shape-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        AnnotationTool.setShape(e.target.dataset.shape);
-        document.querySelectorAll('.shape-btn').forEach(b => 
-          b.classList.toggle('active', b === e.target)
-        );
-      });
-    });
-    
-    document.getElementById('exportBtn').addEventListener('click', () => {
-      AnnotationTool.exportScreenshot()
-        .then(dataUrl => {
-          const link = document.createElement('a');
-          link.download = '教材標註-' + new Date().toISOString().slice(0, 10) + '.png';
-          link.href = dataUrl;
-          link.click();
-        })
-        .catch(err => {
-          console.error('導出失敗:', err);
-          alert('截圖導出失敗: ' + err.message);
+          const a = document.createElement("a");
+          a.className = "lesson-item" + (isPublished ? "" : " is-draft");
+          a.href = href;
+          a.innerHTML = `
+            <div class="l-num">${book.id.toUpperCase()} ${lesson.id.toUpperCase()}</div>
+            <div class="l-title">${escapeHtml(displayTitle)}</div>
+          `;
+          list.appendChild(a);
         });
+
+        card.appendChild(head);
+        card.appendChild(list);
+        wrap.appendChild(card);
+      });
+
+      // 預設展開第一個有已發布課程的冊次，方便使用者立即看到內容
+      const firstWithPublished = data.books.findIndex(b => b.lessons.some(l => l.status === "published"));
+      const target = wrap.children[firstWithPublished >= 0 ? firstWithPublished : 0];
+      if (target) target.classList.add("expanded");
+    }
+
+    function renderTools(data) {
+      const wrap = document.getElementById("toolGrid");
+      wrap.innerHTML = "";
+      data.cross_lesson_tools.forEach(tool => {
+        const comingSoon = tool.status === "coming_soon";
+        const a = document.createElement("a");
+        a.className = "tool-card";
+        a.href = comingSoon ? "#" : (tool.url || `${tool.id}.html`);
+        if (comingSoon) {
+          a.addEventListener("click", e => e.preventDefault());
+        }
+        a.innerHTML = `
+          ${comingSoon ? '<span class="badge">即將推出</span>' : ""}
+          <div class="t-title">${escapeHtml(tool.title)}</div>
+        `;
+        wrap.appendChild(a);
+      });
+    }
+  </script>
+  
+  <script src="js/notepad.js"></script>
+  <script>Notepad.mount();</script>
+
+  <!-- ===== 標註工具組件 (Annotation Tool) ===== -->
+  <!-- 1. 浮動按鈕 (FAB) -->
+  <button id="annotationFab" class="annotation-fab">✏️</button>
+
+  <!-- 2. 標註工具面板 -->
+  <div id="annotationPanel" class="annotation-toolbar">
+    <button id="toggleAnnotation" class="annotation-btn annotation-mode">標註模式</button>
+    <div class="color-palette">
+      <div class="color-option selected" data-color="#000000" style="background: #000000"></div>
+      <div class="color-option" data-color="#FF0000" style="background: #FF0000"></div>
+      <div class="color-option" data-color="#0000FF" style="background: #0000FF"></div>
+      <div class="color-option" data-color="#00FF00" style="background: #00FF00"></div>
+    </div>
+    <button id="highlightBtn" class="annotation-btn highlight-btn">螢光筆</button>
+    <button id="textBtn" class="annotation-btn text-btn">添加文字</button>
+    <button id="exportBtn" class="annotation-btn export-btn">導出截圖</button>
+  </div>
+
+  <!-- 3. 畫布區域 -->
+  <canvas id="annotationCanvas" class="annotation-canvas"></canvas>
+
+  <!-- 4. 標註工具 JavaScript 與事件初始化 -->
+  <script src="js/annotation-tool.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // FAB 點擊開關面板邏輯
+      const fab = document.getElementById('annotationFab');
+      const panel = document.getElementById('annotationPanel');
+      if (fab && panel) {
+        fab.addEventListener('click', () => {
+          panel.classList.toggle('active');
+        });
+      }
+
+      // 工具列事件綁定
+      document.getElementById('toggleAnnotation').addEventListener('click', () => {
+        const newText = AnnotationTool.toggleMode();
+        document.getElementById('toggleAnnotation').textContent = newText;
+      });
+      
+      document.querySelectorAll('.color-option').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          AnnotationTool.selectColor(e.target.dataset.color);
+          document.querySelectorAll('.color-option').forEach(b => 
+            b.classList.toggle('selected', b === e.target)
+          );
+        });
+      });
+      
+      document.getElementById('highlightBtn').addEventListener('click', () => {
+        const newColor = AnnotationTool.toggleHighlight();
+        document.getElementById('highlightBtn').style.backgroundColor = newColor;
+      });
+      
+      document.getElementById('textBtn').addEventListener('click', () => {
+        AnnotationTool.addTextAnnotation();
+      });
+      
+      document.querySelectorAll('.shape-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          AnnotationTool.setShape(e.target.dataset.shape);
+          document.querySelectorAll('.shape-btn').forEach(b => 
+            b.classList.toggle('active', b === e.target)
+          );
+        });
+      });
+      
+      document.getElementById('exportBtn').addEventListener('click', () => {
+        AnnotationTool.exportScreenshot()
+          .then(dataUrl => {
+            const link = document.createElement('a');
+            link.download = '教材標註-' + new Date().toISOString().slice(0, 10) + '.png';
+            link.href = dataUrl;
+            link.click();
+          })
+          .catch(err => {
+            console.error('導出失敗:', err);
+            alert('截圖導出失敗: ' + err.message);
+          });
+      });
     });
-  });
-</script>
+  </script>
 </body>
 </html>
