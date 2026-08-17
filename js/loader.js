@@ -7,7 +7,7 @@
    - getUrlParam：讀取網址參數
    - fetchLessonData：抓取單一課程 json
    - fetchAllPublishedLessons：抓取 index.json 裡所有已發布課程的完整資料
-     （這是 vocab-bank.html / phrase-bank.html / grammar-bank.html 之後會用到的入口）
+   - 自動掛載：全站 Notepad 便籤與 AnnotationTool 標註工具
 =========================================================== */
 
 const Loader = (function () {
@@ -144,6 +144,50 @@ const Loader = (function () {
       // localStorage 可能因隱私模式或空間不足而寫入失敗，安靜忽略即可
     }
   }
+
+  // ===== 自動動態載入全站共用工具 (Notepad & Annotation Tool) =====
+  (function initGlobalTools() {
+    function loadScript(src) {
+      return new Promise((resolve, reject) => {
+        // 避免重複載入同一支腳本
+        if (document.querySelector(`script[src="${src}"]`)) {
+          resolve();
+          return;
+        }
+        const script = document.createElement('script');
+        script.src = src;
+        script.onload = resolve;
+        script.onerror = reject;
+        document.head.appendChild(script);
+      });
+    }
+
+    const startMounting = () => {
+      // 1. 載入截圖依賴庫
+      loadScript('https://html2canvas.hertzen.com/dist/html2canvas.min.js')
+        .catch(() => console.warn('html2canvas 載入失敗'));
+
+      // 2. 載入並掛載便籤工具
+      loadScript('js/notepad.js').then(() => {
+        if (window.Notepad && typeof window.Notepad.mount === 'function') {
+          window.Notepad.mount();
+        }
+      }).catch(err => console.warn('Notepad 載入失敗:', err));
+
+      // 3. 載入並掛載繪圖標註工具
+      loadScript('js/annotation-tool.js').then(() => {
+        if (window.AnnotationTool && typeof window.AnnotationTool.mount === 'function') {
+          window.AnnotationTool.mount();
+        }
+      }).catch(err => console.warn('AnnotationTool 載入失敗:', err));
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', startMounting);
+    } else {
+      startMounting();
+    }
+  })();
 
   return {
     escapeHtml,
