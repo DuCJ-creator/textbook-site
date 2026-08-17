@@ -1718,13 +1718,13 @@
           "id": "b1l1-s001",
           "sentence": "In this month’s Longteng Senior High School News, our reporter Jeremy *interviews* three students about some memorable first-time experiences in their lives.",
           "type": "simple",
-          "pattern": "S + Vt + O (imperative; with S being \"you\")"
+          "pattern": "S + Vt + O"
         },
         {
           "id": "b1l1-s002",
           "sentence": "*Read* their replies below.",
           "type": "simple",
-          "pattern": "Imperative sentence (S + Vt + O)"
+          "pattern": "Imperative sentence (S + Vt + O)  (imperative; with S being \"you\")"
         },
         {
           "id": "b1l1-s003",
