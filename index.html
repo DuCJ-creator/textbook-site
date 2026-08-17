@@ -6,11 +6,7 @@
 <title>Shirley Du老師的高中英文充電站</title>
 <link rel="stylesheet" href="css/style.css" />
 <style>
-  /* ===== Header（品牌識別，與 lesson.html 一致） ===== */
-  .site-head {
-    background: linear-gradient(135deg, var(--accent-dark), var(--accent));
-    color: #fff;
-    padding: 44px 20px 36px;
+  /* 臨時過渡樣式（將移入style.css） */
     border-radius: 0 0 28px 28px;
   }
   .site-head .inner { max-width: 1040px; margin: 0 auto; }
@@ -188,6 +184,7 @@
 
 <script src="js/loader.js"></script>
 <script src="js/external-viewer.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 <script>
   const INDEX_URL = "data/index.json";
 
@@ -316,5 +313,75 @@
 </script>
 <script src="js/notepad.js"></script>
 <script>Notepad.mount();</script>
+
+<!-- 標註工具樣式已移至 css/style.css -->
+
+<!-- 標註工具 HTML -->
+<div class="annotation-toolbar">
+  <button id="toggleAnnotation" class="annotation-btn annotation-mode">標註模式</button>
+  <div class="color-palette">
+    <div class="color-option selected" data-color="#000000" style="background: #000000"></div>
+    <div class="color-option" data-color="#FF0000" style="background: #FF0000"></div>
+    <div class="color-option" data-color="#0000FF" style="background: #0000FF"></div>
+    <div class="color-option" data-color="#00FF00" style="background: #00FF00"></div>
+  </div>
+  <button id="highlightBtn" class="annotation-btn highlight-btn">螢光筆</button>
+  <button id="textBtn" class="annotation-btn text-btn">添加文字</button>
+  <button id="exportBtn" class="annotation-btn export-btn">導出截圖</button>
+</div>
+<canvas id="annotationCanvas" class="annotation-canvas"></canvas>
+
+<!-- 標註工具 JavaScript -->
+<script src="js/annotation-tool.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 工具列事件綁定
+    document.getElementById('toggleAnnotation').addEventListener('click', () => {
+      const newText = AnnotationTool.toggleMode();
+      document.getElementById('toggleAnnotation').textContent = newText;
+    });
+    
+    document.querySelectorAll('.color-option').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        AnnotationTool.selectColor(e.target.dataset.color);
+        document.querySelectorAll('.color-option').forEach(b => 
+          b.classList.toggle('selected', b === e.target)
+        );
+      });
+    });
+    
+    document.getElementById('highlightBtn').addEventListener('click', () => {
+      const newColor = AnnotationTool.toggleHighlight();
+      document.getElementById('highlightBtn').style.backgroundColor = newColor;
+    });
+    
+    document.getElementById('textBtn').addEventListener('click', () => {
+      AnnotationTool.addTextAnnotation();
+    });
+    
+    document.querySelectorAll('.shape-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        AnnotationTool.setShape(e.target.dataset.shape);
+        document.querySelectorAll('.shape-btn').forEach(b => 
+          b.classList.toggle('active', b === e.target)
+        );
+      });
+    });
+    
+    document.getElementById('exportBtn').addEventListener('click', () => {
+      AnnotationTool.exportScreenshot()
+        .then(dataUrl => {
+          const link = document.createElement('a');
+          link.download = '教材標註-' + new Date().toISOString().slice(0, 10) + '.png';
+          link.href = dataUrl;
+          link.click();
+        })
+        .catch(err => {
+          console.error('導出失敗:', err);
+          alert('截圖導出失敗: ' + err.message);
+        });
+    });
+  });
+</script>
 </body>
 </html>
