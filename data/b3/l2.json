@@ -465,12 +465,70 @@
     "items": []
   },
   "grammar": {
-    "points": [],
+    "points": [
+      {
+        "id": "b3l2-g1",
+        "title": "not…until 直到...才... (注意主動詞的搭配使用)",
+        "examples": [
+          "Emily doesn’t leave the office until she finishes her work.",
+          "People don’t realize the importance of good health until they become sick."
+        ]
+      },
+      {
+        "id": "b3l2-g2",
+        "title": "comparison: that of…/those of… 代名詞 that/those用於比較",
+        "examples": [
+          "The climate of this region is milder than that of the northern territories."
+        ]
+      },
+      {
+        "id": "b3l2-g3",
+        "title": "comparison: that of…/those of… 代名詞 that/those用於比較",
+        "examples": [
+          "The price of this car is nearly as high as that of a small apartment."
+        ]
+      },
+      {
+        "id": "b3l2-g4",
+        "title": "comparison: that of…/those of… 代名詞 that/those用於比較",
+        "examples": [
+          "The legal system of the country is similar to that of its former colonizer."
+        ]
+      },
+      {
+        "id": "b3l2-g5",
+        "title": "comparison: that of…/those of… 代名詞 that/those用於比較",
+        "examples": [
+          "The challenges faced by our generation are very different from those of our parents'."
+        ]
+      },
+      {
+        "id": "b3l2-g6",
+        "title": "comparison: that of…/those of… 代名詞 that/those用於比較",
+        "examples": [
+          "The design of the new model is exactly the same as that of the old one."
+        ]
+      },
+      {
+        "id": "b3l2-g7",
+        "title": "comparison: that of…/those of… 代名詞 that/those用於比較",
+        "examples": [
+          "The proposals we received are much more innovative than those of last year."
+        ]
+      },
+      {
+        "id": "b3l2-g8",
+        "title": "comparison: that of…/those of… 代名詞 that/those用於比較",
+        "examples": [
+          "The company's profits have soared, while those of the entire industry have remained stagnant."
+        ]
+      }
+    ],
     "sentence_structures": {
       "items": []
     }
   },
   "text_genre": {
-    "raw_text": ""
+    "raw_text": "This expository text analyzes the results of the marshmallow challenge, a team exercise to build the tallest free-standing structure from spaghetti, tape, and a marshmallow. It reveals that kindergarteners consistently outperform most adult groups, and explores how their iterative, prototype-driven approach succeeds where adults' tendency to over-plan and seek a single perfect design often fails.\nA Venn diagram is commonly used to make comparisons and contrast between two items/groups. The overlapped part is for similarities."
   }
 }

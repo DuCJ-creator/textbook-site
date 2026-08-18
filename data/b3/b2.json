@@ -1,0 +1,46 @@
+{
+  "book": "B3",
+  "lesson": "B2",
+  "title": "",
+  "status": "draft",
+  "vocabulary": {
+    "rows": []
+  },
+  "phrases": {
+    "items": [
+      {
+        "id": "b3b2-p001",
+        "phrase": "a stick of",
+        "pos": "ph.",
+        "zh": "一根……",
+        "example_en": "He found a stick of chalk.",
+        "example_zh": "他找到一根粉筆。"
+      },
+      {
+        "id": "b3b2-p002",
+        "phrase": "a yard of string",
+        "pos": "ph.",
+        "zh": "一碼長的繩子",
+        "example_en": "Each team received a yard of string.",
+        "example_zh": "每組都拿到一碼長的繩子。"
+      },
+      {
+        "id": "b3b2-p003",
+        "phrase": "a roll of tape",
+        "pos": "ph.",
+        "zh": "一捲膠帶",
+        "example_en": "We used a roll of tape for the model.",
+        "example_zh": "我們用一捲膠帶製作模型。"
+      }
+    ]
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": []
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}
