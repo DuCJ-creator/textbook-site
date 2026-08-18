@@ -392,9 +392,9 @@
             "example": "The new policy aims to improve economic stability."
           },
           {
-            "en": "unstability",
-            "zh": "不穩定；不穩定性（較少見；通常用 instability）",
-            "example": "The structure showed signs of unstability during the test."
+            "en": "instability",
+            "zh": "不穩定；不穩定性",
+            "example": "The structure showed signs of instability during the test."
           }
         ],
         "adj": [
@@ -525,7 +525,152 @@
       }
     ],
     "sentence_structures": {
-      "items": []
+      "items": [
+        {
+          "id": "b3l2-s001",
+          "sentence": "How *can* twenty sticks of dry spaghetti, a yard of tape, a yard of string, and one marshmallow *help* build a stronger team?",
+          "type": "simple",
+          "pattern": "Interrogative sentence (S + Vt + O)"
+        },
+        {
+          "id": "b3l2-s002",
+          "sentence": "An innovative team-building exercise known as the Marshmallow Challenge *promises* to do just that.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b3l2-s003",
+          "sentence": "In this challenge, with only the materials mentioned above, teams *need* to build the tallest free-standing structure capable of supporting the weight of one marshmallow at the top.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b3l2-s004",
+          "sentence": "With only 18 minutes to complete the task, the teams *must learn* to collaborate quickly.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b3l2-s005",
+          "sentence": "The Marshmallow Challenge, promoted by Canadian technology expert Tom Wujec, *has been conducted* around the world with architects and engineers, CEOs, lawyers, business graduates, and even kindergarteners.",
+          "type": "simple",
+          "pattern": "S + Vt + O (with Passive Transformation)"
+        },
+        {
+          "id": "b3l2-s006",
+          "sentence": "Over the years the challenge *has produced* some surprising results.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b3l2-s007",
+          "sentence": "In Wujec’s study, the average height of the structures constructed *was* 20 inches.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b3l2-s008",
+          "sentence": "The group that built the highest structure *was*, as expected, architects and engineers.",
+          "type": "complex",
+          "pattern": "Relative clause (that...) + S + Vl + C"
+        },
+        {
+          "id": "b3l2-s009",
+          "sentence": "CEOs *performed* slightly better than average, coming in third.",
+          "type": "simple",
+          "pattern": "S + Vi + Participle clause"
+        },
+        {
+          "id": "b3l2-s010",
+          "sentence": "Lawyers, on the other hand, *performed* below average, ranking second to last.",
+          "type": "simple",
+          "pattern": "S + Vi + Participle clause"
+        },
+        {
+          "id": "b3l2-s011",
+          "sentence": "And despite working to create the best plan, business graduates *performed* the worst.",
+          "type": "simple",
+          "pattern": "S + Vi"
+        },
+        {
+          "id": "b3l2-s012",
+          "sentence": "Amazingly, kindergarteners *outperformed* most of the adult teams, achieving the second-best performance.",
+          "type": "simple",
+          "pattern": "S + Vt + O + Participle clause"
+        },
+        {
+          "id": "b3l2-s013",
+          "sentence": "The impressive performance of the kindergarten group, whose structures were taller than those of most adult teams, *can be explained* by several reasons related to their unique way of working.",
+          "type": "complex",
+          "pattern": "Relative clause (whose...) + Passive (S + be + p.p.)"
+        },
+        {
+          "id": "b3l2-s014",
+          "sentence": "One reason *is* that kids usually get started with what has been given to them right away, whereas adults usually don’t start putting the structure together until they have spent most of the time planning.",
+          "type": "complex",
+          "pattern": "Noun clause (that...) + Adverbial clauses (whereas... / until...)"
+        },
+        {
+          "id": "b3l2-s015",
+          "sentence": "This *leaves* no time to adjust the design if it cannot support the marshmallow.",
+          "type": "complex",
+          "pattern": "Adverbial clause (if...)"
+        },
+        {
+          "id": "b3l2-s016",
+          "sentence": "Another reason *is* that unlike adults, kindergarteners are quicker to change their methods after failed approaches.",
+          "type": "complex",
+          "pattern": "Noun clause (that...)"
+        },
+        {
+          "id": "b3l2-s017",
+          "sentence": "They *rely* on trial and error—if one method doesn’t work, they quickly *move* on to the next.",
+          "type": "compound-complex",
+          "pattern": "Em Dash + Adverbial clause (if...)"
+        },
+        {
+          "id": "b3l2-s018",
+          "sentence": "This approach *gives* them immediate feedback about what design elements work to give their structure height and stability.",
+          "type": "complex",
+          "pattern": "S + Vt + iO + dO + Noun clause (what...)"
+        },
+        {
+          "id": "b3l2-s019",
+          "sentence": "Still another reason for their success *is* that children tend to collaborate freely and naturally.",
+          "type": "complex",
+          "pattern": "Noun clause (that...)"
+        },
+        {
+          "id": "b3l2-s020",
+          "sentence": "They *don’t waste* time deciding who is in charge.",
+          "type": "complex",
+          "pattern": "Noun clause (who...)"
+        },
+        {
+          "id": "b3l2-s021",
+          "sentence": "Instead, they *are* more focused on working together to figure out how to build the tallest structure.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b3l2-s022",
+          "sentence": "The Marshmallow Challenge *teaches* us that age and experience are not the only routes to success.",
+          "type": "complex",
+          "pattern": "S + Vt + iO + Noun clause (that...)"
+        },
+        {
+          "id": "b3l2-s023",
+          "sentence": "In order to solve problems, we *must roll up* our sleeves and *get down* to work right away, *explore* and *experiment* with new ideas, and *collaborate* effectively.",
+          "type": "simple",
+          "pattern": "S + Vt + O (Compound verb)"
+        },
+        {
+          "id": "b3l2-s024",
+          "sentence": "In this way, we *can* surely *keep* the marshmallow at the top.",
+          "type": "simple",
+          "pattern": "S + Vt + O + OC"
+        }
+      ]
     }
   },
   "text_genre": {

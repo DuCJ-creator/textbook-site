@@ -31,6 +31,1934 @@
         "zh": "一捲膠帶",
         "example_en": "We used a roll of tape for the model.",
         "example_zh": "我們用一捲膠帶製作模型。"
+      },
+      {
+        "id": "b3b2-p004",
+        "phrase": "team-building exercise",
+        "pos": "ph.",
+        "zh": "團隊建立活動",
+        "example_en": "The game is a useful team-building exercise.",
+        "example_zh": "這個遊戲是一項實用的團隊建立活動。"
+      },
+      {
+        "id": "b3b2-p005",
+        "phrase": "known as",
+        "pos": "ph.",
+        "zh": "被稱為；以……聞名",
+        "example_en": "The city is known as the Garden City.",
+        "example_zh": "這座城市被稱為花園城市。"
+      },
+      {
+        "id": "b3b2-p006",
+        "phrase": "promise to do",
+        "pos": "ph.",
+        "zh": "答應做……",
+        "example_en": "He promised to finish the work today.",
+        "example_zh": "他答應今天完成工作。"
+      },
+      {
+        "id": "b3b2-p007",
+        "phrase": "free-standing structure",
+        "pos": "ph.",
+        "zh": "獨立式結構",
+        "example_en": "The tower is a free-standing structure.",
+        "example_zh": "這座塔是獨立式結構。"
+      },
+      {
+        "id": "b3b2-p008",
+        "phrase": "capable of",
+        "pos": "ph.",
+        "zh": "有能力……",
+        "example_en": "The bridge is capable of carrying trucks.",
+        "example_zh": "這座橋能承載卡車。"
+      },
+      {
+        "id": "b3b2-p009",
+        "phrase": "support the weight of",
+        "pos": "ph.",
+        "zh": "支撐……的重量",
+        "example_en": "The base supports the weight of the tower.",
+        "example_zh": "底座支撐塔的重量。"
+      },
+      {
+        "id": "b3b2-p010",
+        "phrase": "complete the task",
+        "pos": "ph.",
+        "zh": "完成任務",
+        "example_en": "We completed the task before noon.",
+        "example_zh": "我們在中午前完成了任務。"
+      },
+      {
+        "id": "b3b2-p011",
+        "phrase": "do household chores",
+        "pos": "ph.",
+        "zh": "做家事",
+        "example_en": "Children should help do household chores.",
+        "example_zh": "孩子應幫忙做家事。"
+      },
+      {
+        "id": "b3b2-p012",
+        "phrase": "develop a sense of responsibility",
+        "pos": "ph.",
+        "zh": "培養責任感",
+        "example_en": "Chores help children develop a sense of responsibility.",
+        "example_zh": "做家事有助於孩子培養責任感。"
+      },
+      {
+        "id": "b3b2-p013",
+        "phrase": "eye-catching advertisement",
+        "pos": "ph.",
+        "zh": "吸睛的廣告",
+        "example_en": "The company created an eye-catching advertisement.",
+        "example_zh": "公司製作了一則吸睛的廣告。"
+      },
+      {
+        "id": "b3b2-p014",
+        "phrase": "low-paying job",
+        "pos": "ph.",
+        "zh": "低薪工作",
+        "example_en": "He left the low-paying job.",
+        "example_zh": "他離開了那份低薪工作。"
+      },
+      {
+        "id": "b3b2-p015",
+        "phrase": "start one’s own business",
+        "pos": "ph.",
+        "zh": "自行創業",
+        "example_en": "She hopes to start her own business.",
+        "example_zh": "她希望自行創業。"
+      },
+      {
+        "id": "b3b2-p016",
+        "phrase": "influential figure",
+        "pos": "ph.",
+        "zh": "有影響力的人物",
+        "example_en": "She is an influential figure in education.",
+        "example_zh": "她是教育界有影響力的人物。"
+      },
+      {
+        "id": "b3b2-p017",
+        "phrase": "turn in an assignment before the deadline",
+        "pos": "ph.",
+        "zh": "在期限前繳交作業",
+        "example_en": "Please turn in the assignment before the deadline.",
+        "example_zh": "請在期限前繳交作業。"
+      },
+      {
+        "id": "b3b2-p018",
+        "phrase": "with parents’ support and company",
+        "pos": "ph.",
+        "zh": "有父母的支持與陪伴",
+        "example_en": "He succeeded with his parents’ support and company.",
+        "example_zh": "他在父母的支持與陪伴下成功了。"
+      },
+      {
+        "id": "b3b2-p019",
+        "phrase": "face challenges",
+        "pos": "ph.",
+        "zh": "面對挑戰",
+        "example_en": "We must learn to face challenges.",
+        "example_zh": "我們必須學會面對挑戰。"
+      },
+      {
+        "id": "b3b2-p020",
+        "phrase": "used to",
+        "pos": "ph.",
+        "zh": "過去常常……",
+        "example_en": "I used to walk to school.",
+        "example_zh": "我以前常走路上學。"
+      },
+      {
+        "id": "b3b2-p021",
+        "phrase": "king of procrastination",
+        "pos": "ph.",
+        "zh": "拖延大王",
+        "example_en": "My brother calls himself the king of procrastination.",
+        "example_zh": "我弟弟自稱是拖延大王。"
+      },
+      {
+        "id": "b3b2-p022",
+        "phrase": "get rid of a bad habit",
+        "pos": "ph.",
+        "zh": "戒除壞習慣",
+        "example_en": "He is trying to get rid of a bad habit.",
+        "example_zh": "他正努力戒除壞習慣。"
+      },
+      {
+        "id": "b3b2-p023",
+        "phrase": "to-do list",
+        "pos": "ph.",
+        "zh": "待辦事項清單",
+        "example_en": "I wrote the task on my to-do list.",
+        "example_zh": "我把任務寫在待辦事項清單上。"
+      },
+      {
+        "id": "b3b2-p024",
+        "phrase": "make good use of one’s time",
+        "pos": "ph.",
+        "zh": "善用某人的時間",
+        "example_en": "She makes good use of her time after school.",
+        "example_zh": "她善用放學後的時間。"
+      },
+      {
+        "id": "b3b2-p025",
+        "phrase": "science fair",
+        "pos": "ph.",
+        "zh": "科展",
+        "example_en": "Our project won a prize at the science fair.",
+        "example_zh": "我們的專題在科展得獎。"
+      },
+      {
+        "id": "b3b2-p026",
+        "phrase": "come up with",
+        "pos": "ph.",
+        "zh": "想出；提出",
+        "example_en": "The team came up with a solution.",
+        "example_zh": "團隊想出了解決方案。"
+      },
+      {
+        "id": "b3b2-p027",
+        "phrase": "problem-solving idea",
+        "pos": "ph.",
+        "zh": "解決問題的點子",
+        "example_en": "His problem-solving idea impressed the judges.",
+        "example_zh": "他解決問題的點子令評審印象深刻。"
+      },
+      {
+        "id": "b3b2-p028",
+        "phrase": "recycled material",
+        "pos": "ph.",
+        "zh": "回收材料",
+        "example_en": "The model was made from recycled materials.",
+        "example_zh": "模型由回收材料製成。"
+      },
+      {
+        "id": "b3b2-p029",
+        "phrase": "promoted by",
+        "pos": "ph.",
+        "zh": "由……推廣／發起",
+        "example_en": "The event was promoted by the student union.",
+        "example_zh": "這項活動由學生會推廣。"
+      },
+      {
+        "id": "b3b2-p030",
+        "phrase": "conduct a challenge",
+        "pos": "ph.",
+        "zh": "舉辦挑戰活動",
+        "example_en": "The teacher conducted a building challenge.",
+        "example_zh": "老師舉辦了一項建造挑戰。"
+      },
+      {
+        "id": "b3b2-p031",
+        "phrase": "over the years",
+        "pos": "ph.",
+        "zh": "多年來",
+        "example_en": "The program has grown over the years.",
+        "example_zh": "這項計畫多年來持續成長。"
+      },
+      {
+        "id": "b3b2-p032",
+        "phrase": "produce surprising results",
+        "pos": "ph.",
+        "zh": "產生驚人的結果",
+        "example_en": "The simple method produced surprising results.",
+        "example_zh": "這個簡單的方法產生了驚人的結果。"
+      },
+      {
+        "id": "b3b2-p033",
+        "phrase": "as expected",
+        "pos": "ph.",
+        "zh": "如預期地",
+        "example_en": "As expected, the stronger tower won.",
+        "example_zh": "如預期地，較堅固的塔獲勝了。"
+      },
+      {
+        "id": "b3b2-p034",
+        "phrase": "perform slightly better than average",
+        "pos": "ph.",
+        "zh": "表現略高於平均",
+        "example_en": "Our team performed slightly better than average.",
+        "example_zh": "我們隊的表現略高於平均。"
+      },
+      {
+        "id": "b3b2-p035",
+        "phrase": "come in third",
+        "pos": "ph.",
+        "zh": "獲得第三名",
+        "example_en": "She came in third in the race.",
+        "example_zh": "她在比賽中獲得第三名。"
+      },
+      {
+        "id": "b3b2-p036",
+        "phrase": "on the other hand",
+        "pos": "ph.",
+        "zh": "另一方面",
+        "example_en": "The plan is cheap; on the other hand, it is risky.",
+        "example_zh": "這個計畫便宜；另一方面，它有風險。"
+      },
+      {
+        "id": "b3b2-p037",
+        "phrase": "perform below average",
+        "pos": "ph.",
+        "zh": "表現低於平均",
+        "example_en": "The group performed below average.",
+        "example_zh": "該組的表現低於平均。"
+      },
+      {
+        "id": "b3b2-p038",
+        "phrase": "rank second to last",
+        "pos": "ph.",
+        "zh": "排名倒數第二",
+        "example_en": "Our team ranked second to last.",
+        "example_zh": "我們隊排名倒數第二。"
+      },
+      {
+        "id": "b3b2-p039",
+        "phrase": "perform the worst",
+        "pos": "ph.",
+        "zh": "表現最差",
+        "example_en": "This model performed the worst.",
+        "example_zh": "這個模型表現最差。"
+      },
+      {
+        "id": "b3b2-p040",
+        "phrase": "outperform most",
+        "pos": "ph.",
+        "zh": "勝過大多數……",
+        "example_en": "The new design outperformed most competitors.",
+        "example_zh": "新設計勝過大多數競爭者。"
+      },
+      {
+        "id": "b3b2-p041",
+        "phrase": "achieve the second-best performance",
+        "pos": "ph.",
+        "zh": "取得第二佳的表現",
+        "example_en": "They achieved the second-best performance.",
+        "example_zh": "他們取得第二佳的表現。"
+      },
+      {
+        "id": "b3b2-p042",
+        "phrase": "co-founded by",
+        "pos": "ph.",
+        "zh": "由……共同創立",
+        "example_en": "The company was co-founded by two students.",
+        "example_zh": "這家公司由兩名學生共同創立。"
+      },
+      {
+        "id": "b3b2-p043",
+        "phrase": "receive critical acclaim",
+        "pos": "ph.",
+        "zh": "獲得評論界讚譽",
+        "example_en": "The film received critical acclaim.",
+        "example_zh": "這部電影獲得評論界讚譽。"
+      },
+      {
+        "id": "b3b2-p044",
+        "phrase": "densely populated",
+        "pos": "ph.",
+        "zh": "人口稠密的",
+        "example_en": "Taipei is a densely populated city.",
+        "example_zh": "臺北是一座人口稠密的城市。"
+      },
+      {
+        "id": "b3b2-p045",
+        "phrase": "as is the case",
+        "pos": "ph.",
+        "zh": "情況正如……",
+        "example_en": "As is the case with many cities, rent is high here.",
+        "example_zh": "如同許多城市，這裡的房租很高。"
+      },
+      {
+        "id": "b3b2-p046",
+        "phrase": "as is known",
+        "pos": "ph.",
+        "zh": "眾所周知",
+        "example_en": "As is known, exercise is good for health.",
+        "example_zh": "眾所周知，運動有益健康。"
+      },
+      {
+        "id": "b3b2-p047",
+        "phrase": "as the saying goes",
+        "pos": "ph.",
+        "zh": "俗話說",
+        "example_en": "As the saying goes, practice makes perfect.",
+        "example_zh": "俗話說，熟能生巧。"
+      },
+      {
+        "id": "b3b2-p048",
+        "phrase": "oversleep and be late for school",
+        "pos": "ph.",
+        "zh": "睡過頭而上學遲到",
+        "example_en": "He overslept and was late for school.",
+        "example_zh": "他睡過頭而上學遲到。"
+      },
+      {
+        "id": "b3b2-p049",
+        "phrase": "desire to",
+        "pos": "ph.",
+        "zh": "渴望……",
+        "example_en": "She desires to travel abroad.",
+        "example_zh": "她渴望出國旅行。"
+      },
+      {
+        "id": "b3b2-p050",
+        "phrase": "get stuck in heavy traffic",
+        "pos": "ph.",
+        "zh": "困在嚴重車潮中",
+        "example_en": "We got stuck in heavy traffic.",
+        "example_zh": "我們困在嚴重車潮中。"
+      },
+      {
+        "id": "b3b2-p051",
+        "phrase": "despite the fact that",
+        "pos": "ph.",
+        "zh": "儘管……",
+        "example_en": "Despite the fact that it rained, we went out.",
+        "example_zh": "儘管下雨，我們仍出門了。"
+      },
+      {
+        "id": "b3b2-p052",
+        "phrase": "in spite of the fact that",
+        "pos": "ph.",
+        "zh": "儘管……",
+        "example_en": "In spite of the fact that he was tired, he continued.",
+        "example_zh": "儘管疲累，他仍繼續。"
+      },
+      {
+        "id": "b3b2-p053",
+        "phrase": "insist on",
+        "pos": "ph.",
+        "zh": "堅持……",
+        "example_en": "She insisted on finishing the work herself.",
+        "example_zh": "她堅持自己完成工作。"
+      },
+      {
+        "id": "b3b2-p054",
+        "phrase": "go mountain climbing",
+        "pos": "ph.",
+        "zh": "去爬山",
+        "example_en": "We went mountain climbing on Sunday.",
+        "example_zh": "我們星期日去爬山。"
+      },
+      {
+        "id": "b3b2-p055",
+        "phrase": "make a great effort",
+        "pos": "ph.",
+        "zh": "付出極大努力",
+        "example_en": "He made a great effort to improve.",
+        "example_zh": "他付出極大努力求進步。"
+      },
+      {
+        "id": "b3b2-p056",
+        "phrase": "cram school",
+        "pos": "ph.",
+        "zh": "補習班",
+        "example_en": "She goes to cram school after class.",
+        "example_zh": "她放學後去補習班。"
+      },
+      {
+        "id": "b3b2-p057",
+        "phrase": "stand up for",
+        "pos": "ph.",
+        "zh": "支持；捍衛……",
+        "example_en": "We should stand up for what is right.",
+        "example_zh": "我們應該捍衛正確的事。"
+      },
+      {
+        "id": "b3b2-p058",
+        "phrase": "outstanding athlete",
+        "pos": "ph.",
+        "zh": "傑出的運動員",
+        "example_en": "She is an outstanding athlete.",
+        "example_zh": "她是一位傑出的運動員。"
+      },
+      {
+        "id": "b3b2-p059",
+        "phrase": "come in first in the tournament",
+        "pos": "ph.",
+        "zh": "在錦標賽中獲得第一名",
+        "example_en": "Our team came in first in the tournament.",
+        "example_zh": "我們隊在錦標賽中獲得第一名。"
+      },
+      {
+        "id": "b3b2-p060",
+        "phrase": "according to",
+        "pos": "ph.",
+        "zh": "根據……",
+        "example_en": "According to the report, sales increased.",
+        "example_zh": "根據報告，銷售增加了。"
+      },
+      {
+        "id": "b3b2-p061",
+        "phrase": "grade report",
+        "pos": "ph.",
+        "zh": "成績單",
+        "example_en": "My parents read my grade report.",
+        "example_zh": "我的父母看了我的成績單。"
+      },
+      {
+        "id": "b3b2-p062",
+        "phrase": "make some progress",
+        "pos": "ph.",
+        "zh": "取得一些進步",
+        "example_en": "She has made some progress in English.",
+        "example_zh": "她的英文已有一些進步。"
+      },
+      {
+        "id": "b3b2-p063",
+        "phrase": "impressive performance",
+        "pos": "ph.",
+        "zh": "令人印象深刻的表現",
+        "example_en": "The team gave an impressive performance.",
+        "example_zh": "團隊有令人印象深刻的表現。"
+      },
+      {
+        "id": "b3b2-p064",
+        "phrase": "relate to",
+        "pos": "ph.",
+        "zh": "與……有關；理解……",
+        "example_en": "This problem relates to time management.",
+        "example_zh": "這個問題與時間管理有關。"
+      },
+      {
+        "id": "b3b2-p065",
+        "phrase": "get started",
+        "pos": "ph.",
+        "zh": "開始",
+        "example_en": "Let’s get started now.",
+        "example_zh": "我們現在開始吧。"
+      },
+      {
+        "id": "b3b2-p066",
+        "phrase": "right away",
+        "pos": "ph.",
+        "zh": "立刻",
+        "example_en": "Please answer the email right away.",
+        "example_zh": "請立刻回覆電子郵件。"
+      },
+      {
+        "id": "b3b2-p067",
+        "phrase": "leave no time to",
+        "pos": "ph.",
+        "zh": "沒有時間……",
+        "example_en": "The schedule left us no time to rest.",
+        "example_zh": "行程讓我們沒有時間休息。"
+      },
+      {
+        "id": "b3b2-p068",
+        "phrase": "lack sleep",
+        "pos": "ph.",
+        "zh": "睡眠不足",
+        "example_en": "Students who lack sleep cannot focus well.",
+        "example_zh": "睡眠不足的學生難以專心。"
+      },
+      {
+        "id": "b3b2-p069",
+        "phrase": "unreasonable workload",
+        "pos": "ph.",
+        "zh": "不合理的工作量",
+        "example_en": "The workers complained about the unreasonable workload.",
+        "example_zh": "員工抱怨不合理的工作量。"
+      },
+      {
+        "id": "b3b2-p070",
+        "phrase": "nothing but",
+        "pos": "ph.",
+        "zh": "只有；只不過是",
+        "example_en": "He did nothing but play games.",
+        "example_zh": "他只顧著玩遊戲。"
+      },
+      {
+        "id": "b3b2-p071",
+        "phrase": "a con man",
+        "pos": "ph.",
+        "zh": "騙子",
+        "example_en": "The police arrested a con man.",
+        "example_zh": "警方逮捕了一名騙子。"
+      },
+      {
+        "id": "b3b2-p072",
+        "phrase": "prepare for the midterm exam",
+        "pos": "ph.",
+        "zh": "準備期中考",
+        "example_en": "We are preparing for the midterm exam.",
+        "example_zh": "我們正在準備期中考。"
+      },
+      {
+        "id": "b3b2-p073",
+        "phrase": "for 3 hours straight",
+        "pos": "ph.",
+        "zh": "連續三小時",
+        "example_en": "He studied for three hours straight.",
+        "example_zh": "他連續讀了三小時。"
+      },
+      {
+        "id": "b3b2-p074",
+        "phrase": "play online games",
+        "pos": "ph.",
+        "zh": "玩線上遊戲",
+        "example_en": "They play online games after school.",
+        "example_zh": "他們放學後玩線上遊戲。"
+      },
+      {
+        "id": "b3b2-p075",
+        "phrase": "be busy finishing a task",
+        "pos": "ph.",
+        "zh": "忙著完成任務",
+        "example_en": "She is busy finishing a task.",
+        "example_zh": "她正忙著完成任務。"
+      },
+      {
+        "id": "b3b2-p076",
+        "phrase": "spend the weekend",
+        "pos": "ph.",
+        "zh": "度過週末",
+        "example_en": "We spent the weekend at home.",
+        "example_zh": "我們在家度過週末。"
+      },
+      {
+        "id": "b3b2-p077",
+        "phrase": "attend a seminar",
+        "pos": "ph.",
+        "zh": "參加研討會",
+        "example_en": "I attended a seminar on AI.",
+        "example_zh": "我參加了一場人工智慧研討會。"
+      },
+      {
+        "id": "b3b2-p078",
+        "phrase": "attend a concert",
+        "pos": "ph.",
+        "zh": "參加音樂會",
+        "example_en": "We attended a concert last night.",
+        "example_zh": "我們昨晚參加了音樂會。"
+      },
+      {
+        "id": "b3b2-p079",
+        "phrase": "download an app",
+        "pos": "ph.",
+        "zh": "下載應用程式",
+        "example_en": "I downloaded an app for learning English.",
+        "example_zh": "我下載了一個學英文的應用程式。"
+      },
+      {
+        "id": "b3b2-p080",
+        "phrase": "morning assembly",
+        "pos": "ph.",
+        "zh": "朝會",
+        "example_en": "The principal spoke at the morning assembly.",
+        "example_zh": "校長在朝會上致詞。"
+      },
+      {
+        "id": "b3b2-p081",
+        "phrase": "basketball court",
+        "pos": "ph.",
+        "zh": "籃球場",
+        "example_en": "The students met on the basketball court.",
+        "example_zh": "學生們在籃球場集合。"
+      },
+      {
+        "id": "b3b2-p082",
+        "phrase": "solve the problem",
+        "pos": "ph.",
+        "zh": "解決問題",
+        "example_en": "We worked together to solve the problem.",
+        "example_zh": "我們合作解決問題。"
+      },
+      {
+        "id": "b3b2-p083",
+        "phrase": "student union",
+        "pos": "ph.",
+        "zh": "學生會",
+        "example_en": "The student union organized the event.",
+        "example_zh": "學生會舉辦了這項活動。"
+      },
+      {
+        "id": "b3b2-p084",
+        "phrase": "come up with a possible solution to the problem",
+        "pos": "ph.",
+        "zh": "想出問題的可行解法",
+        "example_en": "They came up with a possible solution to the problem.",
+        "example_zh": "他們想出問題的可行解法。"
+      },
+      {
+        "id": "b3b2-p085",
+        "phrase": "a blockbuster movie",
+        "pos": "ph.",
+        "zh": "賣座電影",
+        "example_en": "The blockbuster movie broke records.",
+        "example_zh": "這部賣座電影打破了紀錄。"
+      },
+      {
+        "id": "b3b2-p086",
+        "phrase": "end with an unexpected twist",
+        "pos": "ph.",
+        "zh": "以意外轉折作結",
+        "example_en": "The story ended with an unexpected twist.",
+        "example_zh": "故事以意外轉折作結。"
+      },
+      {
+        "id": "b3b2-p087",
+        "phrase": "leave sth unresolved for sb to figure out",
+        "pos": "ph.",
+        "zh": "留下未解之事讓某人推敲",
+        "example_en": "The film leaves the mystery unresolved for viewers to figure out.",
+        "example_zh": "電影留下未解謎團讓觀眾推敲。"
+      },
+      {
+        "id": "b3b2-p088",
+        "phrase": "check the price tag",
+        "pos": "ph.",
+        "zh": "查看價格標籤",
+        "example_en": "She checked the price tag before buying it.",
+        "example_zh": "她購買前查看了價格標籤。"
+      },
+      {
+        "id": "b3b2-p089",
+        "phrase": "rely on",
+        "pos": "ph.",
+        "zh": "依靠；依賴",
+        "example_en": "Success relies on careful planning.",
+        "example_zh": "成功有賴於仔細規劃。"
+      },
+      {
+        "id": "b3b2-p090",
+        "phrase": "trial and error",
+        "pos": "ph.",
+        "zh": "反覆嘗試；試誤法",
+        "example_en": "We learned through trial and error.",
+        "example_zh": "我們透過反覆嘗試學習。"
+      },
+      {
+        "id": "b3b2-p091",
+        "phrase": "move on the to next",
+        "pos": "ph.",
+        "zh": "繼續進行下一項",
+        "example_en": "After this task, we moved on to the next.",
+        "example_zh": "完成這項任務後，我們繼續下一項。"
+      },
+      {
+        "id": "b3b2-p092",
+        "phrase": "immediate feedback about",
+        "pos": "ph.",
+        "zh": "關於……的即時回饋",
+        "example_en": "The app gives immediate feedback about pronunciation.",
+        "example_zh": "這個應用程式提供發音的即時回饋。"
+      },
+      {
+        "id": "b3b2-p093",
+        "phrase": "tend to",
+        "pos": "ph.",
+        "zh": "往往會；傾向於",
+        "example_en": "People tend to remember stories.",
+        "example_zh": "人們往往會記得故事。"
+      },
+      {
+        "id": "b3b2-p094",
+        "phrase": "waste time doing",
+        "pos": "ph.",
+        "zh": "浪費時間做……",
+        "example_en": "Do not waste time arguing.",
+        "example_zh": "不要浪費時間爭論。"
+      },
+      {
+        "id": "b3b2-p095",
+        "phrase": "be in charge",
+        "pos": "ph.",
+        "zh": "負責",
+        "example_en": "Mia is in charge of the project.",
+        "example_zh": "米亞負責這項專案。"
+      },
+      {
+        "id": "b3b2-p096",
+        "phrase": "more focused on",
+        "pos": "ph.",
+        "zh": "更加專注於……",
+        "example_en": "He is more focused on his studies now.",
+        "example_zh": "他現在更加專注於課業。"
+      },
+      {
+        "id": "b3b2-p097",
+        "phrase": "figure out",
+        "pos": "ph.",
+        "zh": "弄清楚；想出",
+        "example_en": "We need to figure out the answer.",
+        "example_zh": "我們需要想出答案。"
+      },
+      {
+        "id": "b3b2-p098",
+        "phrase": "fascinating book",
+        "pos": "ph.",
+        "zh": "引人入勝的書",
+        "example_en": "This is a fascinating book about space.",
+        "example_zh": "這是一本關於太空的有趣書籍。"
+      },
+      {
+        "id": "b3b2-p099",
+        "phrase": "be influenced by personal opinions",
+        "pos": "ph.",
+        "zh": "受個人意見影響",
+        "example_en": "Judgments may be influenced by personal opinions.",
+        "example_zh": "判斷可能受個人意見影響。"
+      },
+      {
+        "id": "b3b2-p100",
+        "phrase": "be totally objective",
+        "pos": "ph.",
+        "zh": "完全客觀",
+        "example_en": "A judge should be totally objective.",
+        "example_zh": "評審應該完全客觀。"
+      },
+      {
+        "id": "b3b2-p101",
+        "phrase": "stubborn person",
+        "pos": "ph.",
+        "zh": "固執的人",
+        "example_en": "He is a stubborn person who rarely changes his mind.",
+        "example_zh": "他是個很少改變心意的固執之人。"
+      },
+      {
+        "id": "b3b2-p102",
+        "phrase": "change one’s mind",
+        "pos": "ph.",
+        "zh": "改變某人的心意",
+        "example_en": "She changed her mind after our talk.",
+        "example_zh": "談話後她改變了心意。"
+      },
+      {
+        "id": "b3b2-p103",
+        "phrase": "instead of",
+        "pos": "ph.",
+        "zh": "而不是",
+        "example_en": "Walk instead of taking a taxi.",
+        "example_zh": "走路而不要搭計程車。"
+      },
+      {
+        "id": "b3b2-p104",
+        "phrase": "fall off",
+        "pos": "ph.",
+        "zh": "從……掉落",
+        "example_en": "The book fell off the shelf.",
+        "example_zh": "那本書從架上掉了下來。"
+      },
+      {
+        "id": "b3b2-p105",
+        "phrase": "make fun of",
+        "pos": "ph.",
+        "zh": "取笑……",
+        "example_en": "Do not make fun of others.",
+        "example_zh": "不要取笑別人。"
+      },
+      {
+        "id": "b3b2-p106",
+        "phrase": "feel excited about",
+        "pos": "ph.",
+        "zh": "對……感到興奮",
+        "example_en": "She feels excited about the trip.",
+        "example_zh": "她對旅行感到興奮。"
+      },
+      {
+        "id": "b3b2-p107",
+        "phrase": "become rich overnight",
+        "pos": "ph.",
+        "zh": "一夕致富",
+        "example_en": "Few people become rich overnight.",
+        "example_zh": "很少有人能一夕致富。"
+      },
+      {
+        "id": "b3b2-p108",
+        "phrase": "afraid of being kidnapped",
+        "pos": "ph.",
+        "zh": "害怕被綁架",
+        "example_en": "The child was afraid of being kidnapped.",
+        "example_zh": "那個孩子害怕被綁架。"
+      },
+      {
+        "id": "b3b2-p109",
+        "phrase": "had better not",
+        "pos": "ph.",
+        "zh": "最好不要……",
+        "example_en": "You had better not share your password.",
+        "example_zh": "你最好不要分享密碼。"
+      },
+      {
+        "id": "b3b2-p110",
+        "phrase": "replay the video clip",
+        "pos": "ph.",
+        "zh": "重播影片片段",
+        "example_en": "The teacher replayed the video clip.",
+        "example_zh": "老師重播了影片片段。"
+      },
+      {
+        "id": "b3b2-p111",
+        "phrase": "perform a magic trick",
+        "pos": "ph.",
+        "zh": "表演魔術",
+        "example_en": "He performed a magic trick for us.",
+        "example_zh": "他為我們表演魔術。"
+      },
+      {
+        "id": "b3b2-p112",
+        "phrase": "waste time doing trivial things",
+        "pos": "ph.",
+        "zh": "浪費時間做瑣事",
+        "example_en": "Stop wasting time doing trivial things.",
+        "example_zh": "別再浪費時間做瑣事。"
+      },
+      {
+        "id": "b3b2-p113",
+        "phrase": "run errands",
+        "pos": "ph.",
+        "zh": "跑腿辦事",
+        "example_en": "I ran errands for my mother.",
+        "example_zh": "我替媽媽跑腿辦事。"
+      },
+      {
+        "id": "b3b2-p114",
+        "phrase": "prepare for the final exam",
+        "pos": "ph.",
+        "zh": "準備期末考",
+        "example_en": "They are preparing for the final exam.",
+        "example_zh": "他們正在準備期末考。"
+      },
+      {
+        "id": "b3b2-p115",
+        "phrase": "move on to the next episode",
+        "pos": "ph.",
+        "zh": "繼續看下一集",
+        "example_en": "We moved on to the next episode.",
+        "example_zh": "我們繼續看下一集。"
+      },
+      {
+        "id": "b3b2-p116",
+        "phrase": "summarize the plot",
+        "pos": "ph.",
+        "zh": "摘要劇情",
+        "example_en": "Can you summarize the plot?",
+        "example_zh": "你能摘要劇情嗎？"
+      },
+      {
+        "id": "b3b2-p117",
+        "phrase": "improve one’s ability",
+        "pos": "ph.",
+        "zh": "提升某人的能力",
+        "example_en": "Practice improves your ability to speak.",
+        "example_zh": "練習能提升你的口說能力。"
+      },
+      {
+        "id": "b3b2-p118",
+        "phrase": "English speaking ability",
+        "pos": "ph.",
+        "zh": "英語口說能力",
+        "example_en": "Her English speaking ability has improved.",
+        "example_zh": "她的英語口說能力進步了。"
+      },
+      {
+        "id": "b3b2-p119",
+        "phrase": "from an early age",
+        "pos": "ph.",
+        "zh": "從小",
+        "example_en": "He learned music from an early age.",
+        "example_zh": "他從小學音樂。"
+      },
+      {
+        "id": "b3b2-p120",
+        "phrase": "make use of AI tools",
+        "pos": "ph.",
+        "zh": "運用人工智慧工具",
+        "example_en": "Students can make use of AI tools wisely.",
+        "example_zh": "學生可以明智運用人工智慧工具。"
+      },
+      {
+        "id": "b3b2-p121",
+        "phrase": "native speaker",
+        "pos": "ph.",
+        "zh": "母語人士",
+        "example_en": "She practices with a native speaker.",
+        "example_zh": "她和母語人士練習。"
+      },
+      {
+        "id": "b3b2-p122",
+        "phrase": "practice anytime, anywhere",
+        "pos": "ph.",
+        "zh": "隨時隨地練習",
+        "example_en": "The app lets you practice anytime, anywhere.",
+        "example_zh": "這個應用程式讓你隨時隨地練習。"
+      },
+      {
+        "id": "b3b2-p123",
+        "phrase": "as long as",
+        "pos": "ph.",
+        "zh": "只要……",
+        "example_en": "You can join as long as you register.",
+        "example_zh": "只要登記，你就能參加。"
+      },
+      {
+        "id": "b3b2-p124",
+        "phrase": "internet access",
+        "pos": "ph.",
+        "zh": "網路連線",
+        "example_en": "The library provides free internet access.",
+        "example_zh": "圖書館提供免費網路。"
+      },
+      {
+        "id": "b3b2-p125",
+        "phrase": "route to success",
+        "pos": "ph.",
+        "zh": "成功之道",
+        "example_en": "Hard work is part of the route to success.",
+        "example_zh": "努力是成功之道的一部分。"
+      },
+      {
+        "id": "b3b2-p126",
+        "phrase": "in order to solve problems",
+        "pos": "ph.",
+        "zh": "為了解決問題",
+        "example_en": "We collaborate in order to solve problems.",
+        "example_zh": "我們合作以解決問題。"
+      },
+      {
+        "id": "b3b2-p127",
+        "phrase": "roll up one’s sleeves",
+        "pos": "ph.",
+        "zh": "捲起袖子；準備動手",
+        "example_en": "Let’s roll up our sleeves and begin.",
+        "example_zh": "我們捲起袖子開始吧。"
+      },
+      {
+        "id": "b3b2-p128",
+        "phrase": "get down to do",
+        "pos": "ph.",
+        "zh": "開始認真做……",
+        "example_en": "It is time to get down to work.",
+        "example_zh": "該開始認真工作了。"
+      },
+      {
+        "id": "b3b2-p129",
+        "phrase": "right away",
+        "pos": "ph.",
+        "zh": "立刻",
+        "example_en": "Please start right away.",
+        "example_zh": "請立刻開始。"
+      },
+      {
+        "id": "b3b2-p130",
+        "phrase": "experiment with new ideas",
+        "pos": "ph.",
+        "zh": "嘗試新想法",
+        "example_en": "The team experimented with new ideas.",
+        "example_zh": "團隊嘗試了新想法。"
+      },
+      {
+        "id": "b3b2-p131",
+        "phrase": "collaborate effectively with",
+        "pos": "ph.",
+        "zh": "與……有效合作",
+        "example_en": "She collaborates effectively with her classmates.",
+        "example_zh": "她能與同學有效合作。"
+      },
+      {
+        "id": "b3b2-p132",
+        "phrase": "in this way",
+        "pos": "ph.",
+        "zh": "用這種方式",
+        "example_en": "In this way, we can save time.",
+        "example_zh": "用這種方式，我們可以節省時間。"
+      },
+      {
+        "id": "b3b2-p133",
+        "phrase": "register for",
+        "pos": "ph.",
+        "zh": "報名……",
+        "example_en": "I registered for the course online.",
+        "example_zh": "我在線上報名課程。"
+      },
+      {
+        "id": "b3b2-p134",
+        "phrase": "online tutoring program",
+        "pos": "ph.",
+        "zh": "線上家教課程",
+        "example_en": "He joined an online tutoring program.",
+        "example_zh": "他參加了線上家教課程。"
+      },
+      {
+        "id": "b3b2-p135",
+        "phrase": "fully exercise one’s creativity",
+        "pos": "ph.",
+        "zh": "充分發揮某人的創意",
+        "example_en": "The task lets students fully exercise their creativity.",
+        "example_zh": "這項任務讓學生充分發揮創意。"
+      },
+      {
+        "id": "b3b2-p136",
+        "phrase": "prepare a lunchbox",
+        "pos": "ph.",
+        "zh": "準備便當",
+        "example_en": "Mom prepared a lunchbox for me.",
+        "example_zh": "媽媽為我準備了便當。"
+      },
+      {
+        "id": "b3b2-p137",
+        "phrase": "save pocket money",
+        "pos": "ph.",
+        "zh": "存零用錢",
+        "example_en": "She saves pocket money every week.",
+        "example_zh": "她每週都存零用錢。"
+      },
+      {
+        "id": "b3b2-p138",
+        "phrase": "stay health",
+        "pos": "ph.",
+        "zh": "保持健康",
+        "example_en": "Exercise helps us stay healthy.",
+        "example_zh": "運動幫助我們保持健康。"
+      },
+      {
+        "id": "b3b2-p139",
+        "phrase": "donate money to those in need",
+        "pos": "ph.",
+        "zh": "捐款給有需要的人",
+        "example_en": "They donate money to those in need.",
+        "example_zh": "他們捐款給有需要的人。"
+      },
+      {
+        "id": "b3b2-p140",
+        "phrase": "toxic chemical",
+        "pos": "ph.",
+        "zh": "有毒化學物質",
+        "example_en": "The factory must handle toxic chemicals safely.",
+        "example_zh": "工廠必須安全處理有毒化學物質。"
+      },
+      {
+        "id": "b3b2-p141",
+        "phrase": "conduct research",
+        "pos": "ph.",
+        "zh": "進行研究",
+        "example_en": "Scientists conduct research on the disease.",
+        "example_zh": "科學家針對此疾病進行研究。"
+      },
+      {
+        "id": "b3b2-p142",
+        "phrase": "be made up of",
+        "pos": "ph.",
+        "zh": "由……組成",
+        "example_en": "The team is made up of five students.",
+        "example_zh": "團隊由五名學生組成。"
+      },
+      {
+        "id": "b3b2-p143",
+        "phrase": "achieve success",
+        "pos": "ph.",
+        "zh": "獲得成功",
+        "example_en": "Patience helps people achieve success.",
+        "example_zh": "耐心幫助人們獲得成功。"
+      },
+      {
+        "id": "b3b2-p144",
+        "phrase": "a matter of",
+        "pos": "ph.",
+        "zh": "……的問題；只是……",
+        "example_en": "Success is often a matter of effort.",
+        "example_zh": "成功往往是努力的問題。"
+      },
+      {
+        "id": "b3b2-p145",
+        "phrase": "start without hesitation",
+        "pos": "ph.",
+        "zh": "毫不猶豫地開始",
+        "example_en": "She started without hesitation.",
+        "example_zh": "她毫不猶豫地開始了。"
+      },
+      {
+        "id": "b3b2-p146",
+        "phrase": "stay flexible",
+        "pos": "ph.",
+        "zh": "保持彈性",
+        "example_en": "Plans may change, so stay flexible.",
+        "example_zh": "計畫可能改變，因此要保持彈性。"
+      },
+      {
+        "id": "b3b2-p147",
+        "phrase": "people of different ages and occupations",
+        "pos": "ph.",
+        "zh": "不同年齡與職業的人",
+        "example_en": "The program welcomes people of different ages and occupations.",
+        "example_zh": "此計畫歡迎不同年齡與職業的人。"
+      },
+      {
+        "id": "b3b2-p148",
+        "phrase": "take up a challenge",
+        "pos": "ph.",
+        "zh": "接受挑戰",
+        "example_en": "He decided to take up the challenge.",
+        "example_zh": "他決定接受挑戰。"
+      },
+      {
+        "id": "b3b2-p149",
+        "phrase": "take an innovative approach",
+        "pos": "ph.",
+        "zh": "採取創新方法",
+        "example_en": "The company took an innovative approach.",
+        "example_zh": "公司採取了創新方法。"
+      },
+      {
+        "id": "b3b2-p150",
+        "phrase": "smartphone industry",
+        "pos": "ph.",
+        "zh": "智慧型手機產業",
+        "example_en": "Competition is fierce in the smartphone industry.",
+        "example_zh": "智慧型手機產業競爭激烈。"
+      },
+      {
+        "id": "b3b2-p151",
+        "phrase": "win customers’ loyalty",
+        "pos": "ph.",
+        "zh": "贏得顧客忠誠",
+        "example_en": "Good service wins customers’ loyalty.",
+        "example_zh": "良好服務能贏得顧客忠誠。"
+      },
+      {
+        "id": "b3b2-p152",
+        "phrase": "in the competitive market",
+        "pos": "ph.",
+        "zh": "在競爭激烈的市場中",
+        "example_en": "Brands must improve in the competitive market.",
+        "example_zh": "品牌在競爭激烈的市場中必須進步。"
+      },
+      {
+        "id": "b3b2-p153",
+        "phrase": "dark cloud",
+        "pos": "ph.",
+        "zh": "烏雲",
+        "example_en": "A dark cloud appeared above us.",
+        "example_zh": "一片烏雲出現在我們上方。"
+      },
+      {
+        "id": "b3b2-p154",
+        "phrase": "head out for a walk",
+        "pos": "ph.",
+        "zh": "出門散步",
+        "example_en": "We headed out for a walk after dinner.",
+        "example_zh": "我們晚餐後出門散步。"
+      },
+      {
+        "id": "b3b2-p155",
+        "phrase": "promise sb",
+        "pos": "ph.",
+        "zh": "向某人承諾",
+        "example_en": "I promised my mother I would be careful.",
+        "example_zh": "我向母親承諾會小心。"
+      },
+      {
+        "id": "b3b2-p156",
+        "phrase": "as soon as",
+        "pos": "ph.",
+        "zh": "一……就……",
+        "example_en": "Call me as soon as you arrive.",
+        "example_zh": "你一抵達就打給我。"
+      },
+      {
+        "id": "b3b2-p157",
+        "phrase": "make a promise",
+        "pos": "ph.",
+        "zh": "做出承諾",
+        "example_en": "Do not make a promise you cannot keep.",
+        "example_zh": "不要做出無法履行的承諾。"
+      },
+      {
+        "id": "b3b2-p158",
+        "phrase": "make a lantern",
+        "pos": "ph.",
+        "zh": "製作燈籠",
+        "example_en": "We made a lantern from paper.",
+        "example_zh": "我們用紙做了一個燈籠。"
+      },
+      {
+        "id": "b3b2-p159",
+        "phrase": "hand out",
+        "pos": "ph.",
+        "zh": "分發",
+        "example_en": "The teacher handed out the worksheets.",
+        "example_zh": "老師分發學習單。"
+      },
+      {
+        "id": "b3b2-p160",
+        "phrase": "mention sth to sb",
+        "pos": "ph.",
+        "zh": "向某人提及某事",
+        "example_en": "I mentioned the plan to my parents.",
+        "example_zh": "我向父母提及這項計畫。"
+      },
+      {
+        "id": "b3b2-p161",
+        "phrase": "not to mention",
+        "pos": "ph.",
+        "zh": "更不用說",
+        "example_en": "It is expensive, not to mention difficult to find.",
+        "example_zh": "它很昂貴，更不用說還很難找。"
+      },
+      {
+        "id": "b3b2-p162",
+        "phrase": "conduct a test",
+        "pos": "ph.",
+        "zh": "進行測試",
+        "example_en": "Engineers conducted a safety test.",
+        "example_zh": "工程師進行了安全測試。"
+      },
+      {
+        "id": "b3b2-p163",
+        "phrase": "withstand strong winds",
+        "pos": "ph.",
+        "zh": "承受強風",
+        "example_en": "The structure can withstand strong winds.",
+        "example_zh": "這座結構能承受強風。"
+      },
+      {
+        "id": "b3b2-p164",
+        "phrase": "be capable of",
+        "pos": "ph.",
+        "zh": "有能力……",
+        "example_en": "She is capable of handling the task.",
+        "example_zh": "她有能力處理這項任務。"
+      },
+      {
+        "id": "b3b2-p165",
+        "phrase": "take a lesson",
+        "pos": "ph.",
+        "zh": "上課",
+        "example_en": "I take a guitar lesson on Saturday.",
+        "example_zh": "我星期六上吉他課。"
+      },
+      {
+        "id": "b3b2-p166",
+        "phrase": "play a song on the guitar",
+        "pos": "ph.",
+        "zh": "用吉他彈奏歌曲",
+        "example_en": "He played a song on the guitar.",
+        "example_zh": "他用吉他彈奏了一首歌。"
+      },
+      {
+        "id": "b3b2-p167",
+        "phrase": "in one’s capable hands",
+        "pos": "ph.",
+        "zh": "由有能力的某人掌管",
+        "example_en": "The project is safe in her capable hands.",
+        "example_zh": "專案由能力出眾的她掌管，很安全。"
+      },
+      {
+        "id": "b3b2-p168",
+        "phrase": "beyond one’s capability",
+        "pos": "ph.",
+        "zh": "超出某人的能力",
+        "example_en": "The task was beyond my capability.",
+        "example_zh": "這項任務超出我的能力。"
+      },
+      {
+        "id": "b3b2-p169",
+        "phrase": "throughout the years",
+        "pos": "ph.",
+        "zh": "這些年來",
+        "example_en": "They remained friends throughout the years.",
+        "example_zh": "這些年來他們一直是朋友。"
+      },
+      {
+        "id": "b3b2-p170",
+        "phrase": "collaborate with",
+        "pos": "ph.",
+        "zh": "與……合作",
+        "example_en": "Our school collaborated with a museum.",
+        "example_zh": "我們學校與博物館合作。"
+      },
+      {
+        "id": "b3b2-p171",
+        "phrase": "collaboration between",
+        "pos": "ph.",
+        "zh": "……之間的合作",
+        "example_en": "The project is a collaboration between two teams.",
+        "example_zh": "這個專案是兩個團隊之間的合作。"
+      },
+      {
+        "id": "b3b2-p172",
+        "phrase": "in close collaboration with",
+        "pos": "ph.",
+        "zh": "與……密切合作",
+        "example_en": "We worked in close collaboration with local experts.",
+        "example_zh": "我們與當地專家密切合作。"
+      },
+      {
+        "id": "b3b2-p173",
+        "phrase": "head office",
+        "pos": "ph.",
+        "zh": "總公司；總部",
+        "example_en": "The head office is in Taipei.",
+        "example_zh": "總公司位於臺北。"
+      },
+      {
+        "id": "b3b2-p174",
+        "phrase": "classical architecture",
+        "pos": "ph.",
+        "zh": "古典建築",
+        "example_en": "She studies classical architecture.",
+        "example_zh": "她研究古典建築。"
+      },
+      {
+        "id": "b3b2-p175",
+        "phrase": "share fond memories",
+        "pos": "ph.",
+        "zh": "分享美好回憶",
+        "example_en": "The classmates shared fond memories.",
+        "example_zh": "同學們分享美好回憶。"
+      },
+      {
+        "id": "b3b2-p176",
+        "phrase": "major in economics",
+        "pos": "ph.",
+        "zh": "主修經濟學",
+        "example_en": "He plans to major in economics.",
+        "example_zh": "他計畫主修經濟學。"
+      },
+      {
+        "id": "b3b2-p177",
+        "phrase": "graduate from",
+        "pos": "ph.",
+        "zh": "畢業於……",
+        "example_en": "She graduated from National Taiwan University.",
+        "example_zh": "她畢業於國立臺灣大學。"
+      },
+      {
+        "id": "b3b2-p178",
+        "phrase": "upon graduation",
+        "pos": "ph.",
+        "zh": "畢業後",
+        "example_en": "Upon graduation, he found a job.",
+        "example_zh": "畢業後，他找到了一份工作。"
+      },
+      {
+        "id": "b3b2-p179",
+        "phrase": "master’s degree",
+        "pos": "ph.",
+        "zh": "碩士學位",
+        "example_en": "She earned a master’s degree in design.",
+        "example_zh": "她取得設計碩士學位。"
+      },
+      {
+        "id": "b3b2-p180",
+        "phrase": "put up",
+        "pos": "ph.",
+        "zh": "搭建；張貼",
+        "example_en": "Workers put up a fence.",
+        "example_zh": "工人搭起一道圍籬。"
+      },
+      {
+        "id": "b3b2-p181",
+        "phrase": "on the edge of town",
+        "pos": "ph.",
+        "zh": "在城鎮邊緣",
+        "example_en": "The factory stands on the edge of town.",
+        "example_zh": "工廠位於城鎮邊緣。"
+      },
+      {
+        "id": "b3b2-p182",
+        "phrase": "construction site",
+        "pos": "ph.",
+        "zh": "建築工地",
+        "example_en": "Wear a helmet at the construction site.",
+        "example_zh": "在建築工地要戴安全帽。"
+      },
+      {
+        "id": "b3b2-p183",
+        "phrase": "give constructive criticism",
+        "pos": "ph.",
+        "zh": "給予建設性的批評",
+        "example_en": "Good coaches give constructive criticism.",
+        "example_zh": "好教練會給予建設性的批評。"
+      },
+      {
+        "id": "b3b2-p184",
+        "phrase": "step on people’s toes",
+        "pos": "ph.",
+        "zh": "冒犯別人",
+        "example_en": "Be careful not to step on people’s toes.",
+        "example_zh": "小心不要冒犯別人。"
+      },
+      {
+        "id": "b3b2-p185",
+        "phrase": "in the end",
+        "pos": "ph.",
+        "zh": "最後",
+        "example_en": "In the end, we chose the simpler plan.",
+        "example_zh": "最後我們選擇較簡單的計畫。"
+      },
+      {
+        "id": "b3b2-p186",
+        "phrase": "be worth the wait",
+        "pos": "ph.",
+        "zh": "值得等待",
+        "example_en": "The final result was worth the wait.",
+        "example_zh": "最後的成果值得等待。"
+      },
+      {
+        "id": "b3b2-p187",
+        "phrase": "slight difference in",
+        "pos": "ph.",
+        "zh": "在……方面的細微差異",
+        "example_en": "There is a slight difference in color.",
+        "example_zh": "顏色有些微差異。"
+      },
+      {
+        "id": "b3b2-p188",
+        "phrase": "when it comes to",
+        "pos": "ph.",
+        "zh": "談到……",
+        "example_en": "When it comes to design, details matter.",
+        "example_zh": "談到設計，細節很重要。"
+      },
+      {
+        "id": "b3b2-p189",
+        "phrase": "have the top ranking in several categories",
+        "pos": "ph.",
+        "zh": "在數個類別中名列第一",
+        "example_en": "The phone has the top ranking in several categories.",
+        "example_zh": "這支手機在數個類別中名列第一。"
+      },
+      {
+        "id": "b3b2-p190",
+        "phrase": "top-ranking player",
+        "pos": "ph.",
+        "zh": "頂尖選手",
+        "example_en": "She defeated the top-ranking player.",
+        "example_zh": "她擊敗了頂尖選手。"
+      },
+      {
+        "id": "b3b2-p191",
+        "phrase": "break sth open",
+        "pos": "ph.",
+        "zh": "把某物破開",
+        "example_en": "They broke the box open.",
+        "example_zh": "他們把箱子破開。"
+      },
+      {
+        "id": "b3b2-p192",
+        "phrase": "out-of-a-kind",
+        "pos": "ph.",
+        "zh": "獨一無二的",
+        "example_en": "It is a one-of-a-kind design.",
+        "example_zh": "這是一項獨一無二的設計。"
+      },
+      {
+        "id": "b3b2-p193",
+        "phrase": "adjust brightness",
+        "pos": "ph.",
+        "zh": "調整亮度",
+        "example_en": "You can adjust the brightness here.",
+        "example_zh": "你可以在這裡調整亮度。"
+      },
+      {
+        "id": "b3b2-p194",
+        "phrase": "make an adjustment",
+        "pos": "ph.",
+        "zh": "進行調整",
+        "example_en": "We made an adjustment to the schedule.",
+        "example_zh": "我們調整了時程。"
+      },
+      {
+        "id": "b3b2-p195",
+        "phrase": "follow a healthy diet",
+        "pos": "ph.",
+        "zh": "遵循健康飲食",
+        "example_en": "She follows a healthy diet.",
+        "example_zh": "她遵循健康飲食。"
+      },
+      {
+        "id": "b3b2-p196",
+        "phrase": "make certain adjustments",
+        "pos": "ph.",
+        "zh": "做出某些調整",
+        "example_en": "We need to make certain adjustments.",
+        "example_zh": "我們需要做出某些調整。"
+      },
+      {
+        "id": "b3b2-p197",
+        "phrase": "lose weight",
+        "pos": "ph.",
+        "zh": "減重",
+        "example_en": "He exercises to lose weight.",
+        "example_zh": "他運動以減重。"
+      },
+      {
+        "id": "b3b2-p198",
+        "phrase": "rely heavily on",
+        "pos": "ph.",
+        "zh": "高度依賴",
+        "example_en": "The economy relies heavily on exports.",
+        "example_zh": "經濟高度依賴出口。"
+      },
+      {
+        "id": "b3b2-p199",
+        "phrase": "domestic economy",
+        "pos": "ph.",
+        "zh": "國內經濟",
+        "example_en": "Tourism supports the domestic economy.",
+        "example_zh": "觀光支持國內經濟。"
+      },
+      {
+        "id": "b3b2-p200",
+        "phrase": "keep the economy growing",
+        "pos": "ph.",
+        "zh": "維持經濟成長",
+        "example_en": "Investment helps keep the economy growing.",
+        "example_zh": "投資有助於維持經濟成長。"
+      },
+      {
+        "id": "b3b2-p201",
+        "phrase": "security guard",
+        "pos": "ph.",
+        "zh": "警衛；保全",
+        "example_en": "A security guard checked our bags.",
+        "example_zh": "警衛檢查了我們的包包。"
+      },
+      {
+        "id": "b3b2-p202",
+        "phrase": "on time",
+        "pos": "ph.",
+        "zh": "準時",
+        "example_en": "The train arrived on time.",
+        "example_zh": "火車準時抵達。"
+      },
+      {
+        "id": "b3b2-p203",
+        "phrase": "fall asleep on the job",
+        "pos": "ph.",
+        "zh": "上班時睡著",
+        "example_en": "The guard fell asleep on the job.",
+        "example_zh": "那名警衛上班時睡著了。"
+      },
+      {
+        "id": "b3b2-p204",
+        "phrase": "receive constructive feedback from",
+        "pos": "ph.",
+        "zh": "從……獲得建設性回饋",
+        "example_en": "Students received constructive feedback from the teacher.",
+        "example_zh": "學生從老師那裡獲得建設性回饋。"
+      },
+      {
+        "id": "b3b2-p205",
+        "phrase": "improve a great deal",
+        "pos": "ph.",
+        "zh": "大幅進步",
+        "example_en": "Her writing improved a great deal.",
+        "example_zh": "她的寫作大幅進步。"
+      },
+      {
+        "id": "b3b2-p206",
+        "phrase": "key element",
+        "pos": "ph.",
+        "zh": "關鍵要素",
+        "example_en": "Trust is a key element of teamwork.",
+        "example_zh": "信任是團隊合作的關鍵要素。"
+      },
+      {
+        "id": "b3b2-p207",
+        "phrase": "at all times",
+        "pos": "ph.",
+        "zh": "隨時；始終",
+        "example_en": "Keep your badge with you at all times.",
+        "example_zh": "請隨時攜帶識別證。"
+      },
+      {
+        "id": "b3b2-p208",
+        "phrase": "maintain the right temperature",
+        "pos": "ph.",
+        "zh": "維持適當溫度",
+        "example_en": "The box maintains the right temperature.",
+        "example_zh": "這個箱子能維持適當溫度。"
+      },
+      {
+        "id": "b3b2-p209",
+        "phrase": "food transportation",
+        "pos": "ph.",
+        "zh": "食品運輸",
+        "example_en": "Temperature matters during food transportation.",
+        "example_zh": "食品運輸期間溫度很重要。"
+      },
+      {
+        "id": "b3b2-p210",
+        "phrase": "in one’s element",
+        "pos": "ph.",
+        "zh": "如魚得水；得心應手",
+        "example_en": "She is in her element in the kitchen.",
+        "example_zh": "她在廚房裡如魚得水。"
+      },
+      {
+        "id": "b3b2-p211",
+        "phrase": "elementary principle",
+        "pos": "ph.",
+        "zh": "基本原則",
+        "example_en": "Safety is an elementary principle.",
+        "example_zh": "安全是一項基本原則。"
+      },
+      {
+        "id": "b3b2-p212",
+        "phrase": "rush into",
+        "pos": "ph.",
+        "zh": "貿然投入／決定",
+        "example_en": "Do not rush into a decision.",
+        "example_zh": "不要倉促做決定。"
+      },
+      {
+        "id": "b3b2-p213",
+        "phrase": "in danger",
+        "pos": "ph.",
+        "zh": "處於危險中",
+        "example_en": "The hikers were in danger.",
+        "example_zh": "登山客處於危險中。"
+      },
+      {
+        "id": "b3b2-p214",
+        "phrase": "fairly stable",
+        "pos": "ph.",
+        "zh": "相當穩定",
+        "example_en": "Prices have remained fairly stable.",
+        "example_zh": "價格一直相當穩定。"
+      },
+      {
+        "id": "b3b2-p215",
+        "phrase": "expect slow but steady growth",
+        "pos": "ph.",
+        "zh": "預期緩慢但穩定的成長",
+        "example_en": "Experts expect slow but steady growth.",
+        "example_zh": "專家預期緩慢但穩定的成長。"
+      },
+      {
+        "id": "b3b2-p216",
+        "phrase": "under construction",
+        "pos": "ph.",
+        "zh": "施工中",
+        "example_en": "The new bridge is under construction.",
+        "example_zh": "新橋正在施工中。"
+      },
+      {
+        "id": "b3b2-p217",
+        "phrase": "take a different route",
+        "pos": "ph.",
+        "zh": "走不同路線",
+        "example_en": "We took a different route home.",
+        "example_zh": "我們走不同路線回家。"
+      },
+      {
+        "id": "b3b2-p218",
+        "phrase": "en route",
+        "pos": "ph.",
+        "zh": "在途中",
+        "example_en": "We stopped for lunch en route.",
+        "example_zh": "我們在途中停下來吃午餐。"
+      },
+      {
+        "id": "b3b2-p219",
+        "phrase": "alien life",
+        "pos": "ph.",
+        "zh": "外星生命",
+        "example_en": "Scientists search for alien life.",
+        "example_zh": "科學家尋找外星生命。"
+      },
+      {
+        "id": "b3b2-p220",
+        "phrase": "further explore",
+        "pos": "ph.",
+        "zh": "進一步探索",
+        "example_en": "The team will further explore the cave.",
+        "example_zh": "團隊將進一步探索洞穴。"
+      },
+      {
+        "id": "b3b2-p221",
+        "phrase": "exploration of the ocean floor",
+        "pos": "ph.",
+        "zh": "海床探索",
+        "example_en": "The mission focuses on exploration of the ocean floor.",
+        "example_zh": "這項任務著重於海床探索。"
+      },
+      {
+        "id": "b3b2-p222",
+        "phrase": "previously unknown",
+        "pos": "ph.",
+        "zh": "先前未知的",
+        "example_en": "They found a previously unknown species.",
+        "example_zh": "他們發現一個先前未知的物種。"
+      },
+      {
+        "id": "b3b2-p223",
+        "phrase": "sea creature",
+        "pos": "ph.",
+        "zh": "海洋生物",
+        "example_en": "The camera recorded a strange sea creature.",
+        "example_zh": "攝影機拍到一隻奇特的海洋生物。"
+      },
+      {
+        "id": "b3b2-p224",
+        "phrase": "run a restaurant",
+        "pos": "ph.",
+        "zh": "經營餐廳",
+        "example_en": "Her family runs a restaurant.",
+        "example_zh": "她的家人經營一家餐廳。"
+      },
+      {
+        "id": "b3b2-p225",
+        "phrase": "move sb to tears",
+        "pos": "ph.",
+        "zh": "使某人感動落淚",
+        "example_en": "The song moved me to tears.",
+        "example_zh": "那首歌使我感動落淚。"
+      },
+      {
+        "id": "b3b2-p226",
+        "phrase": "adjust the light",
+        "pos": "ph.",
+        "zh": "調整燈光",
+        "example_en": "Please adjust the light for the photo.",
+        "example_zh": "請為照片調整燈光。"
+      },
+      {
+        "id": "b3b2-p227",
+        "phrase": "attract everyone’s attention",
+        "pos": "ph.",
+        "zh": "吸引所有人的注意",
+        "example_en": "The loud sound attracted everyone’s attention.",
+        "example_zh": "巨響吸引了所有人的注意。"
+      },
+      {
+        "id": "b3b2-p228",
+        "phrase": "leave school",
+        "pos": "ph.",
+        "zh": "離開學校；輟學",
+        "example_en": "She left school at five.",
+        "example_zh": "她五點離開學校。"
+      },
+      {
+        "id": "b3b2-p229",
+        "phrase": "in the backyard",
+        "pos": "ph.",
+        "zh": "在後院",
+        "example_en": "The children played in the backyard.",
+        "example_zh": "孩子們在後院玩。"
+      },
+      {
+        "id": "b3b2-p230",
+        "phrase": "copy other people",
+        "pos": "ph.",
+        "zh": "模仿／抄襲他人",
+        "example_en": "Do not copy other people’s work.",
+        "example_zh": "不要抄襲他人的作品。"
+      },
+      {
+        "id": "b3b2-p231",
+        "phrase": "positive feedback from",
+        "pos": "ph.",
+        "zh": "來自……的正面回饋",
+        "example_en": "We received positive feedback from customers.",
+        "example_zh": "我們收到顧客的正面回饋。"
+      },
+      {
+        "id": "b3b2-p232",
+        "phrase": "get to work on one’s promise",
+        "pos": "ph.",
+        "zh": "著手履行某人的承諾",
+        "example_en": "He got to work on his promise immediately.",
+        "example_zh": "他立即著手履行承諾。"
+      },
+      {
+        "id": "b3b2-p233",
+        "phrase": "a critical problem that needs to be taken care of",
+        "pos": "ph.",
+        "zh": "需要處理的關鍵問題",
+        "example_en": "Pollution is a critical problem that needs to be taken care of.",
+        "example_zh": "污染是需要處理的關鍵問題。"
+      },
+      {
+        "id": "b3b2-p234",
+        "phrase": "on today’s agenda",
+        "pos": "ph.",
+        "zh": "在今天的議程上",
+        "example_en": "Safety is first on today’s agenda.",
+        "example_zh": "安全是今天議程的第一項。"
+      },
+      {
+        "id": "b3b2-p235",
+        "phrase": "develop the vaccine for the disease",
+        "pos": "ph.",
+        "zh": "研發該疾病的疫苗",
+        "example_en": "Scientists developed the vaccine for the disease.",
+        "example_zh": "科學家研發了該疾病的疫苗。"
+      },
+      {
+        "id": "b3b2-p236",
+        "phrase": "get dressed",
+        "pos": "ph.",
+        "zh": "穿好衣服",
+        "example_en": "He got dressed quickly.",
+        "example_zh": "他很快穿好衣服。"
+      },
+      {
+        "id": "b3b2-p237",
+        "phrase": "gain the right to vote",
+        "pos": "ph.",
+        "zh": "取得投票權",
+        "example_en": "Women fought to gain the right to vote.",
+        "example_zh": "女性爭取取得投票權。"
+      },
+      {
+        "id": "b3b2-p238",
+        "phrase": "offer a discount",
+        "pos": "ph.",
+        "zh": "提供折扣",
+        "example_en": "The shop offers a discount to students.",
+        "example_zh": "商店提供學生折扣。"
+      },
+      {
+        "id": "b3b2-p239",
+        "phrase": "have definite proof",
+        "pos": "ph.",
+        "zh": "有確切證據",
+        "example_en": "The police have definite proof.",
+        "example_zh": "警方有確切證據。"
+      },
+      {
+        "id": "b3b2-p240",
+        "phrase": "similar to",
+        "pos": "ph.",
+        "zh": "與……相似",
+        "example_en": "This design is similar to mine.",
+        "example_zh": "這項設計與我的相似。"
+      },
+      {
+        "id": "b3b2-p241",
+        "phrase": "in the suburb",
+        "pos": "ph.",
+        "zh": "在郊區",
+        "example_en": "They live in the suburb.",
+        "example_zh": "他們住在郊區。"
+      },
+      {
+        "id": "b3b2-p242",
+        "phrase": "achieve a goal",
+        "pos": "ph.",
+        "zh": "達成目標",
+        "example_en": "Hard work helps us achieve a goal.",
+        "example_zh": "努力幫助我們達成目標。"
+      },
+      {
+        "id": "b3b2-p243",
+        "phrase": "historical city",
+        "pos": "ph.",
+        "zh": "歷史名城",
+        "example_en": "We visited a historical city.",
+        "example_zh": "我們造訪了一座歷史名城。"
+      },
+      {
+        "id": "b3b2-p244",
+        "phrase": "miss out on …",
+        "pos": "ph.",
+        "zh": "錯過……",
+        "example_en": "Do not miss out on this opportunity.",
+        "example_zh": "不要錯過這個機會。"
       }
     ]
   },
