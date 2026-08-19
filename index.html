@@ -6,11 +6,11 @@
 <title>Shirley Du老師的高中英文充電站</title>
 <link rel="stylesheet" href="css/style.css" />
 <style>
-  /* 修正 site-head 背景色，避免白底白字 */
+  /* ===== Header（品牌識別，與 lesson.html 一致） ===== */
   .site-head {
     background: linear-gradient(135deg, var(--accent-dark), var(--accent));
-    color: #ffffff;
-    padding: 30px 20px 26px;
+    color: #fff;
+    padding: 44px 20px 36px;
     border-radius: 0 0 28px 28px;
   }
   .site-head .inner { max-width: 1040px; margin: 0 auto; }
@@ -24,11 +24,49 @@
   }
   .site-head h1 {
     font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700;
-    margin: 0 0 10px; letter-spacing: -0.01em; line-height: 1.15; color: #ffffff;
+    margin: 0 0 10px; letter-spacing: -0.01em; line-height: 1.15;
   }
   .site-head p { font-size: 0.92rem; color: rgba(255,255,255,.85); max-width: 560px; line-height: 1.6; margin: 0; }
 
+  .first-lesson-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-top: 20px; padding: 12px 20px; border-radius: 999px;
+    border: 1px solid rgba(255, 215, 107, .55);
+    background: rgba(255, 255, 255, .08);
+    backdrop-filter: blur(6px);
+    color: #fff; font-family: var(--serif); font-size: 0.92rem; font-weight: 700;
+    cursor: pointer; transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+    box-shadow: 0 0 0 rgba(255, 215, 107, 0);
+  }
+  .first-lesson-btn:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, .14);
+    box-shadow: 0 8px 22px rgba(255, 215, 107, .22);
+  }
+  .flb-icon { font-size: 1.05rem; }
+  .flb-arrow { color: var(--gold); font-size: 1rem; transition: transform .15s ease; }
+  .first-lesson-btn:hover .flb-arrow { transform: translateX(3px); }
+
   .wrap { max-width: 1040px; margin: 0 auto; padding: 32px 20px 0; }
+
+  /* ===== First lesson iframe area (standalone, no card-list mode) ===== */
+  .first-lesson-frame { margin-bottom: 24px; }
+  .first-lesson-frame .flf-toolbar {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .first-lesson-frame .flf-title { font-family: var(--serif); font-weight: 700; font-size: 0.95rem; color: var(--ink-soft); }
+  .first-lesson-frame .flf-wrap {
+    position: relative; border-radius: var(--radius); overflow: hidden;
+    border: 1px solid var(--paper-line); box-shadow: var(--shadow);
+    background: var(--card); min-height: 70vh;
+  }
+  .first-lesson-frame iframe { width: 100%; height: 78vh; border: none; display: block; background: #fff; }
+  .first-lesson-frame .flf-loading {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    text-align: center; padding: 20px; font-size: 0.85rem; color: var(--ink-soft); background: var(--card);
+  }
+  .first-lesson-frame .flf-loading a { color: var(--accent); font-weight: 700; }
 
   /* ===== Progress strip ===== */
   .progress-strip {
@@ -162,10 +200,18 @@
         別慌！從單字片語到文法句型，一站幫你把進度補好補滿。<br>
         救急看線上，交流靠現場——杜老師隨時歡迎你的發問。
       </p>
+      <button type="button" class="first-lesson-btn" id="firstLessonBtn">
+        <span class="flb-icon">🎬</span>
+        <span class="flb-text">Shirley Du's Very First Lesson 高中第一課</span>
+        <span class="flb-arrow">→</span>
+      </button>
     </div>
   </div>
 
   <div class="wrap">
+
+    <div id="firstLessonFrame" class="first-lesson-frame" style="display:none;"></div>
+
     <div class="progress-strip" id="progressStrip"></div>
 
     <div class="section-title"><span>選擇冊次</span><span class="rule"></span></div>
@@ -178,233 +224,187 @@
 
     <div class="section-title"><span>Beyond Textbooks 教材之上</span><span class="rule"></span></div>
     <div id="beyondTextbooksArea"></div>
+
   </div>
 
   <footer class="site-foot">
     Prepared by Shirley Du@CHHS
   </footer>
 
-  <!-- 核心與第三方套件 Script -->
-  <script src="js/loader.js"></script>
-  <script src="js/external-viewer.js"></script>
-  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/external-viewer.js"></script>
+<script>
+  const INDEX_URL = "data/index.json";
 
-  <script>
-    const INDEX_URL = "data/index.json";
-
-    fetch(INDEX_URL)
-      .then(res => {
-        if (!res.ok) throw new Error("HTTP " + res.status);
-        return res.json();
-      })
-      .then(data => {
-        renderProgress(data);
-        renderBooks(data);
-        renderTools(data);
-      })
-      .catch(err => {
-        document.getElementById("bookList").innerHTML =
-          `<div style="padding:20px; color:var(--accent); font-size:0.85rem;">
-            課程清單載入失敗：${escapeHtml(err.message)}（請確認此頁面透過本機伺服器或 GitHub Pages 開啟）
-          </div>`;
-      });
-
-    ExternalViewer.render({
-      containerId: "beyondTextbooksArea",
-      cards: [
-        { title: "Grammar Basics 文法基礎", url: "https://ducj-creator.github.io/gbasics.html" },
-        { title: "Vocabulary Basics 單字基礎", url: "https://ducj-creator.github.io/shirleyvocab.html#home" },
-        { title: "Hexagon Warrior 英文六邊形戰士", url: "https://ducj-creator.github.io/hexagonw.html" },
-        { title: "To 1Campus", url: "https://1campus.net/intl?lang=zh-TW" },
-        { title: "To Tr. Shirley Du", url: "https://shirley-du-app.vercel.app/" }
-      ]
+  fetch(INDEX_URL)
+    .then(res => {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.json();
+    })
+    .then(data => {
+      renderProgress(data);
+      renderBooks(data);
+      renderTools(data);
+    })
+    .catch(err => {
+      document.getElementById("bookList").innerHTML =
+        `<div style="padding:20px; color:var(--accent); font-size:0.85rem;">
+          課程清單載入失敗：${escapeHtml(err.message)}（請確認此頁面透過本機伺服器或 GitHub Pages 開啟，而非直接雙擊開啟檔案）
+        </div>`;
     });
 
-    function escapeHtml(str) {
-      return String(str ?? "")
-        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;").replace(/'/g, "&#039;");
-    }
+  // Beyond Textbooks：三個延伸學習資源，點卡片在頁面內用 iframe 開啟
+  ExternalViewer.render({
+    containerId: "beyondTextbooksArea",
+    cards: [
+      { title: "Grammar Basics 文法基礎", url: "https://ducj-creator.github.io/gbasics.html" },
+      { title: "Vocabulary Basics 單字基礎", url: "https://ducj-creator.github.io/shirleyvocab.html#home" },
+      { title: "Hexagon Warrior 英文六邊形戰士", url: "https://ducj-creator.github.io/hexagonw.html" },
+      { title: "To 1Campus", url: "https://1campus.net/intl?lang=zh-TW" },
+      { title: "To Tr. Shirley Du", url: "https://shirley-du-app.vercel.app/" }
+    ]
+  });
 
-    function renderProgress(data) {
-      const allLessons = data.books.flatMap(b => b.lessons);
-      const published = allLessons.filter(l => l.status === "published").length;
-      const total = allLessons.length;
+  function escapeHtml(str) {
+    return String(str ?? "")
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+  }
 
-      const strip = document.getElementById("progressStrip");
-      strip.innerHTML = `
-        <div class="stat"><span class="n">${data.books.length}</span><span class="l">冊</span></div>
-        <div class="stat"><span class="n">${total}</span><span class="l">課總數</span></div>
-        <div class="stat"><span class="n">${published}</span><span class="l">已上架</span></div>
+  function renderProgress(data) {
+    const allLessons = data.books.flatMap(b => b.lessons);
+    const published = allLessons.filter(l => l.status === "published").length;
+    const total = allLessons.length;
+
+    const strip = document.getElementById("progressStrip");
+    strip.innerHTML = `
+      <div class="stat"><span class="n">${data.books.length}</span><span class="l">冊</span></div>
+      <div class="stat"><span class="n">${total}</span><span class="l">課總數</span></div>
+      <div class="stat"><span class="n">${published}</span><span class="l">已上架</span></div>
+    `;
+  }
+
+  function renderBooks(data) {
+    const wrap = document.getElementById("bookList");
+    wrap.innerHTML = "";
+
+    data.books.forEach(book => {
+      const publishedCount = book.lessons.filter(l => l.status === "published").length;
+      const total = book.lessons.length;
+      const pct = total ? Math.round((publishedCount / total) * 100) : 0;
+
+      const card = document.createElement("div");
+      card.className = "book-card";
+
+      const head = document.createElement("button");
+      head.type = "button";
+      head.className = "book-head";
+      head.innerHTML = `
+        <span class="book-num">${book.id.replace("b", "")}</span>
+        <span class="book-meta">
+          <span class="title">${escapeHtml(book.title)}</span>
+          <span class="sub">共 ${total} 課 · 已上架 ${publishedCount} 課</span>
+        </span>
+        <span class="book-progress-bar"><span class="fill" style="width:${pct}%"></span></span>
+        <span class="chevron">▸</span>
       `;
-    }
+      head.addEventListener("click", () => card.classList.toggle("expanded"));
 
-    function renderBooks(data) {
-      const wrap = document.getElementById("bookList");
-      wrap.innerHTML = "";
+      const list = document.createElement("div");
+      list.className = "lesson-list";
+      book.lessons.forEach((lesson, i) => {
+        const isPublished = lesson.status === "published";
+        const displayTitle = isPublished ? lesson.title : "尚未上架";
+        const href = isPublished
+          ? `lesson.html?book=${book.id}&lesson=${lesson.id}`
+          : `coming-soon.html?book=${book.id}&lesson=${lesson.id}`;
 
-      data.books.forEach(book => {
-        const publishedCount = book.lessons.filter(l => l.status === "published").length;
-        const total = book.lessons.length;
-        const pct = total ? Math.round((publishedCount / total) * 100) : 0;
-
-        const card = document.createElement("div");
-        card.className = "book-card";
-
-        const head = document.createElement("button");
-        head.type = "button";
-        head.className = "book-head";
-        head.innerHTML = `
-          <span class="book-num">${book.id.replace("b", "")}</span>
-          <span class="book-meta">
-            <span class="title">${escapeHtml(book.title)}</span>
-            <span class="sub">共 ${total} 課 · 已上架 ${publishedCount} 課</span>
-          </span>
-          <span class="book-progress-bar"><span class="fill" style="width:${pct}%"></span></span>
-          <span class="chevron">▸</span>
-        `;
-        head.addEventListener("click", () => card.classList.toggle("expanded"));
-
-        const list = document.createElement("div");
-        list.className = "lesson-list";
-        book.lessons.forEach((lesson) => {
-          const isPublished = lesson.status === "published";
-          const displayTitle = isPublished ? lesson.title : "尚未上架";
-          const href = isPublished
-            ? `lesson.html?book=${book.id}&lesson=${lesson.id}`
-            : `coming-soon.html?book=${book.id}&lesson=${lesson.id}`;
-
-          const a = document.createElement("a");
-          a.className = "lesson-item" + (isPublished ? "" : " is-draft");
-          a.href = href;
-          a.innerHTML = `
-            <div class="l-num">${book.id.toUpperCase()} ${lesson.id.toUpperCase()}</div>
-            <div class="l-title">${escapeHtml(displayTitle)}</div>
-          `;
-          list.appendChild(a);
-        });
-
-        card.appendChild(head);
-        card.appendChild(list);
-        wrap.appendChild(card);
-      });
-
-      const firstWithPublished = data.books.findIndex(b => b.lessons.some(l => l.status === "published"));
-      const target = wrap.children[firstWithPublished >= 0 ? firstWithPublished : 0];
-      if (target) target.classList.add("expanded");
-    }
-
-    function renderTools(data) {
-      const wrap = document.getElementById("toolGrid");
-      wrap.innerHTML = "";
-      data.cross_lesson_tools.forEach(tool => {
-        const comingSoon = tool.status === "coming_soon";
         const a = document.createElement("a");
-        a.className = "tool-card";
-        a.href = comingSoon ? "#" : (tool.url || `${tool.id}.html`);
-        if (comingSoon) {
-          a.addEventListener("click", e => e.preventDefault());
-        }
+        a.className = "lesson-item" + (isPublished ? "" : " is-draft");
+        a.href = href;
         a.innerHTML = `
-          ${comingSoon ? '<span class="badge">即將推出</span>' : ""}
-          <div class="t-title">${escapeHtml(tool.title)}</div>
+          <div class="l-num">${book.id.toUpperCase()} ${lesson.id.toUpperCase()}</div>
+          <div class="l-title">${escapeHtml(displayTitle)}</div>
         `;
-        wrap.appendChild(a);
-      });
-    }
-  </script>
-
-  <script src="js/notepad.js"></script>
-  <script>Notepad.mount();</script>
-
-  <!-- ===== 標註工具 HTML 元件 ===== -->
-  <!-- 全螢幕標註 Canvas (放置在按鈕前，確保 DOM 載入) -->
-  <canvas id="annotationCanvas" class="annotation-canvas"></canvas>
-
-  <button id="annotationFab" class="annotation-fab" title="開啟標註工具">✏️</button>
-
-  <div id="annotationPanel" class="annotation-toolbar">
-    <button id="toggleAnnotation" class="annotation-btn annotation-mode">開啟繪圖</button>
-    <div class="color-palette">
-      <div class="color-option selected" data-color="#000000" style="background: #000000"></div>
-      <div class="color-option" data-color="#FF0000" style="background: #FF0000"></div>
-      <div class="color-option" data-color="#0000FF" style="background: #0000FF"></div>
-      <div class="color-option" data-color="#00FF00" style="background: #00FF00"></div>
-    </div>
-    <button id="highlightBtn" class="annotation-btn highlight-btn">螢光筆</button>
-    <button id="textBtn" class="annotation-btn text-btn">添加文字</button>
-    <button id="exportBtn" class="annotation-btn export-btn">導出截圖</button>
-  </div>
-
-  <!-- 載入標註 JS 並綁定完整事件 -->
-  <script src="js/annotation-tool.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const fab = document.getElementById('annotationFab');
-      const panel = document.getElementById('annotationPanel');
-      const toggleBtn = document.getElementById('toggleAnnotation');
-
-      // FAB 切換工具列顯示/隱藏
-      if (fab && panel) {
-        fab.addEventListener('click', () => {
-          panel.classList.toggle('active');
-        });
-      }
-
-      // 點擊「開啟繪圖/退出標註」模式按鈕
-      if (toggleBtn) {
-        toggleBtn.addEventListener('click', () => {
-          const btnText = AnnotationTool.toggleMode();
-          toggleBtn.textContent = btnText;
-          if (AnnotationTool.isActive) {
-            toggleBtn.style.background = '#c23b3b'; // 開啟狀態呈現紅色（提示可退出）
-          } else {
-            toggleBtn.style.background = 'var(--accent)';
-          }
-        });
-      }
-
-      // 顏色選擇器
-      document.querySelectorAll('.color-option').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          AnnotationTool.selectColor(e.target.dataset.color);
-          document.querySelectorAll('.color-option').forEach(b => 
-            b.classList.toggle('selected', b === e.target)
-          );
-        });
+        list.appendChild(a);
       });
 
-      // 螢光筆按鈕
-      document.getElementById('highlightBtn')?.addEventListener('click', () => {
-        const isHighlight = AnnotationTool.toggleHighlight();
-        const btn = document.getElementById('highlightBtn');
-        btn.style.outline = isHighlight ? '2px solid var(--accent)' : 'none';
-      });
-
-      // 文字標註按鈕
-      document.getElementById('textBtn')?.addEventListener('click', () => {
-        if (!AnnotationTool.isActive) {
-          // 若尚未開啟標註模式，自動觸發開啟
-          toggleBtn.click();
-        }
-        AnnotationTool.addTextAnnotation();
-      });
-
-      // 導出截圖
-      document.getElementById('exportBtn')?.addEventListener('click', () => {
-        AnnotationTool.exportScreenshot()
-          .then(dataUrl => {
-            const link = document.createElement('a');
-            link.download = '教材標註-' + new Date().toISOString().slice(0, 10) + '.png';
-            link.href = dataUrl;
-            link.click();
-          })
-          .catch(err => {
-            console.error('導出失敗:', err);
-            alert('截圖導出失敗: ' + err.message);
-          });
-      });
+      card.appendChild(head);
+      card.appendChild(list);
+      wrap.appendChild(card);
     });
-  </script>
+
+    // 預設展開第一個有已發布課程的冊次，方便使用者立即看到內容
+    const firstWithPublished = data.books.findIndex(b => b.lessons.some(l => l.status === "published"));
+    const target = wrap.children[firstWithPublished >= 0 ? firstWithPublished : 0];
+    if (target) target.classList.add("expanded");
+  }
+
+  function renderTools(data) {
+    const wrap = document.getElementById("toolGrid");
+    wrap.innerHTML = "";
+    data.cross_lesson_tools.forEach(tool => {
+      const comingSoon = tool.status === "coming_soon";
+      const a = document.createElement("a");
+      a.className = "tool-card";
+      a.href = comingSoon ? "#" : (tool.url || `${tool.id}.html`);
+      if (comingSoon) {
+        a.addEventListener("click", e => e.preventDefault());
+      }
+      a.innerHTML = `
+        ${comingSoon ? '<span class="badge">即將推出</span>' : ""}
+        <div class="t-title">${escapeHtml(tool.title)}</div>
+      `;
+      wrap.appendChild(a);
+    });
+  }
+
+  // 「Very First Lesson」按鈕：獨立的 iframe 顯示區塊，不屬於任何卡片列表，
+  // 所以不做「返回列表」——第一次點擊才建立 iframe（避免還沒點擊就先載入
+  // 外部網站消耗流量），之後重複點擊只是捲動過去，不重新載入。
+  const FIRST_LESSON_URL = "https://ducj-creator.github.io/events/firstlesson.html";
+  let firstLessonLoaded = false;
+
+  document.getElementById("firstLessonBtn").addEventListener("click", () => {
+    const area = document.getElementById("firstLessonFrame");
+    area.style.display = "block";
+
+    if (!firstLessonLoaded) {
+      firstLessonLoaded = true;
+      area.innerHTML = `
+        <div class="flf-toolbar">
+          <span class="flf-title">🎬 Shirley Du's Very First Lesson 高中第一課</span>
+          <a class="btn" href="${FIRST_LESSON_URL}" target="_blank" rel="noopener">在新分頁開啟 ↗</a>
+        </div>
+        <div class="flf-wrap">
+          <div class="flf-loading" id="flfLoading">載入中…</div>
+          <iframe id="flfIframe" src="${FIRST_LESSON_URL}" title="Shirley Du's Very First Lesson" loading="lazy"></iframe>
+        </div>
+      `;
+      const iframe = document.getElementById("flfIframe");
+      const loadingEl = document.getElementById("flfLoading");
+      let settled = false;
+      iframe.addEventListener("load", () => {
+        settled = true;
+        if (loadingEl) loadingEl.remove();
+      });
+      // 部分網站會擋掉 iframe 嵌入，逾時後給明確的新分頁備援連結，
+      // 避免畫面卡在「載入中」空轉
+      setTimeout(() => {
+        if (settled) return;
+        if (loadingEl) {
+          loadingEl.innerHTML = `
+            載入時間較長，若畫面持續空白，這個網站可能不允許嵌入顯示。
+            <br />可以直接<a href="${FIRST_LESSON_URL}" target="_blank" rel="noopener">在新分頁開啟</a>。
+          `;
+        }
+      }, 4000);
+    }
+
+    area.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+</script>
+<script src="js/notepad.js"></script>
+<script>Notepad.mount();</script>
 </body>
 </html>
