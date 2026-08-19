@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -103,6 +104,11 @@ label.fld{font-size:.78rem;font-weight:700;color:var(--ink-soft)}
 .hearts{font-size:1.05rem;letter-spacing:2px}
 .stat{font-size:.8rem;color:var(--ink-soft)}
 .stat b{color:var(--ink);font-size:1rem;font-family:var(--serif)}
+.clock{
+  min-width:72px;padding:5px 11px;border-radius:999px;background:var(--accent-dark);color:#fff;
+  font-size:.78rem;font-weight:800;text-align:center;font-variant-numeric:tabular-nums;
+}
+.clock.danger{background:var(--rose);animation:pulse .65s infinite alternate}
 .combo{
   font-family:var(--serif);font-weight:700;color:var(--amber);font-size:.95rem;
   opacity:0;transition:opacity .2s, transform .2s;transform:scale(.8);
@@ -211,6 +217,7 @@ label.fld{font-size:.78rem;font-weight:700;color:var(--ink-soft)}
 .pop{animation:pop .22s ease-out}
 @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
 .shake{animation:shake .3s}
+@keyframes pulse{to{transform:scale(1.07)}}
 </style>
 </head>
 <body>
@@ -237,12 +244,11 @@ label.fld{font-size:.78rem;font-weight:700;color:var(--ink-soft)}
         <select id="fBook"><option value="">全部</option></select>
         <label class="fld" for="fLesson">課次</label>
         <select id="fLesson"><option value="">全部</option></select>
-        <label class="fld" for="fLen">題數</label>
+        <label class="fld" for="fLen">回合</label>
         <select id="fLen">
-          <option value="10">10 題</option>
-          <option value="15" selected>15 題</option>
-          <option value="25">25 題</option>
-          <option value="0">全部練完</option>
+          <option value="45">45 秒衝刺</option>
+          <option value="60" selected>60 秒標準</option>
+          <option value="90">90 秒耐力</option>
         </select>
         <span class="muted" id="poolInfo"></span>
       </div>
@@ -251,15 +257,15 @@ label.fld{font-size:.78rem;font-weight:700;color:var(--ink-soft)}
       <div class="mode-grid" id="modeGrid"></div>
 
       <div class="actions">
-        <button class="btn" id="btnStart">開始練習 →</button>
+        <button class="btn" id="btnStart">開始倒數挑戰 →</button>
         <span class="muted" id="hiScore"></span>
       </div>
     </div>
 
     <div class="card" style="margin-top:16px">
       <div class="muted" style="font-size:.8rem;line-height:1.8">
-        <b style="color:var(--ink)">計分規則</b>　答對 +100，連續答對有連擊加成（最高 ×3），10 秒內作答另加速度分。
-        錯 3 次結束該回合。資料每次開啟頁面都會重新從線上表單抓取，老師更新表單後學生重整就會拿到新題目。
+        <b style="color:var(--ink)">玩法</b>　倒數內盡量多答：答對 +100，連續答對最高 ×3，單題 12 秒內越快分數越高。
+        答完會自動接下一題；單題逾時或答錯會斷連擊，但整個回合會繼續。
       </div>
     </div>
   </div>
@@ -269,9 +275,9 @@ label.fld{font-size:.78rem;font-weight:700;color:var(--ink-soft)}
 <div id="playScreen" class="hidden">
   <div class="hud">
     <div class="inner">
-      <span class="hearts" id="hHearts">♥♥♥</span>
+      <span class="clock" id="hClock">01:00</span>
       <span class="stat">分數 <b id="hScore">0</b></span>
-      <span class="stat"><b id="hIdx">1</b>/<span id="hTotal">10</span></span>
+      <span class="stat">第 <b id="hIdx">1</b> 題</span>
       <span class="combo" id="hCombo"></span>
       <div class="bar" id="hBar"><i></i></div>
       <button class="icon-btn" id="btnQuit" style="background:var(--paper-2);color:var(--ink-soft);border-color:var(--line)">結束</button>
@@ -471,17 +477,17 @@ const MODES = {
   family: {
     emo:"🧬", name:"字根變形工廠", tag:"招牌",
     desc:"同一個字根長出的所有變形擺在一起，靠句子語境挑對那一個。memorize？memorial？memorable？",
-    avail: items => items.some(x => familySibs(items, x).length >= 2 && findTarget(x.sen, x.word)),
+    avail: items => items.some(x => findTarget(x.sen, x.word)),
   },
   detective: {
     emo:"🔍", name:"詞性偵探", tag:"治詞性",
-    desc:"同樣拼字、中文也差不多，但這句裡它是動詞還是名詞？看句子破案。",
-    avail: items => posTwins(items).length > 0,
+    desc:"不看中文猜答案，只靠句中位置判斷它需要名詞、動詞、形容詞或副詞。",
+    avail: items => items.some(x => x.pos && x.sen),
   },
   bank: {
     emo:"🧩", name:"詞塊拼句", tag:"",
     desc:"一次三個句子共用一個詞庫，裡面混著干擾字，點一點把每個空格填滿。",
-    avail: items => items.filter(x => findTarget(x.sen, x.word)).length >= 6,
+    avail: items => items.filter(x => findTarget(x.sen, x.word)).length >= 3,
   },
   rebuild: {
     emo:"🔁", name:"句子重組", tag:"",
@@ -564,23 +570,28 @@ function clozeHTML(item, blankHTML){
 }
 
 function makeFamilyQ(items){
-  const cands = items.filter(x => findTarget(x.sen, x.word) && familySibs(items, x).length >= 2);
+  const cands = items.filter(x => findTarget(x.sen, x.word));
   if (!cands.length) return null;
   const it = pick(cands);
   const sibs = familySibs(items, it);
   const seen = new Set([it.word.toLowerCase()]);
-  const distract = shuffle(sibs).filter(s => { const k = s.word.toLowerCase();
-    if (seen.has(k)) return false; seen.add(k); return true; }).slice(0, 3);
+  const related = [...sibs, ...items.filter(x => x.pos === it.pos), ...items];
+  const distract = shuffle(related).filter(s => { const k = s.word.toLowerCase();
+    if (seen.has(k) || !s.word) return false; seen.add(k); return true; }).slice(0, 3);
   return { type:"family", item: it, options: shuffle([it, ...distract]) };
 }
 
 function makeDetectiveQ(items){
-  const twins = posTwins(items);
-  if (!twins.length) return null;
-  const g = pick(twins);
-  const it = pick(g.filter(x => findTarget(x.sen, x.word)) .concat(g)); // 盡量挑有例句的
-  const others = g.filter(x => x !== it);
-  return { type:"detective", item: it, options: shuffle([it, ...others].slice(0, 4)) };
+  const cands = items.filter(x => x.pos && x.sen);
+  if (!cands.length) return null;
+  const it = pick(cands);
+  const norm = p => (p || "").toLowerCase().trim();
+  const seen = new Set([norm(it.pos)]);
+  const others = shuffle(items).filter(x => {
+    const k = norm(x.pos); if (!k || seen.has(k)) return false;
+    seen.add(k); return true;
+  }).slice(0, 3);
+  return { type:"detective", item: it, options: shuffle([it, ...others]) };
 }
 
 function makeBankQ(items){
@@ -630,7 +641,11 @@ function nextQuestion(items){
 /* =========================================================================
    遊戲流程
    ========================================================================= */
-const G = { score:0, hearts:3, combo:0, maxCombo:0, idx:0, total:0, right:0, wrong:[], items:[], t0:0, timer:null };
+const G = {
+  score:0, combo:0, maxCombo:0, idx:0, right:0, wrong:[], items:[],
+  t0:0, timer:null, roundTimer:null, roundEnd:0, locked:false, ended:false,
+  timeoutHandler:null, runId:0
+};
 const $ = id => document.getElementById(id);
 function show(which){
   ["setupScreen","playScreen","resultScreen"].forEach(s => $(s).classList.toggle("hidden", s !== which));
@@ -641,25 +656,37 @@ function toast(msg){
 }
 
 function startGame(){
+  clearInterval(G.timer); clearInterval(G.roundTimer); G.runId++;
   const items = currentItems();
   G.items = items;
-  G.score = 0; G.hearts = 3; G.combo = 0; G.maxCombo = 0; G.idx = 0; G.right = 0; G.wrong = [];
-  const want = parseInt($("fLen").value, 10);
-  G.total = want || Math.max(10, Math.min(40, items.length));
-  $("hTotal").textContent = G.total;
+  G.score = 0; G.combo = 0; G.maxCombo = 0; G.idx = 0; G.right = 0; G.wrong = [];
+  G.locked = false; G.ended = false;
+  G.roundEnd = Date.now() + parseInt($("fLen").value, 10) * 1000;
   show("playScreen");
+  startRoundClock();
   renderQuestion();
 }
 
 function updateHUD(){
-  $("hHearts").textContent = "♥".repeat(G.hearts) + "♡".repeat(3 - G.hearts);
   $("hScore").textContent = G.score;
-  $("hIdx").textContent = Math.min(G.idx + 1, G.total);
+  $("hIdx").textContent = G.idx + 1;
   const c = $("hCombo");
   if (G.combo >= 2){ c.textContent = `🔥 ${G.combo} 連擊 ×${comboMult()}`; c.classList.add("show"); }
   else c.classList.remove("show");
 }
 const comboMult = () => Math.min(3, 1 + Math.floor(G.combo / 3) * 0.5);
+
+function startRoundClock(){
+  clearInterval(G.roundTimer);
+  const tick = () => {
+    const left = Math.max(0, G.roundEnd - Date.now());
+    const sec = Math.ceil(left / 1000);
+    $("hClock").textContent = `${String(Math.floor(sec / 60)).padStart(2,"0")}:${String(sec % 60).padStart(2,"0")}`;
+    $("hClock").classList.toggle("danger", left > 0 && left <= 10000);
+    if (left <= 0) endGame();
+  };
+  tick(); G.roundTimer = setInterval(tick, 200);
+}
 
 function startTimerBar(){
   G.t0 = Date.now();
@@ -667,13 +694,16 @@ function startTimerBar(){
   bar.classList.remove("warn"); fill.style.width = "100%";
   clearInterval(G.timer);
   G.timer = setInterval(() => {
-    const p = Math.max(0, 1 - (Date.now() - G.t0) / 10000);
+    const p = Math.max(0, 1 - (Date.now() - G.t0) / 12000);
     fill.style.width = (p * 100) + "%";
     bar.classList.toggle("warn", p < .3);
-    if (p <= 0) clearInterval(G.timer);
+    if (p <= 0){
+      clearInterval(G.timer);
+      if (!G.locked && G.timeoutHandler) G.timeoutHandler();
+    }
   }, 120);
 }
-const speedBonus = () => Math.max(0, Math.round((10000 - (Date.now() - G.t0)) / 250));
+const speedBonus = () => Math.max(0, Math.round((12000 - (Date.now() - G.t0)) / 300));
 
 function award(correct, item){
   clearInterval(G.timer);
@@ -683,7 +713,7 @@ function award(correct, item){
     G.score += gained; G.combo++; G.maxCombo = Math.max(G.maxCombo, G.combo);
     return gained;
   } else {
-    G.hearts--; G.combo = 0;
+    G.combo = 0;
     if (item) G.wrong.push(item);
     return 0;
   }
@@ -691,12 +721,20 @@ function award(correct, item){
 
 function advance(){
   G.idx++;
-  if (G.hearts <= 0 || G.idx >= G.total) return endGame();
+  if (G.ended || Date.now() >= G.roundEnd) return endGame();
   renderQuestion();
+}
+
+function autoAdvance(delay = 850){
+  const run = G.runId;
+  updateHUD();
+  setTimeout(() => { if (!G.ended && G.runId === run) advance(); }, delay);
 }
 
 /* ---------------- 題目畫面 ---------------- */
 function renderQuestion(){
+  if (G.ended) return;
+  G.locked = false; G.timeoutHandler = null;
   updateHUD();
   const q = nextQuestion(G.items);
   if (!q){ toast("題庫出不了更多題了"); return endGame(); }
@@ -706,10 +744,6 @@ function renderQuestion(){
   ({ family:renderFamily, detective:renderDetective, bank:renderBank, rebuild:renderRebuild })[q.type](q, card);
 }
 
-function nextBtn(label){
-  return `<div class="actions"><button class="btn" id="btnNext">${label || "下一題 →"}</button></div>`;
-}
-function bindNext(){ const b = $("btnNext"); if (b) b.onclick = advance; }
 
 /* --- 1. 字根變形工廠 --- */
 function renderFamily(q, card){
@@ -726,28 +760,31 @@ function renderFamily(q, card){
     <div class="opts" id="opts"></div>
     <div id="fb"></div>`;
   const box = $("opts");
+  const answer = (o, b, timedOut = false) => {
+    if (G.locked) return; G.locked = true;
+    const ok = !timedOut && o && o.word.toLowerCase() === it.word.toLowerCase();
+    [...box.children].forEach((c, j) => { c.setAttribute("disabled","");
+      if (q.options[j].word.toLowerCase() === it.word.toLowerCase()) c.classList.add("ok"); });
+    if (!ok && b){ b.classList.add("no"); card.classList.add("shake"); setTimeout(()=>card.classList.remove("shake"),320); }
+    const bk = $("bk"); bk.textContent = cl.surface; bk.classList.add(ok ? "ok" : "no");
+    const g = award(ok, it);
+    const infl = cl.surface.toLowerCase() !== it.word.toLowerCase()
+      ? `<div class="note">句中用的是變化形 <b>${cl.surface}</b>（原形 ${it.word}）。</div>` : "";
+    $("fb").innerHTML = `<div class="feedback ${ok?"":"bad"}">
+        ${ok ? `答對！<span class="hl">+${g}</span> 分` : `${timedOut ? "時間到！" : "答錯了。"} 正解是 <span class="hl">${it.word}</span>`}
+        <div class="note"><b>${it.word}</b>（${it.pos||"—"}）${it.meaning||""}</div>${infl}
+      </div>`;
+    autoAdvance();
+  };
   q.options.forEach((o, i) => {
     const b = document.createElement("button");
     b.className = "opt";
     b.innerHTML = `<span class="k">${"ABCD"[i]}</span><span class="w">${o.word}</span>
                    <span class="m">${o.pos || ""}${o.meaning ? " · " + o.meaning : ""}</span>`;
-    b.onclick = () => {
-      const ok = o.word.toLowerCase() === it.word.toLowerCase();
-      [...box.children].forEach((c, j) => { c.setAttribute("disabled","");
-        if (q.options[j].word.toLowerCase() === it.word.toLowerCase()) c.classList.add("ok"); });
-      if (!ok){ b.classList.add("no"); card.classList.add("shake"); setTimeout(()=>card.classList.remove("shake"),320); }
-      const bk = $("bk"); bk.textContent = cl.surface; bk.classList.add(ok ? "ok" : "no");
-      const g = award(ok, it);
-      const infl = cl.surface.toLowerCase() !== it.word.toLowerCase()
-        ? `<div class="note">句中用的是變化形 <b>${cl.surface}</b>（原形 ${it.word}）。</div>` : "";
-      $("fb").innerHTML = `<div class="feedback ${ok?"":"bad"}">
-          ${ok ? `答對！<span class="hl">+${g}</span> 分` : `正解是 <span class="hl">${it.word}</span>`}
-          <div class="note"><b>${it.word}</b>（${it.pos||"—"}）${it.meaning||""}</div>${infl}
-        </div>${nextBtn()}`;
-      bindNext();
-    };
+    b.onclick = () => answer(o, b);
     box.appendChild(b);
   });
+  G.timeoutHandler = () => answer(null, null, true);
 }
 
 /* --- 2. 詞性偵探 --- */
@@ -766,26 +803,27 @@ function renderDetective(q, card){
     <div class="opts" id="opts"></div>
     <div id="fb"></div>`;
   const box = $("opts");
+  const answer = (o, b, timedOut = false) => {
+    if (G.locked) return; G.locked = true;
+    const ok = !timedOut && o && (o.pos||"").toLowerCase() === (it.pos||"").toLowerCase();
+    [...box.children].forEach((c, j) => { c.setAttribute("disabled","");
+      if ((q.options[j].pos||"").toLowerCase() === (it.pos||"").toLowerCase()) c.classList.add("ok"); });
+    if (!ok && b){ b.classList.add("no"); card.classList.add("shake"); setTimeout(()=>card.classList.remove("shake"),320); }
+    const g = award(ok, it);
+    $("fb").innerHTML = `<div class="feedback ${ok?"":"bad"}">
+        ${ok ? `破案！<span class="hl">+${g}</span> 分` : `${timedOut ? "時間到！" : "判斷錯誤。"} 這裡是 <span class="hl">${it.pos||"?"}</span>`}
+        <div class="note"><b>${it.word}</b>：${it.meaning||""}</div></div>`;
+    autoAdvance();
+  };
   q.options.forEach((o, i) => {
     const b = document.createElement("button");
     b.className = "opt";
     b.innerHTML = `<span class="k">${"ABCD"[i]}</span><span class="w">${o.pos || "?"}</span>
                    <span class="m">${o.meaning || ""}</span>`;
-    b.onclick = () => {
-      const ok = (o.pos||"") === (it.pos||"") && (o.meaning||"") === (it.meaning||"");
-      [...box.children].forEach((c, j) => { c.setAttribute("disabled","");
-        if (q.options[j] === it) c.classList.add("ok"); });
-      if (!ok){ b.classList.add("no"); card.classList.add("shake"); setTimeout(()=>card.classList.remove("shake"),320); }
-      const g = award(ok, it);
-      const sibs = q.options.filter(o2 => o2 !== it)
-        .map(o2 => `<div class="note">另一個用法：<b>${o2.pos||"?"}</b> ${o2.meaning||""}${o2.sen?`　<i>${o2.sen}</i>`:""}</div>`).join("");
-      $("fb").innerHTML = `<div class="feedback ${ok?"":"bad"}">
-          ${ok ? `破案！<span class="hl">+${g}</span> 分` : `這裡是 <span class="hl">${it.pos||"?"}</span>：${it.meaning||""}`}
-          ${sibs}</div>${nextBtn()}`;
-      bindNext();
-    };
+    b.onclick = () => answer(o, b);
     box.appendChild(b);
   });
+  G.timeoutHandler = () => answer(null, null, true);
 }
 
 /* --- 3. 詞塊拼句（多空格共用詞庫） --- */
@@ -830,8 +868,9 @@ function renderBank(q, card){
   });
   const sync = () => { $("btnCheck").disabled = filled.includes(null); };
 
-  $("btnCheck").onclick = () => {
-    let allOK = true;
+  const check = (timedOut = false) => {
+    if (G.locked) return; G.locked = true;
+    let allOK = !timedOut;
     rows.forEach((r, n) => {
       const bk = card.querySelector(`[data-b="${n}"]`);
       const ok = (filled[n] || "").toLowerCase() === r.it.word.toLowerCase();
@@ -846,11 +885,13 @@ function renderBank(q, card){
     const g = award(allOK, null);
     if (!allOK){ card.classList.add("shake"); setTimeout(()=>card.classList.remove("shake"),320); }
     $("fb").innerHTML = `<div class="feedback ${allOK?"":"bad"}">
-        ${allOK ? `全對！<span class="hl">+${g}</span> 分` : "有空格填錯了，綠色是正解"}
+        ${allOK ? `全對！<span class="hl">+${g}</span> 分` : `${timedOut ? "時間到！" : "有空格填錯了，"}綠色是正解`}
         ${rows.map(r => `<div class="note"><b>${r.it.word}</b>（${r.it.pos||"—"}）${r.it.meaning||""}</div>`).join("")}
-      </div>${nextBtn()}`;
-    bindNext();
+      </div>`;
+    autoAdvance(1100);
   };
+  $("btnCheck").onclick = () => check(false);
+  G.timeoutHandler = () => check(true);
 }
 
 /* --- 4. 句子重組 --- */
@@ -888,26 +929,31 @@ function renderRebuild(q, card){
   $("btnClear").onclick = () => { ansBox.innerHTML = ""; chosen.length = 0;
     tilesBox.querySelectorAll(".tile").forEach(t => t.classList.remove("used")); sync(); };
 
-  $("btnCheck").onclick = () => {
+  const check = (timedOut = false) => {
+    if (G.locked) return; G.locked = true;
     const guess = chosen.map(c => c.w).join(" ");
-    const ok = guess.toLowerCase() === it.sen.trim().toLowerCase();
+    const ok = !timedOut && guess.toLowerCase() === it.sen.trim().toLowerCase();
     $("btnCheck").disabled = true; $("btnClear").disabled = true;
     tilesBox.style.opacity = .35; tilesBox.style.pointerEvents = "none";
     ansBox.style.pointerEvents = "none";
     const g = award(ok, ok ? null : it);
     if (!ok){ card.classList.add("shake"); setTimeout(()=>card.classList.remove("shake"),320); }
     $("fb").innerHTML = `<div class="feedback ${ok?"":"bad"}">
-        ${ok ? `語序正確！<span class="hl">+${g}</span> 分` : `正解：<span class="hl">${it.sen}</span>`}
-        <div class="note">你排的是：${guess}</div></div>${nextBtn()}`;
-    bindNext();
+        ${ok ? `語序正確！<span class="hl">+${g}</span> 分` : `${timedOut ? "時間到！" : "語序不對。"} 正解：<span class="hl">${it.sen}</span>`}
+        <div class="note">你排的是：${guess || "（尚未完成）"}</div></div>`;
+    autoAdvance(1100);
   };
+  $("btnCheck").onclick = () => check(false);
+  G.timeoutHandler = () => check(true);
 }
 
 /* ---------------- 結算 ---------------- */
 function endGame(){
-  clearInterval(G.timer);
-  const answered = Math.max(1, G.idx + (G.hearts <= 0 ? 1 : 0));
-  const acc = Math.round(G.right / Math.min(answered, G.total) * 100);
+  if (G.ended) return;
+  const answered = Math.max(1, G.idx + (G.locked ? 1 : 0));
+  G.ended = true; G.locked = true;
+  clearInterval(G.timer); clearInterval(G.roundTimer);
+  const acc = Math.round(G.right / answered * 100);
   const stars = acc >= 90 ? 3 : acc >= 70 ? 2 : acc >= 45 ? 1 : 0;
   const bestAll = JSON.parse(localStorage.getItem(LS.best) || "{}");
   const prev = bestAll[MODE] || 0;
@@ -917,8 +963,8 @@ function endGame(){
   $("rStars").textContent = "★".repeat(stars).padEnd(3, "☆").split("").join("");
   $("rStars").style.color = stars ? "var(--amber)" : "var(--line)";
   $("rScore").textContent = G.score + " 分";
-  $("rTitle").textContent = G.hearts <= 0 ? "生命用完了，再挑戰一次！"
-    : stars === 3 ? "幾乎全對，這組單字你掌握了" : stars === 2 ? "不錯，錯的地方看一下就好" : "多練幾輪會更穩";
+  $("rTitle").textContent = `時間到！完成 ${answered} 題 · ` +
+    (stars === 3 ? "又快又準，這組單字你掌握了" : stars === 2 ? "速度不錯，錯題再看一下" : "再衝一輪會更穩");
   $("rAcc").textContent = acc + "%";
   $("rMax").textContent = G.maxCombo;
   $("rBest").textContent = (isNew ? "🎉 " : "") + Math.max(prev, G.score);
@@ -972,11 +1018,12 @@ $("btnAgain").onclick = startGame;
 $("btnBack").onclick = () => { show("setupScreen"); refreshPoolInfo(); buildModeCards(); };
 $("btnQuit").onclick = () => { if (confirm("結束這一輪？")) endGame(); };
 
-// 鍵盤：1-4 選答案、Enter 下一題
+// 鍵盤：1-4 或 A-D 選答案、Enter 檢查拼句
 document.addEventListener("keydown", e => {
   if ($("playScreen").classList.contains("hidden")) return;
-  if (e.key === "Enter"){ const b = $("btnNext") || $("btnCheck"); if (b && !b.disabled) b.click(); return; }
-  const n = "1234".indexOf(e.key);
+  if (e.key === "Enter"){ const b = $("btnCheck"); if (b && !b.disabled) b.click(); return; }
+  let n = "1234".indexOf(e.key);
+  if (n < 0) n = "abcd".indexOf(e.key.toLowerCase());
   if (n >= 0){ const opts = document.querySelectorAll("#opts .opt");
     if (opts[n] && !opts[n].hasAttribute("disabled")) opts[n].click(); }
 });
