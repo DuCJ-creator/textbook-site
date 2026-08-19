@@ -44,8 +44,15 @@
     box-shadow: 0 8px 22px rgba(255, 215, 107, .22);
   }
   .flb-icon { font-size: 1.05rem; }
-  .flb-arrow { color: var(--gold); font-size: 1rem; transition: transform .15s ease; }
+  .flb-arrow { color: var(--gold); font-size: 1rem; transition: transform .18s ease; }
   .first-lesson-btn:hover .flb-arrow { transform: translateX(3px); }
+  /* 展開時箭頭轉向下，並提示可以收起 */
+  .first-lesson-btn[aria-expanded="true"] {
+    background: rgba(255, 255, 255, .18);
+    border-color: rgba(255, 215, 107, .85);
+  }
+  .first-lesson-btn[aria-expanded="true"] .flb-arrow,
+  .first-lesson-btn[aria-expanded="true"]:hover .flb-arrow { transform: rotate(90deg); }
 
   .wrap { max-width: 1040px; margin: 0 auto; padding: 32px 20px 0; }
 
@@ -55,7 +62,15 @@
     display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
     margin-bottom: 10px;
   }
+  .first-lesson-frame .flf-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
   .first-lesson-frame .flf-title { font-family: var(--serif); font-weight: 700; font-size: 0.95rem; color: var(--ink-soft); }
+  .first-lesson-frame .flf-close {
+    border: 1px solid var(--paper-line); background: var(--card); color: var(--ink-soft);
+    font-family: var(--sans); font-size: 0.8rem; font-weight: 700;
+    padding: 7px 14px; border-radius: 999px; cursor: pointer;
+    transition: border-color .12s ease, color .12s ease, background .12s ease;
+  }
+  .first-lesson-frame .flf-close:hover { border-color: var(--accent); color: var(--accent-dark); background: var(--accent-soft); }
   .first-lesson-frame .flf-wrap {
     position: relative; border-radius: var(--radius); overflow: hidden;
     border: 1px solid var(--paper-line); box-shadow: var(--shadow);
@@ -200,7 +215,8 @@
         別慌！從單字片語到文法句型，一站幫你把進度補好補滿。<br>
         救急看線上，交流靠現場——杜老師隨時歡迎你的發問。
       </p>
-      <button type="button" class="first-lesson-btn" id="firstLessonBtn">
+      <button type="button" class="first-lesson-btn" id="firstLessonBtn"
+              aria-expanded="false" aria-controls="firstLessonFrame">
         <span class="flb-icon">🎬</span>
         <span class="flb-text">Shirley Du's Very First Lesson 高中第一課</span>
         <span class="flb-arrow">→</span>
@@ -359,49 +375,83 @@
     });
   }
 
-  // 「Very First Lesson」按鈕：獨立的 iframe 顯示區塊，不屬於任何卡片列表，
-  // 所以不做「返回列表」——第一次點擊才建立 iframe（避免還沒點擊就先載入
-  // 外部網站消耗流量），之後重複點擊只是捲動過去，不重新載入。
+  // 「Very First Lesson」按鈕：可展開／收起的獨立 iframe 區塊。
+  // 第一次點擊才建立 iframe（避免還沒點擊就先載入外部網站消耗流量）；
+  // 收起時只是隱藏區塊、不移除 iframe，所以再次展開不會重新載入。
   const FIRST_LESSON_URL = "https://ducj-creator.github.io/events/firstlesson.html";
   let firstLessonLoaded = false;
 
-  document.getElementById("firstLessonBtn").addEventListener("click", () => {
-    const area = document.getElementById("firstLessonFrame");
-    area.style.display = "block";
+  const firstLessonBtn = document.getElementById("firstLessonBtn");
 
-    if (!firstLessonLoaded) {
-      firstLessonLoaded = true;
-      area.innerHTML = `
-        <div class="flf-toolbar">
-          <span class="flf-title">🎬 Shirley Du's Very First Lesson 高中第一課</span>
+  function closeFirstLesson({ scrollBack = true } = {}) {
+    document.getElementById("firstLessonFrame").style.display = "none";
+    firstLessonBtn.setAttribute("aria-expanded", "false");
+    if (scrollBack) {
+      firstLessonBtn.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }
+
+  function buildFirstLesson(area) {
+    firstLessonLoaded = true;
+    area.innerHTML = `
+      <div class="flf-toolbar">
+        <span class="flf-title">🎬 Shirley Du's Very First Lesson 高中第一課</span>
+        <span class="flf-actions">
           <a class="btn" href="${FIRST_LESSON_URL}" target="_blank" rel="noopener">在新分頁開啟 ↗</a>
-        </div>
-        <div class="flf-wrap">
-          <div class="flf-loading" id="flfLoading">載入中…</div>
-          <iframe id="flfIframe" src="${FIRST_LESSON_URL}" title="Shirley Du's Very First Lesson" loading="lazy"></iframe>
-        </div>
-      `;
-      const iframe = document.getElementById("flfIframe");
-      const loadingEl = document.getElementById("flfLoading");
-      let settled = false;
-      iframe.addEventListener("load", () => {
-        settled = true;
-        if (loadingEl) loadingEl.remove();
-      });
-      // 部分網站會擋掉 iframe 嵌入，逾時後給明確的新分頁備援連結，
-      // 避免畫面卡在「載入中」空轉
-      setTimeout(() => {
-        if (settled) return;
-        if (loadingEl) {
-          loadingEl.innerHTML = `
-            載入時間較長，若畫面持續空白，這個網站可能不允許嵌入顯示。
-            <br />可以直接<a href="${FIRST_LESSON_URL}" target="_blank" rel="noopener">在新分頁開啟</a>。
-          `;
-        }
-      }, 4000);
+          <button type="button" class="flf-close" id="flfClose">收起 ✕</button>
+        </span>
+      </div>
+      <div class="flf-wrap">
+        <div class="flf-loading" id="flfLoading">載入中…</div>
+        <iframe id="flfIframe" src="${FIRST_LESSON_URL}" title="Shirley Du's Very First Lesson" loading="lazy"></iframe>
+      </div>
+    `;
+
+    document.getElementById("flfClose").addEventListener("click", () => closeFirstLesson());
+
+    const iframe = document.getElementById("flfIframe");
+    const loadingEl = document.getElementById("flfLoading");
+    let settled = false;
+    iframe.addEventListener("load", () => {
+      settled = true;
+      if (loadingEl) loadingEl.remove();
+    });
+    // 部分網站會擋掉 iframe 嵌入，逾時後給明確的新分頁備援連結，
+    // 避免畫面卡在「載入中」空轉
+    setTimeout(() => {
+      if (settled) return;
+      if (loadingEl) {
+        loadingEl.innerHTML = `
+          載入時間較長，若畫面持續空白，這個網站可能不允許嵌入顯示。
+          <br />可以直接<a href="${FIRST_LESSON_URL}" target="_blank" rel="noopener">在新分頁開啟</a>。
+        `;
+      }
+    }, 4000);
+  }
+
+  firstLessonBtn.addEventListener("click", () => {
+    const area = document.getElementById("firstLessonFrame");
+    const isOpen = firstLessonBtn.getAttribute("aria-expanded") === "true";
+
+    // 已展開 → 再點一次就收起
+    if (isOpen) {
+      closeFirstLesson();
+      return;
     }
 
+    area.style.display = "block";
+    firstLessonBtn.setAttribute("aria-expanded", "true");
+
+    if (!firstLessonLoaded) buildFirstLesson(area);
+
     area.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  // 按 Esc 也能收起
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && firstLessonBtn.getAttribute("aria-expanded") === "true") {
+      closeFirstLesson();
+    }
   });
 </script>
 <script src="js/notepad.js"></script>
