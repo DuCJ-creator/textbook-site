@@ -33,6 +33,12 @@ body{
   color:var(--ink); font-family:var(--sans); line-height:1.6;
   -webkit-font-smoothing:antialiased;
 }
+body::before,body::after{
+  content:"";position:fixed;width:360px;height:360px;border-radius:50%;filter:blur(80px);
+  opacity:.14;z-index:-1;pointer-events:none;animation:drift 8s ease-in-out infinite alternate;
+}
+body::before{background:#18a999;left:-120px;top:24vh}
+body::after{background:#f5a524;right:-140px;bottom:8vh;animation-delay:-4s}
 .wrap{max-width:860px;margin:0 auto;padding:0 18px 90px}
 
 /* ---------- header ---------- */
@@ -57,6 +63,8 @@ header.top .spacer{flex:1}
   background:var(--card);border:1px solid var(--line);border-radius:20px;
   padding:20px;box-shadow:0 2px 0 var(--line);
 }
+#qCard{position:relative;overflow:visible;transition:border-color .2s,box-shadow .2s}
+#qCard.game-on{border-color:#b9ded8;box-shadow:0 14px 45px -28px rgba(8,75,70,.65),0 2px 0 var(--line)}
 .muted{color:var(--ink-soft);font-size:.85rem}
 .btn{
   font-family:var(--sans);font-size:.88rem;font-weight:600;cursor:pointer;
@@ -109,6 +117,7 @@ label.fld{font-size:.78rem;font-weight:700;color:var(--ink-soft)}
   font-size:.78rem;font-weight:800;text-align:center;font-variant-numeric:tabular-nums;
 }
 .clock.danger{background:var(--rose);animation:pulse .65s infinite alternate}
+.q-clock{font-variant-numeric:tabular-nums;font-weight:800;color:var(--accent-dark)}
 .combo{
   font-family:var(--serif);font-weight:700;color:var(--amber);font-size:.95rem;
   opacity:0;transition:opacity .2s, transform .2s;transform:scale(.8);
@@ -173,6 +182,7 @@ label.fld{font-size:.78rem;font-weight:700;color:var(--ink-soft)}
 .opt.no{background:#fdeceb;border-color:var(--rose)}
 .opt.no .k{background:var(--rose);color:#fff}
 .opt[disabled]{cursor:default;transform:none}
+.opt.hit,.tile.hit{animation:hit .35s ease-out}
 
 .feedback{
   margin-top:16px;padding:14px 16px;border-radius:14px;font-size:.88rem;line-height:1.65;
@@ -213,11 +223,37 @@ label.fld{font-size:.78rem;font-weight:700;color:var(--ink-soft)}
 }
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
+/* ---------- game juice ---------- */
+#fxLayer{position:fixed;inset:0;z-index:300;pointer-events:none;overflow:hidden}
+.particle{position:absolute;font-size:clamp(16px,3vw,28px);animation:burst .85s ease-out forwards;will-change:transform,opacity}
+.score-float{
+  position:fixed;z-index:310;color:var(--green);font:900 2rem/1 var(--sans);
+  text-shadow:0 2px 0 #fff,0 6px 18px rgba(46,125,79,.3);animation:scoreUp .9s ease-out forwards;
+}
+.combo-blast{
+  position:fixed;z-index:320;left:50%;top:38%;transform:translate(-50%,-50%);
+  color:#fff;background:linear-gradient(135deg,#e78b22,#d14b33);border:3px solid #fff;
+  border-radius:18px;padding:12px 24px;font:900 clamp(1.25rem,5vw,2.1rem)/1 var(--sans);
+  box-shadow:0 16px 55px rgba(192,57,43,.35);animation:comboBoom .8s ease-out forwards;
+}
+body.flash-ok::after,body.flash-no::after{z-index:250;inset:0;width:auto;height:auto;border-radius:0;filter:none;opacity:1;animation:screenFlash .35s ease-out forwards}
+body.flash-ok::after{background:rgba(54,190,112,.22)}
+body.flash-no::after{background:rgba(213,65,52,.18)}
+.hud.bump .stat b{display:inline-block;animation:scoreBump .3s ease-out}
+
 @keyframes pop{0%{transform:scale(.94)}60%{transform:scale(1.02)}100%{transform:scale(1)}}
 .pop{animation:pop .22s ease-out}
 @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
 .shake{animation:shake .3s}
 @keyframes pulse{to{transform:scale(1.07)}}
+@keyframes drift{to{transform:translate(35px,-28px) scale(1.12)}}
+@keyframes hit{50%{transform:scale(1.045);box-shadow:0 0 0 5px rgba(46,125,79,.12)}}
+@keyframes burst{to{transform:translate(var(--dx),var(--dy)) rotate(var(--rot)) scale(.35);opacity:0}}
+@keyframes scoreUp{70%{opacity:1}to{transform:translateY(-76px) scale(1.25);opacity:0}}
+@keyframes comboBoom{0%{transform:translate(-50%,-50%) scale(.35) rotate(-8deg);opacity:0}35%{transform:translate(-50%,-50%) scale(1.12) rotate(2deg);opacity:1}to{transform:translate(-50%,-80%) scale(.9);opacity:0}}
+@keyframes screenFlash{to{opacity:0}}
+@keyframes scoreBump{50%{transform:scale(1.35);color:var(--green)}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
@@ -229,6 +265,7 @@ label.fld{font-size:.78rem;font-weight:700;color:var(--ink-soft)}
       <div class="sub">字根家族 · 詞性判讀 · 語境填空 · 句子重組</div>
     </div>
     <div class="spacer"></div>
+    <button class="icon-btn" id="btnSound" aria-pressed="true">🔊 音效</button>
     <button class="icon-btn" id="btnSettings">⚙︎ 資料設定</button>
   </div>
 </header>
@@ -246,9 +283,9 @@ label.fld{font-size:.78rem;font-weight:700;color:var(--ink-soft)}
         <select id="fLesson"><option value="">全部</option></select>
         <label class="fld" for="fLen">回合</label>
         <select id="fLen">
-          <option value="45">45 秒衝刺</option>
-          <option value="60" selected>60 秒標準</option>
-          <option value="90">90 秒耐力</option>
+          <option value="90">90 秒衝刺</option>
+          <option value="120" selected>2 分鐘標準</option>
+          <option value="180">3 分鐘耐力</option>
         </select>
         <span class="muted" id="poolInfo"></span>
       </div>
@@ -264,8 +301,8 @@ label.fld{font-size:.78rem;font-weight:700;color:var(--ink-soft)}
 
     <div class="card" style="margin-top:16px">
       <div class="muted" style="font-size:.8rem;line-height:1.8">
-        <b style="color:var(--ink)">玩法</b>　倒數內盡量多答：答對 +100，連續答對最高 ×3，單題 12 秒內越快分數越高。
-        答完會自動接下一題；單題逾時或答錯會斷連擊，但整個回合會繼續。
+        <b style="color:var(--ink)">玩法</b>　倒數內盡量多答：答對 +100，連續答對最高 ×3，越快作答分數越高。
+        題目會依工作量給 22～42 秒；答完自動接下一題，逾時或答錯會斷連擊，但回合繼續。
       </div>
     </div>
   </div>
@@ -279,6 +316,7 @@ label.fld{font-size:.78rem;font-weight:700;color:var(--ink-soft)}
       <span class="stat">分數 <b id="hScore">0</b></span>
       <span class="stat">第 <b id="hIdx">1</b> 題</span>
       <span class="combo" id="hCombo"></span>
+      <span class="stat q-clock" id="hQClock">本題 22s</span>
       <div class="bar" id="hBar"><i></i></div>
       <button class="icon-btn" id="btnQuit" style="background:var(--paper-2);color:var(--ink-soft);border-color:var(--line)">結束</button>
     </div>
@@ -326,6 +364,7 @@ label.fld{font-size:.78rem;font-weight:700;color:var(--ink-soft)}
 </div>
 
 <div class="toast" id="toast"></div>
+<div id="fxLayer" aria-hidden="true"></div>
 
 <script>
 /* =========================================================================
@@ -555,7 +594,7 @@ function buildModeCards(){
     el.innerHTML = `${m.tag && ok ? `<span class="tag">${m.tag}</span>` : ""}
       <div class="emo">${m.emo}</div><div class="nm">${m.name}</div>
       <div class="ds">${ok ? m.desc : "這個範圍的資料不足以出這種題"}</div>`;
-    if (ok) el.onclick = () => { MODE = k; buildModeCards(); refreshPoolInfo(); };
+    if (ok) el.onclick = () => { sfx("tap"); MODE = k; buildModeCards(); refreshPoolInfo(); };
     g.appendChild(el);
   });
 }
@@ -644,7 +683,7 @@ function nextQuestion(items){
 const G = {
   score:0, combo:0, maxCombo:0, idx:0, right:0, wrong:[], items:[],
   t0:0, timer:null, roundTimer:null, roundEnd:0, locked:false, ended:false,
-  timeoutHandler:null, runId:0
+  timeoutHandler:null, runId:0, qLimit:22, lastTick:-1
 };
 const $ = id => document.getElementById(id);
 function show(which){
@@ -655,6 +694,63 @@ function toast(msg){
   clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove("show"), 1600);
 }
 
+/* ---------------- 音效與遊戲視覺（不需外部檔案） ---------------- */
+let AUDIO = null;
+let SOUND_ON = localStorage.getItem("wordlab.sound") !== "off";
+function ensureAudio(){
+  if (!SOUND_ON) return null;
+  if (!AUDIO) AUDIO = new (window.AudioContext || window.webkitAudioContext)();
+  if (AUDIO.state === "suspended") AUDIO.resume();
+  return AUDIO;
+}
+function tone(freq, duration=.1, type="sine", volume=.05, delay=0){
+  const a = ensureAudio(); if (!a) return;
+  const o = a.createOscillator(), g = a.createGain(), now = a.currentTime + delay;
+  o.type = type; o.frequency.setValueAtTime(freq, now);
+  g.gain.setValueAtTime(.0001, now); g.gain.exponentialRampToValueAtTime(volume, now + .012);
+  g.gain.exponentialRampToValueAtTime(.0001, now + duration);
+  o.connect(g); g.connect(a.destination); o.start(now); o.stop(now + duration + .02);
+}
+function sfx(name){
+  if (!SOUND_ON) return;
+  if (name === "tap") tone(420,.045,"sine",.025);
+  if (name === "tick") tone(760,.055,"square",.022);
+  if (name === "start"){ tone(392,.1,"triangle",.05); tone(523,.12,"triangle",.05,.1); tone(659,.16,"triangle",.055,.2); }
+  if (name === "right"){ tone(523,.11,"sine",.06); tone(659,.13,"sine",.06,.08); tone(784,.18,"sine",.065,.16); }
+  if (name === "wrong"){ tone(196,.16,"sawtooth",.035); tone(147,.22,"sawtooth",.03,.09); }
+  if (name === "combo"){ tone(659,.08,"triangle",.055); tone(784,.1,"triangle",.06,.07); tone(988,.16,"triangle",.065,.14); }
+  if (name === "end"){ tone(523,.13,"sine",.05); tone(659,.13,"sine",.05,.12); tone(784,.28,"sine",.06,.24); }
+}
+function burst(ok=true){
+  const layer = $("fxLayer"), r = $("qCard").getBoundingClientRect();
+  const x = r.left + r.width/2, y = Math.min(innerHeight*.62, r.top + r.height*.45);
+  const icons = ok ? ["✦","★","●","◆"] : ["·","×","·","×"];
+  for (let i=0;i<(ok?18:10);i++){
+    const p = document.createElement("span"); p.className = "particle"; p.textContent = icons[i%icons.length];
+    p.style.left=x+"px"; p.style.top=y+"px"; p.style.color=ok?(i%2?"#e78b22":"#20a685"):"#c0392b";
+    const a=Math.random()*Math.PI*2,d=55+Math.random()*125;
+    p.style.setProperty("--dx",Math.cos(a)*d+"px"); p.style.setProperty("--dy",Math.sin(a)*d+"px");
+    p.style.setProperty("--rot",(Math.random()*360-180)+"deg"); layer.appendChild(p);
+    setTimeout(()=>p.remove(),950);
+  }
+}
+function gameFX(ok, gained=0){
+  document.body.classList.remove("flash-ok","flash-no"); void document.body.offsetWidth;
+  document.body.classList.add(ok?"flash-ok":"flash-no"); setTimeout(()=>document.body.classList.remove("flash-ok","flash-no"),380);
+  burst(ok);
+  if (ok && gained){
+    const f=document.createElement("div"), r=$("qCard").getBoundingClientRect();
+    f.className="score-float"; f.textContent=`+${gained}`; f.style.left=(r.left+r.width*.72)+"px"; f.style.top=(r.top+70)+"px";
+    $("fxLayer").appendChild(f); setTimeout(()=>f.remove(),950);
+    const hud=document.querySelector(".hud"); hud.classList.remove("bump"); void hud.offsetWidth; hud.classList.add("bump");
+  }
+}
+function comboBlast(){
+  if (G.combo < 3 || G.combo % 3) return;
+  const el=document.createElement("div"); el.className="combo-blast"; el.textContent=`🔥 ${G.combo} COMBO!`;
+  $("fxLayer").appendChild(el); sfx("combo"); setTimeout(()=>el.remove(),900);
+}
+
 function startGame(){
   clearInterval(G.timer); clearInterval(G.roundTimer); G.runId++;
   const items = currentItems();
@@ -663,6 +759,7 @@ function startGame(){
   G.locked = false; G.ended = false;
   G.roundEnd = Date.now() + parseInt($("fLen").value, 10) * 1000;
   show("playScreen");
+  ensureAudio(); sfx("start");
   startRoundClock();
   renderQuestion();
 }
@@ -688,22 +785,26 @@ function startRoundClock(){
   tick(); G.roundTimer = setInterval(tick, 200);
 }
 
-function startTimerBar(){
+function startTimerBar(limit){
+  G.qLimit = limit; G.lastTick = -1;
   G.t0 = Date.now();
   const bar = $("hBar"), fill = bar.firstElementChild;
   bar.classList.remove("warn"); fill.style.width = "100%";
   clearInterval(G.timer);
   G.timer = setInterval(() => {
-    const p = Math.max(0, 1 - (Date.now() - G.t0) / 12000);
+    const left = Math.max(0, limit * 1000 - (Date.now() - G.t0));
+    const p = left / (limit * 1000), sec = Math.ceil(left / 1000);
     fill.style.width = (p * 100) + "%";
     bar.classList.toggle("warn", p < .3);
+    $("hQClock").textContent = `本題 ${sec}s`;
+    if (sec <= 5 && sec > 0 && sec !== G.lastTick){ G.lastTick = sec; sfx("tick"); }
     if (p <= 0){
       clearInterval(G.timer);
       if (!G.locked && G.timeoutHandler) G.timeoutHandler();
     }
   }, 120);
 }
-const speedBonus = () => Math.max(0, Math.round((12000 - (Date.now() - G.t0)) / 300));
+const speedBonus = () => Math.max(0, Math.round((G.qLimit*1000 - (Date.now() - G.t0)) / (G.qLimit*25)));
 
 function award(correct, item){
   clearInterval(G.timer);
@@ -711,10 +812,12 @@ function award(correct, item){
     G.right++;
     const gained = Math.round(100 * comboMult()) + speedBonus();
     G.score += gained; G.combo++; G.maxCombo = Math.max(G.maxCombo, G.combo);
+    sfx("right"); gameFX(true,gained); comboBlast();
     return gained;
   } else {
     G.combo = 0;
     if (item) G.wrong.push(item);
+    sfx("wrong"); gameFX(false);
     return 0;
   }
 }
@@ -738,9 +841,12 @@ function renderQuestion(){
   updateHUD();
   const q = nextQuestion(G.items);
   if (!q){ toast("題庫出不了更多題了"); return endGame(); }
-  startTimerBar();
+  const limit = q.type === "bank" ? 18 + q.items.length * 8
+    : q.type === "rebuild" ? Math.min(42, 18 + q.item.sen.trim().split(/\s+/).length * 1.7)
+    : 22;
+  startTimerBar(Math.round(limit));
   const card = $("qCard");
-  card.classList.remove("pop"); void card.offsetWidth; card.classList.add("pop");
+  card.classList.remove("pop"); card.classList.add("game-on"); void card.offsetWidth; card.classList.add("pop");
   ({ family:renderFamily, detective:renderDetective, bank:renderBank, rebuild:renderRebuild })[q.type](q, card);
 }
 
@@ -850,6 +956,7 @@ function renderBank(q, card){
     const t = document.createElement("button");
     t.className = "tile"; t.textContent = w;
     t.onclick = () => {
+      sfx("tap");
       const slot = filled.indexOf(null); if (slot < 0) return;
       filled[slot] = w; t.classList.add("used");
       const bk = card.querySelector(`[data-b="${slot}"]`);
@@ -860,6 +967,7 @@ function renderBank(q, card){
   });
   card.querySelectorAll("[data-b]").forEach(bk => {
     bk.onclick = () => {
+      sfx("tap");
       const n = +bk.dataset.b; if (filled[n] === null) return;
       filled[n] = null; bk.textContent = ""; bk.classList.add("empty");
       if (bk._tile) bk._tile.classList.remove("used");
@@ -915,10 +1023,11 @@ function renderRebuild(q, card){
     const t = document.createElement("button");
     t.className = "tile"; t.textContent = w; t.dataset.i = i;
     t.onclick = () => {
+      sfx("tap");
       chosen.push({ w, el: t }); t.classList.add("used");
       const a = document.createElement("button");
       a.className = "tile"; a.textContent = w;
-      a.onclick = () => { t.classList.remove("used"); a.remove();
+      a.onclick = () => { sfx("tap"); t.classList.remove("used"); a.remove();
         const k = chosen.findIndex(c => c.el === t); if (k >= 0) chosen.splice(k, 1); sync(); };
       ansBox.appendChild(a); sync();
     };
@@ -953,6 +1062,7 @@ function endGame(){
   const answered = Math.max(1, G.idx + (G.locked ? 1 : 0));
   G.ended = true; G.locked = true;
   clearInterval(G.timer); clearInterval(G.roundTimer);
+  sfx("end");
   const acc = Math.round(G.right / answered * 100);
   const stars = acc >= 90 ? 3 : acc >= 70 ? 2 : acc >= 45 ? 1 : 0;
   const bestAll = JSON.parse(localStorage.getItem(LS.best) || "{}");
@@ -995,6 +1105,15 @@ function openDrawer(){
   $("drawer").classList.remove("hidden");
 }
 $("btnSettings").onclick = openDrawer;
+function syncSoundButton(){
+  $("btnSound").textContent = SOUND_ON ? "🔊 音效" : "🔇 靜音";
+  $("btnSound").setAttribute("aria-pressed", SOUND_ON ? "true" : "false");
+}
+$("btnSound").onclick = () => {
+  SOUND_ON = !SOUND_ON; localStorage.setItem("wordlab.sound", SOUND_ON ? "on" : "off");
+  syncSoundButton(); if (SOUND_ON){ ensureAudio(); sfx("start"); }
+};
+syncSoundButton();
 $("btnCloseDrawer").onclick = () => $("drawer").classList.add("hidden");
 $("btnSaveMap").onclick = () => {
   const m = {};
