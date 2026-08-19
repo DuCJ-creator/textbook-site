@@ -134,6 +134,29 @@
     });
   }
 
+  // 取出片語的英文字串，用來做字母排序。
+  // 不同資料來源欄位名可能不同，所以依序嘗試常見欄位，最後退回第一個含英文字母的字串欄位。
+  function phraseKey(item) {
+    const candidates = ["en", "english", "phrase", "term", "text", "word", "title"];
+    for (const k of candidates) {
+      if (typeof item[k] === "string" && item[k].trim()) return item[k];
+    }
+    for (const k of Object.keys(item)) {
+      if (k.startsWith("_")) continue;
+      const v = item[k];
+      if (typeof v === "string" && /[A-Za-z]/.test(v)) return v;
+    }
+    return "";
+  }
+
+  // 依英文字母排序：忽略大小寫、忽略開頭的引號/符號與 to / a / an 等前綴不做特殊處理。
+  function sortAlphabetically(items) {
+    return items.slice().sort((a, b) =>
+      phraseKey(a).replace(/^[^A-Za-z0-9]+/, "")
+        .localeCompare(phraseKey(b).replace(/^[^A-Za-z0-9]+/, ""), "en", { sensitivity: "base", numeric: true })
+    );
+  }
+
   // PhraseWidget 本身沒有「冊/課篩選」概念（單課頁不需要），
   // 所以在跨課頁面這裡自己做一層篩選，篩完的結果才交給 widget 渲染。
   function renderFiltered() {
@@ -153,7 +176,7 @@
       browseBtnId: "browseBtn",
       quizBtnId: "quizBtn",
       starredOnlyBtnId: "starredOnlyBtn",
-      items: filtered
+      items: sortAlphabetically(filtered)
     });
   }
 </script>
