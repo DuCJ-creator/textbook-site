@@ -1,0 +1,631 @@
+{
+  "book": "B5",
+  "lesson": "L1",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b5l1-v01",
+        "base": "contemporary",
+        "verb": [],
+        "noun": [
+          {
+            "en": "contemporary",
+            "zh": "同時代的人；同輩",
+            "example": "She was a contemporary of several famous artists."
+          }
+        ],
+        "adj": [
+          {
+            "en": "contemporary",
+            "zh": "當代的；同時代的",
+            "example": "The museum displays contemporary Taiwanese art."
+          }
+        ],
+        "adv": [
+          {
+            "en": "contemporarily",
+            "zh": "在當代；以當代方式",
+            "example": "The old story was contemporarily retold for young readers."
+          }
+        ]
+      },
+      {
+        "id": "b5l1-v02",
+        "base": "complicate",
+        "verb": [
+          {
+            "en": "complicate",
+            "zh": "使複雜；使難處理",
+            "example": "Adding more rules may complicate the process."
+          }
+        ],
+        "noun": [
+          {
+            "en": "complication",
+            "zh": "複雜情況；併發症",
+            "example": "A technical complication delayed the launch."
+          }
+        ],
+        "adj": [
+          {
+            "en": "complicated",
+            "zh": "複雜的；難懂的",
+            "example": "The instructions are too complicated for beginners."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l1-v03",
+        "base": "plain",
+        "verb": [],
+        "noun": [
+          {
+            "en": "plain",
+            "zh": "平原；平地",
+            "example": "The village lies on a broad coastal plain."
+          }
+        ],
+        "adj": [
+          {
+            "en": "plain",
+            "zh": "清楚的；樸素的；平坦的",
+            "example": "She wore a plain white shirt."
+          }
+        ],
+        "adv": [
+          {
+            "en": "plain",
+            "zh": "完全地；明顯地（非正式）",
+            "example": "His explanation was plain wrong."
+          },
+          {
+            "en": "plainly",
+            "zh": "清楚地；明顯地；坦率地",
+            "example": "She plainly stated that she disagreed."
+          }
+        ]
+      },
+      {
+        "id": "b5l1-v04",
+        "base": "penetrate",
+        "verb": [
+          {
+            "en": "penetrate",
+            "zh": "穿透；滲入；看透",
+            "example": "Sunlight penetrated the thick clouds."
+          }
+        ],
+        "noun": [
+          {
+            "en": "penetration",
+            "zh": "穿透；滲透；深入",
+            "example": "The cream improves skin penetration of the medicine."
+          }
+        ],
+        "adj": [
+          {
+            "en": "penetrating",
+            "zh": "穿透的；銳利的；有洞察力的",
+            "example": "The reporter asked several penetrating questions."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l1-v05",
+        "base": "renown",
+        "verb": [
+          {
+            "en": "renown",
+            "zh": "使聞名（古老或罕見用法）",
+            "example": "The victory renowned the small town throughout the region."
+          }
+        ],
+        "noun": [
+          {
+            "en": "renown",
+            "zh": "名望；聲譽",
+            "example": "The scientist gained international renown."
+          }
+        ],
+        "adj": [
+          {
+            "en": "renowned",
+            "zh": "著名的；有聲望的",
+            "example": "The city is renowned for its night markets."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l1-v06",
+        "base": "publish",
+        "verb": [
+          {
+            "en": "publish",
+            "zh": "出版；發表；公布",
+            "example": "The journal will publish the study next month."
+          }
+        ],
+        "noun": [
+          {
+            "en": "publisher",
+            "zh": "出版商；出版者",
+            "example": "The publisher released a new edition of the book."
+          },
+          {
+            "en": "publication",
+            "zh": "出版；出版物；發表",
+            "example": "The article was revised before publication."
+          },
+          {
+            "en": "publishing",
+            "zh": "出版業；出版工作",
+            "example": "She hopes to work in publishing after graduation."
+          }
+        ],
+        "adj": [
+          {
+            "en": "published",
+            "zh": "已出版的；已發表的",
+            "example": "The published report is available online."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l1-v07",
+        "base": "compose",
+        "verb": [
+          {
+            "en": "compose",
+            "zh": "創作；組成；使平靜",
+            "example": "Mozart composed music from an early age."
+          }
+        ],
+        "noun": [
+          {
+            "en": "composer",
+            "zh": "作曲家；創作者",
+            "example": "The composer wrote music for the film."
+          },
+          {
+            "en": "composition",
+            "zh": "作品；作文；組成",
+            "example": "Students wrote a short composition about their hometown."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b5l1-v08",
+        "base": "comment",
+        "verb": [
+          {
+            "en": "comment",
+            "zh": "評論；發表意見",
+            "example": "The manager refused to comment on the rumor."
+          }
+        ],
+        "noun": [
+          {
+            "en": "comment",
+            "zh": "評論；意見",
+            "example": "Her comment started an interesting discussion."
+          },
+          {
+            "en": "commentary",
+            "zh": "評論；解說；實況報導",
+            "example": "The documentary includes expert commentary."
+          },
+          {
+            "en": "commentator",
+            "zh": "評論員；解說員",
+            "example": "The sports commentator described every exciting moment."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b5l1-v09",
+        "base": "decide",
+        "verb": [
+          {
+            "en": "decide",
+            "zh": "決定；判定",
+            "example": "We decided to take the earlier train."
+          },
+          {
+            "en": "undecide",
+            "zh": "使撤回決定；使重新猶豫",
+            "example": "The new evidence may undecide some committee members."
+          }
+        ],
+        "noun": [
+          {
+            "en": "decision",
+            "zh": "決定；判決",
+            "example": "It was a difficult decision to leave the team."
+          },
+          {
+            "en": "indecision",
+            "zh": "猶豫不決；優柔寡斷",
+            "example": "His indecision caused the team to miss the opportunity."
+          }
+        ],
+        "adj": [
+          {
+            "en": "decisive",
+            "zh": "果斷的；決定性的",
+            "example": "Her decisive action prevented further damage."
+          },
+          {
+            "en": "indecisive",
+            "zh": "優柔寡斷的；非決定性的",
+            "example": "He became indecisive when faced with too many choices."
+          },
+          {
+            "en": "undecided",
+            "zh": "尚未決定的；猶豫的",
+            "example": "Many voters remain undecided."
+          }
+        ],
+        "adv": [
+          {
+            "en": "decisively",
+            "zh": "果斷地；決定性地",
+            "example": "The team won the final match decisively."
+          },
+          {
+            "en": "indecisively",
+            "zh": "猶豫不決地",
+            "example": "She stood indecisively between the two doors."
+          },
+          {
+            "en": "undecidedly",
+            "zh": "未決地；猶豫地",
+            "example": "He answered undecidedly when asked about his plans."
+          }
+        ]
+      },
+      {
+        "id": "b5l1-v10",
+        "base": "depict",
+        "verb": [
+          {
+            "en": "depict",
+            "zh": "描繪；描述",
+            "example": "The painting depicts life in a fishing village."
+          }
+        ],
+        "noun": [
+          {
+            "en": "depiction",
+            "zh": "描繪；描述；描寫",
+            "example": "The film offers a realistic depiction of city life."
+          }
+        ],
+        "adj": [
+          {
+            "en": "depictive",
+            "zh": "描繪的；描述性的",
+            "example": "The novel uses depictive language to create vivid scenes."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l1-v11",
+        "base": "solitude",
+        "verb": [],
+        "noun": [
+          {
+            "en": "solitude",
+            "zh": "獨處；孤獨；僻靜",
+            "example": "She enjoys the peace and solitude of the mountains."
+          }
+        ],
+        "adj": [
+          {
+            "en": "solitary",
+            "zh": "獨自的；孤獨的；單一的",
+            "example": "A solitary tree stood in the field."
+          }
+        ],
+        "adv": [
+          {
+            "en": "solitarily",
+            "zh": "獨自地；孤單地",
+            "example": "He lived solitarily in a small cabin."
+          }
+        ]
+      },
+      {
+        "id": "b5l1-v12",
+        "base": "compel",
+        "verb": [
+          {
+            "en": "compel",
+            "zh": "迫使；強迫；使不得不",
+            "example": "The evidence compelled him to admit the truth."
+          }
+        ],
+        "noun": [],
+        "adj": [
+          {
+            "en": "compelling",
+            "zh": "引人注目的；令人信服的；強迫性的",
+            "example": "She presented a compelling argument for change."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l1-v13",
+        "base": "predict",
+        "verb": [
+          {
+            "en": "predict",
+            "zh": "預測；預言",
+            "example": "Experts predict that prices will fall next year."
+          }
+        ],
+        "noun": [
+          {
+            "en": "prediction",
+            "zh": "預測；預言",
+            "example": "Her prediction proved to be accurate."
+          },
+          {
+            "en": "predictability",
+            "zh": "可預測性；可預料性",
+            "example": "Customers value the predictability of the service."
+          }
+        ],
+        "adj": [
+          {
+            "en": "predictive",
+            "zh": "預測性的；具有預測能力的",
+            "example": "The software uses predictive models to identify risks."
+          },
+          {
+            "en": "predictable",
+            "zh": "可預測的；意料之中的",
+            "example": "The ending of the movie was predictable."
+          },
+          {
+            "en": "unpredictable",
+            "zh": "不可預測的；反覆無常的",
+            "example": "Mountain weather can be unpredictable."
+          }
+        ],
+        "adv": [
+          {
+            "en": "predictively",
+            "zh": "以預測方式；預測性地",
+            "example": "The system analyzes customer behavior predictively."
+          },
+          {
+            "en": "predictably",
+            "zh": "可預料地；不出所料地",
+            "example": "Predictably, traffic was heavy before the holiday."
+          },
+          {
+            "en": "unpredictably",
+            "zh": "不可預測地；出乎意料地",
+            "example": "The wind changed direction unpredictably."
+          }
+        ]
+      },
+      {
+        "id": "b5l1-v14",
+        "base": "accept",
+        "verb": [
+          {
+            "en": "accept",
+            "zh": "接受；同意；承認",
+            "example": "She accepted the invitation with pleasure."
+          }
+        ],
+        "noun": [
+          {
+            "en": "acceptance",
+            "zh": "接受；認可；接納",
+            "example": "The plan gained wide acceptance among teachers."
+          },
+          {
+            "en": "acceptability",
+            "zh": "可接受性；合意程度",
+            "example": "The product was tested for safety and acceptability."
+          }
+        ],
+        "adj": [
+          {
+            "en": "acceptable",
+            "zh": "可接受的；令人滿意的",
+            "example": "Your proposal is acceptable to everyone involved."
+          }
+        ],
+        "adv": [
+          {
+            "en": "acceptably",
+            "zh": "可接受地；令人滿意地",
+            "example": "The machine performed acceptably during the test."
+          }
+        ]
+      },
+      {
+        "id": "b5l1-v15",
+        "base": "declare",
+        "verb": [
+          {
+            "en": "declare",
+            "zh": "宣布；聲明；申報",
+            "example": "The government declared the area a national park."
+          }
+        ],
+        "noun": [
+          {
+            "en": "declaration",
+            "zh": "宣言；聲明；申報",
+            "example": "The two countries signed a joint declaration."
+          }
+        ],
+        "adj": [
+          {
+            "en": "declarative",
+            "zh": "陳述的；宣告式的",
+            "example": "This is a simple declarative sentence."
+          }
+        ],
+        "adv": [
+          {
+            "en": "declaratively",
+            "zh": "以陳述方式；宣告式地",
+            "example": "The rules are expressed declaratively in the program."
+          }
+        ]
+      },
+      {
+        "id": "b5l1-v16",
+        "base": "convention",
+        "verb": [],
+        "noun": [
+          {
+            "en": "convention",
+            "zh": "慣例；習俗；大會；公約",
+            "example": "By convention, guests remove their shoes at the door."
+          }
+        ],
+        "adj": [
+          {
+            "en": "conventional",
+            "zh": "傳統的；慣常的；普通的",
+            "example": "They chose a conventional teaching method."
+          },
+          {
+            "en": "unconventional",
+            "zh": "非傳統的；不尋常的",
+            "example": "Her unconventional idea solved the problem."
+          }
+        ],
+        "adv": [
+          {
+            "en": "conventionally",
+            "zh": "傳統地；按照慣例地",
+            "example": "The dish is conventionally served with rice."
+          },
+          {
+            "en": "unconventionally",
+            "zh": "非傳統地；以不尋常方式",
+            "example": "The room was unconventionally arranged."
+          }
+        ]
+      },
+      {
+        "id": "b5l1-v17",
+        "base": "justice",
+        "verb": [
+          {
+            "en": "justify",
+            "zh": "證明……有理；為……辯護",
+            "example": "The results justify further investment in the project."
+          }
+        ],
+        "noun": [
+          {
+            "en": "justification",
+            "zh": "正當理由；辯解；證明",
+            "example": "There is no justification for treating people unfairly."
+          },
+          {
+            "en": "justice",
+            "zh": "正義；公平；司法",
+            "example": "The community continued to demand justice."
+          },
+          {
+            "en": "injustice",
+            "zh": "不公正；不公平的待遇",
+            "example": "She spoke out against social injustice."
+          }
+        ],
+        "adj": [
+          {
+            "en": "justified",
+            "zh": "有正當理由的；合理的",
+            "example": "His concern about safety was fully justified."
+          },
+          {
+            "en": "unjustified",
+            "zh": "沒有正當理由的；不合理的",
+            "example": "The sudden price increase was unjustified."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l1-v18",
+        "base": "encounter",
+        "verb": [
+          {
+            "en": "encounter",
+            "zh": "遭遇；偶然遇見",
+            "example": "We encountered several problems during the trip."
+          }
+        ],
+        "noun": [
+          {
+            "en": "encounter",
+            "zh": "遭遇；邂逅；交鋒",
+            "example": "The hikers had a close encounter with a bear."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b5l1-v19",
+        "base": "essence",
+        "verb": [],
+        "noun": [
+          {
+            "en": "essence",
+            "zh": "本質；精髓；香精",
+            "example": "Trust is the essence of a strong friendship."
+          }
+        ],
+        "adj": [
+          {
+            "en": "essential",
+            "zh": "必要的；本質的；基本的",
+            "example": "Clean water is essential for good health."
+          }
+        ],
+        "adv": [
+          {
+            "en": "essentially",
+            "zh": "本質上；基本上；大體而言",
+            "example": "The two plans are essentially the same."
+          }
+        ]
+      }
+    ]
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": []
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}
