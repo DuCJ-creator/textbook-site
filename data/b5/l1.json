@@ -2629,7 +2629,29 @@
     ]
   },
   "grammar": {
-    "points": [],
+    "points": [
+      {
+        "id": "b5l1-g1",
+        "title": "anyone who/whoever; anything that/whateve; any/either one of them that/which ever 無論誰/什麼/哪一",
+        "examples": [
+          "Anyone who (Whoever) tries to crack open the vault will trigger the alarm.",
+          "The two tours are both great, so either one of them that (whichever) looks suitable for your family would be a good choice.",
+          "Anything that (Whatever) is sold in the boutique shop costs an arm and a leg."
+        ]
+      },
+      {
+        "id": "b5l1-g2",
+        "title": "Reference & Substitution 指涉字&取代",
+        "examples": [
+          "Ships are vital for international trade because almost every product, from food to iPhones, is carried on them from one port to another. (pronoun)",
+          "Tommy ran into Gina, and they had a short talk on the street. (pronoun)",
+          "We are all waiting for you in the classroom. Come here quickly. (adverb)",
+          "Edward adopted a stray dog, and now the dog is his best friend. (article)",
+          "I like coffee, and so does my girlfriend.",
+          "There are four options. Just pick one."
+        ]
+      }
+    ],
     "sentence_structures": {
       "items": [
         {
@@ -2840,6 +2862,6 @@
     }
   },
   "text_genre": {
-    "raw_text": ""
+    "raw_text": "Understand a topic with a list of central ideas and supporting information.\nThis text is an penetrating analysis of the poem \"The Road Not TAken\" written by Rober Frost. It is centered on five central ideas. Through a clear exploration of the poet, the text itself, its deeper themes, its enduring appeal, and its practical wisdom, the analysis demonstrates how a simple forest walk captures the fundamental nature of human choice.\nThe Poet (Robert Frost)\nPlain Language, Deep Insight: Frost stands out among his contemporaries—who often favored complex vocabulary—by using accessible, conversational language to express profound psychological realities.\nBiographical Inspiration: The poem grew directly out of Frost's real-life friendship with poet Edward Thomas, whose persistent hesitation at every fork during their woodland walks inspired Frost to compose a gentle, ironic commentary on indecision.\nThe Poem (\"The Road Not Taken\")\nCentral Metaphor: Published in 1915, the work uses the image of a solitary traveler standing before two diverging paths in an autumn forest to mirror the crossroads people face throughout their lives.\nSequential Development: The early stanzas establish the inherent limits of choice—that a person can walk only one path while the future remains clouded by uncertainty—while the third stanza highlights the irreversible nature of decisions once made.\nTheme (The Complexity of Decision-Making)\nSubverting Popular Interpretations: While popular readings celebrate the speaker for taking a non-conformist path \"less traveled by,\" the text points out that earlier lines describe both paths as worn \"really about the same,\" revealing that humans often rationalize arbitrary choices after the fact.\nEmotional Nuance: Structural elements like the dramatic dash (\"and I—\") and the anticipated \"sigh\" convey a rich mix of loss, self-mockery, regret, and ultimate acceptance rather than a straightforward, victorious triumph.\nLasting Appeal\nOpen-Ended Reflection: The poem remains a timeless classic because it refuses to offer neat, easy answers, inviting each reader to project their own experiences onto the speaker's decision.\nResonant Realism: Its enduring power stems from accurately mirroring the genuine anxiety, hesitation, and emotional weight that accompany significant life decisions.\nLife Lessons\nNavigating Uncertainty: The text emphasizes that crucial milestones, such as picking a college major or career, must inevitably be executed without knowing the final outcome.\nConstructing Meaning: The ultimate insight of the poem is that life's meaning comes not from obsessing over a \"perfect\" or regret-free choice, but from how we take ownership of our chosen path and explain our personal narrative over time.\nIn conclusion, the analysis reveals that \"The Road Not Taken\" derives its power from the tension between simple surface details and complex human truths. By framing Frost's work through these five core dimensions, the text illustrates that the true significance of decision-making lies not in finding an ideal path, but in accepting the uncertainty of the journey and crafting a meaningful narrative from the choices we make."
   }
 }
