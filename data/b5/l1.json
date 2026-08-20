@@ -617,7 +617,2016 @@
     ]
   },
   "phrases": {
-    "items": []
+    "items": [
+      {
+        "id": "b5l1-p001",
+        "phrase": "be known for",
+        "pos": "ph.",
+        "zh": "以……聞名",
+        "example_en": "The poet is known for simple language.",
+        "example_zh": "這位詩人以簡潔的語言聞名。"
+      },
+      {
+        "id": "b5l1-p002",
+        "phrase": "express deep ideas",
+        "pos": "ph.",
+        "zh": "表達深刻思想",
+        "example_en": "His poems express deep ideas clearly.",
+        "example_zh": "他的詩清楚表達深刻思想。"
+      },
+      {
+        "id": "b5l1-p003",
+        "phrase": "unlike one’s contemporaries",
+        "pos": "ph.",
+        "zh": "不像某人的同時代人",
+        "example_en": "Unlike his contemporaries, he wrote plainly.",
+        "example_zh": "不像他的同時代人，他以平實文字寫作。"
+      },
+      {
+        "id": "b5l1-p004",
+        "phrase": "favor complicated language",
+        "pos": "ph.",
+        "zh": "偏好複雜的語言",
+        "example_en": "Some writers favor complicated language.",
+        "example_zh": "有些作家偏好複雜的語言。"
+      },
+      {
+        "id": "b5l1-p005",
+        "phrase": "write in a style",
+        "pos": "ph.",
+        "zh": "以某種風格寫作",
+        "example_en": "She writes in a direct style.",
+        "example_zh": "她以直接的風格寫作。"
+      },
+      {
+        "id": "b5l1-p006",
+        "phrase": "from all walks of life",
+        "pos": "ph.",
+        "zh": "來自各行各業",
+        "example_en": "Readers from all walks of life enjoy the book.",
+        "example_zh": "來自各行各業的讀者都喜歡這本書。"
+      },
+      {
+        "id": "b5l1-p007",
+        "phrase": "appear as plain as…",
+        "pos": "ph.",
+        "zh": "看起來和……一樣平凡",
+        "example_en": "The poem appears as plain as everyday speech.",
+        "example_zh": "這首詩看起來和日常話語一樣平凡。"
+      },
+      {
+        "id": "b5l1-p008",
+        "phrase": "everyday conversation",
+        "pos": "ph.",
+        "zh": "日常對話",
+        "example_en": "The dialogue sounds like everyday conversation.",
+        "example_zh": "這段對話聽起來像日常對話。"
+      },
+      {
+        "id": "b5l1-p009",
+        "phrase": "beneath the simplicity lie",
+        "pos": "ph.",
+        "zh": "簡樸之下蘊藏著……",
+        "example_en": "Beneath the simplicity lie profound ideas.",
+        "example_zh": "簡樸之下蘊藏著深刻的思想。"
+      },
+      {
+        "id": "b5l1-p010",
+        "phrase": "penetrating insights into life",
+        "pos": "ph.",
+        "zh": "對人生的深刻洞見",
+        "example_en": "The poem offers penetrating insights into life.",
+        "example_zh": "這首詩提供對人生的深刻洞見。"
+      },
+      {
+        "id": "b5l1-p011",
+        "phrase": "most renowned work",
+        "pos": "ph.",
+        "zh": "最著名的作品",
+        "example_en": "This poem is his most renowned work.",
+        "example_zh": "這首詩是他最著名的作品。"
+      },
+      {
+        "id": "b5l1-p012",
+        "phrase": "outstanding ability to",
+        "pos": "ph.",
+        "zh": "做……的傑出能力",
+        "example_en": "She has an outstanding ability to tell stories.",
+        "example_zh": "她有講故事的傑出能力。"
+      },
+      {
+        "id": "b5l1-p013",
+        "phrase": "draw profound meaning from",
+        "pos": "ph.",
+        "zh": "從……汲取深刻意義",
+        "example_en": "He draws profound meaning from ordinary events.",
+        "example_zh": "他從日常事件汲取深刻意義。"
+      },
+      {
+        "id": "b5l1-p014",
+        "phrase": "originate from",
+        "pos": "ph.",
+        "zh": "源自……",
+        "example_en": "The custom originated from an ancient tradition.",
+        "example_zh": "這項習俗源自古老傳統。"
+      },
+      {
+        "id": "b5l1-p015",
+        "phrase": "hesitate at every fork",
+        "pos": "ph.",
+        "zh": "在每個岔路口猶豫",
+        "example_en": "The traveler hesitated at every fork.",
+        "example_zh": "旅人在每個岔路口都猶豫不決。"
+      },
+      {
+        "id": "b5l1-p016",
+        "phrase": "wonder about",
+        "pos": "ph.",
+        "zh": "對……感到好奇；想知道",
+        "example_en": "I often wonder about the future.",
+        "example_zh": "我常對未來感到好奇。"
+      },
+      {
+        "id": "b5l1-p017",
+        "phrase": "compose a poem",
+        "pos": "ph.",
+        "zh": "創作詩歌",
+        "example_en": "She composed a poem about autumn.",
+        "example_zh": "她創作了一首關於秋天的詩。"
+      },
+      {
+        "id": "b5l1-p018",
+        "phrase": "a gentle comment on",
+        "pos": "ph.",
+        "zh": "對……溫和的評論",
+        "example_en": "The poem is a gentle comment on human choices.",
+        "example_zh": "這首詩是對人類選擇的溫和評論。"
+      },
+      {
+        "id": "b5l1-p019",
+        "phrase": "be known as",
+        "pos": "ph.",
+        "zh": "被稱為……",
+        "example_en": "He is known as a great poet.",
+        "example_zh": "他被稱為偉大的詩人。"
+      },
+      {
+        "id": "b5l1-p020",
+        "phrase": "be known to the public",
+        "pos": "ph.",
+        "zh": "為大眾所知",
+        "example_en": "Her work is known to the public.",
+        "example_zh": "她的作品為大眾所知。"
+      },
+      {
+        "id": "b5l1-p021",
+        "phrase": "inspire one’s interest in",
+        "pos": "ph.",
+        "zh": "激發某人對……的興趣",
+        "example_en": "The teacher inspired my interest in poetry.",
+        "example_zh": "老師激發了我對詩的興趣。"
+      },
+      {
+        "id": "b5l1-p022",
+        "phrase": "rich experience",
+        "pos": "ph.",
+        "zh": "豐富的經驗",
+        "example_en": "Travel gave her rich experience.",
+        "example_zh": "旅行帶給她豐富的經驗。"
+      },
+      {
+        "id": "b5l1-p023",
+        "phrase": "a respected mentor",
+        "pos": "ph.",
+        "zh": "受敬重的導師",
+        "example_en": "He became a respected mentor to young writers.",
+        "example_zh": "他成為年輕作家敬重的導師。"
+      },
+      {
+        "id": "b5l1-p024",
+        "phrase": "win first prize",
+        "pos": "ph.",
+        "zh": "贏得首獎",
+        "example_en": "Her poem won first prize.",
+        "example_zh": "她的詩贏得首獎。"
+      },
+      {
+        "id": "b5l1-p025",
+        "phrase": "famous landmark in",
+        "pos": "ph.",
+        "zh": "……的著名地標",
+        "example_en": "The tower is a famous landmark in Paris.",
+        "example_zh": "這座塔是巴黎的著名地標。"
+      },
+      {
+        "id": "b5l1-p026",
+        "phrase": "speak in a low voice",
+        "pos": "ph.",
+        "zh": "低聲說話",
+        "example_en": "He spoke in a low voice.",
+        "example_zh": "他低聲說話。"
+      },
+      {
+        "id": "b5l1-p027",
+        "phrase": "dress in a casual way",
+        "pos": "ph.",
+        "zh": "穿著休閒",
+        "example_en": "She dressed in a casual way.",
+        "example_zh": "她穿著休閒。"
+      },
+      {
+        "id": "b5l1-p028",
+        "phrase": "act in a strange manner",
+        "pos": "ph.",
+        "zh": "舉止怪異",
+        "example_en": "The man acted in a strange manner.",
+        "example_zh": "那名男子舉止怪異。"
+      },
+      {
+        "id": "b5l1-p029",
+        "phrase": "cause strong emotional responses",
+        "pos": "ph.",
+        "zh": "引起強烈情緒反應",
+        "example_en": "The film caused strong emotional responses.",
+        "example_zh": "這部電影引起強烈情緒反應。"
+      },
+      {
+        "id": "b5l1-p030",
+        "phrase": "adventure seeker",
+        "pos": "ph.",
+        "zh": "冒險追求者",
+        "example_en": "He is an adventure seeker.",
+        "example_zh": "他是一名冒險追求者。"
+      },
+      {
+        "id": "b5l1-p031",
+        "phrase": "run a marathon",
+        "pos": "ph.",
+        "zh": "跑馬拉松",
+        "example_en": "She ran a marathon last year.",
+        "example_zh": "她去年跑了一場馬拉松。"
+      },
+      {
+        "id": "b5l1-p032",
+        "phrase": "in the intense final",
+        "pos": "ph.",
+        "zh": "在激烈的決賽中",
+        "example_en": "They met in the intense final.",
+        "example_zh": "他們在激烈的決賽中交手。"
+      },
+      {
+        "id": "b5l1-p033",
+        "phrase": "a successful entrepreneur",
+        "pos": "ph.",
+        "zh": "成功的企業家",
+        "example_en": "She became a successful entrepreneur.",
+        "example_zh": "她成為一名成功的企業家。"
+      },
+      {
+        "id": "b5l1-p034",
+        "phrase": "overcome various difficulties",
+        "pos": "ph.",
+        "zh": "克服各種困難",
+        "example_en": "He overcame various difficulties.",
+        "example_zh": "他克服了各種困難。"
+      },
+      {
+        "id": "b5l1-p035",
+        "phrase": "maintain a positive attitude",
+        "pos": "ph.",
+        "zh": "保持正面態度",
+        "example_en": "Try to maintain a positive attitude.",
+        "example_zh": "試著保持正面態度。"
+      },
+      {
+        "id": "b5l1-p036",
+        "phrase": "love for nature",
+        "pos": "ph.",
+        "zh": "對大自然的熱愛",
+        "example_en": "Her poems show her love for nature.",
+        "example_zh": "她的詩展現對大自然的熱愛。"
+      },
+      {
+        "id": "b5l1-p037",
+        "phrase": "work as a critic",
+        "pos": "ph.",
+        "zh": "擔任評論家",
+        "example_en": "He works as a film critic.",
+        "example_zh": "他擔任影評人。"
+      },
+      {
+        "id": "b5l1-p038",
+        "phrase": "gain insights into",
+        "pos": "ph.",
+        "zh": "深入了解……",
+        "example_en": "Reading helps us gain insights into life.",
+        "example_zh": "閱讀幫助我們深入了解人生。"
+      },
+      {
+        "id": "b5l1-p039",
+        "phrase": "show determination",
+        "pos": "ph.",
+        "zh": "展現決心",
+        "example_en": "She showed determination during training.",
+        "example_zh": "她在訓練中展現決心。"
+      },
+      {
+        "id": "b5l1-p040",
+        "phrase": "have the better claim",
+        "pos": "ph.",
+        "zh": "更有資格；主張更有力",
+        "example_en": "She has the better claim to the title.",
+        "example_zh": "她更有資格獲得這個頭銜。"
+      },
+      {
+        "id": "b5l1-p041",
+        "phrase": "make all the differences",
+        "pos": "ph.",
+        "zh": "帶來重大差異",
+        "example_en": "One kind word can make all the difference.",
+        "example_zh": "一句善意的話能帶來重大差異。"
+      },
+      {
+        "id": "b5l1-p042",
+        "phrase": "a talented athlete",
+        "pos": "ph.",
+        "zh": "有才華的運動員",
+        "example_en": "He is a talented athlete.",
+        "example_zh": "他是一名有才華的運動員。"
+      },
+      {
+        "id": "b5l1-p043",
+        "phrase": "a gifted student",
+        "pos": "ph.",
+        "zh": "有天分的學生",
+        "example_en": "She is a gifted student.",
+        "example_zh": "她是一名有天分的學生。"
+      },
+      {
+        "id": "b5l1-p044",
+        "phrase": "key information",
+        "pos": "ph.",
+        "zh": "關鍵資訊",
+        "example_en": "The report contains key information.",
+        "example_zh": "這份報告包含關鍵資訊。"
+      },
+      {
+        "id": "b5l1-p045",
+        "phrase": "solve a puzzle",
+        "pos": "ph.",
+        "zh": "解開謎題",
+        "example_en": "We solved the puzzle together.",
+        "example_zh": "我們一起解開謎題。"
+      },
+      {
+        "id": "b5l1-p046",
+        "phrase": "a thick book",
+        "pos": "ph.",
+        "zh": "一本厚書",
+        "example_en": "He carried a thick book.",
+        "example_zh": "他帶著一本厚書。"
+      },
+      {
+        "id": "b5l1-p047",
+        "phrase": "change in strategy",
+        "pos": "ph.",
+        "zh": "策略上的改變",
+        "example_en": "The change in strategy worked well.",
+        "example_zh": "策略上的改變很有效。"
+      },
+      {
+        "id": "b5l1-p048",
+        "phrase": "initially doubt",
+        "pos": "ph.",
+        "zh": "起初懷疑",
+        "example_en": "I initially doubted the plan.",
+        "example_zh": "我起初懷疑這項計畫。"
+      },
+      {
+        "id": "b5l1-p049",
+        "phrase": "water source",
+        "pos": "ph.",
+        "zh": "水源",
+        "example_en": "The river is the town’s main water source.",
+        "example_zh": "這條河是城鎮的主要水源。"
+      },
+      {
+        "id": "b5l1-p050",
+        "phrase": "at this critical moment",
+        "pos": "ph.",
+        "zh": "在這個關鍵時刻",
+        "example_en": "We must stay calm at this critical moment.",
+        "example_zh": "在這個關鍵時刻我們必須冷靜。"
+      },
+      {
+        "id": "b5l1-p051",
+        "phrase": "achieve one’s dream",
+        "pos": "ph.",
+        "zh": "實現某人的夢想",
+        "example_en": "She worked hard to achieve her dream.",
+        "example_zh": "她努力實現夢想。"
+      },
+      {
+        "id": "b5l1-p052",
+        "phrase": "a brand-new country",
+        "pos": "ph.",
+        "zh": "一個全新的國家",
+        "example_en": "They began life in a brand-new country.",
+        "example_zh": "他們在一個全新的國家展開生活。"
+      },
+      {
+        "id": "b5l1-p053",
+        "phrase": "on the surface",
+        "pos": "ph.",
+        "zh": "表面上",
+        "example_en": "On the surface, the poem seems simple.",
+        "example_zh": "表面上，這首詩似乎很簡單。"
+      },
+      {
+        "id": "b5l1-p054",
+        "phrase": "present a philosophical reflection on life",
+        "pos": "ph.",
+        "zh": "呈現對人生的哲學省思",
+        "example_en": "The poem presents a philosophical reflection on life.",
+        "example_zh": "這首詩呈現對人生的哲學省思。"
+      },
+      {
+        "id": "b5l1-p055",
+        "phrase": "function as",
+        "pos": "ph.",
+        "zh": "作為；發揮……功能",
+        "example_en": "The road functions as a metaphor.",
+        "example_zh": "這條路作為一種隱喻。"
+      },
+      {
+        "id": "b5l1-p056",
+        "phrase": "a compelling metaphor for",
+        "pos": "ph.",
+        "zh": "……的有力隱喻",
+        "example_en": "The journey is a compelling metaphor for life.",
+        "example_zh": "旅程是人生的有力隱喻。"
+      },
+      {
+        "id": "b5l1-p057",
+        "phrase": "face a crucial decision",
+        "pos": "ph.",
+        "zh": "面臨關鍵決定",
+        "example_en": "She faced a crucial decision.",
+        "example_zh": "她面臨一項關鍵決定。"
+      },
+      {
+        "id": "b5l1-p058",
+        "phrase": "lay out",
+        "pos": "ph.",
+        "zh": "陳述；攤開",
+        "example_en": "He laid out the available choices.",
+        "example_zh": "他陳述了可用的選擇。"
+      },
+      {
+        "id": "b5l1-p059",
+        "phrase": "choose only one option",
+        "pos": "ph.",
+        "zh": "只能選擇一個選項",
+        "example_en": "We can choose only one option.",
+        "example_zh": "我們只能選擇一個選項。"
+      },
+      {
+        "id": "b5l1-p060",
+        "phrase": "a universal dilemma at life’s crossroads",
+        "pos": "ph.",
+        "zh": "人生十字路口的普遍兩難",
+        "example_en": "The poem describes a universal dilemma at life’s crossroads.",
+        "example_zh": "這首詩描述人生十字路口的普遍兩難。"
+      },
+      {
+        "id": "b5l1-p061",
+        "phrase": "prediction about the future",
+        "pos": "ph.",
+        "zh": "對未來的預測",
+        "example_en": "No prediction about the future is certain.",
+        "example_zh": "對未來的預測都不是確定的。"
+      },
+      {
+        "id": "b5l1-p062",
+        "phrase": "be clouded by uncertainty",
+        "pos": "ph.",
+        "zh": "被不確定性籠罩",
+        "example_en": "The decision was clouded by uncertainty.",
+        "example_zh": "這項決定被不確定性籠罩。"
+      },
+      {
+        "id": "b5l1-p063",
+        "phrase": "acceptance of",
+        "pos": "ph.",
+        "zh": "對……的接受",
+        "example_en": "The poem shows acceptance of change.",
+        "example_zh": "這首詩展現對改變的接受。"
+      },
+      {
+        "id": "b5l1-p064",
+        "phrase": "irreversible nature",
+        "pos": "ph.",
+        "zh": "不可逆的本質",
+        "example_en": "We must accept the irreversible nature of time.",
+        "example_zh": "我們必須接受時間不可逆的本質。"
+      },
+      {
+        "id": "b5l1-p065",
+        "phrase": "lead on to",
+        "pos": "ph.",
+        "zh": "通往；導致……",
+        "example_en": "One choice leads on to another.",
+        "example_zh": "一個選擇會通往另一個選擇。"
+      },
+      {
+        "id": "b5l1-p066",
+        "phrase": "add weight to",
+        "pos": "ph.",
+        "zh": "增加……的重要性／說服力",
+        "example_en": "The evidence adds weight to her claim.",
+        "example_zh": "這項證據增加了她主張的說服力。"
+      },
+      {
+        "id": "b5l1-p067",
+        "phrase": "the alternative path",
+        "pos": "ph.",
+        "zh": "另一條道路",
+        "example_en": "He wondered about the alternative path.",
+        "example_zh": "他思考著另一條道路。"
+      },
+      {
+        "id": "b5l1-p068",
+        "phrase": "historic monument",
+        "pos": "ph.",
+        "zh": "歷史古蹟",
+        "example_en": "The temple is a historic monument.",
+        "example_zh": "這座寺廟是一處歷史古蹟。"
+      },
+      {
+        "id": "b5l1-p069",
+        "phrase": "thick bush",
+        "pos": "ph.",
+        "zh": "茂密的灌木叢",
+        "example_en": "The animal hid in a thick bush.",
+        "example_zh": "那隻動物躲在茂密的灌木叢中。"
+      },
+      {
+        "id": "b5l1-p070",
+        "phrase": "a diligent scientist",
+        "pos": "ph.",
+        "zh": "勤奮的科學家",
+        "example_en": "She is a diligent scientist.",
+        "example_zh": "她是一位勤奮的科學家。"
+      },
+      {
+        "id": "b5l1-p071",
+        "phrase": "a complex puzzle",
+        "pos": "ph.",
+        "zh": "複雜的謎題",
+        "example_en": "The case is a complex puzzle.",
+        "example_zh": "這個案件是一個複雜的謎題。"
+      },
+      {
+        "id": "b5l1-p072",
+        "phrase": "future career",
+        "pos": "ph.",
+        "zh": "未來職涯",
+        "example_en": "He is thinking about his future career.",
+        "example_zh": "他正在思考未來職涯。"
+      },
+      {
+        "id": "b5l1-p073",
+        "phrase": "A rather than B",
+        "pos": "ph.",
+        "zh": "A 而不是 B",
+        "example_en": "Choose quality rather than speed.",
+        "example_zh": "選擇品質而不是速度。"
+      },
+      {
+        "id": "b5l1-p074",
+        "phrase": "in the intense discussion",
+        "pos": "ph.",
+        "zh": "在激烈的討論中",
+        "example_en": "They disagreed in the intense discussion.",
+        "example_zh": "他們在激烈的討論中意見不合。"
+      },
+      {
+        "id": "b5l1-p075",
+        "phrase": "seek a win-win solution",
+        "pos": "ph.",
+        "zh": "尋求雙贏方案",
+        "example_en": "Both sides sought a win-win solution.",
+        "example_zh": "雙方都尋求雙贏方案。"
+      },
+      {
+        "id": "b5l1-p076",
+        "phrase": "energetic young people",
+        "pos": "ph.",
+        "zh": "充滿活力的年輕人",
+        "example_en": "The program attracts energetic young people.",
+        "example_zh": "這項計畫吸引充滿活力的年輕人。"
+      },
+      {
+        "id": "b5l1-p077",
+        "phrase": "art gallery",
+        "pos": "ph.",
+        "zh": "美術館；畫廊",
+        "example_en": "We visited an art gallery.",
+        "example_zh": "我們參觀了一間美術館。"
+      },
+      {
+        "id": "b5l1-p078",
+        "phrase": "redesign the entire space",
+        "pos": "ph.",
+        "zh": "重新設計整個空間",
+        "example_en": "They redesigned the entire space.",
+        "example_zh": "他們重新設計了整個空間。"
+      },
+      {
+        "id": "b5l1-p079",
+        "phrase": "observe one’s reaction",
+        "pos": "ph.",
+        "zh": "觀察某人的反應",
+        "example_en": "The teacher observed the students’ reactions.",
+        "example_zh": "老師觀察學生的反應。"
+      },
+      {
+        "id": "b5l1-p080",
+        "phrase": "have a positive reflection on",
+        "pos": "ph.",
+        "zh": "對……有正面反映／思考",
+        "example_en": "The change had a positive reflection on sales.",
+        "example_zh": "這項改變對銷售有正面反映。"
+      },
+      {
+        "id": "b5l1-p081",
+        "phrase": "natural light",
+        "pos": "ph.",
+        "zh": "自然光",
+        "example_en": "The room is filled with natural light.",
+        "example_zh": "房間充滿自然光。"
+      },
+      {
+        "id": "b5l1-p082",
+        "phrase": "Artificial lighting",
+        "pos": "ph.",
+        "zh": "人工照明",
+        "example_en": "Artificial lighting can change the mood.",
+        "example_zh": "人工照明能改變氣氛。"
+      },
+      {
+        "id": "b5l1-p083",
+        "phrase": "feel relieved",
+        "pos": "ph.",
+        "zh": "感到放心",
+        "example_en": "I felt relieved after the test.",
+        "example_zh": "考試後我感到放心。"
+      },
+      {
+        "id": "b5l1-p084",
+        "phrase": "lasting appeal",
+        "pos": "ph.",
+        "zh": "持久的吸引力",
+        "example_en": "The story has lasting appeal.",
+        "example_zh": "這個故事有持久的吸引力。"
+      },
+      {
+        "id": "b5l1-p085",
+        "phrase": "lasting fascination",
+        "pos": "ph.",
+        "zh": "持久的魅力",
+        "example_en": "The poem holds a lasting fascination for readers.",
+        "example_zh": "這首詩對讀者有持久的魅力。"
+      },
+      {
+        "id": "b5l1-p086",
+        "phrase": "stem from",
+        "pos": "ph.",
+        "zh": "源自……",
+        "example_en": "The problem stems from poor planning.",
+        "example_zh": "這個問題源自規劃不周。"
+      },
+      {
+        "id": "b5l1-p087",
+        "phrase": "invite different interpretations",
+        "pos": "ph.",
+        "zh": "引發不同詮釋",
+        "example_en": "The ending invites different interpretations.",
+        "example_zh": "這個結局引發不同詮釋。"
+      },
+      {
+        "id": "b5l1-p088",
+        "phrase": "choose an unconventional path",
+        "pos": "ph.",
+        "zh": "選擇非傳統道路",
+        "example_en": "She chose an unconventional path.",
+        "example_zh": "她選擇了一條非傳統道路。"
+      },
+      {
+        "id": "b5l1-p089",
+        "phrase": "justify one’s decision",
+        "pos": "ph.",
+        "zh": "為某人的決定辯護／提出理由",
+        "example_en": "He justified his decision clearly.",
+        "example_zh": "他清楚說明了決定的理由。"
+      },
+      {
+        "id": "b5l1-p090",
+        "phrase": "lie in",
+        "pos": "ph.",
+        "zh": "在於……",
+        "example_en": "The beauty lies in its simplicity.",
+        "example_zh": "美麗之處在於它的簡樸。"
+      },
+      {
+        "id": "b5l1-p091",
+        "phrase": "emotional complexity",
+        "pos": "ph.",
+        "zh": "情感的複雜性",
+        "example_en": "The novel explores emotional complexity.",
+        "example_zh": "這部小說探討情感的複雜性。"
+      },
+      {
+        "id": "b5l1-p092",
+        "phrase": "emotional weight",
+        "pos": "ph.",
+        "zh": "情感分量",
+        "example_en": "Her words carry emotional weight.",
+        "example_zh": "她的話帶有情感分量。"
+      },
+      {
+        "id": "b5l1-p093",
+        "phrase": "struggle to",
+        "pos": "ph.",
+        "zh": "努力做……",
+        "example_en": "He struggled to make a choice.",
+        "example_zh": "他努力作出選擇。"
+      },
+      {
+        "id": "b5l1-p094",
+        "phrase": "self-criticism",
+        "pos": "ph.",
+        "zh": "自我批評",
+        "example_en": "Too much self-criticism can be harmful.",
+        "example_zh": "過度自我批評可能有害。"
+      },
+      {
+        "id": "b5l1-p095",
+        "phrase": "organize ideas",
+        "pos": "ph.",
+        "zh": "整理想法",
+        "example_en": "An outline helps organize ideas.",
+        "example_zh": "大綱有助於整理想法。"
+      },
+      {
+        "id": "b5l1-p096",
+        "phrase": "improve the overall learning efficiency",
+        "pos": "ph.",
+        "zh": "提升整體學習效率",
+        "example_en": "Good habits improve overall learning efficiency.",
+        "example_zh": "良好習慣能提升整體學習效率。"
+      },
+      {
+        "id": "b5l1-p097",
+        "phrase": "a strict coach",
+        "pos": "ph.",
+        "zh": "嚴格的教練",
+        "example_en": "A strict coach trained the team.",
+        "example_zh": "一位嚴格的教練訓練球隊。"
+      },
+      {
+        "id": "b5l1-p098",
+        "phrase": "such as",
+        "pos": "ph.",
+        "zh": "例如",
+        "example_en": "Outdoor activities such as hiking are popular.",
+        "example_zh": "健行等戶外活動很受歡迎。"
+      },
+      {
+        "id": "b5l1-p099",
+        "phrase": "enjoy various outdoor activities",
+        "pos": "ph.",
+        "zh": "享受各種戶外活動",
+        "example_en": "We enjoy various outdoor activities.",
+        "example_zh": "我們享受各種戶外活動。"
+      },
+      {
+        "id": "b5l1-p100",
+        "phrase": "in today’s fast-paced society",
+        "pos": "ph.",
+        "zh": "在今日步調快速的社會中",
+        "example_en": "Rest is important in today’s fast-paced society.",
+        "example_zh": "在今日步調快速的社會中，休息很重要。"
+      },
+      {
+        "id": "b5l1-p101",
+        "phrase": "reach peak efficiency",
+        "pos": "ph.",
+        "zh": "達到最高效率",
+        "example_en": "The team reached peak efficiency.",
+        "example_zh": "團隊達到最高效率。"
+      },
+      {
+        "id": "b5l1-p102",
+        "phrase": "free choice of lifestyles",
+        "pos": "ph.",
+        "zh": "自由選擇生活方式",
+        "example_en": "People value the free choice of lifestyles.",
+        "example_zh": "人們重視自由選擇生活方式。"
+      },
+      {
+        "id": "b5l1-p103",
+        "phrase": "increase vocabulary",
+        "pos": "ph.",
+        "zh": "增加詞彙量",
+        "example_en": "Reading can increase your vocabulary.",
+        "example_zh": "閱讀可以增加你的詞彙量。"
+      },
+      {
+        "id": "b5l1-p104",
+        "phrase": "improve reading fluency",
+        "pos": "ph.",
+        "zh": "提升閱讀流暢度",
+        "example_en": "Daily practice improves reading fluency.",
+        "example_zh": "每天練習能提升閱讀流暢度。"
+      },
+      {
+        "id": "b5l1-p105",
+        "phrase": "offer insights for sb",
+        "pos": "ph.",
+        "zh": "為某人提供洞見",
+        "example_en": "The book offers insights for young readers.",
+        "example_zh": "這本書為年輕讀者提供洞見。"
+      },
+      {
+        "id": "b5l1-p106",
+        "phrase": "face important decisions",
+        "pos": "ph.",
+        "zh": "面臨重要決定",
+        "example_en": "We all face important decisions.",
+        "example_zh": "我們都會面臨重要決定。"
+      },
+      {
+        "id": "b5l1-p107",
+        "phrase": "throughout one’s life",
+        "pos": "ph.",
+        "zh": "在某人的一生中",
+        "example_en": "People keep learning throughout their lives.",
+        "example_zh": "人們一生都持續學習。"
+      },
+      {
+        "id": "b5l1-p108",
+        "phrase": "encounter numerous crossroads",
+        "pos": "ph.",
+        "zh": "遇到許多十字路口",
+        "example_en": "We encounter numerous crossroads in life.",
+        "example_zh": "人生中我們會遇到許多十字路口。"
+      },
+      {
+        "id": "b5l1-p109",
+        "phrase": "select a university major",
+        "pos": "ph.",
+        "zh": "選擇大學主修",
+        "example_en": "She must select a university major.",
+        "example_zh": "她必須選擇大學主修。"
+      },
+      {
+        "id": "b5l1-p110",
+        "phrase": "decide on a career path",
+        "pos": "ph.",
+        "zh": "決定職涯道路",
+        "example_en": "He decided on a career path.",
+        "example_zh": "他決定了職涯道路。"
+      },
+      {
+        "id": "b5l1-p111",
+        "phrase": "the final outcome",
+        "pos": "ph.",
+        "zh": "最終結果",
+        "example_en": "No one knows the final outcome.",
+        "example_zh": "沒有人知道最終結果。"
+      },
+      {
+        "id": "b5l1-p112",
+        "phrase": "emphasize the importance of",
+        "pos": "ph.",
+        "zh": "強調……的重要性",
+        "example_en": "Teachers emphasize the importance of practice.",
+        "example_zh": "老師強調練習的重要性。"
+      },
+      {
+        "id": "b5l1-p113",
+        "phrase": "prompt sb. to consider",
+        "pos": "ph.",
+        "zh": "促使某人思考……",
+        "example_en": "The question prompted me to consider my goals.",
+        "example_zh": "這個問題促使我思考目標。"
+      },
+      {
+        "id": "b5l1-p114",
+        "phrase": "have an enduring appeal",
+        "pos": "ph.",
+        "zh": "具有長久的吸引力",
+        "example_en": "Classic stories have an enduring appeal.",
+        "example_zh": "經典故事具有長久的吸引力。"
+      },
+      {
+        "id": "b5l1-p115",
+        "phrase": "get at the essence of",
+        "pos": "ph.",
+        "zh": "觸及……的本質",
+        "example_en": "The poem gets at the essence of choice.",
+        "example_zh": "這首詩觸及選擇的本質。"
+      },
+      {
+        "id": "b5l1-p116",
+        "phrase": "instead of",
+        "pos": "ph.",
+        "zh": "而不是",
+        "example_en": "Walk instead of driving.",
+        "example_zh": "走路而不要開車。"
+      },
+      {
+        "id": "b5l1-p117",
+        "phrase": "offer simple answers",
+        "pos": "ph.",
+        "zh": "提供簡單答案",
+        "example_en": "The poem does not offer simple answers.",
+        "example_zh": "這首詩沒有提供簡單答案。"
+      },
+      {
+        "id": "b5l1-p118",
+        "phrase": "invite sb. to reflect on",
+        "pos": "ph.",
+        "zh": "促使某人反思……",
+        "example_en": "The story invites us to reflect on life.",
+        "example_zh": "這個故事促使我們反思人生。"
+      },
+      {
+        "id": "b5l1-p119",
+        "phrase": "the complexity of choice",
+        "pos": "ph.",
+        "zh": "選擇的複雜性",
+        "example_en": "The novel explores the complexity of choice.",
+        "example_zh": "這部小說探討選擇的複雜性。"
+      },
+      {
+        "id": "b5l1-p120",
+        "phrase": "strike a chord with",
+        "pos": "ph.",
+        "zh": "引起……共鳴",
+        "example_en": "The poem strikes a chord with many readers.",
+        "example_zh": "這首詩引起許多讀者共鳴。"
+      },
+      {
+        "id": "b5l1-p121",
+        "phrase": "a timeless classic",
+        "pos": "ph.",
+        "zh": "永恆的經典",
+        "example_en": "The book is a timeless classic.",
+        "example_zh": "這本書是永恆的經典。"
+      },
+      {
+        "id": "b5l1-p122",
+        "phrase": "reliable information about",
+        "pos": "ph.",
+        "zh": "關於……的可靠資訊",
+        "example_en": "We need reliable information about nutrition.",
+        "example_zh": "我們需要關於營養的可靠資訊。"
+      },
+      {
+        "id": "b5l1-p123",
+        "phrase": "healthy eating",
+        "pos": "ph.",
+        "zh": "健康飲食",
+        "example_en": "Healthy eating improves your health.",
+        "example_zh": "健康飲食能改善健康。"
+      },
+      {
+        "id": "b5l1-p124",
+        "phrase": "search for",
+        "pos": "ph.",
+        "zh": "搜尋；尋找",
+        "example_en": "They searched for the missing child.",
+        "example_zh": "他們搜尋失蹤的孩子。"
+      },
+      {
+        "id": "b5l1-p125",
+        "phrase": "secrets of success",
+        "pos": "ph.",
+        "zh": "成功的祕訣",
+        "example_en": "The book discusses the secrets of success.",
+        "example_zh": "這本書討論成功的祕訣。"
+      },
+      {
+        "id": "b5l1-p126",
+        "phrase": "learn the value of",
+        "pos": "ph.",
+        "zh": "了解……的價值",
+        "example_en": "Children learn the value of teamwork.",
+        "example_zh": "孩子了解團隊合作的價值。"
+      },
+      {
+        "id": "b5l1-p127",
+        "phrase": "inner peace",
+        "pos": "ph.",
+        "zh": "內心平靜",
+        "example_en": "Meditation brings inner peace.",
+        "example_zh": "冥想帶來內心平靜。"
+      },
+      {
+        "id": "b5l1-p128",
+        "phrase": "focus on",
+        "pos": "ph.",
+        "zh": "專注於……",
+        "example_en": "Focus on the present task.",
+        "example_zh": "專注於眼前的任務。"
+      },
+      {
+        "id": "b5l1-p129",
+        "phrase": "live in the present",
+        "pos": "ph.",
+        "zh": "活在當下",
+        "example_en": "Try to live in the present.",
+        "example_zh": "試著活在當下。"
+      },
+      {
+        "id": "b5l1-p130",
+        "phrase": "worry about an uncontrollable future",
+        "pos": "ph.",
+        "zh": "擔心無法控制的未來",
+        "example_en": "Do not worry about an uncontrollable future.",
+        "example_zh": "不要擔心無法控制的未來。"
+      },
+      {
+        "id": "b5l1-p131",
+        "phrase": "people of different generations",
+        "pos": "ph.",
+        "zh": "不同世代的人",
+        "example_en": "The poem speaks to people of different generations.",
+        "example_zh": "這首詩打動不同世代的人。"
+      },
+      {
+        "id": "b5l1-p132",
+        "phrase": "interpret in a variety of ways",
+        "pos": "ph.",
+        "zh": "以各種方式解讀",
+        "example_en": "Readers interpret it in a variety of ways.",
+        "example_zh": "讀者以各種方式解讀它。"
+      },
+      {
+        "id": "b5l1-p133",
+        "phrase": "capture the essence of",
+        "pos": "ph.",
+        "zh": "捕捉……的本質",
+        "example_en": "The photo captures the essence of the city.",
+        "example_zh": "這張照片捕捉城市的本質。"
+      },
+      {
+        "id": "b5l1-p134",
+        "phrase": "a metaphor for",
+        "pos": "ph.",
+        "zh": "……的隱喻",
+        "example_en": "The road is a metaphor for life.",
+        "example_zh": "道路是人生的隱喻。"
+      },
+      {
+        "id": "b5l1-p135",
+        "phrase": "develop one’s unique way of",
+        "pos": "ph.",
+        "zh": "發展某人獨特的……方式",
+        "example_en": "She developed her unique way of writing.",
+        "example_zh": "她發展出獨特的寫作方式。"
+      },
+      {
+        "id": "b5l1-p136",
+        "phrase": "fit into",
+        "pos": "ph.",
+        "zh": "融入；適合……",
+        "example_en": "He found it hard to fit into the group.",
+        "example_zh": "他發現很難融入團體。"
+      },
+      {
+        "id": "b5l1-p137",
+        "phrase": "be contemporary with",
+        "pos": "ph.",
+        "zh": "與……同時代",
+        "example_en": "The poet was contemporary with many famous writers.",
+        "example_zh": "這位詩人與許多名作家同時代。"
+      },
+      {
+        "id": "b5l1-p138",
+        "phrase": "set up the new printer",
+        "pos": "ph.",
+        "zh": "安裝新印表機",
+        "example_en": "I set up the new printer.",
+        "example_zh": "我安裝了新印表機。"
+      },
+      {
+        "id": "b5l1-p139",
+        "phrase": "follow the basic steps",
+        "pos": "ph.",
+        "zh": "遵循基本步驟",
+        "example_en": "Follow the basic steps carefully.",
+        "example_zh": "仔細遵循基本步驟。"
+      },
+      {
+        "id": "b5l1-p140",
+        "phrase": "cause blackouts across the city",
+        "pos": "ph.",
+        "zh": "造成全市停電",
+        "example_en": "The storm caused blackouts across the city.",
+        "example_zh": "暴風雨造成全市停電。"
+      },
+      {
+        "id": "b5l1-p141",
+        "phrase": "further complication",
+        "pos": "ph.",
+        "zh": "進一步的複雜情況",
+        "example_en": "A delay caused further complications.",
+        "example_zh": "延誤造成進一步的複雜情況。"
+      },
+      {
+        "id": "b5l1-p142",
+        "phrase": "a plain white T-shirt",
+        "pos": "ph.",
+        "zh": "一件素白 T 恤",
+        "example_en": "He wore a plain white T-shirt.",
+        "example_zh": "他穿著一件素白 T 恤。"
+      },
+      {
+        "id": "b5l1-p143",
+        "phrase": "school event",
+        "pos": "ph.",
+        "zh": "校園活動",
+        "example_en": "The concert is a school event.",
+        "example_zh": "這場音樂會是一項校園活動。"
+      },
+      {
+        "id": "b5l1-p144",
+        "phrase": "have great talent",
+        "pos": "ph.",
+        "zh": "很有天分",
+        "example_en": "She has great talent for music.",
+        "example_zh": "她很有音樂天分。"
+      },
+      {
+        "id": "b5l1-p145",
+        "phrase": "sharpen one’s skills",
+        "pos": "ph.",
+        "zh": "精進某人的技能",
+        "example_en": "Practice sharpens your skills.",
+        "example_zh": "練習能精進你的技能。"
+      },
+      {
+        "id": "b5l1-p146",
+        "phrase": "coastal plain",
+        "pos": "ph.",
+        "zh": "沿海平原",
+        "example_en": "Farms cover the coastal plain.",
+        "example_zh": "農田遍布沿海平原。"
+      },
+      {
+        "id": "b5l1-p147",
+        "phrase": "see far inland",
+        "pos": "ph.",
+        "zh": "看見內陸遠處",
+        "example_en": "From the hill, we could see far inland.",
+        "example_zh": "從山丘上，我們能看見內陸遠處。"
+      },
+      {
+        "id": "b5l1-p148",
+        "phrase": "offer a penetrating analysis of",
+        "pos": "ph.",
+        "zh": "對……提出深刻分析",
+        "example_en": "The article offers a penetrating analysis of society.",
+        "example_zh": "這篇文章對社會提出深刻分析。"
+      },
+      {
+        "id": "b5l1-p149",
+        "phrase": "penetrate the thick clouds",
+        "pos": "ph.",
+        "zh": "穿透厚厚的雲層",
+        "example_en": "Sunlight penetrated the thick clouds.",
+        "example_zh": "陽光穿透厚厚的雲層。"
+      },
+      {
+        "id": "b5l1-p150",
+        "phrase": "penetrate into sth",
+        "pos": "ph.",
+        "zh": "深入／滲透某物",
+        "example_en": "Water penetrated into the wall.",
+        "example_zh": "水滲入牆壁。"
+      },
+      {
+        "id": "b5l1-p151",
+        "phrase": "be renowned for",
+        "pos": "ph.",
+        "zh": "以……聞名",
+        "example_en": "The city is renowned for its food.",
+        "example_zh": "這座城市以美食聞名。"
+      },
+      {
+        "id": "b5l1-p152",
+        "phrase": "give an outstanding performance",
+        "pos": "ph.",
+        "zh": "帶來傑出表現",
+        "example_en": "The band gave an outstanding performance.",
+        "example_zh": "樂團帶來傑出表現。"
+      },
+      {
+        "id": "b5l1-p153",
+        "phrase": "applaud loudly",
+        "pos": "ph.",
+        "zh": "大聲鼓掌",
+        "example_en": "The audience applauded loudly.",
+        "example_zh": "觀眾大聲鼓掌。"
+      },
+      {
+        "id": "b5l1-p154",
+        "phrase": "at the end",
+        "pos": "ph.",
+        "zh": "在最後",
+        "example_en": "At the end, everyone sang together.",
+        "example_zh": "最後，每個人一起唱歌。"
+      },
+      {
+        "id": "b5l1-p155",
+        "phrase": "be widely published online",
+        "pos": "ph.",
+        "zh": "在網路上廣泛刊登",
+        "example_en": "The article was widely published online.",
+        "example_zh": "這篇文章在網路上廣泛刊登。"
+      },
+      {
+        "id": "b5l1-p156",
+        "phrase": "within a few hours",
+        "pos": "ph.",
+        "zh": "在幾小時內",
+        "example_en": "The post spread within a few hours.",
+        "example_zh": "貼文在幾小時內傳開。"
+      },
+      {
+        "id": "b5l1-p157",
+        "phrase": "check for spelling and grammar errors",
+        "pos": "ph.",
+        "zh": "檢查拼字與文法錯誤",
+        "example_en": "Check for spelling and grammar errors.",
+        "example_zh": "檢查拼字與文法錯誤。"
+      },
+      {
+        "id": "b5l1-p158",
+        "phrase": "be ready for publication",
+        "pos": "ph.",
+        "zh": "準備好出版",
+        "example_en": "The article is ready for publication.",
+        "example_zh": "這篇文章已準備好出版。"
+      },
+      {
+        "id": "b5l1-p159",
+        "phrase": "monthly publication",
+        "pos": "ph.",
+        "zh": "月刊",
+        "example_en": "The magazine is a monthly publication.",
+        "example_zh": "這本雜誌是月刊。"
+      },
+      {
+        "id": "b5l1-p160",
+        "phrase": "feature articles about family matters",
+        "pos": "ph.",
+        "zh": "刊登家庭事務專題文章",
+        "example_en": "The magazine features articles about family matters.",
+        "example_zh": "這本雜誌刊登家庭事務專題文章。"
+      },
+      {
+        "id": "b5l1-p161",
+        "phrase": "interior design",
+        "pos": "ph.",
+        "zh": "室內設計",
+        "example_en": "She studies interior design.",
+        "example_zh": "她學習室內設計。"
+      },
+      {
+        "id": "b5l1-p162",
+        "phrase": "health and nutrition",
+        "pos": "ph.",
+        "zh": "健康與營養",
+        "example_en": "The course covers health and nutrition.",
+        "example_zh": "這門課涵蓋健康與營養。"
+      },
+      {
+        "id": "b5l1-p163",
+        "phrase": "compose a song for",
+        "pos": "ph.",
+        "zh": "為……作曲",
+        "example_en": "He composed a song for the show.",
+        "example_zh": "他為表演作了一首歌。"
+      },
+      {
+        "id": "b5l1-p164",
+        "phrase": "talent show",
+        "pos": "ph.",
+        "zh": "才藝表演",
+        "example_en": "She sang at the talent show.",
+        "example_zh": "她在才藝表演中唱歌。"
+      },
+      {
+        "id": "b5l1-p165",
+        "phrase": "sing along during the final chorus",
+        "pos": "ph.",
+        "zh": "在最後副歌時跟唱",
+        "example_en": "Everyone sang along during the final chorus.",
+        "example_zh": "每個人在最後副歌時跟唱。"
+      },
+      {
+        "id": "b5l1-p166",
+        "phrase": "be composed of sth",
+        "pos": "ph.",
+        "zh": "由某物組成",
+        "example_en": "Water is composed of hydrogen and oxygen.",
+        "example_zh": "水由氫和氧組成。"
+      },
+      {
+        "id": "b5l1-p167",
+        "phrase": "chemical composition",
+        "pos": "ph.",
+        "zh": "化學成分",
+        "example_en": "Scientists studied its chemical composition.",
+        "example_zh": "科學家研究它的化學成分。"
+      },
+      {
+        "id": "b5l1-p168",
+        "phrase": "refer to",
+        "pos": "ph.",
+        "zh": "指的是；提到",
+        "example_en": "This word refers to a chemical element.",
+        "example_zh": "這個詞指的是一種化學元素。"
+      },
+      {
+        "id": "b5l1-p169",
+        "phrase": "chemical element",
+        "pos": "ph.",
+        "zh": "化學元素",
+        "example_en": "Gold is a chemical element.",
+        "example_zh": "金是一種化學元素。"
+      },
+      {
+        "id": "b5l1-p170",
+        "phrase": "feel hurt by",
+        "pos": "ph.",
+        "zh": "因……感到受傷",
+        "example_en": "She felt hurt by his comment.",
+        "example_zh": "她因他的評論感到受傷。"
+      },
+      {
+        "id": "b5l1-p171",
+        "phrase": "rude comment",
+        "pos": "ph.",
+        "zh": "無禮的評論",
+        "example_en": "His rude comment upset her.",
+        "example_zh": "他的無禮評論使她難過。"
+      },
+      {
+        "id": "b5l1-p172",
+        "phrase": "look away in silence",
+        "pos": "ph.",
+        "zh": "沉默地移開視線",
+        "example_en": "He looked away in silence.",
+        "example_zh": "他沉默地移開視線。"
+      },
+      {
+        "id": "b5l1-p173",
+        "phrase": "without comment",
+        "pos": "ph.",
+        "zh": "不予置評",
+        "example_en": "She left without comment.",
+        "example_zh": "她不予置評便離開了。"
+      },
+      {
+        "id": "b5l1-p174",
+        "phrase": "comment on sth",
+        "pos": "ph.",
+        "zh": "評論某事",
+        "example_en": "The teacher commented on my essay.",
+        "example_zh": "老師評論了我的文章。"
+      },
+      {
+        "id": "b5l1-p175",
+        "phrase": "running commentary on",
+        "pos": "ph.",
+        "zh": "對……的即時評論",
+        "example_en": "He gave a running commentary on the game.",
+        "example_zh": "他對比賽進行即時評論。"
+      },
+      {
+        "id": "b5l1-p176",
+        "phrase": "on the field",
+        "pos": "ph.",
+        "zh": "在場上",
+        "example_en": "The players gathered on the field.",
+        "example_zh": "球員們聚集在場上。"
+      },
+      {
+        "id": "b5l1-p177",
+        "phrase": "indecision about",
+        "pos": "ph.",
+        "zh": "對……猶豫不決",
+        "example_en": "Her indecision about college worried her.",
+        "example_zh": "她對大學的猶豫令她擔心。"
+      },
+      {
+        "id": "b5l1-p178",
+        "phrase": "indecision over",
+        "pos": "ph.",
+        "zh": "對……遲疑不決",
+        "example_en": "His indecision over the offer lasted days.",
+        "example_zh": "他對那項提議遲疑了好幾天。"
+      },
+      {
+        "id": "b5l1-p179",
+        "phrase": "apply to university",
+        "pos": "ph.",
+        "zh": "申請大學",
+        "example_en": "She plans to apply to university.",
+        "example_zh": "她計畫申請大學。"
+      },
+      {
+        "id": "b5l1-p180",
+        "phrase": "the deadline getting closer",
+        "pos": "ph.",
+        "zh": "截止日期逼近",
+        "example_en": "She felt nervous with the deadline getting closer.",
+        "example_zh": "截止日期逼近使她感到緊張。"
+      },
+      {
+        "id": "b5l1-p181",
+        "phrase": "at sunrise",
+        "pos": "ph.",
+        "zh": "在日出時",
+        "example_en": "We left at sunrise.",
+        "example_zh": "我們在日出時出發。"
+      },
+      {
+        "id": "b5l1-p182",
+        "phrase": "realistic depiction of",
+        "pos": "ph.",
+        "zh": "對……的寫實描繪",
+        "example_en": "The novel gives a realistic depiction of village life.",
+        "example_zh": "小說對鄉村生活有寫實描繪。"
+      },
+      {
+        "id": "b5l1-p183",
+        "phrase": "remind sb. of",
+        "pos": "ph.",
+        "zh": "使某人想起……",
+        "example_en": "The song reminds me of home.",
+        "example_zh": "這首歌使我想起家。"
+      },
+      {
+        "id": "b5l1-p184",
+        "phrase": "live in solitude",
+        "pos": "ph.",
+        "zh": "獨居；過著孤獨生活",
+        "example_en": "He lived in solitude for years.",
+        "example_zh": "他獨居多年。"
+      },
+      {
+        "id": "b5l1-p185",
+        "phrase": "compelling story",
+        "pos": "ph.",
+        "zh": "引人入勝的故事",
+        "example_en": "The film tells a compelling story.",
+        "example_zh": "這部電影講述引人入勝的故事。"
+      },
+      {
+        "id": "b5l1-p186",
+        "phrase": "be compelled to",
+        "pos": "ph.",
+        "zh": "被迫……",
+        "example_en": "She was compelled to leave.",
+        "example_zh": "她被迫離開。"
+      },
+      {
+        "id": "b5l1-p187",
+        "phrase": "offer a prediction about",
+        "pos": "ph.",
+        "zh": "對……作出預測",
+        "example_en": "The report offers a prediction about future growth.",
+        "example_zh": "報告對未來成長作出預測。"
+      },
+      {
+        "id": "b5l1-p188",
+        "phrase": "remind sb. to",
+        "pos": "ph.",
+        "zh": "提醒某人做……",
+        "example_en": "Remind me to call Mom.",
+        "example_zh": "提醒我打給媽媽。"
+      },
+      {
+        "id": "b5l1-p189",
+        "phrase": "acceptance of one’s fate",
+        "pos": "ph.",
+        "zh": "接受某人的命運",
+        "example_en": "The story shows his acceptance of his fate.",
+        "example_zh": "故事展現他接受自己的命運。"
+      },
+      {
+        "id": "b5l1-p190",
+        "phrase": "gain acceptance by",
+        "pos": "ph.",
+        "zh": "藉由……獲得認同",
+        "example_en": "The idea gained acceptance by proving useful.",
+        "example_zh": "這個想法藉由證明實用而獲得認同。"
+      },
+      {
+        "id": "b5l1-p191",
+        "phrase": "ruin the experience",
+        "pos": "ph.",
+        "zh": "破壞體驗",
+        "example_en": "Noise can ruin the experience.",
+        "example_zh": "噪音可能破壞體驗。"
+      },
+      {
+        "id": "b5l1-p192",
+        "phrase": "make a powerful declaration",
+        "pos": "ph.",
+        "zh": "發表有力宣言",
+        "example_en": "The leader made a powerful declaration.",
+        "example_zh": "領袖發表了有力宣言。"
+      },
+      {
+        "id": "b5l1-p193",
+        "phrase": "deserve the right to education",
+        "pos": "ph.",
+        "zh": "應享有受教育權",
+        "example_en": "Every child deserves the right to education.",
+        "example_zh": "每個孩子都應享有受教育權。"
+      },
+      {
+        "id": "b5l1-p194",
+        "phrase": "issue a declaration",
+        "pos": "ph.",
+        "zh": "發布宣言",
+        "example_en": "The government issued a declaration.",
+        "example_zh": "政府發布了一份宣言。"
+      },
+      {
+        "id": "b5l1-p195",
+        "phrase": "under British rule",
+        "pos": "ph.",
+        "zh": "在英國統治下",
+        "example_en": "The region was once under British rule.",
+        "example_zh": "該地區曾在英國統治下。"
+      },
+      {
+        "id": "b5l1-p196",
+        "phrase": "the Declaration of Independence",
+        "pos": "ph.",
+        "zh": "《獨立宣言》",
+        "example_en": "They studied the Declaration of Independence.",
+        "example_zh": "他們研讀《獨立宣言》。"
+      },
+      {
+        "id": "b5l1-p197",
+        "phrase": "declare a state of emergency",
+        "pos": "ph.",
+        "zh": "宣布進入緊急狀態",
+        "example_en": "The mayor declared a state of emergency.",
+        "example_zh": "市長宣布進入緊急狀態。"
+      },
+      {
+        "id": "b5l1-p198",
+        "phrase": "cause serious dagame",
+        "pos": "ph.",
+        "zh": "造成嚴重損害",
+        "example_en": "The storm caused serious damage.",
+        "example_zh": "暴風雨造成嚴重損害。"
+      },
+      {
+        "id": "b5l1-p199",
+        "phrase": "local authorities",
+        "pos": "ph.",
+        "zh": "地方當局",
+        "example_en": "Local authorities closed the road.",
+        "example_zh": "地方當局封閉了道路。"
+      },
+      {
+        "id": "b5l1-p200",
+        "phrase": "speed up recovery efforts",
+        "pos": "ph.",
+        "zh": "加快復原工作",
+        "example_en": "More workers helped speed up recovery efforts.",
+        "example_zh": "更多人力幫助加快復原工作。"
+      },
+      {
+        "id": "b5l1-p201",
+        "phrase": "conventional treatment",
+        "pos": "ph.",
+        "zh": "傳統療法",
+        "example_en": "The doctor recommended conventional treatment.",
+        "example_zh": "醫生建議採用傳統療法。"
+      },
+      {
+        "id": "b5l1-p202",
+        "phrase": "social convention",
+        "pos": "ph.",
+        "zh": "社會習俗",
+        "example_en": "Greeting elders first is a social convention.",
+        "example_zh": "先向長者問候是一種社會習俗。"
+      },
+      {
+        "id": "b5l1-p203",
+        "phrase": "meet for the first time",
+        "pos": "ph.",
+        "zh": "初次見面",
+        "example_en": "We met for the first time yesterday.",
+        "example_zh": "我們昨天初次見面。"
+      },
+      {
+        "id": "b5l1-p204",
+        "phrase": "justification for",
+        "pos": "ph.",
+        "zh": "……的正當理由",
+        "example_en": "There is no justification for violence.",
+        "example_zh": "暴力沒有正當理由。"
+      },
+      {
+        "id": "b5l1-p205",
+        "phrase": "encounter difficulties",
+        "pos": "ph.",
+        "zh": "遇到困難",
+        "example_en": "The team encountered difficulties.",
+        "example_zh": "團隊遇到困難。"
+      },
+      {
+        "id": "b5l1-p206",
+        "phrase": "meet with",
+        "pos": "ph.",
+        "zh": "遭遇；會見",
+        "example_en": "The proposal met with strong opposition.",
+        "example_zh": "這項提案遭遇強烈反對。"
+      },
+      {
+        "id": "b5l1-p207",
+        "phrase": "run into",
+        "pos": "ph.",
+        "zh": "偶遇；碰上",
+        "example_en": "I ran into an old friend.",
+        "example_zh": "我偶遇一位老朋友。"
+      },
+      {
+        "id": "b5l1-p208",
+        "phrase": "have an encounter with",
+        "pos": "ph.",
+        "zh": "與……相遇",
+        "example_en": "We had an encounter with a wild deer.",
+        "example_zh": "我們遇到一隻野鹿。"
+      },
+      {
+        "id": "b5l1-p209",
+        "phrase": "strike a balance between",
+        "pos": "ph.",
+        "zh": "在……之間取得平衡",
+        "example_en": "We must strike a balance between work and rest.",
+        "example_zh": "我們必須在工作與休息之間取得平衡。"
+      },
+      {
+        "id": "b5l1-p210",
+        "phrase": "schoolwork and leisure activities",
+        "pos": "ph.",
+        "zh": "課業與休閒活動",
+        "example_en": "She balances schoolwork and leisure activities.",
+        "example_zh": "她平衡課業與休閒活動。"
+      },
+      {
+        "id": "b5l1-p211",
+        "phrase": "current social issues",
+        "pos": "ph.",
+        "zh": "當前社會議題",
+        "example_en": "The class discussed current social issues.",
+        "example_zh": "全班討論當前社會議題。"
+      },
+      {
+        "id": "b5l1-p212",
+        "phrase": "improve public services",
+        "pos": "ph.",
+        "zh": "改善公共服務",
+        "example_en": "The plan aims to improve public services.",
+        "example_zh": "該計畫旨在改善公共服務。"
+      },
+      {
+        "id": "b5l1-p213",
+        "phrase": "the beginning of a new policy to",
+        "pos": "ph.",
+        "zh": "旨在……的新政策開端",
+        "example_en": "This marks the beginning of a new policy to reduce waste.",
+        "example_zh": "這標誌著旨在減少浪費的新政策開端。"
+      },
+      {
+        "id": "b5l1-p214",
+        "phrase": "publish in an international journal",
+        "pos": "ph.",
+        "zh": "在國際期刊發表",
+        "example_en": "She published in an international journal.",
+        "example_zh": "她在國際期刊發表文章。"
+      },
+      {
+        "id": "b5l1-p215",
+        "phrase": "publish the findings",
+        "pos": "ph.",
+        "zh": "發表研究結果",
+        "example_en": "The team published the findings.",
+        "example_zh": "團隊發表了研究結果。"
+      },
+      {
+        "id": "b5l1-p216",
+        "phrase": "deeper meaning of the text",
+        "pos": "ph.",
+        "zh": "文本的深層意義",
+        "example_en": "We discussed the deeper meaning of the text.",
+        "example_zh": "我們討論文本的深層意義。"
+      },
+      {
+        "id": "b5l1-p217",
+        "phrase": "ask a local for directions",
+        "pos": "ph.",
+        "zh": "向當地人問路",
+        "example_en": "We asked a local for directions.",
+        "example_zh": "我們向當地人問路。"
+      },
+      {
+        "id": "b5l1-p218",
+        "phrase": "receive an award for",
+        "pos": "ph.",
+        "zh": "因……獲獎",
+        "example_en": "She received an award for her poem.",
+        "example_zh": "她因詩作而獲獎。"
+      },
+      {
+        "id": "b5l1-p219",
+        "phrase": "impress both the judges and the audience",
+        "pos": "ph.",
+        "zh": "令評審與觀眾都印象深刻",
+        "example_en": "The performance impressed both the judges and the audience.",
+        "example_zh": "表演令評審與觀眾都印象深刻。"
+      },
+      {
+        "id": "b5l1-p220",
+        "phrase": "compose a piece",
+        "pos": "ph.",
+        "zh": "創作一首曲子／作品",
+        "example_en": "He composed a piece for piano.",
+        "example_zh": "他為鋼琴創作了一首曲子。"
+      },
+      {
+        "id": "b5l1-p221",
+        "phrase": "earn wide acceptance from",
+        "pos": "ph.",
+        "zh": "獲得……廣泛認同",
+        "example_en": "The idea earned wide acceptance from the public.",
+        "example_zh": "這個想法獲得大眾廣泛認同。"
+      },
+      {
+        "id": "b5l1-p222",
+        "phrase": "unconventional approach to solve problems",
+        "pos": "ph.",
+        "zh": "解決問題的非傳統方法",
+        "example_en": "They used an unconventional approach to solve problems.",
+        "example_zh": "他們使用非傳統方法解決問題。"
+      },
+      {
+        "id": "b5l1-p223",
+        "phrase": "lead to unexpected results",
+        "pos": "ph.",
+        "zh": "導致意外結果",
+        "example_en": "The experiment led to unexpected results.",
+        "example_zh": "實驗導致意外結果。"
+      },
+      {
+        "id": "b5l1-p224",
+        "phrase": "depict the struggle of",
+        "pos": "ph.",
+        "zh": "描繪……的奮鬥",
+        "example_en": "The film depicts the struggle of young workers.",
+        "example_zh": "電影描繪年輕勞工的奮鬥。"
+      },
+      {
+        "id": "b5l1-p225",
+        "phrase": "succeed in a highly competitive society",
+        "pos": "ph.",
+        "zh": "在高度競爭的社會中成功",
+        "example_en": "Skills help people succeed in a highly competitive society.",
+        "example_zh": "技能幫助人們在高度競爭的社會中成功。"
+      },
+      {
+        "id": "b5l1-p226",
+        "phrase": "spend in solitude",
+        "pos": "ph.",
+        "zh": "獨自度過……",
+        "example_en": "He spent the afternoon in solitude.",
+        "example_zh": "他獨自度過下午。"
+      },
+      {
+        "id": "b5l1-p227",
+        "phrase": "clear one’s mind",
+        "pos": "ph.",
+        "zh": "清理思緒",
+        "example_en": "A walk helps clear my mind.",
+        "example_zh": "散步有助於清理我的思緒。"
+      },
+      {
+        "id": "b5l1-p228",
+        "phrase": "immediate action",
+        "pos": "ph.",
+        "zh": "立即行動",
+        "example_en": "The problem requires immediate action.",
+        "example_zh": "這個問題需要立即行動。"
+      },
+      {
+        "id": "b5l1-p229",
+        "phrase": "take the order",
+        "pos": "ph.",
+        "zh": "點餐；接受訂單",
+        "example_en": "The waiter came to take our order.",
+        "example_zh": "服務生來為我們點餐。"
+      },
+      {
+        "id": "b5l1-p230",
+        "phrase": "at the start",
+        "pos": "ph.",
+        "zh": "在開始時",
+        "example_en": "At the start, everyone was nervous.",
+        "example_zh": "開始時，每個人都很緊張。"
+      },
+      {
+        "id": "b5l1-p231",
+        "phrase": "question a witness",
+        "pos": "ph.",
+        "zh": "訊問證人",
+        "example_en": "The police questioned a witness.",
+        "example_zh": "警方訊問了一名證人。"
+      },
+      {
+        "id": "b5l1-p232",
+        "phrase": "get at the truth",
+        "pos": "ph.",
+        "zh": "查明真相",
+        "example_en": "The detective tried to get at the truth.",
+        "example_zh": "偵探試圖查明真相。"
+      },
+      {
+        "id": "b5l1-p233",
+        "phrase": "with graphs and figures",
+        "pos": "ph.",
+        "zh": "用圖表與數據",
+        "example_en": "The report explains the trend with graphs and figures.",
+        "example_zh": "報告用圖表與數據解釋趨勢。"
+      },
+      {
+        "id": "b5l1-p234",
+        "phrase": "protest against the unfair policy",
+        "pos": "ph.",
+        "zh": "抗議不公平政策",
+        "example_en": "Students protested against the unfair policy.",
+        "example_zh": "學生抗議不公平政策。"
+      },
+      {
+        "id": "b5l1-p235",
+        "phrase": "get at the real cause of",
+        "pos": "ph.",
+        "zh": "找出……的真正原因",
+        "example_en": "We must get at the real cause of the problem.",
+        "example_zh": "我們必須找出問題的真正原因。"
+      },
+      {
+        "id": "b5l1-p236",
+        "phrase": "environmental factor",
+        "pos": "ph.",
+        "zh": "環境因素",
+        "example_en": "Weather is an important environmental factor.",
+        "example_zh": "天氣是重要的環境因素。"
+      },
+      {
+        "id": "b5l1-p237",
+        "phrase": "experience struggles",
+        "pos": "ph.",
+        "zh": "經歷掙扎／困難",
+        "example_en": "Everyone experiences struggles in life.",
+        "example_zh": "每個人一生都會經歷困難。"
+      },
+      {
+        "id": "b5l1-p238",
+        "phrase": "strong interest in",
+        "pos": "ph.",
+        "zh": "對……有濃厚興趣",
+        "example_en": "She has a strong interest in science.",
+        "example_zh": "她對科學有濃厚興趣。"
+      },
+      {
+        "id": "b5l1-p239",
+        "phrase": "environmental issue",
+        "pos": "ph.",
+        "zh": "環境議題",
+        "example_en": "Pollution is a serious environmental issue.",
+        "example_zh": "污染是嚴重的環境議題。"
+      },
+      {
+        "id": "b5l1-p240",
+        "phrase": "beautiful natural landscape",
+        "pos": "ph.",
+        "zh": "美麗的自然景觀",
+        "example_en": "The island has a beautiful natural landscape.",
+        "example_zh": "這座島有美麗的自然景觀。"
+      },
+      {
+        "id": "b5l1-p241",
+        "phrase": "ask for permission",
+        "pos": "ph.",
+        "zh": "請求許可",
+        "example_en": "You should ask for permission first.",
+        "example_zh": "你應該先請求許可。"
+      },
+      {
+        "id": "b5l1-p242",
+        "phrase": "pamper sb",
+        "pos": "ph.",
+        "zh": "寵愛某人",
+        "example_en": "The grandparents pamper the child.",
+        "example_zh": "祖父母很寵愛那個孩子。"
+      },
+      {
+        "id": "b5l1-p243",
+        "phrase": "come in several sizes",
+        "pos": "ph.",
+        "zh": "有多種尺寸",
+        "example_en": "The bags come in several sizes.",
+        "example_zh": "這些袋子有多種尺寸。"
+      },
+      {
+        "id": "b5l1-p244",
+        "phrase": "suit you best",
+        "pos": "ph.",
+        "zh": "最適合你",
+        "example_en": "Choose the style that suits you best.",
+        "example_zh": "選擇最適合你的款式。"
+      },
+      {
+        "id": "b5l1-p245",
+        "phrase": "remain rational",
+        "pos": "ph.",
+        "zh": "保持理性",
+        "example_en": "We must remain rational during conflict.",
+        "example_zh": "衝突時我們必須保持理性。"
+      },
+      {
+        "id": "b5l1-p246",
+        "phrase": "encounter conflicts",
+        "pos": "ph.",
+        "zh": "遇到衝突",
+        "example_en": "Teams sometimes encounter conflicts.",
+        "example_zh": "團隊有時會遇到衝突。"
+      },
+      {
+        "id": "b5l1-p247",
+        "phrase": "have faith in",
+        "pos": "ph.",
+        "zh": "相信……",
+        "example_en": "Have faith in yourself.",
+        "example_zh": "要相信自己。"
+      },
+      {
+        "id": "b5l1-p248",
+        "phrase": "achieve one’s goals",
+        "pos": "ph.",
+        "zh": "達成某人的目標",
+        "example_en": "Hard work helps us achieve our goals.",
+        "example_zh": "努力幫助我們達成目標。"
+      },
+      {
+        "id": "b5l1-p249",
+        "phrase": "inner wealth",
+        "pos": "ph.",
+        "zh": "內在財富",
+        "example_en": "Knowledge is a form of inner wealth.",
+        "example_zh": "知識是一種內在財富。"
+      },
+      {
+        "id": "b5l1-p250",
+        "phrase": "associate with",
+        "pos": "ph.",
+        "zh": "與……聯想／交往",
+        "example_en": "People associate red with danger.",
+        "example_zh": "人們把紅色與危險聯想在一起。"
+      },
+      {
+        "id": "b5l1-p251",
+        "phrase": "value honesty",
+        "pos": "ph.",
+        "zh": "重視誠實",
+        "example_en": "Good leaders value honesty.",
+        "example_zh": "優秀的領導者重視誠實。"
+      }
+    ]
   },
   "grammar": {
     "points": [],
