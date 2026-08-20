@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -24,6 +25,29 @@
     font-family: var(--sans); font-size: 0.82rem; padding: 8px 12px;
     border: 1px solid var(--paper-line); border-radius: 999px; background: var(--card); color: var(--ink);
   }
+  .vocab-search {
+    flex: 1 1 230px; min-width: 180px; max-width: 340px; font-family: var(--sans); font-size: .84rem;
+    padding: 9px 15px 9px 36px; border: 1px solid var(--paper-line); border-radius: 999px;
+    background: var(--card); color: var(--ink); outline: none;
+    background-image: linear-gradient(transparent,transparent);
+  }
+  .vocab-search:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(14,107,99,.12); }
+  .search-wrap { position: relative; display: flex; flex: 1 1 230px; max-width: 340px; }
+  .search-wrap::before { content: "⌕"; position: absolute; left: 13px; top: 50%; transform: translateY(-53%); color: var(--ink-soft); font-size: 1.2rem; pointer-events: none; }
+  .star-filter, .detail-star {
+    border: 1px solid var(--paper-line); background: var(--card); color: var(--ink-soft); border-radius: 999px;
+    padding: 8px 13px; font-family: var(--sans); font-size: .78rem; font-weight: 700; cursor: pointer;
+  }
+  .star-filter.active, .detail-star.active { color: #9b6500; border-color: #dfb23e; background: #fff6cf; }
+  .detail-star { margin-left: auto; font-size: .92rem; padding: 5px 11px; }
+  .lab-frame-wrap { border: 1px solid var(--paper-line); border-radius: 18px; overflow: hidden; background: var(--card); box-shadow: 0 2px 0 var(--paper-line); }
+  .lab-frame { display: block; width: 100%; height: min(78vh, 860px); min-height: 620px; border: 0; background: #fbf7ef; }
+  @media (max-width: 640px) {
+    .search-wrap { order: 3; max-width: none; flex-basis: 100%; }
+    .vocab-search { max-width: none; width: 100%; }
+    .filter-bar .result-count { margin-left: 0; }
+    .lab-frame { min-height: 72vh; }
+  }
   .filter-bar .result-count { font-size: 0.78rem; color: var(--ink-soft); margin-left: auto; }
 
   .detail-source {
@@ -49,6 +73,10 @@
       <select id="bookFilter"><option value="">全部</option></select>
       <label for="lessonFilter">課程</label>
       <select id="lessonFilter"><option value="">全部</option></select>
+      <div class="search-wrap">
+        <input class="vocab-search" id="vocabSearch" type="search" placeholder="搜尋英文、中文、詞性或例句…" autocomplete="off" />
+      </div>
+      <button class="star-filter" id="starredOnlyBtn" type="button" aria-pressed="false">☆ 只看星標</button>
       <span class="result-count" id="resultCount"></span>
     </div>
   </div>
@@ -60,6 +88,7 @@
       <div class="mode-toggle vocab-mode-switch">
         <button id="familyModeBtn" class="active">探索字族</button>
         <button id="tableModeBtn">完整表格</button>
+        <button id="labModeBtn">🎮 Word Lab</button>
       </div>
 
       <div id="explorerArea">
@@ -92,11 +121,18 @@
         </div>
       </div>
 
+      <div id="labArea" style="display:none;">
+        <div class="lab-frame-wrap">
+          <iframe class="lab-frame" id="wordLabFrame" src="word-lab.html" title="Word Lab 單字遊戲" loading="lazy"></iframe>
+        </div>
+      </div>
+
       <div class="detail-panel" id="detailPanel">
         <div class="detail-head">
           <span class="detail-word">—</span>
           <span class="pos-tag">—</span>
           <span class="detail-source" style="display:none;"></span>
+          <button class="detail-star" id="detailStarBtn" type="button" title="加入星標" aria-pressed="false">☆</button>
           <button class="speak-btn" title="播放發音">🔊 發音</button>
         </div>
         <div class="detail-zh">—</div>
@@ -115,6 +151,8 @@
   let LESSON_META = [];    // 用來組出篩選選單
   let CURRENT_FILTERED = [];
   let vocabMode = "family";
+  let starredOnly = false;
+  const STAR_KEY = "vocab-bank.starred";
 
   Loader.fetchAllPublishedLessons()
     .then(lessons => {
@@ -139,6 +177,15 @@
 
       document.getElementById("familyModeBtn").addEventListener("click", () => setVocabMode("family"));
       document.getElementById("tableModeBtn").addEventListener("click", () => setVocabMode("table"));
+      document.getElementById("labModeBtn").addEventListener("click", () => setVocabMode("lab"));
+      document.getElementById("starredOnlyBtn").addEventListener("click", () => {
+        starredOnly = !starredOnly;
+        const b = document.getElementById("starredOnlyBtn");
+        b.classList.toggle("active", starredOnly);
+        b.setAttribute("aria-pressed", String(starredOnly));
+        b.textContent = starredOnly ? "★ 顯示星標中" : "☆ 只看星標";
+        applyFilter();
+      });
     })
     .catch(err => {
       document.getElementById("loadingMsg").className = "error-msg";
@@ -162,6 +209,7 @@
       applyFilter();
     });
     lessonSelect.addEventListener("change", applyFilter);
+    document.getElementById("vocabSearch").addEventListener("input", applyFilter);
 
     refreshLessonOptions();
   }
@@ -186,14 +234,18 @@
   function applyFilter() {
     const bookVal = document.getElementById("bookFilter").value;
     const lessonVal = document.getElementById("lessonFilter").value;
+    const query = document.getElementById("vocabSearch").value.trim().toLocaleLowerCase();
+    const stars = readStars();
 
     CURRENT_FILTERED = ALL_ROWS.filter(row => {
       if (bookVal && row._book !== bookVal) return false;
       if (lessonVal && row._lesson !== lessonVal) return false;
+      if (query && !searchableText(row).includes(query)) return false;
+      if (starredOnly && !rowHasStar(row, stars)) return false;
       return true;
     });
 
-    document.getElementById("resultCount").textContent = `共 ${CURRENT_FILTERED.length} 個字族`;
+    document.getElementById("resultCount").textContent = `找到 ${CURRENT_FILTERED.length} 個字族`;
 
     VocabWidget.render({
       railId: "familyRail",
@@ -218,8 +270,11 @@
     vocabMode = mode;
     document.getElementById("familyModeBtn").classList.toggle("active", mode === "family");
     document.getElementById("tableModeBtn").classList.toggle("active", mode === "table");
+    document.getElementById("labModeBtn").classList.toggle("active", mode === "lab");
     document.getElementById("explorerArea").style.display = mode === "family" ? "block" : "none";
     document.getElementById("tableArea").style.display = mode === "table" ? "block" : "none";
+    document.getElementById("labArea").style.display = mode === "lab" ? "block" : "none";
+    document.getElementById("detailPanel").style.display = mode === "lab" ? "none" : "";
 
     if (mode === "table") {
       // 跨課總覽的篩選結果可能常變動，表格模式每次切換過去都重新渲染，
@@ -231,6 +286,62 @@
       });
     }
   }
+
+  function searchableText(row) {
+    return Object.entries(row)
+      .filter(([key]) => !key.startsWith("_"))
+      .map(([, value]) => typeof value === "object" ? JSON.stringify(value) : String(value ?? ""))
+      .join(" ").toLocaleLowerCase();
+  }
+
+  function readStars() {
+    try { return new Set(JSON.parse(localStorage.getItem(STAR_KEY) || "[]")); }
+    catch { return new Set(); }
+  }
+
+  function saveStars(stars) {
+    localStorage.setItem(STAR_KEY, JSON.stringify([...stars]));
+  }
+
+  function currentDetailStarId() {
+    const word = document.querySelector("#detailPanel .detail-word")?.textContent.trim() || "";
+    const pos = document.querySelector("#detailPanel .pos-tag")?.textContent.trim() || "";
+    if (!word || word === "—") return "";
+    return `${word.toLocaleLowerCase()}|${pos.toLocaleLowerCase()}`;
+  }
+
+  function rowHasStar(row, stars) {
+    const text = searchableText(row);
+    return [...stars].some(id => {
+      const word = id.split("|")[0];
+      return word && text.includes(word);
+    });
+  }
+
+  function syncDetailStar() {
+    const btn = document.getElementById("detailStarBtn");
+    const id = currentDetailStarId();
+    const on = id && readStars().has(id);
+    btn.style.visibility = id ? "visible" : "hidden";
+    btn.classList.toggle("active", Boolean(on));
+    btn.setAttribute("aria-pressed", String(Boolean(on)));
+    const nextText = on ? "★" : "☆";
+    if (btn.textContent !== nextText) btn.textContent = nextText;
+    btn.title = on ? "取消星標" : "加入星標";
+  }
+
+  document.getElementById("detailStarBtn").addEventListener("click", () => {
+    const id = currentDetailStarId(); if (!id) return;
+    const stars = readStars();
+    if (stars.has(id)) stars.delete(id); else stars.add(id);
+    saveStars(stars); syncDetailStar();
+    if (starredOnly) applyFilter();
+  });
+
+  new MutationObserver(syncDetailStar).observe(document.getElementById("detailPanel"), {
+    subtree: true, childList: true, characterData: true
+  });
+  syncDetailStar();
 </script>
 <script src="js/notepad.js"></script>
 <script>Notepad.mount();</script>
