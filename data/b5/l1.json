@@ -2631,7 +2631,212 @@
   "grammar": {
     "points": [],
     "sentence_structures": {
-      "items": []
+      "items": [
+        {
+          "id": "b5l1-s001",
+          "sentence": "As one of America’s most beloved poets, Robert Frost *is known* for using simple language to express deep ideas.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vl + C (adj.)"
+        },
+        {
+          "id": "b5l1-s002",
+          "sentence": "Unlike many of his contemporaries, who favored complicated language, Frost *wrote* in a style that could be understood by readers from all walks of life.",
+          "type": "complex",
+          "pattern": "Relative clauses (who... / that...) + S + Vi"
+        },
+        {
+          "id": "b5l1-s003",
+          "sentence": "His poetry *appears* as plain as everyday conversation.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b5l1-s004",
+          "sentence": "However, beneath this simplicity *lie* penetrating insights into life.",
+          "type": "simple",
+          "pattern": "Inverted sentence (Adverbial + Vi + S)"
+        },
+        {
+          "id": "b5l1-s005",
+          "sentence": "One of his most renowned works, “The Road Not Taken,” *exemplifies* his outstanding ability to draw profound meaning from ordinary experiences.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b5l1-s006",
+          "sentence": "The poem, first published in 1915, *originated* from Frost’s friendship with poet Edward Thomas.",
+          "type": "simple",
+          "pattern": "S + Vi (with a participal modifier)"
+        },
+        {
+          "id": "b5l1-s007",
+          "sentence": "During their woodland walks, Thomas *would hesitate* at every fork, wondering about unexplored routes.",
+          "type": "simple",
+          "pattern": "S + Vi + Participle clause"
+        },
+        {
+          "id": "b5l1-s008",
+          "sentence": "Frost *composed* the poem partly as a gentle comment on his friend’s indecision.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b5l1-s009",
+          "sentence": "“The Road Not Taken,” which on the surface depicts a solitary traveler’s journey in an autumn forest, *presents* a philosophical reflection on life.",
+          "type": "complex",
+          "pattern": "Relative clause (which...) + S + Vt + O"
+        },
+        {
+          "id": "b5l1-s010",
+          "sentence": "The image of two paths diverging in a yellow wood *functions* as a compelling metaphor for the crucial decisions we face.",
+          "type": "simple",
+          "pattern": "S + Vi"
+        },
+        {
+          "id": "b5l1-s011",
+          "sentence": "The first two stanzas *lay out* the limits of choice—we *can walk* only one path and *choose* only one option, which reflects a universal dilemma at life’s crossroads.",
+          "type": "compound-complex",
+          "pattern": "Dash + Relative clause (which...)"
+        },
+        {
+          "id": "b5l1-s012",
+          "sentence": "Like the speaker, we *hesitate* because our predictions about the future are clouded by uncertainty.",
+          "type": "complex",
+          "pattern": "Adverbial clause (because...)"
+        },
+        {
+          "id": "b5l1-s013",
+          "sentence": "The third stanza *demonstrates* mature acceptance of choice’s irreversible nature rather than simple regret: “Yet knowing how way leads on to way, / I *doubted* if I should ever come back.”",
+          "type": "complex",
+          "pattern": "Direct quote containing Adverbial clause (how...) + Noun clause (if...)"
+        },
+        {
+          "id": "b5l1-s014",
+          "sentence": "This awareness *adds* weight to our choices, since we may never learn what the alternative paths might have offered.",
+          "type": "complex",
+          "pattern": "Adverbial clause (since...) + Noun clause (what...)"
+        },
+        {
+          "id": "b5l1-s015",
+          "sentence": "The poem’s lasting fascination *stems* from its final stanza, which invites different interpretations.",
+          "type": "complex",
+          "pattern": "Relative clause (which...)"
+        },
+        {
+          "id": "b5l1-s016",
+          "sentence": "Some readers *celebrate* the speaker’s declaration, “I *took* the one less traveled by, / And that *has made* all the difference,” seeing it as encouragement to choose an unconventional path.",
+          "type": "compound",
+          "pattern": "Direct quote + Participle clause"
+        },
+        {
+          "id": "b5l1-s017",
+          "sentence": "However, other readers *point* to earlier lines—“Though as for that the passing there / Had worn them really about the same”—to argue that neither path was genuinely “less traveled.”",
+          "type": "compound-complex",
+          "pattern": "Direct quote; Adverbial clause (Though...) + Noun clause (that...)"
+        },
+        {
+          "id": "b5l1-s018",
+          "sentence": "They *suggest* that the speaker is simply justifying his decision.",
+          "type": "complex",
+          "pattern": "Noun clause (that...)"
+        },
+        {
+          "id": "b5l1-s019",
+          "sentence": "More importantly, the power of the final stanza *lies* not only in what the speaker claims but also in how he tells it.",
+          "type": "complex",
+          "pattern": "Noun clauses (what... / how...)"
+        },
+        {
+          "id": "b5l1-s020",
+          "sentence": "In the final stanza, the speaker *imagines* telling the story in the future, and the “sigh” he anticipates *displays* the poem’s emotional complexity.",
+          "type": "compound-complex",
+          "pattern": "Compound sentence (with \"and\" + Relative clause)"
+        },
+        {
+          "id": "b5l1-s021",
+          "sentence": "The emotional weight of this sigh *is* already present in the pause after “and I—” in the third-to-last line.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b5l1-s022",
+          "sentence": "The dash *suggests* that the speaker is struggling to find words, making the sigh (echoing the sound of “I”) that follows feel natural.",
+          "type": "complex",
+          "pattern": "Noun clause (that...) + Participle clause + Relative clause (that...)"
+        },
+        {
+          "id": "b5l1-s023",
+          "sentence": "This sigh *could express* different things, such as regret, gentle self-criticism, or acceptance of life’s uncertainty.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b5l1-s024",
+          "sentence": "Throughout the poem, Frost *mixes* emotions.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b5l1-s025",
+          "sentence": "The opening *conveys* loss (“sorry I could not travel both”), while the speaker also *weighs* each path with anxious care.",
+          "type": "complex",
+          "pattern": "Adverbial clause (while...)"
+        },
+        {
+          "id": "b5l1-s026",
+          "sentence": "This emotional complexity *reflects* how we really feel when making choices.",
+          "type": "complex",
+          "pattern": "Noun clause (how...) + Adverbial clause (when...)"
+        },
+        {
+          "id": "b5l1-s027",
+          "sentence": "This poem *offers* insights for whoever is facing important decisions.",
+          "type": "complex",
+          "pattern": "Noun clause (whoever...)"
+        },
+        {
+          "id": "b5l1-s028",
+          "sentence": "Throughout our lives, we *encounter* numerous crossroads, such as selecting a university major or deciding on a career path, where we must choose without knowing the final outcome.",
+          "type": "complex",
+          "pattern": "Relative clause (where...)"
+        },
+        {
+          "id": "b5l1-s029",
+          "sentence": "Whatever we choose *will become* part of our personal story.",
+          "type": "complex",
+          "pattern": "Noun clause (Whatever...) + Vi + C"
+        },
+        {
+          "id": "b5l1-s030",
+          "sentence": "The poem *suggests* that significance lies not in selecting the “perfect” choice but in how we explain our decision later.",
+          "type": "complex",
+          "pattern": "Noun clause (that...) + Noun clause (how...)"
+        },
+        {
+          "id": "b5l1-s031",
+          "sentence": "Rather than emphasizing the importance of not having regrets, the poem *prompts* us to consider how meaning in life comes from the choices we make.",
+          "type": "complex",
+          "pattern": "Noun clause (how...) + Relative clause"
+        },
+        {
+          "id": "b5l1-s032",
+          "sentence": "“The Road Not Taken” *has* an enduring appeal because it gets at the essence of decision-making.",
+          "type": "complex",
+          "pattern": "Adverbial clause (because...)"
+        },
+        {
+          "id": "b5l1-s033",
+          "sentence": "Instead of offering simple answers, the poem *invites* readers to reflect on the complexity of choice.",
+          "type": "simple",
+          "pattern": "S + Vt + O + OC"
+        },
+        {
+          "id": "b5l1-s034",
+          "sentence": "It *strikes* a chord with anyone who has faced difficult decisions, making it a timeless classic.",
+          "type": "complex",
+          "pattern": "Relative clause (who...) + Participle clause"
+        }
+      ]
     }
   },
   "text_genre": {
