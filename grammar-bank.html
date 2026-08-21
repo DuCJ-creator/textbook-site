@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -28,6 +29,35 @@
 
   .empty-state { padding: 50px 20px; text-align: center; color: var(--ink-soft); font-size: 0.88rem; }
 
+  .type-chooser {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px;
+    margin: 22px 0 24px;
+  }
+  .type-card {
+    position: relative; min-height: 104px; padding: 17px 15px 14px; text-align: left;
+    border: 1.5px solid var(--paper-line); border-radius: 16px; background: var(--card);
+    color: var(--ink); font-family: var(--sans); cursor: pointer;
+    box-shadow: 0 2px 0 var(--paper-line);
+    transition: transform .14s ease, border-color .14s ease, box-shadow .14s ease, background .14s ease;
+  }
+  .type-card:hover { transform: translateY(-2px); border-color: var(--accent); box-shadow: 0 7px 18px -12px rgba(8,75,70,.55); }
+  .type-card.active {
+    color: var(--accent-dark); border-color: var(--accent); background: var(--blue-soft);
+    box-shadow: 0 0 0 3px rgba(14,107,99,.12), 0 2px 0 var(--accent);
+  }
+  .type-card .type-no {
+    display: block; margin-bottom: 9px; color: var(--ink-soft); font-size: .65rem;
+    font-weight: 800; letter-spacing: .1em;
+  }
+  .type-card.active .type-no { color: var(--accent); }
+  .type-card .type-name { display: block; font-family: var(--serif); font-size: .96rem; font-weight: 700; line-height: 1.3; }
+  .type-card .type-count {
+    position: absolute; right: 11px; top: 10px; min-width: 25px; height: 25px; padding: 0 7px;
+    display: grid; place-items: center; border-radius: 999px; background: var(--paper-2, #f4ecdd);
+    color: var(--ink-soft); font-size: .7rem; font-weight: 800;
+  }
+  .type-card.active .type-count { color: #fff; background: var(--accent); }
+
   /* 依句型分類的區塊，跟單課頁「顯示模式」共用相同的兩欄對照視覺語言 */
   .gb-type-group { margin-bottom: 26px; }
   .gb-type-group h3 {
@@ -56,6 +86,8 @@
   .main-verb { color: #c23b3b; font-weight: 800; }
 
   @media (max-width: 600px) {
+    .type-chooser { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; margin-top: 16px; }
+    .type-card { min-height: 92px; padding: 14px 12px 12px; }
     .gb-pattern-cell { display: none; }
   }
 </style>
@@ -82,6 +114,20 @@
 
   <div class="wrap">
     <div class="loading-msg" id="loadingMsg">彙整所有課程句型中…</div>
+    <div class="type-chooser" id="typeChooser" style="display:none;" aria-label="選擇句型分類">
+      <button class="type-card active" type="button" data-type="simple" aria-pressed="true">
+        <span class="type-no">TYPE 01</span><span class="type-name">Simple<br>Sentence</span><span class="type-count">0</span>
+      </button>
+      <button class="type-card" type="button" data-type="compound" aria-pressed="false">
+        <span class="type-no">TYPE 02</span><span class="type-name">Compound<br>Sentence</span><span class="type-count">0</span>
+      </button>
+      <button class="type-card" type="button" data-type="complex" aria-pressed="false">
+        <span class="type-no">TYPE 03</span><span class="type-name">Complex<br>Sentence</span><span class="type-count">0</span>
+      </button>
+      <button class="type-card" type="button" data-type="compound-complex" aria-pressed="false">
+        <span class="type-no">TYPE 04</span><span class="type-name">Compound-Complex<br>Sentence</span><span class="type-count">0</span>
+      </button>
+    </div>
     <div id="sentenceArea" style="display:none;"></div>
   </div>
 
@@ -97,6 +143,7 @@
 
   let ALL_ITEMS = [];
   let LESSON_META = [];
+  let ACTIVE_TYPE = "simple";
 
   Loader.fetchAllPublishedLessons()
     .then(lessons => {
@@ -116,7 +163,9 @@
       }
 
       document.getElementById("sentenceArea").style.display = "block";
+      document.getElementById("typeChooser").style.display = "grid";
       buildFilters();
+      buildTypeChooser();
       renderFiltered();
     })
     .catch(err => {
@@ -143,6 +192,20 @@
     lessonSelect.addEventListener("change", renderFiltered);
 
     refreshLessonOptions();
+  }
+
+  function buildTypeChooser() {
+    document.querySelectorAll("#typeChooser .type-card").forEach(card => {
+      card.addEventListener("click", () => {
+        ACTIVE_TYPE = card.dataset.type;
+        document.querySelectorAll("#typeChooser .type-card").forEach(other => {
+          const active = other.dataset.type === ACTIVE_TYPE;
+          other.classList.toggle("active", active);
+          other.setAttribute("aria-pressed", String(active));
+        });
+        renderFiltered();
+      });
+    });
   }
 
   function refreshLessonOptions() {
@@ -174,25 +237,28 @@
     const bookVal = document.getElementById("bookFilter").value;
     const lessonVal = document.getElementById("lessonFilter").value;
 
-    const filtered = ALL_ITEMS.filter(item => {
+    const scopeItems = ALL_ITEMS.filter(item => {
       if (bookVal && item._book !== bookVal) return false;
       if (lessonVal && item._lesson !== lessonVal) return false;
       return true;
     });
+    const filtered = scopeItems.filter(item => item.type === ACTIVE_TYPE);
 
-    document.getElementById("resultCount").textContent = `共 ${filtered.length} 句`;
+    document.getElementById("resultCount").textContent = `${TYPE_LABELS[ACTIVE_TYPE]} · ${filtered.length} 句`;
+
+    document.querySelectorAll("#typeChooser .type-card").forEach(card => {
+      card.querySelector(".type-count").textContent = scopeItems.filter(item => item.type === card.dataset.type).length;
+    });
 
     const area = document.getElementById("sentenceArea");
     area.innerHTML = "";
 
-    TYPE_ORDER.forEach(type => {
-      const items = filtered.filter(it => it.type === type);
-      if (!items.length) return;
-
+    const items = filtered;
+    if (items.length) {
       const group = document.createElement("div");
       group.className = "gb-type-group";
       group.innerHTML = `
-        <h3>${TYPE_LABELS[type]}</h3>
+        <h3>${TYPE_LABELS[ACTIVE_TYPE]}</h3>
         <div class="gb-type-table">
           ${items.map(it => `
             <div class="gb-row">
@@ -204,10 +270,10 @@
         </div>
       `;
       area.appendChild(group);
-    });
+    }
 
     if (!area.children.length) {
-      area.innerHTML = '<p style="color:var(--ink-soft); font-size:.85rem;">這個篩選範圍沒有句型資料。</p>';
+      area.innerHTML = `<p class="empty-state">這個篩選範圍沒有 ${TYPE_LABELS[ACTIVE_TYPE]} 資料。</p>`;
     }
   }
 
