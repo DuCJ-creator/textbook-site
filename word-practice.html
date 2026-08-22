@@ -194,7 +194,7 @@
   </div>
 
 <script src="js/loader.js"></script>
-<script src="js/word-practice.js"></script>
+<script src="word-practice.js" onerror="this.onerror=null;this.src='js/word-practice.js'"></script>
 <script>
   const bookId = Loader.getUrlParam("book", "b1");
   const lessonId = Loader.getUrlParam("lesson", "l1");
@@ -219,7 +219,7 @@
       }
 
       document.getElementById("gameArea").style.display = "block";
-      WordPractice.init({ containerId: "gameArea", rows });
+      WordPractice.init({ containerId: "gameArea", rows, book: bookId, lesson: lessonId });
     })
     .catch(err => {
       document.getElementById("loadingMsg").className = "error-msg";
@@ -227,6 +227,7 @@
         "資料載入失敗：" + err.message + "（請確認此頁面透過本機伺服器或 GitHub Pages 開啟）";
     });
 </script>
+<script src="progress-tracker.js"></script>
 <script src="js/notepad.js"></script>
 <script>Notepad.mount();</script>
 </body>

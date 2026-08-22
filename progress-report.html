@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Learning Progress Report · 學習歷程報告</title>
+<style>
+  :root{--paper:#f7f3e9;--card:#fffdf8;--line:#ddd3bf;--ink:#25221d;--soft:#716957;--accent:#0e6b63;--accent-dark:#084b46;--mint:#e7f3ef;--gold:#d89a25;--serif:Georgia,"Noto Serif TC",serif;--sans:Inter,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif}
+  *{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55}
+  .hero{background:linear-gradient(135deg,var(--accent-dark),var(--accent));color:#fff;padding:30px 20px 28px;border-radius:0 0 28px 28px}
+  .hero-inner,.report{max-width:1060px;margin:auto}.back{color:#d8eee9;text-decoration:none;font-size:.78rem}.hero h1{font:700 clamp(1.55rem,4vw,2.2rem)/1.2 var(--serif);margin:12px 0 5px}.hero p{margin:0;color:#d8eee9;font-size:.86rem}
+  .report{padding:24px 18px 70px}.toolbar{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px}.toolbar-note{font-size:.75rem;color:var(--soft)}
+  button,.file-label{border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:999px;padding:10px 17px;font:700 .8rem var(--sans);cursor:pointer}.ghost{background:transparent;color:var(--accent)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 2px 0 var(--line);margin-bottom:16px}.section-title{font:700 1.12rem var(--serif);margin:0 0 14px;color:var(--accent-dark)}
+  .identity{display:grid;grid-template-columns:1.2fr 1.5fr .8fr;gap:12px}.field label{display:block;font-size:.68rem;font-weight:800;letter-spacing:.08em;color:var(--soft);margin:0 0 5px}.field input,.reflection{width:100%;border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px 12px;font:inherit;color:var(--ink)}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.stat{background:var(--mint);border-radius:14px;padding:14px}.stat b{display:block;font:700 1.45rem var(--serif);color:var(--accent-dark)}.stat span{font-size:.68rem;color:var(--soft)}
+  .two-col{display:grid;grid-template-columns:1fr 1.2fr;gap:16px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:.78rem}th,td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{color:var(--soft);font-size:.66rem;letter-spacing:.05em}td.wrap-cell{white-space:normal;min-width:160px}
+  .empty{padding:24px;text-align:center;color:var(--soft);font-size:.82rem}.reflection{min-height:130px;resize:vertical}.print-reflection{display:none;white-space:pre-wrap;min-height:70px}
+  .notes-grid,.image-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:11px}.note,.evidence{border:1px solid var(--line);border-radius:13px;padding:12px;background:#fff}.note-tag{font-size:.64rem;color:var(--soft);font-weight:800;margin-bottom:6px}.note-text{white-space:pre-wrap;font-size:.82rem}.note img,.evidence img{display:block;width:100%;max-height:270px;object-fit:contain;border-radius:9px;background:#f4f0e7}.evidence textarea{width:100%;margin-top:8px;border:0;border-top:1px solid var(--line);padding:8px 3px 0;resize:vertical;font:inherit;font-size:.78rem}.evidence-actions{display:flex;justify-content:flex-end;margin-top:6px}.remove{border:0;background:transparent;color:#a33;padding:4px 8px}
+  .proof-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.generated{font-size:.68rem;color:var(--soft)}.print-only{display:none}
+  .certificate{border-top:1px solid var(--line);margin-top:18px;padding-top:12px;font-size:.68rem;color:var(--soft)}
+  @media(max-width:760px){.identity,.stats,.two-col{grid-template-columns:1fr 1fr}.identity .field:nth-child(2){grid-column:span 1}.stats{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.identity,.two-col{grid-template-columns:1fr}}
+  @media print{
+    @page{size:A4;margin:12mm}body{background:#fff;font-size:10pt}.hero{padding:14px 0 12px;border-radius:0;background:#fff!important;color:var(--ink);border-bottom:3px solid var(--accent)}.hero-inner,.report{max-width:none}.hero p,.back,.toolbar,.remove,.file-label{display:none!important}.report{padding:12px 0}.card{box-shadow:none;break-inside:avoid;margin-bottom:10px;padding:14px}.section-title{font-size:12pt}.stats{grid-template-columns:repeat(4,1fr)}.stat{padding:9px;background:#eef5f2!important}.stat b{font-size:15pt}.two-col{display:block}.two-col>.card{margin-bottom:10px}.reflection{display:none}.print-reflection,.print-only{display:block}.screen-only{display:none}.image-grid,.notes-grid{grid-template-columns:repeat(2,1fr)}.evidence,.note{break-inside:avoid}table{font-size:8pt}th,td{padding:5px 4px}.hero h1{font-size:20pt;margin:0}.generated{display:block}.evidence textarea{border:0;min-height:34px} }
+</style>
+</head>
+<body>
+  <header class="hero"><div class="hero-inner"><a class="back" href="index.html">← 回課程總覽</a><h1>Learning Progress Report</h1><p>學習時間、練習成績、筆記與圖片證據的個人學習歷程</p></div></header>
+  <main class="report">
+    <div class="toolbar"><span class="toolbar-note">所有資料只保存在這台裝置的目前瀏覽器。</span><button id="printBtn">輸出 PDF／列印</button></div>
+
+    <section class="card">
+      <div class="proof-head"><h2 class="section-title">Learner Information</h2><span class="generated" id="generatedAt"></span></div>
+      <div class="identity">
+        <div class="field"><label for="studentClass">CLASS</label><input id="studentClass" autocomplete="organization-title"><span class="print-only" id="printClass"></span></div>
+        <div class="field"><label for="studentName">NAME</label><input id="studentName" autocomplete="name"><span class="print-only" id="printName"></span></div>
+        <div class="field"><label for="studentNo">NO.</label><input id="studentNo" inputmode="numeric"><span class="print-only" id="printNo"></span></div>
+      </div>
+    </section>
+
+    <section class="card"><h2 class="section-title">Progress Summary</h2><div class="stats">
+      <div class="stat"><b id="totalTime">0 分</b><span>總學習時間</span></div><div class="stat"><b id="attemptCount">0</b><span>練習回合</span></div>
+      <div class="stat"><b id="averageScore">0</b><span>平均分數</span></div><div class="stat"><b id="averageAccuracy">0%</b><span>平均正確率</span></div>
+    </div></section>
+
+    <div class="two-col">
+      <section class="card"><h2 class="section-title">Learning Time by Page</h2><div class="table-wrap"><table><thead><tr><th>頁面</th><th>時間</th><th>造訪</th></tr></thead><tbody id="timeRows"></tbody></table></div></section>
+      <section class="card"><h2 class="section-title">Practice Scores</h2><div class="table-wrap"><table><thead><tr><th>日期</th><th>練習</th><th>模式／範圍</th><th>Score</th><th>答對／總題</th><th>正確率</th></tr></thead><tbody id="scoreRows"></tbody></table></div></section>
+    </div>
+
+    <section class="card"><h2 class="section-title">Learning Reflection</h2><textarea class="reflection" id="reflection" placeholder="寫下這段時間學會了什麼、遇到的困難，以及下一步目標……"></textarea><div class="print-reflection" id="reflectionPrint"></div></section>
+
+    <section class="card"><h2 class="section-title">Notepad Evidence</h2><div id="notesArea" class="notes-grid"></div></section>
+
+    <section class="card">
+      <div class="proof-head"><h2 class="section-title">Annotation Images</h2><label class="file-label screen-only">＋ 加入圖片<input id="imageInput" type="file" accept="image/*" multiple hidden></label></div>
+      <p class="toolbar-note screen-only">可加入 Annotation Tool 匯出的截圖或其他學習圖片；圖片會先縮小後保存在瀏覽器。</p>
+      <div id="imageArea" class="image-grid"></div>
+      <div class="certificate">This report is generated from locally stored learning activity on this device.／本報告依此裝置瀏覽器內的學習資料產生。</div>
+    </section>
+  </main>
+
+<script src="progress-tracker.js"></script>
+<script>
+(function(){
+  const PROFILE_KEY="learning.progress.profile.v1", HISTORY_KEY="learning.progress.history.v1";
+  const REFLECTION_KEY="learning.progress.reflection.v1", IMAGE_KEY="learning.progress.images.v1";
+  const $=id=>document.getElementById(id);
+  const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;");
+  const readJSON=(key,fallback)=>{try{const v=JSON.parse(localStorage.getItem(key)||"null");return v??fallback}catch{return fallback}};
+  const formatTime=seconds=>{seconds=Math.round(Number(seconds)||0);const h=Math.floor(seconds/3600),m=Math.floor(seconds%3600/60);return h?`${h} 小時 ${m} 分`:`${m} 分`};
+  const activityName=r=>r.source==="word-lab"?"Word Lab":"Word Practice";
+
+  function render(){
+    if(window.LearningProgressTracker) window.LearningProgressTracker.commit();
+    const time=readJSON("learning.progress.time.v1",{totalSeconds:0,byPage:{}});
+    const history=readJSON(HISTORY_KEY,[]).filter(r=>r&&["word-lab","word-practice"].includes(r.source));
+    $("totalTime").textContent=formatTime(time.totalSeconds);
+    $("attemptCount").textContent=history.length;
+    $("averageScore").textContent=history.length?Math.round(history.reduce((s,r)=>s+Number(r.score||0),0)/history.length):0;
+    $("averageAccuracy").textContent=(history.length?Math.round(history.reduce((s,r)=>s+Number(r.accuracy||0),0)/history.length):0)+"%";
+    const pages=Object.values(time.byPage||{}).sort((a,b)=>Number(b.seconds||0)-Number(a.seconds||0));
+    $("timeRows").innerHTML=pages.length?pages.map(p=>`<tr><td class="wrap-cell">${esc(p.title||p.path||"頁面")}</td><td>${formatTime(p.seconds)}</td><td>${Number(p.visits||0)}</td></tr>`).join(""):`<tr><td colspan="3" class="empty">尚無學習時間記錄</td></tr>`;
+    $("scoreRows").innerHTML=history.length?history.slice().reverse().map(r=>{
+      const when=r.endedAt?new Date(r.endedAt).toLocaleDateString("zh-TW"):"—";
+      const scope=[r.modeLabel||r.mode,r.book&&r.book!=="all"?String(r.book).toUpperCase():"",r.lesson&&r.lesson!=="all"?String(r.lesson).toUpperCase():""].filter(Boolean).join(" · ");
+      return `<tr><td>${esc(when)}</td><td>${activityName(r)}</td><td class="wrap-cell">${esc(scope||"—")}</td><td><b>${Number(r.score||0)}</b></td><td>${Number(r.correct||0)}／${Number(r.total??(Number(r.correct||0)+Number(r.wrong||0)))}</td><td>${Number(r.accuracy||0)}%</td></tr>`;
+    }).join(""):`<tr><td colspan="6" class="empty">完成 Word Practice 或 Word Lab 後，分數會顯示在這裡。</td></tr>`;
+    renderNotes();renderImages();
+    $("generatedAt").textContent="Generated "+new Date().toLocaleString("zh-TW");
+  }
+
+  function renderNotes(){
+    const data=readJSON("studentNotepadData",{notes:[],tags:[]}),tags=new Map((data.tags||[]).map(t=>[t.id,t]));
+    const notes=(data.notes||[]).filter(n=>n.content);
+    $("notesArea").innerHTML=notes.length?notes.map(n=>{const tag=tags.get(n.tagId);return `<article class="note"><div class="note-tag">${esc(tag?.name||"未分類")}</div>${n.type==="doodle"&&String(n.content).startsWith("data:image/")?`<img src="${n.content}" alt="手繪筆記">`:`<div class="note-text">${esc(n.content)}</div>`}</article>`}).join(""):`<div class="empty">Notepad 目前沒有內容。</div>`;
+  }
+
+  function getImages(){const v=readJSON(IMAGE_KEY,[]);return Array.isArray(v)?v:[]}
+  function saveImages(v){try{localStorage.setItem(IMAGE_KEY,JSON.stringify(v));return true}catch{alert("圖片儲存空間不足，請刪除部分圖片後再試。");return false}}
+  function renderImages(){const images=getImages();$("imageArea").innerHTML=images.length?images.map(x=>`<article class="evidence" data-id="${esc(x.id)}"><img src="${x.dataUrl}" alt="學習標註圖片"><textarea placeholder="圖片說明……">${esc(x.caption||"")}</textarea><div class="evidence-actions screen-only"><button class="remove" type="button">刪除</button></div></article>`).join(""):`<div class="empty">尚未加入 Annotation 圖片。</div>`;document.querySelectorAll(".evidence").forEach(card=>{card.querySelector("textarea").addEventListener("input",e=>{const images=getImages(),item=images.find(x=>x.id===card.dataset.id);if(item){item.caption=e.target.value;saveImages(images)}});card.querySelector(".remove")?.addEventListener("click",()=>{if(!confirm("刪除這張圖片？"))return;saveImages(getImages().filter(x=>x.id!==card.dataset.id));renderImages()})})}
+  function resizeImage(file){return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onerror=reject;reader.onload=()=>{const img=new Image();img.onerror=reject;img.onload=()=>{const maxW=1400,maxH=1000,scale=Math.min(1,maxW/img.width,maxH/img.height),c=document.createElement("canvas");c.width=Math.max(1,Math.round(img.width*scale));c.height=Math.max(1,Math.round(img.height*scale));c.getContext("2d").drawImage(img,0,0,c.width,c.height);resolve(c.toDataURL("image/jpeg",.82))};img.src=reader.result};reader.readAsDataURL(file)})}
+  $("imageInput").addEventListener("change",async e=>{const images=getImages();for(const file of [...e.target.files].slice(0,6)){try{images.push({id:`img-${Date.now()}-${Math.random().toString(36).slice(2,7)}`,dataUrl:await resizeImage(file),caption:"",createdAt:new Date().toISOString()})}catch{}}if(saveImages(images.slice(-8)))renderImages();e.target.value=""});
+
+  const profile=readJSON(PROFILE_KEY,{className:"",name:"",no:""});
+  [["studentClass","className","printClass"],["studentName","name","printName"],["studentNo","no","printNo"]].forEach(([id,key,printId])=>{const input=$(id);input.value=profile[key]||"";const save=()=>{profile[key]=input.value;localStorage.setItem(PROFILE_KEY,JSON.stringify(profile));$(printId).textContent=input.value||"—"};input.addEventListener("input",save);save()});
+  $("reflection").value=localStorage.getItem(REFLECTION_KEY)||"";const saveReflection=()=>{localStorage.setItem(REFLECTION_KEY,$("reflection").value);$("reflectionPrint").textContent=$("reflection").value||"（未填寫）"};$("reflection").addEventListener("input",saveReflection);saveReflection();
+  $("printBtn").addEventListener("click",()=>{render();window.print()});
+  window.addEventListener("learning-progress-updated",render);
+  render();setInterval(render,30000);
+})();
+</script>
+</body>
+</html>

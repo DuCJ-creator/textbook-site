@@ -43,6 +43,7 @@
     background: rgba(255, 255, 255, .14);
     box-shadow: 0 8px 22px rgba(255, 215, 107, .22);
   }
+  .progress-report-btn { text-decoration: none; margin-left: 8px; }
   .flb-icon { font-size: 1.05rem; }
   .flb-arrow { color: var(--gold); font-size: 1rem; transition: transform .18s ease; }
   .first-lesson-btn:hover .flb-arrow { transform: translateX(3px); }
@@ -92,6 +93,7 @@
   .progress-strip .stat { display: flex; align-items: baseline; gap: 6px; }
   .progress-strip .stat .n { font-family: var(--serif); font-size: 1.4rem; font-weight: 700; color: var(--accent); }
   .progress-strip .stat .l { font-size: 0.78rem; color: var(--ink-soft); }
+  .progress-strip .report-link { margin-left: auto; align-self: center; color: var(--accent); font-size: .78rem; font-weight: 800; text-decoration: none; }
 
   /* ===== Section titles ===== */
   .section-title {
@@ -221,6 +223,11 @@
         <span class="flb-text">Shirley Du's Very First Lesson 高中第一課</span>
         <span class="flb-arrow">→</span>
       </button>
+      <a class="first-lesson-btn progress-report-btn" href="progress-report.html">
+        <span class="flb-icon">📊</span>
+        <span class="flb-text">My Learning Progress Report</span>
+        <span class="flb-arrow">→</span>
+      </a>
     </div>
   </div>
 
@@ -291,12 +298,22 @@
     const allLessons = data.books.flatMap(b => b.lessons);
     const published = allLessons.filter(l => l.status === "published").length;
     const total = allLessons.length;
+    let learnedSeconds = 0, practiceCount = 0;
+    try {
+      learnedSeconds = Number(JSON.parse(localStorage.getItem("learning.progress.time.v1") || "{}").totalSeconds || 0);
+      const history = JSON.parse(localStorage.getItem("learning.progress.history.v1") || "[]");
+      practiceCount = Array.isArray(history) ? history.filter(r => r && ["word-practice", "word-lab"].includes(r.source)).length : 0;
+    } catch (_) {}
+    const learnedMinutes = Math.round(learnedSeconds / 60);
 
     const strip = document.getElementById("progressStrip");
     strip.innerHTML = `
       <div class="stat"><span class="n">${data.books.length}</span><span class="l">冊</span></div>
       <div class="stat"><span class="n">${total}</span><span class="l">課總數</span></div>
       <div class="stat"><span class="n">${published}</span><span class="l">已上架</span></div>
+      <div class="stat"><span class="n">${learnedMinutes}</span><span class="l">學習分鐘</span></div>
+      <div class="stat"><span class="n">${practiceCount}</span><span class="l">練習回合</span></div>
+      <a class="report-link" href="progress-report.html">查看完整學習歷程 →</a>
     `;
   }
 
@@ -359,6 +376,15 @@
   function renderTools(data) {
     const wrap = document.getElementById("toolGrid");
     wrap.innerHTML = "";
+    const report = document.createElement("a");
+    report.className = "tool-card";
+    report.href = "progress-report.html";
+    report.innerHTML = `
+      <span class="badge">My Record</span>
+      <div class="t-title">📊 Learning Progress Report</div>
+      <div class="t-desc">學習時間、練習成績、筆記與圖片歷程，可輸出 PDF</div>
+    `;
+    wrap.appendChild(report);
     data.cross_lesson_tools.forEach(tool => {
       const comingSoon = tool.status === "coming_soon";
       const a = document.createElement("a");
@@ -454,6 +480,7 @@
     }
   });
 </script>
+<script src="progress-tracker.js"></script>
 <script src="js/notepad.js"></script>
 <script>Notepad.mount();</script>
 </body>
