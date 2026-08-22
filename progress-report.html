@@ -17,11 +17,12 @@
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.stat{background:var(--mint);border-radius:14px;padding:14px}.stat b{display:block;font:700 1.45rem var(--serif);color:var(--accent-dark)}.stat span{font-size:.68rem;color:var(--soft)}
   .two-col{display:grid;grid-template-columns:1fr 1.2fr;gap:16px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:.78rem}th,td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{color:var(--soft);font-size:.66rem;letter-spacing:.05em}td.wrap-cell{white-space:normal;min-width:160px}
   .empty{padding:24px;text-align:center;color:var(--soft);font-size:.82rem}.reflection{min-height:130px;resize:vertical}.print-reflection{display:none;white-space:pre-wrap;min-height:70px}
+  .starred-columns{display:grid;grid-template-columns:1fr 1fr;gap:14px}.starred-group{border:1px solid var(--line);border-radius:14px;padding:14px;background:#fff}.starred-group h3{font:700 .92rem var(--serif);color:var(--accent-dark);margin:0 0 10px}.starred-list{display:grid;gap:8px}.starred-item{border-left:4px solid var(--gold);background:#fff9e8;border-radius:8px;padding:9px 11px}.starred-term{font-weight:800;color:var(--ink)}.starred-meaning{font-size:.76rem;color:var(--soft);margin-top:2px}.starred-source{font-size:.62rem;font-weight:800;letter-spacing:.05em;color:var(--accent);margin-top:4px}.starred-count{font-size:.7rem;color:var(--soft)}
   .notes-grid,.image-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:11px}.note,.evidence{border:1px solid var(--line);border-radius:13px;padding:12px;background:#fff}.note-tag{font-size:.64rem;color:var(--soft);font-weight:800;margin-bottom:6px}.note-text{white-space:pre-wrap;font-size:.82rem}.note img,.evidence img{display:block;width:100%;max-height:270px;object-fit:contain;border-radius:9px;background:#f4f0e7}.evidence textarea{width:100%;margin-top:8px;border:0;border-top:1px solid var(--line);padding:8px 3px 0;resize:vertical;font:inherit;font-size:.78rem}.evidence-actions{display:flex;justify-content:flex-end;margin-top:6px}.remove{border:0;background:transparent;color:#a33;padding:4px 8px}
   .proof-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.generated{font-size:.68rem;color:var(--soft)}.print-only{display:none}
   .certificate{border-top:1px solid var(--line);margin-top:18px;padding-top:12px;font-size:.68rem;color:var(--soft)}
   @media(max-width:760px){.identity,.stats,.two-col{grid-template-columns:1fr 1fr}.identity .field:nth-child(2){grid-column:span 1}.stats{grid-template-columns:1fr 1fr}}
-  @media(max-width:520px){.identity,.two-col{grid-template-columns:1fr}}
+  @media(max-width:520px){.identity,.two-col,.starred-columns{grid-template-columns:1fr}}
   @media print{
     @page{size:A4;margin:12mm}body{background:#fff;font-size:10pt}.hero{padding:14px 0 12px;border-radius:0;background:#fff!important;color:var(--ink);border-bottom:3px solid var(--accent)}.hero-inner,.report{max-width:none}.hero p,.back,.toolbar,.remove,.file-label{display:none!important}.report{padding:12px 0}.card{box-shadow:none;break-inside:avoid;margin-bottom:10px;padding:14px}.section-title{font-size:12pt}.stats{grid-template-columns:repeat(4,1fr)}.stat{padding:9px;background:#eef5f2!important}.stat b{font-size:15pt}.two-col{display:block}.two-col>.card{margin-bottom:10px}.reflection{display:none}.print-reflection,.print-only{display:block}.screen-only{display:none}.image-grid,.notes-grid{grid-template-columns:repeat(2,1fr)}.evidence,.note{break-inside:avoid}table{font-size:8pt}th,td{padding:5px 4px}.hero h1{font-size:20pt;margin:0}.generated{display:block}.evidence textarea{border:0;min-height:34px} }
 </style>
@@ -50,6 +51,14 @@
       <section class="card"><h2 class="section-title">Practice Scores</h2><div class="table-wrap"><table><thead><tr><th>日期</th><th>練習</th><th>模式／範圍</th><th>Score</th><th>答對／總題</th><th>正確率</th></tr></thead><tbody id="scoreRows"></tbody></table></div></section>
     </div>
 
+    <section class="card">
+      <div class="proof-head"><h2 class="section-title">Starred Items</h2><span class="starred-count" id="starredCount">讀取中…</span></div>
+      <div class="starred-columns">
+        <div class="starred-group"><h3>★ Vocabulary 單字</h3><div id="starredVocabArea" class="starred-list"><div class="empty">讀取星標內容中…</div></div></div>
+        <div class="starred-group"><h3>★ Phrases 片語</h3><div id="starredPhraseArea" class="starred-list"><div class="empty">讀取星標內容中…</div></div></div>
+      </div>
+    </section>
+
     <section class="card"><h2 class="section-title">Learning Reflection</h2><textarea class="reflection" id="reflection" placeholder="寫下這段時間學會了什麼、遇到的困難，以及下一步目標……"></textarea><div class="print-reflection" id="reflectionPrint"></div></section>
 
     <section class="card"><h2 class="section-title">Notepad Evidence</h2><div id="notesArea" class="notes-grid"></div></section>
@@ -67,11 +76,75 @@
 (function(){
   const PROFILE_KEY="learning.progress.profile.v1", HISTORY_KEY="learning.progress.history.v1";
   const REFLECTION_KEY="learning.progress.reflection.v1", IMAGE_KEY="learning.progress.images.v1";
+  const VOCAB_STAR_KEY="vocabStarredIds", VOCAB_DETAIL_STAR_KEY="vocab-bank.starred", PHRASE_STAR_KEY="phraseStarredIds";
+  const POS_LABELS={verb:"Verb 動詞",noun:"Noun 名詞",adj:"Adjective 形容詞",adv:"Adverb 副詞"};
   const $=id=>document.getElementById(id);
   const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;");
   const readJSON=(key,fallback)=>{try{const v=JSON.parse(localStorage.getItem(key)||"null");return v??fallback}catch{return fallback}};
   const formatTime=seconds=>{seconds=Math.round(Number(seconds)||0);const h=Math.floor(seconds/3600),m=Math.floor(seconds%3600/60);return h?`${h} 小時 ${m} 分`:seconds<60?`${seconds} 秒`:`${m} 分`};
   const activityName=r=>r.source==="word-lab"?"Word Lab":"Word Practice";
+  const readSet=key=>{const value=readJSON(key,[]);return new Set(Array.isArray(value)?value:[])};
+  let lessonDataPromise=null;
+
+  function loadPublishedLessons(){
+    if(lessonDataPromise)return lessonDataPromise;
+    lessonDataPromise=fetch("data/index.json").then(r=>{if(!r.ok)throw new Error("index");return r.json()}).then(index=>{
+      const targets=[];
+      (index.books||[]).forEach(book=>(book.lessons||[]).forEach(lesson=>{if(lesson.status==="published")targets.push({book:book.id,lesson:lesson.id,path:lesson.data||`data/${book.id}/${lesson.id}.json`})}));
+      return Promise.all(targets.map(t=>fetch(t.path).then(r=>r.ok?r.json():null).then(data=>data?{...data,_book:t.book,_lesson:t.lesson}:null).catch(()=>null)));
+    }).then(items=>items.filter(Boolean));
+    return lessonDataPromise;
+  }
+
+  function starredCard(item){
+    return `<article class="starred-item"><div class="starred-term">★ ${esc(item.term)}</div><div class="starred-meaning">${esc(item.meaning||"（尚無中文意思）")}</div><div class="starred-source">${esc(item.source||"")}</div></article>`;
+  }
+
+  async function renderStarredItems(){
+    const familyStars=readSet(VOCAB_STAR_KEY),detailStars=readSet(VOCAB_DETAIL_STAR_KEY),phraseStars=readSet(PHRASE_STAR_KEY);
+    if(!familyStars.size&&!detailStars.size&&!phraseStars.size){
+      $("starredCount").textContent="共 0 項";
+      $("starredVocabArea").innerHTML='<div class="empty">目前沒有星標單字。</div>';
+      $("starredPhraseArea").innerHTML='<div class="empty">目前沒有星標片語。</div>';
+      return;
+    }
+    try{
+      const lessons=await loadPublishedLessons(),vocab=[],phrases=[],seenVocab=new Set(),seenPhrases=new Set();
+      lessons.forEach(lesson=>{
+        const source=`${String(lesson._book).toUpperCase()} ${String(lesson._lesson).toUpperCase()}`;
+        (lesson.vocabulary?.rows||[]).forEach(row=>{
+          const entries=[];
+          Object.keys(POS_LABELS).forEach(pos=>(row[pos]||[]).forEach(entry=>entries.push({...entry,pos})));
+          const base=row.base||entries[0]?.en||"";
+          const familyId=`${lesson._book}-${lesson._lesson}-${base}`;
+          if(base&&familyStars.has(familyId)&&!seenVocab.has(`family:${familyId}`)){
+            seenVocab.add(`family:${familyId}`);
+            vocab.push({term:base,meaning:entries[0]?.zh||"",source:`${source} · 字族收藏`});
+          }
+          entries.forEach(entry=>{
+            const detailId=`${String(entry.en||"").toLocaleLowerCase()}|${POS_LABELS[entry.pos].toLocaleLowerCase()}`;
+            if(detailStars.has(detailId)&&!seenVocab.has(`detail:${detailId}`)){
+              seenVocab.add(`detail:${detailId}`);
+              vocab.push({term:entry.en,meaning:entry.zh||"",source:`${source} · ${POS_LABELS[entry.pos]}`});
+            }
+          });
+        });
+        (lesson.phrases?.items||[]).forEach(item=>{
+          if(phraseStars.has(item.id)&&!seenPhrases.has(item.id)){
+            seenPhrases.add(item.id);
+            phrases.push({term:item.phrase,meaning:item.zh||"",source});
+          }
+        });
+      });
+      $("starredVocabArea").innerHTML=vocab.length?vocab.map(starredCard).join(""):'<div class="empty">目前沒有星標單字。</div>';
+      $("starredPhraseArea").innerHTML=phrases.length?phrases.map(starredCard).join(""):'<div class="empty">目前沒有星標片語。</div>';
+      $("starredCount").textContent=`共 ${vocab.length+phrases.length} 項`;
+    }catch(_){
+      $("starredCount").textContent="資料讀取失敗";
+      $("starredVocabArea").innerHTML='<div class="empty">無法讀取教材星標資料。</div>';
+      $("starredPhraseArea").innerHTML='<div class="empty">無法讀取教材星標資料。</div>';
+    }
+  }
 
   function render(){
     if(window.LearningProgressTracker) window.LearningProgressTracker.commit();
@@ -88,7 +161,7 @@
       const scope=[r.modeLabel||r.mode,r.book&&r.book!=="all"?String(r.book).toUpperCase():"",r.lesson&&r.lesson!=="all"?String(r.lesson).toUpperCase():""].filter(Boolean).join(" · ");
       return `<tr><td>${esc(when)}</td><td>${activityName(r)}</td><td class="wrap-cell">${esc(scope||"—")}</td><td><b>${Number(r.score||0)}</b></td><td>${Number(r.correct||0)}／${Number(r.total??(Number(r.correct||0)+Number(r.wrong||0)))}</td><td>${Number(r.accuracy||0)}%</td></tr>`;
     }).join(""):`<tr><td colspan="6" class="empty">完成 Word Practice 或 Word Lab 後，分數會顯示在這裡。</td></tr>`;
-    renderNotes();renderImages();
+    renderNotes();renderImages();renderStarredItems();
     $("generatedAt").textContent="Generated "+new Date().toLocaleString("zh-TW");
   }
 
