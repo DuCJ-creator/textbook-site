@@ -1,7 +1,7 @@
 /* ===========================================================
    notepad.js — 隨處可見的多功能筆記本
 
-   浮動按鈕＋可拖曳的面板，出現在每一個頁面（除了 coming-soon.html）。
+   浮動按鈕＋可拖曳的面板，出現在每一個頁面。
    功能：
    - 多筆記：每則筆記獨立一張卡片，可新增、刪除
    - 文字或手繪：每則筆記可以是純文字，或是簡易手繪塗鴉（單色畫板）
@@ -64,9 +64,10 @@ const Notepad = (function () {
     if (mounted) return; // 避免同一頁重複呼叫時注入兩份
     mounted = true;
     // Notepad 幾乎出現在全站頁面；沒有另外引入時，順便啟用學習時間追蹤。
-    if (!window.LearningProgressTracker && !document.querySelector('script[data-learning-progress]')) {
+    if (!window.LearningProgressTracker &&
+        !document.querySelector('script[data-learning-progress], script[src="js/progress-tracker.js"]')) {
       const tracker = document.createElement("script");
-      tracker.src = "progress-tracker.js";
+      tracker.src = "js/progress-tracker.js";
       tracker.dataset.learningProgress = "true";
       document.head.appendChild(tracker);
     }
@@ -507,3 +508,6 @@ const Notepad = (function () {
 
   return { mount };
 })();
+
+// loader.js 透過 window 取得並掛載共用工具。
+window.Notepad = Notepad;

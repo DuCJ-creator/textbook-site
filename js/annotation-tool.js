@@ -390,6 +390,7 @@ class AnnotationToolCore {
   }
 
   toggleMode() {
+    const wasActive = this.isActive;
     this.isActive = !this.isActive;
     this.canvas.style.pointerEvents = this.isActive ? 'auto' : 'none';
 
@@ -398,6 +399,8 @@ class AnnotationToolCore {
       document.body.classList.add('annotation-locked');
     } else {
       document.body.classList.remove('annotation-locked');
+      // 每次退出都從乾淨畫布開始，避免筆跡留到下一次標註。
+      if (wasActive) this.clearAll();
     }
 
     return this.isActive;
@@ -470,24 +473,42 @@ class AnnotationToolCore {
         return;
       }
 
+      const viewportWidth = this.canvas.width || window.innerWidth;
+      const viewportHeight = this.canvas.height || window.innerHeight;
+
+      // 畫筆使用 viewport 座標；底圖也必須只截取同一個 viewport，
+      // 才不會因頁面高度或目前捲動位置而上下偏移。
       html2canvas(document.body, {
         allowTaint: true,
         useCORS: true,
+        width: window.innerWidth,
+        height: window.innerHeight,
         windowWidth: window.innerWidth,
         windowHeight: window.innerHeight,
+        scrollX: -window.scrollX,
+        scrollY: -window.scrollY,
         scale: 1,
         ignoreElements: (element) => {
-          return element.id === 'annotationFab' || element.id === 'annotationPanel';
+          return element.id === 'annotationCanvas' ||
+            element.id === 'annotationFab' ||
+            element.id === 'annotationPanel' ||
+            element.id === 'notepadFab' ||
+            element.id === 'notepadPanel';
         }
       }).then(pageCanvas => {
         const exportCanvas = document.createElement('canvas');
-        exportCanvas.width = window.innerWidth;
-        exportCanvas.height = window.innerHeight;
+        exportCanvas.width = viewportWidth;
+        exportCanvas.height = viewportHeight;
         const exportCtx = exportCanvas.getContext('2d');
 
-        exportCtx.drawImage(pageCanvas, 0, 0);
+        exportCtx.drawImage(
+          pageCanvas,
+          0, 0, pageCanvas.width, pageCanvas.height,
+          0, 0, viewportWidth, viewportHeight
+        );
         exportCtx.globalCompositeOperation = 'multiply';
-        exportCtx.drawImage(this.canvas, 0, 0);
+        exportCtx.drawImage(this.canvas, 0, 0, viewportWidth, viewportHeight);
+        exportCtx.globalCompositeOperation = 'source-over';
 
         resolve(exportCanvas.toDataURL('image/png'));
       }).catch(reject);

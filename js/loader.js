@@ -145,7 +145,7 @@ const Loader = (function () {
     }
   }
 
-  // ===== 自動動態載入全站共用工具 (Notepad & Annotation Tool) =====
+  // ===== 自動動態載入全站共用工具（學習時間、Notepad、Annotation Tool） =====
   (function initGlobalTools() {
     function loadScript(src) {
       return new Promise((resolve, reject) => {
@@ -163,18 +163,22 @@ const Loader = (function () {
     }
 
     const startMounting = () => {
-      // 1. 載入截圖依賴庫
+      // 1. 每一個頂層頁面都載入學習時間追蹤
+      loadScript('js/progress-tracker.js')
+        .catch(() => console.warn('學習時間追蹤載入失敗'));
+
+      // 2. 載入截圖依賴庫
       loadScript('https://html2canvas.hertzen.com/dist/html2canvas.min.js')
         .catch(() => console.warn('html2canvas 載入失敗'));
 
-      // 2. 載入並掛載便籤工具
+      // 3. 載入並掛載便籤工具
       loadScript('js/notepad.js').then(() => {
         if (window.Notepad && typeof window.Notepad.mount === 'function') {
           window.Notepad.mount();
         }
       }).catch(err => console.warn('Notepad 載入失敗:', err));
 
-      // 3. 載入並掛載繪圖標註工具
+      // 4. 載入並掛載繪圖標註工具
       loadScript('js/annotation-tool.js').then(() => {
         if (window.AnnotationTool && typeof window.AnnotationTool.mount === 'function') {
           window.AnnotationTool.mount();
