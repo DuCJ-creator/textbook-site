@@ -299,7 +299,11 @@
     const total = allLessons.length;
     let learnedSeconds = 0, practiceCount = 0;
     try {
-      learnedSeconds = Number(JSON.parse(localStorage.getItem("learning.progress.time.v1") || "{}").totalSeconds || 0);
+      const timeData = JSON.parse(localStorage.getItem("learning.progress.time.v1") || "{}");
+      learnedSeconds = Object.values(timeData.byPage || {}).reduce((sum, page) => {
+        const seconds = Number(page?.seconds || 0);
+        return sum + (seconds >= 120 ? seconds : 0);
+      }, 0);
       const history = JSON.parse(localStorage.getItem("learning.progress.history.v1") || "[]");
       practiceCount = Array.isArray(history) ? history.filter(r => r && ["word-practice", "word-lab", "grammar-bank"].includes(r.source)).length : 0;
     } catch (_) {}

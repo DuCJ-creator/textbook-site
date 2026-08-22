@@ -150,12 +150,13 @@
     if(window.LearningProgressTracker) window.LearningProgressTracker.commit();
     const time=readJSON("learning.progress.time.v1",{totalSeconds:0,byPage:{}});
     const history=readJSON(HISTORY_KEY,[]).filter(r=>r&&["word-lab","word-practice","grammar-bank"].includes(r.source));
-    $("totalTime").textContent=formatTime(time.totalSeconds);
+    const pages=Object.values(time.byPage||{}).filter(p=>Number(p.seconds||0)>=120).sort((a,b)=>Number(b.seconds||0)-Number(a.seconds||0));
+    const countedSeconds=pages.reduce((sum,p)=>sum+Number(p.seconds||0),0);
+    $("totalTime").textContent=formatTime(countedSeconds);
     $("attemptCount").textContent=history.length;
     $("averageScore").textContent=history.length?Math.round(history.reduce((s,r)=>s+Number(r.score||0),0)/history.length):0;
     $("averageAccuracy").textContent=(history.length?Math.round(history.reduce((s,r)=>s+Number(r.accuracy||0),0)/history.length):0)+"%";
-    const pages=Object.values(time.byPage||{}).sort((a,b)=>Number(b.seconds||0)-Number(a.seconds||0));
-    $("timeRows").innerHTML=pages.length?pages.map(p=>`<tr><td class="wrap-cell">${esc(p.title||p.path||"頁面")}</td><td>${formatTime(p.seconds)}</td><td>${Number(p.visits||0)}</td></tr>`).join(""):`<tr><td colspan="3" class="empty">尚無學習時間記錄</td></tr>`;
+    $("timeRows").innerHTML=pages.length?pages.map(p=>`<tr><td class="wrap-cell">${esc(p.title||p.path||"頁面")}</td><td>${formatTime(p.seconds)}</td><td>${Number(p.visits||0)}</td></tr>`).join(""):`<tr><td colspan="3" class="empty">單一頁面累積滿 2 分鐘後，才會顯示學習時間。</td></tr>`;
     $("scoreRows").innerHTML=history.length?history.slice().reverse().map(r=>{
       const when=r.endedAt?new Date(r.endedAt).toLocaleDateString("zh-TW"):"—";
       const scope=[r.modeLabel||r.mode,r.book&&r.book!=="all"?String(r.book).toUpperCase():"",r.lesson&&r.lesson!=="all"?String(r.lesson).toUpperCase():""].filter(Boolean).join(" · ");
