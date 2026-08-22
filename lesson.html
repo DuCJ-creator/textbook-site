@@ -27,6 +27,24 @@
   .vocab-link-card .text .t { font-family: var(--serif); font-size: 1.05rem; font-weight: 700; margin-bottom: 2px; }
   .vocab-link-card .text .d { font-size: 0.8rem; color: var(--ink-soft); }
   .vocab-link-card .arrow { margin-left: auto; font-size: 1.1rem; color: var(--ink-soft); }
+
+  .media-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .media-card {
+    display: flex; align-items: center; gap: 14px; min-height: 96px; padding: 17px 18px;
+    border: 1px solid var(--paper-line); border-radius: 16px; background: var(--card);
+    color: inherit; text-decoration: none; box-shadow: 0 2px 0 var(--paper-line);
+    transition: transform .15s ease, border-color .15s ease, background .15s ease;
+  }
+  .media-card:hover { transform: translateY(-2px); border-color: var(--accent); background: var(--accent-soft); }
+  .media-card .media-icon { width: 46px; height: 46px; flex: 0 0 auto; display: grid; place-items: center; border-radius: 13px; background: var(--blue-soft); font-size: 1.35rem; }
+  .media-card .media-copy { flex: 1; min-width: 0; }
+  .media-card .media-title { display: block; font: 700 1rem var(--serif); color: var(--accent-dark); }
+  .media-card .media-key { display: block; margin-top: 3px; color: var(--ink-soft); font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; }
+  .media-card .media-arrow { color: var(--accent); font-weight: 800; }
+  .media-card.is-missing { opacity: .55; box-shadow: none; cursor: default; }
+  .media-card.is-missing:hover { transform: none; border-color: var(--paper-line); background: var(--card); }
+  .media-status { padding: 28px 16px; text-align: center; color: var(--ink-soft); font-size: .84rem; }
+  @media (max-width: 620px) { .media-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -46,6 +64,7 @@
       <button data-part="p2">II. Phrases &amp; Collocations</button>
       <button data-part="p3">III. Essential Grammar</button>
       <button data-part="p4">IV. Text Genre &amp; Structure</button>
+      <button data-part="p5">V. Video &amp; Audio</button>
     </div>
   </nav>
 
@@ -128,6 +147,13 @@
       </div>
     </section>
 
+    <!-- ================= PART V: Video and Audio ================= -->
+    <section class="part" id="part-p5">
+      <h2 class="part-title">V. Video &amp; Audio</h2>
+      <p class="part-desc">選擇本課的影音活動；連結會依線上課程清單自動更新。</p>
+      <div id="mediaResourceArea" class="media-status">影音連結讀取中…</div>
+    </section>
+
   </div>
 
 <script src="js/loader.js"></script>
@@ -140,6 +166,7 @@
   // jumpTo 指定要自動切到哪個 Part 分頁（"p2" = Phrases, "p3" = Grammar）
   const highlightId = Loader.getUrlParam("highlight", "");
   const jumpToPart = Loader.getUrlParam("jumpTo", "");
+  const MEDIA_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSeIQz1O1RG6DvdZRcCPlVrgZpiJ0OOIzO6jGWvuq5UcrxD-KYvTTL6KDvtcp_I1nU-FWdeuUwV6HX1/pub?gid=0&single=true&output=csv";
 
   let LESSON = null;
 
@@ -165,6 +192,7 @@
     initPhrases();
     initGrammar();
     initTextGenre();
+    initVideoAudio();
 
     if (jumpToPart) switchToPart(jumpToPart);
   }
@@ -247,6 +275,76 @@
   function initTextGenre() {
     const text = LESSON.text_genre?.raw_text || "（尚未提供內容）";
     document.getElementById("genreText").textContent = text;
+  }
+
+  /* ===== Part V: Video & Audio — 從公開 CSV 即時取得每課連結 ===== */
+  function parseCsv(text) {
+    const rows = [];
+    let row = [], cell = "", quoted = false;
+    for (let i = 0; i < text.length; i++) {
+      const ch = text[i];
+      if (ch === '"') {
+        if (quoted && text[i + 1] === '"') { cell += '"'; i++; }
+        else quoted = !quoted;
+      } else if (ch === "," && !quoted) {
+        row.push(cell.trim()); cell = "";
+      } else if ((ch === "\n" || ch === "\r") && !quoted) {
+        if (ch === "\r" && text[i + 1] === "\n") i++;
+        row.push(cell.trim()); cell = "";
+        if (row.some(value => value !== "")) rows.push(row);
+        row = [];
+      } else cell += ch;
+    }
+    row.push(cell.trim());
+    if (row.some(value => value !== "")) rows.push(row);
+    if (!rows.length) return [];
+    const headers = rows.shift().map(header => header.trim().toLowerCase());
+    return rows.map(values => Object.fromEntries(headers.map((header, i) => [header, values[i] || ""])));
+  }
+
+  function safeMediaUrl(value) {
+    try {
+      const url = new URL(String(value || "").trim());
+      return ["https:", "http:"].includes(url.protocol) ? url.href : "";
+    } catch (_) { return ""; }
+  }
+
+  function renderMediaResources(record) {
+    const area = document.getElementById("mediaResourceArea");
+    const resources = [
+      { key: "ahead", title: "Think Ahead", icon: "💭" },
+      { key: "preview", title: "Vocab Preview", icon: "🔤" },
+      { key: "gist", title: "Listen for Gist", icon: "🎧" },
+      { key: "detail", title: "Listen for Details", icon: "🔎" }
+    ];
+    if (!record) {
+      area.className = "media-status";
+      area.textContent = "這一課的 Video & Audio 連結尚未上架。";
+      return;
+    }
+    area.className = "media-grid";
+    area.innerHTML = resources.map(resource => {
+      const url = safeMediaUrl(record[resource.key]);
+      if (!url) return `<div class="media-card is-missing"><span class="media-icon">${resource.icon}</span><span class="media-copy"><span class="media-title">${resource.title}</span><span class="media-key">尚未提供</span></span></div>`;
+      return `<a class="media-card" href="${Loader.escapeHtml(url)}" target="_blank" rel="noopener"><span class="media-icon">${resource.icon}</span><span class="media-copy"><span class="media-title">${resource.title}</span><span class="media-key">${resource.key}</span></span><span class="media-arrow">↗</span></a>`;
+    }).join("");
+  }
+
+  function initVideoAudio() {
+    fetch(MEDIA_CSV_URL, { cache: "no-store" })
+      .then(response => { if (!response.ok) throw new Error("HTTP " + response.status); return response.text(); })
+      .then(text => {
+        const record = parseCsv(text).find(row =>
+          String(row.book || "").toLowerCase() === bookId.toLowerCase() &&
+          String(row.lesson || "").toLowerCase() === lessonId.toLowerCase()
+        );
+        renderMediaResources(record);
+      })
+      .catch(() => {
+        const area = document.getElementById("mediaResourceArea");
+        area.className = "media-status";
+        area.textContent = "影音清單暫時無法讀取，請稍後重新整理。";
+      });
   }
 </script>
 <script src="js/notepad.js"></script>

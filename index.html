@@ -173,6 +173,13 @@
   .lesson-item.is-draft:hover { border-color: #a89e8e; background: #f0ede4; transform: none; }
   .lesson-item.is-draft .l-num::after { content: " · 尚未上架"; color: #a89e8e; font-style: normal; }
 
+  .lesson-entry { border: 1px solid var(--paper-line); border-radius: 13px; overflow: hidden; background: var(--paper); }
+  .lesson-entry .lesson-item { border: 0; border-radius: 0; background: transparent; }
+  .lesson-entry .lesson-item:hover { transform: none; }
+  .lesson-entry.is-published:hover { border-color: var(--accent); background: var(--accent-soft); transform: translateY(-1px); }
+  .lesson-media-link { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 12px; border-top: 1px solid var(--paper-line); color: var(--accent-dark); text-decoration: none; font-size: .72rem; font-weight: 800; }
+  .lesson-media-link:hover { background: rgba(14,107,99,.08); }
+
   /* ===== Cross-lesson tools ===== */
   .tool-grid {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 40px;
@@ -354,6 +361,8 @@
           ? `lesson.html?book=${book.id}&lesson=${lesson.id}`
           : `coming-soon.html?book=${book.id}&lesson=${lesson.id}`;
 
+        const entry = document.createElement("div");
+        entry.className = "lesson-entry" + (isPublished ? " is-published" : "");
         const a = document.createElement("a");
         a.className = "lesson-item" + (isPublished ? "" : " is-draft");
         a.href = href;
@@ -361,7 +370,15 @@
           <div class="l-num">${book.id.toUpperCase()} ${lesson.id.toUpperCase()}</div>
           <div class="l-title">${escapeHtml(displayTitle)}</div>
         `;
-        list.appendChild(a);
+        entry.appendChild(a);
+        if (isPublished) {
+          const mediaLink = document.createElement("a");
+          mediaLink.className = "lesson-media-link";
+          mediaLink.href = `lesson.html?book=${book.id}&lesson=${lesson.id}&jumpTo=p5`;
+          mediaLink.innerHTML = `<span>V. Video &amp; Audio</span><span>→</span>`;
+          entry.appendChild(mediaLink);
+        }
+        list.appendChild(entry);
       });
 
       card.appendChild(head);
