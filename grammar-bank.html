@@ -85,10 +85,46 @@
   }
   .main-verb { color: #c23b3b; font-weight: 800; }
 
+  .practice-launch {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    margin: 0 0 24px; padding: 18px 20px; border: 1.5px solid #d8a332;
+    border-radius: 18px; background: linear-gradient(135deg, #fff9e8, #fff3c9);
+    box-shadow: 0 3px 0 #ead49b;
+  }
+  .practice-launch strong { display: block; font-family: var(--serif); font-size: 1.05rem; color: var(--accent-dark); }
+  .practice-launch span { display: block; margin-top: 3px; color: var(--ink-soft); font-size: .78rem; }
+  .practice-launch button, .practice-action {
+    flex: 0 0 auto; border: 0; border-radius: 999px; padding: 11px 18px;
+    background: var(--accent); color: #fff; font: 800 .8rem var(--sans); cursor: pointer;
+  }
+  .practice-shell { max-width: 780px; margin: 22px auto 40px; }
+  .practice-card { background: var(--card); border: 1px solid var(--paper-line); border-radius: 22px; padding: clamp(20px,4vw,34px); box-shadow: var(--shadow); }
+  .practice-hud { display: flex; justify-content: space-between; gap: 12px; color: var(--ink-soft); font-size: .75rem; font-weight: 800; }
+  .practice-quit { border: 0; background: transparent; color: var(--ink-soft); font: 700 .72rem var(--sans); cursor: pointer; text-decoration: underline; }
+  .practice-progress { height: 8px; margin: 10px 0 26px; overflow: hidden; border-radius: 999px; background: var(--paper-2,#eee5d5); }
+  .practice-progress span { display: block; height: 100%; border-radius: inherit; background: var(--accent); transition: width .25s ease; }
+  .practice-question { font-family: var(--serif); font-size: clamp(1.12rem,3vw,1.55rem); line-height: 1.65; text-align: center; margin: 0 auto 24px; }
+  .practice-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .practice-option { min-height: 62px; padding: 12px; border: 1.5px solid var(--paper-line); border-radius: 13px; background: #fff; color: var(--ink); font: 700 .82rem var(--sans); cursor: pointer; }
+  .practice-option:hover:not(:disabled) { border-color: var(--accent); background: var(--blue-soft); }
+  .practice-option.correct { border-color: #2f8a58; background: #e3f6e9; color: #22663f; }
+  .practice-option.wrong { border-color: #c23b3b; background: #fde8e6; color: #8f2929; }
+  .practice-feedback { min-height: 48px; margin-top: 15px; padding: 10px 12px; border-radius: 10px; background: var(--blue-soft); text-align: center; font-size: .8rem; color: var(--ink-soft); }
+  .practice-result { text-align: center; }
+  .practice-result .trophy { font-size: 3rem; }
+  .practice-result-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin: 20px 0; }
+  .practice-result-grid div { padding: 15px 8px; border-radius: 14px; background: var(--blue-soft); }
+  .practice-result-grid strong { display: block; font: 800 1.6rem var(--serif); color: var(--accent-dark); }
+  .practice-result-grid span { font-size: .7rem; color: var(--ink-soft); }
+  .practice-actions { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+  .practice-action.secondary { background: #fff; color: var(--accent); border: 1px solid var(--accent); }
+
   @media (max-width: 600px) {
     .type-chooser { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; margin-top: 16px; }
     .type-card { min-height: 92px; padding: 14px 12px 12px; }
     .gb-pattern-cell { display: none; }
+    .practice-launch { align-items: stretch; flex-direction: column; }
+    .practice-options { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -128,7 +164,12 @@
         <span class="type-no">TYPE 04</span><span class="type-name">Compound-Complex<br>Sentence</span><span class="type-count">0</span>
       </button>
     </div>
+    <div class="practice-launch" id="practiceLaunch" style="display:none;">
+      <div><strong>🎯 Random 10 · 句型分類挑戰</strong><span>從目前冊次／課程範圍隨機抽題，每答對一題 15 分。</span></div>
+      <button id="startPracticeBtn" type="button">開始十句挑戰 →</button>
+    </div>
     <div id="sentenceArea" style="display:none;"></div>
+    <div id="practiceArea" class="practice-shell" style="display:none;"></div>
   </div>
 
 <script src="js/loader.js"></script>
@@ -144,6 +185,7 @@
   let ALL_ITEMS = [];
   let LESSON_META = [];
   let ACTIVE_TYPE = "simple";
+  let PRACTICE = null;
 
   Loader.fetchAllPublishedLessons()
     .then(lessons => {
@@ -164,8 +206,10 @@
 
       document.getElementById("sentenceArea").style.display = "block";
       document.getElementById("typeChooser").style.display = "grid";
+      document.getElementById("practiceLaunch").style.display = "flex";
       buildFilters();
       buildTypeChooser();
+      document.getElementById("startPracticeBtn").addEventListener("click", startPractice);
       renderFiltered();
     })
     .catch(err => {
@@ -275,6 +319,140 @@
     if (!area.children.length) {
       area.innerHTML = `<p class="empty-state">這個篩選範圍沒有 ${TYPE_LABELS[ACTIVE_TYPE]} 資料。</p>`;
     }
+  }
+
+  function currentScopeItems() {
+    const bookVal = document.getElementById("bookFilter").value;
+    const lessonVal = document.getElementById("lessonFilter").value;
+    return ALL_ITEMS.filter(item => (!bookVal || item._book === bookVal) && (!lessonVal || item._lesson === lessonVal));
+  }
+
+  function shuffle(items) {
+    const copy = items.slice();
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  }
+
+  function cleanSentence(sentence) {
+    return String(sentence || "").replace(/\*/g, "");
+  }
+
+  function startPractice() {
+    const pool = currentScopeItems();
+    if (!pool.length) {
+      alert("目前選擇的範圍沒有可練習的句子。");
+      return;
+    }
+    const selectedBook = document.getElementById("bookFilter").value || "all";
+    const selectedLesson = document.getElementById("lessonFilter").value || "all";
+    PRACTICE = {
+      questions: shuffle(pool).slice(0, 10), index: 0, correct: 0, score: 0,
+      locked: false, startedAt: new Date(), wrongItems: [], book: selectedBook, lesson: selectedLesson, timer: null
+    };
+    document.getElementById("typeChooser").style.display = "none";
+    document.getElementById("practiceLaunch").style.display = "none";
+    document.getElementById("sentenceArea").style.display = "none";
+    document.getElementById("practiceArea").style.display = "block";
+    renderPracticeQuestion();
+  }
+
+  function renderPracticeQuestion() {
+    const item = PRACTICE.questions[PRACTICE.index];
+    const total = PRACTICE.questions.length;
+    const area = document.getElementById("practiceArea");
+    area.innerHTML = `
+      <div class="practice-card">
+        <div class="practice-hud"><span>第 ${PRACTICE.index + 1}／${total} 題</span><span>Score ${PRACTICE.score}</span><button class="practice-quit" id="quitPracticeBtn" type="button">離開挑戰</button></div>
+        <div class="practice-progress"><span style="width:${PRACTICE.index / total * 100}%"></span></div>
+        <div class="practice-question">${Loader.escapeHtml(cleanSentence(item.sentence))}</div>
+        <div class="practice-options">
+          ${TYPE_ORDER.map((type, i) => `<button class="practice-option" type="button" data-type="${type}"><span style="opacity:.55">${i + 1}.</span> ${TYPE_LABELS[type]}</button>`).join("")}
+        </div>
+        <div class="practice-feedback" id="practiceFeedback">選擇這句話的句型分類。</div>
+      </div>`;
+    area.querySelectorAll(".practice-option").forEach(button => button.addEventListener("click", () => answerPractice(button.dataset.type)));
+    document.getElementById("quitPracticeBtn").addEventListener("click", exitPractice);
+  }
+
+  function answerPractice(answer) {
+    if (PRACTICE.locked) return;
+    PRACTICE.locked = true;
+    const item = PRACTICE.questions[PRACTICE.index];
+    const ok = answer === item.type;
+    if (ok) {
+      PRACTICE.correct++;
+      PRACTICE.score += 15;
+    } else {
+      PRACTICE.wrongItems.push({sentence: cleanSentence(item.sentence), answer, correctType: item.type, book: item._book, lesson: item._lesson});
+    }
+    document.querySelectorAll("#practiceArea .practice-option").forEach(button => {
+      button.disabled = true;
+      if (button.dataset.type === item.type) button.classList.add("correct");
+      else if (button.dataset.type === answer) button.classList.add("wrong");
+    });
+    document.getElementById("practiceFeedback").innerHTML = ok
+      ? `<strong>答對了！＋15 分</strong><br>${Loader.escapeHtml(TYPE_LABELS[item.type])}`
+      : `<strong>再看一次句子結構。</strong><br>正確答案：${Loader.escapeHtml(TYPE_LABELS[item.type])}`;
+    PRACTICE.timer = setTimeout(() => {
+      if (!PRACTICE) return;
+      PRACTICE.index++;
+      PRACTICE.locked = false;
+      if (PRACTICE.index >= PRACTICE.questions.length) finishPractice();
+      else renderPracticeQuestion();
+    }, 1050);
+  }
+
+  function appendProgressHistory(record) {
+    let history = [];
+    try { const saved = JSON.parse(localStorage.getItem("learning.progress.history.v1") || "[]"); if (Array.isArray(saved)) history = saved; } catch (_) {}
+    history.push(record);
+    try { localStorage.setItem("learning.progress.history.v1", JSON.stringify(history.slice(-300))); }
+    catch (_) { try { localStorage.setItem("learning.progress.history.v1", JSON.stringify(history.slice(-100))); } catch (_) {} }
+  }
+
+  function finishPractice() {
+    const endedAt = new Date();
+    const total = PRACTICE.questions.length;
+    const accuracy = total ? Math.round(PRACTICE.correct / total * 100) : 0;
+    appendProgressHistory({
+      schemaVersion: 1,
+      attemptId: (window.crypto && window.crypto.randomUUID) ? window.crypto.randomUUID() : `grammar-bank-${endedAt.getTime()}-${Math.random().toString(36).slice(2,8)}`,
+      activity: "grammar-practice", source: "grammar-bank", mode: "sentence-classification", modeLabel: "句型分類挑戰",
+      book: PRACTICE.book, lesson: PRACTICE.lesson, startedAt: PRACTICE.startedAt.toISOString(), endedAt: endedAt.toISOString(),
+      durationSeconds: Math.max(0, Math.round((endedAt - PRACTICE.startedAt) / 1000)), endReason: "completed",
+      scoreRule: "15-per-correct", pointsPerCorrect: 15, score: PRACTICE.score,
+      correct: PRACTICE.correct, wrong: total - PRACTICE.correct, total, accuracy, wrongItems: PRACTICE.wrongItems
+    });
+    document.getElementById("practiceArea").innerHTML = `
+      <div class="practice-card practice-result">
+        <div class="trophy">${accuracy >= 90 ? "🏆" : accuracy >= 70 ? "⭐" : "💪"}</div>
+        <h2>十句分類挑戰完成</h2>
+        <div class="practice-result-grid">
+          <div><strong>${PRACTICE.score}</strong><span>Score</span></div>
+          <div><strong>${PRACTICE.correct}／${total}</strong><span>答對／總題</span></div>
+          <div><strong>${accuracy}%</strong><span>正確率</span></div>
+        </div>
+        <div class="practice-actions">
+          <button class="practice-action secondary" id="backToBankBtn" type="button">回句型列表</button>
+          <button class="practice-action" id="practiceAgainBtn" type="button">再挑戰一次</button>
+        </div>
+      </div>`;
+    document.getElementById("backToBankBtn").addEventListener("click", exitPractice);
+    document.getElementById("practiceAgainBtn").addEventListener("click", startPractice);
+  }
+
+  function exitPractice() {
+    if (PRACTICE?.timer) clearTimeout(PRACTICE.timer);
+    PRACTICE = null;
+    document.getElementById("practiceArea").style.display = "none";
+    document.getElementById("practiceArea").innerHTML = "";
+    document.getElementById("typeChooser").style.display = "grid";
+    document.getElementById("practiceLaunch").style.display = "flex";
+    document.getElementById("sentenceArea").style.display = "block";
+    renderFiltered();
   }
 
   // 從 item.id（例如 "b1l1-s004"）取出編號，跟單課頁一致的規則

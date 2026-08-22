@@ -301,7 +301,7 @@
     try {
       learnedSeconds = Number(JSON.parse(localStorage.getItem("learning.progress.time.v1") || "{}").totalSeconds || 0);
       const history = JSON.parse(localStorage.getItem("learning.progress.history.v1") || "[]");
-      practiceCount = Array.isArray(history) ? history.filter(r => r && ["word-practice", "word-lab"].includes(r.source)).length : 0;
+      practiceCount = Array.isArray(history) ? history.filter(r => r && ["word-practice", "word-lab", "grammar-bank"].includes(r.source)).length : 0;
     } catch (_) {}
     const learnedMinutes = Math.round(learnedSeconds / 60);
 
