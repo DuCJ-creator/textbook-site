@@ -6,6 +6,70 @@
 <title>Shirley Du老師的高中英文充電站</title>
 <link rel="stylesheet" href="css/style.css" />
 <style>
+  body.portal-locked { overflow: hidden; }
+  body.portal-locked > :not(#studentPortal):not(script) { visibility: hidden; }
+  .student-portal {
+    position: fixed; inset: 0; z-index: 20000; display: grid; place-items: center;
+    overflow-y: auto; padding: 24px;
+    background:
+      radial-gradient(circle at 18% 15%, rgba(255,220,123,.18), transparent 28%),
+      radial-gradient(circle at 85% 82%, rgba(139,205,180,.18), transparent 30%),
+      linear-gradient(145deg, #063f3b 0%, #0d695f 55%, #185c48 100%);
+    transition: opacity .35s ease, visibility .35s ease;
+  }
+  .student-portal[hidden] { display: none; }
+  .student-portal.is-closing { opacity: 0; visibility: hidden; }
+  .portal-card {
+    width: min(560px, 100%); padding: clamp(26px, 6vw, 48px);
+    border: 1px solid rgba(255,255,255,.48); border-radius: 28px;
+    background: rgba(255,253,248,.97); color: var(--ink);
+    box-shadow: 0 28px 80px rgba(0,27,23,.35), inset 0 1px 0 #fff;
+  }
+  .portal-mark {
+    width: 66px; height: 66px; display: grid; place-items: center; margin: 0 auto 20px;
+    border-radius: 20px; background: linear-gradient(145deg, var(--accent-dark), var(--accent));
+    color: #fff; font-size: 1.8rem; box-shadow: 0 10px 24px rgba(14,107,99,.25);
+  }
+  .portal-eyebrow { margin-bottom: 10px; color: var(--accent); text-align: center; font-size: .67rem; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
+  .portal-card h2 { margin: 0; text-align: center; font: 700 clamp(1.5rem,5vw,2.15rem)/1.25 var(--serif); color: var(--accent-dark); }
+  .portal-welcome { margin: 16px auto 24px; max-width: 460px; color: var(--ink-soft); text-align: center; font-size: .9rem; line-height: 1.75; }
+  .portal-welcome strong { color: var(--accent-dark); }
+  .portal-instruction { margin: 0 0 14px; padding-top: 18px; border-top: 1px solid var(--paper-line); text-align: center; font-weight: 800; color: var(--ink); }
+  .portal-form { display: grid; gap: 13px; }
+  .portal-role-switch { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; padding: 5px; border-radius: 14px; background: var(--accent-soft); }
+  .portal-role-btn { min-height: 40px; border: 0; border-radius: 10px; background: transparent; color: var(--ink-soft); font: 800 .78rem var(--sans); cursor: pointer; }
+  .portal-role-btn.active { background: #fff; color: var(--accent-dark); box-shadow: 0 2px 9px rgba(8,75,70,.12); }
+  .portal-field label { display: block; margin: 0 0 5px; color: var(--ink-soft); font-size: .68rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+  .portal-field select, .portal-field input {
+    width: 100%; height: 49px; border: 1.5px solid var(--paper-line); border-radius: 13px;
+    background: #fff; color: var(--ink); padding: 0 14px; font: 500 .92rem var(--sans); outline: none;
+    transition: border-color .15s ease, box-shadow .15s ease;
+  }
+  .portal-field select:focus, .portal-field input:focus { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(14,107,99,.11); }
+  .portal-password-wrap { position: relative; }
+  .portal-password-wrap input { padding-right: 68px; }
+  .portal-show-key { position: absolute; right: 8px; top: 7px; height: 35px; border: 0; background: transparent; color: var(--accent); font: 800 .7rem var(--sans); cursor: pointer; }
+  .portal-submit {
+    min-height: 50px; margin-top: 3px; border: 0; border-radius: 13px;
+    background: linear-gradient(135deg, var(--accent-dark), var(--accent)); color: #fff;
+    font: 800 .9rem var(--sans); cursor: pointer; box-shadow: 0 8px 20px rgba(14,107,99,.22);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .portal-submit:hover { transform: translateY(-1px); box-shadow: 0 11px 24px rgba(14,107,99,.28); }
+  .portal-submit:disabled { opacity: .6; cursor: wait; transform: none; }
+  .portal-error { min-height: 21px; margin: 0; color: #a52d2d; text-align: center; font-size: .76rem; }
+  .portal-note { margin: 2px 0 0; color: var(--ink-soft); text-align: center; font-size: .68rem; }
+  .portal-contact { margin: 3px 0 0; color: var(--ink-soft); text-align: center; font-size: .7rem; line-height: 1.55; }
+  .portal-contact a { color: var(--accent); font-weight: 800; text-underline-offset: 2px; }
+  .portal-card.shake { animation: portalShake .34s ease; }
+  @keyframes portalShake { 25%{transform:translateX(-7px)} 50%{transform:translateX(7px)} 75%{transform:translateX(-4px)} }
+  .portal-switch {
+    display: inline-flex; align-items: center; gap: 7px; margin-top: 12px; padding: 7px 12px;
+    border: 1px solid rgba(255,255,255,.35); border-radius: 999px; background: rgba(255,255,255,.08);
+    color: rgba(255,255,255,.88); font: 700 .7rem var(--sans); cursor: pointer;
+  }
+  .portal-switch[hidden] { display: none; }
+
   /* ===== Header（品牌識別，與 lesson.html 一致） ===== */
   .site-head {
     background: linear-gradient(135deg, var(--accent-dark), var(--accent));
@@ -203,7 +267,27 @@
   }
 </style>
 </head>
-<body>
+<body class="portal-locked">
+
+  <div class="student-portal" id="studentPortal" role="dialog" aria-modal="true" aria-labelledby="portalTitle">
+    <div class="portal-card" id="portalCard">
+      <div class="portal-mark">🔋</div>
+      <div class="portal-eyebrow">Shirley Du's English Learning Portal</div>
+      <h2 id="portalTitle">Welcome!</h2>
+      <p class="portal-welcome">Welcome to <strong>Shirley Du老師的高中英文充電站🔋 to Recharge⚡️</strong>，歡迎隨時來給你的英文充個電。</p>
+      <p class="portal-instruction">Enter Your Class and Password<br><span style="font-size:.78rem;color:var(--ink-soft);font-weight:600;">請輸入您的班級及鑰匙</span></p>
+      <form class="portal-form" id="portalForm">
+        <div class="portal-role-switch" aria-label="選擇入口身份"><button class="portal-role-btn active" id="studentRoleBtn" type="button" data-role="student" aria-pressed="true">🎒 Student 學生</button><button class="portal-role-btn" id="teacherRoleBtn" type="button" data-role="teacher" aria-pressed="false">🍎 Teacher 杜老師</button></div>
+        <div class="portal-field" id="portalStudentField"><label for="portalClass">Class 班級</label><select id="portalClass" required disabled><option value="">班級資料讀取中…</option></select></div>
+        <div class="portal-field" id="portalTeacherField" hidden><label for="portalTeacher">Teacher 教師</label><select id="portalTeacher" disabled><option value="">教師資料讀取中…</option></select></div>
+        <div class="portal-field"><label for="portalPassword">Password 鑰匙</label><div class="portal-password-wrap"><input id="portalPassword" type="password" autocomplete="current-password" required placeholder="Enter your key"><button class="portal-show-key" id="portalShowKey" type="button">顯示</button></div></div>
+        <button class="portal-submit" id="portalSubmit" type="submit" disabled>Enter the Platform →</button>
+        <p class="portal-error" id="portalError" role="alert"></p>
+        <p class="portal-note">在同一裝置與瀏覽器通過一次後，下次會自動進入。</p>
+        <p class="portal-contact">Want an access? Please fill out the <a href="https://forms.gle/1pE5j3svdZWoANv8A" target="_blank" rel="noopener">contact form</a> to contact Tr. Shirley.</p>
+      </form>
+    </div>
+  </div>
 
   <div class="site-head">
     <div class="inner">
@@ -227,6 +311,7 @@
         <span class="flb-text">My Learning Progress Report</span>
         <span class="flb-arrow">→</span>
       </a>
+      <button class="portal-switch" id="portalSwitchBtn" type="button" hidden><span id="portalClassLabel"></span><span>· 切換班級</span></button>
     </div>
   </div>
 
@@ -257,6 +342,133 @@
 <script src="js/external-viewer.js"></script>
 <script>
   const INDEX_URL = "data/index.json";
+  const PORTAL_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRUXYEsXyEerlr9XL2Yq3KDGfgdRAaoKmQaK0ZHc0gbvyaR0ib3cbmowL-Hw4W9RUT37osZqOefOeGJ/pub?gid=0&single=true&output=csv";
+  const PORTAL_STORAGE_KEY = "shirley.portal.access.v1";
+  let PORTAL_CLASSES = [];
+  let PORTAL_TEACHERS = [];
+  let PORTAL_ROLE = "student";
+
+  function readPortalAccess() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(PORTAL_STORAGE_KEY) || "null");
+      return saved && (saved.displayName || saved.className) ? saved : null;
+    } catch (_) { return null; }
+  }
+
+  function unlockPortal(className, animate = true) {
+    const portal = document.getElementById("studentPortal");
+    document.body.classList.remove("portal-locked");
+    document.getElementById("portalClassLabel").textContent = className || "Student";
+    document.getElementById("portalSwitchBtn").hidden = false;
+    if (!animate) { portal.hidden = true; return; }
+    portal.classList.add("is-closing");
+    setTimeout(() => { portal.hidden = true; portal.classList.remove("is-closing"); }, 360);
+  }
+
+  function showPortal() {
+    localStorage.removeItem(PORTAL_STORAGE_KEY);
+    const portal = document.getElementById("studentPortal");
+    portal.hidden = false;
+    document.body.classList.add("portal-locked");
+    document.getElementById("portalSwitchBtn").hidden = true;
+    document.getElementById("portalPassword").value = "";
+    document.getElementById("portalError").textContent = "";
+    setTimeout(() => (PORTAL_ROLE === "teacher" ? document.getElementById("portalTeacher") : document.getElementById("portalClass")).focus(), 0);
+  }
+
+  function setPortalRole(role) {
+    PORTAL_ROLE = role === "teacher" ? "teacher" : "student";
+    const isTeacher = PORTAL_ROLE === "teacher";
+    document.getElementById("portalStudentField").hidden = isTeacher;
+    document.getElementById("portalTeacherField").hidden = !isTeacher;
+    document.getElementById("portalClass").required = !isTeacher;
+    document.getElementById("portalTeacher").required = isTeacher;
+    document.querySelectorAll(".portal-role-btn").forEach(button => {
+      const active = button.dataset.role === PORTAL_ROLE;
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-pressed", String(active));
+    });
+    document.getElementById("portalError").textContent = "";
+    document.getElementById("portalPassword").value = "";
+  }
+
+  function parsePortalCsv(text) {
+    const rows = [];
+    let row = [], cell = "", quoted = false;
+    for (let i = 0; i < text.length; i++) {
+      const ch = text[i];
+      if (ch === '"') {
+        if (quoted && text[i + 1] === '"') { cell += '"'; i++; }
+        else quoted = !quoted;
+      } else if (ch === "," && !quoted) {
+        row.push(cell.trim()); cell = "";
+      } else if ((ch === "\n" || ch === "\r") && !quoted) {
+        if (ch === "\r" && text[i + 1] === "\n") i++;
+        row.push(cell.trim()); cell = "";
+        if (row.some(value => value !== "")) rows.push(row);
+        row = [];
+      } else cell += ch;
+    }
+    row.push(cell.trim());
+    if (row.some(value => value !== "")) rows.push(row);
+    if (!rows.length) return [];
+    const headers = rows.shift().map(header => header.replace(/^\uFEFF/, "").trim().toLowerCase());
+    return rows.map(values => Object.fromEntries(headers.map((header, index) => [header, values[index] || ""])));
+  }
+
+  const rememberedPortalAccess = readPortalAccess();
+  if (rememberedPortalAccess) {
+    setPortalRole(rememberedPortalAccess.role || "student");
+    unlockPortal(rememberedPortalAccess.displayName || rememberedPortalAccess.className, false);
+  }
+
+  fetch(PORTAL_CSV_URL, { cache: "no-store" })
+    .then(response => { if (!response.ok) throw new Error("HTTP " + response.status); return response.text(); })
+    .then(text => {
+      const records = parsePortalCsv(text);
+      PORTAL_CLASSES = records.filter(item => String(item.role).toLowerCase() === "student" && item.name && item.password).map(item => ({ class: item.name, password: item.password }));
+      PORTAL_TEACHERS = records.filter(item => String(item.role).toLowerCase() === "teacher" && item.name && item.password).map(item => ({ name: item.name, password: item.password }));
+      const select = document.getElementById("portalClass");
+      select.innerHTML = '<option value="">請選擇班級…</option>' + PORTAL_CLASSES.map(item => `<option value="${escapeHtml(item.class)}">${escapeHtml(item.class)}</option>`).join("");
+      select.disabled = false;
+      const teacherSelect = document.getElementById("portalTeacher");
+      teacherSelect.innerHTML = '<option value="">請選擇教師…</option>' + PORTAL_TEACHERS.map(item => `<option value="${escapeHtml(item.name)}">${escapeHtml(item.name)}</option>`).join("");
+      teacherSelect.disabled = false;
+      document.getElementById("portalSubmit").disabled = false;
+    })
+    .catch(() => {
+      if (!rememberedPortalAccess) document.getElementById("portalError").textContent = "班級資料暫時無法讀取，請稍後重新整理。";
+    });
+
+  document.getElementById("portalShowKey").addEventListener("click", () => {
+    const input = document.getElementById("portalPassword");
+    const showing = input.type === "text";
+    input.type = showing ? "password" : "text";
+    document.getElementById("portalShowKey").textContent = showing ? "顯示" : "隱藏";
+  });
+
+  document.querySelectorAll(".portal-role-btn").forEach(button => button.addEventListener("click", () => setPortalRole(button.dataset.role)));
+
+  document.getElementById("portalForm").addEventListener("submit", event => {
+    event.preventDefault();
+    const password = document.getElementById("portalPassword").value.trim();
+    const selectedName = PORTAL_ROLE === "teacher" ? document.getElementById("portalTeacher").value : document.getElementById("portalClass").value;
+    const records = PORTAL_ROLE === "teacher" ? PORTAL_TEACHERS : PORTAL_CLASSES;
+    const nameKey = PORTAL_ROLE === "teacher" ? "name" : "class";
+    const match = records.find(item => item[nameKey] === selectedName && item.password === password);
+    if (!match) {
+      const card = document.getElementById("portalCard");
+      document.getElementById("portalError").textContent = "身份、班級／教師或鑰匙不正確，請再確認一次。";
+      card.classList.remove("shake"); void card.offsetWidth; card.classList.add("shake");
+      document.getElementById("portalPassword").select();
+      return;
+    }
+    const displayName = PORTAL_ROLE === "teacher" ? `Teacher · ${match.name}` : match.class;
+    localStorage.setItem(PORTAL_STORAGE_KEY, JSON.stringify({ schemaVersion: 2, role: PORTAL_ROLE, displayName, className: match.class || "", grantedAt: new Date().toISOString() }));
+    unlockPortal(displayName, true);
+  });
+
+  document.getElementById("portalSwitchBtn").addEventListener("click", showPortal);
 
   fetch(INDEX_URL)
     .then(res => {
