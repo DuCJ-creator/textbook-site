@@ -97,6 +97,8 @@
     flex: 0 0 auto; border: 0; border-radius: 999px; padding: 11px 18px;
     background: var(--accent); color: #fff; font: 800 .8rem var(--sans); cursor: pointer;
   }
+  .practice-launch-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  .practice-launch .sound-toggle { background: #fff; color: var(--accent); border: 1px solid var(--accent); }
   .practice-shell { max-width: 780px; margin: 22px auto 40px; }
   .practice-card { background: var(--card); border: 1px solid var(--paper-line); border-radius: 22px; padding: clamp(20px,4vw,34px); box-shadow: var(--shadow); }
   .practice-hud { display: flex; justify-content: space-between; gap: 12px; color: var(--ink-soft); font-size: .75rem; font-weight: 800; }
@@ -118,6 +120,18 @@
   .practice-result-grid span { font-size: .7rem; color: var(--ink-soft); }
   .practice-actions { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
   .practice-action.secondary { background: #fff; color: var(--accent); border: 1px solid var(--accent); }
+  .practice-review { margin-top: 28px; text-align: left; }
+  .practice-review h3 { margin: 0 0 6px; font: 800 1.15rem var(--serif); color: var(--accent-dark); }
+  .practice-review-intro { margin: 0 0 14px; color: var(--ink-soft); font-size: .78rem; }
+  .review-list { display: grid; gap: 10px; }
+  .review-item { border: 1px solid var(--paper-line); border-left: 5px solid #2f8a58; border-radius: 13px; padding: 13px 15px; background: #fff; }
+  .review-item.is-wrong { border-left-color: #c23b3b; background: #fffafa; }
+  .review-top { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 7px; color: var(--ink-soft); font-size: .66rem; font-weight: 800; }
+  .review-sentence { font-family: var(--serif); font-size: .92rem; line-height: 1.55; }
+  .review-answers { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 9px; }
+  .review-answer { padding: 8px 10px; border-radius: 9px; background: var(--blue-soft); font-size: .72rem; }
+  .review-answer strong { display: block; margin-bottom: 2px; color: var(--ink-soft); font-size: .62rem; text-transform: uppercase; letter-spacing: .05em; }
+  .review-pattern { margin-top: 7px; color: var(--ink-soft); font-size: .7rem; }
 
   @media (max-width: 600px) {
     .type-chooser { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; margin-top: 16px; }
@@ -125,6 +139,7 @@
     .gb-pattern-cell { display: none; }
     .practice-launch { align-items: stretch; flex-direction: column; }
     .practice-options { grid-template-columns: 1fr; }
+    .review-answers { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -166,7 +181,7 @@
     </div>
     <div class="practice-launch" id="practiceLaunch" style="display:none;">
       <div><strong>🎯 Random 10 · 句型分類挑戰</strong><span>從目前冊次／課程範圍隨機抽題，每答對一題 15 分。</span></div>
-      <button id="startPracticeBtn" type="button">開始十句挑戰 →</button>
+      <div class="practice-launch-actions"><button class="sound-toggle" id="soundPracticeBtn" type="button">🔊 音效</button><button id="startPracticeBtn" type="button">開始十句挑戰 →</button></div>
     </div>
     <div id="sentenceArea" style="display:none;"></div>
     <div id="practiceArea" class="practice-shell" style="display:none;"></div>
@@ -186,6 +201,54 @@
   let LESSON_META = [];
   let ACTIVE_TYPE = "simple";
   let PRACTICE = null;
+  let AUDIO_CONTEXT = null;
+  let SOUND_ON = localStorage.getItem("grammarBank.sound") !== "off";
+
+  function ensureAudio() {
+    if (!SOUND_ON) return null;
+    const AudioCtor = window.AudioContext || window.webkitAudioContext;
+    if (!AudioCtor) return null;
+    if (!AUDIO_CONTEXT) AUDIO_CONTEXT = new AudioCtor();
+    if (AUDIO_CONTEXT.state === "suspended") AUDIO_CONTEXT.resume();
+    return AUDIO_CONTEXT;
+  }
+
+  function tone(frequency, duration, type = "sine", volume = .045, delay = 0) {
+    const audio = ensureAudio();
+    if (!audio) return;
+    const start = audio.currentTime + delay;
+    const oscillator = audio.createOscillator();
+    const gain = audio.createGain();
+    oscillator.type = type;
+    oscillator.frequency.setValueAtTime(frequency, start);
+    gain.gain.setValueAtTime(.0001, start);
+    gain.gain.exponentialRampToValueAtTime(volume, start + .015);
+    gain.gain.exponentialRampToValueAtTime(.0001, start + duration);
+    oscillator.connect(gain); gain.connect(audio.destination);
+    oscillator.start(start); oscillator.stop(start + duration + .02);
+  }
+
+  function playSound(name) {
+    if (!SOUND_ON) return;
+    if (name === "start") { tone(392,.11,"triangle",.05); tone(523,.13,"triangle",.05,.1); tone(659,.17,"triangle",.055,.2); }
+    if (name === "correct") { tone(523,.09,"sine",.055); tone(784,.18,"sine",.06,.08); }
+    if (name === "wrong") { tone(220,.12,"sawtooth",.035); tone(165,.2,"sawtooth",.03,.1); }
+    if (name === "finish") { tone(523,.12,"triangle",.05); tone(659,.12,"triangle",.05,.1); tone(784,.2,"triangle",.06,.2); tone(1047,.28,"triangle",.065,.34); }
+  }
+
+  function syncSoundButtons() {
+    ["soundPracticeBtn","practiceSoundBtn"].forEach(id => {
+      const button = document.getElementById(id);
+      if (button) { button.textContent = SOUND_ON ? "🔊 音效" : "🔇 靜音"; button.setAttribute("aria-pressed", String(SOUND_ON)); }
+    });
+  }
+
+  function toggleSound() {
+    SOUND_ON = !SOUND_ON;
+    localStorage.setItem("grammarBank.sound", SOUND_ON ? "on" : "off");
+    syncSoundButtons();
+    if (SOUND_ON) playSound("start");
+  }
 
   Loader.fetchAllPublishedLessons()
     .then(lessons => {
@@ -210,6 +273,8 @@
       buildFilters();
       buildTypeChooser();
       document.getElementById("startPracticeBtn").addEventListener("click", startPractice);
+      document.getElementById("soundPracticeBtn").addEventListener("click", toggleSound);
+      syncSoundButtons();
       renderFiltered();
     })
     .catch(err => {
@@ -350,12 +415,14 @@
     const selectedLesson = document.getElementById("lessonFilter").value || "all";
     PRACTICE = {
       questions: shuffle(pool).slice(0, 10), index: 0, correct: 0, score: 0,
-      locked: false, startedAt: new Date(), wrongItems: [], book: selectedBook, lesson: selectedLesson, timer: null
+      locked: false, startedAt: new Date(), wrongItems: [], responses: [], book: selectedBook, lesson: selectedLesson, timer: null
     };
     document.getElementById("typeChooser").style.display = "none";
     document.getElementById("practiceLaunch").style.display = "none";
     document.getElementById("sentenceArea").style.display = "none";
     document.getElementById("practiceArea").style.display = "block";
+    ensureAudio();
+    playSound("start");
     renderPracticeQuestion();
   }
 
@@ -365,7 +432,7 @@
     const area = document.getElementById("practiceArea");
     area.innerHTML = `
       <div class="practice-card">
-        <div class="practice-hud"><span>第 ${PRACTICE.index + 1}／${total} 題</span><span>Score ${PRACTICE.score}</span><button class="practice-quit" id="quitPracticeBtn" type="button">離開挑戰</button></div>
+        <div class="practice-hud"><span>第 ${PRACTICE.index + 1}／${total} 題</span><span>Score ${PRACTICE.score}</span><button class="practice-quit" id="practiceSoundBtn" type="button">🔊 音效</button><button class="practice-quit" id="quitPracticeBtn" type="button">離開挑戰</button></div>
         <div class="practice-progress"><span style="width:${PRACTICE.index / total * 100}%"></span></div>
         <div class="practice-question">${Loader.escapeHtml(cleanSentence(item.sentence))}</div>
         <div class="practice-options">
@@ -374,7 +441,9 @@
         <div class="practice-feedback" id="practiceFeedback">選擇這句話的句型分類。</div>
       </div>`;
     area.querySelectorAll(".practice-option").forEach(button => button.addEventListener("click", () => answerPractice(button.dataset.type)));
+    document.getElementById("practiceSoundBtn").addEventListener("click", toggleSound);
     document.getElementById("quitPracticeBtn").addEventListener("click", exitPractice);
+    syncSoundButtons();
   }
 
   function answerPractice(answer) {
@@ -388,6 +457,11 @@
     } else {
       PRACTICE.wrongItems.push({sentence: cleanSentence(item.sentence), answer, correctType: item.type, book: item._book, lesson: item._lesson});
     }
+    PRACTICE.responses.push({
+      sentence: cleanSentence(item.sentence), answer, correctType: item.type, pattern: item.pattern || "",
+      book: item._book, lesson: item._lesson, ok
+    });
+    playSound(ok ? "correct" : "wrong");
     document.querySelectorAll("#practiceArea .practice-option").forEach(button => {
       button.disabled = true;
       if (button.dataset.type === item.type) button.classList.add("correct");
@@ -424,8 +498,20 @@
       book: PRACTICE.book, lesson: PRACTICE.lesson, startedAt: PRACTICE.startedAt.toISOString(), endedAt: endedAt.toISOString(),
       durationSeconds: Math.max(0, Math.round((endedAt - PRACTICE.startedAt) / 1000)), endReason: "completed",
       scoreRule: "15-per-correct", pointsPerCorrect: 15, score: PRACTICE.score,
-      correct: PRACTICE.correct, wrong: total - PRACTICE.correct, total, accuracy, wrongItems: PRACTICE.wrongItems
+      correct: PRACTICE.correct, wrong: total - PRACTICE.correct, total, accuracy,
+      wrongItems: PRACTICE.wrongItems, answers: PRACTICE.responses
     });
+    playSound("finish");
+    const reviewHtml = PRACTICE.responses.map((response, index) => `
+      <article class="review-item${response.ok ? "" : " is-wrong"}">
+        <div class="review-top"><span>${response.ok ? "✓ CORRECT" : "✕ REVIEW"} · 第 ${index + 1} 題</span><span>${String(response.book).toUpperCase()} ${String(response.lesson).toUpperCase()}</span></div>
+        <div class="review-sentence">${Loader.escapeHtml(response.sentence)}</div>
+        <div class="review-answers">
+          <div class="review-answer"><strong>你的答案</strong>${Loader.escapeHtml(TYPE_LABELS[response.answer] || response.answer)}</div>
+          <div class="review-answer"><strong>正確答案</strong>${Loader.escapeHtml(TYPE_LABELS[response.correctType])}</div>
+        </div>
+        <div class="review-pattern"><strong>Pattern：</strong>${Loader.escapeHtml(response.pattern || "—")}</div>
+      </article>`).join("");
     document.getElementById("practiceArea").innerHTML = `
       <div class="practice-card practice-result">
         <div class="trophy">${accuracy >= 90 ? "🏆" : accuracy >= 70 ? "⭐" : "💪"}</div>
@@ -435,6 +521,7 @@
           <div><strong>${PRACTICE.correct}／${total}</strong><span>答對／總題</span></div>
           <div><strong>${accuracy}%</strong><span>正確率</span></div>
         </div>
+        <section class="practice-review"><h3>總結複習 · Correct Answers</h3><p class="practice-review-intro">逐題核對你的分類、正確答案與句型結構。</p><div class="review-list">${reviewHtml}</div></section>
         <div class="practice-actions">
           <button class="practice-action secondary" id="backToBankBtn" type="button">回句型列表</button>
           <button class="practice-action" id="practiceAgainBtn" type="button">再挑戰一次</button>
