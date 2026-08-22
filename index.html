@@ -63,13 +63,6 @@
   .portal-contact a { color: var(--accent); font-weight: 800; text-underline-offset: 2px; }
   .portal-card.shake { animation: portalShake .34s ease; }
   @keyframes portalShake { 25%{transform:translateX(-7px)} 50%{transform:translateX(7px)} 75%{transform:translateX(-4px)} }
-  .portal-switch {
-    display: inline-flex; align-items: center; gap: 7px; margin-top: 12px; padding: 7px 12px;
-    border: 1px solid rgba(255,255,255,.35); border-radius: 999px; background: rgba(255,255,255,.08);
-    color: rgba(255,255,255,.88); font: 700 .7rem var(--sans); cursor: pointer;
-  }
-  .portal-switch[hidden] { display: none; }
-
   /* ===== Header（品牌識別，與 lesson.html 一致） ===== */
   .site-head {
     background: linear-gradient(135deg, var(--accent-dark), var(--accent));
@@ -311,7 +304,6 @@
         <span class="flb-text">My Learning Progress Report</span>
         <span class="flb-arrow">→</span>
       </a>
-      <button class="portal-switch" id="portalSwitchBtn" type="button" hidden><span id="portalClassLabel"></span><span>· 切換班級</span></button>
     </div>
   </div>
 
@@ -358,22 +350,9 @@
   function unlockPortal(className, animate = true) {
     const portal = document.getElementById("studentPortal");
     document.body.classList.remove("portal-locked");
-    document.getElementById("portalClassLabel").textContent = className || "Student";
-    document.getElementById("portalSwitchBtn").hidden = false;
     if (!animate) { portal.hidden = true; return; }
     portal.classList.add("is-closing");
     setTimeout(() => { portal.hidden = true; portal.classList.remove("is-closing"); }, 360);
-  }
-
-  function showPortal() {
-    localStorage.removeItem(PORTAL_STORAGE_KEY);
-    const portal = document.getElementById("studentPortal");
-    portal.hidden = false;
-    document.body.classList.add("portal-locked");
-    document.getElementById("portalSwitchBtn").hidden = true;
-    document.getElementById("portalPassword").value = "";
-    document.getElementById("portalError").textContent = "";
-    setTimeout(() => (PORTAL_ROLE === "teacher" ? document.getElementById("portalTeacher") : document.getElementById("portalClass")).focus(), 0);
   }
 
   function setPortalRole(role) {
@@ -467,8 +446,6 @@
     localStorage.setItem(PORTAL_STORAGE_KEY, JSON.stringify({ schemaVersion: 2, role: PORTAL_ROLE, displayName, className: match.class || "", grantedAt: new Date().toISOString() }));
     unlockPortal(displayName, true);
   });
-
-  document.getElementById("portalSwitchBtn").addEventListener("click", showPortal);
 
   fetch(INDEX_URL)
     .then(res => {
