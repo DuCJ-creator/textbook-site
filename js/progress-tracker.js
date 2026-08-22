@@ -3,8 +3,17 @@
   "use strict";
   if (window.LearningProgressTracker) return;
   const KEY = "learning.progress.time.v1";
+  const EXCLUDED_FILES = new Set(["index.html", "progress-report.html"]);
   const isTopPage = window.self === window.top;
   let activeSince = null;
+
+  function currentFile() {
+    return location.pathname.split("/").pop() || "index.html";
+  }
+
+  function isExcludedPage() {
+    return EXCLUDED_FILES.has(currentFile());
+  }
 
   function read() {
     try {
@@ -15,7 +24,7 @@
   }
 
   function pageInfo() {
-    const file = location.pathname.split("/").pop() || "index.html";
+    const file = currentFile();
     const params = new URLSearchParams(location.search);
     const scope = ["book", "lesson"].filter(k => params.get(k)).map(k => `${k}=${params.get(k)}`).join("&");
     return {
@@ -26,7 +35,7 @@
   }
 
   function isActive() {
-    return isTopPage && document.visibilityState === "visible" && document.hasFocus();
+    return isTopPage && !isExcludedPage() && document.visibilityState === "visible" && document.hasFocus();
   }
 
   function start() {
@@ -55,7 +64,7 @@
   }
 
   function countVisit() {
-    if (!isTopPage) return;
+    if (!isTopPage || isExcludedPage()) return;
     const data = read();
     const info = pageInfo();
     const item = data.byPage[info.key] || { seconds: 0, visits: 0, title: info.title, path: info.path, lastVisitedAt: null };
@@ -68,6 +77,25 @@
     try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (_) {}
   }
 
+  function removeExcludedPageHistory() {
+    const data = read();
+    data.byPage = data.byPage && typeof data.byPage === "object" ? data.byPage : {};
+    let changed = false;
+    Object.keys(data.byPage).forEach(key => {
+      const file = String(key).split("?")[0];
+      if (EXCLUDED_FILES.has(file)) {
+        delete data.byPage[key];
+        changed = true;
+      }
+    });
+    if (!changed) return;
+    data.totalSeconds = Object.values(data.byPage)
+      .reduce((sum, page) => sum + Number(page.seconds || 0), 0);
+    data.updatedAt = new Date().toISOString();
+    try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (_) {}
+  }
+
+  removeExcludedPageHistory();
   countVisit();
   start();
   document.addEventListener("visibilitychange", () => { commit(); start(); });
