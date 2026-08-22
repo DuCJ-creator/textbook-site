@@ -63,6 +63,13 @@ const Notepad = (function () {
   function mount() {
     if (mounted) return; // 避免同一頁重複呼叫時注入兩份
     mounted = true;
+    // Notepad 幾乎出現在全站頁面；沒有另外引入時，順便啟用學習時間追蹤。
+    if (!window.LearningProgressTracker && !document.querySelector('script[data-learning-progress]')) {
+      const tracker = document.createElement("script");
+      tracker.src = "progress-tracker.js";
+      tracker.dataset.learningProgress = "true";
+      document.head.appendChild(tracker);
+    }
     data = loadData();
 
     injectFab();

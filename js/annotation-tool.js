@@ -303,6 +303,7 @@ class AnnotationToolCore {
     document.getElementById('exportBtn')?.addEventListener('click', () => {
       this.exportScreenshot()
         .then(dataUrl => {
+          this.saveToProgressReport(dataUrl);
           const link = document.createElement('a');
           link.download = '教材標註-' + new Date().toISOString().slice(0, 10) + '.png';
           link.href = dataUrl;
@@ -310,6 +311,33 @@ class AnnotationToolCore {
         })
         .catch(err => alert('截圖導出失敗: ' + err.message));
     });
+  }
+
+  saveToProgressReport(dataUrl) {
+    const img = new Image();
+    img.onload = () => {
+      const maxW = 1400, maxH = 1000;
+      const scale = Math.min(1, maxW / img.width, maxH / img.height);
+      const canvas = document.createElement('canvas');
+      canvas.width = Math.max(1, Math.round(img.width * scale));
+      canvas.height = Math.max(1, Math.round(img.height * scale));
+      canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+      const compressed = canvas.toDataURL('image/jpeg', .82);
+      const key = 'learning.progress.images.v1';
+      try {
+        const saved = JSON.parse(localStorage.getItem(key) || '[]');
+        const images = Array.isArray(saved) ? saved : [];
+        images.push({
+          id: `annotation-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+          dataUrl: compressed,
+          caption: document.title || 'Annotation',
+          createdAt: new Date().toISOString(),
+          source: 'annotation-tool'
+        });
+        localStorage.setItem(key, JSON.stringify(images.slice(-8)));
+      } catch (_) { /* 空間不足時仍照常下載圖片，不影響原本功能 */ }
+    };
+    img.src = dataUrl;
   }
 
   startDrawing(e) {

@@ -68,6 +68,21 @@ const WordPractice = (function () {
   function sfxMiss() { beep(160, 0.12); }
   function sfxComplete() { [520, 660, 880].forEach((f, i) => setTimeout(() => beep(f, 0.1), i * 80)); }
 
+  function appendProgressHistory(record) {
+    const key = "learning.progress.history.v1";
+    let history = [];
+    try {
+      const saved = JSON.parse(localStorage.getItem(key) || "[]");
+      if (Array.isArray(saved)) history = saved;
+    } catch (_) {}
+    history.push(record);
+    history = history.slice(-300);
+    try { localStorage.setItem(key, JSON.stringify(history)); }
+    catch (_) {
+      try { localStorage.setItem(key, JSON.stringify(history.slice(-100))); } catch (_) {}
+    }
+  }
+
   function init(options) {
     els.container = document.getElementById(options.containerId);
     const allWords = flattenWords(options.rows);
@@ -75,7 +90,12 @@ const WordPractice = (function () {
       els.container.innerHTML = '<p style="color:var(--ink-soft); font-size:.88rem;">這一課的單字資料不足，無法進行練習。</p>';
       return;
     }
-    state = { allWords, mode: null };
+    state = {
+      allWords, mode: null,
+      book: options.book || "all",
+      lesson: options.lesson || "all",
+      startedAt: null
+    };
     renderModeSelect();
   }
 
@@ -100,6 +120,7 @@ const WordPractice = (function () {
 
   function startMode(mode) {
     state.mode = mode;
+    state.startedAt = new Date();
     state.queue = shuffle(state.allWords);
     state.score = 0;
     state.correct = 0;
@@ -404,6 +425,30 @@ const WordPractice = (function () {
 
     const total = state.correct + state.wrong;
     const accuracy = total ? Math.round((state.correct / total) * 100) : 0;
+    const endedAt = new Date();
+
+    appendProgressHistory({
+      schemaVersion: 1,
+      attemptId: (window.crypto && window.crypto.randomUUID) ? window.crypto.randomUUID() : `word-practice-${endedAt.getTime()}-${Math.random().toString(36).slice(2, 8)}`,
+      activity: "word-practice",
+      source: "word-practice",
+      mode: state.mode,
+      modeLabel: state.mode === "dictation" ? "聽寫模式" : "拼寫模式",
+      book: state.book,
+      lesson: state.lesson,
+      startedAt: state.startedAt ? state.startedAt.toISOString() : endedAt.toISOString(),
+      endedAt: endedAt.toISOString(),
+      durationSeconds: state.startedAt ? Math.max(0, Math.round((endedAt - state.startedAt) / 1000)) : 0,
+      endReason: reason,
+      scoreRule: "15-per-correct",
+      pointsPerCorrect: 15,
+      score: state.score,
+      correct: state.correct,
+      misses: state.misses,
+      wrong: state.wrong,
+      total,
+      accuracy
+    });
 
     els.container.innerHTML = `
       <div class="card wp-results">
