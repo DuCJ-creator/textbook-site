@@ -93,7 +93,6 @@
   .progress-strip .stat { display: flex; align-items: baseline; gap: 6px; }
   .progress-strip .stat .n { font-family: var(--serif); font-size: 1.4rem; font-weight: 700; color: var(--accent); }
   .progress-strip .stat .l { font-size: 0.78rem; color: var(--ink-soft); }
-  .progress-strip .report-link { margin-left: auto; align-self: center; color: var(--accent); font-size: .78rem; font-weight: 800; text-decoration: none; }
 
   /* ===== Section titles ===== */
   .section-title {
@@ -313,7 +312,6 @@
       <div class="stat"><span class="n">${published}</span><span class="l">已上架</span></div>
       <div class="stat"><span class="n">${learnedMinutes}</span><span class="l">學習分鐘</span></div>
       <div class="stat"><span class="n">${practiceCount}</span><span class="l">練習回合</span></div>
-      <a class="report-link" href="progress-report.html">查看完整學習歷程 →</a>
     `;
   }
 
@@ -376,15 +374,6 @@
   function renderTools(data) {
     const wrap = document.getElementById("toolGrid");
     wrap.innerHTML = "";
-    const report = document.createElement("a");
-    report.className = "tool-card";
-    report.href = "progress-report.html";
-    report.innerHTML = `
-      <span class="badge">My Record</span>
-      <div class="t-title">📊 Learning Progress Report</div>
-      <div class="t-desc">學習時間、練習成績、筆記與圖片歷程，可輸出 PDF</div>
-    `;
-    wrap.appendChild(report);
     data.cross_lesson_tools.forEach(tool => {
       const comingSoon = tool.status === "coming_soon";
       const a = document.createElement("a");
