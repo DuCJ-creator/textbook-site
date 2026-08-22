@@ -3,6 +3,7 @@
   "use strict";
   if (window.LearningProgressTracker) return;
   const KEY = "learning.progress.time.v1";
+  const MIN_PAGE_SECONDS = 120;
   const EXCLUDED_FILES = new Set(["index.html", "progress-report.html"]);
   const isTopPage = window.self === window.top;
   let activeSince = null;
@@ -13,6 +14,13 @@
 
   function isExcludedPage() {
     return EXCLUDED_FILES.has(currentFile());
+  }
+
+  function countedTotal(byPage) {
+    return Object.values(byPage || {}).reduce((sum, page) => {
+      const seconds = Number(page?.seconds || 0);
+      return sum + (seconds >= MIN_PAGE_SECONDS ? seconds : 0);
+    }, 0);
   }
 
   function read() {
@@ -57,7 +65,8 @@
     item.path = info.path;
     item.lastVisitedAt = new Date(now).toISOString();
     data.byPage[info.key] = item;
-    data.totalSeconds = Object.values(data.byPage).reduce((sum, page) => sum + Number(page.seconds || 0), 0);
+    // 單一頁面累積滿兩分鐘後，才納入正式學習時間。
+    data.totalSeconds = countedTotal(data.byPage);
     data.updatedAt = new Date(now).toISOString();
     try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (_) {}
     window.dispatchEvent(new CustomEvent("learning-progress-updated", { detail: data }));
@@ -77,7 +86,7 @@
     try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (_) {}
   }
 
-  function removeExcludedPageHistory() {
+  function normalizePageHistory() {
     const data = read();
     data.byPage = data.byPage && typeof data.byPage === "object" ? data.byPage : {};
     let changed = false;
@@ -88,14 +97,15 @@
         changed = true;
       }
     });
+    const normalizedTotal = countedTotal(data.byPage);
+    if (Number(data.totalSeconds || 0) !== normalizedTotal) changed = true;
     if (!changed) return;
-    data.totalSeconds = Object.values(data.byPage)
-      .reduce((sum, page) => sum + Number(page.seconds || 0), 0);
+    data.totalSeconds = normalizedTotal;
     data.updatedAt = new Date().toISOString();
     try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (_) {}
   }
 
-  removeExcludedPageHistory();
+  normalizePageHistory();
   countVisit();
   start();
   document.addEventListener("visibilitychange", () => { commit(); start(); });
@@ -104,5 +114,5 @@
   window.addEventListener("pagehide", commit);
   setInterval(commit, 15000);
 
-  window.LearningProgressTracker = { read, commit, storageKey: KEY };
+  window.LearningProgressTracker = { read, commit, storageKey: KEY, minimumPageSeconds: MIN_PAGE_SECONDS };
 })();
