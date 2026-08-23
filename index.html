@@ -268,11 +268,17 @@
       <div class="portal-eyebrow">Shirley Du's English Learning Portal</div>
       <h2 id="portalTitle">Welcome!</h2>
       <p class="portal-welcome">Welcome to <strong>Shirley Du老師的高中英文充電站🔋 to Recharge⚡️</strong>，歡迎隨時來給你的英文充個電。</p>
-      <p class="portal-instruction">Enter Your Class and Password<br><span style="font-size:.78rem;color:var(--ink-soft);font-weight:600;">請輸入您的班級及鑰匙</span></p>
+      <p class="portal-instruction" id="portalInstruction">Enter Your Class, Name and Password<br><span style="font-size:.78rem;color:var(--ink-soft);font-weight:600;">請輸入您的班級、姓名及鑰匙</span></p>
       <form class="portal-form" id="portalForm">
         <div class="portal-role-switch" aria-label="選擇入口身份"><button class="portal-role-btn active" id="studentRoleBtn" type="button" data-role="student" aria-pressed="true">🎒 Student 學生</button><button class="portal-role-btn" id="teacherRoleBtn" type="button" data-role="teacher" aria-pressed="false">🍎 Teacher 杜老師</button></div>
-        <div class="portal-field" id="portalStudentField"><label for="portalClass">Class 班級</label><select id="portalClass" required disabled><option value="">班級資料讀取中…</option></select></div>
-        <div class="portal-field" id="portalTeacherField" hidden><label for="portalTeacher">Teacher 教師</label><select id="portalTeacher" disabled><option value="">教師資料讀取中…</option></select></div>
+        <div id="portalStudentFields">
+          <div class="portal-field"><label for="portalClass">Class 班級</label><select id="portalClass" required disabled><option value="">班級資料讀取中…</option></select></div>
+          <div class="portal-field" style="margin-top:13px;"><label for="portalStudentName">Name 姓名</label><input id="portalStudentName" type="text" autocomplete="name" required placeholder="請輸入完整姓名"></div>
+        </div>
+        <div id="portalTeacherFields" hidden>
+          <div class="portal-field"><label for="portalSchool">School 學校</label><select id="portalSchool" disabled><option value="">學校資料讀取中…</option></select></div>
+          <div class="portal-field" style="margin-top:13px;"><label for="portalTeacherName">Name 姓名</label><input id="portalTeacherName" type="text" autocomplete="name" placeholder="請輸入完整姓名"></div>
+        </div>
         <div class="portal-field"><label for="portalPassword">Password 鑰匙</label><div class="portal-password-wrap"><input id="portalPassword" type="password" autocomplete="current-password" required placeholder="Enter your key"><button class="portal-show-key" id="portalShowKey" type="button">顯示</button></div></div>
         <button class="portal-submit" id="portalSubmit" type="submit" disabled>Enter the Platform →</button>
         <p class="portal-error" id="portalError" role="alert"></p>
@@ -334,10 +340,12 @@
 <script src="js/external-viewer.js"></script>
 <script>
   const INDEX_URL = "data/index.json";
-  const PORTAL_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRUXYEsXyEerlr9XL2Yq3KDGfgdRAaoKmQaK0ZHc0gbvyaR0ib3cbmowL-Hw4W9RUT37osZqOefOeGJ/pub?gid=0&single=true&output=csv";
+  const PORTAL_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRWmQh8ILldThj_tkHAl-ajVpij7aDRBvxGhugXfVWfHhTmULLoWpfEZlwjWVfOZmk1Cg84yfbPyC_5/pub?gid=0&single=true&output=csv";
   const PORTAL_STORAGE_KEY = "shirley.portal.access.v1";
-  let PORTAL_CLASSES = [];
-  let PORTAL_TEACHERS = [];
+  // 過渡期間保留舊式 CSV 驗證，等 Firebase 測試帳號確認成功後即關閉。
+  const PORTAL_MIGRATION_FALLBACK = true;
+  const FIREBASE_AUTH_MODULE = import("./js/firebase-auth.js");
+  let PORTAL_ROSTER = [];
   let PORTAL_ROLE = "student";
 
   function readPortalAccess() {
@@ -358,10 +366,15 @@
   function setPortalRole(role) {
     PORTAL_ROLE = role === "teacher" ? "teacher" : "student";
     const isTeacher = PORTAL_ROLE === "teacher";
-    document.getElementById("portalStudentField").hidden = isTeacher;
-    document.getElementById("portalTeacherField").hidden = !isTeacher;
+    document.getElementById("portalStudentFields").hidden = isTeacher;
+    document.getElementById("portalTeacherFields").hidden = !isTeacher;
     document.getElementById("portalClass").required = !isTeacher;
-    document.getElementById("portalTeacher").required = isTeacher;
+    document.getElementById("portalStudentName").required = !isTeacher;
+    document.getElementById("portalSchool").required = isTeacher;
+    document.getElementById("portalTeacherName").required = isTeacher;
+    document.getElementById("portalInstruction").innerHTML = isTeacher
+      ? 'Enter Your School, Name and Password<br><span style="font-size:.78rem;color:var(--ink-soft);font-weight:600;">請輸入您的學校、姓名及鑰匙</span>'
+      : 'Enter Your Class, Name and Password<br><span style="font-size:.78rem;color:var(--ink-soft);font-weight:600;">請輸入您的班級、姓名及鑰匙</span>';
     document.querySelectorAll(".portal-role-btn").forEach(button => {
       const active = button.dataset.role === PORTAL_ROLE;
       button.classList.toggle("active", active);
@@ -404,15 +417,15 @@
   fetch(PORTAL_CSV_URL, { cache: "no-store" })
     .then(response => { if (!response.ok) throw new Error("HTTP " + response.status); return response.text(); })
     .then(text => {
-      const records = parsePortalCsv(text);
-      PORTAL_CLASSES = records.filter(item => String(item.role).toLowerCase() === "student" && item.name && item.password).map(item => ({ class: item.name, password: item.password }));
-      PORTAL_TEACHERS = records.filter(item => String(item.role).toLowerCase() === "teacher" && item.name && item.password).map(item => ({ name: item.name, password: item.password }));
+      PORTAL_ROSTER = parsePortalCsv(text).filter(item => item.role && item.name);
+      const classes = [...new Set(PORTAL_ROSTER.filter(item => String(item.role).toLowerCase() === "student").map(item => item.class).filter(Boolean))].sort();
+      const schools = [...new Set(PORTAL_ROSTER.filter(item => String(item.role).toLowerCase() === "teacher").map(item => item.school).filter(Boolean))].sort();
       const select = document.getElementById("portalClass");
-      select.innerHTML = '<option value="">請選擇班級…</option>' + PORTAL_CLASSES.map(item => `<option value="${escapeHtml(item.class)}">${escapeHtml(item.class)}</option>`).join("");
+      select.innerHTML = '<option value="">請選擇班級…</option>' + classes.map(className => `<option value="${escapeHtml(className)}">${escapeHtml(className)}</option>`).join("");
       select.disabled = false;
-      const teacherSelect = document.getElementById("portalTeacher");
-      teacherSelect.innerHTML = '<option value="">請選擇教師…</option>' + PORTAL_TEACHERS.map(item => `<option value="${escapeHtml(item.name)}">${escapeHtml(item.name)}</option>`).join("");
-      teacherSelect.disabled = false;
+      const schoolSelect = document.getElementById("portalSchool");
+      schoolSelect.innerHTML = '<option value="">請選擇學校…</option>' + schools.map(school => `<option value="${escapeHtml(school)}">${escapeHtml(school)}</option>`).join("");
+      schoolSelect.disabled = false;
       document.getElementById("portalSubmit").disabled = false;
     })
     .catch(() => {
@@ -428,22 +441,48 @@
 
   document.querySelectorAll(".portal-role-btn").forEach(button => button.addEventListener("click", () => setPortalRole(button.dataset.role)));
 
-  document.getElementById("portalForm").addEventListener("submit", event => {
+  document.getElementById("portalForm").addEventListener("submit", async event => {
     event.preventDefault();
+    const submit = document.getElementById("portalSubmit");
+    const error = document.getElementById("portalError");
     const password = document.getElementById("portalPassword").value.trim();
-    const selectedName = PORTAL_ROLE === "teacher" ? document.getElementById("portalTeacher").value : document.getElementById("portalClass").value;
-    const records = PORTAL_ROLE === "teacher" ? PORTAL_TEACHERS : PORTAL_CLASSES;
-    const nameKey = PORTAL_ROLE === "teacher" ? "name" : "class";
-    const match = records.find(item => item[nameKey] === selectedName && item.password === password);
-    if (!match) {
+    const isTeacher = PORTAL_ROLE === "teacher";
+    const className = isTeacher ? "" : document.getElementById("portalClass").value.trim();
+    const school = isTeacher ? document.getElementById("portalSchool").value.trim() : "";
+    const name = (isTeacher ? document.getElementById("portalTeacherName").value : document.getElementById("portalStudentName").value).trim();
+    const identity = { role: PORTAL_ROLE, school, className, name };
+    submit.disabled = true;
+    submit.textContent = "Signing in…";
+    error.textContent = "";
+
+    let firebaseSignedIn = false;
+    try {
+      const firebaseAuth = await FIREBASE_AUTH_MODULE;
+      await firebaseAuth.signInPortal(identity, password);
+      firebaseSignedIn = true;
+    } catch (_) {
+      // 在批次匯入完成前，測試環境仍可暫時用現有 CSV 驗證。
+    }
+
+    const normalize = value => String(value || "").normalize("NFKC").trim().toLowerCase();
+    const match = firebaseSignedIn ? null : PORTAL_ROSTER.find(item => {
+      const sameRole = normalize(item.role) === PORTAL_ROLE;
+      const sameName = normalize(item.name) === normalize(name);
+      const sameGroup = isTeacher ? normalize(item.school) === normalize(school) : normalize(item.class) === normalize(className);
+      return sameRole && sameName && sameGroup && item.password === password;
+    });
+
+    if (!firebaseSignedIn && !(PORTAL_MIGRATION_FALLBACK && match)) {
       const card = document.getElementById("portalCard");
-      document.getElementById("portalError").textContent = "身份、班級／教師或鑰匙不正確，請再確認一次。";
+      error.textContent = "身份、班級／學校、姓名或鑰匙不正確，請再確認一次。";
       card.classList.remove("shake"); void card.offsetWidth; card.classList.add("shake");
       document.getElementById("portalPassword").select();
+      submit.disabled = false;
+      submit.textContent = "Enter the Platform →";
       return;
     }
-    const displayName = PORTAL_ROLE === "teacher" ? `Teacher · ${match.name}` : match.class;
-    localStorage.setItem(PORTAL_STORAGE_KEY, JSON.stringify({ schemaVersion: 2, role: PORTAL_ROLE, displayName, className: match.class || "", grantedAt: new Date().toISOString() }));
+    const displayName = isTeacher ? `Teacher · ${name}` : `${className} · ${name}`;
+    localStorage.setItem(PORTAL_STORAGE_KEY, JSON.stringify({ schemaVersion: 3, role: PORTAL_ROLE, displayName, className, school, name, auth: firebaseSignedIn ? "firebase" : "migration", grantedAt: new Date().toISOString() }));
     unlockPortal(displayName, true);
   });
 
