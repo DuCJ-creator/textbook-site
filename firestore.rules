@@ -1,0 +1,30 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return signedIn() && request.auth.uid == userId;
+    }
+
+    // Every learner owns exactly one private area under their Firebase UID.
+    // Profile deletion is disabled so an accidental client action cannot erase
+    // the user's root record. Individual activity records may still be deleted.
+    match /users/{userId} {
+      allow read, create, update: if isOwner(userId);
+      allow delete: if false;
+
+      match /{document=**} {
+        allow read, create, update, delete: if isOwner(userId);
+      }
+    }
+
+    // Deny every collection that is not explicitly covered above.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
