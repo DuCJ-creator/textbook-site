@@ -2,6 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.18.0/fireba
 import {
   browserLocalPersistence,
   getAuth,
+  getIdTokenResult,
   onAuthStateChanged,
   setPersistence,
   signInWithEmailAndPassword,
@@ -59,6 +60,20 @@ export async function signInPortal(identity, password) {
 
 export function observePortalAuth(callback) {
   return onAuthStateChanged(auth, callback);
+}
+
+export async function getPortalProfile(user = auth.currentUser) {
+  if (!user) return null;
+  await user.reload();
+  const token = await getIdTokenResult(user, true);
+  return {
+    uid: user.uid,
+    role: String(token.claims.role || "student"),
+    school: String(token.claims.school || ""),
+    className: String(token.claims.className || ""),
+    seatNo: String(token.claims.seatNo || ""),
+    name: String(user.displayName || "")
+  };
 }
 
 export async function signOutPortal() {
