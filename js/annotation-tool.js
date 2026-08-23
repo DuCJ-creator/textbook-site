@@ -316,13 +316,16 @@ class AnnotationToolCore {
   saveToProgressReport(dataUrl) {
     const img = new Image();
     img.onload = () => {
-      const maxW = 1400, maxH = 1000;
+      // 報告內只需要清楚可讀的證據圖；下載給使用者的 PNG 仍維持原尺寸。
+      // 較小的 JPEG 大幅降低每位學生的 Firestore 儲存與讀取量。
+      const maxW = 1200, maxH = 850;
       const scale = Math.min(1, maxW / img.width, maxH / img.height);
       const canvas = document.createElement('canvas');
       canvas.width = Math.max(1, Math.round(img.width * scale));
       canvas.height = Math.max(1, Math.round(img.height * scale));
       canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
-      const compressed = canvas.toDataURL('image/jpeg', .82);
+      let compressed = canvas.toDataURL('image/jpeg', .70);
+      if (compressed.length > 420000) compressed = canvas.toDataURL('image/jpeg', .55);
       const key = 'learning.progress.images.v1';
       try {
         const saved = JSON.parse(localStorage.getItem(key) || '[]');

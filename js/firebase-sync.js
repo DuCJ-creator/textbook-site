@@ -3,7 +3,6 @@ import {
   doc,
   getDoc,
   getFirestore,
-  onSnapshot,
   serverTimestamp,
   setDoc,
   writeBatch
@@ -26,7 +25,22 @@ const DEVICE_KEY = "learning.firebase-sync.device.v1";
 // piece at 180k characters stays safely below the document limit even for
 // Chinese text, while large base64 images are divided across several records.
 const CHUNK_SIZE = 180000;
-const WRITE_DELAY_MS = 900;
+const CLOUD_PULL_INTERVAL_MS = 15 * 60 * 1000;
+const PROFILE_WRITE_INTERVAL_MS = 6 * 60 * 60 * 1000;
+const HOUSEKEEPING_INTERVAL_MS = 15000;
+
+// Local changes are immediate. Cloud writes are intentionally batched to keep
+// a whole class safely inside Firestore's free daily quota.
+const SYNC_POLICIES = {
+  "learning.progress.time.v1": { idleMs: Infinity, minIntervalMs: 5 * 60 * 1000, maxWaitMs: 5 * 60 * 1000 },
+  "learning.progress.history.v1": { idleMs: 1200, minIntervalMs: 0, maxWaitMs: 5000 },
+  "learning.progress.reflection.v1": { idleMs: 15000, minIntervalMs: 0, maxWaitMs: 2 * 60 * 1000 },
+  "learning.progress.images.v1": { idleMs: 4000, minIntervalMs: 0, maxWaitMs: 30000 },
+  "studentNotepadData": { idleMs: 20000, minIntervalMs: 0, maxWaitMs: 5 * 60 * 1000 },
+  "vocabStarredIds": { idleMs: 1800, minIntervalMs: 0, maxWaitMs: 10000 },
+  "vocab-bank.starred": { idleMs: 1800, minIntervalMs: 0, maxWaitMs: 10000 },
+  "phraseStarredIds": { idleMs: 1800, minIntervalMs: 0, maxWaitMs: 10000 }
+};
 
 const TRACKED_KEYS = new Map([
   ["learning.progress.time.v1", "learning-time"],
@@ -48,7 +62,7 @@ let syncReady = false;
 let applyingRemote = false;
 let flushTimer = null;
 let initializationTimer = null;
-let unsubscribeSnapshots = [];
+let pullInFlight = false;
 const observedValues = new Map();
 
 function getLocal(key) {
@@ -88,6 +102,13 @@ function updateKeyMeta(key, patch) {
   meta.keys[key] = { ...(meta.keys[key] || {}), ...patch };
   saveMeta(meta);
   return meta.keys[key];
+}
+
+function updateMeta(patch) {
+  const meta = readMeta();
+  Object.assign(meta, patch);
+  saveMeta(meta);
+  return meta;
 }
 
 function deviceId() {
@@ -281,17 +302,17 @@ async function writeRemote(userId, key, value, previousChunkCount = 0) {
     updatedAt: serverTimestamp()
   });
   await batch.commit();
-  return revision;
+  return { revision, chunkCount: chunks.length };
 }
 
 function emit(name, detail = {}) {
   window.dispatchEvent(new CustomEvent(name, { detail }));
 }
 
-function applyRemoteValue(key, value, revision) {
+function applyRemoteValue(key, value, revision, chunkCount = 0) {
   setLocal(key, value);
   const meta = readMeta();
-  meta.keys[key] = { ...(meta.keys[key] || {}), dirty: false, synced: true, revision, syncedAt: Date.now() };
+  meta.keys[key] = { ...(meta.keys[key] || {}), dirty: false, synced: true, revision, chunkCount, syncedAt: Date.now() };
   saveMeta(meta);
   emit("firebase-sync-updated", { key, source: "cloud" });
 }
@@ -301,10 +322,10 @@ async function flushKey(key) {
   const meta = readMeta();
   if (!meta.keys[key]?.dirty) return;
   const capturedLocal = getLocal(key);
-  const remote = await readRemote(activeUser.uid, key);
-  const value = remote.exists ? mergeBeforeUpload(key, capturedLocal, remote.value) : capturedLocal;
-  if (value !== capturedLocal) setLocal(key, value);
-  const revision = await writeRemote(activeUser.uid, key, value, remote.chunkCount);
+  // The latest cloud snapshot was already merged during the periodic pull.
+  // Avoiding a read before every write roughly halves quota usage.
+  const value = capturedLocal;
+  const result = await writeRemote(activeUser.uid, key, value, Number(meta.keys[key]?.chunkCount || 0));
   const latestLocal = getLocal(key);
   const latestMeta = readMeta();
   const unchanged = latestLocal === value;
@@ -312,7 +333,8 @@ async function flushKey(key) {
     ...(latestMeta.keys[key] || {}),
     dirty: !unchanged,
     synced: true,
-    revision,
+    revision: result.revision,
+    chunkCount: result.chunkCount,
     syncedAt: Date.now()
   };
   saveMeta(latestMeta);
@@ -321,16 +343,45 @@ async function flushKey(key) {
   if (!unchanged) scheduleFlush();
 }
 
-async function flushAll() {
+function isWriteDue(key, keyMeta, now = Date.now(), force = false) {
+  if (!keyMeta?.dirty) return false;
+  if (force) return true;
+  const policy = SYNC_POLICIES[key];
+  const dirtyAge = Math.max(0, now - Number(keyMeta.dirtyAt || now));
+  const sinceSync = Math.max(0, now - Number(keyMeta.syncedAt || 0));
+  if (policy.minIntervalMs && sinceSync < policy.minIntervalMs) return false;
+  return dirtyAge >= policy.idleMs || sinceSync >= policy.maxWaitMs;
+}
+
+function nextWriteDelay(meta, now = Date.now()) {
+  let delay = 30000;
+  [...TRACKED_KEYS.keys()].forEach(key => {
+    const keyMeta = meta.keys[key];
+    if (!keyMeta?.dirty) return;
+    const policy = SYNC_POLICIES[key];
+    const dirtyAge = Math.max(0, now - Number(keyMeta.dirtyAt || now));
+    const sinceSync = Math.max(0, now - Number(keyMeta.syncedAt || 0));
+    const untilMin = Math.max(0, policy.minIntervalMs - sinceSync);
+    const untilIdle = Number.isFinite(policy.idleMs) ? Math.max(0, policy.idleMs - dirtyAge) : Infinity;
+    const untilMax = Math.max(0, policy.maxWaitMs - sinceSync);
+    delay = Math.min(delay, Math.max(untilMin, Math.min(untilIdle, untilMax)));
+  });
+  return Math.max(500, delay);
+}
+
+async function flushAll({ force = false } = {}) {
   if (!activeUser || !syncReady) return;
   const meta = readMeta();
-  const dirtyKeys = [...TRACKED_KEYS.keys()].filter(key => meta.keys[key]?.dirty);
+  const now = Date.now();
+  const dirtyKeys = [...TRACKED_KEYS.keys()].filter(key => isWriteDue(key, meta.keys[key], now, force));
   await Promise.allSettled(dirtyKeys.map(flushKey));
+  if ([...TRACKED_KEYS.keys()].some(key => readMeta().keys[key]?.dirty)) scheduleFlush();
 }
 
 function scheduleFlush() {
   clearTimeout(flushTimer);
-  flushTimer = setTimeout(() => { flushAll().catch(handleError); }, WRITE_DELAY_MS);
+  const delay = nextWriteDelay(readMeta());
+  flushTimer = setTimeout(() => { flushAll().catch(handleError); }, delay);
 }
 
 function handleError(error) {
@@ -346,11 +397,12 @@ async function syncInitialKey(userId, key) {
 
   if (!remote.exists) {
     if (localValue !== null) {
-      const revision = await writeRemote(userId, key, localValue, 0);
+      const result = await writeRemote(userId, key, localValue, 0);
       updateKeyMeta(key, {
         dirty: getLocal(key) !== localValue,
         synced: true,
-        revision,
+        revision: result.revision,
+        chunkCount: result.chunkCount,
         syncedAt: Date.now()
       });
     }
@@ -361,11 +413,12 @@ async function syncInitialKey(userId, key) {
   if (keyMeta.dirty) {
     const value = keyMeta.synced ? mergeBeforeUpload(key, localValue, remote.value) : mergeForMigration(key, localValue, remote.value);
     if (value !== localValue) setLocal(key, value);
-    const revision = await writeRemote(userId, key, value, remote.chunkCount);
+    const result = await writeRemote(userId, key, value, remote.chunkCount);
     updateKeyMeta(key, {
       dirty: getLocal(key) !== value,
       synced: true,
-      revision,
+      revision: result.revision,
+      chunkCount: result.chunkCount,
       syncedAt: Date.now()
     });
     observedValues.set(key, value);
@@ -376,57 +429,75 @@ async function syncInitialKey(userId, key) {
     const merged = mergeForMigration(key, localValue, remote.value);
     if (merged !== remote.value) {
       setLocal(key, merged);
-      const revision = await writeRemote(userId, key, merged, remote.chunkCount);
+      const result = await writeRemote(userId, key, merged, remote.chunkCount);
       updateKeyMeta(key, {
         dirty: getLocal(key) !== merged,
         synced: true,
-        revision,
+        revision: result.revision,
+        chunkCount: result.chunkCount,
         syncedAt: Date.now()
       });
       return merged !== localValue;
     }
   }
 
-  applyRemoteValue(key, remote.value, remote.revision);
+  applyRemoteValue(key, remote.value, remote.revision, remote.chunkCount);
   return remote.value !== localValue;
 }
 
-function attachSnapshots(userId) {
-  unsubscribeSnapshots.forEach(unsubscribe => unsubscribe());
-  unsubscribeSnapshots = [...TRACKED_KEYS.keys()].map(key => onSnapshot(stateRef(userId, key), async snapshot => {
-    try {
-      if (!snapshot.exists() || snapshot.metadata.hasPendingWrites) return;
-      const remote = await readRemote(userId, key, snapshot);
-      const meta = readMeta();
-      const keyMeta = meta.keys[key] || {};
-      if (remote.revision && remote.revision === keyMeta.revision) return;
-      if (keyMeta.dirty) {
-        scheduleFlush();
-        return;
-      }
-      if (getLocal(key) !== remote.value) applyRemoteValue(key, remote.value, remote.revision);
-    } catch (error) { handleError(error); }
-  }, handleError));
+async function pullAll(userId) {
+  if (pullInFlight) return [];
+  pullInFlight = true;
+  try {
+    const results = await Promise.all([...TRACKED_KEYS.keys()].map(key => syncInitialKey(userId, key)));
+    updateMeta({ userId, lastPulledAt: Date.now() });
+    return results;
+  } finally {
+    pullInFlight = false;
+  }
+}
+
+function prepareUserCache(userId) {
+  const meta = readMeta();
+  // A shared computer must never show or upload the previous learner's local
+  // cache. The previous account's cloud copy remains intact.
+  if (meta.userId && meta.userId !== userId) {
+    TRACKED_KEYS.forEach((_, key) => setLocal(key, null));
+    meta.keys = {};
+    meta.lastPulledAt = 0;
+    meta.profileSyncedAt = 0;
+  }
+  meta.userId = userId;
+  saveMeta(meta);
+  return meta;
+}
+
+async function updateProfileIfDue(user, profile) {
+  const meta = readMeta();
+  if (Date.now() - Number(meta.profileSyncedAt || 0) < PROFILE_WRITE_INTERVAL_MS) return;
+  await setDoc(doc(db, "users", user.uid), {
+    uid: user.uid,
+    role: profile.role,
+    school: profile.school,
+    className: profile.className,
+    seatNo: profile.seatNo,
+    name: profile.name,
+    lastSeenAt: serverTimestamp()
+  }, { merge: true });
+  updateMeta({ profileSyncedAt: Date.now() });
 }
 
 async function beginForUser(user) {
   activeUser = user;
   syncReady = false;
   activeProfile = await getPortalProfile(user);
-  await setDoc(doc(db, "users", user.uid), {
-    uid: user.uid,
-    role: activeProfile.role,
-    school: activeProfile.school,
-    className: activeProfile.className,
-    seatNo: activeProfile.seatNo,
-    name: activeProfile.name,
-    lastSeenAt: serverTimestamp()
-  }, { merge: true });
-
-  const results = await Promise.all([...TRACKED_KEYS.keys()].map(key => syncInitialKey(user.uid, key)));
+  const meta = prepareUserCache(user.uid);
+  await updateProfileIfDue(user, activeProfile);
+  const forcePull = location.pathname.endsWith("/progress-report.html") || location.pathname.endsWith("progress-report.html");
+  const pullDue = forcePull || Date.now() - Number(meta.lastPulledAt || 0) >= CLOUD_PULL_INTERVAL_MS;
+  const results = pullDue ? await pullAll(user.uid) : [];
   syncReady = true;
-  attachSnapshots(user.uid);
-  emit("firebase-sync-ready", { uid: user.uid, profile: activeProfile });
+  emit("firebase-sync-ready", { uid: user.uid, profile: activeProfile, cloudChecked: pullDue });
   scheduleFlush();
 
   // On a browser's first cloud restore, reload once so widgets that read their
@@ -454,15 +525,19 @@ observePortalAuth(user => {
     clearTimeout(initializationTimer);
     activeUser = null;
     syncReady = false;
-    unsubscribeSnapshots.forEach(unsubscribe => unsubscribe());
-    unsubscribeSnapshots = [];
     return;
   }
   startForUser(user);
 });
 
-window.addEventListener("online", scheduleFlush);
-window.addEventListener("focus", scheduleFlush);
+window.addEventListener("online", () => { scheduleFlush(); });
+window.addEventListener("focus", () => {
+  scheduleFlush();
+  const meta = readMeta();
+  if (activeUser && syncReady && Date.now() - Number(meta.lastPulledAt || 0) >= CLOUD_PULL_INTERVAL_MS) {
+    pullAll(activeUser.uid).catch(handleError);
+  }
+});
 window.addEventListener("storage", event => {
   if (TRACKED_KEYS.has(event.key)) observedValues.set(event.key, event.newValue);
 });
@@ -474,12 +549,17 @@ setInterval(() => {
     observedValues.set(key, current);
   });
   scheduleFlush();
-}, 4000);
+  const meta = readMeta();
+  if (activeUser && syncReady && Date.now() - Number(meta.lastPulledAt || 0) >= CLOUD_PULL_INTERVAL_MS) {
+    pullAll(activeUser.uid).catch(handleError);
+  }
+}, HOUSEKEEPING_INTERVAL_MS);
 
 window.FirebaseLearningSync = {
   get ready() { return syncReady; },
   get user() { return activeUser; },
   get profile() { return activeProfile; },
-  flush: flushAll,
+  flush: () => flushAll({ force: true }),
+  pull: () => activeUser ? pullAll(activeUser.uid) : Promise.resolve([]),
   trackedKeys: [...TRACKED_KEYS.keys()]
 };

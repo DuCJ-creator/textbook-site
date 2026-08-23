@@ -78,6 +78,9 @@ export async function getPortalProfile(user = auth.currentUser) {
 
 export async function signOutPortal() {
   await persistenceReady;
+  try {
+    if (window.FirebaseLearningSync?.flush) await window.FirebaseLearningSync.flush();
+  } catch (_) { /* 本機資料仍會保留，下次登入再重試 */ }
   return signOut(auth);
 }
 
