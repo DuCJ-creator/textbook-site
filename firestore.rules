@@ -10,16 +10,43 @@ service cloud.firestore {
       return signedIn() && request.auth.uid == userId;
     }
 
+    function isAdmin() {
+      return signedIn() && request.auth.token.admin == true;
+    }
+
     // Every learner owns exactly one private area under their Firebase UID.
     // Profile deletion is disabled so an accidental client action cannot erase
     // the user's root record. Individual activity records may still be deleted.
     match /users/{userId} {
-      allow read, create, update: if isOwner(userId);
+      allow read: if isOwner(userId) || isAdmin();
+      allow create, update: if isOwner(userId);
       allow delete: if false;
 
       match /{document=**} {
-        allow read, create, update, delete: if isOwner(userId);
+        allow read: if isOwner(userId) || isAdmin();
+        allow create, update, delete: if isOwner(userId);
       }
+    }
+
+    // One small structured document per learner powers the low-cost class
+    // dashboard. Learners can update only their own calculated metrics;
+    // administrator access is read-only in the browser.
+    match /learningSummaries/{userId} {
+      allow read: if isOwner(userId) || isAdmin();
+      allow create: if isOwner(userId)
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.role == request.auth.token.role
+        && request.resource.data.className == request.auth.token.className
+        && request.resource.data.school == request.auth.token.school
+        && request.resource.data.seatNo == request.auth.token.seatNo;
+      allow update: if isOwner(userId)
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          "totalSeconds", "practiceCount", "averageScore", "averageAccuracy",
+          "latestPracticeAt", "lastActivityAt", "starCount", "noteCount",
+          "annotationCount", "hasActivity", "pageBreakdown",
+          "recentPractices", "snapshotCycle", "updatedAt"
+        ]);
+      allow delete: if false;
     }
 
     // Deny every collection that is not explicitly covered above.
