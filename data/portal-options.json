@@ -3,10 +3,23 @@
     "2027TCLIPa",
     "2028TCLIPa",
     "2028TCLIPc",
-    "2029TCLIPb"
+    "2029TCLIPb",
+    "PT"
   ],
   "schools": [
-    "chhs",
-    "other"
-  ]
+    "CHHS",
+    "OTHER"
+  ],
+  "studentSchools": [
+    "CHHS",
+    "CPHS",
+    "HGSH"
+  ],
+  "classSchools": {
+    "2027TCLIPa": ["CHHS"],
+    "2028TCLIPa": ["CHHS"],
+    "2028TCLIPc": ["CHHS"],
+    "2029TCLIPb": ["CHHS"],
+    "PT": ["CPHS", "HGSH"]
+  }
 }
