@@ -30,7 +30,7 @@
 <body>
   <header class="hero"><div class="hero-inner"><a class="back" href="index.html">← 回課程總覽</a><h1>Learning Progress Report</h1><p>學習時間、練習成績、筆記與圖片證據的個人學習歷程</p></div></header>
   <main class="report">
-    <div class="toolbar"><span class="toolbar-note">登入身份由 Firebase 自動帶入；目前學習活動仍取自這台裝置的瀏覽器。</span><button id="printBtn">輸出 PDF／列印</button></div>
+    <div class="toolbar"><span class="toolbar-note" id="syncStatus">正在連接個人雲端學習紀錄…</span><button id="printBtn">輸出 PDF／列印</button></div>
 
     <section class="card">
       <div class="proof-head"><h2 class="section-title">Learner Information</h2><span class="generated" id="generatedAt"></span></div>
@@ -67,7 +67,7 @@
       <div class="proof-head"><h2 class="section-title">Annotation Images</h2><label class="file-label screen-only">＋ 加入圖片<input id="imageInput" type="file" accept="image/*" multiple hidden></label></div>
       <p class="toolbar-note screen-only">可加入 Annotation Tool 匯出的截圖或其他學習圖片；圖片會先縮小後保存在瀏覽器。</p>
       <div id="imageArea" class="image-grid"></div>
-      <div class="certificate">Learner identity is verified by Firebase. Learning activity is currently generated from this device.／學習者身份由 Firebase 驗證；目前學習活動依此裝置瀏覽器內的資料產生。</div>
+      <div class="certificate" id="syncCertificate">Learner identity and learning records are verified and synchronized through Firebase.／學習者身份與學習紀錄由 Firebase 驗證並同步。</div>
     </section>
   </main>
 
@@ -189,6 +189,10 @@
   $("reflection").value=localStorage.getItem(REFLECTION_KEY)||"";const saveReflection=()=>{localStorage.setItem(REFLECTION_KEY,$("reflection").value);$("reflectionPrint").textContent=$("reflection").value||"（未填寫）"};$("reflection").addEventListener("input",saveReflection);saveReflection();
   $("printBtn").addEventListener("click",()=>{render();window.print()});
   window.addEventListener("learning-progress-updated",render);
+  window.addEventListener("firebase-sync-ready",()=>{$("syncStatus").textContent="✓ 個人學習紀錄已與 Firebase 同步";render()});
+  window.addEventListener("firebase-sync-updated",()=>render());
+  window.addEventListener("firebase-sync-error",event=>{$("syncStatus").textContent=event.detail?.message||"雲端同步暫時中斷；本機紀錄仍會保留。"});
+  if(window.FirebaseLearningSync?.ready) $("syncStatus").textContent="✓ 個人學習紀錄已與 Firebase 同步";
   render();setInterval(render,30000);
 })();
 </script>
