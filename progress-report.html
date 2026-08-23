@@ -13,7 +13,7 @@
   .report{padding:24px 18px 70px}.toolbar{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px}.toolbar-note{font-size:.75rem;color:var(--soft)}
   button,.file-label{border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:999px;padding:10px 17px;font:700 .8rem var(--sans);cursor:pointer}.ghost{background:transparent;color:var(--accent)}
   .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 2px 0 var(--line);margin-bottom:16px}.section-title{font:700 1.12rem var(--serif);margin:0 0 14px;color:var(--accent-dark)}
-  .identity{display:grid;grid-template-columns:1.2fr 1.5fr .8fr;gap:12px}.field label{display:block;font-size:.68rem;font-weight:800;letter-spacing:.08em;color:var(--soft);margin:0 0 5px}.field input,.reflection{width:100%;border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px 12px;font:inherit;color:var(--ink)}
+  .identity{display:grid;grid-template-columns:1.2fr 1.5fr .8fr;gap:12px}.field label{display:block;font-size:.68rem;font-weight:800;letter-spacing:.08em;color:var(--soft);margin:0 0 5px}.field input,.reflection{width:100%;border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px 12px;font:inherit;color:var(--ink)}.field input[readonly]{background:var(--mint);border-color:#c9ded7;color:var(--accent-dark);font-weight:800;cursor:default}
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.stat{background:var(--mint);border-radius:14px;padding:14px}.stat b{display:block;font:700 1.45rem var(--serif);color:var(--accent-dark)}.stat span{font-size:.68rem;color:var(--soft)}
   .two-col{display:grid;grid-template-columns:1fr 1.2fr;gap:16px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:.78rem}th,td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{color:var(--soft);font-size:.66rem;letter-spacing:.05em}td.wrap-cell{white-space:normal;min-width:160px}
   .empty{padding:24px;text-align:center;color:var(--soft);font-size:.82rem}.reflection{min-height:130px;resize:vertical}.print-reflection{display:none;white-space:pre-wrap;min-height:70px}
@@ -30,14 +30,14 @@
 <body>
   <header class="hero"><div class="hero-inner"><a class="back" href="index.html">← 回課程總覽</a><h1>Learning Progress Report</h1><p>學習時間、練習成績、筆記與圖片證據的個人學習歷程</p></div></header>
   <main class="report">
-    <div class="toolbar"><span class="toolbar-note">所有資料只保存在這台裝置的目前瀏覽器。</span><button id="printBtn">輸出 PDF／列印</button></div>
+    <div class="toolbar"><span class="toolbar-note">登入身份由 Firebase 自動帶入；目前學習活動仍取自這台裝置的瀏覽器。</span><button id="printBtn">輸出 PDF／列印</button></div>
 
     <section class="card">
       <div class="proof-head"><h2 class="section-title">Learner Information</h2><span class="generated" id="generatedAt"></span></div>
       <div class="identity">
-        <div class="field"><label for="studentClass">CLASS</label><input id="studentClass" autocomplete="organization-title"><span class="print-only" id="printClass"></span></div>
-        <div class="field"><label for="studentName">NAME</label><input id="studentName" autocomplete="name"><span class="print-only" id="printName"></span></div>
-        <div class="field"><label for="studentNo">NO.</label><input id="studentNo" inputmode="numeric"><span class="print-only" id="printNo"></span></div>
+        <div class="field"><label for="studentClass">CLASS</label><input id="studentClass" readonly aria-readonly="true" value="讀取中…"><span class="print-only" id="printClass"></span></div>
+        <div class="field"><label for="studentName">NAME</label><input id="studentName" readonly aria-readonly="true" value="讀取中…"><span class="print-only" id="printName"></span></div>
+        <div class="field"><label for="studentNo">NO.</label><input id="studentNo" readonly aria-readonly="true" value="讀取中…"><span class="print-only" id="printNo"></span></div>
       </div>
     </section>
 
@@ -67,14 +67,14 @@
       <div class="proof-head"><h2 class="section-title">Annotation Images</h2><label class="file-label screen-only">＋ 加入圖片<input id="imageInput" type="file" accept="image/*" multiple hidden></label></div>
       <p class="toolbar-note screen-only">可加入 Annotation Tool 匯出的截圖或其他學習圖片；圖片會先縮小後保存在瀏覽器。</p>
       <div id="imageArea" class="image-grid"></div>
-      <div class="certificate">This report is generated from locally stored learning activity on this device.／本報告依此裝置瀏覽器內的學習資料產生。</div>
+      <div class="certificate">Learner identity is verified by Firebase. Learning activity is currently generated from this device.／學習者身份由 Firebase 驗證；目前學習活動依此裝置瀏覽器內的資料產生。</div>
     </section>
   </main>
 
 <script src="js/progress-tracker.js"></script>
 <script>
 (function(){
-  const PROFILE_KEY="learning.progress.profile.v1", HISTORY_KEY="learning.progress.history.v1";
+  const HISTORY_KEY="learning.progress.history.v1";
   const REFLECTION_KEY="learning.progress.reflection.v1", IMAGE_KEY="learning.progress.images.v1";
   const VOCAB_STAR_KEY="vocabStarredIds", VOCAB_DETAIL_STAR_KEY="vocab-bank.starred", PHRASE_STAR_KEY="phraseStarredIds";
   const POS_LABELS={verb:"Verb 動詞",noun:"Noun 名詞",adj:"Adjective 形容詞",adv:"Adverb 副詞"};
@@ -178,8 +178,14 @@
   function resizeImage(file){return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onerror=reject;reader.onload=()=>{const img=new Image();img.onerror=reject;img.onload=()=>{const maxW=1400,maxH=1000,scale=Math.min(1,maxW/img.width,maxH/img.height),c=document.createElement("canvas");c.width=Math.max(1,Math.round(img.width*scale));c.height=Math.max(1,Math.round(img.height*scale));c.getContext("2d").drawImage(img,0,0,c.width,c.height);resolve(c.toDataURL("image/jpeg",.82))};img.src=reader.result};reader.readAsDataURL(file)})}
   $("imageInput").addEventListener("change",async e=>{const images=getImages();for(const file of [...e.target.files].slice(0,6)){try{images.push({id:`img-${Date.now()}-${Math.random().toString(36).slice(2,7)}`,dataUrl:await resizeImage(file),caption:"",createdAt:new Date().toISOString()})}catch{}}if(saveImages(images.slice(-8)))renderImages();e.target.value=""});
 
-  const profile=readJSON(PROFILE_KEY,{className:"",name:"",no:""});
-  [["studentClass","className","printClass"],["studentName","name","printName"],["studentNo","no","printNo"]].forEach(([id,key,printId])=>{const input=$(id);input.value=profile[key]||"";const save=()=>{profile[key]=input.value;localStorage.setItem(PROFILE_KEY,JSON.stringify(profile));$(printId).textContent=input.value||"—"};input.addEventListener("input",save);save()});
+  import("./js/firebase-auth.js").then(firebaseAuth=>firebaseAuth.observePortalAuth(async user=>{
+    if(!user){location.replace("index.html");return}
+    try{
+      const profile=await firebaseAuth.getPortalProfile(user);
+      const values={studentClass:profile.className||profile.school||"—",studentName:profile.name||"—",studentNo:profile.seatNo||"—"};
+      [["studentClass","printClass"],["studentName","printName"],["studentNo","printNo"]].forEach(([id,printId])=>{$(id).value=values[id];$(printId).textContent=values[id]});
+    }catch(_){location.replace("index.html")}
+  })).catch(()=>location.replace("index.html"));
   $("reflection").value=localStorage.getItem(REFLECTION_KEY)||"";const saveReflection=()=>{localStorage.setItem(REFLECTION_KEY,$("reflection").value);$("reflectionPrint").textContent=$("reflection").value||"（未填寫）"};$("reflection").addEventListener("input",saveReflection);saveReflection();
   $("printBtn").addEventListener("click",()=>{render();window.print()});
   window.addEventListener("learning-progress-updated",render);
