@@ -101,6 +101,8 @@
     box-shadow: 0 8px 22px rgba(255, 215, 107, .22);
   }
   .progress-report-btn { text-decoration: none; margin-left: 8px; }
+  .admin-dashboard-btn { text-decoration: none; margin-left: 8px; border-color:rgba(255,215,107,.92);background:rgba(216,154,37,.2); }
+  .admin-dashboard-btn[hidden] { display:none; }
   .flb-icon { font-size: 1.05rem; }
   .flb-arrow { color: var(--gold); font-size: 1rem; transition: transform .18s ease; }
   .first-lesson-btn:hover .flb-arrow { transform: translateX(3px); }
@@ -310,6 +312,11 @@
         <span class="flb-text">My Learning Progress Report</span>
         <span class="flb-arrow">→</span>
       </a>
+      <a class="first-lesson-btn admin-dashboard-btn" id="adminDashboardBtn" href="admin-dashboard.html" hidden>
+        <span class="flb-icon">🧭</span>
+        <span class="flb-text">Shirley’s Admin Dashboard</span>
+        <span class="flb-arrow">→</span>
+      </a>
     </div>
   </div>
 
@@ -401,6 +408,7 @@
   FIREBASE_AUTH_MODULE
     .then(firebaseAuth => firebaseAuth.observePortalAuth(user => {
       if (!user) {
+        document.getElementById("adminDashboardBtn").hidden = true;
         localStorage.removeItem(PORTAL_STORAGE_KEY);
         document.body.classList.add("portal-locked");
         document.getElementById("studentPortal").hidden = false;
@@ -414,6 +422,9 @@
       }
       setPortalRole(saved.role || "student");
       unlockPortal(saved.displayName || user.displayName || "Signed-in user", false);
+      firebaseAuth.getPortalProfile(user)
+        .then(profile => { document.getElementById("adminDashboardBtn").hidden = !profile?.admin; })
+        .catch(() => { document.getElementById("adminDashboardBtn").hidden = true; });
     }))
     .catch(() => {
       document.getElementById("portalError").textContent = "Firebase 登入服務暫時無法連線，請稍後重新整理。";
