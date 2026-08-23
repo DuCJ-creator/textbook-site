@@ -69,6 +69,7 @@ export async function getPortalProfile(user = auth.currentUser) {
   return {
     uid: user.uid,
     role: String(token.claims.role || "student"),
+    admin: token.claims.admin === true,
     school: String(token.claims.school || ""),
     className: String(token.claims.className || ""),
     seatNo: String(token.claims.seatNo || ""),

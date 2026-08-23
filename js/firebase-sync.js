@@ -153,6 +153,101 @@ function safeParse(value, fallback) {
   } catch (_) { return fallback; }
 }
 
+// Dashboard snapshots turn over at 11:00 and 23:00 Taiwan time. Subtracting
+// 11 hours makes those boundaries the start of two simple 12-hour buckets.
+function summaryCycleId(now = Date.now()) {
+  const parts = new Intl.DateTimeFormat("en", {
+    timeZone: "Asia/Taipei",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    hourCycle: "h23"
+  }).formatToParts(new Date(now - 11 * 60 * 60 * 1000));
+  const values = Object.fromEntries(parts.map(part => [part.type, part.value]));
+  const boundaryHour = Number(values.hour) >= 12 ? "23" : "11";
+  return `${values.year}-${values.month}-${values.day}T${boundaryHour}`;
+}
+
+function buildLearningSummary() {
+  const time = safeParse(getLocal("learning.progress.time.v1") || "null", { totalSeconds: 0, byPage: {} });
+  const rawHistory = safeParse(getLocal("learning.progress.history.v1") || "[]", []);
+  const history = (Array.isArray(rawHistory) ? rawHistory : []).filter(record =>
+    record && ["word-practice", "word-lab", "grammar-bank"].includes(record.source)
+  );
+  const notepad = safeParse(getLocal("studentNotepadData") || "null", { notes: [] });
+  const annotations = safeParse(getLocal("learning.progress.images.v1") || "[]", []);
+  const stars = ["vocabStarredIds", "vocab-bank.starred", "phraseStarredIds"].reduce((total, key) => {
+    const value = safeParse(getLocal(key) || "[]", []);
+    return total + (Array.isArray(value) ? value.length : 0);
+  }, 0);
+  const totalSeconds = Object.values(time.byPage || {}).reduce((sum, page) => {
+    const seconds = Number(page?.seconds || 0);
+    return sum + (seconds >= 120 ? seconds : 0);
+  }, 0);
+  const latestPracticeAt = history.map(record => record.endedAt || record.startedAt || "").filter(Boolean).sort().pop() || null;
+  const lastActivityAt = [time.updatedAt, latestPracticeAt].filter(Boolean).sort().pop() || null;
+  const totalScore = history.reduce((sum, record) => sum + Number(record.score || 0), 0);
+  const totalAccuracy = history.reduce((sum, record) => sum + Number(record.accuracy || 0), 0);
+  const pageBreakdown = Object.values(time.byPage || {})
+    .filter(page => Number(page?.seconds || 0) >= 120)
+    .sort((a, b) => Number(b.seconds || 0) - Number(a.seconds || 0))
+    .slice(0, 50)
+    .map(page => ({
+      title: String(page.title || page.path || "頁面"),
+      path: String(page.path || ""),
+      seconds: Math.round(Number(page.seconds || 0)),
+      visits: Math.round(Number(page.visits || 0)),
+      lastVisitedAt: page.lastVisitedAt || null
+    }));
+  const recentPractices = history.slice(-20).reverse().map(record => ({
+    source: String(record.source || ""),
+    mode: String(record.mode || ""),
+    modeLabel: String(record.modeLabel || ""),
+    score: Number(record.score || 0),
+    accuracy: Number(record.accuracy || 0),
+    correct: Number(record.correct || 0),
+    total: Number(record.total || 0),
+    endedAt: record.endedAt || record.startedAt || null
+  }));
+  return {
+    uid: activeUser?.uid || "",
+    role: activeProfile?.role || "student",
+    name: activeProfile?.name || "",
+    className: activeProfile?.className || "",
+    school: activeProfile?.school || "",
+    seatNo: activeProfile?.seatNo || "",
+    totalSeconds,
+    practiceCount: history.length,
+    averageScore: history.length ? Math.round(totalScore / history.length) : 0,
+    averageAccuracy: history.length ? Math.round(totalAccuracy / history.length) : 0,
+    latestPracticeAt,
+    lastActivityAt,
+    starCount: stars,
+    noteCount: Array.isArray(notepad.notes) ? notepad.notes.filter(note => note?.content).length : 0,
+    annotationCount: Array.isArray(annotations) ? annotations.length : 0,
+    hasActivity: totalSeconds > 0 || history.length > 0,
+    pageBreakdown,
+    recentPractices,
+    snapshotCycle: summaryCycleId()
+  };
+}
+
+async function syncLearningSummary() {
+  if (!activeUser || !activeProfile || !syncReady) return false;
+  const cycle = summaryCycleId();
+  const meta = readMeta();
+  // At most one dashboard write per account/device in each 12-hour cycle.
+  if (meta.summaryCycle === cycle) return false;
+  const summary = buildLearningSummary();
+  await setDoc(doc(db, "learningSummaries", activeUser.uid), {
+    ...summary,
+    updatedAt: serverTimestamp()
+  }, { merge: true });
+  updateMeta({ summaryCycle: cycle, summarySyncedAt: Date.now() });
+  return true;
+}
+
 function recordId(record) {
   if (record?.attemptId) return String(record.attemptId);
   return [record?.source, record?.mode, record?.startedAt, record?.endedAt, record?.score].join("|");
@@ -375,6 +470,7 @@ async function flushAll({ force = false } = {}) {
   const now = Date.now();
   const dirtyKeys = [...TRACKED_KEYS.keys()].filter(key => isWriteDue(key, meta.keys[key], now, force));
   await Promise.allSettled(dirtyKeys.map(flushKey));
+  await syncLearningSummary().catch(handleError);
   if ([...TRACKED_KEYS.keys()].some(key => readMeta().keys[key]?.dirty)) scheduleFlush();
 }
 
@@ -466,6 +562,9 @@ function prepareUserCache(userId) {
     meta.keys = {};
     meta.lastPulledAt = 0;
     meta.profileSyncedAt = 0;
+    meta.summaryCycle = "";
+    meta.summarySyncedAt = 0;
+    delete meta.summaryFingerprint;
   }
   meta.userId = userId;
   saveMeta(meta);
@@ -498,6 +597,7 @@ async function beginForUser(user) {
   const results = pullDue ? await pullAll(user.uid) : [];
   syncReady = true;
   emit("firebase-sync-ready", { uid: user.uid, profile: activeProfile, cloudChecked: pullDue });
+  syncLearningSummary().catch(handleError);
   scheduleFlush();
 
   // On a browser's first cloud restore, reload once so widgets that read their
@@ -549,6 +649,9 @@ setInterval(() => {
     observedValues.set(key, current);
   });
   scheduleFlush();
+  // When a learner leaves a tab open across 11:00 or 23:00, create the new
+  // dashboard snapshot without waiting for another practice action.
+  syncLearningSummary().catch(handleError);
   const meta = readMeta();
   if (activeUser && syncReady && Date.now() - Number(meta.lastPulledAt || 0) >= CLOUD_PULL_INTERVAL_MS) {
     pullAll(activeUser.uid).catch(handleError);
