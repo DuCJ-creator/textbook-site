@@ -7,7 +7,7 @@
 <style>
 :root{--green:#075b52;--deep:#06443e;--mint:#e7f3ef;--paper:#f8f5ec;--card:#fffdf8;--line:#ded5c2;--ink:#29261f;--soft:#746d5d;--gold:#d89a25;--red:#a53a36;--serif:Georgia,"Noto Serif TC",serif;--sans:Inter,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55}.hero{background:linear-gradient(135deg,var(--deep),var(--green));color:#fff;border-radius:0 0 30px 30px;padding:26px 20px}.hero-inner,.main{max-width:1180px;margin:auto}.back{color:#d4ece7;text-decoration:none;font-size:.78rem}.hero h1{font:700 clamp(1.6rem,4vw,2.4rem)/1.18 var(--serif);margin:14px 0 6px}.hero p{margin:0;color:#d4ece7;font-size:.86rem}.admin-badge{display:inline-flex;margin-left:8px;padding:4px 9px;border:1px solid rgba(255,255,255,.4);border-radius:999px;font-size:.62rem;letter-spacing:.08em}.main{padding:24px 18px 70px}.status{padding:14px 16px;background:#fff8df;border:1px solid #ead49a;border-radius:14px;color:#6f5717;font-size:.8rem;margin-bottom:16px}.toolbar{display:flex;gap:10px;align-items:end;flex-wrap:wrap;margin-bottom:16px}.field{display:grid;gap:5px}.field label{font-size:.65rem;font-weight:900;letter-spacing:.07em;color:var(--soft)}select,input{min-height:42px;border:1px solid var(--line);border-radius:11px;background:#fff;padding:8px 11px;font:inherit;color:var(--ink)}#searchInput{min-width:240px}.btn{min-height:42px;border:1px solid var(--green);border-radius:999px;background:var(--green);color:#fff;padding:8px 16px;font:800 .75rem var(--sans);cursor:pointer}.btn.ghost{background:transparent;color:var(--green)}.btn.gold{border-color:var(--gold);background:var(--gold)}.btn:disabled{opacity:.55;cursor:wait}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:17px}.stat{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:16px;box-shadow:0 2px 0 var(--line)}.stat b{display:block;color:var(--deep);font:700 1.65rem var(--serif)}.stat span{font-size:.68rem;color:var(--soft)}.card{background:var(--card);border:1px solid var(--line);border-radius:19px;padding:18px;box-shadow:0 2px 0 var(--line);margin-bottom:16px}.card h2{font:700 1.15rem var(--serif);color:var(--deep);margin:0 0 13px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:.76rem}th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{font-size:.63rem;color:var(--soft);letter-spacing:.06em}tbody tr:hover{background:#f2f8f5}.name{font-weight:850}.muted{color:var(--soft)}.active-dot,.idle-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}.active-dot{background:#2f9f73}.idle-dot{background:#c4b9a5}.small-btn{border:1px solid var(--green);background:transparent;color:var(--green);border-radius:999px;padding:6px 10px;font:800 .68rem var(--sans);cursor:pointer}.empty{text-align:center;color:var(--soft);padding:26px}.detail[hidden]{display:none}.detail-head{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.detail-meta{color:var(--soft);font-size:.75rem}.detail-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:14px}.subcard{border:1px solid var(--line);background:#fff;border-radius:14px;padding:13px}.subcard h3{font:700 .9rem var(--serif);color:var(--deep);margin:0 0 9px}.score-list,.page-list,.evidence-grid{display:grid;gap:8px}.score-item,.page-item{display:grid;grid-template-columns:1fr auto;gap:8px;border-left:4px solid var(--gold);padding:8px 10px;background:#fff9e9;border-radius:8px;font-size:.73rem}.score-item span,.page-item span{color:var(--soft)}.privacy{font-size:.68rem;color:var(--soft);margin:8px 0 0}.evidence-grid{grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin-top:12px}.evidence{border:1px solid var(--line);border-radius:12px;padding:10px;background:#fff}.evidence img{width:100%;max-height:240px;object-fit:contain;border-radius:8px}.note-text{white-space:pre-wrap;font-size:.76rem}.denied{max-width:600px;margin:80px auto;background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;text-align:center}.screen-only{}.print-only{display:none}
-@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}.detail-grid{grid-template-columns:1fr}}@media(max-width:520px){.stats{grid-template-columns:1fr}.toolbar>*{width:100%}#searchInput{min-width:0}th:nth-child(5),td:nth-child(5),th:nth-child(8),td:nth-child(8){display:none}}
+.privacy-badge{display:inline-flex;vertical-align:middle;margin-left:7px;padding:3px 8px;border-radius:999px;background:#e5f2ed;color:var(--green);font:800 .6rem var(--sans);letter-spacing:.04em}@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}.detail-grid{grid-template-columns:1fr}}@media(max-width:520px){.stats{grid-template-columns:1fr}.toolbar>*{width:100%}#searchInput{min-width:0}th:nth-child(5),td:nth-child(5),th:nth-child(8),td:nth-child(8){display:none}}
 @media print{@page{size:A4 landscape;margin:10mm}.hero{background:#fff!important;color:var(--ink);padding:10px 0;border-radius:0;border-bottom:3px solid var(--green)}.hero p,.back,.toolbar,.screen-only,.status{display:none!important}.main{padding:12px 0}.stats{grid-template-columns:repeat(4,1fr)}.card{box-shadow:none}body{background:#fff}.print-only{display:block}}
 </style>
 </head>
@@ -28,7 +28,7 @@
     <div class="stat"><b id="totalHours">0</b><span>總學習小時</span></div>
     <div class="stat"><b id="classAccuracy">0%</b><span>有練習者平均正確率</span></div>
   </section>
-  <section class="card"><h2>Student Overview</h2><div class="table-wrap"><table><thead><tr><th>班級</th><th>座號</th><th>姓名</th><th>狀態</th><th>學習時間</th><th>回合</th><th>平均分</th><th>正確率</th><th>最後活動</th><th class="screen-only"></th></tr></thead><tbody id="studentRows"><tr><td colspan="10" class="empty">讀取中…</td></tr></tbody></table></div></section>
+  <section class="card"><h2>Student Overview <span class="privacy-badge">姓名已遮罩</span></h2><div class="table-wrap"><table><thead><tr><th>班級</th><th>座號</th><th>姓名</th><th>狀態</th><th>學習時間</th><th>回合</th><th>平均分</th><th>正確率</th><th>最後活動</th><th class="screen-only"></th></tr></thead><tbody id="studentRows"><tr><td colspan="10" class="empty">讀取中…</td></tr></tbody></table></div></section>
   <section class="card detail" id="detailCard" hidden>
     <div class="detail-head"><div><h2 id="detailName">Student Detail</h2><div class="detail-meta" id="detailMeta"></div></div><button class="btn ghost screen-only" id="closeDetail" type="button">關閉詳情</button></div>
     <div class="detail-grid"><div class="subcard"><h3>Learning Time by Page</h3><div id="detailTime" class="page-list"></div></div><div class="subcard"><h3>Practice Scores</h3><div id="detailScores" class="score-list"></div></div></div>
@@ -46,6 +46,14 @@ const db=getFirestore(app),$=id=>document.getElementById(id);
 let summaries=[],filtered=[],selected=null;
 const CACHE_KEY="shirley.admin.twice-daily-snapshot.v1";
 const esc=value=>String(value??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;");
+const maskName=value=>String(value??"").trim().split(/(\s+)/).map(part=>{
+  if(/^\s+$/.test(part))return part;
+  const chars=Array.from(part);
+  if(!chars.length)return "—";
+  if(chars.length===1)return "○";
+  if(chars.length===2)return chars[0]+"○";
+  return chars[0]+"○".repeat(chars.length-2)+chars.at(-1);
+}).join("");
 const formatTime=seconds=>{seconds=Math.round(Number(seconds)||0);const h=Math.floor(seconds/3600),m=Math.floor(seconds%3600/60);return h?`${h} 小時 ${m} 分`:`${m} 分`};
 const dateText=value=>{if(!value)return"—";const date=value?.toDate?value.toDate():new Date(value);return Number.isNaN(date.getTime())?"—":date.toLocaleString("zh-TW",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"})};
 const safeParse=(value,fallback)=>{try{return JSON.parse(value)??fallback}catch{return fallback}};
@@ -101,7 +109,7 @@ function renderStats(){
 function renderRows(){
   $("studentRows").innerHTML=filtered.length?filtered.map(item=>{
     const active=item.hasActivity||Number(item.practiceCount||0)>0||Number(item.totalSeconds||0)>0;
-    return `<tr><td>${esc(item.className||"—")}</td><td>${esc(item.seatNo||"—")}</td><td class="name">${esc(item.name||"—")}</td><td><span class="${active?"active-dot":"idle-dot"}"></span>${active?"已開始":"尚未開始"}</td><td>${formatTime(item.totalSeconds)}</td><td>${Number(item.practiceCount||0)}</td><td>${Number(item.averageScore||0)}</td><td>${Number(item.averageAccuracy||0)}%</td><td>${dateText(item.lastActivityAt)}</td><td class="screen-only"><button class="small-btn" data-uid="${esc(item.uid)}">查看詳情</button></td></tr>`;
+    return `<tr><td>${esc(item.className||"—")}</td><td>${esc(item.seatNo||"—")}</td><td class="name">${esc(maskName(item.name))}</td><td><span class="${active?"active-dot":"idle-dot"}"></span>${active?"已開始":"尚未開始"}</td><td>${formatTime(item.totalSeconds)}</td><td>${Number(item.practiceCount||0)}</td><td>${Number(item.averageScore||0)}</td><td>${Number(item.averageAccuracy||0)}%</td><td>${dateText(item.lastActivityAt)}</td><td class="screen-only"><button class="small-btn" data-uid="${esc(item.uid)}">查看詳情</button></td></tr>`;
   }).join(""):'<tr><td colspan="10" class="empty">沒有符合條件的學生。</td></tr>';
   document.querySelectorAll("[data-uid]").forEach(button=>button.addEventListener("click",()=>openDetail(button.dataset.uid)));
 }
@@ -115,7 +123,7 @@ async function readState(uid,id){
 
 function openDetail(uid){
   selected=summaries.find(item=>item.uid===uid);if(!selected)return;
-  $("detailCard").hidden=false;$("detailName").textContent=`${selected.className||""} ${selected.seatNo||""} · ${selected.name||"Student"}`;
+  $("detailCard").hidden=false;$("detailName").textContent=`${selected.className||""} ${selected.seatNo||""} · ${maskName(selected.name||"Student")}`;
   $("detailMeta").textContent=`快照週期 ${cycleText(selected.snapshotCycle)} · ${formatTime(selected.totalSeconds)} · ${Number(selected.practiceCount||0)} 回合 · 平均正確率 ${Number(selected.averageAccuracy||0)}%`;
   const pages=Array.isArray(selected.pageBreakdown)?selected.pageBreakdown:[];
   $("detailTime").innerHTML=pages.length?pages.map(page=>`<div class="page-item"><div>${esc(page.title||page.path||"頁面")}</div><span>${formatTime(page.seconds)}</span></div>`).join(""):'<div class="empty">此快照尚無滿兩分鐘的頁面紀錄。</div>';
@@ -138,7 +146,7 @@ async function loadEvidence(){
 
 function exportCsv(){
   const headers=["Class","No.","Name","Status","Learning Minutes","Practice Attempts","Average Score","Average Accuracy","Last Activity"];
-  const rows=filtered.map(item=>[item.className||"",item.seatNo||"",item.name||"",item.hasActivity?"Started":"Not started",Math.round(Number(item.totalSeconds||0)/60),Number(item.practiceCount||0),Number(item.averageScore||0),Number(item.averageAccuracy||0),item.lastActivityAt?.toDate?.().toISOString?.()||item.lastActivityAt||""]);
+  const rows=filtered.map(item=>[item.className||"",item.seatNo||"",maskName(item.name),item.hasActivity?"Started":"Not started",Math.round(Number(item.totalSeconds||0)/60),Number(item.practiceCount||0),Number(item.averageScore||0),Number(item.averageAccuracy||0),item.lastActivityAt?.toDate?.().toISOString?.()||item.lastActivityAt||""]);
   const csv=[headers,...rows].map(row=>row.map(value=>`"${String(value??"").replace(/"/g,'""')}"`).join(",")).join("\n");
   const link=document.createElement("a");link.href=URL.createObjectURL(new Blob(["\uFEFF"+csv],{type:"text/csv;charset=utf-8"}));link.download=`class-learning-summary-${new Date().toISOString().slice(0,10)}.csv`;link.click();URL.revokeObjectURL(link.href);
 }
