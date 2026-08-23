@@ -282,7 +282,7 @@
         <div class="portal-field"><label for="portalPassword">Password 鑰匙</label><div class="portal-password-wrap"><input id="portalPassword" type="password" autocomplete="current-password" required placeholder="Enter your key"><button class="portal-show-key" id="portalShowKey" type="button">顯示</button></div></div>
         <button class="portal-submit" id="portalSubmit" type="submit" disabled>Enter the Platform →</button>
         <p class="portal-error" id="portalError" role="alert"></p>
-        <p class="portal-note">在同一裝置與瀏覽器通過一次後，下次會自動進入。</p>
+        <p class="portal-note">本裝置登入後會保持登入；換裝置時請使用同一組班級／學校、姓名與鑰匙。</p>
         <p class="portal-contact">Want an access? Please fill out the <a href="https://forms.gle/1pE5j3svdZWoANv8A" target="_blank" rel="noopener">contact form</a> to contact Tr. Shirley.</p>
       </form>
     </div>
@@ -340,12 +340,9 @@
 <script src="js/external-viewer.js"></script>
 <script>
   const INDEX_URL = "data/index.json";
-  const PORTAL_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRWmQh8ILldThj_tkHAl-ajVpij7aDRBvxGhugXfVWfHhTmULLoWpfEZlwjWVfOZmk1Cg84yfbPyC_5/pub?gid=0&single=true&output=csv";
+  const PORTAL_OPTIONS_URL = "data/portal-options.json";
   const PORTAL_STORAGE_KEY = "shirley.portal.access.v1";
-  // 過渡期間保留舊式 CSV 驗證，等 Firebase 測試帳號確認成功後即關閉。
-  const PORTAL_MIGRATION_FALLBACK = true;
   const FIREBASE_AUTH_MODULE = import("./js/firebase-auth.js");
-  let PORTAL_ROSTER = [];
   let PORTAL_ROLE = "student";
 
   function readPortalAccess() {
@@ -384,42 +381,11 @@
     document.getElementById("portalPassword").value = "";
   }
 
-  function parsePortalCsv(text) {
-    const rows = [];
-    let row = [], cell = "", quoted = false;
-    for (let i = 0; i < text.length; i++) {
-      const ch = text[i];
-      if (ch === '"') {
-        if (quoted && text[i + 1] === '"') { cell += '"'; i++; }
-        else quoted = !quoted;
-      } else if (ch === "," && !quoted) {
-        row.push(cell.trim()); cell = "";
-      } else if ((ch === "\n" || ch === "\r") && !quoted) {
-        if (ch === "\r" && text[i + 1] === "\n") i++;
-        row.push(cell.trim()); cell = "";
-        if (row.some(value => value !== "")) rows.push(row);
-        row = [];
-      } else cell += ch;
-    }
-    row.push(cell.trim());
-    if (row.some(value => value !== "")) rows.push(row);
-    if (!rows.length) return [];
-    const headers = rows.shift().map(header => header.replace(/^\uFEFF/, "").trim().toLowerCase());
-    return rows.map(values => Object.fromEntries(headers.map((header, index) => [header, values[index] || ""])));
-  }
-
-  const rememberedPortalAccess = readPortalAccess();
-  if (rememberedPortalAccess) {
-    setPortalRole(rememberedPortalAccess.role || "student");
-    unlockPortal(rememberedPortalAccess.displayName || rememberedPortalAccess.className, false);
-  }
-
-  fetch(PORTAL_CSV_URL, { cache: "no-store" })
-    .then(response => { if (!response.ok) throw new Error("HTTP " + response.status); return response.text(); })
-    .then(text => {
-      PORTAL_ROSTER = parsePortalCsv(text).filter(item => item.role && item.name);
-      const classes = [...new Set(PORTAL_ROSTER.filter(item => String(item.role).toLowerCase() === "student").map(item => item.class).filter(Boolean))].sort();
-      const schools = [...new Set(PORTAL_ROSTER.filter(item => String(item.role).toLowerCase() === "teacher").map(item => item.school).filter(Boolean))].sort();
+  fetch(PORTAL_OPTIONS_URL, { cache: "no-store" })
+    .then(response => { if (!response.ok) throw new Error("HTTP " + response.status); return response.json(); })
+    .then(options => {
+      const classes = Array.isArray(options.classes) ? options.classes : [];
+      const schools = Array.isArray(options.schools) ? options.schools : [];
       const select = document.getElementById("portalClass");
       select.innerHTML = '<option value="">請選擇班級…</option>' + classes.map(className => `<option value="${escapeHtml(className)}">${escapeHtml(className)}</option>`).join("");
       select.disabled = false;
@@ -429,7 +395,28 @@
       document.getElementById("portalSubmit").disabled = false;
     })
     .catch(() => {
-      if (!rememberedPortalAccess) document.getElementById("portalError").textContent = "班級資料暫時無法讀取，請稍後重新整理。";
+      document.getElementById("portalError").textContent = "班級資料暫時無法讀取，請稍後重新整理。";
+    });
+
+  FIREBASE_AUTH_MODULE
+    .then(firebaseAuth => firebaseAuth.observePortalAuth(user => {
+      if (!user) {
+        localStorage.removeItem(PORTAL_STORAGE_KEY);
+        document.body.classList.add("portal-locked");
+        document.getElementById("studentPortal").hidden = false;
+        return;
+      }
+      let saved = readPortalAccess();
+      if (!saved) {
+        const role = user.email?.startsWith("t.") ? "teacher" : "student";
+        saved = { schemaVersion: 3, role, displayName: user.displayName || "Signed-in user", auth: "firebase", grantedAt: new Date().toISOString() };
+        localStorage.setItem(PORTAL_STORAGE_KEY, JSON.stringify(saved));
+      }
+      setPortalRole(saved.role || "student");
+      unlockPortal(saved.displayName || user.displayName || "Signed-in user", false);
+    }))
+    .catch(() => {
+      document.getElementById("portalError").textContent = "Firebase 登入服務暫時無法連線，請稍後重新整理。";
     });
 
   document.getElementById("portalShowKey").addEventListener("click", () => {
@@ -455,24 +442,10 @@
     submit.textContent = "Signing in…";
     error.textContent = "";
 
-    let firebaseSignedIn = false;
     try {
       const firebaseAuth = await FIREBASE_AUTH_MODULE;
       await firebaseAuth.signInPortal(identity, password);
-      firebaseSignedIn = true;
     } catch (_) {
-      // 在批次匯入完成前，測試環境仍可暫時用現有 CSV 驗證。
-    }
-
-    const normalize = value => String(value || "").normalize("NFKC").trim().toLowerCase();
-    const match = firebaseSignedIn ? null : PORTAL_ROSTER.find(item => {
-      const sameRole = normalize(item.role) === PORTAL_ROLE;
-      const sameName = normalize(item.name) === normalize(name);
-      const sameGroup = isTeacher ? normalize(item.school) === normalize(school) : normalize(item.class) === normalize(className);
-      return sameRole && sameName && sameGroup && item.password === password;
-    });
-
-    if (!firebaseSignedIn && !(PORTAL_MIGRATION_FALLBACK && match)) {
       const card = document.getElementById("portalCard");
       error.textContent = "身份、班級／學校、姓名或鑰匙不正確，請再確認一次。";
       card.classList.remove("shake"); void card.offsetWidth; card.classList.add("shake");
@@ -482,7 +455,7 @@
       return;
     }
     const displayName = isTeacher ? `Teacher · ${name}` : `${className} · ${name}`;
-    localStorage.setItem(PORTAL_STORAGE_KEY, JSON.stringify({ schemaVersion: 3, role: PORTAL_ROLE, displayName, className, school, name, auth: firebaseSignedIn ? "firebase" : "migration", grantedAt: new Date().toISOString() }));
+    localStorage.setItem(PORTAL_STORAGE_KEY, JSON.stringify({ schemaVersion: 3, role: PORTAL_ROLE, displayName, className, school, name, auth: "firebase", grantedAt: new Date().toISOString() }));
     unlockPortal(displayName, true);
   });
 
