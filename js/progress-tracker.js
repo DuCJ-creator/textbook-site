@@ -1,4 +1,4 @@
-/* 全站學習時間追蹤：資料只保存在目前瀏覽器的 localStorage。 */
+/* 全站學習時間追蹤：本機即時保存，登入後自動同步至 Firestore。 */
 (function () {
   "use strict";
   if (window.LearningProgressTracker) return;

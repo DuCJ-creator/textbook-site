@@ -81,4 +81,4 @@ export async function signOutPortal() {
   return signOut(auth);
 }
 
-export { auth };
+export { app, auth };

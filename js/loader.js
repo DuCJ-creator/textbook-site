@@ -162,23 +162,42 @@ const Loader = (function () {
       });
     }
 
+    function loadModule(src) {
+      return new Promise((resolve, reject) => {
+        if (document.querySelector(`script[src="${src}"]`)) {
+          resolve();
+          return;
+        }
+        const script = document.createElement('script');
+        script.type = 'module';
+        script.src = src;
+        script.onload = resolve;
+        script.onerror = reject;
+        document.head.appendChild(script);
+      });
+    }
+
     const startMounting = () => {
-      // 1. 每一個頂層頁面都載入學習時間追蹤
+      // 1. 登入後，把學習紀錄在 localStorage 與 Firestore 之間自動同步
+      loadModule('js/firebase-sync.js')
+        .catch(() => console.warn('學習紀錄雲端同步載入失敗'));
+
+      // 2. 每一個頂層頁面都載入學習時間追蹤
       loadScript('js/progress-tracker.js')
         .catch(() => console.warn('學習時間追蹤載入失敗'));
 
-      // 2. 載入截圖依賴庫
+      // 3. 載入截圖依賴庫
       loadScript('https://html2canvas.hertzen.com/dist/html2canvas.min.js')
         .catch(() => console.warn('html2canvas 載入失敗'));
 
-      // 3. 載入並掛載便籤工具
+      // 4. 載入並掛載便籤工具
       loadScript('js/notepad.js').then(() => {
         if (window.Notepad && typeof window.Notepad.mount === 'function') {
           window.Notepad.mount();
         }
       }).catch(err => console.warn('Notepad 載入失敗:', err));
 
-      // 4. 載入並掛載繪圖標註工具
+      // 5. 載入並掛載繪圖標註工具
       loadScript('js/annotation-tool.js').then(() => {
         if (window.AnnotationTool && typeof window.AnnotationTool.mount === 'function') {
           window.AnnotationTool.mount();

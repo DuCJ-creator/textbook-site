@@ -9,7 +9,7 @@
      （例如「單字」「文法」「片語」），標籤本身也可以刪除
    - 匯出 PDF：可選擇「全部」或「單一標籤」匯出成 PDF 檔案
    - 面板可拖曳移動（避免面板剛好擋住畫面上的內容）
-   - 全部資料存在 localStorage，只存在同一台裝置、同一個瀏覽器裡
+   - 本機即時保存；登入後由 FirebaseLearningSync 自動跨裝置同步
 
    用法：只要在頁面裡引入這支 script 並呼叫 Notepad.mount()，
    會自動注入浮動按鈕與面板，不需要額外 HTML markup。
@@ -72,6 +72,12 @@ const Notepad = (function () {
       document.head.appendChild(tracker);
     }
     data = loadData();
+
+    window.addEventListener("firebase-sync-updated", event => {
+      if (event.detail?.key !== STORAGE_KEY || event.detail?.source !== "cloud") return;
+      data = loadData();
+      if (mounted && els.notesArea) renderAll();
+    });
 
     injectFab();
     injectPanel();
