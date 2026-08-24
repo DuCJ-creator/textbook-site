@@ -715,6 +715,32 @@
       },
       {
         "id": "b3l4-v20",
+        "base": "inevitable",
+        "verb": [],
+        "noun": [
+          {
+            "en": "inevitability",
+            "zh": "不可避免；必然性",
+            "example": "There was an inevitability about his defeat."
+          }
+        ],
+        "adj": [
+          {
+            "en": "inevitable",
+            "zh": "不可避免的",
+            "example": "It was inevitable that there would be job losses."
+          }
+        ],
+        "adv": [
+          {
+            "en": "inevitably",
+            "zh": "不可避免地；必然地",
+            "example": "Inevitably, she is late for their date again."
+          }
+        ]
+      },
+      {
+        "id": "b3l4-v21",
         "base": "cycle",
         "verb": [
           {
@@ -755,7 +781,7 @@
         "adv": []
       },
       {
-        "id": "b3l4-v21",
+        "id": "b3l4-v22",
         "base": "annual",
         "verb": [
           {
@@ -781,7 +807,7 @@
         ]
       },
       {
-        "id": "b3l4-v22",
+        "id": "b3l4-v23",
         "base": "wait",
         "verb": [
           {
@@ -816,7 +842,7 @@
         "adv": []
       },
       {
-        "id": "b3l4-v23",
+        "id": "b3l4-v24",
         "base": "escape",
         "verb": [
           {
