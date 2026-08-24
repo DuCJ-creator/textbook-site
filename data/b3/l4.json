@@ -2576,7 +2576,146 @@
       }
     ],
     "sentence_structures": {
-      "items": []
+      "items": [
+        {
+          "id": "b3l4-s001",
+          "sentence": "*Have* you ever *thought* about what it would be like to have a deceased loved one return and accompany you to a holiday celebration?",
+          "type": "complex",
+          "pattern": "Interrogative sentence (Noun clause)"
+        },
+        {
+          "id": "b3l4-s002",
+          "sentence": "The idea *may scare* you to death or at least *make* your hair stand on end, but this *is* the essential concept behind the Mexican festival called the Day of the Dead, when people celebrate death with joy and humor rather than mourn it with sorrow.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"but\" )"
+        },
+        {
+          "id": "b3l4-s003",
+          "sentence": "On this joyous occasion, family members *gather* for a reunion in honor of those who have moved on to the afterlife.",
+          "type": "complex",
+          "pattern": "Relative clause (who...)"
+        },
+        {
+          "id": "b3l4-s004",
+          "sentence": "The Day of the Dead *is thought* to have originated centuries ago with the Aztecs.",
+          "type": "simple",
+          "pattern": "Passive transformation of S + Vt + O"
+        },
+        {
+          "id": "b3l4-s005",
+          "sentence": "Nowadays, it *is celebrated* passionately throughout Mexico on November 1 and 2.",
+          "type": "simple",
+          "pattern": "Passive transformation of S + Vt + O"
+        },
+        {
+          "id": "b3l4-s006",
+          "sentence": "Traditionally, deceased children *are honored* on Nov. 1, while Nov. 2 *is* the day when departed adults are the main focus.",
+          "type": "complex",
+          "pattern": "Adverbial clause (while...) + Relative clause (when...)"
+        },
+        {
+          "id": "b3l4-s007",
+          "sentence": "During these two days, the souls of the dead *are believed* to return to earth to visit the living members of their family.",
+          "type": "simple",
+          "pattern": "Passive transformation of S + Vt + O"
+        },
+        {
+          "id": "b3l4-s008",
+          "sentence": "Instead of fearing these spirits, Mexicans *anticipate* their arrival and *prepare* for it by purchasing necessary items in local markets in advance.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + O (Compound verb)"
+        },
+        {
+          "id": "b3l4-s009",
+          "sentence": "These *include* marigolds, candles, decorated sugar skulls bearing the names of departed family members, and “bread of the dead.”",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b3l4-s010",
+          "sentence": "Families also *tidy* and *restore* the graves and cemeteries where their family members are buried to welcome the souls home.",
+          "type": "complex",
+          "pattern": "Relative clause (where...)"
+        },
+        {
+          "id": "b3l4-s011",
+          "sentence": "On the Day of the Dead, families *assemble* colorful altars in their homes to welcome returning spirits.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b3l4-s012",
+          "sentence": "On the altars, they *place* photographs of their deceased loved ones as well as beverages and dishes that those family members had a preference for while alive.",
+          "type": "complex",
+          "pattern": "Relative clause (that...)"
+        },
+        {
+          "id": "b3l4-s013",
+          "sentence": "After this warm reception for the souls at home, it *is* usually late in the evening, and families *head* to the cemetery, where they decorate the graves of their loved ones and light one candle for each dead person.",
+          "type": "compound-complex",
+          "pattern": "Compound sentence (with \"and\" + Relative clause)"
+        },
+        {
+          "id": "b3l4-s014",
+          "sentence": "Cheerful and merry, they *feast* with the honored souls and *pray* till dawn, transforming the normally horrifying graveyard into a venue of joy and celebration for the entire night.",
+          "type": "simple",
+          "pattern": "Adjectives as complement + S + Vi"
+        },
+        {
+          "id": "b3l4-s015",
+          "sentence": "Throughout the festival, colorful, cartoon-like representations of the dead *can be seen* everywhere.",
+          "type": "simple",
+          "pattern": "Passive transformation of S + Vt + O"
+        },
+        {
+          "id": "b3l4-s016",
+          "sentence": "These *include* skeleton and skull cookies, candies, flags, and toys.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b3l4-s017",
+          "sentence": "Many people also *dress up* in skeleton costumes, *paint* their faces to resemble skulls, and *participate* in performances and street parades.",
+          "type": "simple",
+          "pattern": "S + Vt / Vi (Compound verb)"
+        },
+        {
+          "id": "b3l4-s018",
+          "sentence": "While doing so, Mexicans *aren’t mocking* death.",
+          "type": "simple",
+          "pattern": "(While...) + S + Vt + O"
+        },
+        {
+          "id": "b3l4-s019",
+          "sentence": "Instead, they *are recognizing* it as an inevitable part of the natural cycle and *would rather embrace* it than ignore it.",
+          "type": "simple",
+          "pattern": "S+Vt+O (with Compound verb)"
+        },
+        {
+          "id": "b3l4-s020",
+          "sentence": "By inviting the dead to return and sharing the pleasures of life with them, Mexicans *are celebrating* the cycle of life itself.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + O"
+        },
+        {
+          "id": "b3l4-s021",
+          "sentence": "The Mexican Day of the Dead *is* an annual national event that brings together living hosts and non-living guests of honor.",
+          "type": "complex",
+          "pattern": "Relative clause (that...)"
+        },
+        {
+          "id": "b3l4-s022",
+          "sentence": "Hopefully, this tradition *will* never *die out*, since it helps people accept a fact of life that awaits us all.",
+          "type": "complex",
+          "pattern": "Adverbial clause (since...) + Relative clause (that...)"
+        },
+        {
+          "id": "b3l4-s023",
+          "sentence": "If we cannot escape death, why *not celebrate* it?",
+          "type": "complex",
+          "pattern": "Adverbial clause (If...) + Interrogative sentence"
+        }
+      ]
     }
   },
   "text_genre": {
