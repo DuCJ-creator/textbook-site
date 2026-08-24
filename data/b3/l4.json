@@ -89,7 +89,13 @@
             "example": "Many older people value companionship and conversation."
           }
         ],
-        "adj": [],
+        "adj": [
+          {
+            "en": "accompanying",
+            "zh": "伴隨的；同行的",
+            "example": "Each pack contains a book and accompanying CD."
+          }
+        ],
         "adv": []
       },
       {
