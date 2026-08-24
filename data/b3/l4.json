@@ -1,0 +1,846 @@
+{
+  "book": "B3",
+  "lesson": "L4",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b3l4-v01",
+        "base": "joy",
+        "verb": [
+          {
+            "en": "enjoy",
+            "zh": "享受；喜愛；享有",
+            "example": "We enjoyed walking along the beach at sunset."
+          }
+        ],
+        "noun": [
+          {
+            "en": "joy",
+            "zh": "喜悅；快樂；令人高興的事",
+            "example": "The children shouted with joy when they saw the gifts."
+          },
+          {
+            "en": "enjoyment",
+            "zh": "享受；樂趣；愉快",
+            "example": "Reading is a source of great enjoyment for her."
+          },
+          {
+            "en": "joyfulness",
+            "zh": "喜悅；歡樂的特質",
+            "example": "Her joyfulness brightened the whole room."
+          }
+        ],
+        "adj": [
+          {
+            "en": "joyous",
+            "zh": "歡樂的；令人喜悅的(主要形容場合或事件)",
+            "example": "The wedding was a joyous occasion for both families."
+          },
+          {
+            "en": "joyful",
+            "zh": "快樂的；喜悅的(主要形容人的感覺)",
+            "example": "She gave a joyful laugh when she heard the news."
+          },
+          {
+            "en": "joyless",
+            "zh": "不快樂的；毫無樂趣的",
+            "example": "The long winter made the town seem cold and joyless."
+          }
+        ],
+        "adv": [
+          {
+            "en": "joyfully",
+            "zh": "快樂地；喜悅地",
+            "example": "The students joyfully welcomed their new teacher."
+          },
+          {
+            "en": "joylessly",
+            "zh": "不快樂地；毫無喜悅地",
+            "example": "He completed the task joylessly and in silence."
+          }
+        ]
+      },
+      {
+        "id": "b3l4-v02",
+        "base": "company",
+        "verb": [
+          {
+            "en": "accompany",
+            "zh": "陪伴；伴隨；為……伴奏",
+            "example": "I will accompany you to the train station."
+          }
+        ],
+        "noun": [
+          {
+            "en": "company",
+            "zh": "公司；陪伴；同伴",
+            "example": "She enjoys the company of her close friends."
+          },
+          {
+            "en": "companion",
+            "zh": "同伴；伴侶；陪伴者",
+            "example": "The dog became his faithful traveling companion."
+          },
+          {
+            "en": "companionship",
+            "zh": "友誼；陪伴；同伴關係",
+            "example": "Many older people value companionship and conversation."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l4-v03",
+        "base": "essence",
+        "verb": [
+          {
+            "en": "essentialize",
+            "zh": "把……本質化；歸納為固定本質（專業用語）",
+            "example": "We should not essentialize an entire culture from one example."
+          }
+        ],
+        "noun": [
+          {
+            "en": "essence",
+            "zh": "本質；精髓；香精",
+            "example": "Trust is the essence of a strong friendship."
+          }
+        ],
+        "adj": [
+          {
+            "en": "essential",
+            "zh": "必要的；本質的；基本的",
+            "example": "Clean water is essential for good health."
+          }
+        ],
+        "adv": [
+          {
+            "en": "essentially",
+            "zh": "本質上；基本上；大體而言",
+            "example": "The two plans are essentially the same."
+          }
+        ]
+      },
+      {
+        "id": "b3l4-v04",
+        "base": "concept",
+        "verb": [
+          {
+            "en": "conceptualize",
+            "zh": "使概念化；構想",
+            "example": "The architect conceptualized the building as an open public space."
+          }
+        ],
+        "noun": [
+          {
+            "en": "concept",
+            "zh": "概念；觀念；構想",
+            "example": "The teacher explained the concept with a simple example."
+          },
+          {
+            "en": "conception",
+            "zh": "觀念；構想；懷孕",
+            "example": "Our conception of success changes as we grow older."
+          },
+          {
+            "en": "conceptualization",
+            "zh": "概念化；構想方式",
+            "example": "The diagram provides a clear conceptualization of the system."
+          }
+        ],
+        "adj": [
+          {
+            "en": "conceptual",
+            "zh": "概念的；觀念上的",
+            "example": "The course begins with a conceptual overview of the subject."
+          },
+          {
+            "en": "conceptive",
+            "zh": "構思的；形成概念的（少見）",
+            "example": "The activity develops students' conceptive abilities."
+          }
+        ],
+        "adv": [
+          {
+            "en": "conceptually",
+            "zh": "概念上；在觀念上",
+            "example": "The two theories are conceptually different."
+          },
+          {
+            "en": "conceptively",
+            "zh": "以構思方式；概念形成地（少見）",
+            "example": "The problem was approached conceptively before calculations began."
+          }
+        ]
+      },
+      {
+        "id": "b3l4-v05",
+        "base": "mourn",
+        "verb": [
+          {
+            "en": "mourn",
+            "zh": "哀悼；為……感到悲痛",
+            "example": "The nation mourned the loss of a respected leader."
+          }
+        ],
+        "noun": [
+          {
+            "en": "mourning",
+            "zh": "哀悼；服喪",
+            "example": "The family observed a period of mourning."
+          }
+        ],
+        "adj": [
+          {
+            "en": "mournful",
+            "zh": "悲傷的；哀痛的",
+            "example": "A mournful song played at the memorial service."
+          },
+          {
+            "en": "mournless",
+            "zh": "沒有哀悼的；無悲傷的（罕見）",
+            "example": "The story imagines a mournless world without loss."
+          }
+        ],
+        "adv": [
+          {
+            "en": "mournfully",
+            "zh": "悲傷地；哀痛地",
+            "example": "The violin played mournfully in the final scene."
+          },
+          {
+            "en": "mournlessly",
+            "zh": "毫無哀悼地（極罕見）",
+            "example": "The characters moved on mournlessly in the strange tale."
+          }
+        ]
+      },
+      {
+        "id": "b3l4-v06",
+        "base": "sorrow",
+        "verb": [],
+        "noun": [
+          {
+            "en": "sorrow",
+            "zh": "悲傷；悲痛；憾事",
+            "example": "She felt deep sorrow after saying goodbye."
+          }
+        ],
+        "adj": [
+          {
+            "en": "sorrowful",
+            "zh": "悲傷的；悲痛的",
+            "example": "He gave us a sorrowful look before leaving."
+          }
+        ],
+        "adv": [
+          {
+            "en": "sorrowfully",
+            "zh": "悲傷地；悲痛地",
+            "example": "She sorrowfully accepted that the journey was over."
+          }
+        ]
+      },
+      {
+        "id": "b3l4-v07",
+        "base": "occasion",
+        "verb": [],
+        "noun": [
+          {
+            "en": "occasion",
+            "zh": "場合；時機；特別事件",
+            "example": "We bought a cake for the special occasion."
+          }
+        ],
+        "adj": [
+          {
+            "en": "occasional",
+            "zh": "偶爾的；不定期的",
+            "example": "There may be occasional delays during construction."
+          }
+        ],
+        "adv": [
+          {
+            "en": "occasionally",
+            "zh": "偶爾；有時",
+            "example": "We occasionally meet for lunch after work."
+          }
+        ]
+      },
+      {
+        "id": "b3l4-v08",
+        "base": "unite",
+        "verb": [
+          {
+            "en": "unite",
+            "zh": "聯合；團結；使結合",
+            "example": "The shared goal united the entire community."
+          },
+          {
+            "en": "reunite",
+            "zh": "使重聚；再次團結",
+            "example": "The event reunited friends who had not met for years."
+          }
+        ],
+        "noun": [
+          {
+            "en": "union",
+            "zh": "聯合；工會；婚姻",
+            "example": "The workers formed a union to protect their rights."
+          },
+          {
+            "en": "reunion",
+            "zh": "重聚；團聚；同學會",
+            "example": "Our family reunion takes place every summer."
+          }
+        ],
+        "adj": [
+          {
+            "en": "united",
+            "zh": "團結的；聯合的",
+            "example": "The team remained united during the crisis."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l4-v09",
+        "base": "anticipate",
+        "verb": [
+          {
+            "en": "anticipate",
+            "zh": "預期；預料；期待",
+            "example": "We anticipate a large crowd at the festival."
+          }
+        ],
+        "noun": [
+          {
+            "en": "anticipation",
+            "zh": "期待；預期；預料",
+            "example": "The children waited in eager anticipation."
+          }
+        ],
+        "adj": [
+          {
+            "en": "anticipatory",
+            "zh": "預期的；預先準備的",
+            "example": "The hospital took anticipatory measures before the storm."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l4-v10",
+        "base": "arrive",
+        "verb": [
+          {
+            "en": "arrive",
+            "zh": "到達；抵達；來臨",
+            "example": "The train will arrive at noon."
+          }
+        ],
+        "noun": [
+          {
+            "en": "arrival",
+            "zh": "到達；抵達者；新生兒",
+            "example": "We celebrated the arrival of the new baby."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l4-v11",
+        "base": "decorate",
+        "verb": [
+          {
+            "en": "decorate",
+            "zh": "裝飾；布置；授勳",
+            "example": "The children decorated the classroom with paper flowers."
+          }
+        ],
+        "noun": [
+          {
+            "en": "decoration",
+            "zh": "裝飾；裝飾品；勳章",
+            "example": "The handmade decoration hung above the door."
+          }
+        ],
+        "adj": [
+          {
+            "en": "decorative",
+            "zh": "裝飾性的；作裝飾用的",
+            "example": "The bowl is decorative rather than practical."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l4-v12",
+        "base": "prefer",
+        "verb": [
+          {
+            "en": "prefer",
+            "zh": "較喜歡；偏好",
+            "example": "I prefer tea to coffee in the morning."
+          }
+        ],
+        "noun": [
+          {
+            "en": "preference",
+            "zh": "偏好；優先選擇",
+            "example": "Please tell us your seating preference."
+          }
+        ],
+        "adj": [
+          {
+            "en": "preferable",
+            "zh": "較好的；更可取的",
+            "example": "A quiet room would be preferable for the meeting."
+          },
+          {
+            "en": "preferred",
+            "zh": "較受喜愛的；首選的",
+            "example": "Online payment is the preferred method for many customers."
+          }
+        ],
+        "adv": [
+          {
+            "en": "preferably",
+            "zh": "最好；更適宜地",
+            "example": "Please submit the form today, preferably before noon."
+          }
+        ]
+      },
+      {
+        "id": "b3l4-v13",
+        "base": "receive",
+        "verb": [
+          {
+            "en": "receive",
+            "zh": "收到；接受；接待",
+            "example": "Did you receive my email yesterday?"
+          }
+        ],
+        "noun": [
+          {
+            "en": "reception",
+            "zh": "接待；接收；歡迎會",
+            "example": "A small reception was held after the ceremony."
+          },
+          {
+            "en": "receptionist",
+            "zh": "接待員；櫃檯人員",
+            "example": "The receptionist helped me make an appointment."
+          }
+        ],
+        "adj": [
+          {
+            "en": "receptive",
+            "zh": "樂於接受的；善於接納的",
+            "example": "The manager was receptive to our suggestions."
+          }
+        ],
+        "adv": [
+          {
+            "en": "receptively",
+            "zh": "樂於接受地；接納地",
+            "example": "The audience listened receptively to the new proposal."
+          }
+        ]
+      },
+      {
+        "id": "b3l4-v14",
+        "base": "feast",
+        "verb": [
+          {
+            "en": "feast",
+            "zh": "盡情享用；宴請；使大飽眼福",
+            "example": "We feasted on fresh seafood by the harbor."
+          }
+        ],
+        "noun": [
+          {
+            "en": "feast",
+            "zh": "盛宴；宴會；大餐",
+            "example": "The family prepared a feast for the holiday."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l4-v15",
+        "base": "form",
+        "verb": [
+          {
+            "en": "form",
+            "zh": "形成；組成；建立",
+            "example": "Clouds began to form over the mountains."
+          },
+          {
+            "en": "conform",
+            "zh": "遵守；符合；順應",
+            "example": "All products must conform to safety standards."
+          },
+          {
+            "en": "deform",
+            "zh": "使變形；使畸形",
+            "example": "Too much heat can deform the plastic."
+          },
+          {
+            "en": "inform",
+            "zh": "通知；告知；使了解",
+            "example": "Please inform us of any change to your address."
+          },
+          {
+            "en": "reform",
+            "zh": "改革；改造；改過自新",
+            "example": "The government plans to reform the education system."
+          },
+          {
+            "en": "transform",
+            "zh": "使轉變；改造；轉換",
+            "example": "The renovation transformed the old building."
+          }
+        ],
+        "noun": [
+          {
+            "en": "form",
+            "zh": "形式；表格；形狀",
+            "example": "Please complete this form in black ink."
+          },
+          {
+            "en": "formation",
+            "zh": "形成；組成；隊形",
+            "example": "Scientists studied the formation of the island."
+          },
+          {
+            "en": "conformation",
+            "zh": "構造；形態；構形",
+            "example": "The dog's body conformation suits long-distance running."
+          },
+          {
+            "en": "information",
+            "zh": "資訊；消息；資料",
+            "example": "The website provides useful travel information."
+          },
+          {
+            "en": "reform",
+            "zh": "改革；改良",
+            "example": "The new law introduced major tax reform."
+          },
+          {
+            "en": "transformation",
+            "zh": "轉變；改造；變化",
+            "example": "The neighborhood has undergone a remarkable transformation."
+          },
+          {
+            "en": "transformer",
+            "zh": "變壓器；促成轉變的人或事物",
+            "example": "The transformer reduces the voltage for household use."
+          }
+        ],
+        "adj": [
+          {
+            "en": "formative",
+            "zh": "形成中的；有助成長的",
+            "example": "Travel was a formative experience in her youth."
+          },
+          {
+            "en": "formal",
+            "zh": "正式的；正規的；禮節性的",
+            "example": "A formal announcement will be made tomorrow."
+          },
+          {
+            "en": "informal",
+            "zh": "非正式的；隨意的",
+            "example": "We had an informal discussion over lunch."
+          },
+          {
+            "en": "conformative",
+            "zh": "遵從的；符合規範的（少見）",
+            "example": "The design follows a conformative approach to industry rules."
+          },
+          {
+            "en": "informative",
+            "zh": "提供資訊的；增進知識的",
+            "example": "The guide gave an informative talk about local history."
+          },
+          {
+            "en": "informed",
+            "zh": "消息靈通的；有根據的",
+            "example": "Voters need reliable facts to make an informed choice."
+          },
+          {
+            "en": "transformative",
+            "zh": "帶來重大轉變的；變革性的",
+            "example": "Education can be a transformative force in society."
+          }
+        ],
+        "adv": [
+          {
+            "en": "formatively",
+            "zh": "在形成或成長過程中（少見）",
+            "example": "The experience influenced her formatively during childhood."
+          },
+          {
+            "en": "formally",
+            "zh": "正式地；按照規定地",
+            "example": "The agreement was formally approved on Monday."
+          },
+          {
+            "en": "informally",
+            "zh": "非正式地；隨意地",
+            "example": "The group meets informally once a month."
+          }
+        ]
+      },
+      {
+        "id": "b3l4-v16",
+        "base": "resemble",
+        "verb": [
+          {
+            "en": "resemble",
+            "zh": "像；與……相似",
+            "example": "The new building resembles a sailing ship."
+          }
+        ],
+        "noun": [
+          {
+            "en": "resemblance",
+            "zh": "相似；相像之處",
+            "example": "There is a strong resemblance between the two sisters."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l4-v17",
+        "base": "participate",
+        "verb": [
+          {
+            "en": "participate",
+            "zh": "參加；參與",
+            "example": "More than fifty students participated in the competition."
+          }
+        ],
+        "noun": [
+          {
+            "en": "participation",
+            "zh": "參加；參與",
+            "example": "Active participation improves the learning experience."
+          },
+          {
+            "en": "participant",
+            "zh": "參與者；參加者",
+            "example": "Each participant received a certificate."
+          }
+        ],
+        "adj": [],
+        "adv": [
+          {
+            "en": "participatively",
+            "zh": "以參與方式；共同參與地（少見）",
+            "example": "The plan was developed participatively with local residents."
+          }
+        ]
+      },
+      {
+        "id": "b3l4-v18",
+        "base": "mock",
+        "verb": [
+          {
+            "en": "mock",
+            "zh": "嘲笑；模仿；仿製",
+            "example": "It is unkind to mock someone for making a mistake."
+          }
+        ],
+        "noun": [
+          {
+            "en": "mockery",
+            "zh": "嘲笑；拙劣仿製；笑柄",
+            "example": "His unfair trial was a mockery of justice."
+          }
+        ],
+        "adj": [
+          {
+            "en": "mock",
+            "zh": "模擬的；仿製的；假的",
+            "example": "Students took a mock exam before the final test."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l4-v19",
+        "base": "recognize",
+        "verb": [
+          {
+            "en": "recognize",
+            "zh": "認出；承認；認可",
+            "example": "I recognized her voice immediately."
+          }
+        ],
+        "noun": [
+          {
+            "en": "recognition",
+            "zh": "辨認；承認；認可",
+            "example": "The scientist received international recognition for her work."
+          }
+        ],
+        "adj": [
+          {
+            "en": "recognizable",
+            "zh": "可辨認的；容易認出的",
+            "example": "The mountain is recognizable by its unusual shape."
+          },
+          {
+            "en": "unrecognizable",
+            "zh": "無法辨認的；面目全非的",
+            "example": "The town was almost unrecognizable after the rebuilding."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l4-v20",
+        "base": "cycle",
+        "verb": [
+          {
+            "en": "cycle",
+            "zh": "騎自行車；循環；輪流",
+            "example": "She cycles to work whenever the weather is good."
+          },
+          {
+            "en": "recycle",
+            "zh": "回收；再利用",
+            "example": "Please recycle glass bottles and metal cans."
+          }
+        ],
+        "noun": [
+          {
+            "en": "cycle",
+            "zh": "循環；週期；自行車",
+            "example": "The water cycle is powered by the sun."
+          }
+        ],
+        "adj": [
+          {
+            "en": "cycled",
+            "zh": "以自行車運送的；經循環處理的",
+            "example": "The cycled materials passed through the machine twice."
+          },
+          {
+            "en": "recycled",
+            "zh": "回收再利用的；再生的",
+            "example": "The bag is made from recycled plastic."
+          },
+          {
+            "en": "recyclable",
+            "zh": "可回收的；可再利用的",
+            "example": "Most of the packaging is recyclable."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l4-v21",
+        "base": "annual",
+        "verb": [
+          {
+            "en": "annualize",
+            "zh": "換算為年率；按年計算",
+            "example": "The analyst annualized the quarterly growth rate."
+          }
+        ],
+        "noun": [],
+        "adj": [
+          {
+            "en": "annual",
+            "zh": "每年的；年度的；一年生的",
+            "example": "The school holds an annual music festival."
+          }
+        ],
+        "adv": [
+          {
+            "en": "annually",
+            "zh": "每年；一年一次",
+            "example": "The safety equipment is inspected annually."
+          }
+        ]
+      },
+      {
+        "id": "b3l4-v22",
+        "base": "wait",
+        "verb": [
+          {
+            "en": "wait",
+            "zh": "等待；等候",
+            "example": "Please wait here until your name is called."
+          },
+          {
+            "en": "await",
+            "zh": "等候；期待；即將發生於",
+            "example": "A difficult decision awaits the new manager."
+          }
+        ],
+        "noun": [
+          {
+            "en": "waiting",
+            "zh": "等待；等候時間",
+            "example": "After an hour of waiting, the bus finally arrived."
+          },
+          {
+            "en": "waiter",
+            "zh": "男服務生；侍者",
+            "example": "The waiter brought us the menu."
+          },
+          {
+            "en": "waitress",
+            "zh": "女服務生；女侍者",
+            "example": "The waitress recommended the soup of the day."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l4-v23",
+        "base": "escape",
+        "verb": [
+          {
+            "en": "escape",
+            "zh": "逃脫；逃避；漏出",
+            "example": "The bird escaped through an open window."
+          }
+        ],
+        "noun": [
+          {
+            "en": "escape",
+            "zh": "逃脫；逃避；逃生方法",
+            "example": "The hikers had a narrow escape from the falling rocks."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      }
+    ]
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": []
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}
