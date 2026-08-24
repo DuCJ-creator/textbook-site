@@ -864,15 +864,1722 @@
     ]
   },
   "phrases": {
-    "items": []
+    "items": [
+      {
+        "id": "b3l4-p001",
+        "phrase": "think about",
+        "pos": "ph.",
+        "zh": "思考；考慮",
+        "example_en": "Think about your answer before speaking.",
+        "example_zh": "說話前先想想你的答案。"
+      },
+      {
+        "id": "b3l4-p002",
+        "phrase": "a deceased loved one",
+        "pos": "ph.",
+        "zh": "已故的摯愛／親人",
+        "example_en": "The photo reminded her of a deceased loved one.",
+        "example_zh": "這張照片使她想起一位已故的摯愛。"
+      },
+      {
+        "id": "b3l4-p003",
+        "phrase": "a holiday celebration",
+        "pos": "ph.",
+        "zh": "節慶活動",
+        "example_en": "The town held a lively holiday celebration.",
+        "example_zh": "這座城鎮舉辦了一場熱鬧的節慶活動。"
+      },
+      {
+        "id": "b3l4-p004",
+        "phrase": "scare you to death",
+        "pos": "ph.",
+        "zh": "把你嚇得要死",
+        "example_en": "That sudden scream may scare you to death.",
+        "example_zh": "那聲突如其來的尖叫可能會把你嚇死。"
+      },
+      {
+        "id": "b3l4-p005",
+        "phrase": "make one’s hair stand on end",
+        "pos": "ph.",
+        "zh": "使某人毛骨悚然",
+        "example_en": "The strange sound made my hair stand on end.",
+        "example_zh": "那個怪聲使我毛骨悚然。"
+      },
+      {
+        "id": "b3l4-p006",
+        "phrase": "essential concept behind",
+        "pos": "ph.",
+        "zh": "背後的核心概念",
+        "example_en": "Respect is the essential concept behind the custom.",
+        "example_zh": "尊重是這項習俗背後的核心概念。"
+      },
+      {
+        "id": "b3l4-p007",
+        "phrase": "rather than",
+        "pos": "ph.",
+        "zh": "而不是",
+        "example_en": "She chose to walk rather than take a taxi.",
+        "example_zh": "她選擇走路而不是搭計程車。"
+      },
+      {
+        "id": "b3l4-p008",
+        "phrase": "on a joyous occasion",
+        "pos": "ph.",
+        "zh": "在喜慶場合",
+        "example_en": "People often wear bright colors on a joyous occasion.",
+        "example_zh": "人們常在喜慶場合穿鮮豔的衣服。"
+      },
+      {
+        "id": "b3l4-p009",
+        "phrase": "gather for a reunion",
+        "pos": "ph.",
+        "zh": "相聚團圓",
+        "example_en": "The whole family gathered for a reunion.",
+        "example_zh": "全家人相聚團圓。"
+      },
+      {
+        "id": "b3l4-p010",
+        "phrase": "in honor of",
+        "pos": "ph.",
+        "zh": "為了向……致敬；為紀念",
+        "example_en": "A dinner was held in honor of the guests.",
+        "example_zh": "人們舉辦晚宴向賓客致敬。"
+      },
+      {
+        "id": "b3l4-p011",
+        "phrase": "move on to",
+        "pos": "ph.",
+        "zh": "繼續進行；轉往",
+        "example_en": "After lunch, we moved on to the next activity.",
+        "example_zh": "午餐後，我們繼續進行下一項活動。"
+      },
+      {
+        "id": "b3l4-p012",
+        "phrase": "the after life",
+        "pos": "ph.",
+        "zh": "來世；死後的世界",
+        "example_en": "Some cultures believe in the afterlife.",
+        "example_zh": "有些文化相信死後的世界。"
+      },
+      {
+        "id": "b3l4-p013",
+        "phrase": "break up with",
+        "pos": "ph.",
+        "zh": "與……分手",
+        "example_en": "He decided to break up with his girlfriend.",
+        "example_zh": "他決定和女朋友分手。"
+      },
+      {
+        "id": "b3l4-p014",
+        "phrase": "have one’s fortune told",
+        "pos": "ph.",
+        "zh": "請人算命",
+        "example_en": "She had her fortune told at the night market.",
+        "example_zh": "她在夜市請人算命。"
+      },
+      {
+        "id": "b3l4-p015",
+        "phrase": "on New Year’s Eve",
+        "pos": "ph.",
+        "zh": "在除夕／跨年夜",
+        "example_en": "We watched fireworks on New Year’s Eve.",
+        "example_zh": "我們在跨年夜看煙火。"
+      },
+      {
+        "id": "b3l4-p016",
+        "phrase": "a grand celebration",
+        "pos": "ph.",
+        "zh": "盛大的慶典",
+        "example_en": "The victory led to a grand celebration.",
+        "example_zh": "這場勝利帶來了一場盛大的慶典。"
+      },
+      {
+        "id": "b3l4-p017",
+        "phrase": "instead of",
+        "pos": "ph.",
+        "zh": "代替；而不是",
+        "example_en": "Use fresh fruit instead of candy.",
+        "example_zh": "用新鮮水果代替糖果。"
+      },
+      {
+        "id": "b3l4-p018",
+        "phrase": "free entry",
+        "pos": "ph.",
+        "zh": "免費入場",
+        "example_en": "The museum offers free entry on Sundays.",
+        "example_zh": "這座博物館星期日可免費入場。"
+      },
+      {
+        "id": "b3l4-p019",
+        "phrase": "leave the past behind",
+        "pos": "ph.",
+        "zh": "放下過去",
+        "example_en": "It is time to leave the past behind.",
+        "example_zh": "是時候放下過去了。"
+      },
+      {
+        "id": "b3l4-p020",
+        "phrase": "prepare in advance",
+        "pos": "ph.",
+        "zh": "事先準備",
+        "example_en": "We prepared the food in advance.",
+        "example_zh": "我們事先準備好了食物。"
+      },
+      {
+        "id": "b3l4-p021",
+        "phrase": "a tiring day",
+        "pos": "ph.",
+        "zh": "疲憊的一天",
+        "example_en": "I took a hot bath after a tiring day.",
+        "example_zh": "疲憊的一天過後，我泡了熱水澡。"
+      },
+      {
+        "id": "b3l4-p022",
+        "phrase": "a hair salon",
+        "pos": "ph.",
+        "zh": "髮廊；美髮店",
+        "example_en": "She works at a hair salon downtown.",
+        "example_zh": "她在市中心的一家髮廊工作。"
+      },
+      {
+        "id": "b3l4-p023",
+        "phrase": "be thought to have done",
+        "pos": "ph.",
+        "zh": "被認為已經做了……",
+        "example_en": "The custom is thought to have begun centuries ago.",
+        "example_zh": "這項習俗被認為始於數百年前。"
+      },
+      {
+        "id": "b3l4-p024",
+        "phrase": "centuries ago",
+        "pos": "ph.",
+        "zh": "數百年前",
+        "example_en": "The temple was built centuries ago.",
+        "example_zh": "這座寺廟建於數百年前。"
+      },
+      {
+        "id": "b3l4-p025",
+        "phrase": "the main focus",
+        "pos": "ph.",
+        "zh": "主要焦點",
+        "example_en": "Family is the main focus of the festival.",
+        "example_zh": "家庭是這個節日的主要焦點。"
+      },
+      {
+        "id": "b3l4-p026",
+        "phrase": "purchase necessary items",
+        "pos": "ph.",
+        "zh": "購買必需品",
+        "example_en": "We purchased the necessary items before the storm.",
+        "example_zh": "我們在暴風雨前買好了必需品。"
+      },
+      {
+        "id": "b3l4-p027",
+        "phrase": "bear the name of",
+        "pos": "ph.",
+        "zh": "以……為名",
+        "example_en": "The school bears the name of its founder.",
+        "example_zh": "這所學校以創辦人的名字命名。"
+      },
+      {
+        "id": "b3l4-p028",
+        "phrase": "tidy and restore",
+        "pos": "ph.",
+        "zh": "整理並修復",
+        "example_en": "Volunteers helped tidy and restore the old house.",
+        "example_zh": "志工協助整理並修復這棟老屋。"
+      },
+      {
+        "id": "b3l4-p029",
+        "phrase": "spread throughout the world",
+        "pos": "ph.",
+        "zh": "傳遍全世界",
+        "example_en": "The tradition spread throughout the world.",
+        "example_zh": "這項傳統傳遍了全世界。"
+      },
+      {
+        "id": "b3l4-p030",
+        "phrase": "have a profound impact on",
+        "pos": "ph.",
+        "zh": "對……有深遠影響",
+        "example_en": "Technology has a profound impact on our lives.",
+        "example_zh": "科技對我們的生活有深遠影響。"
+      },
+      {
+        "id": "b3l4-p031",
+        "phrase": "throughout history",
+        "pos": "ph.",
+        "zh": "縱觀歷史；在歷史上",
+        "example_en": "People have celebrated harvests throughout history.",
+        "example_zh": "縱觀歷史，人們一直會慶祝豐收。"
+      },
+      {
+        "id": "b3l4-p032",
+        "phrase": "do outdoor activities",
+        "pos": "ph.",
+        "zh": "從事戶外活動",
+        "example_en": "We often do outdoor activities on weekends.",
+        "example_zh": "我們週末常從事戶外活動。"
+      },
+      {
+        "id": "b3l4-p033",
+        "phrase": "express one’s gratitude to",
+        "pos": "ph.",
+        "zh": "向……表達感謝",
+        "example_en": "I wrote a card to express my gratitude to my teacher.",
+        "example_zh": "我寫卡片向老師表達感謝。"
+      },
+      {
+        "id": "b3l4-p034",
+        "phrase": "a bouquet of carnations",
+        "pos": "ph.",
+        "zh": "一束康乃馨",
+        "example_en": "He gave his mother a bouquet of carnations.",
+        "example_zh": "他送給母親一束康乃馨。"
+      },
+      {
+        "id": "b3l4-p035",
+        "phrase": "be eager to",
+        "pos": "ph.",
+        "zh": "渴望；迫不及待想",
+        "example_en": "The children were eager to open their gifts.",
+        "example_zh": "孩子們迫不及待想打開禮物。"
+      },
+      {
+        "id": "b3l4-p036",
+        "phrase": "step out of one’s comfort zone",
+        "pos": "ph.",
+        "zh": "走出舒適圈",
+        "example_en": "Traveling alone helped her step out of her comfort zone.",
+        "example_zh": "獨自旅行幫助她走出舒適圈。"
+      },
+      {
+        "id": "b3l4-p037",
+        "phrase": "an animated film",
+        "pos": "ph.",
+        "zh": "動畫電影",
+        "example_en": "We watched an animated film after dinner.",
+        "example_zh": "晚餐後我們看了一部動畫電影。"
+      },
+      {
+        "id": "b3l4-p038",
+        "phrase": "a sci-fi movie",
+        "pos": "ph.",
+        "zh": "科幻電影",
+        "example_en": "That sci-fi movie is set on Mars.",
+        "example_zh": "那部科幻電影以火星為背景。"
+      },
+      {
+        "id": "b3l4-p039",
+        "phrase": "place a charm",
+        "pos": "ph.",
+        "zh": "放置護身符",
+        "example_en": "They placed a charm above the door.",
+        "example_zh": "他們在門上方放了一個護身符。"
+      },
+      {
+        "id": "b3l4-p040",
+        "phrase": "come to the spot",
+        "pos": "ph.",
+        "zh": "來到現場／地點",
+        "example_en": "Many visitors came to the spot before sunset.",
+        "example_zh": "許多遊客在日落前來到這個地點。"
+      },
+      {
+        "id": "b3l4-p041",
+        "phrase": "as well as",
+        "pos": "ph.",
+        "zh": "以及；和",
+        "example_en": "The event attracted locals as well as tourists.",
+        "example_zh": "這項活動吸引了當地人以及遊客。"
+      },
+      {
+        "id": "b3l4-p042",
+        "phrase": "have a preference for",
+        "pos": "ph.",
+        "zh": "偏好……",
+        "example_en": "My sister has a preference for sweet food.",
+        "example_zh": "我妹妹偏好甜食。"
+      },
+      {
+        "id": "b3l4-p043",
+        "phrase": "a warm reception for",
+        "pos": "ph.",
+        "zh": "對……的熱烈歡迎",
+        "example_en": "The town prepared a warm reception for the team.",
+        "example_zh": "小鎮為這支隊伍準備了熱烈的歡迎。"
+      },
+      {
+        "id": "b3l4-p044",
+        "phrase": "head to",
+        "pos": "ph.",
+        "zh": "前往",
+        "example_en": "We headed to the station after breakfast.",
+        "example_zh": "早餐後我們前往車站。"
+      },
+      {
+        "id": "b3l4-p045",
+        "phrase": "till dawn",
+        "pos": "ph.",
+        "zh": "直到黎明",
+        "example_en": "They danced till dawn.",
+        "example_zh": "他們跳舞直到黎明。"
+      },
+      {
+        "id": "b3l4-p046",
+        "phrase": "transform…into",
+        "pos": "ph.",
+        "zh": "把……轉變成……",
+        "example_en": "Lights transformed the square into a magical place.",
+        "example_zh": "燈光把廣場變成了一個夢幻之地。"
+      },
+      {
+        "id": "b3l4-p047",
+        "phrase": "a venue of joy and celebration",
+        "pos": "ph.",
+        "zh": "歡樂與慶祝的場所",
+        "example_en": "The hall became a venue of joy and celebration.",
+        "example_zh": "大廳成了歡樂與慶祝的場所。"
+      },
+      {
+        "id": "b3l4-p048",
+        "phrase": "for the entire night",
+        "pos": "ph.",
+        "zh": "整整一夜",
+        "example_en": "Music played for the entire night.",
+        "example_zh": "音樂播放了整整一夜。"
+      },
+      {
+        "id": "b3l4-p049",
+        "phrase": "start a new chapter in one’s life",
+        "pos": "ph.",
+        "zh": "展開人生新篇章",
+        "example_en": "Graduation helped her start a new chapter in her life.",
+        "example_zh": "畢業讓她展開人生的新篇章。"
+      },
+      {
+        "id": "b3l4-p050",
+        "phrase": "a ghost story",
+        "pos": "ph.",
+        "zh": "鬼故事",
+        "example_en": "Grandpa told us a ghost story.",
+        "example_zh": "爺爺講了一個鬼故事給我們聽。"
+      },
+      {
+        "id": "b3l4-p051",
+        "phrase": "with eyes wide open",
+        "pos": "ph.",
+        "zh": "睜大眼睛地",
+        "example_en": "The child listened with eyes wide open.",
+        "example_zh": "那孩子睜大眼睛聽著。"
+      },
+      {
+        "id": "b3l4-p052",
+        "phrase": "Internet celebrity",
+        "pos": "ph.",
+        "zh": "網路名人",
+        "example_en": "The Internet celebrity shared the video online.",
+        "example_zh": "那位網路名人在網路上分享了影片。"
+      },
+      {
+        "id": "b3l4-p053",
+        "phrase": "a stray dog",
+        "pos": "ph.",
+        "zh": "流浪狗",
+        "example_en": "They found a stray dog near the park.",
+        "example_zh": "他們在公園附近發現一隻流浪狗。"
+      },
+      {
+        "id": "b3l4-p054",
+        "phrase": "speak in a cheerful voice",
+        "pos": "ph.",
+        "zh": "用愉快的語氣說話",
+        "example_en": "She spoke in a cheerful voice to welcome us.",
+        "example_zh": "她用愉快的語氣歡迎我們。"
+      },
+      {
+        "id": "b3l4-p055",
+        "phrase": "look forward to",
+        "pos": "ph.",
+        "zh": "期待",
+        "example_en": "I look forward to seeing you again.",
+        "example_zh": "我期待再次見到你。"
+      },
+      {
+        "id": "b3l4-p056",
+        "phrase": "first time going abroad",
+        "pos": "ph.",
+        "zh": "第一次出國",
+        "example_en": "This is my first time going abroad.",
+        "example_zh": "這是我第一次出國。"
+      },
+      {
+        "id": "b3l4-p057",
+        "phrase": "dress up in costumes",
+        "pos": "ph.",
+        "zh": "穿上戲服／變裝服",
+        "example_en": "Children dressed up in costumes for the parade.",
+        "example_zh": "孩子們穿上變裝服參加遊行。"
+      },
+      {
+        "id": "b3l4-p058",
+        "phrase": "participate in",
+        "pos": "ph.",
+        "zh": "參加",
+        "example_en": "More than fifty students participated in the event.",
+        "example_zh": "超過五十名學生參加了這項活動。"
+      },
+      {
+        "id": "b3l4-p059",
+        "phrase": "a street parade",
+        "pos": "ph.",
+        "zh": "街頭遊行",
+        "example_en": "A colorful street parade passed through town.",
+        "example_zh": "一場繽紛的街頭遊行穿過城鎮。"
+      },
+      {
+        "id": "b3l4-p060",
+        "phrase": "an inevitable part of",
+        "pos": "ph.",
+        "zh": "……不可避免的一部分",
+        "example_en": "Change is an inevitable part of life.",
+        "example_zh": "改變是人生不可避免的一部分。"
+      },
+      {
+        "id": "b3l4-p061",
+        "phrase": "the natural cycle",
+        "pos": "ph.",
+        "zh": "自然循環",
+        "example_en": "Death is part of the natural cycle.",
+        "example_zh": "死亡是自然循環的一部分。"
+      },
+      {
+        "id": "b3l4-p062",
+        "phrase": "would rather…than",
+        "pos": "ph.",
+        "zh": "寧願……也不願……",
+        "example_en": "I would rather stay home than go out in the rain.",
+        "example_zh": "我寧願待在家，也不願冒雨外出。"
+      },
+      {
+        "id": "b3l4-p063",
+        "phrase": "the cycle of life",
+        "pos": "ph.",
+        "zh": "生命循環",
+        "example_en": "The story explores the cycle of life.",
+        "example_zh": "這個故事探討生命循環。"
+      },
+      {
+        "id": "b3l4-p064",
+        "phrase": "annual national event",
+        "pos": "ph.",
+        "zh": "一年一度的全國性活動",
+        "example_en": "The race is an annual national event.",
+        "example_zh": "這場賽事是一年一度的全國性活動。"
+      },
+      {
+        "id": "b3l4-p065",
+        "phrase": "hosts and guests",
+        "pos": "ph.",
+        "zh": "主人與賓客",
+        "example_en": "The hosts and guests raised their glasses.",
+        "example_zh": "主人與賓客一同舉杯。"
+      },
+      {
+        "id": "b3l4-p066",
+        "phrase": "a guest of honor",
+        "pos": "ph.",
+        "zh": "貴賓",
+        "example_en": "The scientist was the guest of honor.",
+        "example_zh": "那位科學家是特邀貴賓。"
+      },
+      {
+        "id": "b3l4-p067",
+        "phrase": "die out",
+        "pos": "ph.",
+        "zh": "滅絕；消失",
+        "example_en": "Many old customs may die out.",
+        "example_zh": "許多古老習俗可能會消失。"
+      },
+      {
+        "id": "b3l4-p068",
+        "phrase": "accept a fact of life",
+        "pos": "ph.",
+        "zh": "接受人生的事實",
+        "example_en": "We must learn to accept death as a fact of life.",
+        "example_zh": "我們必須學會接受死亡是人生的事實。"
+      },
+      {
+        "id": "b3l4-p069",
+        "phrase": "a black tuxedo",
+        "pos": "ph.",
+        "zh": "黑色晚禮服",
+        "example_en": "He wore a black tuxedo to the wedding.",
+        "example_zh": "他穿著黑色晚禮服參加婚禮。"
+      },
+      {
+        "id": "b3l4-p070",
+        "phrase": "make a toast to every guest",
+        "pos": "ph.",
+        "zh": "向每位賓客敬酒",
+        "example_en": "The host made a toast to every guest.",
+        "example_zh": "主人向每位賓客敬酒。"
+      },
+      {
+        "id": "b3l4-p071",
+        "phrase": "do the housework",
+        "pos": "ph.",
+        "zh": "做家事",
+        "example_en": "We share the responsibility of doing the housework.",
+        "example_zh": "我們共同分擔做家事的責任。"
+      },
+      {
+        "id": "b3l4-p072",
+        "phrase": "run errands",
+        "pos": "ph.",
+        "zh": "跑腿辦事",
+        "example_en": "I spent the morning running errands.",
+        "example_zh": "我花了一早上跑腿辦事。"
+      },
+      {
+        "id": "b3l4-p073",
+        "phrase": "host a bilingual news podcast",
+        "pos": "ph.",
+        "zh": "主持雙語新聞播客",
+        "example_en": "She hosts a bilingual news podcast every week.",
+        "example_zh": "她每週主持一個雙語新聞播客。"
+      },
+      {
+        "id": "b3l4-p074",
+        "phrase": "housewarming party",
+        "pos": "ph.",
+        "zh": "喬遷派對",
+        "example_en": "They invited us to their housewarming party.",
+        "example_zh": "他們邀請我們參加喬遷派對。"
+      },
+      {
+        "id": "b3l4-p075",
+        "phrase": "can’t wait to do",
+        "pos": "ph.",
+        "zh": "迫不及待要做……",
+        "example_en": "I can’t wait to meet your family.",
+        "example_zh": "我迫不及待想見你的家人。"
+      },
+      {
+        "id": "b3l4-p076",
+        "phrase": "get a promotion and a pay raise",
+        "pos": "ph.",
+        "zh": "獲得升遷與加薪",
+        "example_en": "She got a promotion and a pay raise.",
+        "example_zh": "她獲得了升遷與加薪。"
+      },
+      {
+        "id": "b3l4-p077",
+        "phrase": "treat sb. to dinner",
+        "pos": "ph.",
+        "zh": "請某人吃晚餐",
+        "example_en": "Dad treated the whole family to dinner.",
+        "example_zh": "爸爸請全家人吃晚餐。"
+      },
+      {
+        "id": "b3l4-p078",
+        "phrase": "a fancy restaurant",
+        "pos": "ph.",
+        "zh": "高級餐廳",
+        "example_en": "They celebrated at a fancy restaurant.",
+        "example_zh": "他們在一家高級餐廳慶祝。"
+      },
+      {
+        "id": "b3l4-p079",
+        "phrase": "take a day off",
+        "pos": "ph.",
+        "zh": "請一天假；休假一天",
+        "example_en": "I took a day off to rest.",
+        "example_zh": "我請了一天假休息。"
+      },
+      {
+        "id": "b3l4-p080",
+        "phrase": "attend an award ceremony",
+        "pos": "ph.",
+        "zh": "參加頒獎典禮",
+        "example_en": "The actor attended an award ceremony.",
+        "example_zh": "那位演員參加了頒獎典禮。"
+      },
+      {
+        "id": "b3l4-p081",
+        "phrase": "dress up in a dark blue suit",
+        "pos": "ph.",
+        "zh": "穿上深藍色西裝",
+        "example_en": "He dressed up in a dark blue suit for the event.",
+        "example_zh": "他為了活動穿上深藍色西裝。"
+      },
+      {
+        "id": "b3l4-p082",
+        "phrase": "play board games",
+        "pos": "ph.",
+        "zh": "玩桌遊",
+        "example_en": "We played board games after dinner.",
+        "example_zh": "晚餐後我們玩桌遊。"
+      },
+      {
+        "id": "b3l4-p083",
+        "phrase": "attend a formal event",
+        "pos": "ph.",
+        "zh": "參加正式場合",
+        "example_en": "You should dress neatly when attending a formal event.",
+        "example_zh": "參加正式場合時應穿著整齊。"
+      },
+      {
+        "id": "b3l4-p084",
+        "phrase": "after all",
+        "pos": "ph.",
+        "zh": "畢竟",
+        "example_en": "He is only a child, after all.",
+        "example_zh": "畢竟，他只是一個孩子。"
+      },
+      {
+        "id": "b3l4-p085",
+        "phrase": "one’s top priority",
+        "pos": "ph.",
+        "zh": "某人的首要任務",
+        "example_en": "Customer safety is our top priority.",
+        "example_zh": "顧客安全是我們的首要任務。"
+      },
+      {
+        "id": "b3l4-p086",
+        "phrase": "now that",
+        "pos": "ph.",
+        "zh": "既然；由於現在",
+        "example_en": "Now that the rain has stopped, we can leave.",
+        "example_zh": "既然雨停了，我們可以出發了。"
+      },
+      {
+        "id": "b3l4-p087",
+        "phrase": "quit one’s job",
+        "pos": "ph.",
+        "zh": "辭職",
+        "example_en": "He quit his job to travel abroad.",
+        "example_zh": "他辭職去國外旅行。"
+      },
+      {
+        "id": "b3l4-p088",
+        "phrase": "apply for",
+        "pos": "ph.",
+        "zh": "申請",
+        "example_en": "She applied for a working visa.",
+        "example_zh": "她申請了工作簽證。"
+      },
+      {
+        "id": "b3l4-p089",
+        "phrase": "a working holiday program",
+        "pos": "ph.",
+        "zh": "打工度假計畫",
+        "example_en": "He joined a working holiday program in Australia.",
+        "example_zh": "他參加了澳洲的打工度假計畫。"
+      },
+      {
+        "id": "b3l4-p090",
+        "phrase": "get one’s attention",
+        "pos": "ph.",
+        "zh": "引起某人的注意",
+        "example_en": "The bright sign got my attention.",
+        "example_zh": "那面鮮豔的招牌引起了我的注意。"
+      },
+      {
+        "id": "b3l4-p091",
+        "phrase": "play tricks on",
+        "pos": "ph.",
+        "zh": "捉弄",
+        "example_en": "The children played tricks on each other.",
+        "example_zh": "孩子們互相捉弄。"
+      },
+      {
+        "id": "b3l4-p092",
+        "phrase": "make preparations for",
+        "pos": "ph.",
+        "zh": "為……做準備",
+        "example_en": "We made preparations for the coming festival.",
+        "example_zh": "我們為即將到來的節慶做準備。"
+      },
+      {
+        "id": "b3l4-p093",
+        "phrase": "a joyous event",
+        "pos": "ph.",
+        "zh": "喜事；歡樂的活動",
+        "example_en": "A wedding is usually a joyous event.",
+        "example_zh": "婚禮通常是一件喜事。"
+      },
+      {
+        "id": "b3l4-p094",
+        "phrase": "go for a walk",
+        "pos": "ph.",
+        "zh": "去散步",
+        "example_en": "Let’s go for a walk after dinner.",
+        "example_zh": "我們晚餐後去散步吧。"
+      },
+      {
+        "id": "b3l4-p095",
+        "phrase": "keep sb. company",
+        "pos": "ph.",
+        "zh": "陪伴某人",
+        "example_en": "I stayed home to keep Grandma company.",
+        "example_zh": "我待在家陪奶奶。"
+      },
+      {
+        "id": "b3l4-p096",
+        "phrase": "the essential difference between",
+        "pos": "ph.",
+        "zh": "……之間的本質差異",
+        "example_en": "What is the essential difference between the two customs?",
+        "example_zh": "這兩種習俗之間的本質差異是什麼？"
+      },
+      {
+        "id": "b3l4-p097",
+        "phrase": "be essential for",
+        "pos": "ph.",
+        "zh": "對……不可或缺",
+        "example_en": "Water is essential for life.",
+        "example_zh": "水對生命不可或缺。"
+      },
+      {
+        "id": "b3l4-p098",
+        "phrase": "the concept of",
+        "pos": "ph.",
+        "zh": "……的概念",
+        "example_en": "Children gradually learn the concept of time.",
+        "example_zh": "孩子逐漸學會時間的概念。"
+      },
+      {
+        "id": "b3l4-p099",
+        "phrase": "have no concept of",
+        "pos": "ph.",
+        "zh": "完全不了解……的概念",
+        "example_en": "The baby has no concept of danger.",
+        "example_zh": "這個嬰兒完全不了解危險的概念。"
+      },
+      {
+        "id": "b3l4-p100",
+        "phrase": "mourn the loss of",
+        "pos": "ph.",
+        "zh": "哀悼……的逝去",
+        "example_en": "The nation mourned the loss of its leader.",
+        "example_zh": "全國哀悼領袖的逝去。"
+      },
+      {
+        "id": "b3l4-p101",
+        "phrase": "mourn for sb.",
+        "pos": "ph.",
+        "zh": "為某人哀悼",
+        "example_en": "Many people gathered to mourn for the victims.",
+        "example_zh": "許多人聚集為罹難者哀悼。"
+      },
+      {
+        "id": "b3l4-p102",
+        "phrase": "pass away",
+        "pos": "ph.",
+        "zh": "過世",
+        "example_en": "Her grandfather passed away peacefully.",
+        "example_zh": "她的祖父安詳地過世了。"
+      },
+      {
+        "id": "b3l4-p103",
+        "phrase": "get…in order",
+        "pos": "ph.",
+        "zh": "把……整理妥當",
+        "example_en": "He got his papers in order before the trip.",
+        "example_zh": "他在旅行前把文件整理妥當。"
+      },
+      {
+        "id": "b3l4-p104",
+        "phrase": "one’s late father",
+        "pos": "ph.",
+        "zh": "某人已故的父親",
+        "example_en": "She often talks about her late father.",
+        "example_zh": "她常談起已故的父親。"
+      },
+      {
+        "id": "b3l4-p105",
+        "phrase": "feel sorrow at",
+        "pos": "ph.",
+        "zh": "對……感到悲傷",
+        "example_en": "We felt sorrow at the terrible news.",
+        "example_zh": "我們對這個噩耗感到悲傷。"
+      },
+      {
+        "id": "b3l4-p106",
+        "phrase": "part from sb.",
+        "pos": "ph.",
+        "zh": "與某人分離／告別",
+        "example_en": "She was sad to part from her family.",
+        "example_zh": "她因要與家人分離而難過。"
+      },
+      {
+        "id": "b3l4-p107",
+        "phrase": "study abroad",
+        "pos": "ph.",
+        "zh": "出國留學",
+        "example_en": "He plans to study abroad next year.",
+        "example_zh": "他計畫明年出國留學。"
+      },
+      {
+        "id": "b3l4-p108",
+        "phrase": "with sorrowful eyes",
+        "pos": "ph.",
+        "zh": "眼神悲傷地",
+        "example_en": "She looked at the empty chair with sorrowful eyes.",
+        "example_zh": "她眼神悲傷地望著空椅子。"
+      },
+      {
+        "id": "b3l4-p109",
+        "phrase": "turn up for the occasion",
+        "pos": "ph.",
+        "zh": "出席該場合",
+        "example_en": "All our relatives turned up for the occasion.",
+        "example_zh": "所有親戚都出席了這個場合。"
+      },
+      {
+        "id": "b3l4-p110",
+        "phrase": "have an occasional glass of wine",
+        "pos": "ph.",
+        "zh": "偶爾喝一杯酒",
+        "example_en": "My uncle has an occasional glass of wine with dinner.",
+        "example_zh": "我叔叔晚餐時偶爾會喝一杯酒。"
+      },
+      {
+        "id": "b3l4-p111",
+        "phrase": "at Christmas",
+        "pos": "ph.",
+        "zh": "在聖誕節期間",
+        "example_en": "Our family gets together at Christmas.",
+        "example_zh": "我們全家會在聖誕節團聚。"
+      },
+      {
+        "id": "b3l4-p112",
+        "phrase": "family reunion",
+        "pos": "ph.",
+        "zh": "家庭團聚",
+        "example_en": "The holiday is a time for family reunions.",
+        "example_zh": "這個節日是家庭團聚的時刻。"
+      },
+      {
+        "id": "b3l4-p113",
+        "phrase": "be reunited with",
+        "pos": "ph.",
+        "zh": "與……重聚",
+        "example_en": "She was finally reunited with her parents.",
+        "example_zh": "她終於和父母重聚了。"
+      },
+      {
+        "id": "b3l4-p114",
+        "phrase": "anticipate doing",
+        "pos": "ph.",
+        "zh": "期待做……",
+        "example_en": "We anticipate welcoming more visitors this year.",
+        "example_zh": "我們期待今年迎接更多遊客。"
+      },
+      {
+        "id": "b3l4-p115",
+        "phrase": "in anticipation of",
+        "pos": "ph.",
+        "zh": "期待；預期",
+        "example_en": "People bought food in anticipation of the storm.",
+        "example_zh": "人們預期暴風雨來臨而購買食物。"
+      },
+      {
+        "id": "b3l4-p116",
+        "phrase": "the approaching typhoon",
+        "pos": "ph.",
+        "zh": "即將來臨的颱風",
+        "example_en": "Schools closed because of the approaching typhoon.",
+        "example_zh": "學校因即將來臨的颱風而停課。"
+      },
+      {
+        "id": "b3l4-p117",
+        "phrase": "upon one’s arrival at",
+        "pos": "ph.",
+        "zh": "某人一抵達……",
+        "example_en": "Upon our arrival at the hotel, we checked in.",
+        "example_zh": "我們一抵達飯店就辦理入住。"
+      },
+      {
+        "id": "b3l4-p118",
+        "phrase": "customs official",
+        "pos": "ph.",
+        "zh": "海關人員",
+        "example_en": "A customs official checked my passport.",
+        "example_zh": "一名海關人員檢查了我的護照。"
+      },
+      {
+        "id": "b3l4-p119",
+        "phrase": "decorate…with…",
+        "pos": "ph.",
+        "zh": "用……裝飾……",
+        "example_en": "They decorated the tree with lights.",
+        "example_zh": "他們用燈飾裝飾那棵樹。"
+      },
+      {
+        "id": "b3l4-p120",
+        "phrase": "Christmas decorations",
+        "pos": "ph.",
+        "zh": "聖誕裝飾品",
+        "example_en": "The store is full of Christmas decorations.",
+        "example_zh": "店裡擺滿了聖誕裝飾品。"
+      },
+      {
+        "id": "b3l4-p121",
+        "phrase": "have a strong preference for",
+        "pos": "ph.",
+        "zh": "非常偏好……",
+        "example_en": "He has a strong preference for classical music.",
+        "example_zh": "他非常偏好古典音樂。"
+      },
+      {
+        "id": "b3l4-p122",
+        "phrase": "prefer A to B",
+        "pos": "ph.",
+        "zh": "喜歡 A 勝過 B",
+        "example_en": "I prefer tea to coffee.",
+        "example_zh": "比起咖啡，我更喜歡茶。"
+      },
+      {
+        "id": "b3l4-p123",
+        "phrase": "be treated to a warm reception",
+        "pos": "ph.",
+        "zh": "受到熱烈歡迎",
+        "example_en": "The visitors were treated to a warm reception.",
+        "example_zh": "來訪者受到熱烈歡迎。"
+      },
+      {
+        "id": "b3l4-p124",
+        "phrase": "on the ground floor",
+        "pos": "ph.",
+        "zh": "在一樓",
+        "example_en": "The café is on the ground floor.",
+        "example_zh": "咖啡館在一樓。"
+      },
+      {
+        "id": "b3l4-p125",
+        "phrase": "take an elevator",
+        "pos": "ph.",
+        "zh": "搭電梯",
+        "example_en": "We took an elevator to the tenth floor.",
+        "example_zh": "我們搭電梯到十樓。"
+      },
+      {
+        "id": "b3l4-p126",
+        "phrase": "feast on",
+        "pos": "ph.",
+        "zh": "盡情享用",
+        "example_en": "The guests feasted on local dishes.",
+        "example_zh": "賓客們盡情享用當地佳餚。"
+      },
+      {
+        "id": "b3l4-p127",
+        "phrase": "feast one’s eyes on",
+        "pos": "ph.",
+        "zh": "大飽眼福；盡情欣賞",
+        "example_en": "We feasted our eyes on the beautiful view.",
+        "example_zh": "我們盡情欣賞美麗的景色。"
+      },
+      {
+        "id": "b3l4-p128",
+        "phrase": "attend a wedding feast",
+        "pos": "ph.",
+        "zh": "參加婚宴",
+        "example_en": "Hundreds of guests attended the wedding feast.",
+        "example_zh": "數百名賓客參加了婚宴。"
+      },
+      {
+        "id": "b3l4-p129",
+        "phrase": "eat and drink with great enjoyment",
+        "pos": "ph.",
+        "zh": "盡情吃喝",
+        "example_en": "Everyone ate and drank with great enjoyment.",
+        "example_zh": "每個人都盡情吃喝。"
+      },
+      {
+        "id": "b3l4-p130",
+        "phrase": "joyful celebrations",
+        "pos": "ph.",
+        "zh": "歡樂的慶祝活動",
+        "example_en": "Joyful celebrations filled the streets.",
+        "example_zh": "街上充滿歡樂的慶祝活動。"
+      },
+      {
+        "id": "b3l4-p131",
+        "phrase": "last long into the night",
+        "pos": "ph.",
+        "zh": "持續到深夜",
+        "example_en": "The party lasted long into the night.",
+        "example_zh": "派對持續到深夜。"
+      },
+      {
+        "id": "b3l4-p132",
+        "phrase": "at dawn",
+        "pos": "ph.",
+        "zh": "在黎明時",
+        "example_en": "The fishermen returned at dawn.",
+        "example_zh": "漁夫們在黎明時返回。"
+      },
+      {
+        "id": "b3l4-p133",
+        "phrase": "be transformed into",
+        "pos": "ph.",
+        "zh": "被轉變成……",
+        "example_en": "The old station was transformed into a museum.",
+        "example_zh": "舊車站被改建成博物館。"
+      },
+      {
+        "id": "b3l4-p134",
+        "phrase": "undergo a transformation",
+        "pos": "ph.",
+        "zh": "經歷轉變",
+        "example_en": "The neighborhood has undergone a major transformation.",
+        "example_zh": "這個社區經歷了重大轉變。"
+      },
+      {
+        "id": "b3l4-p135",
+        "phrase": "transformation from a caterpillar into a butterfly",
+        "pos": "ph.",
+        "zh": "毛毛蟲變成蝴蝶的轉變",
+        "example_en": "The film shows the transformation from a caterpillar into a butterfly.",
+        "example_zh": "影片呈現毛毛蟲變成蝴蝶的過程。"
+      },
+      {
+        "id": "b3l4-p136",
+        "phrase": "resemble each other",
+        "pos": "ph.",
+        "zh": "彼此相像",
+        "example_en": "The twin sisters resemble each other.",
+        "example_zh": "這對雙胞胎姊妹彼此很像。"
+      },
+      {
+        "id": "b3l4-p137",
+        "phrase": "in terms of",
+        "pos": "ph.",
+        "zh": "就……而言",
+        "example_en": "The two cars differ in terms of price.",
+        "example_zh": "就價格而言，這兩輛車有所不同。"
+      },
+      {
+        "id": "b3l4-p138",
+        "phrase": "can’t be more different",
+        "pos": "ph.",
+        "zh": "再不同不過；截然不同",
+        "example_en": "The brothers can’t be more different.",
+        "example_zh": "這對兄弟截然不同。"
+      },
+      {
+        "id": "b3l4-p139",
+        "phrase": "bear a striking resemblance to",
+        "pos": "ph.",
+        "zh": "與……極為相像",
+        "example_en": "The child bears a striking resemblance to her mother.",
+        "example_zh": "這孩子與她母親極為相像。"
+      },
+      {
+        "id": "b3l4-p140",
+        "phrase": "be named after",
+        "pos": "ph.",
+        "zh": "以……命名",
+        "example_en": "The park was named after a local hero.",
+        "example_zh": "這座公園以一位地方英雄命名。"
+      },
+      {
+        "id": "b3l4-p141",
+        "phrase": "hold a charity garage sale",
+        "pos": "ph.",
+        "zh": "舉辦慈善車庫拍賣",
+        "example_en": "Students held a charity garage sale on Saturday.",
+        "example_zh": "學生們星期六舉辦了慈善車庫拍賣。"
+      },
+      {
+        "id": "b3l4-p142",
+        "phrase": "active participation in",
+        "pos": "ph.",
+        "zh": "積極參與……",
+        "example_en": "Active participation in class improves learning.",
+        "example_zh": "積極參與課堂有助於學習。"
+      },
+      {
+        "id": "b3l4-p143",
+        "phrase": "the fight for the right",
+        "pos": "ph.",
+        "zh": "爭取權利的抗爭",
+        "example_en": "She joined the fight for the right to vote.",
+        "example_zh": "她加入爭取投票權的抗爭。"
+      },
+      {
+        "id": "b3l4-p144",
+        "phrase": "get an education",
+        "pos": "ph.",
+        "zh": "接受教育",
+        "example_en": "Every child deserves to get an education.",
+        "example_zh": "每個孩子都應有接受教育的機會。"
+      },
+      {
+        "id": "b3l4-p145",
+        "phrase": "in mock horror",
+        "pos": "ph.",
+        "zh": "假裝驚恐地",
+        "example_en": "He covered his face in mock horror.",
+        "example_zh": "他假裝驚恐地遮住臉。"
+      },
+      {
+        "id": "b3l4-p146",
+        "phrase": "make a funny face",
+        "pos": "ph.",
+        "zh": "做鬼臉",
+        "example_en": "The boy made a funny face at the camera.",
+        "example_zh": "男孩對著相機做鬼臉。"
+      },
+      {
+        "id": "b3l4-p147",
+        "phrase": "new medication",
+        "pos": "ph.",
+        "zh": "新藥",
+        "example_en": "The doctor prescribed new medication.",
+        "example_zh": "醫生開了新藥。"
+      },
+      {
+        "id": "b3l4-p148",
+        "phrase": "negative side effect",
+        "pos": "ph.",
+        "zh": "負面副作用",
+        "example_en": "The treatment may cause a negative side effect.",
+        "example_zh": "這項治療可能引起負面副作用。"
+      },
+      {
+        "id": "b3l4-p149",
+        "phrase": "recognize A from B",
+        "pos": "ph.",
+        "zh": "從 B 辨認出 A",
+        "example_en": "I recognized her voice from the recording.",
+        "example_zh": "我從錄音中辨認出她的聲音。"
+      },
+      {
+        "id": "b3l4-p150",
+        "phrase": "A gain formal recognition as B",
+        "pos": "ph.",
+        "zh": "A 正式獲得 B 的認可／地位",
+        "example_en": "The site gained formal recognition as a national monument.",
+        "example_zh": "該地點正式獲認定為國家紀念地。"
+      },
+      {
+        "id": "b3l4-p151",
+        "phrase": "be still in question",
+        "pos": "ph.",
+        "zh": "仍有疑問；尚未確定",
+        "example_en": "The cause of the accident is still in question.",
+        "example_zh": "事故原因仍有疑問。"
+      },
+      {
+        "id": "b3l4-p152",
+        "phrase": "a member of the UN",
+        "pos": "ph.",
+        "zh": "聯合國會員國",
+        "example_en": "The country became a member of the UN.",
+        "example_zh": "該國成為聯合國會員國。"
+      },
+      {
+        "id": "b3l4-p153",
+        "phrase": "natural disaster",
+        "pos": "ph.",
+        "zh": "天然災害",
+        "example_en": "The earthquake was a terrible natural disaster.",
+        "example_zh": "這場地震是一場可怕的天然災害。"
+      },
+      {
+        "id": "b3l4-p154",
+        "phrase": "slow down climate change",
+        "pos": "ph.",
+        "zh": "減緩氣候變遷",
+        "example_en": "We must act now to slow down climate change.",
+        "example_zh": "我們必須立即行動以減緩氣候變遷。"
+      },
+      {
+        "id": "b3l4-p155",
+        "phrase": "an annual event",
+        "pos": "ph.",
+        "zh": "年度活動",
+        "example_en": "The festival is an annual event.",
+        "example_zh": "這個節慶是一年一度的活動。"
+      },
+      {
+        "id": "b3l4-p156",
+        "phrase": "take place",
+        "pos": "ph.",
+        "zh": "發生；舉行",
+        "example_en": "The ceremony will take place on Friday.",
+        "example_zh": "典禮將於星期五舉行。"
+      },
+      {
+        "id": "b3l4-p157",
+        "phrase": "ocean view",
+        "pos": "ph.",
+        "zh": "海景",
+        "example_en": "Our hotel room has a beautiful ocean view.",
+        "example_zh": "我們的飯店房間有美麗的海景。"
+      },
+      {
+        "id": "b3l4-p158",
+        "phrase": "escape doing",
+        "pos": "ph.",
+        "zh": "逃避做……",
+        "example_en": "You cannot escape facing the consequences.",
+        "example_zh": "你無法逃避面對後果。"
+      },
+      {
+        "id": "b3l4-p159",
+        "phrase": "do the dishes",
+        "pos": "ph.",
+        "zh": "洗碗",
+        "example_en": "It is my turn to do the dishes.",
+        "example_zh": "輪到我洗碗了。"
+      },
+      {
+        "id": "b3l4-p160",
+        "phrase": "fall for sth.",
+        "pos": "ph.",
+        "zh": "受騙；信以為真",
+        "example_en": "Don’t fall for that online scam.",
+        "example_zh": "別上那個網路詐騙的當。"
+      },
+      {
+        "id": "b3l4-p161",
+        "phrase": "escape from",
+        "pos": "ph.",
+        "zh": "從……逃脫",
+        "example_en": "The prisoner escaped from jail.",
+        "example_zh": "那名囚犯逃出了監獄。"
+      },
+      {
+        "id": "b3l4-p162",
+        "phrase": "make one’s escape",
+        "pos": "ph.",
+        "zh": "逃走",
+        "example_en": "The thief made his escape through a window.",
+        "example_zh": "小偷從窗戶逃走了。"
+      },
+      {
+        "id": "b3l4-p163",
+        "phrase": "change shifts",
+        "pos": "ph.",
+        "zh": "換班",
+        "example_en": "The nurses change shifts at eight.",
+        "example_zh": "護理師們八點換班。"
+      },
+      {
+        "id": "b3l4-p164",
+        "phrase": "a new album of",
+        "pos": "ph.",
+        "zh": "一張新的……專輯",
+        "example_en": "The singer released a new album of love songs.",
+        "example_zh": "那位歌手發行了一張新的情歌專輯。"
+      },
+      {
+        "id": "b3l4-p165",
+        "phrase": "bring tears to one’s eyes",
+        "pos": "ph.",
+        "zh": "使某人熱淚盈眶",
+        "example_en": "The song brought tears to my eyes.",
+        "example_zh": "這首歌使我熱淚盈眶。"
+      },
+      {
+        "id": "b3l4-p166",
+        "phrase": "on formal occasion",
+        "pos": "ph.",
+        "zh": "在正式場合",
+        "example_en": "He wears a suit on formal occasions.",
+        "example_zh": "他在正式場合會穿西裝。"
+      },
+      {
+        "id": "b3l4-p167",
+        "phrase": "resemble in many ways",
+        "pos": "ph.",
+        "zh": "在許多方面相似",
+        "example_en": "The two cultures resemble each other in many ways.",
+        "example_zh": "這兩種文化在許多方面很相似。"
+      },
+      {
+        "id": "b3l4-p168",
+        "phrase": "taste in fashion",
+        "pos": "ph.",
+        "zh": "時尚品味",
+        "example_en": "We have very different tastes in fashion.",
+        "example_zh": "我們的時尚品味非常不同。"
+      },
+      {
+        "id": "b3l4-p169",
+        "phrase": "express the sorrow of",
+        "pos": "ph.",
+        "zh": "表達……的悲痛",
+        "example_en": "The poem expresses the sorrow of losing a friend.",
+        "example_zh": "這首詩表達失去朋友的悲痛。"
+      },
+      {
+        "id": "b3l4-p170",
+        "phrase": "sharing economy",
+        "pos": "ph.",
+        "zh": "共享經濟",
+        "example_en": "The sharing economy has changed how people travel.",
+        "example_zh": "共享經濟改變了人們旅行的方式。"
+      },
+      {
+        "id": "b3l4-p171",
+        "phrase": "go traveling abroad",
+        "pos": "ph.",
+        "zh": "出國旅行",
+        "example_en": "They go traveling abroad every summer.",
+        "example_zh": "他們每年夏天都出國旅行。"
+      },
+      {
+        "id": "b3l4-p172",
+        "phrase": "essential ingredient",
+        "pos": "ph.",
+        "zh": "必備要素；重要成分",
+        "example_en": "Trust is an essential ingredient in friendship.",
+        "example_zh": "信任是友誼的必備要素。"
+      },
+      {
+        "id": "b3l4-p173",
+        "phrase": "pop out from",
+        "pos": "ph.",
+        "zh": "從……突然冒出",
+        "example_en": "A rabbit popped out from behind the tree.",
+        "example_zh": "一隻兔子突然從樹後冒出來。"
+      },
+      {
+        "id": "b3l4-p174",
+        "phrase": "behind the bush",
+        "pos": "ph.",
+        "zh": "在灌木叢後面",
+        "example_en": "Something was moving behind the bush.",
+        "example_zh": "灌木叢後面有東西在動。"
+      },
+      {
+        "id": "b3l4-p175",
+        "phrase": "from head to toe",
+        "pos": "ph.",
+        "zh": "從頭到腳",
+        "example_en": "He was covered in mud from head to toe.",
+        "example_zh": "他從頭到腳都是泥巴。"
+      },
+      {
+        "id": "b3l4-p176",
+        "phrase": "a figure dressed in white",
+        "pos": "ph.",
+        "zh": "一個身穿白衣的人影",
+        "example_en": "We saw a figure dressed in white near the gate.",
+        "example_zh": "我們在門口附近看到一個身穿白衣的人影。"
+      },
+      {
+        "id": "b3l4-p177",
+        "phrase": "hold a large feast",
+        "pos": "ph.",
+        "zh": "舉辦盛宴",
+        "example_en": "The village held a large feast after the harvest.",
+        "example_zh": "村民在收成後舉辦盛宴。"
+      },
+      {
+        "id": "b3l4-p178",
+        "phrase": "in remembrance of",
+        "pos": "ph.",
+        "zh": "為紀念……",
+        "example_en": "A ceremony was held in remembrance of the victims.",
+        "example_zh": "人們舉行典禮紀念罹難者。"
+      },
+      {
+        "id": "b3l4-p179",
+        "phrase": "in memory of",
+        "pos": "ph.",
+        "zh": "為紀念……",
+        "example_en": "They planted a tree in memory of their teacher.",
+        "example_zh": "他們種了一棵樹紀念老師。"
+      },
+      {
+        "id": "b3l4-p180",
+        "phrase": "the earth goddess",
+        "pos": "ph.",
+        "zh": "大地女神",
+        "example_en": "People prayed to the earth goddess for a good harvest.",
+        "example_zh": "人們向大地女神祈求豐收。"
+      },
+      {
+        "id": "b3l4-p181",
+        "phrase": "pay the landlord the rent",
+        "pos": "ph.",
+        "zh": "付房租給房東",
+        "example_en": "I pay the landlord the rent on the first of each month.",
+        "example_zh": "我每月一日付房租給房東。"
+      },
+      {
+        "id": "b3l4-p182",
+        "phrase": "book flights and accommodations well in advance of one’s trip",
+        "pos": "ph.",
+        "zh": "在旅行前很早預訂機票與住宿",
+        "example_en": "We booked flights and accommodations well in advance of our trip.",
+        "example_zh": "我們早在旅行前就預訂好機票與住宿。"
+      },
+      {
+        "id": "b3l4-p183",
+        "phrase": "send holiday greetings on social media",
+        "pos": "ph.",
+        "zh": "在社群媒體上傳送節日祝福",
+        "example_en": "Many people send holiday greetings on social media.",
+        "example_zh": "許多人會在社群媒體上傳送節日祝福。"
+      },
+      {
+        "id": "b3l4-p184",
+        "phrase": "hold a concert",
+        "pos": "ph.",
+        "zh": "舉辦演唱會／音樂會",
+        "example_en": "The band will hold a concert next month.",
+        "example_zh": "這個樂團下個月將舉辦演唱會。"
+      },
+      {
+        "id": "b3l4-p185",
+        "phrase": "make an appointment",
+        "pos": "ph.",
+        "zh": "預約",
+        "example_en": "I made an appointment with the doctor.",
+        "example_zh": "我預約了看醫生。"
+      },
+      {
+        "id": "b3l4-p186",
+        "phrase": "see the dentist",
+        "pos": "ph.",
+        "zh": "看牙醫",
+        "example_en": "You should see the dentist twice a year.",
+        "example_zh": "你應該每年看兩次牙醫。"
+      },
+      {
+        "id": "b3l4-p187",
+        "phrase": "watch a horror movie",
+        "pos": "ph.",
+        "zh": "看恐怖電影",
+        "example_en": "We watched a horror movie last night.",
+        "example_zh": "我們昨晚看了一部恐怖電影。"
+      },
+      {
+        "id": "b3l4-p188",
+        "phrase": "the thought of",
+        "pos": "ph.",
+        "zh": "一想到……",
+        "example_en": "The thought of flying makes him nervous.",
+        "example_zh": "一想到搭飛機就讓他緊張。"
+      },
+      {
+        "id": "b3l4-p189",
+        "phrase": "go wrong with",
+        "pos": "ph.",
+        "zh": "……出問題",
+        "example_en": "What could go wrong with our plan?",
+        "example_zh": "我們的計畫可能會出什麼問題？"
+      },
+      {
+        "id": "b3l4-p190",
+        "phrase": "a high-sugar diet",
+        "pos": "ph.",
+        "zh": "高糖飲食",
+        "example_en": "A high-sugar diet can damage your health.",
+        "example_zh": "高糖飲食可能損害健康。"
+      },
+      {
+        "id": "b3l4-p191",
+        "phrase": "be harmful to",
+        "pos": "ph.",
+        "zh": "對……有害",
+        "example_en": "Too much sunlight can be harmful to your skin.",
+        "example_zh": "過多陽光可能對皮膚有害。"
+      },
+      {
+        "id": "b3l4-p192",
+        "phrase": "put out the fire",
+        "pos": "ph.",
+        "zh": "滅火",
+        "example_en": "Firefighters quickly put out the fire.",
+        "example_zh": "消防員迅速把火撲滅。"
+      },
+      {
+        "id": "b3l4-p193",
+        "phrase": "a qualified candidate for the position",
+        "pos": "ph.",
+        "zh": "該職位的合格人選",
+        "example_en": "She is a qualified candidate for the position.",
+        "example_zh": "她是該職位的合格人選。"
+      },
+      {
+        "id": "b3l4-p194",
+        "phrase": "pass a test",
+        "pos": "ph.",
+        "zh": "通過考試",
+        "example_en": "He studied hard and passed the test.",
+        "example_zh": "他努力讀書並通過了考試。"
+      },
+      {
+        "id": "b3l4-p195",
+        "phrase": "be a little nobody",
+        "pos": "ph.",
+        "zh": "是個無名小卒",
+        "example_en": "He was once a little nobody in the city.",
+        "example_zh": "他曾經是城裡的一個無名小卒。"
+      },
+      {
+        "id": "b3l4-p196",
+        "phrase": "become an evil somebody",
+        "pos": "ph.",
+        "zh": "成為邪惡的大人物",
+        "example_en": "The character dreams of becoming an evil somebody.",
+        "example_zh": "這個角色夢想成為邪惡的大人物。"
+      },
+      {
+        "id": "b3l4-p197",
+        "phrase": "die a meaningful death",
+        "pos": "ph.",
+        "zh": "死得有意義",
+        "example_en": "The hero chose to die a meaningful death.",
+        "example_zh": "英雄選擇死得有意義。"
+      },
+      {
+        "id": "b3l4-p198",
+        "phrase": "live a meaningless life",
+        "pos": "ph.",
+        "zh": "過著毫無意義的人生",
+        "example_en": "He feared living a meaningless life.",
+        "example_zh": "他害怕過著毫無意義的人生。"
+      },
+      {
+        "id": "b3l4-p199",
+        "phrase": "take the blame",
+        "pos": "ph.",
+        "zh": "承擔責任；代人受過",
+        "example_en": "She took the blame for the mistake.",
+        "example_zh": "她為這個錯誤承擔責任。"
+      },
+      {
+        "id": "b3l4-p200",
+        "phrase": "complain about the problem",
+        "pos": "ph.",
+        "zh": "抱怨問題",
+        "example_en": "Instead of complaining about the problem, find a solution.",
+        "example_zh": "與其抱怨問題，不如找出解決方法。"
+      },
+      {
+        "id": "b3l4-p201",
+        "phrase": "encounter a problem",
+        "pos": "ph.",
+        "zh": "遇到問題",
+        "example_en": "Call me if you encounter a problem.",
+        "example_zh": "如果你遇到問題就打電話給我。"
+      },
+      {
+        "id": "b3l4-p202",
+        "phrase": "figure out how to solve a problem",
+        "pos": "ph.",
+        "zh": "想出如何解決問題",
+        "example_en": "The team figured out how to solve the problem.",
+        "example_zh": "團隊想出了如何解決這個問題。"
+      },
+      {
+        "id": "b3l4-p203",
+        "phrase": "apologize to sb.",
+        "pos": "ph.",
+        "zh": "向某人道歉",
+        "example_en": "You should apologize to your sister.",
+        "example_zh": "你應該向妹妹道歉。"
+      },
+      {
+        "id": "b3l4-p204",
+        "phrase": "quarrel with sb.",
+        "pos": "ph.",
+        "zh": "與某人爭吵",
+        "example_en": "He quarreled with his neighbor over the noise.",
+        "example_zh": "他為了噪音和鄰居爭吵。"
+      },
+      {
+        "id": "b3l4-p205",
+        "phrase": "starve to death",
+        "pos": "ph.",
+        "zh": "餓死",
+        "example_en": "The animals may starve to death without food.",
+        "example_zh": "沒有食物，這些動物可能會餓死。"
+      },
+      {
+        "id": "b3l4-p206",
+        "phrase": "the god of the sea",
+        "pos": "ph.",
+        "zh": "海神",
+        "example_en": "Sailors prayed to the god of the sea.",
+        "example_zh": "水手們向海神祈禱。"
+      },
+      {
+        "id": "b3l4-p207",
+        "phrase": "a sorrowful melody",
+        "pos": "ph.",
+        "zh": "悲傷的旋律",
+        "example_en": "A sorrowful melody filled the room.",
+        "example_zh": "悲傷的旋律充滿房間。"
+      },
+      {
+        "id": "b3l4-p208",
+        "phrase": "reflect one’s personal grief",
+        "pos": "ph.",
+        "zh": "反映某人的個人悲痛",
+        "example_en": "The song reflects the singer’s personal grief.",
+        "example_zh": "這首歌反映歌手個人的悲痛。"
+      },
+      {
+        "id": "b3l4-p209",
+        "phrase": "make … the new norm",
+        "pos": "ph.",
+        "zh": "使……成為新常態",
+        "example_en": "Technology has made remote work the new norm.",
+        "example_zh": "科技已使遠距工作成為新常態。"
+      },
+      {
+        "id": "b3l4-p210",
+        "phrase": "remote work",
+        "pos": "ph.",
+        "zh": "遠距工作",
+        "example_en": "Remote work gives employees more flexibility.",
+        "example_zh": "遠距工作給員工更多彈性。"
+      },
+      {
+        "id": "b3l4-p211",
+        "phrase": "transform the way people work",
+        "pos": "ph.",
+        "zh": "改變人們的工作方式",
+        "example_en": "AI is transforming the way people work.",
+        "example_zh": "人工智慧正在改變人們的工作方式。"
+      }
+    ]
   },
   "grammar": {
-    "points": [],
+    "points": [
+      {
+        "id": "b3l4-g1",
+        "title": "S + be + thought/said/believed + to VR/have + p.p..... 被認為/據說/據信",
+        "examples": [
+          "A high-sugar diet is generally believed to be harmful to our health.",
+          "LeBron James is thought to be one of the greatest players ever and surely to earn his honor in the NBA Hall of Fame.",
+          "Dinosaurs are said to have become extinct about 65 million years ago."
+        ]
+      },
+      {
+        "id": "b3l4-g2",
+        "title": "would rather…than…/would…rather than 寧願...也不...",
+        "examples": [
+          "The general would rather die a meaningful death than live a meaningless life.",
+          "The general would die a meaningful death rather than live a meaning."
+        ]
+      }
+    ],
     "sentence_structures": {
       "items": []
     }
   },
   "text_genre": {
-    "raw_text": ""
+    "raw_text": "The structure of this text can be illustrated as a mindmap, with the core message “the Day of the Dead--an annual national holiday in Mexico” centered in the middle, supported by three subtopics with details: when and how the holiday is celebrated, preparations for the holiday, and various representations of the dead. Review the text again and come up with a mindmap."
   }
 }
