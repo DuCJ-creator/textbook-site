@@ -144,6 +144,38 @@
       },
       {
         "id": "b3l5-v06",
+        "base": "boast",
+        "verb": [
+          {
+            "en": "boast",
+            "zh": "以⋯⋯為傲;擁有; 吹噓",
+            "example": "She likes to boast about her new car."
+          }
+        ],
+        "noun": [
+          {
+            "en": "boast",
+            "zh": "誇耀、誇口",
+            "example": "His biggest boast is that he never makes a mistake."
+          }
+        ],
+        "adj": [
+          {
+            "en": "boastful",
+            "zh": "自吹自擂的",
+            "example": "He is too boastful about his high test scores."
+          }
+        ],
+        "adv": [
+          {
+            "en": "boastfully",
+            "zh": "自誇地",
+            "example": "She spoke boastfully about winning the game."
+          }
+        ]
+      },
+      {
+        "id": "b3l5-v07",
         "base": "history",
         "verb": [],
         "noun": [
@@ -179,7 +211,7 @@
         ]
       },
       {
-        "id": "b3l5-v07",
+        "id": "b3l5-v08",
         "base": "enter",
         "verb": [
           {
@@ -204,7 +236,7 @@
         "adv": []
       },
       {
-        "id": "b3l5-v08",
+        "id": "b3l5-v09",
         "base": "magnify",
         "verb": [
           {
@@ -256,7 +288,7 @@
         ]
       },
       {
-        "id": "b3l5-v09",
+        "id": "b3l5-v10",
         "base": "leisure",
         "verb": [],
         "noun": [
@@ -276,7 +308,7 @@
         "adv": []
       },
       {
-        "id": "b3l5-v10",
+        "id": "b3l5-v11",
         "base": "stun",
         "verb": [
           {
@@ -307,7 +339,7 @@
         ]
       },
       {
-        "id": "b3l5-v11",
+        "id": "b3l5-v12",
         "base": "delicate",
         "verb": [],
         "noun": [
@@ -338,7 +370,7 @@
         ]
       },
       {
-        "id": "b3l5-v12",
+        "id": "b3l5-v13",
         "base": "distinct",
         "verb": [],
         "noun": [
@@ -369,7 +401,7 @@
         ]
       },
       {
-        "id": "b3l5-v13",
+        "id": "b3l5-v14",
         "base": "elegant",
         "verb": [],
         "noun": [
@@ -395,7 +427,7 @@
         ]
       },
       {
-        "id": "b3l5-v14",
+        "id": "b3l5-v15",
         "base": "appear",
         "verb": [
           {
@@ -437,7 +469,7 @@
         ]
       },
       {
-        "id": "b3l5-v15",
+        "id": "b3l5-v16",
         "base": "literal",
         "verb": [],
         "noun": [
@@ -478,7 +510,7 @@
         ]
       },
       {
-        "id": "b3l5-v16",
+        "id": "b3l5-v17",
         "base": "deliberate",
         "verb": [
           {
@@ -504,7 +536,7 @@
         ]
       },
       {
-        "id": "b3l5-v17",
+        "id": "b3l5-v18",
         "base": "destine",
         "verb": [
           {
