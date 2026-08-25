@@ -2040,10 +2040,143 @@
       }
     ],
     "sentence_structures": {
-      "items": []
+      "items": [
+        {
+          "id": "b3l5-s001",
+          "sentence": "Kyoto, like a beauty in a bright and colorful kimono, *delights* tourists throughout the year.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + O"
+        },
+        {
+          "id": "b3l5-s002",
+          "sentence": "In spring, romance *is* in the air as the city is filled with a sea of pink cherry blossoms.",
+          "type": "complex",
+          "pattern": "S + Vi + Adverbial clause (as...)"
+        },
+        {
+          "id": "b3l5-s003",
+          "sentence": "In summer, green leaves *can be heard* rustling in the wind and *seen* sparkling in the sunshine.",
+          "type": "simple",
+          "pattern": "Passive transformation of S + Vt + O with Compound verb"
+        },
+        {
+          "id": "b3l5-s004",
+          "sentence": "Maple leaves in autumn *set* the landscape on fire with orange and red colors.",
+          "type": "simple",
+          "pattern": "S + Vt + O + Prepositional phrase"
+        },
+        {
+          "id": "b3l5-s005",
+          "sentence": "Then, when winter comes, white snow *turns* the whole city into a magic, silver kingdom.",
+          "type": "complex",
+          "pattern": "Adverbial clause (when...) + S + Vt + O + Prepositional phrase"
+        },
+        {
+          "id": "b3l5-s006",
+          "sentence": "Apart from its natural splendor, Kyoto *has* so much more to feast one’s eyes on.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + O"
+        },
+        {
+          "id": "b3l5-s007",
+          "sentence": "Having previously been the capital of Japan for over a thousand years, the city *boasts* a large number of historic shrines and temples.",
+          "type": "simple",
+          "pattern": "Participle phrase + S + Vt + O"
+        },
+        {
+          "id": "b3l5-s008",
+          "sentence": "No visit to Kyoto *would be* complete without seeing one of the most photographed landmarks: the Kinkaku-ji, or the Golden Pavilion Temple in English.",
+          "type": "simple",
+          "pattern": "S + Vl + C + Prepositional phrase"
+        },
+        {
+          "id": "b3l5-s009",
+          "sentence": "With giant, leafy maple trees leading up to its main entrance, what comes into view *is* this magnificent three-story pavilion.",
+          "type": "complex",
+          "pattern": "Prepositional phrase + Noun clause (what...) + Vi + C"
+        },
+        {
+          "id": "b3l5-s010",
+          "sentence": "Rising up behind a crystal-clear pond, it *is covered* in sparkling gold leaf and *crowned* with a large bronze phoenix on its shimmering roof.",
+          "type": "simple",
+          "pattern": "Participle phrase + S + Vi (Passive / Compound verb)"
+        },
+        {
+          "id": "b3l5-s011",
+          "sentence": "The reflection of the pavilion on the glassy surface of the pond *is* a breathtaking sight.",
+          "type": "simple",
+          "pattern": "S + Vl+ C"
+        },
+        {
+          "id": "b3l5-s012",
+          "sentence": "Visitors *can take* a leisurely walk through the surrounding gardens and *enjoy* many stunning views of this beautiful structure.",
+          "type": "simple",
+          "pattern": "S + Vt + O (Compound verb)"
+        },
+        {
+          "id": "b3l5-s013",
+          "sentence": "Another unforgettable Kyoto sight *involves* coming face to face with one of the old capital’s very special “persons of art,” or geishas.",
+          "type": "simple",
+          "pattern": "S + Vt + Gerund phrase (O)"
+        },
+        {
+          "id": "b3l5-s014",
+          "sentence": "These *are* women dressed in delicate kimonos with silk sleeves.",
+          "type": "simple",
+          "pattern": "S + Vl + C + Participle modifier"
+        },
+        {
+          "id": "b3l5-s015",
+          "sentence": "Their distinctive white makeup, bright red lipstick, and elegant hairpins also *make* them easy to recognize.",
+          "type": "simple",
+          "pattern": "S + Vt + O + OC"
+        },
+        {
+          "id": "b3l5-s016",
+          "sentence": "And it *is* not just their unique appearance that makes geishas stand out from the crowd.",
+          "type": "complex",
+          "pattern": "It-Cleft sentence (It is... that...)"
+        },
+        {
+          "id": "b3l5-s017",
+          "sentence": "These highly skilled entertainers *spend* years mastering different musical instruments, songs, and literature.",
+          "type": "simple",
+          "pattern": "S + Vt + O + Participle clause"
+        },
+        {
+          "id": "b3l5-s018",
+          "sentence": "Of course, no “person of art” *could be* a true geisha without being able to perform the traditional kyomai dance.",
+          "type": "simple",
+          "pattern": "S + Vl + C + Prepositional phrase"
+        },
+        {
+          "id": "b3l5-s019",
+          "sentence": "This ancient art *combines* slow music with very deliberate movements and often *expresses* very deep emotion.",
+          "type": "simple",
+          "pattern": "S + Vt + O (Compound verb)"
+        },
+        {
+          "id": "b3l5-s020",
+          "sentence": "In Kyoto, culture and natural beauty *flow* together like the graceful motions of kyomai.",
+          "type": "simple",
+          "pattern": "S + Vi + Prepositional phrase"
+        },
+        {
+          "id": "b3l5-s021",
+          "sentence": "Regardless of the season, the city *is* a must-see destination for tourists seeking an authentic local experience.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vl + C"
+        },
+        {
+          "id": "b3l5-s022",
+          "sentence": "Those who visit *are* likely to end up falling in love with the heart of Japan.",
+          "type": "complex",
+          "pattern": "S + Relative clause (who...) + Vl+ C"
+        }
+      ]
     }
   },
   "text_genre": {
-    "raw_text": ""
+    "raw_text": "This descriptive text centers on how Kyoto, the heart of Japan, delights tourists across all four seasons. Starting with a broad overview of the city's year-round seasonal beauty, the author then branches into two specific examples: the Kinkaku-ji Temple representing place and the geisha representing culture. The passage guides the reader step-by-step through Kinkaku-ji's surroundings—from maple trees to its gold pavilion—and explores the geisha's craft, from her iconic makeup to her traditional dance mastery. Ultimately, these sensory descriptions merge to show why visitors fall in love with Kyoto."
   }
 }
