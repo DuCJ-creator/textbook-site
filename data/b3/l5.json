@@ -569,10 +569,1476 @@
     ]
   },
   "phrases": {
-    "items": []
+    "items": [
+      {
+        "id": "b3l5-p001",
+        "phrase": "delight someone",
+        "pos": "ph.",
+        "zh": "使某人高興",
+        "example_en": "The surprise gift delighted my mother.",
+        "example_zh": "這份驚喜禮物讓我母親很高興。"
+      },
+      {
+        "id": "b3l5-p002",
+        "phrase": "throughout the year",
+        "pos": "ph.",
+        "zh": "全年；一整年",
+        "example_en": "The garden is open throughout the year.",
+        "example_zh": "這座花園全年開放。"
+      },
+      {
+        "id": "b3l5-p003",
+        "phrase": "be filled with",
+        "pos": "ph.",
+        "zh": "充滿……",
+        "example_en": "The hall was filled with laughter.",
+        "example_zh": "大廳裡充滿了笑聲。"
+      },
+      {
+        "id": "b3l5-p004",
+        "phrase": "a sea of pink cherry blossoms",
+        "pos": "ph.",
+        "zh": "一片粉紅櫻花海",
+        "example_en": "The park became a sea of pink cherry blossoms.",
+        "example_zh": "公園變成一片粉紅櫻花海。"
+      },
+      {
+        "id": "b3l5-p005",
+        "phrase": "rustle in the wind",
+        "pos": "ph.",
+        "zh": "在風中沙沙作響",
+        "example_en": "The leaves rustled in the wind.",
+        "example_zh": "樹葉在風中沙沙作響。"
+      },
+      {
+        "id": "b3l5-p006",
+        "phrase": "sparkle in the sunshine",
+        "pos": "ph.",
+        "zh": "在陽光下閃耀",
+        "example_en": "The lake sparkled in the sunshine.",
+        "example_zh": "湖面在陽光下閃耀。"
+      },
+      {
+        "id": "b3l5-p007",
+        "phrase": "set …on fire",
+        "pos": "ph.",
+        "zh": "點燃……；使……著火",
+        "example_en": "A careless camper set the grass on fire.",
+        "example_zh": "一名粗心的露營者點燃了草地。"
+      },
+      {
+        "id": "b3l5-p008",
+        "phrase": "turn…into",
+        "pos": "ph.",
+        "zh": "把……變成……",
+        "example_en": "They turned the old house into a café.",
+        "example_zh": "他們把老房子改造成咖啡館。"
+      },
+      {
+        "id": "b3l5-p009",
+        "phrase": "in a red dress",
+        "pos": "ph.",
+        "zh": "穿著紅色洋裝",
+        "example_en": "The singer appeared in a red dress.",
+        "example_zh": "那位歌手穿著紅色洋裝現身。"
+      },
+      {
+        "id": "b3l5-p010",
+        "phrase": "throughout the movie",
+        "pos": "ph.",
+        "zh": "整部電影期間",
+        "example_en": "He remained silent throughout the movie.",
+        "example_zh": "整部電影期間他都保持沉默。"
+      },
+      {
+        "id": "b3l5-p011",
+        "phrase": "prepare utensils",
+        "pos": "ph.",
+        "zh": "準備用具／餐具",
+        "example_en": "Please prepare the utensils before cooking.",
+        "example_zh": "烹飪前請先準備好用具。"
+      },
+      {
+        "id": "b3l5-p012",
+        "phrase": "fill A with B",
+        "pos": "ph.",
+        "zh": "用 B 裝滿 A",
+        "example_en": "She filled the vase with fresh flowers.",
+        "example_zh": "她用鮮花裝滿花瓶。"
+      },
+      {
+        "id": "b3l5-p013",
+        "phrase": "a big fan of",
+        "pos": "ph.",
+        "zh": "非常喜愛……的人",
+        "example_en": "I am a big fan of classical music.",
+        "example_zh": "我是古典音樂的忠實愛好者。"
+      },
+      {
+        "id": "b3l5-p014",
+        "phrase": "reveal a secret to",
+        "pos": "ph.",
+        "zh": "向……透露秘密",
+        "example_en": "He revealed the secret to his best friend.",
+        "example_zh": "他向最好的朋友透露了秘密。"
+      },
+      {
+        "id": "b3l5-p015",
+        "phrase": "rival company",
+        "pos": "ph.",
+        "zh": "競爭公司",
+        "example_en": "She accepted a job at a rival company.",
+        "example_zh": "她接受了競爭公司的工作。"
+      },
+      {
+        "id": "b3l5-p016",
+        "phrase": "speak ill of sb behind one’s back",
+        "pos": "ph.",
+        "zh": "在某人背後說壞話",
+        "example_en": "It is unkind to speak ill of others behind their backs.",
+        "example_zh": "在別人背後說壞話是不友善的。"
+      },
+      {
+        "id": "b3l5-p017",
+        "phrase": "on stage",
+        "pos": "ph.",
+        "zh": "在舞臺上",
+        "example_en": "The dancers looked confident on stage.",
+        "example_zh": "舞者們在舞臺上看起來很有自信。"
+      },
+      {
+        "id": "b3l5-p018",
+        "phrase": "apart from",
+        "pos": "ph.",
+        "zh": "除了……之外",
+        "example_en": "Apart from the rain, the trip was wonderful.",
+        "example_zh": "除了下雨之外，這趟旅行很棒。"
+      },
+      {
+        "id": "b3l5-p019",
+        "phrase": "natural splendor",
+        "pos": "ph.",
+        "zh": "自然美景；自然壯麗",
+        "example_en": "Visitors come to admire the island’s natural splendor.",
+        "example_zh": "遊客前來欣賞這座島嶼的自然美景。"
+      },
+      {
+        "id": "b3l5-p020",
+        "phrase": "have so much more to",
+        "pos": "ph.",
+        "zh": "還有更多……可以……",
+        "example_en": "This city has so much more to offer.",
+        "example_zh": "這座城市還有更多值得體驗之處。"
+      },
+      {
+        "id": "b3l5-p021",
+        "phrase": "feast one’s eyes on",
+        "pos": "ph.",
+        "zh": "盡情欣賞；大飽眼福",
+        "example_en": "We feasted our eyes on the mountain scenery.",
+        "example_zh": "我們盡情欣賞山間美景。"
+      },
+      {
+        "id": "b3l5-p022",
+        "phrase": "boast sth",
+        "pos": "ph.",
+        "zh": "以擁有……而自豪；擁有",
+        "example_en": "The hotel boasts a beautiful ocean view.",
+        "example_zh": "這家飯店擁有美麗的海景。"
+      },
+      {
+        "id": "b3l5-p023",
+        "phrase": "a large number of",
+        "pos": "ph.",
+        "zh": "大量的；許多",
+        "example_en": "A large number of tourists visited the temple.",
+        "example_zh": "許多遊客參觀了這座寺廟。"
+      },
+      {
+        "id": "b3l5-p024",
+        "phrase": "most photographed landmark",
+        "pos": "ph.",
+        "zh": "最常被拍攝的地標",
+        "example_en": "The tower is the city’s most photographed landmark.",
+        "example_zh": "這座塔是該市最常被拍攝的地標。"
+      },
+      {
+        "id": "b3l5-p025",
+        "phrase": "leafy tree",
+        "pos": "ph.",
+        "zh": "枝葉茂盛的樹",
+        "example_en": "We rested under a leafy tree.",
+        "example_zh": "我們在一棵枝葉茂盛的樹下休息。"
+      },
+      {
+        "id": "b3l5-p026",
+        "phrase": "lead up to",
+        "pos": "ph.",
+        "zh": "通往；導致",
+        "example_en": "A stone path leads up to the temple.",
+        "example_zh": "一條石徑通往寺廟。"
+      },
+      {
+        "id": "b3l5-p027",
+        "phrase": "main entrance",
+        "pos": "ph.",
+        "zh": "主要入口",
+        "example_en": "We met at the main entrance.",
+        "example_zh": "我們在主要入口碰面。"
+      },
+      {
+        "id": "b3l5-p028",
+        "phrase": "come into view",
+        "pos": "ph.",
+        "zh": "進入視野；映入眼簾",
+        "example_en": "The golden pavilion slowly came into view.",
+        "example_zh": "金色亭閣慢慢映入眼簾。"
+      },
+      {
+        "id": "b3l5-p029",
+        "phrase": "three-story pavilion",
+        "pos": "ph.",
+        "zh": "三層樓的亭閣",
+        "example_en": "A three-story pavilion stands beside the lake.",
+        "example_zh": "湖邊矗立著一座三層樓的亭閣。"
+      },
+      {
+        "id": "b3l5-p030",
+        "phrase": "rise up",
+        "pos": "ph.",
+        "zh": "高聳；升起",
+        "example_en": "Tall mountains rise up behind the village.",
+        "example_zh": "高山在村落後方高聳而起。"
+      },
+      {
+        "id": "b3l5-p031",
+        "phrase": "crystal-clear",
+        "pos": "ph.",
+        "zh": "清澈透明的",
+        "example_en": "We swam in the crystal-clear water.",
+        "example_zh": "我們在清澈透明的水中游泳。"
+      },
+      {
+        "id": "b3l5-p032",
+        "phrase": "be covered in",
+        "pos": "ph.",
+        "zh": "被……覆蓋",
+        "example_en": "The ground was covered in fallen leaves.",
+        "example_zh": "地面被落葉覆蓋。"
+      },
+      {
+        "id": "b3l5-p033",
+        "phrase": "sparkling gold",
+        "pos": "ph.",
+        "zh": "閃耀的金色",
+        "example_en": "The roof shone in sparkling gold.",
+        "example_zh": "屋頂閃耀著金色光芒。"
+      },
+      {
+        "id": "b3l5-p034",
+        "phrase": "be crowned with",
+        "pos": "ph.",
+        "zh": "頂端有……；以……為頂飾",
+        "example_en": "The building is crowned with a golden statue.",
+        "example_zh": "這棟建築頂端有一座金色雕像。"
+      },
+      {
+        "id": "b3l5-p035",
+        "phrase": "on the glassy surface of",
+        "pos": "ph.",
+        "zh": "在……如鏡的表面上",
+        "example_en": "Clouds were reflected on the glassy surface of the lake.",
+        "example_zh": "雲朵倒映在如鏡的湖面上。"
+      },
+      {
+        "id": "b3l5-p036",
+        "phrase": "breathtaking site",
+        "pos": "ph.",
+        "zh": "令人屏息的景點",
+        "example_en": "The waterfall is a breathtaking site.",
+        "example_zh": "這座瀑布是令人屏息的景點。"
+      },
+      {
+        "id": "b3l5-p037",
+        "phrase": "take a leisurely walk",
+        "pos": "ph.",
+        "zh": "悠閒地散步",
+        "example_en": "We took a leisurely walk around the lake.",
+        "example_zh": "我們悠閒地繞湖散步。"
+      },
+      {
+        "id": "b3l5-p038",
+        "phrase": "stunning view",
+        "pos": "ph.",
+        "zh": "令人驚嘆的景色",
+        "example_en": "The room offers a stunning view of the city.",
+        "example_zh": "這個房間可以欣賞令人驚嘆的城市景色。"
+      },
+      {
+        "id": "b3l5-p039",
+        "phrase": "aside from",
+        "pos": "ph.",
+        "zh": "除了……之外",
+        "example_en": "Aside from English, she speaks French.",
+        "example_zh": "除了英語之外，她也會說法語。"
+      },
+      {
+        "id": "b3l5-p040",
+        "phrase": "main character",
+        "pos": "ph.",
+        "zh": "主角",
+        "example_en": "The main character learns an important lesson.",
+        "example_zh": "主角學到了一個重要的教訓。"
+      },
+      {
+        "id": "b3l5-p041",
+        "phrase": "a large amount of",
+        "pos": "ph.",
+        "zh": "大量的（不可數）",
+        "example_en": "The project requires a large amount of time.",
+        "example_zh": "這項計畫需要大量時間。"
+      },
+      {
+        "id": "b3l5-p042",
+        "phrase": "figure out a way to",
+        "pos": "ph.",
+        "zh": "想出辦法做……",
+        "example_en": "We must figure out a way to reduce waste.",
+        "example_zh": "我們必須想出減少浪費的方法。"
+      },
+      {
+        "id": "b3l5-p043",
+        "phrase": "fight the pandemic",
+        "pos": "ph.",
+        "zh": "對抗疫情",
+        "example_en": "Doctors worked together to fight the pandemic.",
+        "example_zh": "醫師們共同努力對抗疫情。"
+      },
+      {
+        "id": "b3l5-p044",
+        "phrase": "public health",
+        "pos": "ph.",
+        "zh": "公共衛生",
+        "example_en": "Clean water is essential to public health.",
+        "example_zh": "乾淨的水對公共衛生至關重要。"
+      },
+      {
+        "id": "b3l5-p045",
+        "phrase": "be lined with",
+        "pos": "ph.",
+        "zh": "沿著……排列；兩旁有……",
+        "example_en": "The street is lined with cherry trees.",
+        "example_zh": "街道兩旁種滿了櫻花樹。"
+      },
+      {
+        "id": "b3l5-p046",
+        "phrase": "have too much work to handle",
+        "pos": "ph.",
+        "zh": "有太多工作要處理",
+        "example_en": "She has too much work to handle today.",
+        "example_zh": "她今天有太多工作要處理。"
+      },
+      {
+        "id": "b3l5-p047",
+        "phrase": "take a stroll",
+        "pos": "ph.",
+        "zh": "散步",
+        "example_en": "We took a stroll after dinner.",
+        "example_zh": "我們晚餐後去散步。"
+      },
+      {
+        "id": "b3l5-p048",
+        "phrase": "walk through the tunnel",
+        "pos": "ph.",
+        "zh": "走過隧道",
+        "example_en": "The hikers walked through the tunnel.",
+        "example_zh": "健行者走過了隧道。"
+      },
+      {
+        "id": "b3l5-p049",
+        "phrase": "pass by",
+        "pos": "ph.",
+        "zh": "經過",
+        "example_en": "I pass by the library every morning.",
+        "example_zh": "我每天早上都會經過圖書館。"
+      },
+      {
+        "id": "b3l5-p050",
+        "phrase": "with a sweet tooth",
+        "pos": "ph.",
+        "zh": "愛吃甜食的",
+        "example_en": "People with a sweet tooth will love this cake.",
+        "example_zh": "愛吃甜食的人會喜歡這個蛋糕。"
+      },
+      {
+        "id": "b3l5-p051",
+        "phrase": "through the forest trail",
+        "pos": "ph.",
+        "zh": "沿著森林小徑",
+        "example_en": "We hiked through the forest trail.",
+        "example_zh": "我們沿著森林小徑健行。"
+      },
+      {
+        "id": "b3l5-p052",
+        "phrase": "damp and slippery from the rain",
+        "pos": "ph.",
+        "zh": "因下雨而潮濕濕滑",
+        "example_en": "The path was damp and slippery from the rain.",
+        "example_zh": "小徑因下雨而潮濕濕滑。"
+      },
+      {
+        "id": "b3l5-p053",
+        "phrase": "along the way",
+        "pos": "ph.",
+        "zh": "沿途",
+        "example_en": "We saw many wildflowers along the way.",
+        "example_zh": "我們沿途看見許多野花。"
+      },
+      {
+        "id": "b3l5-p054",
+        "phrase": "walk through the narrow archway",
+        "pos": "ph.",
+        "zh": "穿過狹窄的拱門",
+        "example_en": "Visitors walked through the narrow archway.",
+        "example_zh": "遊客穿過狹窄的拱門。"
+      },
+      {
+        "id": "b3l5-p055",
+        "phrase": "feel a sudden sense of",
+        "pos": "ph.",
+        "zh": "突然感到……",
+        "example_en": "I felt a sudden sense of fear.",
+        "example_zh": "我突然感到一陣恐懼。"
+      },
+      {
+        "id": "b3l5-p056",
+        "phrase": "come face to face with",
+        "pos": "ph.",
+        "zh": "與……迎面相遇",
+        "example_en": "We came face to face with a wild deer.",
+        "example_zh": "我們迎面遇到一隻野鹿。"
+      },
+      {
+        "id": "b3l5-p057",
+        "phrase": "be dressed in",
+        "pos": "ph.",
+        "zh": "穿著……",
+        "example_en": "The performers were dressed in white.",
+        "example_zh": "表演者們穿著白色服裝。"
+      },
+      {
+        "id": "b3l5-p058",
+        "phrase": "stand out from the crowd",
+        "pos": "ph.",
+        "zh": "在人群中脫穎而出",
+        "example_en": "Her bright jacket made her stand out from the crowd.",
+        "example_zh": "她鮮豔的外套使她在人群中格外醒目。"
+      },
+      {
+        "id": "b3l5-p059",
+        "phrase": "master a musical instrument",
+        "pos": "ph.",
+        "zh": "精通一種樂器",
+        "example_en": "It takes years to master a musical instrument.",
+        "example_zh": "精通一種樂器需要多年時間。"
+      },
+      {
+        "id": "b3l5-p060",
+        "phrase": "perform the traditional dance",
+        "pos": "ph.",
+        "zh": "表演傳統舞蹈",
+        "example_en": "Students performed the traditional dance on stage.",
+        "example_zh": "學生們在臺上表演傳統舞蹈。"
+      },
+      {
+        "id": "b3l5-p061",
+        "phrase": "combine…with…",
+        "pos": "ph.",
+        "zh": "把……與……結合",
+        "example_en": "The chef combines local ingredients with modern techniques.",
+        "example_zh": "廚師把當地食材與現代技巧結合。"
+      },
+      {
+        "id": "b3l5-p062",
+        "phrase": "express deep emotion",
+        "pos": "ph.",
+        "zh": "表達深刻情感",
+        "example_en": "Music can express deep emotion.",
+        "example_zh": "音樂可以表達深刻情感。"
+      },
+      {
+        "id": "b3l5-p063",
+        "phrase": "memorize lines",
+        "pos": "ph.",
+        "zh": "背臺詞",
+        "example_en": "The actors spent hours memorizing their lines.",
+        "example_zh": "演員們花了數小時背臺詞。"
+      },
+      {
+        "id": "b3l5-p064",
+        "phrase": "attend rehearsals",
+        "pos": "ph.",
+        "zh": "參加排練",
+        "example_en": "All performers must attend rehearsals.",
+        "example_zh": "所有表演者都必須參加排練。"
+      },
+      {
+        "id": "b3l5-p065",
+        "phrase": "be charged with",
+        "pos": "ph.",
+        "zh": "被控以……罪名",
+        "example_en": "The official was charged with corruption.",
+        "example_zh": "那名官員被控貪污。"
+      },
+      {
+        "id": "b3l5-p066",
+        "phrase": "involved in bribery",
+        "pos": "ph.",
+        "zh": "涉及賄賂",
+        "example_en": "Several officials were involved in bribery.",
+        "example_zh": "數名官員涉及賄賂。"
+      },
+      {
+        "id": "b3l5-p067",
+        "phrase": "diverse culture",
+        "pos": "ph.",
+        "zh": "多元文化",
+        "example_en": "The city is known for its diverse culture.",
+        "example_zh": "這座城市以多元文化聞名。"
+      },
+      {
+        "id": "b3l5-p068",
+        "phrase": "lay a solid foundation for",
+        "pos": "ph.",
+        "zh": "為……奠定穩固基礎",
+        "example_en": "Daily practice lays a solid foundation for success.",
+        "example_zh": "每日練習為成功奠定穩固基礎。"
+      },
+      {
+        "id": "b3l5-p069",
+        "phrase": "make …understood",
+        "pos": "ph.",
+        "zh": "使……被理解",
+        "example_en": "She spoke slowly to make herself understood.",
+        "example_zh": "她慢慢說話，好讓別人聽懂她的意思。"
+      },
+      {
+        "id": "b3l5-p070",
+        "phrase": "a complex issue",
+        "pos": "ph.",
+        "zh": "複雜的議題",
+        "example_en": "Climate change is a complex issue.",
+        "example_zh": "氣候變遷是一個複雜的議題。"
+      },
+      {
+        "id": "b3l5-p071",
+        "phrase": "a large metropolitan area",
+        "pos": "ph.",
+        "zh": "大型都會區",
+        "example_en": "Millions of people live in this large metropolitan area.",
+        "example_zh": "數百萬人居住在這個大型都會區。"
+      },
+      {
+        "id": "b3l5-p072",
+        "phrase": "scolded by the homeroom teacher for",
+        "pos": "ph.",
+        "zh": "因……被導師責罵",
+        "example_en": "He was scolded by the homeroom teacher for being late.",
+        "example_zh": "他因遲到被導師責罵。"
+      },
+      {
+        "id": "b3l5-p073",
+        "phrase": "cheat on the final exam",
+        "pos": "ph.",
+        "zh": "在期末考作弊",
+        "example_en": "The student was caught cheating on the final exam.",
+        "example_zh": "那名學生在期末考作弊時被抓到。"
+      },
+      {
+        "id": "b3l5-p074",
+        "phrase": "be involved in",
+        "pos": "ph.",
+        "zh": "參與；涉及",
+        "example_en": "She is involved in several volunteer projects.",
+        "example_zh": "她參與了數項志工計畫。"
+      },
+      {
+        "id": "b3l5-p075",
+        "phrase": "light up the entire stage",
+        "pos": "ph.",
+        "zh": "照亮整個舞臺",
+        "example_en": "Colorful lights lit up the entire stage.",
+        "example_zh": "繽紛燈光照亮了整個舞臺。"
+      },
+      {
+        "id": "b3l5-p076",
+        "phrase": "perfect every step",
+        "pos": "ph.",
+        "zh": "完善每一個步驟／舞步",
+        "example_en": "The dancers practiced hard to perfect every step.",
+        "example_zh": "舞者努力練習，力求每個舞步完美。"
+      },
+      {
+        "id": "b3l5-p077",
+        "phrase": "graceful motion",
+        "pos": "ph.",
+        "zh": "優雅的動作",
+        "example_en": "The dancer moved with graceful motions.",
+        "example_zh": "舞者以優雅的動作舞動。"
+      },
+      {
+        "id": "b3l5-p078",
+        "phrase": "regardless of",
+        "pos": "ph.",
+        "zh": "不論；不管",
+        "example_en": "Everyone is welcome regardless of age.",
+        "example_zh": "不論年齡，每個人都受到歡迎。"
+      },
+      {
+        "id": "b3l5-p079",
+        "phrase": "must-see destination",
+        "pos": "ph.",
+        "zh": "必訪景點",
+        "example_en": "The old town is a must-see destination.",
+        "example_zh": "這座古城是必訪景點。"
+      },
+      {
+        "id": "b3l5-p080",
+        "phrase": "seek an authentic local experience",
+        "pos": "ph.",
+        "zh": "尋求道地的在地體驗",
+        "example_en": "Many travelers seek an authentic local experience.",
+        "example_zh": "許多旅客尋求道地的在地體驗。"
+      },
+      {
+        "id": "b3l5-p081",
+        "phrase": "be likely to",
+        "pos": "ph.",
+        "zh": "可能……",
+        "example_en": "It is likely to rain this afternoon.",
+        "example_zh": "今天下午可能會下雨。"
+      },
+      {
+        "id": "b3l5-p082",
+        "phrase": "end up doing",
+        "pos": "ph.",
+        "zh": "最後做了……",
+        "example_en": "We ended up staying at home.",
+        "example_zh": "我們最後待在家裡。"
+      },
+      {
+        "id": "b3l5-p083",
+        "phrase": "fall in love with",
+        "pos": "ph.",
+        "zh": "愛上……；喜歡上……",
+        "example_en": "She fell in love with the peaceful town.",
+        "example_zh": "她愛上了這個寧靜的小鎮。"
+      },
+      {
+        "id": "b3l5-p084",
+        "phrase": "pay full attention in class",
+        "pos": "ph.",
+        "zh": "上課專心聽講",
+        "example_en": "Students should pay full attention in class.",
+        "example_zh": "學生上課應該專心聽講。"
+      },
+      {
+        "id": "b3l5-p085",
+        "phrase": "deliver a speech at the ceremony",
+        "pos": "ph.",
+        "zh": "在典禮上致詞",
+        "example_en": "The principal delivered a speech at the ceremony.",
+        "example_zh": "校長在典禮上致詞。"
+      },
+      {
+        "id": "b3l5-p086",
+        "phrase": "end up penniless",
+        "pos": "ph.",
+        "zh": "最後身無分文",
+        "example_en": "He spent carelessly and ended up penniless.",
+        "example_zh": "他揮霍無度，最後身無分文。"
+      },
+      {
+        "id": "b3l5-p087",
+        "phrase": "addiction to gambling",
+        "pos": "ph.",
+        "zh": "賭博成癮",
+        "example_en": "His addiction to gambling destroyed his family life.",
+        "example_zh": "他賭博成癮，毀了家庭生活。"
+      },
+      {
+        "id": "b3l5-p088",
+        "phrase": "end up in prison",
+        "pos": "ph.",
+        "zh": "最後入獄",
+        "example_en": "The criminal ended up in prison.",
+        "example_zh": "那名罪犯最後入獄。"
+      },
+      {
+        "id": "b3l5-p089",
+        "phrase": "lie ahead",
+        "pos": "ph.",
+        "zh": "在前方；即將到來",
+        "example_en": "Many challenges lie ahead.",
+        "example_zh": "前方仍有許多挑戰。"
+      },
+      {
+        "id": "b3l5-p090",
+        "phrase": "make up one’s mind",
+        "pos": "ph.",
+        "zh": "下定決心",
+        "example_en": "She made up her mind to join the contest.",
+        "example_zh": "她下定決心參加比賽。"
+      },
+      {
+        "id": "b3l5-p091",
+        "phrase": "sign up for the contest",
+        "pos": "ph.",
+        "zh": "報名參加比賽",
+        "example_en": "I signed up for the speech contest.",
+        "example_zh": "我報名參加演講比賽。"
+      },
+      {
+        "id": "b3l5-p092",
+        "phrase": "have stage fright",
+        "pos": "ph.",
+        "zh": "怯場",
+        "example_en": "He has stage fright before every performance.",
+        "example_zh": "他每次表演前都會怯場。"
+      },
+      {
+        "id": "b3l5-p093",
+        "phrase": "step out of one’s comfort zone",
+        "pos": "ph.",
+        "zh": "走出舒適圈",
+        "example_en": "Trying something new helps you step out of your comfort zone.",
+        "example_zh": "嘗試新事物能幫助你走出舒適圈。"
+      },
+      {
+        "id": "b3l5-p094",
+        "phrase": "be self-centered",
+        "pos": "ph.",
+        "zh": "以自我為中心",
+        "example_en": "A self-centered person rarely considers others.",
+        "example_zh": "以自我為中心的人很少為他人著想。"
+      },
+      {
+        "id": "b3l5-p095",
+        "phrase": "be unwilling to",
+        "pos": "ph.",
+        "zh": "不願意……",
+        "example_en": "He was unwilling to admit his mistake.",
+        "example_zh": "他不願意承認錯誤。"
+      },
+      {
+        "id": "b3l5-p096",
+        "phrase": "be in blossom",
+        "pos": "ph.",
+        "zh": "正在開花",
+        "example_en": "The cherry trees are in blossom.",
+        "example_zh": "櫻花樹正在開花。"
+      },
+      {
+        "id": "b3l5-p097",
+        "phrase": "flock to",
+        "pos": "ph.",
+        "zh": "成群前往",
+        "example_en": "Tourists flock to the park every spring.",
+        "example_zh": "每年春天，遊客成群前往公園。"
+      },
+      {
+        "id": "b3l5-p098",
+        "phrase": "at dusk",
+        "pos": "ph.",
+        "zh": "在黃昏時",
+        "example_en": "The sky turns orange at dusk.",
+        "example_zh": "黃昏時天空變成橘色。"
+      },
+      {
+        "id": "b3l5-p099",
+        "phrase": "desert landscape",
+        "pos": "ph.",
+        "zh": "沙漠景觀",
+        "example_en": "The film shows a vast desert landscape.",
+        "example_zh": "這部電影呈現廣闊的沙漠景觀。"
+      },
+      {
+        "id": "b3l5-p100",
+        "phrase": "stunningly beautiful",
+        "pos": "ph.",
+        "zh": "美得令人驚嘆",
+        "example_en": "The valley is stunningly beautiful in autumn.",
+        "example_zh": "這座山谷秋天美得令人驚嘆。"
+      },
+      {
+        "id": "b3l5-p101",
+        "phrase": "reach the mountain peak",
+        "pos": "ph.",
+        "zh": "抵達山頂",
+        "example_en": "We reached the mountain peak before noon.",
+        "example_zh": "我們中午前抵達山頂。"
+      },
+      {
+        "id": "b3l5-p102",
+        "phrase": "splendor of the sunrise over the valley",
+        "pos": "ph.",
+        "zh": "山谷上方日出的壯麗景象",
+        "example_en": "We admired the splendor of the sunrise over the valley.",
+        "example_zh": "我們欣賞山谷上方日出的壯麗景象。"
+      },
+      {
+        "id": "b3l5-p103",
+        "phrase": "take one’s breath away",
+        "pos": "ph.",
+        "zh": "令某人驚嘆得屏息",
+        "example_en": "The view from the peak took my breath away.",
+        "example_zh": "山頂的景色令我驚嘆得屏息。"
+      },
+      {
+        "id": "b3l5-p104",
+        "phrase": "splendid scenery",
+        "pos": "ph.",
+        "zh": "壯麗的景色",
+        "example_en": "The train passed through splendid scenery.",
+        "example_zh": "火車穿越壯麗的景色。"
+      },
+      {
+        "id": "b3l5-p105",
+        "phrase": "splendid idea",
+        "pos": "ph.",
+        "zh": "絕妙的主意",
+        "example_en": "Having a picnic is a splendid idea.",
+        "example_zh": "去野餐是個絕妙的主意。"
+      },
+      {
+        "id": "b3l5-p106",
+        "phrase": "take the MRT home",
+        "pos": "ph.",
+        "zh": "搭捷運回家",
+        "example_en": "I usually take the MRT home after work.",
+        "example_zh": "我下班後通常搭捷運回家。"
+      },
+      {
+        "id": "b3l5-p107",
+        "phrase": "flight attendant",
+        "pos": "ph.",
+        "zh": "空服員",
+        "example_en": "The flight attendant showed us our seats.",
+        "example_zh": "空服員帶我們到座位。"
+      },
+      {
+        "id": "b3l5-p108",
+        "phrase": "as mentioned previously",
+        "pos": "ph.",
+        "zh": "如前所述",
+        "example_en": "As mentioned previously, the museum closes on Mondays.",
+        "example_zh": "如前所述，博物館星期一休館。"
+      },
+      {
+        "id": "b3l5-p109",
+        "phrase": "on a previous occasion",
+        "pos": "ph.",
+        "zh": "先前某次",
+        "example_en": "I met her on a previous occasion.",
+        "example_zh": "我先前某次見過她。"
+      },
+      {
+        "id": "b3l5-p110",
+        "phrase": "start-up capital",
+        "pos": "ph.",
+        "zh": "創業資金",
+        "example_en": "They borrowed money for start-up capital.",
+        "example_zh": "他們借錢作為創業資金。"
+      },
+      {
+        "id": "b3l5-p111",
+        "phrase": "indoor basketball court",
+        "pos": "ph.",
+        "zh": "室內籃球場",
+        "example_en": "The school has a new indoor basketball court.",
+        "example_zh": "學校有一座新的室內籃球場。"
+      },
+      {
+        "id": "b3l5-p112",
+        "phrase": "tennis court",
+        "pos": "ph.",
+        "zh": "網球場",
+        "example_en": "We practiced on the tennis court.",
+        "example_zh": "我們在網球場練習。"
+      },
+      {
+        "id": "b3l5-p113",
+        "phrase": "a historic day",
+        "pos": "ph.",
+        "zh": "具有歷史意義的一天",
+        "example_en": "It was a historic day for the country.",
+        "example_zh": "那是這個國家具歷史意義的一天。"
+      },
+      {
+        "id": "b3l5-p114",
+        "phrase": "a historical movie",
+        "pos": "ph.",
+        "zh": "歷史電影",
+        "example_en": "We watched a historical movie in class.",
+        "example_zh": "我們在課堂上看了一部歷史電影。"
+      },
+      {
+        "id": "b3l5-p115",
+        "phrase": "be entertained",
+        "pos": "ph.",
+        "zh": "受到娛樂；感到愉快",
+        "example_en": "The audience was entertained by the comedy show.",
+        "example_zh": "觀眾被這場喜劇表演逗得很開心。"
+      },
+      {
+        "id": "b3l5-p116",
+        "phrase": "disagree about",
+        "pos": "ph.",
+        "zh": "對……意見不合",
+        "example_en": "They disagree about how to spend the money.",
+        "example_zh": "他們對如何花這筆錢意見不合。"
+      },
+      {
+        "id": "b3l5-p117",
+        "phrase": "at the entrance to the stadium",
+        "pos": "ph.",
+        "zh": "在體育場入口處",
+        "example_en": "We met at the entrance to the stadium.",
+        "example_zh": "我們在體育場入口處碰面。"
+      },
+      {
+        "id": "b3l5-p118",
+        "phrase": "witness the Northern Lights",
+        "pos": "ph.",
+        "zh": "親眼見到北極光",
+        "example_en": "She traveled to Iceland to witness the Northern Lights.",
+        "example_zh": "她前往冰島親眼見到北極光。"
+      },
+      {
+        "id": "b3l5-p119",
+        "phrase": "be of breathtaking beauty",
+        "pos": "ph.",
+        "zh": "美得令人屏息",
+        "example_en": "The mountain lake is of breathtaking beauty.",
+        "example_zh": "這座高山湖泊美得令人屏息。"
+      },
+      {
+        "id": "b3l5-p120",
+        "phrase": "be mind-blowing",
+        "pos": "ph.",
+        "zh": "令人極度震撼",
+        "example_en": "The special effects were mind-blowing.",
+        "example_zh": "那些特效令人極度震撼。"
+      },
+      {
+        "id": "b3l5-p121",
+        "phrase": "on one’s day off",
+        "pos": "ph.",
+        "zh": "在某人的休假日",
+        "example_en": "He goes hiking on his day off.",
+        "example_zh": "他會在休假日去健行。"
+      },
+      {
+        "id": "b3l5-p122",
+        "phrase": "spend a leisurely afternoon",
+        "pos": "ph.",
+        "zh": "悠閒地度過一個下午",
+        "example_en": "We spent a leisurely afternoon by the lake.",
+        "example_zh": "我們在湖邊悠閒地度過一個下午。"
+      },
+      {
+        "id": "b3l5-p123",
+        "phrase": "work long hours",
+        "pos": "ph.",
+        "zh": "長時間工作",
+        "example_en": "Doctors often work long hours.",
+        "example_zh": "醫師常常長時間工作。"
+      },
+      {
+        "id": "b3l5-p124",
+        "phrase": "get enough leisure time",
+        "pos": "ph.",
+        "zh": "獲得足夠的休閒時間",
+        "example_en": "Everyone needs to get enough leisure time.",
+        "example_zh": "每個人都需要有足夠的休閒時間。"
+      },
+      {
+        "id": "b3l5-p125",
+        "phrase": "look forward to",
+        "pos": "ph.",
+        "zh": "期待",
+        "example_en": "We look forward to seeing you soon.",
+        "example_zh": "我們期待很快見到你。"
+      },
+      {
+        "id": "b3l5-p126",
+        "phrase": "fashion show",
+        "pos": "ph.",
+        "zh": "時裝秀",
+        "example_en": "The designer presented her work at a fashion show.",
+        "example_zh": "設計師在時裝秀中展示作品。"
+      },
+      {
+        "id": "b3l5-p127",
+        "phrase": "stun the crowd",
+        "pos": "ph.",
+        "zh": "震撼群眾",
+        "example_en": "Her powerful voice stunned the crowd.",
+        "example_zh": "她強而有力的歌聲震撼了群眾。"
+      },
+      {
+        "id": "b3l5-p128",
+        "phrase": "magnificent performance",
+        "pos": "ph.",
+        "zh": "精彩壯觀的表演",
+        "example_en": "The dancers gave a magnificent performance.",
+        "example_zh": "舞者帶來了一場精彩壯觀的表演。"
+      },
+      {
+        "id": "b3l5-p129",
+        "phrase": "high-end grocery store",
+        "pos": "ph.",
+        "zh": "高級食品雜貨店",
+        "example_en": "The high-end grocery store sells imported foods.",
+        "example_zh": "這家高級食品雜貨店販售進口食品。"
+      },
+      {
+        "id": "b3l5-p130",
+        "phrase": "foreign delicacy",
+        "pos": "ph.",
+        "zh": "異國美食",
+        "example_en": "We tried a foreign delicacy at the market.",
+        "example_zh": "我們在市場品嘗了一道異國美食。"
+      },
+      {
+        "id": "b3l5-p131",
+        "phrase": "distinctive shape",
+        "pos": "ph.",
+        "zh": "獨特的形狀",
+        "example_en": "The building has a distinctive shape.",
+        "example_zh": "這棟建築有獨特的形狀。"
+      },
+      {
+        "id": "b3l5-p132",
+        "phrase": "flower in blossom",
+        "pos": "ph.",
+        "zh": "盛開的花朵",
+        "example_en": "She photographed a flower in blossom.",
+        "example_zh": "她拍攝了一朵盛開的花。"
+      },
+      {
+        "id": "b3l5-p133",
+        "phrase": "draw a distinction between … and …",
+        "pos": "ph.",
+        "zh": "區分……與……",
+        "example_en": "We must draw a distinction between fact and opinion.",
+        "example_zh": "我們必須區分事實與意見。"
+      },
+      {
+        "id": "b3l5-p134",
+        "phrase": "distinct smell of",
+        "pos": "ph.",
+        "zh": "明顯的……氣味",
+        "example_en": "The room had the distinct smell of smoke.",
+        "example_zh": "房間裡有明顯的煙味。"
+      },
+      {
+        "id": "b3l5-p135",
+        "phrase": "a non-smoking room",
+        "pos": "ph.",
+        "zh": "禁菸房",
+        "example_en": "We requested a non-smoking room.",
+        "example_zh": "我們要求一間禁菸房。"
+      },
+      {
+        "id": "b3l5-p136",
+        "phrase": "cigarette smoke",
+        "pos": "ph.",
+        "zh": "香菸煙霧",
+        "example_en": "Cigarette smoke is harmful to everyone.",
+        "example_zh": "香菸煙霧對每個人都有害。"
+      },
+      {
+        "id": "b3l5-p137",
+        "phrase": "elegant evening wear",
+        "pos": "ph.",
+        "zh": "優雅的晚宴服裝",
+        "example_en": "The guests arrived in elegant evening wear.",
+        "example_zh": "賓客們穿著優雅的晚宴服裝抵達。"
+      },
+      {
+        "id": "b3l5-p138",
+        "phrase": "the latest collection",
+        "pos": "ph.",
+        "zh": "最新系列",
+        "example_en": "The brand displayed its latest collection.",
+        "example_zh": "這個品牌展示了最新系列。"
+      },
+      {
+        "id": "b3l5-p139",
+        "phrase": "blend classic and modern styles",
+        "pos": "ph.",
+        "zh": "融合古典與現代風格",
+        "example_en": "The designer blends classic and modern styles.",
+        "example_zh": "這位設計師融合古典與現代風格。"
+      },
+      {
+        "id": "b3l5-p140",
+        "phrase": "well dressed",
+        "pos": "ph.",
+        "zh": "穿著得體的",
+        "example_en": "He is always well dressed at work.",
+        "example_zh": "他上班時總是穿著得體。"
+      },
+      {
+        "id": "b3l5-p141",
+        "phrase": "handle a difficult situation",
+        "pos": "ph.",
+        "zh": "處理困難情況",
+        "example_en": "She handled the difficult situation calmly.",
+        "example_zh": "她冷靜地處理了困難情況。"
+      },
+      {
+        "id": "b3l5-p142",
+        "phrase": "with elegance",
+        "pos": "ph.",
+        "zh": "優雅地",
+        "example_en": "She accepted the award with elegance.",
+        "example_zh": "她優雅地領取獎項。"
+      },
+      {
+        "id": "b3l5-p143",
+        "phrase": "remain calm and composed throughout",
+        "pos": "ph.",
+        "zh": "全程保持冷靜沉著",
+        "example_en": "He remained calm and composed throughout the interview.",
+        "example_zh": "他在面試過程中始終保持冷靜沉著。"
+      },
+      {
+        "id": "b3l5-p144",
+        "phrase": "distinctive appearance",
+        "pos": "ph.",
+        "zh": "獨特的外觀",
+        "example_en": "The bird has a distinctive appearance.",
+        "example_zh": "這種鳥有獨特的外觀。"
+      },
+      {
+        "id": "b3l5-p145",
+        "phrase": "works of literature",
+        "pos": "ph.",
+        "zh": "文學作品",
+        "example_en": "The course introduces famous works of literature.",
+        "example_zh": "這門課介紹著名的文學作品。"
+      },
+      {
+        "id": "b3l5-p146",
+        "phrase": "literary master",
+        "pos": "ph.",
+        "zh": "文學大師",
+        "example_en": "Shakespeare is regarded as a literary master.",
+        "example_zh": "莎士比亞被視為文學大師。"
+      },
+      {
+        "id": "b3l5-p147",
+        "phrase": "of all time",
+        "pos": "ph.",
+        "zh": "有史以來",
+        "example_en": "This is one of the greatest novels of all time.",
+        "example_zh": "這是有史以來最偉大的小說之一。"
+      },
+      {
+        "id": "b3l5-p148",
+        "phrase": "with deliberate movements",
+        "pos": "ph.",
+        "zh": "以從容慎重的動作",
+        "example_en": "The dancer crossed the stage with deliberate movements.",
+        "example_zh": "舞者以從容慎重的動作走過舞臺。"
+      },
+      {
+        "id": "b3l5-p149",
+        "phrase": "be sensitive about",
+        "pos": "ph.",
+        "zh": "對……敏感／介意",
+        "example_en": "He is sensitive about his appearance.",
+        "example_zh": "他很在意自己的外表。"
+      },
+      {
+        "id": "b3l5-p150",
+        "phrase": "holiday destination",
+        "pos": "ph.",
+        "zh": "度假勝地",
+        "example_en": "The island is a popular holiday destination.",
+        "example_zh": "這座島是熱門的度假勝地。"
+      },
+      {
+        "id": "b3l5-p151",
+        "phrase": "travel blogger",
+        "pos": "ph.",
+        "zh": "旅遊部落客",
+        "example_en": "The travel blogger shared useful tips.",
+        "example_zh": "那位旅遊部落客分享了實用建議。"
+      },
+      {
+        "id": "b3l5-p152",
+        "phrase": "Instagram influencer",
+        "pos": "ph.",
+        "zh": "Instagram 網紅",
+        "example_en": "The hotel invited an Instagram influencer.",
+        "example_zh": "飯店邀請了一位 Instagram 網紅。"
+      },
+      {
+        "id": "b3l5-p153",
+        "phrase": "stunning news",
+        "pos": "ph.",
+        "zh": "令人震驚的消息",
+        "example_en": "The stunning news spread quickly.",
+        "example_zh": "這則令人震驚的消息迅速傳開。"
+      },
+      {
+        "id": "b3l5-p154",
+        "phrase": "capture the beauty",
+        "pos": "ph.",
+        "zh": "捕捉美景",
+        "example_en": "The photographer tried to capture the beauty of the sunset.",
+        "example_zh": "攝影師試圖捕捉夕陽之美。"
+      },
+      {
+        "id": "b3l5-p155",
+        "phrase": "at sunset",
+        "pos": "ph.",
+        "zh": "在日落時",
+        "example_en": "The beach is especially beautiful at sunset.",
+        "example_zh": "海灘在日落時格外美麗。"
+      },
+      {
+        "id": "b3l5-p156",
+        "phrase": "magnificent view of the ocean",
+        "pos": "ph.",
+        "zh": "壯麗的海景",
+        "example_en": "The balcony offers a magnificent view of the ocean.",
+        "example_zh": "陽臺可以欣賞壯麗的海景。"
+      },
+      {
+        "id": "b3l5-p157",
+        "phrase": "tourist destination",
+        "pos": "ph.",
+        "zh": "旅遊目的地",
+        "example_en": "Taipei is a popular tourist destination.",
+        "example_zh": "臺北是熱門的旅遊目的地。"
+      },
+      {
+        "id": "b3l5-p158",
+        "phrase": "take pictures of",
+        "pos": "ph.",
+        "zh": "拍攝……",
+        "example_en": "Visitors took pictures of the waterfall.",
+        "example_zh": "遊客拍攝了瀑布。"
+      },
+      {
+        "id": "b3l5-p159",
+        "phrase": "care about",
+        "pos": "ph.",
+        "zh": "在意；關心",
+        "example_en": "You should care about your health.",
+        "example_zh": "你應該關心自己的健康。"
+      },
+      {
+        "id": "b3l5-p160",
+        "phrase": "physical appearance",
+        "pos": "ph.",
+        "zh": "外貌",
+        "example_en": "Do not judge people by their physical appearance.",
+        "example_zh": "不要以外貌評斷他人。"
+      },
+      {
+        "id": "b3l5-p161",
+        "phrase": "at the beach resort",
+        "pos": "ph.",
+        "zh": "在海濱度假村",
+        "example_en": "We spent three nights at the beach resort.",
+        "example_zh": "我們在海濱度假村住了三晚。"
+      },
+      {
+        "id": "b3l5-p162",
+        "phrase": "popular tourist attraction",
+        "pos": "ph.",
+        "zh": "熱門旅遊景點",
+        "example_en": "The night market is a popular tourist attraction.",
+        "example_zh": "這座夜市是熱門旅遊景點。"
+      },
+      {
+        "id": "b3l5-p163",
+        "phrase": "be famous for",
+        "pos": "ph.",
+        "zh": "以……聞名",
+        "example_en": "The town is famous for its hot springs.",
+        "example_zh": "這座城鎮以溫泉聞名。"
+      },
+      {
+        "id": "b3l5-p164",
+        "phrase": "distinctive smell and taste",
+        "pos": "ph.",
+        "zh": "獨特的氣味與味道",
+        "example_en": "The cheese has a distinctive smell and taste.",
+        "example_zh": "這種起司有獨特的氣味與味道。"
+      },
+      {
+        "id": "b3l5-p165",
+        "phrase": "mistake A for B",
+        "pos": "ph.",
+        "zh": "把 A 誤認為 B",
+        "example_en": "I mistook the stranger for my teacher.",
+        "example_zh": "我把那位陌生人誤認為老師。"
+      },
+      {
+        "id": "b3l5-p166",
+        "phrase": "be no escape",
+        "pos": "ph.",
+        "zh": "無處可逃；無法逃避",
+        "example_en": "There was no escape from the rising water.",
+        "example_zh": "面對上漲的洪水，無處可逃。"
+      },
+      {
+        "id": "b3l5-p167",
+        "phrase": "spot sb from a mile off",
+        "pos": "ph.",
+        "zh": "從很遠處就認出某人",
+        "example_en": "I can spot my brother from a mile off.",
+        "example_zh": "我從很遠處就能認出哥哥。"
+      },
+      {
+        "id": "b3l5-p168",
+        "phrase": "Western literature",
+        "pos": "ph.",
+        "zh": "西方文學",
+        "example_en": "She studies Western literature at university.",
+        "example_zh": "她在大學研讀西方文學。"
+      },
+      {
+        "id": "b3l5-p169",
+        "phrase": "nursing home",
+        "pos": "ph.",
+        "zh": "養護之家；安養院",
+        "example_en": "She volunteers at a nursing home.",
+        "example_zh": "她在安養院擔任志工。"
+      },
+      {
+        "id": "b3l5-p170",
+        "phrase": "splendid natural sight",
+        "pos": "ph.",
+        "zh": "壯麗的自然景觀",
+        "example_en": "The waterfall is a splendid natural sight.",
+        "example_zh": "這座瀑布是壯麗的自然景觀。"
+      },
+      {
+        "id": "b3l5-p171",
+        "phrase": "the top of Jade Mountain",
+        "pos": "ph.",
+        "zh": "玉山山頂",
+        "example_en": "They reached the top of Jade Mountain at sunrise.",
+        "example_zh": "他們在日出時抵達玉山山頂。"
+      },
+      {
+        "id": "b3l5-p172",
+        "phrase": "in the middle of the night",
+        "pos": "ph.",
+        "zh": "在半夜",
+        "example_en": "The baby woke up in the middle of the night.",
+        "example_zh": "寶寶在半夜醒來。"
+      },
+      {
+        "id": "b3l5-p173",
+        "phrase": "doze off in class",
+        "pos": "ph.",
+        "zh": "上課打瞌睡",
+        "example_en": "He dozed off in class because he was tired.",
+        "example_zh": "他因為疲倦而在課堂上打瞌睡。"
+      },
+      {
+        "id": "b3l5-p174",
+        "phrase": "a photography lover",
+        "pos": "ph.",
+        "zh": "攝影愛好者",
+        "example_en": "This scenic town is perfect for a photography lover.",
+        "example_zh": "這座美麗的小鎮很適合攝影愛好者。"
+      },
+      {
+        "id": "b3l5-p175",
+        "phrase": "catch a cold",
+        "pos": "ph.",
+        "zh": "感冒",
+        "example_en": "Wear a jacket, or you may catch a cold.",
+        "example_zh": "穿上外套，否則你可能會感冒。"
+      },
+      {
+        "id": "b3l5-p176",
+        "phrase": "as the saying goes",
+        "pos": "ph.",
+        "zh": "俗話說",
+        "example_en": "As the saying goes, practice makes perfect.",
+        "example_zh": "俗話說，熟能生巧。"
+      },
+      {
+        "id": "b3l5-p177",
+        "phrase": "complain about",
+        "pos": "ph.",
+        "zh": "抱怨……",
+        "example_en": "He complained about the poor service.",
+        "example_zh": "他抱怨服務不佳。"
+      },
+      {
+        "id": "b3l5-p178",
+        "phrase": "write an English composition",
+        "pos": "ph.",
+        "zh": "寫英文作文",
+        "example_en": "We have to write an English composition tonight.",
+        "example_zh": "我們今晚必須寫一篇英文作文。"
+      },
+      {
+        "id": "b3l5-p179",
+        "phrase": "breathtaking landscape",
+        "pos": "ph.",
+        "zh": "令人屏息的景觀",
+        "example_en": "The train passed through a breathtaking landscape.",
+        "example_zh": "火車穿越令人屏息的景觀。"
+      },
+      {
+        "id": "b3l5-p180",
+        "phrase": "traditional recipe",
+        "pos": "ph.",
+        "zh": "傳統食譜",
+        "example_en": "Grandma taught me a traditional recipe.",
+        "example_zh": "奶奶教了我一道傳統食譜。"
+      },
+      {
+        "id": "b3l5-p181",
+        "phrase": "visit in person",
+        "pos": "ph.",
+        "zh": "親自造訪",
+        "example_en": "You should visit the museum in person.",
+        "example_zh": "你應該親自造訪這座博物館。"
+      }
+    ]
   },
   "grammar": {
-    "points": [],
+    "points": [
+      {
+        "id": "b3l5-g1",
+        "title": "be seen/heard + V-ing/ to VR 感官動詞被動態",
+        "examples": [
+          "A baby was heard crying in the house. (當下正在)",
+          "A little boy was seen to open the fridge, take out a pudding, and disappear into thin air. (被看到整個過程)"
+        ]
+      },
+      {
+        "id": "b3l5-g2",
+        "title": "no/not/never…without V-ing/N. 雙重否定",
+        "examples": [
+          "Do not go to the toilet without telling the teacher.",
+          "Never leave the classroom without hearing the bell ring."
+        ]
+      }
+    ],
     "sentence_structures": {
       "items": []
     }
