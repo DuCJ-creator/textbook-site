@@ -1,0 +1,551 @@
+{
+  "book": "B3",
+  "lesson": "L5",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b3l5-v01",
+        "base": "blossom",
+        "verb": [
+          {
+            "en": "blossom",
+            "zh": "開花；蓬勃發展；變得更有自信",
+            "example": "The trees blossom in early spring."
+          }
+        ],
+        "noun": [
+          {
+            "en": "blossom",
+            "zh": "花朵；花簇；開花期",
+            "example": "Pink blossoms covered the branches."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l5-v02",
+        "base": "land",
+        "verb": [
+          {
+            "en": "land",
+            "zh": "著陸；降落；獲得",
+            "example": "The plane landed safely despite the strong wind."
+          },
+          {
+            "en": "landscape",
+            "zh": "美化景觀；從事景觀設計",
+            "example": "They landscaped the garden with native plants."
+          }
+        ],
+        "noun": [
+          {
+            "en": "land",
+            "zh": "土地；陸地；國土",
+            "example": "The farmers depend on the land for their living."
+          },
+          {
+            "en": "landscape",
+            "zh": "風景；景觀；局勢",
+            "example": "The mountain landscape attracts many visitors."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l5-v03",
+        "base": "splendor",
+        "verb": [],
+        "noun": [
+          {
+            "en": "splendor",
+            "zh": "壯麗；輝煌；華麗",
+            "example": "Visitors admired the splendor of the ancient palace."
+          }
+        ],
+        "adj": [
+          {
+            "en": "splendid",
+            "zh": "極好的；壯麗的；輝煌的",
+            "example": "We had a splendid view of the harbor."
+          }
+        ],
+        "adv": [
+          {
+            "en": "splendidly",
+            "zh": "極好地；壯麗地",
+            "example": "The musicians performed splendidly at the concert."
+          }
+        ]
+      },
+      {
+        "id": "b3l5-v04",
+        "base": "previous",
+        "verb": [],
+        "noun": [],
+        "adj": [
+          {
+            "en": "previous",
+            "zh": "先前的；前一個的",
+            "example": "The previous owner renovated the kitchen."
+          }
+        ],
+        "adv": [
+          {
+            "en": "previously",
+            "zh": "先前；以前",
+            "example": "The building was previously used as a school."
+          }
+        ]
+      },
+      {
+        "id": "b3l5-v05",
+        "base": "capita",
+        "verb": [
+          {
+            "en": "capitalize",
+            "zh": "利用；把……大寫；資本化",
+            "example": "The company hopes to capitalize on growing demand."
+          }
+        ],
+        "noun": [
+          {
+            "en": "capita",
+            "zh": "頭數；人數（caput 的複數，常見於 per capita）",
+            "example": "Income per capita increased last year."
+          },
+          {
+            "en": "capital",
+            "zh": "首都；資本；大寫字母",
+            "example": "Taipei is the capital of Taiwan."
+          },
+          {
+            "en": "capitalism",
+            "zh": "資本主義",
+            "example": "The course examines the development of modern capitalism."
+          },
+          {
+            "en": "capitalist",
+            "zh": "資本家；資本主義者",
+            "example": "The factory was financed by a wealthy capitalist."
+          }
+        ],
+        "adj": [
+          {
+            "en": "capital",
+            "zh": "首要的；大寫的；資本的",
+            "example": "Begin each sentence with a capital letter."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l5-v06",
+        "base": "history",
+        "verb": [],
+        "noun": [
+          {
+            "en": "history",
+            "zh": "歷史；歷史學；經歷",
+            "example": "The museum presents the history of the city."
+          },
+          {
+            "en": "historian",
+            "zh": "歷史學家；史學家",
+            "example": "The historian studied letters from the nineteenth century."
+          }
+        ],
+        "adj": [
+          {
+            "en": "historic",
+            "zh": "有歷史意義的；歷史性的",
+            "example": "The leaders signed a historic agreement."
+          },
+          {
+            "en": "historical",
+            "zh": "歷史的；有關歷史的",
+            "example": "The novel is based on historical events."
+          }
+        ],
+        "adv": [
+          {
+            "en": "historically",
+            "zh": "從歷史角度；歷史上",
+            "example": "The region has historically depended on farming."
+          }
+        ]
+      },
+      {
+        "id": "b3l5-v07",
+        "base": "enter",
+        "verb": [
+          {
+            "en": "enter",
+            "zh": "進入；輸入；參加",
+            "example": "Please enter your password to continue."
+          }
+        ],
+        "noun": [
+          {
+            "en": "entrance",
+            "zh": "入口；進入；入場權",
+            "example": "We met near the main entrance."
+          },
+          {
+            "en": "entry",
+            "zh": "進入；參賽作品；登記項目",
+            "example": "Her photograph was the winning entry in the competition."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l5-v08",
+        "base": "magnify",
+        "verb": [
+          {
+            "en": "magnify",
+            "zh": "放大；擴大；誇大",
+            "example": "This lens can magnify small objects ten times."
+          },
+          {
+            "en": "magnificate",
+            "zh": "讚頌；使顯得偉大（古老或罕見用法）",
+            "example": "The poem magnificates the courage of ordinary people."
+          }
+        ],
+        "noun": [
+          {
+            "en": "magnifier",
+            "zh": "放大鏡；放大器",
+            "example": "She used a magnifier to read the tiny print."
+          },
+          {
+            "en": "magnificence",
+            "zh": "壯麗；宏偉；華麗",
+            "example": "The hall was restored to its former magnificence."
+          },
+          {
+            "en": "magnification",
+            "zh": "放大；放大倍率",
+            "example": "The microscope provides high magnification."
+          }
+        ],
+        "adj": [
+          {
+            "en": "magnified",
+            "zh": "被放大的；擴大的",
+            "example": "The screen showed a magnified image of the insect."
+          },
+          {
+            "en": "magnificent",
+            "zh": "壯麗的；宏偉的；極好的",
+            "example": "The temple has a magnificent golden roof."
+          }
+        ],
+        "adv": [
+          {
+            "en": "magnificently",
+            "zh": "壯麗地；極好地",
+            "example": "The hall was magnificently decorated for the ceremony."
+          }
+        ]
+      },
+      {
+        "id": "b3l5-v09",
+        "base": "leisure",
+        "verb": [],
+        "noun": [
+          {
+            "en": "leisure",
+            "zh": "閒暇；休閒",
+            "example": "She enjoys painting in her leisure time."
+          }
+        ],
+        "adj": [
+          {
+            "en": "leisurely",
+            "zh": "悠閒的；從容的",
+            "example": "We took a leisurely walk around the lake."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l5-v10",
+        "base": "stun",
+        "verb": [
+          {
+            "en": "stun",
+            "zh": "使震驚；使昏迷；使目瞪口呆",
+            "example": "The unexpected result stunned the audience."
+          }
+        ],
+        "noun": [],
+        "adj": [
+          {
+            "en": "stunning",
+            "zh": "令人驚嘆的；極美的；驚人的",
+            "example": "The hotel offers a stunning view of the ocean."
+          },
+          {
+            "en": "stunned",
+            "zh": "震驚的；目瞪口呆的；昏迷的",
+            "example": "We were stunned by the sudden announcement."
+          }
+        ],
+        "adv": [
+          {
+            "en": "stunningly",
+            "zh": "令人驚嘆地；極其美麗地",
+            "example": "The room was stunningly simple and elegant."
+          }
+        ]
+      },
+      {
+        "id": "b3l5-v11",
+        "base": "delicate",
+        "verb": [],
+        "noun": [
+          {
+            "en": "delicacy",
+            "zh": "美味佳餚；精緻；脆弱",
+            "example": "The dessert is a local delicacy."
+          },
+          {
+            "en": "delicatessen",
+            "zh": "熟食店；熟食櫃",
+            "example": "We bought sandwiches from the neighborhood delicatessen."
+          }
+        ],
+        "adj": [
+          {
+            "en": "delicate",
+            "zh": "精緻的；脆弱的；微妙的",
+            "example": "These delicate flowers need protection from the wind."
+          }
+        ],
+        "adv": [
+          {
+            "en": "delicately",
+            "zh": "精緻地；輕柔地；謹慎地",
+            "example": "She delicately placed the glass on the shelf."
+          }
+        ]
+      },
+      {
+        "id": "b3l5-v12",
+        "base": "distinct",
+        "verb": [],
+        "noun": [
+          {
+            "en": "distinction",
+            "zh": "差別；卓越；榮譽",
+            "example": "There is an important distinction between the two terms."
+          }
+        ],
+        "adj": [
+          {
+            "en": "distinct",
+            "zh": "明顯不同的；清楚的；確定的",
+            "example": "The two regions have distinct cultural traditions."
+          },
+          {
+            "en": "distinctive",
+            "zh": "獨特的；有特色的",
+            "example": "The bird has a distinctive red mark on its head."
+          }
+        ],
+        "adv": [
+          {
+            "en": "distinctively",
+            "zh": "獨特地；有特色地",
+            "example": "The building is distinctively modern in design."
+          }
+        ]
+      },
+      {
+        "id": "b3l5-v13",
+        "base": "elegant",
+        "verb": [],
+        "noun": [
+          {
+            "en": "elegance",
+            "zh": "優雅；雅致；簡潔美",
+            "example": "The design combines simplicity with elegance."
+          }
+        ],
+        "adj": [
+          {
+            "en": "elegant",
+            "zh": "優雅的；精美的；簡潔巧妙的",
+            "example": "She wore an elegant blue dress."
+          }
+        ],
+        "adv": [
+          {
+            "en": "elegantly",
+            "zh": "優雅地；精美地",
+            "example": "The table was elegantly arranged for dinner."
+          }
+        ]
+      },
+      {
+        "id": "b3l5-v14",
+        "base": "appear",
+        "verb": [
+          {
+            "en": "appear",
+            "zh": "出現；似乎；演出",
+            "example": "A rainbow appeared after the rain."
+          },
+          {
+            "en": "disappear",
+            "zh": "消失；失蹤；不復存在",
+            "example": "The fog disappeared as the sun rose."
+          }
+        ],
+        "noun": [
+          {
+            "en": "appearance",
+            "zh": "外表；出現；露面",
+            "example": "Do not judge people only by their appearance."
+          },
+          {
+            "en": "disappearance",
+            "zh": "消失；失蹤",
+            "example": "Police are investigating the sudden disappearance of the painting."
+          }
+        ],
+        "adj": [
+          {
+            "en": "apparent",
+            "zh": "明顯的；表面上的；看似的",
+            "example": "It soon became apparent that we needed more time."
+          }
+        ],
+        "adv": [
+          {
+            "en": "apparently",
+            "zh": "顯然地；看來；據說",
+            "example": "Apparently, the meeting has been moved to Friday."
+          }
+        ]
+      },
+      {
+        "id": "b3l5-v15",
+        "base": "literal",
+        "verb": [],
+        "noun": [
+          {
+            "en": "literature",
+            "zh": "文學；文獻；資料",
+            "example": "She studies modern English literature."
+          }
+        ],
+        "adj": [
+          {
+            "en": "literary",
+            "zh": "文學的；書面的；文人的",
+            "example": "The novel won several literary awards."
+          },
+          {
+            "en": "literal",
+            "zh": "字面的；完全按照原文的",
+            "example": "The literal meaning of the phrase is quite different."
+          },
+          {
+            "en": "literate",
+            "zh": "識字的；具備某領域知識的",
+            "example": "Students need to become digitally literate."
+          },
+          {
+            "en": "illiterate",
+            "zh": "不識字的；缺乏相關知識的",
+            "example": "The program provides support for illiterate adults."
+          }
+        ],
+        "adv": [
+          {
+            "en": "literally",
+            "zh": "照字面地；確實地",
+            "example": "The word literally means 'written by hand.'"
+          }
+        ]
+      },
+      {
+        "id": "b3l5-v16",
+        "base": "deliberate",
+        "verb": [
+          {
+            "en": "deliberate",
+            "zh": "仔細考慮；商議",
+            "example": "The committee will deliberate before making a decision."
+          }
+        ],
+        "noun": [],
+        "adj": [
+          {
+            "en": "deliberate",
+            "zh": "故意的；深思熟慮的；從容的",
+            "example": "The damage was caused by a deliberate act."
+          }
+        ],
+        "adv": [
+          {
+            "en": "deliberately",
+            "zh": "故意地；慎重地",
+            "example": "She deliberately left the question unanswered."
+          }
+        ]
+      },
+      {
+        "id": "b3l5-v17",
+        "base": "destine",
+        "verb": [
+          {
+            "en": "destine",
+            "zh": "預定；注定；指定用途",
+            "example": "The land was destined for public use."
+          }
+        ],
+        "noun": [
+          {
+            "en": "destination",
+            "zh": "目的地；終點",
+            "example": "The island is a popular holiday destination."
+          },
+          {
+            "en": "destiny",
+            "zh": "命運；天命；前途",
+            "example": "She believed it was her destiny to become a doctor."
+          }
+        ],
+        "adj": [
+          {
+            "en": "destined",
+            "zh": "注定的；預定前往的；指定用途的",
+            "example": "The package is destined for a school in Tainan."
+          }
+        ],
+        "adv": []
+      }
+    ]
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": []
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}
