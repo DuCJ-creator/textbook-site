@@ -376,34 +376,23 @@ const SentenceSort = (function () {
     }
   }
 
-  // 顯示模式：依句型分類，每一類用「編號 | 句子 | 句型標籤」的兩欄對照表格呈現，
-  // 讓學生一眼看出句子與句型的對應關係，不需要互動也能拿來複習。
+  // 顯示模式：依課文句號順序排列，方便學生播放上方課文語音時逐句對照。
+  // 句型分類與結構答案仍保留在每一句右側，不再把全文拆成四個分類區塊。
   function renderDisplayList() {
     if (!state.els.displayList) return;
     const wrap = state.els.displayList;
-    wrap.innerHTML = "";
-    TYPE_ORDER.forEach(type => {
-      const items = state.items
-        .map((it, i) => ({ ...it, _origIndex: i }))
-        .filter(it => it.type === type);
-      if (!items.length) return;
-
-      const group = document.createElement("div");
-      group.className = "type-group";
-      group.innerHTML = `
-        <h4>${TYPE_LABELS[type]}</h4>
-        <div class="type-table">
-          ${items.map(it => `
-            <div class="sentence-row">
-              <span class="s-no-cell">${Loader.escapeHtml(displayNo(it, it._origIndex))}</span>
-              <span class="s-text-cell">${markMainVerb(it.sentence)}</span>
-              <span class="s-pattern-cell">${Loader.escapeHtml(it.pattern)}</span>
-            </div>
-          `).join("")}
-        </div>
-      `;
-      wrap.appendChild(group);
-    });
+    wrap.innerHTML = `
+      <div class="sequence-heading">依課文句序 · Listen &amp; Follow</div>
+      <div class="type-table">
+        ${state.sortItems.map((item, index) => `
+          <div class="sentence-row">
+            <span class="s-no-cell">${Loader.escapeHtml(displayNo(item, index))}</span>
+            <span class="s-text-cell">${markMainVerb(item.sentence)}</span>
+            <span class="s-pattern-cell"><strong>${Loader.escapeHtml(TYPE_LABELS[item.type] || item.type || "")}</strong><small>${Loader.escapeHtml(item.pattern || "")}</small></span>
+          </div>
+        `).join("")}
+      </div>
+    `;
   }
 
   return { render };
