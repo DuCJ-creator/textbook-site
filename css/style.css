@@ -380,6 +380,10 @@ table.vocab-table { border-collapse: collapse; width: 100%; min-width: 640px; }
 
 .sentence-display-list { display: none; flex-direction: column; gap: 8px; }
 .sentence-display-list.show { display: flex; }
+.sentence-display-list .sequence-heading {
+  margin: 0 0 2px; color: var(--accent); font-size: 0.74rem; font-weight: 800;
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
 .sentence-display-list .type-group { margin-bottom: 18px; }
 .sentence-display-list .type-group h4 {
   font-size: 0.74rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 700; color: var(--accent); margin: 0 0 10px;
@@ -408,6 +412,10 @@ table.vocab-table { border-collapse: collapse; width: 100%; min-width: 640px; }
   border-right: 1px solid var(--paper-line); border-radius: 0 12px 12px 0;
   font-size: 0.72rem; color: var(--ink-soft); font-family: var(--sans); white-space: nowrap; text-align: right;
 }
+.sentence-display-list .s-pattern-cell strong,
+.sentence-display-list .s-pattern-cell small { display: block; }
+.sentence-display-list .s-pattern-cell strong { color: var(--accent); font-size: 0.7rem; }
+.sentence-display-list .s-pattern-cell small { margin-top: 2px; font-size: 0.66rem; }
 
 /* ===================== Text genre ===================== */
 .genre-card { padding: 22px 24px; }
