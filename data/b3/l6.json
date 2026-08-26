@@ -2657,7 +2657,29 @@
     ]
   },
   "grammar": {
-    "points": [],
+    "points": [
+      {
+        "id": "b3l6-g1",
+        "title": "It isn’t/wasn’t until... + that + S + V.... (“直到...才...”的強調句型)",
+        "examples": [
+          "In Korea, it is not until the elderly take the first bite that youngsters can start eating.",
+          "It isn’t until the bell rings that we can leave the classroom.",
+          "It wasn’t until the river was seriously polluted that the government started to pay attention to the problem.",
+          "It was not until Edward plucked up the courage to apologize to his mother that she forgave him."
+        ]
+      },
+      {
+        "id": "b3l6-g2",
+        "title": "...either...or.... (不是...就是...; 二者擇一)/...neither...nor.... (不是...也不是...；二者都不)；對等連接詞，動詞採「就近原則」",
+        "examples": [
+          "You can have either fish or pork. It’s your choice.",
+          "I want neither fish nor beef. I’m a vegetarian.",
+          "Neither obstacles nor failures should stop us from moving forward.",
+          "Either you or the teacher is wrong.",
+          "Neither the students nor Tom likes the movie."
+        ]
+      }
+    ],
     "sentence_structures": {
       "items": []
     }
