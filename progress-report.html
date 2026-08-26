@@ -54,7 +54,7 @@
     <section class="card">
       <div class="proof-head"><h2 class="section-title">Starred Items</h2><span class="starred-count" id="starredCount">讀取中…</span></div>
       <div class="starred-columns">
-        <div class="starred-group"><h3>★ Vocabulary 單字</h3><div id="starredVocabArea" class="starred-list"><div class="empty">讀取星標內容中…</div></div></div>
+        <div class="starred-group"><h3>★ Vocabulary &amp; Word Families 單字與字族</h3><div id="starredVocabArea" class="starred-list"><div class="empty">讀取單字與字族星標中…</div></div></div>
         <div class="starred-group"><h3>★ Phrases 片語</h3><div id="starredPhraseArea" class="starred-list"><div class="empty">讀取星標內容中…</div></div></div>
       </div>
     </section>
@@ -113,7 +113,7 @@
     const familyStars=readSet(VOCAB_STAR_KEY),detailStars=readSet(VOCAB_DETAIL_STAR_KEY),phraseStars=readSet(PHRASE_STAR_KEY);
     if(!familyStars.size&&!detailStars.size&&!phraseStars.size){
       $("starredCount").textContent="共 0 項";
-      $("starredVocabArea").innerHTML='<div class="empty">目前沒有星標單字。</div>';
+      $("starredVocabArea").innerHTML='<div class="empty">目前沒有星標單字或字族。</div>';
       $("starredPhraseArea").innerHTML='<div class="empty">目前沒有星標片語。</div>';
       return;
     }
@@ -145,7 +145,7 @@
           }
         });
       });
-      $("starredVocabArea").innerHTML=vocab.length?vocab.map(starredCard).join(""):'<div class="empty">目前沒有星標單字。</div>';
+      $("starredVocabArea").innerHTML=vocab.length?vocab.map(starredCard).join(""):'<div class="empty">目前沒有星標單字或字族。</div>';
       $("starredPhraseArea").innerHTML=phrases.length?phrases.map(starredCard).join(""):'<div class="empty">目前沒有星標片語。</div>';
       $("starredCount").textContent=`共 ${vocab.length+phrases.length} 項`;
     }catch(_){
