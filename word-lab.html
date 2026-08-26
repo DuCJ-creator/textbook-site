@@ -514,6 +514,12 @@ function findTarget(sen, word){
   if (m) return { i: m.index, len: m[0].length, surface: m[0] };
   return null;
 }
+// 題目答案必須沿用原句中實際出現的字形，而不是 CSV 的字典原形。
+// 例如 rank 在原句是 ranked、employment 在句首是 Employment，都要原樣保留。
+function originalSurface(item){
+  const target = findTarget(item?.sen, item?.word);
+  return target?.surface || item?.word || "";
+}
 const shuffle = a => { a = a.slice(); for (let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
 const pick = a => a[Math.floor(Math.random()*a.length)];
 
@@ -645,7 +651,16 @@ function makeBankQ(items){
     if (!y || used.has(y.word.toLowerCase())) break;
     used.add(y.word.toLowerCase()); dis.push(y);
   }
-  return { type:"bank", items: picked, tiles: shuffle([...picked, ...dis].map(x => x.word)) };
+  const answers = picked.map(originalSurface);
+  const answerKeys = new Set(answers.map(word => word.toLocaleLowerCase()));
+  const distractors = [], seenSurfaces = new Set(answerKeys);
+  shuffle([...dis, ...items]).forEach(item => {
+    if (distractors.length >= picked.length) return;
+    const surface = originalSurface(item), key = surface.toLocaleLowerCase();
+    if (!surface || seenSurfaces.has(key)) return;
+    seenSurfaces.add(key); distractors.push(surface);
+  });
+  return { type:"bank", items: picked, tiles: shuffle([...answers, ...distractors]) };
 }
 
 function makeRebuildQ(items){
@@ -886,14 +901,16 @@ function renderFamily(q, card){
 /* --- 2. 詞性偵探 --- */
 function renderDetective(q, card){
   const it = q.item;
-  const hi = it.sen.replace(new RegExp("\\b(" + esc(it.word) + ")\\b", "i"),
-    '<b style="color:var(--amber);border-bottom:2.5px solid var(--amber)">$1</b>');
+  const target = findTarget(it.sen, it.word), surface = target?.surface || it.word;
+  const hi = target
+    ? it.sen.slice(0,target.i)+'<b style="color:var(--amber);border-bottom:2.5px solid var(--amber)">'+surface+'</b>'+it.sen.slice(target.i+target.len)
+    : it.sen;
   card.innerHTML = `
     <div class="qhead">
       <span class="pill accent">🔍 詞性偵探</span>
-      <span class="pill">${it.word}</span>
+      <span class="pill">${surface}</span>
     </div>
-    <div class="muted" style="margin-bottom:2px">這句話裡的 <b style="color:var(--ink)">${it.word}</b> 是什麼用法？</div>
+    <div class="muted" style="margin-bottom:2px">這句話裡的 <b style="color:var(--ink)">${surface}</b> 是什麼用法？</div>
     <div class="sentence">${hi}</div>
     ${it.szh ? `<div class="zh">${it.szh}</div>` : ""}
     <div class="opts" id="opts"></div>
@@ -908,7 +925,7 @@ function renderDetective(q, card){
     const g = award(ok, it, timedOut ? "timeout" : "wrong");
     $("fb").innerHTML = `<div class="feedback ${ok?"":"bad"}">
         ${ok ? `破案！<span class="hl">+${g}</span> 分` : `${timedOut ? "時間到！" : "判斷錯誤。"} 這裡是 <span class="hl">${it.pos||"?"}</span>`}
-        <div class="note"><b>${it.word}</b>：${it.meaning||""}</div></div>`;
+        <div class="note"><b>${surface}</b>${surface.toLocaleLowerCase()!==it.word.toLocaleLowerCase()?`（原形 ${it.word}）`:""}：${it.meaning||""}</div></div>`;
     autoAdvance();
   };
   q.options.forEach((o, i) => {
@@ -971,10 +988,10 @@ function renderBank(q, card){
     let allOK = !timedOut;
     rows.forEach((r, n) => {
       const bk = card.querySelector(`[data-b="${n}"]`);
-      const ok = (filled[n] || "").toLowerCase() === r.it.word.toLowerCase();
+      const ok = (filled[n] || "") === r.surface;
       bk.classList.add(ok ? "ok" : "no");
       if (!ok){ allOK = false;
-        bk.insertAdjacentHTML("afterend", ` <span style="color:var(--green);font-weight:700">${r.it.word}</span>`);
+        bk.insertAdjacentHTML("afterend", ` <span style="color:var(--green);font-weight:700">${r.surface}</span>`);
         G.wrong.push(r.it);
       }
     });
@@ -984,7 +1001,7 @@ function renderBank(q, card){
     if (!allOK){ card.classList.add("shake"); setTimeout(()=>card.classList.remove("shake"),320); }
     $("fb").innerHTML = `<div class="feedback ${allOK?"":"bad"}">
         ${allOK ? `全對！<span class="hl">+${g}</span> 分` : `${timedOut ? "時間到！" : "有空格填錯了，"}綠色是正解`}
-        ${rows.map(r => `<div class="note"><b>${r.it.word}</b>（${r.it.pos||"—"}）${r.it.meaning||""}</div>`).join("")}
+        ${rows.map(r => `<div class="note"><b>${r.surface}</b>${r.surface.toLocaleLowerCase()!==r.it.word.toLocaleLowerCase()?`（原形 ${r.it.word}）`:""} · ${r.it.pos||"—"}　${r.it.meaning||""}</div>`).join("")}
       </div>`;
     autoAdvance(1100);
   };
