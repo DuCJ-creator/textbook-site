@@ -249,7 +249,8 @@ const WordPractice = (function () {
     renderLetters();
 
     state.fallStart = performance.now();
-    state.fallDuration = Math.max(9, 14 - (state.correct + state.wrong) * 0.3);
+    // 給打字較慢的學生更充裕時間：初始約 22 秒，之後只緩慢加速，最快仍保留 15 秒。
+    state.fallDuration = Math.max(15, 22 - (state.correct + state.wrong) * 0.2);
     cancelAnimationFrame(state.raf);
     state.raf = requestAnimationFrame(fallLoop);
   }

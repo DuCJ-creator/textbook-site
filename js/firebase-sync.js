@@ -173,7 +173,7 @@ function buildLearningSummary() {
   const time = safeParse(getLocal("learning.progress.time.v1") || "null", { totalSeconds: 0, byPage: {} });
   const rawHistory = safeParse(getLocal("learning.progress.history.v1") || "[]", []);
   const history = (Array.isArray(rawHistory) ? rawHistory : []).filter(record =>
-    record && ["word-practice", "word-lab", "grammar-bank"].includes(record.source)
+    record && !record.deleted && !record.hidden && ["word-practice", "word-lab", "grammar-bank"].includes(record.source)
   );
   const notepad = safeParse(getLocal("studentNotepadData") || "null", { notes: [] });
   const annotations = safeParse(getLocal("learning.progress.images.v1") || "[]", []);
@@ -258,7 +258,12 @@ function mergeHistory(localValue, remoteValue) {
   const remote = safeParse(remoteValue || "[]", []);
   const records = new Map();
   [...(Array.isArray(remote) ? remote : []), ...(Array.isArray(local) ? local : [])]
-    .forEach(record => { if (record && typeof record === "object") records.set(recordId(record), record); });
+    .forEach(record => {
+      if (!record || typeof record !== "object") return;
+      const id=recordId(record),existing=records.get(id);
+      const stateTime=value=>String(value?.reportStateUpdatedAt||value?.deletedAt||"");
+      if(!existing||stateTime(record)>=stateTime(existing))records.set(id,record);
+    });
   return JSON.stringify([...records.values()]
     .sort((a, b) => String(a.endedAt || a.startedAt || "").localeCompare(String(b.endedAt || b.startedAt || "")))
     .slice(-300));
