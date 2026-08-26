@@ -8,6 +8,7 @@
 :root{--green:#075b52;--deep:#06443e;--mint:#e7f3ef;--paper:#f8f5ec;--card:#fffdf8;--line:#ded5c2;--ink:#29261f;--soft:#746d5d;--gold:#d89a25;--red:#a53a36;--serif:Georgia,"Noto Serif TC",serif;--sans:Inter,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55}.hero{background:linear-gradient(135deg,var(--deep),var(--green));color:#fff;border-radius:0 0 30px 30px;padding:26px 20px}.hero-inner,.main{max-width:1180px;margin:auto}.back{color:#d4ece7;text-decoration:none;font-size:.78rem}.hero h1{font:700 clamp(1.6rem,4vw,2.4rem)/1.18 var(--serif);margin:14px 0 6px}.hero p{margin:0;color:#d4ece7;font-size:.86rem}.admin-badge{display:inline-flex;margin-left:8px;padding:4px 9px;border:1px solid rgba(255,255,255,.4);border-radius:999px;font-size:.62rem;letter-spacing:.08em}.main{padding:24px 18px 70px}.status{padding:14px 16px;background:#fff8df;border:1px solid #ead49a;border-radius:14px;color:#6f5717;font-size:.8rem;margin-bottom:16px}.toolbar{display:flex;gap:10px;align-items:end;flex-wrap:wrap;margin-bottom:16px}.field{display:grid;gap:5px}.field label{font-size:.65rem;font-weight:900;letter-spacing:.07em;color:var(--soft)}select,input{min-height:42px;border:1px solid var(--line);border-radius:11px;background:#fff;padding:8px 11px;font:inherit;color:var(--ink)}#searchInput{min-width:240px}.btn{min-height:42px;border:1px solid var(--green);border-radius:999px;background:var(--green);color:#fff;padding:8px 16px;font:800 .75rem var(--sans);cursor:pointer}.btn.ghost{background:transparent;color:var(--green)}.btn.gold{border-color:var(--gold);background:var(--gold)}.btn:disabled{opacity:.55;cursor:wait}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:17px}.stat{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:16px;box-shadow:0 2px 0 var(--line)}.stat b{display:block;color:var(--deep);font:700 1.65rem var(--serif)}.stat span{font-size:.68rem;color:var(--soft)}.card{background:var(--card);border:1px solid var(--line);border-radius:19px;padding:18px;box-shadow:0 2px 0 var(--line);margin-bottom:16px}.card h2{font:700 1.15rem var(--serif);color:var(--deep);margin:0 0 13px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:.76rem}th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{font-size:.63rem;color:var(--soft);letter-spacing:.06em}tbody tr:hover{background:#f2f8f5}.name{font-weight:850}.muted{color:var(--soft)}.active-dot,.idle-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}.active-dot{background:#2f9f73}.idle-dot{background:#c4b9a5}.small-btn{border:1px solid var(--green);background:transparent;color:var(--green);border-radius:999px;padding:6px 10px;font:800 .68rem var(--sans);cursor:pointer}.empty{text-align:center;color:var(--soft);padding:26px}.detail[hidden]{display:none}.detail-head{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.detail-meta{color:var(--soft);font-size:.75rem}.detail-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:14px}.subcard{border:1px solid var(--line);background:#fff;border-radius:14px;padding:13px}.subcard h3{font:700 .9rem var(--serif);color:var(--deep);margin:0 0 9px}.score-list,.page-list,.evidence-grid{display:grid;gap:8px}.score-item,.page-item{display:grid;grid-template-columns:1fr auto;gap:8px;border-left:4px solid var(--gold);padding:8px 10px;background:#fff9e9;border-radius:8px;font-size:.73rem}.score-item span,.page-item span{color:var(--soft)}.privacy{font-size:.68rem;color:var(--soft);margin:8px 0 0}.evidence-grid{grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin-top:12px}.evidence{border:1px solid var(--line);border-radius:12px;padding:10px;background:#fff}.evidence img{width:100%;max-height:240px;object-fit:contain;border-radius:8px}.note-text{white-space:pre-wrap;font-size:.76rem}.denied{max-width:600px;margin:80px auto;background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;text-align:center}.screen-only{}.print-only{display:none}
 .privacy-badge{display:inline-flex;vertical-align:middle;margin-left:7px;padding:3px 8px;border-radius:999px;background:#e5f2ed;color:var(--green);font:800 .6rem var(--sans);letter-spacing:.04em}@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}.detail-grid{grid-template-columns:1fr}}@media(max-width:520px){.stats{grid-template-columns:1fr}.toolbar>*{width:100%}#searchInput{min-width:0}th:nth-child(5),td:nth-child(5),th:nth-child(8),td:nth-child(8){display:none}}
+.view[hidden]{display:none}.section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:14px}.section-head h2{margin:0;color:var(--deep);font:700 1.45rem var(--serif)}.section-head p{margin:4px 0 0;color:var(--soft);font-size:.76rem}.compare-options{display:flex;gap:8px;flex-wrap:wrap}.compare-chip{position:relative}.compare-chip input{position:absolute;opacity:0;pointer-events:none}.compare-chip span{display:inline-flex;align-items:center;min-height:38px;padding:7px 13px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--soft);font-size:.72rem;font-weight:800;cursor:pointer}.compare-chip input:checked+span{background:var(--green);border-color:var(--green);color:#fff}.charts-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.chart-note{margin:-7px 0 13px;color:var(--soft);font-size:.68rem}.bar-chart{display:grid;gap:11px}.bar-row{display:grid;grid-template-columns:minmax(90px,145px) 1fr auto;gap:9px;align-items:center;font-size:.7rem}.bar-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:800}.bar-track{height:14px;border-radius:999px;background:#edf1ec;overflow:hidden}.bar-fill{height:100%;min-width:2px;border-radius:inherit;background:linear-gradient(90deg,var(--green),#43a886)}.bar-value{min-width:48px;text-align:right;color:var(--soft);font-weight:800}.line-wrap{overflow-x:auto}.line-chart{width:100%;min-width:520px;height:auto;display:block}.chart-legend{display:flex;gap:11px;flex-wrap:wrap;margin-top:8px;font-size:.65rem}.legend-item{display:inline-flex;gap:5px;align-items:center}.legend-dot{width:9px;height:9px;border-radius:50%}.class-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:12px}.class-card{border:1px solid var(--line);border-radius:16px;background:#fff;padding:15px;display:grid;gap:11px}.class-card h3{margin:0;color:var(--deep);font:700 1.05rem var(--serif)}.class-school{color:var(--soft);font-size:.64rem;font-weight:900;letter-spacing:.08em}.class-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.class-metric{padding:8px;background:var(--mint);border-radius:10px}.class-metric b{display:block;color:var(--deep);font-size:.92rem}.class-metric span{font-size:.58rem;color:var(--soft)}.class-card .small-btn{justify-self:start}.comparison-empty{padding:28px;text-align:center;color:var(--soft);background:#faf8f2;border:1px dashed var(--line);border-radius:14px;font-size:.76rem}.class-title{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.class-title .privacy-badge{margin-left:0}@media(max-width:800px){.charts-grid{grid-template-columns:1fr}}@media(max-width:600px){.bar-row{grid-template-columns:90px 1fr auto}.class-metrics{grid-template-columns:1fr 1fr}.class-metric:last-child{grid-column:1/-1}}
 @media print{@page{size:A4 landscape;margin:10mm}.hero{background:#fff!important;color:var(--ink);padding:10px 0;border-radius:0;border-bottom:3px solid var(--green)}.hero p,.back,.toolbar,.screen-only,.status{display:none!important}.main{padding:12px 0}.stats{grid-template-columns:repeat(4,1fr)}.card{box-shadow:none}body{background:#fff}.print-only{display:block}}
 </style>
 </head>
@@ -15,25 +16,41 @@
 <header class="hero"><div class="hero-inner"><a class="back" href="index.html">← 回首頁</a><h1>Class Learning Dashboard <span class="admin-badge">SHIRLEY ONLY</span></h1><p>以最低讀取量查看學生的學習時間、練習表現與最新活動。</p></div></header>
 <main class="main" id="dashboard" hidden>
   <div class="status" id="status">正在驗證 Shirley 的管理員身份…</div>
-  <div class="toolbar screen-only">
-    <div class="field"><label for="classFilter">CLASS 班級</label><select id="classFilter"><option value="">全部班級</option></select></div>
-    <div class="field"><label for="searchInput">SEARCH 姓名／座號</label><input id="searchInput" type="search" placeholder="輸入姓名或座號"></div>
-    <button class="btn" id="refreshBtn" type="button">重新下載本時段快照</button>
-    <button class="btn ghost" id="csvBtn" type="button">匯出 CSV</button>
-    <button class="btn ghost" id="printBtn" type="button">列印／PDF</button>
-  </div>
-  <section class="stats">
-    <div class="stat"><b id="studentCount">0</b><span>學生人數</span></div>
-    <div class="stat"><b id="activeCount">0</b><span>已有學習紀錄</span></div>
-    <div class="stat"><b id="totalHours">0</b><span>總學習小時</span></div>
-    <div class="stat"><b id="classAccuracy">0%</b><span>有練習者平均正確率</span></div>
+  <section class="view" id="overviewView">
+    <div class="section-head"><div><h2>All Classes Overview</h2><p>先掌握整體趨勢，再選擇班級查看學生。</p></div><div class="toolbar screen-only"><button class="btn" id="refreshBtn" type="button">重新下載本時段快照</button><button class="btn ghost" id="overviewPrintBtn" type="button">列印／PDF</button></div></div>
+    <section class="stats">
+      <div class="stat"><b id="overviewClassCount">0</b><span>班級數</span></div>
+      <div class="stat"><b id="overviewStudentCount">0</b><span>學生人數</span></div>
+      <div class="stat"><b id="overviewActiveCount">0</b><span>已有學習紀錄</span></div>
+      <div class="stat"><b id="overviewAccuracy">0%</b><span>有練習者平均正確率</span></div>
+    </section>
+    <section class="card">
+      <div class="section-head"><div><h2>Compare Classes</h2><p>勾選要放在圖表中比較的班級。</p></div><div class="toolbar screen-only"><button class="btn ghost" id="selectAllBtn" type="button">全選</button><button class="btn ghost" id="clearCompareBtn" type="button">清除</button></div></div>
+      <div class="compare-options" id="compareOptions"></div>
+    </section>
+    <div class="charts-grid">
+      <section class="card"><h2>Average Learning Time</h2><p class="chart-note">每位學生累積的平均有效學習分鐘（單頁滿兩分鐘才納入）。</p><div class="bar-chart" id="learningBarChart"></div></section>
+      <section class="card"><h2>Recent Accuracy Trend</h2><p class="chart-note">依快照內最近練習紀錄彙整；不會額外讀取 Firebase。</p><div class="line-wrap" id="accuracyLineChart"></div><div class="chart-legend" id="accuracyLegend"></div></section>
+    </div>
+    <section class="card"><div class="section-head"><div><h2>Class Directory</h2><p>點「查看學生」進入單一班級頁面。</p></div></div><div class="class-grid" id="classGrid"></div></section>
   </section>
-  <section class="card"><h2>Student Overview <span class="privacy-badge">姓名已遮罩</span></h2><div class="table-wrap"><table><thead><tr><th>班級</th><th>座號</th><th>姓名</th><th>狀態</th><th>學習時間</th><th>回合</th><th>平均分</th><th>正確率</th><th>最後活動</th><th class="screen-only"></th></tr></thead><tbody id="studentRows"><tr><td colspan="10" class="empty">讀取中…</td></tr></tbody></table></div></section>
-  <section class="card detail" id="detailCard" hidden>
-    <div class="detail-head"><div><h2 id="detailName">Student Detail</h2><div class="detail-meta" id="detailMeta"></div></div><button class="btn ghost screen-only" id="closeDetail" type="button">關閉詳情</button></div>
-    <div class="detail-grid"><div class="subcard"><h3>Learning Time by Page</h3><div id="detailTime" class="page-list"></div></div><div class="subcard"><h3>Practice Scores</h3><div id="detailScores" class="score-list"></div></div></div>
-    <div class="screen-only" style="margin-top:13px"><button class="btn gold" id="loadEvidence" type="button">必要時另外載入 Notepad／Annotation</button><p class="privacy">上方學習時間與成績來自每天 11:00／23:00 的快照，不會因查看學生而產生讀取。只有按這個按鈕時，才會另外讀取圖片與筆記。</p></div>
-    <div id="evidenceArea" class="evidence-grid"></div>
+
+  <section class="view" id="classView" hidden>
+    <div class="toolbar screen-only"><button class="btn ghost" id="backToOverview" type="button">← 回班級總覽</button><div class="field"><label for="searchInput">SEARCH 姓名／座號</label><input id="searchInput" type="search" placeholder="輸入姓名或座號"></div><button class="btn ghost" id="csvBtn" type="button">匯出 CSV</button><button class="btn ghost" id="classPrintBtn" type="button">列印／PDF</button></div>
+    <div class="section-head"><div class="class-title"><h2 id="classPageTitle">Class Students</h2><span class="privacy-badge">姓名已遮罩</span></div><p id="classPageMeta"></p></div>
+    <section class="stats">
+      <div class="stat"><b id="studentCount">0</b><span>學生人數</span></div>
+      <div class="stat"><b id="activeCount">0</b><span>已有學習紀錄</span></div>
+      <div class="stat"><b id="totalHours">0</b><span>總學習小時</span></div>
+      <div class="stat"><b id="classAccuracy">0%</b><span>有練習者平均正確率</span></div>
+    </section>
+    <section class="card"><h2>Student List</h2><div class="table-wrap"><table><thead><tr><th>座號</th><th>姓名</th><th>狀態</th><th>學習時間</th><th>回合</th><th>平均分</th><th>正確率</th><th>最後活動</th><th class="screen-only"></th></tr></thead><tbody id="studentRows"><tr><td colspan="9" class="empty">請先從班級總覽選擇班級。</td></tr></tbody></table></div></section>
+    <section class="card detail" id="detailCard" hidden>
+      <div class="detail-head"><div><h2 id="detailName">Student Detail</h2><div class="detail-meta" id="detailMeta"></div></div><button class="btn ghost screen-only" id="closeDetail" type="button">關閉詳情</button></div>
+      <div class="detail-grid"><div class="subcard"><h3>Learning Time by Page</h3><div id="detailTime" class="page-list"></div></div><div class="subcard"><h3>Practice Scores</h3><div id="detailScores" class="score-list"></div></div></div>
+      <div class="screen-only" style="margin-top:13px"><button class="btn gold" id="loadEvidence" type="button">必要時另外載入 Notepad／Annotation</button><p class="privacy">上方學習時間與成績來自每天 11:00／23:00 的快照，不會因查看學生而產生讀取。只有按這個按鈕時，才會另外讀取圖片與筆記。</p></div>
+      <div id="evidenceArea" class="evidence-grid"></div>
+    </section>
   </section>
 </main>
 <div class="denied" id="accessMessage"><h2>正在驗證管理員身份…</h2><p>此頁面只有 Shirley 可以開啟。</p></div>
@@ -43,7 +60,9 @@ import { collection, doc, getDoc, getDocs, getFirestore } from "https://www.gsta
 import { app, getPortalProfile, observePortalAuth } from "./js/firebase-auth.js";
 
 const db=getFirestore(app),$=id=>document.getElementById(id);
-let summaries=[],filtered=[],selected=null;
+let summaries=[],filtered=[],selected=null,classGroups=[],currentClassKey="",selectionInitialized=false;
+const selectedClassKeys=new Set();
+const CHART_COLORS=["#075b52","#d89a25","#a53a36","#3f78a8","#7b5ca8","#3f8d60","#c16f2f","#69747b"];
 const CACHE_KEY="shirley.admin.twice-daily-snapshot.v1";
 const esc=value=>String(value??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;");
 const maskName=value=>String(value??"").trim().split(/(\s+)/).map(part=>{
@@ -60,13 +79,109 @@ const safeParse=(value,fallback)=>{try{return JSON.parse(value)??fallback}catch{
 const snapshotCycle=()=>{const parts=new Intl.DateTimeFormat("en",{timeZone:"Asia/Taipei",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",hourCycle:"h23"}).formatToParts(new Date(Date.now()-11*60*60*1000)),values=Object.fromEntries(parts.map(part=>[part.type,part.value])),hour=Number(values.hour)>=12?"23":"11";return `${values.year}-${values.month}-${values.day}T${hour}`};
 const cycleText=value=>!value?"尚未建立":String(value).includes("T")?String(value).replace("T"," ")+":00":`${value}（舊版每日快照）`;
 const normalizeSummary=item=>{const result={...item};["updatedAt","lastActivityAt","latestPracticeAt"].forEach(key=>{if(result[key]?.toDate)result[key]=result[key].toDate().toISOString()});return result};
+const makeClassKey=item=>`${String(item.school||"—").trim().toUpperCase()}::${String(item.className||"—").trim()}`;
+const isActive=item=>Boolean(item.hasActivity||Number(item.practiceCount||0)>0||Number(item.totalSeconds||0)>0);
+
+function buildClassGroups(){
+  const groups=new Map();
+  summaries.forEach(item=>{
+    const key=makeClassKey(item),school=String(item.school||"—").trim().toUpperCase(),className=String(item.className||"—").trim();
+    if(!groups.has(key))groups.set(key,{key,school,className,members:[]});
+    groups.get(key).members.push(item);
+  });
+  return [...groups.values()].map(group=>{
+    const practiced=group.members.filter(item=>Number(item.practiceCount||0)>0);
+    const totalSeconds=group.members.reduce((sum,item)=>sum+Number(item.totalSeconds||0),0);
+    return {...group,studentCount:group.members.length,activeCount:group.members.filter(isActive).length,totalSeconds,
+      averageMinutes:group.members.length?Math.round(totalSeconds/group.members.length/60):0,
+      averageScore:practiced.length?Math.round(practiced.reduce((sum,item)=>sum+Number(item.averageScore||0),0)/practiced.length):0,
+      averageAccuracy:practiced.length?Math.round(practiced.reduce((sum,item)=>sum+Number(item.averageAccuracy||0),0)/practiced.length):0};
+  }).sort((a,b)=>a.school.localeCompare(b.school,"zh-TW",{numeric:true})||a.className.localeCompare(b.className,"zh-TW",{numeric:true}));
+}
 
 function renderLoadedSummaries(message){
-  const classes=[...new Set(summaries.map(item=>item.className).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"zh-TW",{numeric:true}));
-  const current=$("classFilter").value;
-  $("classFilter").innerHTML='<option value="">全部班級</option>'+classes.map(name=>`<option value="${esc(name)}">${esc(name)}</option>`).join("");
-  if(classes.includes(current))$("classFilter").value=current;
-  applyFilters();$("status").textContent=message;
+  classGroups=buildClassGroups();
+  const available=new Set(classGroups.map(group=>group.key));
+  [...selectedClassKeys].forEach(key=>{if(!available.has(key))selectedClassKeys.delete(key)});
+  if(!selectionInitialized){classGroups.forEach(group=>selectedClassKeys.add(group.key));selectionInitialized=true}
+  renderOverview();
+  if(currentClassKey&&available.has(currentClassKey))openClass(currentClassKey,false);
+  else showOverview(false);
+  $("status").textContent=message;
+}
+
+function renderOverview(){
+  const practiced=summaries.filter(item=>Number(item.practiceCount||0)>0);
+  $("overviewClassCount").textContent=classGroups.length;
+  $("overviewStudentCount").textContent=summaries.length;
+  $("overviewActiveCount").textContent=summaries.filter(isActive).length;
+  $("overviewAccuracy").textContent=(practiced.length?Math.round(practiced.reduce((sum,item)=>sum+Number(item.averageAccuracy||0),0)/practiced.length):0)+"%";
+  renderCompareOptions();renderBarChart();renderLineChart();renderClassGrid();
+}
+
+function renderCompareOptions(){
+  $("compareOptions").innerHTML=classGroups.map(group=>`<label class="compare-chip"><input type="checkbox" value="${esc(group.key)}" ${selectedClassKeys.has(group.key)?"checked":""}><span>${esc(group.school)} · ${esc(group.className)}</span></label>`).join("")||'<div class="comparison-empty">尚無班級資料。</div>';
+  $("compareOptions").querySelectorAll('input[type="checkbox"]').forEach(input=>input.addEventListener("change",()=>{
+    if(input.checked)selectedClassKeys.add(input.value);else selectedClassKeys.delete(input.value);
+    renderBarChart();renderLineChart();
+  }));
+}
+
+function selectedGroups(){return classGroups.filter(group=>selectedClassKeys.has(group.key))}
+
+function renderBarChart(){
+  const groups=selectedGroups(),wrap=$("learningBarChart");
+  if(!groups.length){wrap.innerHTML='<div class="comparison-empty">請先勾選至少一個班級。</div>';return}
+  const max=Math.max(...groups.map(group=>group.averageMinutes),1);
+  wrap.innerHTML=groups.map(group=>`<div class="bar-row"><div class="bar-label" title="${esc(group.school)} · ${esc(group.className)}">${esc(group.school)} · ${esc(group.className)}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.max(2,group.averageMinutes/max*100)}%"></div></div><div class="bar-value">${group.averageMinutes} 分</div></div>`).join("");
+}
+
+function practiceDateKey(value){
+  const date=value?.toDate?value.toDate():new Date(value);if(Number.isNaN(date.getTime()))return"";
+  const parts=new Intl.DateTimeFormat("en",{timeZone:"Asia/Taipei",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(date),v=Object.fromEntries(parts.map(part=>[part.type,part.value]));
+  return `${v.year}-${v.month}-${v.day}`;
+}
+
+function renderLineChart(){
+  const groups=selectedGroups(),wrap=$("accuracyLineChart"),legend=$("accuracyLegend");
+  const series=groups.map((group,index)=>{
+    const daily=new Map();
+    group.members.forEach(member=>(Array.isArray(member.recentPractices)?member.recentPractices:[]).forEach(record=>{
+      const date=practiceDateKey(record.endedAt);if(!date)return;const item=daily.get(date)||{sum:0,count:0};item.sum+=Number(record.accuracy||0);item.count+=1;daily.set(date,item);
+    }));
+    return {group,color:CHART_COLORS[index%CHART_COLORS.length],daily};
+  });
+  const dates=[...new Set(series.flatMap(item=>[...item.daily.keys()]))].sort().slice(-7);
+  if(!groups.length||!dates.length){wrap.innerHTML=`<div class="comparison-empty">${groups.length?"所選班級的快照中尚無近期練習日期。":"請先勾選至少一個班級。"}</div>`;legend.innerHTML="";return}
+  const width=660,height=280,left=46,right=18,top=18,bottom=42,plotW=width-left-right,plotH=height-top-bottom;
+  const x=index=>left+(dates.length===1?plotW/2:index*plotW/(dates.length-1)),y=value=>top+(100-value)*plotH/100;
+  const grids=[0,25,50,75,100].map(value=>`<line x1="${left}" y1="${y(value)}" x2="${width-right}" y2="${y(value)}" stroke="#ded5c2" stroke-width="1"/><text x="${left-8}" y="${y(value)+4}" text-anchor="end" font-size="10" fill="#746d5d">${value}%</text>`).join("");
+  const labels=dates.map((date,index)=>`<text x="${x(index)}" y="${height-16}" text-anchor="middle" font-size="10" fill="#746d5d">${esc(date.slice(5).replace("-","/"))}</text>`).join("");
+  const lines=series.map(item=>{
+    const points=dates.map((date,index)=>{const value=item.daily.get(date);return value?{x:x(index),y:y(value.sum/value.count),value:Math.round(value.sum/value.count),date}:null}).filter(Boolean);
+    if(!points.length)return"";
+    const path=points.map((point,index)=>`${index?"L":"M"}${point.x.toFixed(1)},${point.y.toFixed(1)}`).join(" ");
+    return `<path d="${path}" fill="none" stroke="${item.color}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>${points.map(point=>`<circle cx="${point.x}" cy="${point.y}" r="4" fill="${item.color}"><title>${esc(item.group.school)} · ${esc(item.group.className)} ${esc(point.date)}：${point.value}%</title></circle>`).join("")}`;
+  }).join("");
+  wrap.innerHTML=`<svg class="line-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="所選班級近期平均正確率折線圖">${grids}${labels}${lines}</svg>`;
+  legend.innerHTML=series.map(item=>`<span class="legend-item"><span class="legend-dot" style="background:${item.color}"></span>${esc(item.group.school)} · ${esc(item.group.className)}</span>`).join("");
+}
+
+function renderClassGrid(){
+  $("classGrid").innerHTML=classGroups.map(group=>`<article class="class-card"><div><div class="class-school">${esc(group.school)}</div><h3>${esc(group.className)}</h3></div><div class="class-metrics"><div class="class-metric"><b>${group.studentCount}</b><span>學生</span></div><div class="class-metric"><b>${group.activeCount}</b><span>已開始</span></div><div class="class-metric"><b>${group.averageAccuracy}%</b><span>平均正確率</span></div></div><button class="small-btn" type="button" data-class-key="${esc(group.key)}">查看學生 →</button></article>`).join("")||'<div class="comparison-empty">尚無班級資料。</div>';
+  $("classGrid").querySelectorAll("[data-class-key]").forEach(button=>button.addEventListener("click",()=>openClass(button.dataset.classKey)));
+}
+
+function showOverview(scroll=true){
+  currentClassKey="";selected=null;$("detailCard").hidden=true;$("classView").hidden=true;$("overviewView").hidden=false;
+  if(scroll)window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function openClass(key,scroll=true){
+  const group=classGroups.find(item=>item.key===key);if(!group)return;
+  currentClassKey=key;selected=null;$("detailCard").hidden=true;$("overviewView").hidden=true;$("classView").hidden=false;$("searchInput").value="";
+  $("classPageTitle").textContent=`${group.school} · ${group.className}`;$("classPageMeta").textContent=`最近快照中的 ${group.studentCount} 位學生；可搜尋姓名或座號。`;
+  applyFilters();if(scroll)window.scrollTo({top:0,behavior:"smooth"});
 }
 
 async function loadSummaries(forceCloud=false){
@@ -92,9 +207,9 @@ async function loadSummaries(forceCloud=false){
 }
 
 function applyFilters(){
-  const className=$("classFilter").value,query=$("searchInput").value.trim().toLocaleLowerCase();
-  filtered=summaries.filter(item=>(!className||item.className===className)&&(!query||`${item.name||""} ${item.seatNo||""}`.toLocaleLowerCase().includes(query)));
-  filtered.sort((a,b)=>String(a.className||"").localeCompare(String(b.className||""),"zh-TW",{numeric:true})||String(a.seatNo||"").localeCompare(String(b.seatNo||""),"zh-TW",{numeric:true})||String(a.name||"").localeCompare(String(b.name||""),"zh-TW"));
+  const group=classGroups.find(item=>item.key===currentClassKey),query=$("searchInput").value.trim().toLocaleLowerCase();
+  filtered=(group?.members||[]).filter(item=>!query||`${item.name||""} ${item.seatNo||""}`.toLocaleLowerCase().includes(query));
+  filtered.sort((a,b)=>String(a.seatNo||"").localeCompare(String(b.seatNo||""),"zh-TW",{numeric:true})||String(a.name||"").localeCompare(String(b.name||""),"zh-TW"));
   renderStats();renderRows();
 }
 
@@ -108,9 +223,9 @@ function renderStats(){
 
 function renderRows(){
   $("studentRows").innerHTML=filtered.length?filtered.map(item=>{
-    const active=item.hasActivity||Number(item.practiceCount||0)>0||Number(item.totalSeconds||0)>0;
-    return `<tr><td>${esc(item.className||"—")}</td><td>${esc(item.seatNo||"—")}</td><td class="name">${esc(maskName(item.name))}</td><td><span class="${active?"active-dot":"idle-dot"}"></span>${active?"已開始":"尚未開始"}</td><td>${formatTime(item.totalSeconds)}</td><td>${Number(item.practiceCount||0)}</td><td>${Number(item.averageScore||0)}</td><td>${Number(item.averageAccuracy||0)}%</td><td>${dateText(item.lastActivityAt)}</td><td class="screen-only"><button class="small-btn" data-uid="${esc(item.uid)}">查看詳情</button></td></tr>`;
-  }).join(""):'<tr><td colspan="10" class="empty">沒有符合條件的學生。</td></tr>';
+    const active=isActive(item);
+    return `<tr><td>${esc(item.seatNo||"—")}</td><td class="name">${esc(maskName(item.name))}</td><td><span class="${active?"active-dot":"idle-dot"}"></span>${active?"已開始":"尚未開始"}</td><td>${formatTime(item.totalSeconds)}</td><td>${Number(item.practiceCount||0)}</td><td>${Number(item.averageScore||0)}</td><td>${Number(item.averageAccuracy||0)}%</td><td>${dateText(item.lastActivityAt)}</td><td class="screen-only"><button class="small-btn" data-uid="${esc(item.uid)}">查看詳情</button></td></tr>`;
+  }).join(""):'<tr><td colspan="9" class="empty">沒有符合條件的學生。</td></tr>';
   document.querySelectorAll("[data-uid]").forEach(button=>button.addEventListener("click",()=>openDetail(button.dataset.uid)));
 }
 
@@ -123,7 +238,7 @@ async function readState(uid,id){
 
 function openDetail(uid){
   selected=summaries.find(item=>item.uid===uid);if(!selected)return;
-  $("detailCard").hidden=false;$("detailName").textContent=`${selected.className||""} ${selected.seatNo||""} · ${maskName(selected.name||"Student")}`;
+  $("detailCard").hidden=false;$("detailName").textContent=`${selected.seatNo||""} · ${maskName(selected.name||"Student")}`;
   $("detailMeta").textContent=`快照週期 ${cycleText(selected.snapshotCycle)} · ${formatTime(selected.totalSeconds)} · ${Number(selected.practiceCount||0)} 回合 · 平均正確率 ${Number(selected.averageAccuracy||0)}%`;
   const pages=Array.isArray(selected.pageBreakdown)?selected.pageBreakdown:[];
   $("detailTime").innerHTML=pages.length?pages.map(page=>`<div class="page-item"><div>${esc(page.title||page.path||"頁面")}</div><span>${formatTime(page.seconds)}</span></div>`).join(""):'<div class="empty">此快照尚無滿兩分鐘的頁面紀錄。</div>';
@@ -145,8 +260,8 @@ async function loadEvidence(){
 }
 
 function exportCsv(){
-  const headers=["Class","No.","Name","Status","Learning Minutes","Practice Attempts","Average Score","Average Accuracy","Last Activity"];
-  const rows=filtered.map(item=>[item.className||"",item.seatNo||"",maskName(item.name),item.hasActivity?"Started":"Not started",Math.round(Number(item.totalSeconds||0)/60),Number(item.practiceCount||0),Number(item.averageScore||0),Number(item.averageAccuracy||0),item.lastActivityAt?.toDate?.().toISOString?.()||item.lastActivityAt||""]);
+  const headers=["School","Class","No.","Name","Status","Learning Minutes","Practice Attempts","Average Score","Average Accuracy","Last Activity"];
+  const rows=filtered.map(item=>[item.school||"",item.className||"",item.seatNo||"",maskName(item.name),item.hasActivity?"Started":"Not started",Math.round(Number(item.totalSeconds||0)/60),Number(item.practiceCount||0),Number(item.averageScore||0),Number(item.averageAccuracy||0),item.lastActivityAt?.toDate?.().toISOString?.()||item.lastActivityAt||""]);
   const csv=[headers,...rows].map(row=>row.map(value=>`"${String(value??"").replace(/"/g,'""')}"`).join(",")).join("\n");
   const link=document.createElement("a");link.href=URL.createObjectURL(new Blob(["\uFEFF"+csv],{type:"text/csv;charset=utf-8"}));link.download=`class-learning-summary-${new Date().toISOString().slice(0,10)}.csv`;link.click();URL.revokeObjectURL(link.href);
 }
@@ -160,7 +275,14 @@ observePortalAuth(async user=>{
   }catch(_){$("accessMessage").innerHTML='<h2>沒有管理員權限</h2><p>此頁面只有 Shirley 可以開啟。即將返回首頁。</p>';setTimeout(()=>location.replace("index.html"),2200)}
 });
 
-$("classFilter").addEventListener("change",applyFilters);$("searchInput").addEventListener("input",applyFilters);$("refreshBtn").addEventListener("click",()=>loadSummaries(true));$("csvBtn").addEventListener("click",exportCsv);$("printBtn").addEventListener("click",()=>window.print());$("closeDetail").addEventListener("click",()=>{$("detailCard").hidden=true;selected=null});$("loadEvidence").addEventListener("click",loadEvidence);
+$("searchInput").addEventListener("input",applyFilters);
+$("refreshBtn").addEventListener("click",()=>loadSummaries(true));
+$("selectAllBtn").addEventListener("click",()=>{classGroups.forEach(group=>selectedClassKeys.add(group.key));renderCompareOptions();renderBarChart();renderLineChart()});
+$("clearCompareBtn").addEventListener("click",()=>{selectedClassKeys.clear();renderCompareOptions();renderBarChart();renderLineChart()});
+$("backToOverview").addEventListener("click",()=>showOverview());
+$("csvBtn").addEventListener("click",exportCsv);
+$("overviewPrintBtn").addEventListener("click",()=>window.print());$("classPrintBtn").addEventListener("click",()=>window.print());
+$("closeDetail").addEventListener("click",()=>{$("detailCard").hidden=true;selected=null});$("loadEvidence").addEventListener("click",loadEvidence);
 </script>
 </body>
 </html>
