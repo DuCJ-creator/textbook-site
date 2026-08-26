@@ -18,13 +18,13 @@
   .two-col{display:grid;grid-template-columns:1fr 1.2fr;gap:16px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:.78rem}th,td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{color:var(--soft);font-size:.66rem;letter-spacing:.05em}td.wrap-cell{white-space:normal;min-width:160px}
   .empty{padding:24px;text-align:center;color:var(--soft);font-size:.82rem}.reflection{min-height:130px;resize:vertical}.print-reflection{display:none;white-space:pre-wrap;min-height:70px}
   .starred-columns{display:grid;grid-template-columns:1fr 1fr;gap:14px}.starred-group{border:1px solid var(--line);border-radius:14px;padding:14px;background:#fff}.starred-group h3{font:700 .92rem var(--serif);color:var(--accent-dark);margin:0 0 10px}.starred-list{display:grid;gap:8px}.starred-item{border-left:4px solid var(--gold);background:#fff9e8;border-radius:8px;padding:9px 11px}.starred-term{font-weight:800;color:var(--ink)}.starred-meaning{font-size:.76rem;color:var(--soft);margin-top:2px}.starred-source{font-size:.62rem;font-weight:800;letter-spacing:.05em;color:var(--accent);margin-top:4px}.starred-count{font-size:.7rem;color:var(--soft)}
-  .notes-grid,.image-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:11px}.note,.evidence{border:1px solid var(--line);border-radius:13px;padding:12px;background:#fff}.note-tag{font-size:.64rem;color:var(--soft);font-weight:800;margin-bottom:6px}.note-text{white-space:pre-wrap;font-size:.82rem}.note img,.evidence img{display:block;width:100%;max-height:270px;object-fit:contain;border-radius:9px;background:#f4f0e7}.evidence textarea{width:100%;margin-top:8px;border:0;border-top:1px solid var(--line);padding:8px 3px 0;resize:vertical;font:inherit;font-size:.78rem}.evidence-actions{display:flex;justify-content:flex-end;margin-top:6px}.remove{border:0;background:transparent;color:#a33;padding:4px 8px}
+  .notes-grid,.image-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:11px}.note,.evidence{border:1px solid var(--line);border-radius:13px;padding:12px;background:#fff}.note-tag{font-size:.64rem;color:var(--soft);font-weight:800;margin-bottom:6px}.note-text{white-space:pre-wrap;font-size:.82rem}.note img,.evidence img{display:block;width:100%;max-height:270px;object-fit:contain;border-radius:9px;background:#f4f0e7}.evidence textarea{width:100%;margin-top:8px;border:0;border-top:1px solid var(--line);padding:8px 3px 0;resize:vertical;font:inherit;font-size:.78rem}.evidence-actions{display:flex;justify-content:flex-end;margin-top:6px}.remove{border:0;background:transparent;color:#a33;padding:4px 8px}.score-actions{display:flex;gap:5px}.score-actions button{padding:5px 9px;font-size:.65rem;white-space:nowrap}.score-row-hidden{opacity:.48;background:#f3f0e9}.score-hidden-label{display:inline-block;margin-left:5px;padding:2px 6px;border-radius:999px;background:#ddd6c8;color:var(--soft);font-size:.58rem;font-weight:800}
   .proof-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.generated{font-size:.68rem;color:var(--soft)}.print-only{display:none}
   .certificate{border-top:1px solid var(--line);margin-top:18px;padding-top:12px;font-size:.68rem;color:var(--soft)}
   @media(max-width:760px){.identity,.stats,.two-col{grid-template-columns:1fr 1fr}.identity .field:nth-child(2){grid-column:span 1}.stats{grid-template-columns:1fr 1fr}}
   @media(max-width:520px){.identity,.two-col,.starred-columns{grid-template-columns:1fr}}
   @media print{
-    @page{size:A4;margin:12mm}body{background:#fff;font-size:10pt}.hero{padding:14px 0 12px;border-radius:0;background:#fff!important;color:var(--ink);border-bottom:3px solid var(--accent)}.hero-inner,.report{max-width:none}.hero p,.back,.toolbar,.remove,.file-label{display:none!important}.report{padding:12px 0}.card{box-shadow:none;break-inside:avoid;margin-bottom:10px;padding:14px}.section-title{font-size:12pt}.stats{grid-template-columns:repeat(4,1fr)}.stat{padding:9px;background:#eef5f2!important}.stat b{font-size:15pt}.two-col{display:block}.two-col>.card{margin-bottom:10px}.reflection{display:none}.print-reflection,.print-only{display:block}.screen-only{display:none}.image-grid,.notes-grid{grid-template-columns:repeat(2,1fr)}.evidence,.note{break-inside:avoid}table{font-size:8pt}th,td{padding:5px 4px}.hero h1{font-size:20pt;margin:0}.generated{display:block}.evidence textarea{border:0;min-height:34px} }
+    @page{size:A4;margin:12mm}body{background:#fff;font-size:10pt}.hero{padding:14px 0 12px;border-radius:0;background:#fff!important;color:var(--ink);border-bottom:3px solid var(--accent)}.hero-inner,.report{max-width:none}.hero p,.back,.toolbar,.remove,.file-label{display:none!important}.report{padding:12px 0}.card{box-shadow:none;break-inside:avoid;margin-bottom:10px;padding:14px}.section-title{font-size:12pt}.stats{grid-template-columns:repeat(4,1fr)}.stat{padding:9px;background:#eef5f2!important}.stat b{font-size:15pt}.two-col{display:block}.two-col>.card{margin-bottom:10px}.reflection{display:none}.print-reflection,.print-only{display:block}.screen-only,.score-actions{display:none!important}.score-row-hidden{display:none!important}.image-grid,.notes-grid{grid-template-columns:repeat(2,1fr)}.evidence,.note{break-inside:avoid}table{font-size:8pt}th,td{padding:5px 4px}.hero h1{font-size:20pt;margin:0}.generated{display:block}.evidence textarea{border:0;min-height:34px} }
 </style>
 </head>
 <body>
@@ -48,7 +48,7 @@
 
     <div class="two-col">
       <section class="card"><h2 class="section-title">Learning Time by Page</h2><div class="table-wrap"><table><thead><tr><th>頁面</th><th>時間</th><th>造訪</th></tr></thead><tbody id="timeRows"></tbody></table></div></section>
-      <section class="card"><h2 class="section-title">Practice Scores</h2><div class="table-wrap"><table><thead><tr><th>日期</th><th>練習</th><th>模式／範圍</th><th>Score</th><th>答對／總題</th><th>正確率</th></tr></thead><tbody id="scoreRows"></tbody></table></div></section>
+      <section class="card"><h2 class="section-title">Practice Scores</h2><p class="toolbar-note screen-only">「不顯示」會從摘要統計及 PDF 中排除，但仍可在此恢復；「刪除」會同步到其他裝置。</p><div class="table-wrap"><table><thead><tr><th>日期</th><th>練習</th><th>模式／範圍</th><th>Score</th><th>答對／總題</th><th>正確率</th><th class="screen-only">管理</th></tr></thead><tbody id="scoreRows"></tbody></table></div></section>
     </div>
 
     <section class="card">
@@ -81,6 +81,15 @@
   const $=id=>document.getElementById(id);
   const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;");
   const readJSON=(key,fallback)=>{try{const v=JSON.parse(localStorage.getItem(key)||"null");return v??fallback}catch{return fallback}};
+  const historyRecordId=record=>String(record?.attemptId||[record?.source,record?.mode,record?.startedAt,record?.endedAt,record?.score].join("|"));
+  const saveHistory=history=>{localStorage.setItem(HISTORY_KEY,JSON.stringify(history.slice(-300)))};
+  function updateHistoryRecord(encodedId,action){
+    const id=decodeURIComponent(encodedId),history=readJSON(HISTORY_KEY,[]),now=new Date().toISOString();
+    const record=history.find(item=>item&&historyRecordId(item)===id);if(!record)return;
+    if(action==="toggle")record.hidden=!record.hidden;
+    if(action==="delete"){record.deleted=true;record.hidden=true;record.deletedAt=now}
+    record.reportStateUpdatedAt=now;saveHistory(history);render();
+  }
   const formatTime=seconds=>{seconds=Math.round(Number(seconds)||0);const h=Math.floor(seconds/3600),m=Math.floor(seconds%3600/60);return h?`${h} 小時 ${m} 分`:seconds<60?`${seconds} 秒`:`${m} 分`};
   const activityName=r=>r.source==="word-lab"?"Word Lab":r.source==="grammar-bank"?"Grammar Practice":"Word Practice";
   const readSet=key=>{const value=readJSON(key,[]);return new Set(Array.isArray(value)?value:[])};
@@ -149,7 +158,8 @@
   function render(){
     if(window.LearningProgressTracker) window.LearningProgressTracker.commit();
     const time=readJSON("learning.progress.time.v1",{totalSeconds:0,byPage:{}});
-    const history=readJSON(HISTORY_KEY,[]).filter(r=>r&&["word-lab","word-practice","grammar-bank"].includes(r.source));
+    const allHistory=readJSON(HISTORY_KEY,[]).filter(r=>r&&!r.deleted&&["word-lab","word-practice","grammar-bank"].includes(r.source));
+    const history=allHistory.filter(r=>!r.hidden);
     const pages=Object.values(time.byPage||{}).filter(p=>Number(p.seconds||0)>=120).sort((a,b)=>Number(b.seconds||0)-Number(a.seconds||0));
     const countedSeconds=pages.reduce((sum,p)=>sum+Number(p.seconds||0),0);
     $("totalTime").textContent=formatTime(countedSeconds);
@@ -157,11 +167,16 @@
     $("averageScore").textContent=history.length?Math.round(history.reduce((s,r)=>s+Number(r.score||0),0)/history.length):0;
     $("averageAccuracy").textContent=(history.length?Math.round(history.reduce((s,r)=>s+Number(r.accuracy||0),0)/history.length):0)+"%";
     $("timeRows").innerHTML=pages.length?pages.map(p=>`<tr><td class="wrap-cell">${esc(p.title||p.path||"頁面")}</td><td>${formatTime(p.seconds)}</td><td>${Number(p.visits||0)}</td></tr>`).join(""):`<tr><td colspan="3" class="empty">單一頁面累積滿 2 分鐘後，才會顯示學習時間。</td></tr>`;
-    $("scoreRows").innerHTML=history.length?history.slice().reverse().map(r=>{
+    $("scoreRows").innerHTML=allHistory.length?allHistory.slice().reverse().map(r=>{
       const when=r.endedAt?new Date(r.endedAt).toLocaleDateString("zh-TW"):"—";
       const scope=[r.modeLabel||r.mode,r.book&&r.book!=="all"?String(r.book).toUpperCase():"",r.lesson&&r.lesson!=="all"?String(r.lesson).toUpperCase():""].filter(Boolean).join(" · ");
-      return `<tr><td>${esc(when)}</td><td>${activityName(r)}</td><td class="wrap-cell">${esc(scope||"—")}</td><td><b>${Number(r.score||0)}</b></td><td>${Number(r.correct||0)}／${Number(r.total??(Number(r.correct||0)+Number(r.wrong||0)))}</td><td>${Number(r.accuracy||0)}%</td></tr>`;
-    }).join(""):`<tr><td colspan="6" class="empty">完成 Word Practice、Word Lab 或 Grammar Practice 後，分數會顯示在這裡。</td></tr>`;
+      const encoded=encodeURIComponent(historyRecordId(r));
+      return `<tr class="${r.hidden?"score-row-hidden":""}"><td>${esc(when)}${r.hidden?'<span class="score-hidden-label">已隱藏</span>':""}</td><td>${activityName(r)}</td><td class="wrap-cell">${esc(scope||"—")}</td><td><b>${Number(r.score||0)}</b></td><td>${Number(r.correct||0)}／${Number(r.total??(Number(r.correct||0)+Number(r.wrong||0)))}</td><td>${Number(r.accuracy||0)}%</td><td class="score-actions screen-only"><button class="ghost" type="button" data-history-action="toggle" data-history-id="${esc(encoded)}">${r.hidden?"顯示":"不顯示"}</button><button class="remove" type="button" data-history-action="delete" data-history-id="${esc(encoded)}">刪除</button></td></tr>`;
+    }).join(""):`<tr><td colspan="7" class="empty">完成 Word Practice、Word Lab 或 Grammar Practice 後，分數會顯示在這裡。</td></tr>`;
+    $("scoreRows").querySelectorAll("[data-history-action]").forEach(button=>button.addEventListener("click",()=>{
+      if(button.dataset.historyAction==="delete"&&!confirm("確定刪除這筆練習紀錄？刪除後會同步到其他裝置。"))return;
+      updateHistoryRecord(button.dataset.historyId,button.dataset.historyAction);
+    }));
     renderNotes();renderImages();renderStarredItems();
     $("generatedAt").textContent="Generated "+new Date().toLocaleString("zh-TW");
   }

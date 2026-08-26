@@ -17,6 +17,14 @@
     padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,.14);
     font-size: 0.8rem; color: rgba(255,255,255,.92);
   }
+  .family-title-row { display: flex; align-items: center; gap: 10px; }
+  .family-star-btn {
+    width: 42px; height: 42px; flex: 0 0 auto; border: 1px solid var(--paper-line); border-radius: 999px;
+    background: var(--card); color: var(--ink-soft); font-size: 1.25rem; cursor: pointer;
+    transition: transform .15s ease, color .15s ease, background .15s ease, border-color .15s ease;
+  }
+  .family-star-btn:hover { transform: scale(1.08); }
+  .family-star-btn.starred { color: #9b6500; border-color: #dfb23e; background: #fff6cf; }
 </style>
 </head>
 <body>
@@ -52,7 +60,7 @@
         <div class="family-heading">
           <div>
             <p class="breadcrumb" style="margin-bottom:2px;">CURRENT FAMILY</p>
-            <h2 id="familyName">—</h2>
+            <div class="family-title-row"><h2 id="familyName">—</h2><button class="family-star-btn" id="familyStarBtn" type="button" aria-label="收藏目前字族" aria-pressed="false" title="收藏目前字族" disabled>☆</button></div>
           </div>
           <p id="familyProgress">—</p>
         </div>
@@ -103,6 +111,38 @@
   document.getElementById("practiceLink").href = `word-practice.html?book=${bookId}&lesson=${lessonId}`;
 
   let CURRENT_ROWS = [];
+  const FAMILY_STAR_KEY = "vocabStarredIds";
+  let currentFamilyRow = null;
+
+  function familyBase(row) {
+    if (row?.base) return row.base;
+    for (const pos of ["verb", "noun", "adj", "adv"]) {
+      const first = row?.[pos]?.find(entry => entry.en);
+      if (first) return first.en;
+    }
+    return "";
+  }
+
+  function currentFamilyStarId() {
+    const base = familyBase(currentFamilyRow);
+    return base ? `${bookId}-${lessonId}-${base}` : "";
+  }
+
+  function syncFamilyStar(row) {
+    if (row) currentFamilyRow = row;
+    const button = document.getElementById("familyStarBtn"), id = currentFamilyStarId();
+    const starred = Boolean(id && Loader.loadStarredSet(FAMILY_STAR_KEY).has(id));
+    button.disabled = !id; button.classList.toggle("starred", starred);
+    button.textContent = starred ? "★" : "☆"; button.setAttribute("aria-pressed", String(starred));
+    button.title = starred ? "取消收藏目前字族" : "收藏目前字族";
+  }
+
+  document.getElementById("familyStarBtn").addEventListener("click", () => {
+    const id = currentFamilyStarId(); if (!id) return;
+    const stars = Loader.loadStarredSet(FAMILY_STAR_KEY);
+    if (stars.has(id)) stars.delete(id); else stars.add(id);
+    Loader.saveStarredSet(FAMILY_STAR_KEY, stars); syncFamilyStar();
+  });
 
   Loader.fetchLessonData(bookId, lessonId)
     .then(data => {
@@ -130,7 +170,8 @@
         panelId: "detailPanel",
         countId: "wordCount",
         rows: rows,
-        initialBase: highlightBase
+        initialBase: highlightBase,
+        onSelect: (_entry, row) => syncFamilyStar(row)
       });
 
       document.getElementById("familyModeBtn").addEventListener("click", () => setVocabMode("family"));

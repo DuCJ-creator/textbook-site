@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>單字實驗室 Word Lab</title>
+<link rel="stylesheet" href="css/style.css" />
 <style>
 :root{
   color-scheme: light;
@@ -261,7 +262,7 @@ body.flash-no::after{background:rgba(213,65,52,.18)}
   <div class="inner">
     <div>
       <h1>單字實驗室 <span style="font-weight:400;opacity:.75;font-size:.62em">Word Lab</span></h1>
-      <div class="sub">字根家族 · 詞性判讀 · 語境填空 · 句子重組</div>
+      <div class="sub">詞性判讀 · 詞塊拼句</div>
     </div>
     <div class="spacer"></div>
     <button class="icon-btn" id="btnSound" aria-pressed="true">🔊 音效</button>
@@ -289,7 +290,7 @@ body.flash-no::after{background:rgba(213,65,52,.18)}
         <span class="muted" id="poolInfo"></span>
       </div>
 
-      <div class="muted" style="margin-bottom:8px">選一個玩法（也可以直接挑「混合挑戰」）</div>
+      <div class="muted" style="margin-bottom:8px">選擇一種玩法</div>
       <div class="mode-grid" id="modeGrid"></div>
 
       <div class="actions">
@@ -518,13 +519,8 @@ const pick = a => a[Math.floor(Math.random()*a.length)];
 
 /* ---------------- 模式定義 ---------------- */
 const MODES = {
-  family: {
-    emo:"🧬", name:"字根變形工廠", tag:"招牌",
-    desc:"同一個字根長出的所有變形擺在一起，靠句子語境挑對那一個。memorize？memorial？memorable？",
-    avail: items => items.some(x => findTarget(x.sen, x.word)),
-  },
   detective: {
-    emo:"🔍", name:"詞性偵探", tag:"治詞性",
+    emo:"🔍", name:"詞性偵探", tag:"詞性判讀",
     desc:"不看中文猜答案，只靠句中位置判斷它需要名詞、動詞、形容詞或副詞。",
     avail: items => items.some(x => x.pos && x.sen),
   },
@@ -532,19 +528,9 @@ const MODES = {
     emo:"🧩", name:"詞塊拼句", tag:"",
     desc:"一次三個句子共用一個詞庫，裡面混著干擾字，點一點把每個空格填滿。",
     avail: items => items.filter(x => findTarget(x.sen, x.word)).length >= 3,
-  },
-  rebuild: {
-    emo:"🔁", name:"句子重組", tag:"",
-    desc:"整句打散成詞塊，照中文意思重新排回正確語序。",
-    avail: items => items.some(x => x.sen && x.sen.split(/\s+/).length >= 4 && x.sen.split(/\s+/).length <= 14),
-  },
-  mixed: {
-    emo:"🎲", name:"混合挑戰", tag:"",
-    desc:"以上題型隨機輪播，最接近真正的考試感覺。",
-    avail: () => true,
-  },
+  }
 };
-let MODE = "family";
+let MODE = "detective";
 
 function familySibs(items, x){
   return items.filter(y => y.base && y.base.toLowerCase() === x.base.toLowerCase()
@@ -669,12 +655,10 @@ function makeRebuildQ(items){
   return { type:"rebuild", item: pick(cands) };
 }
 
-const MAKERS = { family:makeFamilyQ, detective:makeDetectiveQ, bank:makeBankQ, rebuild:makeRebuildQ };
+const MAKERS = { detective:makeDetectiveQ, bank:makeBankQ };
 
 function nextQuestion(items){
-  let order;
-  if (MODE === "mixed") order = shuffle(["family","detective","bank","rebuild"]);
-  else order = [MODE, "family", "bank", "detective", "rebuild"];
+  const order = [MODE, ...Object.keys(MAKERS).filter(key => key !== MODE)];
   for (const k of order){
     if (!MODES[k] || !MODES[k].avail(items)) continue;
     for (let t = 0; t < 12; t++){ const q = MAKERS[k](items); if (q) return q; }
@@ -849,13 +833,11 @@ function renderQuestion(){
   updateHUD();
   const q = nextQuestion(G.items);
   if (!q){ toast("題庫出不了更多題了"); return endGame("no-questions"); }
-  const limit = q.type === "bank" ? 18 + q.items.length * 8
-    : q.type === "rebuild" ? Math.min(42, 18 + q.item.sen.trim().split(/\s+/).length * 1.7)
-    : 22;
+  const limit = q.type === "bank" ? 18 + q.items.length * 8 : 22;
   startTimerBar(Math.round(limit));
   const card = $("qCard");
   card.classList.remove("pop"); card.classList.add("game-on"); void card.offsetWidth; card.classList.add("pop");
-  ({ family:renderFamily, detective:renderDetective, bank:renderBank, rebuild:renderRebuild })[q.type](q, card);
+  ({ detective:renderDetective, bank:renderBank })[q.type](q, card);
 }
 
 
@@ -1214,6 +1196,12 @@ document.addEventListener("keydown", e => {
 
 load();
 </script>
-<script src="js/loader.js"></script>
+<script>
+if (new URLSearchParams(location.search).get("embed") !== "1") {
+  const loaderScript = document.createElement("script");
+  loaderScript.src = "js/loader.js";
+  document.head.appendChild(loaderScript);
+}
+</script>
 </body>
 </html>
