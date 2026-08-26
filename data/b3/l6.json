@@ -2681,10 +2681,215 @@
       }
     ],
     "sentence_structures": {
-      "items": []
+      "items": [
+        {
+          "id": "b3l6-s001",
+          "sentence": "Nuñez, an experienced mountaineer, *was climbing* up one of Ecuador’s highest mountains when he lost his footing.",
+          "type": "complex",
+          "pattern": "S + Vi + Adverbial clause (when...)"
+        },
+        {
+          "id": "b3l6-s002",
+          "sentence": "He *slid* down a snowy slope and *fell* over a cliff edge, tumbling a great distance.",
+          "type": "simple",
+          "pattern": "S + Vi (Compound verb) + Participle clause"
+        },
+        {
+          "id": "b3l6-s003",
+          "sentence": "Bruised and dazed, he *found* himself in a place cut off from the world.",
+          "type": "simple",
+          "pattern": "Participle adjectives + S + Vt + O + OC"
+        },
+        {
+          "id": "b3l6-s004",
+          "sentence": "Despite his injuries, Nuñez *struggled* to his feet and *set off* to explore.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vi (Compound verb)"
+        },
+        {
+          "id": "b3l6-s005",
+          "sentence": "As he made his way through the unfamiliar land, he *came upon* an unusual village.",
+          "type": "complex",
+          "pattern": "Adverbial clause (As...) + S + Vt+O"
+        },
+        {
+          "id": "b3l6-s006",
+          "sentence": "The houses *were* unevenly painted, and all the roads leading to the houses *had* low walls alongside them.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"and\") + Participle modifier"
+        },
+        {
+          "id": "b3l6-s007",
+          "sentence": "It *didn’t take* long for Nuñez to realize that every villager was blind.",
+          "type": "complex",
+          "pattern": "It (dummy subject) + Noun clause (that...)"
+        },
+        {
+          "id": "b3l6-s008",
+          "sentence": "Feeling superior to these sightless people, he *thought* to himself, “In the country of the blind, the one-eyed man *is* king.”",
+          "type": "complex",
+          "pattern": "Participle clause + S + Vt + Direct speech (Noun clause)"
+        },
+        {
+          "id": "b3l6-s009",
+          "sentence": "However, after spending time with the locals, he *was amazed* at their great knowledge.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vl+C"
+        },
+        {
+          "id": "b3l6-s010",
+          "sentence": "Though blind, they *knew* their mountain kingdom intimately.",
+          "type": "complex",
+          "pattern": "Elliptical clause (Though...) + S + Vt + O"
+        },
+        {
+          "id": "b3l6-s011",
+          "sentence": "The villagers skillfully *farmed* and *moved* around by using their keen senses of hearing, touch, and smell.",
+          "type": "simple",
+          "pattern": "S + Vi (Compound verb) + Prepositional phrase"
+        },
+        {
+          "id": "b3l6-s012",
+          "sentence": "They also *employed* effective techniques for growing crops and caring for animals.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b3l6-s013",
+          "sentence": "The paths, lined with low walls, *had been* specially *built* to help them navigate safely.",
+          "type": "simple",
+          "pattern": "S + Participle modifier + Passive"
+        },
+        {
+          "id": "b3l6-s014",
+          "sentence": "Among the villagers, a respected elder named Yacob *put* the outsider to work and *began* teaching him their ways.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + O (Compound verb)"
+        },
+        {
+          "id": "b3l6-s015",
+          "sentence": "Gradually, Nuñez *adapted* to their way of life, but he *clung* to the reality of sight.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"but\")"
+        },
+        {
+          "id": "b3l6-s016",
+          "sentence": "To him, vision *was* as real as the air he breathed.",
+          "type": "complex",
+          "pattern": "Prepositional phrase + S + Vl + C + Relative clause"
+        },
+        {
+          "id": "b3l6-s017",
+          "sentence": "Although he tried to explain what he saw, he *failed* to make them understand what it meant to have vision.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Although...) + Noun clauses"
+        },
+        {
+          "id": "b3l6-s018",
+          "sentence": "The more he spoke of high mountains and twinkling stars, the more the villagers *pitied* him.",
+          "type": "complex",
+          "pattern": "Comparative clause structure (The + comparative..., the + comparative...)"
+        },
+        {
+          "id": "b3l6-s019",
+          "sentence": "Nuñez *felt* frustrated at the villagers’ lack of awe for his precious gift of sight.",
+          "type": "simple",
+          "pattern": "S + Vl+ C"
+        },
+        {
+          "id": "b3l6-s020",
+          "sentence": "It *wasn’t* until he first laid eyes on Yacob’s daughter, Medina-saroté, that he *began* to feel better.",
+          "type": "complex",
+          "pattern": "It-Cleft sentence (It was not until... that...)"
+        },
+        {
+          "id": "b3l6-s021",
+          "sentence": "No one else *admired* Medina’s beauty, as she had well-defined features that lacked the smoothness the villagers valued.",
+          "type": "complex",
+          "pattern": "Adverbial clause (as...) + Relative clauses"
+        },
+        {
+          "id": "b3l6-s022",
+          "sentence": "Furthermore, her weak voice *was* neither powerful nor pleasing enough to meet their standards.",
+          "type": "simple",
+          "pattern": "S + Vl + C (Correlative conjunction: neither... nor...)"
+        },
+        {
+          "id": "b3l6-s023",
+          "sentence": "Nuñez alone *recognized* her beauty, and he soon *fell* in love with her.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"and\")"
+        },
+        {
+          "id": "b3l6-s024",
+          "sentence": "Yet, as their relationship blossomed, their desire to marry *faced* fierce opposition from the other villagers, who viewed Nuñez’s “sight” as a dangerous delusion that needed to be “cured.”",
+          "type": "complex",
+          "pattern": "Adverbial clause (as...) + Relative clauses (who... / that...)"
+        },
+        {
+          "id": "b3l6-s025",
+          "sentence": "Worst of all, even Medina herself *agreed* with them.",
+          "type": "simple",
+          "pattern": "S + Vi"
+        },
+        {
+          "id": "b3l6-s026",
+          "sentence": "She *persuaded* Nuñez to remove the peculiar orbs on either side of his nose.",
+          "type": "simple",
+          "pattern": "S + Vt + O + OC"
+        },
+        {
+          "id": "b3l6-s027",
+          "sentence": "That way, he *could stop* daydreaming and truly *become* one of them.",
+          "type": "simple",
+          "pattern": "S + Vt (Compound verb)"
+        },
+        {
+          "id": "b3l6-s028",
+          "sentence": "In return for Nuñez’s great sacrifice, she *agreed* to marry him.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + O"
+        },
+        {
+          "id": "b3l6-s029",
+          "sentence": "Nuñez *was confronted* with a dilemma: he *had* to choose either to lose his eyes or to end their relationship.",
+          "type": "compound",
+          "pattern": "S + Vi (Passive) + Compound element with colon"
+        },
+        {
+          "id": "b3l6-s030",
+          "sentence": "Eventually, he *agreed* to give up his eyes for Medina’s sake.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b3l6-s031",
+          "sentence": "Nevertheless, it *wasn’t* until the day of his surgery that he *realized* he was making a huge mistake.",
+          "type": "complex",
+          "pattern": "It-Cleft sentence (It was not until... that...) + Noun clause"
+        },
+        {
+          "id": "b3l6-s032",
+          "sentence": "That morning, he once again *beheld* the splendor of the sunrise.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b3l6-s033",
+          "sentence": "Gazing at the beautiful surrounding landscape and envisioning all that he might still see in the future, Nuñez *saw* that he had to escape.",
+          "type": "complex",
+          "pattern": "Participle clauses + S + Vt + Noun clause (that...)"
+        },
+        {
+          "id": "b3l6-s034",
+          "sentence": "Driven by the desire to save his sight, he *fled* the country of the blind.",
+          "type": "simple",
+          "pattern": "Participle phrase + S + Vt + O"
+        }
+      ]
     }
   },
   "text_genre": {
-    "raw_text": ""
+    "raw_text": "This is a story following Freytag's Pyramid structure. \nExposition: Nuñez falls into an isolated valley and discovers a village of blind inhabitants, arrogantly assuming his sight will make him their king.\nRising Action: He realizes that the villagers excel using their other senses, dismiss his \"vision\" as a delusion, and demand he be surgically blinded before marrying his love, Medina-saroté.\nClimax: On the morning of his surgery, Nuñez beholds the magnificent sunrise and chooses to preserve his sight rather than give it up for love and conformity.\nFalling Action: He abandons his wedding plans and turns his back on the village.\nResolution: Driven by a desire for visual freedom, Nuñez flees the country of the blind."
   }
 }
