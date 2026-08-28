@@ -1,0 +1,643 @@
+{
+  "book": "B1",
+  "lesson": "L4",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b1l4-v01",
+        "base": "sense",
+        "verb": [
+          {
+            "en": "sense",
+            "zh": "感覺到；察覺；意識到",
+            "example": "She sensed that something was wrong."
+          }
+        ],
+        "noun": [
+          {
+            "en": "sense",
+            "zh": "感官；感覺；意義；判斷力",
+            "example": "Dogs have a highly developed sense of smell."
+          },
+          {
+            "en": "sensitivity",
+            "zh": "敏感；敏感度；體貼",
+            "example": "The camera's sensitivity can be adjusted."
+          },
+          {
+            "en": "sensibility",
+            "zh": "感受力；明智；情感",
+            "example": "The novel appeals to modern sensibilities."
+          },
+          {
+            "en": "nonsense",
+            "zh": "胡說；荒謬的事；無意義的話",
+            "example": "That rumor is complete nonsense."
+          }
+        ],
+        "adj": [
+          {
+            "en": "sensitive",
+            "zh": "敏感的；體貼的；靈敏的",
+            "example": "This equipment is sensitive to changes in temperature."
+          },
+          {
+            "en": "sensible",
+            "zh": "明智的；合理的；實用的",
+            "example": "Wearing a helmet is a sensible precaution."
+          }
+        ],
+        "adv": [
+          {
+            "en": "sensitively",
+            "zh": "敏感地；體貼地；細膩地",
+            "example": "The teacher handled the issue sensitively."
+          },
+          {
+            "en": "sensibly",
+            "zh": "明智地；合理地；實用地",
+            "example": "She dressed sensibly for the cold weather."
+          }
+        ]
+      },
+      {
+        "id": "b1l4-v02",
+        "base": "detect",
+        "verb": [
+          {
+            "en": "detect",
+            "zh": "察覺；偵測；發現",
+            "example": "The device can detect smoke within seconds."
+          }
+        ],
+        "noun": [
+          {
+            "en": "detective",
+            "zh": "偵探；刑警",
+            "example": "The detective questioned several witnesses."
+          },
+          {
+            "en": "detection",
+            "zh": "偵測；發現；察覺",
+            "example": "Early detection can improve treatment outcomes."
+          }
+        ],
+        "adj": [
+          {
+            "en": "detective",
+            "zh": "偵探的；偵查的",
+            "example": "She enjoys reading detective novels."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l4-v03",
+        "base": "accomplish",
+        "verb": [
+          {
+            "en": "accomplish",
+            "zh": "完成；實現；達成",
+            "example": "The team accomplished its goal ahead of schedule."
+          }
+        ],
+        "noun": [
+          {
+            "en": "accomplishment",
+            "zh": "成就；完成；才藝",
+            "example": "Finishing the marathon was a major accomplishment."
+          }
+        ],
+        "adj": [
+          {
+            "en": "accomplished",
+            "zh": "有成就的；熟練的；完成的",
+            "example": "She is an accomplished pianist."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l4-v04",
+        "base": "infect",
+        "verb": [
+          {
+            "en": "infect",
+            "zh": "感染；傳染；影響",
+            "example": "The virus can infect both humans and animals."
+          }
+        ],
+        "noun": [
+          {
+            "en": "infection",
+            "zh": "感染；傳染病",
+            "example": "The wound showed no sign of infection."
+          },
+          {
+            "en": "infectivity",
+            "zh": "傳染力；感染能力（醫學用語）",
+            "example": "Researchers measured the infectivity of the new strain."
+          }
+        ],
+        "adj": [
+          {
+            "en": "infected",
+            "zh": "受感染的；染病的",
+            "example": "The infected files were removed from the computer."
+          },
+          {
+            "en": "infective",
+            "zh": "具有感染力的；能傳染的（專業用語）",
+            "example": "The parasite becomes infective at this stage."
+          },
+          {
+            "en": "infectious",
+            "zh": "傳染性的；有感染力的",
+            "example": "The patient is no longer infectious."
+          }
+        ],
+        "adv": [
+          {
+            "en": "infectiously",
+            "zh": "富感染力地；能傳染地",
+            "example": "She laughed so infectiously that everyone joined in."
+          }
+        ]
+      },
+      {
+        "id": "b1l4-v05",
+        "base": "locate",
+        "verb": [
+          {
+            "en": "locate",
+            "zh": "找到；確定位置；設置於",
+            "example": "The rescue team located the missing hikers."
+          }
+        ],
+        "noun": [
+          {
+            "en": "location",
+            "zh": "位置；地點；外景地",
+            "example": "The hotel is in a convenient location."
+          }
+        ],
+        "adj": [
+          {
+            "en": "located",
+            "zh": "位於……的；坐落的",
+            "example": "The museum is located near the station."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l4-v06",
+        "base": "reward",
+        "verb": [
+          {
+            "en": "reward",
+            "zh": "獎勵；報答；酬謝",
+            "example": "The company rewards employees for innovative ideas."
+          }
+        ],
+        "noun": [
+          {
+            "en": "reward",
+            "zh": "獎賞；報酬；回報",
+            "example": "She received a reward for finding the lost dog."
+          }
+        ],
+        "adj": [
+          {
+            "en": "rewarding",
+            "zh": "有回報的；值得的；令人滿足的",
+            "example": "Teaching can be a challenging but rewarding career."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l4-v07",
+        "base": "able",
+        "verb": [
+          {
+            "en": "enable",
+            "zh": "使能夠；啟用",
+            "example": "The scholarship enabled her to continue her studies."
+          },
+          {
+            "en": "disable",
+            "zh": "使失去能力；停用",
+            "example": "You can disable notifications in the settings."
+          }
+        ],
+        "noun": [
+          {
+            "en": "ability",
+            "zh": "能力；本領；才能",
+            "example": "She has the ability to explain complex ideas clearly."
+          },
+          {
+            "en": "disability",
+            "zh": "身心障礙；失能；缺陷",
+            "example": "The building has improved access for people with disabilities."
+          }
+        ],
+        "adj": [
+          {
+            "en": "able",
+            "zh": "能夠的；有能力的",
+            "example": "He is able to solve the problem independently."
+          },
+          {
+            "en": "unable",
+            "zh": "無法的；不能的",
+            "example": "We were unable to open the damaged file."
+          },
+          {
+            "en": "disabled",
+            "zh": "身心障礙的；已停用的",
+            "example": "The button remains disabled until all fields are complete."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l4-v08",
+        "base": "predict",
+        "verb": [
+          {
+            "en": "predict",
+            "zh": "預測；預言",
+            "example": "Experts predict that temperatures will rise."
+          }
+        ],
+        "noun": [
+          {
+            "en": "prediction",
+            "zh": "預測；預言",
+            "example": "Her prediction proved to be accurate."
+          }
+        ],
+        "adj": [
+          {
+            "en": "predictive",
+            "zh": "預測性的；具有預測能力的",
+            "example": "The software uses predictive models to identify risks."
+          },
+          {
+            "en": "predictable",
+            "zh": "可預測的；意料之中的",
+            "example": "The ending of the story was predictable."
+          },
+          {
+            "en": "unpredictable",
+            "zh": "不可預測的；反覆無常的",
+            "example": "Mountain weather can be unpredictable."
+          }
+        ],
+        "adv": [
+          {
+            "en": "predictively",
+            "zh": "以預測方式；預測性地",
+            "example": "The system analyzes demand predictively."
+          },
+          {
+            "en": "predictably",
+            "zh": "可預料地；不出所料地",
+            "example": "Predictably, traffic was heavy before the holiday."
+          }
+        ]
+      },
+      {
+        "id": "b1l4-v09",
+        "base": "manage",
+        "verb": [
+          {
+            "en": "manage",
+            "zh": "管理；設法做到；應付",
+            "example": "She manages a team of twelve designers."
+          }
+        ],
+        "noun": [
+          {
+            "en": "management",
+            "zh": "管理；管理階層；處理",
+            "example": "Good time management reduces stress."
+          }
+        ],
+        "adj": [
+          {
+            "en": "manageable",
+            "zh": "可處理的；可管理的；適中的",
+            "example": "We divided the project into manageable tasks."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l4-v10",
+        "base": "create",
+        "verb": [
+          {
+            "en": "create",
+            "zh": "創造；建立；造成",
+            "example": "The program helps students create digital stories."
+          }
+        ],
+        "noun": [
+          {
+            "en": "creation",
+            "zh": "創造；創作品；建立",
+            "example": "The sculpture is the artist's latest creation."
+          },
+          {
+            "en": "creativity",
+            "zh": "創造力；創意",
+            "example": "The activity encourages creativity and teamwork."
+          },
+          {
+            "en": "creator",
+            "zh": "創作者；創造者",
+            "example": "The creator of the app released a new version."
+          },
+          {
+            "en": "creature",
+            "zh": "生物；動物；人",
+            "example": "The forest is home to many rare creatures."
+          }
+        ],
+        "adj": [
+          {
+            "en": "creative",
+            "zh": "有創意的；創造性的",
+            "example": "They found a creative solution to the problem."
+          }
+        ],
+        "adv": [
+          {
+            "en": "creatively",
+            "zh": "創造性地；有創意地",
+            "example": "The students used recycled materials creatively."
+          }
+        ]
+      },
+      {
+        "id": "b1l4-v11",
+        "base": "expose",
+        "verb": [
+          {
+            "en": "expose",
+            "zh": "暴露；揭露；使接觸",
+            "example": "The report exposed serious safety problems."
+          }
+        ],
+        "noun": [
+          {
+            "en": "exposure",
+            "zh": "暴露；接觸；曝光",
+            "example": "Long exposure to loud noise can damage hearing."
+          },
+          {
+            "en": "exposition",
+            "zh": "闡述；展覽會；故事背景介紹",
+            "example": "The opening chapter provides exposition about the main characters."
+          }
+        ],
+        "adj": [
+          {
+            "en": "exposed",
+            "zh": "暴露的；無遮蔽的；曝光的",
+            "example": "The exposed wires must be repaired immediately."
+          },
+          {
+            "en": "expository",
+            "zh": "說明性的；闡述性的",
+            "example": "Students practiced writing an expository essay."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l4-v12",
+        "base": "perform",
+        "verb": [
+          {
+            "en": "perform",
+            "zh": "表演；執行；表現",
+            "example": "The band will perform at the festival tonight."
+          }
+        ],
+        "noun": [
+          {
+            "en": "performance",
+            "zh": "表演；表現；效能",
+            "example": "The audience praised her performance."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b1l4-v13",
+        "base": "behave",
+        "verb": [
+          {
+            "en": "behave",
+            "zh": "表現；守規矩；運作",
+            "example": "The children behaved well during the trip."
+          }
+        ],
+        "noun": [
+          {
+            "en": "behavior",
+            "zh": "行為；舉止；運作方式",
+            "example": "The teacher praised his helpful behavior."
+          }
+        ],
+        "adj": [
+          {
+            "en": "behavioral",
+            "zh": "行為的；與行為有關的",
+            "example": "The study examines behavioral changes in teenagers."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l4-v14",
+        "base": "alert",
+        "verb": [
+          {
+            "en": "alert",
+            "zh": "警告；使警覺；通知",
+            "example": "The alarm alerted everyone to the fire."
+          }
+        ],
+        "noun": [
+          {
+            "en": "alert",
+            "zh": "警報；警戒狀態；通知",
+            "example": "The weather service issued a storm alert."
+          }
+        ],
+        "adj": [
+          {
+            "en": "alert",
+            "zh": "警覺的；機敏的；清醒的",
+            "example": "Drivers must remain alert on long journeys."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l4-v15",
+        "base": "complete",
+        "verb": [
+          {
+            "en": "complete",
+            "zh": "完成；填妥；使完整",
+            "example": "Please complete the form before Friday."
+          }
+        ],
+        "noun": [
+          {
+            "en": "completion",
+            "zh": "完成；結束；竣工",
+            "example": "The bridge is nearing completion."
+          },
+          {
+            "en": "completeness",
+            "zh": "完整；完整性",
+            "example": "For the sake of completeness, all names are given in full."
+          },
+          {
+            "en": "complement",
+            "zh": "補充物；相輔相成的事物",
+            "example": "The sauce is a perfect complement to the fish."
+          }
+        ],
+        "adj": [
+          {
+            "en": "complete",
+            "zh": "完整的；全部的；徹底的",
+            "example": "We need a complete list of participants."
+          },
+          {
+            "en": "complementary",
+            "zh": "互補的；相配的；補充的",
+            "example": "The two courses teach complementary skills."
+          }
+        ],
+        "adv": [
+          {
+            "en": "completely",
+            "zh": "完全地；徹底地",
+            "example": "The road was completely blocked by snow."
+          }
+        ]
+      },
+      {
+        "id": "b1l4-v16",
+        "base": "assign",
+        "verb": [
+          {
+            "en": "assign",
+            "zh": "指派；分配；指定",
+            "example": "The teacher assigned each group a different topic."
+          }
+        ],
+        "noun": [
+          {
+            "en": "assignment",
+            "zh": "作業；任務；指派",
+            "example": "The writing assignment is due next Monday."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b1l4-v17",
+        "base": "species",
+        "verb": [
+          {
+            "en": "specify",
+            "zh": "明確說明；指定；詳述",
+            "example": "Please specify the size and color you need."
+          }
+        ],
+        "noun": [
+          {
+            "en": "species",
+            "zh": "物種；種類（單複數同形）",
+            "example": "This species lives only on the island."
+          },
+          {
+            "en": "specification",
+            "zh": "規格；明確說明；詳細要求",
+            "example": "The product meets all safety specifications."
+          },
+          {
+            "en": "speciality",
+            "zh": "專長；特色產品（英式拼法）",
+            "example": "Seafood is the restaurant's speciality."
+          },
+          {
+            "en": "specialist",
+            "zh": "專家；專科醫師",
+            "example": "You should consult a heart specialist."
+          },
+          {
+            "en": "specialty",
+            "zh": "專長；特色產品（美式拼法）",
+            "example": "Traditional bread is the bakery's specialty."
+          }
+        ],
+        "adj": [
+          {
+            "en": "specific",
+            "zh": "特定的；明確的；具體的",
+            "example": "Do you have a specific date in mind?"
+          },
+          {
+            "en": "special",
+            "zh": "特別的；特殊的；專用的",
+            "example": "We prepared a special meal for her birthday."
+          },
+          {
+            "en": "specialized",
+            "zh": "專門的；專業化的",
+            "example": "The laboratory uses specialized equipment."
+          }
+        ],
+        "adv": [
+          {
+            "en": "specifically",
+            "zh": "明確地；特別地；具體而言",
+            "example": "The course is designed specifically for beginners."
+          },
+          {
+            "en": "especially",
+            "zh": "尤其；特別；格外",
+            "example": "The park is beautiful, especially in spring."
+          }
+        ]
+      }
+    ]
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": []
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}
