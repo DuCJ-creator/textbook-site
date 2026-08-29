@@ -629,12 +629,1228 @@
     ]
   },
   "phrases": {
-    "items": []
+    "items": [
+      {
+        "id": "b1l4-p001",
+        "phrase": "far more…than",
+        "pos": "ph.",
+        "zh": "遠比……更……",
+        "example_en": "This task is far more difficult than I expected.",
+        "example_zh": "這項任務遠比我預期的困難。"
+      },
+      {
+        "id": "b1l4-p002",
+        "phrase": "keen sense of smell",
+        "pos": "ph.",
+        "zh": "敏銳的嗅覺",
+        "example_en": "Dogs have a keen sense of smell.",
+        "example_zh": "狗有敏銳的嗅覺。"
+      },
+      {
+        "id": "b1l4-p003",
+        "phrase": "accomplish a task",
+        "pos": "ph.",
+        "zh": "完成任務",
+        "example_en": "We accomplished the task on time.",
+        "example_zh": "我們準時完成了任務。"
+      },
+      {
+        "id": "b1l4-p004",
+        "phrase": "help…out",
+        "pos": "ph.",
+        "zh": "幫助……擺脫困難",
+        "example_en": "Could you help me out with this box?",
+        "example_zh": "你能幫我搬這個箱子嗎？"
+      },
+      {
+        "id": "b1l4-p005",
+        "phrase": "produce less waste",
+        "pos": "ph.",
+        "zh": "產生較少廢棄物",
+        "example_en": "Reusable products help us produce less waste.",
+        "example_zh": "可重複使用的產品能幫助我們減少廢棄物。"
+      },
+      {
+        "id": "b1l4-p006",
+        "phrase": "sense of taste",
+        "pos": "ph.",
+        "zh": "味覺",
+        "example_en": "A cold may affect your sense of taste.",
+        "example_zh": "感冒可能影響你的味覺。"
+      },
+      {
+        "id": "b1l4-p007",
+        "phrase": "sense of touch",
+        "pos": "ph.",
+        "zh": "觸覺",
+        "example_en": "Babies explore the world through their sense of touch.",
+        "example_zh": "嬰兒透過觸覺探索世界。"
+      },
+      {
+        "id": "b1l4-p008",
+        "phrase": "sense of hearing",
+        "pos": "ph.",
+        "zh": "聽覺",
+        "example_en": "Loud music can damage your sense of hearing.",
+        "example_zh": "過大的音樂聲可能損害聽覺。"
+      },
+      {
+        "id": "b1l4-p009",
+        "phrase": "sense of sight",
+        "pos": "ph.",
+        "zh": "視覺",
+        "example_en": "Eagles have an excellent sense of sight.",
+        "example_zh": "老鷹有極佳的視覺。"
+      },
+      {
+        "id": "b1l4-p010",
+        "phrase": "sense of humor",
+        "pos": "ph.",
+        "zh": "幽默感",
+        "example_en": "Our teacher has a great sense of humor.",
+        "example_zh": "我們的老師很有幽默感。"
+      },
+      {
+        "id": "b1l4-p011",
+        "phrase": "sense of justice",
+        "pos": "ph.",
+        "zh": "正義感",
+        "example_en": "Her strong sense of justice led her to speak up.",
+        "example_zh": "她強烈的正義感促使她挺身發言。"
+      },
+      {
+        "id": "b1l4-p012",
+        "phrase": "sense of responsibility",
+        "pos": "ph.",
+        "zh": "責任感",
+        "example_en": "Doing chores develops a sense of responsibility.",
+        "example_zh": "做家事能培養責任感。"
+      },
+      {
+        "id": "b1l4-p013",
+        "phrase": "sense of direction",
+        "pos": "ph.",
+        "zh": "方向感",
+        "example_en": "I have a poor sense of direction.",
+        "example_zh": "我的方向感很差。"
+      },
+      {
+        "id": "b1l4-p014",
+        "phrase": "tour guide",
+        "pos": "ph.",
+        "zh": "導遊",
+        "example_en": "The tour guide introduced the old temple.",
+        "example_zh": "導遊介紹了這座古老寺廟。"
+      },
+      {
+        "id": "b1l4-p015",
+        "phrase": "for personal reasons",
+        "pos": "ph.",
+        "zh": "基於個人原因",
+        "example_en": "He resigned for personal reasons.",
+        "example_zh": "他因個人原因辭職。"
+      },
+      {
+        "id": "b1l4-p016",
+        "phrase": "fall off the shelf",
+        "pos": "ph.",
+        "zh": "從架子上掉下來",
+        "example_en": "A book fell off the shelf.",
+        "example_zh": "一本書從架子上掉了下來。"
+      },
+      {
+        "id": "b1l4-p017",
+        "phrase": "the approaching typhoon",
+        "pos": "ph.",
+        "zh": "即將來臨的颱風",
+        "example_en": "People prepared for the approaching typhoon.",
+        "example_zh": "人們為即將來臨的颱風做準備。"
+      },
+      {
+        "id": "b1l4-p018",
+        "phrase": "catch one’s attention",
+        "pos": "ph.",
+        "zh": "引起某人的注意",
+        "example_en": "The bright poster caught my attention.",
+        "example_zh": "鮮豔的海報引起了我的注意。"
+      },
+      {
+        "id": "b1l4-p019",
+        "phrase": "turn to…for help",
+        "pos": "ph.",
+        "zh": "向……求助",
+        "example_en": "She turned to her teacher for help.",
+        "example_zh": "她向老師求助。"
+      },
+      {
+        "id": "b1l4-p020",
+        "phrase": "due to",
+        "pos": "ph.",
+        "zh": "由於",
+        "example_en": "The game was canceled due to heavy rain.",
+        "example_zh": "比賽因大雨而取消。"
+      },
+      {
+        "id": "b1l4-p021",
+        "phrase": "dig…out from the clutter",
+        "pos": "ph.",
+        "zh": "從雜物中找出……",
+        "example_en": "He dug the old photo out from the clutter.",
+        "example_zh": "他從雜物中找出那張舊照片。"
+      },
+      {
+        "id": "b1l4-p022",
+        "phrase": "fall asleep immediately",
+        "pos": "ph.",
+        "zh": "立刻睡著",
+        "example_en": "I fell asleep immediately after lying down.",
+        "example_zh": "我躺下後立刻睡著了。"
+      },
+      {
+        "id": "b1l4-p023",
+        "phrase": "lie down on the bed",
+        "pos": "ph.",
+        "zh": "躺在床上",
+        "example_en": "She lay down on the bed to rest.",
+        "example_zh": "她躺在床上休息。"
+      },
+      {
+        "id": "b1l4-p024",
+        "phrase": "study diligently",
+        "pos": "ph.",
+        "zh": "勤奮讀書",
+        "example_en": "He studied diligently for the exam.",
+        "example_zh": "他為考試勤奮讀書。"
+      },
+      {
+        "id": "b1l4-p025",
+        "phrase": "plain soup",
+        "pos": "ph.",
+        "zh": "清淡的湯",
+        "example_en": "The patient ate rice with plain soup.",
+        "example_zh": "病人吃了米飯配清淡的湯。"
+      },
+      {
+        "id": "b1l4-p026",
+        "phrase": "adopt a puppy from an animal shelter",
+        "pos": "ph.",
+        "zh": "從動物收容所領養小狗",
+        "example_en": "They adopted a puppy from an animal shelter.",
+        "example_zh": "他們從動物收容所領養了一隻小狗。"
+      },
+      {
+        "id": "b1l4-p027",
+        "phrase": "time capsule",
+        "pos": "ph.",
+        "zh": "時光膠囊",
+        "example_en": "Students buried a time capsule on campus.",
+        "example_zh": "學生們在校園裡埋下一個時光膠囊。"
+      },
+      {
+        "id": "b1l4-p028",
+        "phrase": "invite sb to witness sth",
+        "pos": "ph.",
+        "zh": "邀請某人見證某事",
+        "example_en": "They invited us to witness the ceremony.",
+        "example_zh": "他們邀請我們見證這場典禮。"
+      },
+      {
+        "id": "b1l4-p029",
+        "phrase": "unveil the contents of",
+        "pos": "ph.",
+        "zh": "揭開……的內容",
+        "example_en": "The students unveiled the contents of the time capsule.",
+        "example_zh": "學生們揭開了時光膠囊的內容。"
+      },
+      {
+        "id": "b1l4-p030",
+        "phrase": "be used for",
+        "pos": "ph.",
+        "zh": "被用於……",
+        "example_en": "This tool is used for cutting wood.",
+        "example_zh": "這項工具被用來切割木材。"
+      },
+      {
+        "id": "b1l4-p031",
+        "phrase": "the onset of",
+        "pos": "ph.",
+        "zh": "……的開始；發作",
+        "example_en": "The onset of winter brought heavy snow.",
+        "example_zh": "冬季開始時帶來了大雪。"
+      },
+      {
+        "id": "b1l4-p032",
+        "phrase": "be asleep",
+        "pos": "ph.",
+        "zh": "睡著",
+        "example_en": "The baby was already asleep.",
+        "example_zh": "寶寶已經睡著了。"
+      },
+      {
+        "id": "b1l4-p033",
+        "phrase": "all of a sudden",
+        "pos": "ph.",
+        "zh": "突然間",
+        "example_en": "All of a sudden, the lights went out.",
+        "example_zh": "突然間，燈全熄了。"
+      },
+      {
+        "id": "b1l4-p034",
+        "phrase": "blood sugar",
+        "pos": "ph.",
+        "zh": "血糖",
+        "example_en": "Exercise can help control blood sugar.",
+        "example_zh": "運動有助於控制血糖。"
+      },
+      {
+        "id": "b1l4-p035",
+        "phrase": "drop to a dangerously low level",
+        "pos": "ph.",
+        "zh": "降到危險的低水平",
+        "example_en": "His blood sugar dropped to a dangerously low level.",
+        "example_zh": "他的血糖降到危險的低水平。"
+      },
+      {
+        "id": "b1l4-p036",
+        "phrase": "wake sb. up",
+        "pos": "ph.",
+        "zh": "叫醒某人",
+        "example_en": "The alarm woke me up at six.",
+        "example_zh": "鬧鐘在六點叫醒我。"
+      },
+      {
+        "id": "b1l4-p037",
+        "phrase": "rush to get sth.",
+        "pos": "ph.",
+        "zh": "趕緊去拿某物",
+        "example_en": "She rushed to get some juice.",
+        "example_zh": "她趕緊去拿了一些果汁。"
+      },
+      {
+        "id": "b1l4-p038",
+        "phrase": "turn out",
+        "pos": "ph.",
+        "zh": "結果是；證明是",
+        "example_en": "The missing key turned out to be in my bag.",
+        "example_zh": "那把遺失的鑰匙結果就在我的包包裡。"
+      },
+      {
+        "id": "b1l4-p039",
+        "phrase": "in this way",
+        "pos": "ph.",
+        "zh": "用這種方式",
+        "example_en": "In this way, we can save more energy.",
+        "example_zh": "用這種方式，我們可以節省更多能源。"
+      },
+      {
+        "id": "b1l4-p040",
+        "phrase": "essential oil",
+        "pos": "ph.",
+        "zh": "精油",
+        "example_en": "Lavender essential oil may help you relax.",
+        "example_zh": "薰衣草精油可能有助於放鬆。"
+      },
+      {
+        "id": "b1l4-p041",
+        "phrase": "relax stiff muscles",
+        "pos": "ph.",
+        "zh": "放鬆僵硬的肌肉",
+        "example_en": "A warm bath can relax stiff muscles.",
+        "example_zh": "洗熱水澡可以放鬆僵硬的肌肉。"
+      },
+      {
+        "id": "b1l4-p042",
+        "phrase": "a relaxing three-day trip",
+        "pos": "ph.",
+        "zh": "輕鬆的三日遊",
+        "example_en": "We enjoyed a relaxing three-day trip.",
+        "example_zh": "我們享受了一趟輕鬆的三日遊。"
+      },
+      {
+        "id": "b1l4-p043",
+        "phrase": "escape the city’s hustle and bustle",
+        "pos": "ph.",
+        "zh": "遠離城市的喧囂",
+        "example_en": "They went to the countryside to escape the city’s hustle and bustle.",
+        "example_zh": "他們前往鄉間，遠離城市的喧囂。"
+      },
+      {
+        "id": "b1l4-p044",
+        "phrase": "a pop quiz",
+        "pos": "ph.",
+        "zh": "突擊小考",
+        "example_en": "The teacher gave us a pop quiz.",
+        "example_zh": "老師給我們一次突擊小考。"
+      },
+      {
+        "id": "b1l4-p045",
+        "phrase": "be away on sick leave",
+        "pos": "ph.",
+        "zh": "請病假而不在",
+        "example_en": "Ms. Chen is away on sick leave today.",
+        "example_zh": "陳老師今天請病假不在。"
+      },
+      {
+        "id": "b1l4-p046",
+        "phrase": "make a huge fortune",
+        "pos": "ph.",
+        "zh": "賺得巨額財富",
+        "example_en": "He made a huge fortune in business.",
+        "example_zh": "他經商賺得巨額財富。"
+      },
+      {
+        "id": "b1l4-p047",
+        "phrase": "a nearly bankrupt company",
+        "pos": "ph.",
+        "zh": "一家瀕臨破產的公司",
+        "example_en": "She saved a nearly bankrupt company.",
+        "example_zh": "她拯救了一家瀕臨破產的公司。"
+      },
+      {
+        "id": "b1l4-p048",
+        "phrase": "criticize sb. for",
+        "pos": "ph.",
+        "zh": "因……批評某人",
+        "example_en": "The coach criticized him for being careless.",
+        "example_zh": "教練因他粗心而批評他。"
+      },
+      {
+        "id": "b1l4-p049",
+        "phrase": "the view from the rooftop",
+        "pos": "ph.",
+        "zh": "從屋頂看到的景色",
+        "example_en": "The view from the rooftop was amazing.",
+        "example_zh": "從屋頂看到的景色令人驚嘆。"
+      },
+      {
+        "id": "b1l4-p050",
+        "phrase": "offer a breathtaking panorama of the cityscape",
+        "pos": "ph.",
+        "zh": "呈現令人屏息的城市全景",
+        "example_en": "The tower offers a breathtaking panorama of the cityscape.",
+        "example_zh": "這座高塔呈現令人屏息的城市全景。"
+      },
+      {
+        "id": "b1l4-p051",
+        "phrase": "manage to do",
+        "pos": "ph.",
+        "zh": "設法做到……",
+        "example_en": "We managed to catch the last train.",
+        "example_zh": "我們設法趕上了末班車。"
+      },
+      {
+        "id": "b1l4-p052",
+        "phrase": "chemical change",
+        "pos": "ph.",
+        "zh": "化學變化",
+        "example_en": "Burning wood is a chemical change.",
+        "example_zh": "木材燃燒是一種化學變化。"
+      },
+      {
+        "id": "b1l4-p053",
+        "phrase": "expose … to…",
+        "pos": "ph.",
+        "zh": "使……接觸／暴露於……",
+        "example_en": "Do not expose the medicine to sunlight.",
+        "example_zh": "不要讓藥品暴露在陽光下。"
+      },
+      {
+        "id": "b1l4-p054",
+        "phrase": "perform a certain kind of behavior",
+        "pos": "ph.",
+        "zh": "表現某種行為",
+        "example_en": "Animals may perform a certain kind of behavior when threatened.",
+        "example_zh": "動物受到威脅時可能表現某種行為。"
+      },
+      {
+        "id": "b1l4-p055",
+        "phrase": "come across",
+        "pos": "ph.",
+        "zh": "偶然遇見／發現",
+        "example_en": "I came across an interesting article.",
+        "example_zh": "我偶然看到一篇有趣的文章。"
+      },
+      {
+        "id": "b1l4-p056",
+        "phrase": "be assigned to carry out specific duties",
+        "pos": "ph.",
+        "zh": "被指派執行特定職責",
+        "example_en": "Each member was assigned to carry out specific duties.",
+        "example_zh": "每位成員都被指派執行特定職責。"
+      },
+      {
+        "id": "b1l4-p057",
+        "phrase": "sharp sense of smell",
+        "pos": "ph.",
+        "zh": "靈敏的嗅覺",
+        "example_en": "The animal uses its sharp sense of smell to find food.",
+        "example_zh": "這種動物用靈敏的嗅覺尋找食物。"
+      },
+      {
+        "id": "b1l4-p058",
+        "phrase": "aboriginal people",
+        "pos": "ph.",
+        "zh": "原住民族",
+        "example_en": "The museum introduces the culture of aboriginal people.",
+        "example_zh": "這座博物館介紹原住民族文化。"
+      },
+      {
+        "id": "b1l4-p059",
+        "phrase": "herbal plant",
+        "pos": "ph.",
+        "zh": "草藥植物",
+        "example_en": "This herbal plant is used in traditional medicine.",
+        "example_zh": "這種草藥植物用於傳統醫學。"
+      },
+      {
+        "id": "b1l4-p060",
+        "phrase": "season the dish",
+        "pos": "ph.",
+        "zh": "為菜餚調味",
+        "example_en": "Season the dish with salt and pepper.",
+        "example_zh": "用鹽和胡椒為菜餚調味。"
+      },
+      {
+        "id": "b1l4-p061",
+        "phrase": "remodel the house",
+        "pos": "ph.",
+        "zh": "重新裝修房屋",
+        "example_en": "They plan to remodel the house next year.",
+        "example_zh": "他們計畫明年重新裝修房屋。"
+      },
+      {
+        "id": "b1l4-p062",
+        "phrase": "transfer money to",
+        "pos": "ph.",
+        "zh": "匯款給……",
+        "example_en": "She transferred money to the seller.",
+        "example_zh": "她匯款給賣家。"
+      },
+      {
+        "id": "b1l4-p063",
+        "phrase": "a con man",
+        "pos": "ph.",
+        "zh": "騙子",
+        "example_en": "The caller turned out to be a con man.",
+        "example_zh": "那名來電者結果是個騙子。"
+      },
+      {
+        "id": "b1l4-p064",
+        "phrase": "a complete fool",
+        "pos": "ph.",
+        "zh": "十足的傻瓜",
+        "example_en": "I felt like a complete fool after the mistake.",
+        "example_zh": "犯錯後，我覺得自己像個十足的傻瓜。"
+      },
+      {
+        "id": "b1l4-p065",
+        "phrase": "get to know each other",
+        "pos": "ph.",
+        "zh": "彼此認識",
+        "example_en": "The game helped us get to know each other.",
+        "example_zh": "這個遊戲幫助我們彼此認識。"
+      },
+      {
+        "id": "b1l4-p066",
+        "phrase": "a hiking trail",
+        "pos": "ph.",
+        "zh": "健行步道",
+        "example_en": "A hiking trail leads to the waterfall.",
+        "example_zh": "一條健行步道通往瀑布。"
+      },
+      {
+        "id": "b1l4-p067",
+        "phrase": "during the hike through the mountains",
+        "pos": "ph.",
+        "zh": "在山區健行期間",
+        "example_en": "We saw several deer during the hike through the mountains.",
+        "example_zh": "我們在山區健行期間看到幾隻鹿。"
+      },
+      {
+        "id": "b1l4-p068",
+        "phrase": "go through certain kinds of change",
+        "pos": "ph.",
+        "zh": "經歷某些變化",
+        "example_en": "All living things go through certain kinds of change.",
+        "example_zh": "所有生物都會經歷某些變化。"
+      },
+      {
+        "id": "b1l4-p069",
+        "phrase": "be sensitive to flavors",
+        "pos": "ph.",
+        "zh": "對味道敏感",
+        "example_en": "Professional chefs are sensitive to flavors.",
+        "example_zh": "專業廚師對味道很敏感。"
+      },
+      {
+        "id": "b1l4-p070",
+        "phrase": "be keen on (doing) sth",
+        "pos": "ph.",
+        "zh": "熱衷於（做）某事",
+        "example_en": "She is keen on learning languages.",
+        "example_zh": "她熱衷於學習語言。"
+      },
+      {
+        "id": "b1l4-p071",
+        "phrase": "be keen to win",
+        "pos": "ph.",
+        "zh": "渴望獲勝",
+        "example_en": "Both teams are keen to win.",
+        "example_zh": "兩隊都渴望獲勝。"
+      },
+      {
+        "id": "b1l4-p072",
+        "phrase": "be keen on sb.",
+        "pos": "ph.",
+        "zh": "喜歡某人",
+        "example_en": "He seems keen on his new classmate.",
+        "example_zh": "他似乎很喜歡新同學。"
+      },
+      {
+        "id": "b1l4-p073",
+        "phrase": "detect a small change",
+        "pos": "ph.",
+        "zh": "察覺細微變化",
+        "example_en": "The sensor can detect a small change in temperature.",
+        "example_zh": "感測器能察覺溫度的細微變化。"
+      },
+      {
+        "id": "b1l4-p074",
+        "phrase": "be on sale",
+        "pos": "ph.",
+        "zh": "特價出售；上市銷售",
+        "example_en": "These shoes are on sale this week.",
+        "example_zh": "這雙鞋本週特價。"
+      },
+      {
+        "id": "b1l4-p075",
+        "phrase": "be an item",
+        "pos": "ph.",
+        "zh": "是一對情侶",
+        "example_en": "People say the two actors are an item.",
+        "example_zh": "大家說那兩位演員正在交往。"
+      },
+      {
+        "id": "b1l4-p076",
+        "phrase": "accomplish sth. great",
+        "pos": "ph.",
+        "zh": "完成偉大的事",
+        "example_en": "Together, we can accomplish something great.",
+        "example_zh": "我們一起可以完成偉大的事。"
+      },
+      {
+        "id": "b1l4-p077",
+        "phrase": "the spread of disease",
+        "pos": "ph.",
+        "zh": "疾病的傳播",
+        "example_en": "Handwashing slows the spread of disease.",
+        "example_zh": "洗手可以減緩疾病傳播。"
+      },
+      {
+        "id": "b1l4-p078",
+        "phrase": "suffer from a serious heart disease",
+        "pos": "ph.",
+        "zh": "患有嚴重心臟病",
+        "example_en": "He suffers from a serious heart disease.",
+        "example_zh": "他患有嚴重心臟病。"
+      },
+      {
+        "id": "b1l4-p079",
+        "phrase": "an infected person",
+        "pos": "ph.",
+        "zh": "受感染者",
+        "example_en": "An infected person should follow medical advice.",
+        "example_zh": "受感染者應遵循醫療建議。"
+      },
+      {
+        "id": "b1l4-p080",
+        "phrase": "be infected with AIDS",
+        "pos": "ph.",
+        "zh": "感染愛滋病",
+        "example_en": "No one should be discriminated against for being infected with AIDS.",
+        "example_zh": "任何人都不應因感染愛滋病而遭受歧視。"
+      },
+      {
+        "id": "b1l4-p081",
+        "phrase": "develop a serious infection",
+        "pos": "ph.",
+        "zh": "產生嚴重感染",
+        "example_en": "The wound may develop a serious infection.",
+        "example_zh": "這個傷口可能會產生嚴重感染。"
+      },
+      {
+        "id": "b1l4-p082",
+        "phrase": "cause infection",
+        "pos": "ph.",
+        "zh": "引起感染",
+        "example_en": "Dirty hands can cause infection.",
+        "example_zh": "骯髒的手可能引起感染。"
+      },
+      {
+        "id": "b1l4-p083",
+        "phrase": "rub the eyes",
+        "pos": "ph.",
+        "zh": "揉眼睛",
+        "example_en": "Avoid rubbing your eyes with dirty hands.",
+        "example_zh": "避免用髒手揉眼睛。"
+      },
+      {
+        "id": "b1l4-p084",
+        "phrase": "be located",
+        "pos": "ph.",
+        "zh": "位於",
+        "example_en": "The hotel is located near the station.",
+        "example_zh": "飯店位於車站附近。"
+      },
+      {
+        "id": "b1l4-p085",
+        "phrase": "in a convenient location",
+        "pos": "ph.",
+        "zh": "位於便利的地點",
+        "example_en": "The apartment is in a convenient location.",
+        "example_zh": "這間公寓位於便利的地點。"
+      },
+      {
+        "id": "b1l4-p086",
+        "phrase": "in a remote location",
+        "pos": "ph.",
+        "zh": "位於偏遠地點",
+        "example_en": "The research station is in a remote location.",
+        "example_zh": "這座研究站位於偏遠地點。"
+      },
+      {
+        "id": "b1l4-p087",
+        "phrase": "be given a reward of",
+        "pos": "ph.",
+        "zh": "獲得……的獎勵",
+        "example_en": "The finder was given a reward of ten thousand dollars.",
+        "example_zh": "發現者獲得一萬元獎金。"
+      },
+      {
+        "id": "b1l4-p088",
+        "phrase": "inform the police of sth",
+        "pos": "ph.",
+        "zh": "把某事通知警方",
+        "example_en": "Please inform the police of any suspicious activity.",
+        "example_zh": "如有任何可疑活動，請通知警方。"
+      },
+      {
+        "id": "b1l4-p089",
+        "phrase": "reward sb. with",
+        "pos": "ph.",
+        "zh": "用……獎勵某人",
+        "example_en": "The coach rewarded the team with a day off.",
+        "example_zh": "教練用一天假期獎勵球隊。"
+      },
+      {
+        "id": "b1l4-p090",
+        "phrase": "have the ability to",
+        "pos": "ph.",
+        "zh": "有能力做……",
+        "example_en": "Humans have the ability to solve complex problems.",
+        "example_zh": "人類有能力解決複雜問題。"
+      },
+      {
+        "id": "b1l4-p091",
+        "phrase": "to the best of one’s ability",
+        "pos": "ph.",
+        "zh": "盡某人所能",
+        "example_en": "She completed the task to the best of her ability.",
+        "example_zh": "她盡自己所能完成任務。"
+      },
+      {
+        "id": "b1l4-p092",
+        "phrase": "good time management",
+        "pos": "ph.",
+        "zh": "良好的時間管理",
+        "example_en": "Good time management reduces stress.",
+        "example_zh": "良好的時間管理能減少壓力。"
+      },
+      {
+        "id": "b1l4-p093",
+        "phrase": "be of great importance",
+        "pos": "ph.",
+        "zh": "非常重要",
+        "example_en": "Clean water is of great importance to public health.",
+        "example_zh": "乾淨的水對公共衛生非常重要。"
+      },
+      {
+        "id": "b1l4-p094",
+        "phrase": "great creativity in",
+        "pos": "ph.",
+        "zh": "在……方面有高度創意",
+        "example_en": "The designer showed great creativity in her work.",
+        "example_zh": "這位設計師在作品中展現高度創意。"
+      },
+      {
+        "id": "b1l4-p095",
+        "phrase": "the wide range of topics",
+        "pos": "ph.",
+        "zh": "廣泛的主題範圍",
+        "example_en": "I enjoyed the wide range of topics in the course.",
+        "example_zh": "我喜歡這門課廣泛的主題範圍。"
+      },
+      {
+        "id": "b1l4-p096",
+        "phrase": "be exposed to different opinions",
+        "pos": "ph.",
+        "zh": "接觸不同意見",
+        "example_en": "Students should be exposed to different opinions.",
+        "example_zh": "學生應接觸不同的意見。"
+      },
+      {
+        "id": "b1l4-p097",
+        "phrase": "wear sunglasses",
+        "pos": "ph.",
+        "zh": "戴太陽眼鏡",
+        "example_en": "Wear sunglasses on bright days.",
+        "example_zh": "陽光強烈時要戴太陽眼鏡。"
+      },
+      {
+        "id": "b1l4-p098",
+        "phrase": "too much exposure to the sun and wind",
+        "pos": "ph.",
+        "zh": "過度暴露於陽光和風中",
+        "example_en": "Too much exposure to the sun and wind can damage your skin.",
+        "example_zh": "過度暴露於陽光和風中可能傷害皮膚。"
+      },
+      {
+        "id": "b1l4-p099",
+        "phrase": "come off",
+        "pos": "ph.",
+        "zh": "脫落；成功發生",
+        "example_en": "The button came off my shirt.",
+        "example_zh": "我襯衫的鈕扣掉了。"
+      },
+      {
+        "id": "b1l4-p100",
+        "phrase": "perform daily tasks",
+        "pos": "ph.",
+        "zh": "執行日常工作",
+        "example_en": "The robot can perform daily tasks.",
+        "example_zh": "這台機器人可以執行日常工作。"
+      },
+      {
+        "id": "b1l4-p101",
+        "phrase": "fall ill",
+        "pos": "ph.",
+        "zh": "生病",
+        "example_en": "Several students fell ill after the trip.",
+        "example_zh": "幾名學生旅行後生病了。"
+      },
+      {
+        "id": "b1l4-p102",
+        "phrase": "perform on stage",
+        "pos": "ph.",
+        "zh": "登臺表演",
+        "example_en": "She will perform on stage tonight.",
+        "example_zh": "她今晚將登臺表演。"
+      },
+      {
+        "id": "b1l4-p103",
+        "phrase": "perform miracles",
+        "pos": "ph.",
+        "zh": "創造奇蹟",
+        "example_en": "Modern medicine can sometimes perform miracles.",
+        "example_zh": "現代醫學有時可以創造奇蹟。"
+      },
+      {
+        "id": "b1l4-p104",
+        "phrase": "give a performance",
+        "pos": "ph.",
+        "zh": "進行表演",
+        "example_en": "The band gave a wonderful performance.",
+        "example_zh": "樂團帶來了一場精彩表演。"
+      },
+      {
+        "id": "b1l4-p105",
+        "phrase": "on one’s best behavior",
+        "pos": "ph.",
+        "zh": "表現得最規矩",
+        "example_en": "The children were on their best behavior.",
+        "example_zh": "孩子們都表現得很規矩。"
+      },
+      {
+        "id": "b1l4-p106",
+        "phrase": "stay alert to",
+        "pos": "ph.",
+        "zh": "對……保持警覺",
+        "example_en": "Drivers must stay alert to road conditions.",
+        "example_zh": "駕駛必須對路況保持警覺。"
+      },
+      {
+        "id": "b1l4-p107",
+        "phrase": "cross the finish line",
+        "pos": "ph.",
+        "zh": "越過終點線",
+        "example_en": "She crossed the finish line first.",
+        "example_zh": "她第一個越過終點線。"
+      },
+      {
+        "id": "b1l4-p108",
+        "phrase": "English literature course",
+        "pos": "ph.",
+        "zh": "英國文學課程",
+        "example_en": "I enrolled in an English literature course.",
+        "example_zh": "我選修了一門英國文學課程。"
+      },
+      {
+        "id": "b1l4-p109",
+        "phrase": "works of Shakespeare",
+        "pos": "ph.",
+        "zh": "莎士比亞的作品",
+        "example_en": "We discussed the works of Shakespeare.",
+        "example_zh": "我們討論了莎士比亞的作品。"
+      },
+      {
+        "id": "b1l4-p110",
+        "phrase": "assign a task",
+        "pos": "ph.",
+        "zh": "指派任務",
+        "example_en": "The manager assigned a task to each member.",
+        "example_zh": "經理指派任務給每位成員。"
+      },
+      {
+        "id": "b1l4-p111",
+        "phrase": "a tour of the school",
+        "pos": "ph.",
+        "zh": "校園參觀",
+        "example_en": "New students took a tour of the school.",
+        "example_zh": "新生參加了校園參觀。"
+      },
+      {
+        "id": "b1l4-p112",
+        "phrase": "on an assignment",
+        "pos": "ph.",
+        "zh": "執行任務中；因公出差",
+        "example_en": "The reporter is abroad on an assignment.",
+        "example_zh": "那名記者正在國外執行任務。"
+      },
+      {
+        "id": "b1l4-p113",
+        "phrase": "attend the performance",
+        "pos": "ph.",
+        "zh": "觀賞／出席表演",
+        "example_en": "Many parents attended the performance.",
+        "example_zh": "許多家長出席觀看了表演。"
+      },
+      {
+        "id": "b1l4-p114",
+        "phrase": "feel like it",
+        "pos": "ph.",
+        "zh": "想要；有意願",
+        "example_en": "We can go out if you feel like it.",
+        "example_zh": "如果你想去，我們可以外出。"
+      },
+      {
+        "id": "b1l4-p115",
+        "phrase": "accomplish the mission",
+        "pos": "ph.",
+        "zh": "完成使命",
+        "example_en": "The team accomplished the mission safely.",
+        "example_zh": "團隊安全地完成了使命。"
+      },
+      {
+        "id": "b1l4-p116",
+        "phrase": "die of a heart disease",
+        "pos": "ph.",
+        "zh": "死於心臟病",
+        "example_en": "He died of heart disease at an early age.",
+        "example_zh": "他年輕時死於心臟病。"
+      },
+      {
+        "id": "b1l4-p117",
+        "phrase": "win the championship",
+        "pos": "ph.",
+        "zh": "贏得冠軍",
+        "example_en": "Our team won the championship.",
+        "example_zh": "我們的隊伍贏得冠軍。"
+      },
+      {
+        "id": "b1l4-p118",
+        "phrase": "let go",
+        "pos": "ph.",
+        "zh": "放手；放開",
+        "example_en": "Let go of the rope slowly.",
+        "example_zh": "慢慢放開繩子。"
+      },
+      {
+        "id": "b1l4-p119",
+        "phrase": "detect a change in sb’s mood",
+        "pos": "ph.",
+        "zh": "察覺某人情緒的變化",
+        "example_en": "She quickly detected a change in his mood.",
+        "example_zh": "她很快察覺到他的情緒變化。"
+      },
+      {
+        "id": "b1l4-p120",
+        "phrase": "fashion designer",
+        "pos": "ph.",
+        "zh": "服裝設計師",
+        "example_en": "She dreams of becoming a fashion designer.",
+        "example_zh": "她夢想成為服裝設計師。"
+      },
+      {
+        "id": "b1l4-p121",
+        "phrase": "be popular with",
+        "pos": "ph.",
+        "zh": "受……歡迎",
+        "example_en": "The new app is popular with teenagers.",
+        "example_zh": "這款新應用程式很受青少年歡迎。"
+      },
+      {
+        "id": "b1l4-p122",
+        "phrase": "locate the key",
+        "pos": "ph.",
+        "zh": "找到鑰匙的位置",
+        "example_en": "I finally located the key under the sofa.",
+        "example_zh": "我終於在沙發下找到鑰匙。"
+      },
+      {
+        "id": "b1l4-p123",
+        "phrase": "imitate sb’s behavior",
+        "pos": "ph.",
+        "zh": "模仿某人的行為",
+        "example_en": "Children often imitate their parents’ behavior.",
+        "example_zh": "孩子常模仿父母的行為。"
+      },
+      {
+        "id": "b1l4-p124",
+        "phrase": "all at once",
+        "pos": "ph.",
+        "zh": "突然；同時",
+        "example_en": "All at once, everyone started laughing.",
+        "example_zh": "突然間，每個人都笑了起來。"
+      },
+      {
+        "id": "b1l4-p125",
+        "phrase": "pour down from the sky",
+        "pos": "ph.",
+        "zh": "從天空傾瀉而下",
+        "example_en": "Rain poured down from the sky.",
+        "example_zh": "雨從天空傾瀉而下。"
+      },
+      {
+        "id": "b1l4-p126",
+        "phrase": "run across",
+        "pos": "ph.",
+        "zh": "偶然遇見／發現",
+        "example_en": "I ran across an old friend downtown.",
+        "example_zh": "我在市中心偶然遇見一位老朋友。"
+      },
+      {
+        "id": "b1l4-p127",
+        "phrase": "go through all the receipts",
+        "pos": "ph.",
+        "zh": "逐一檢查所有收據",
+        "example_en": "She went through all the receipts carefully.",
+        "example_zh": "她仔細檢查了所有收據。"
+      },
+      {
+        "id": "b1l4-p128",
+        "phrase": "carry out research",
+        "pos": "ph.",
+        "zh": "進行研究",
+        "example_en": "Scientists carried out research on the disease.",
+        "example_zh": "科學家針對這種疾病進行研究。"
+      },
+      {
+        "id": "b1l4-p129",
+        "phrase": "carry out an investigation",
+        "pos": "ph.",
+        "zh": "進行調查",
+        "example_en": "Police carried out an investigation.",
+        "example_zh": "警方進行了調查。"
+      },
+      {
+        "id": "b1l4-p130",
+        "phrase": "carry out an experiment",
+        "pos": "ph.",
+        "zh": "進行實驗",
+        "example_en": "Students carried out an experiment in class.",
+        "example_zh": "學生在課堂上進行實驗。"
+      },
+      {
+        "id": "b1l4-p131",
+        "phrase": "a popular tourist spot",
+        "pos": "ph.",
+        "zh": "熱門旅遊景點",
+        "example_en": "The old fort is a popular tourist spot.",
+        "example_zh": "這座古堡是熱門旅遊景點。"
+      },
+      {
+        "id": "b1l4-p132",
+        "phrase": "historic building",
+        "pos": "ph.",
+        "zh": "具有歷史意義的建築",
+        "example_en": "The city restored the historic building.",
+        "example_zh": "市政府修復了這棟歷史建築。"
+      },
+      {
+        "id": "b1l4-p133",
+        "phrase": "travel into space",
+        "pos": "ph.",
+        "zh": "進入太空旅行",
+        "example_en": "She dreams of traveling into space.",
+        "example_zh": "她夢想進入太空旅行。"
+      }
+    ]
   },
   "grammar": {
     "points": [],
     "sentence_structures": {
-      "items": []
+      "items": [
+        {
+          "id": "b1l4-s001",
+          "sentence": "Have you ever *noticed* that dogs are able to smell things that we can’t?",
+          "type": "complex",
+          "pattern": "Interrogative sentence (Noun clause + Relative clause)"
+        },
+        {
+          "id": "b1l4-s002",
+          "sentence": "This *is* because a dog’s sense of smell is far more sensitive than a human’s.",
+          "type": "complex",
+          "pattern": "S + Vl + Adverbial/Noun clause (because...)"
+        },
+        {
+          "id": "b1l4-s003",
+          "sentence": "For this reason, some dogs *are* specially *trained* to become “sniffer dogs,” which use their keen sense of smell to detect certain items such as hidden drugs.",
+          "type": "complex",
+          "pattern": "Passive + Relative clause (which...)"
+        },
+        {
+          "id": "b1l4-s004",
+          "sentence": "But this *isn’t* the only task that sniffer dogs can accomplish.",
+          "type": "complex",
+          "pattern": "S + Vl + C + Relative clause (that...)"
+        },
+        {
+          "id": "b1l4-s005",
+          "sentence": "Here *are* a few more interesting ways that these amazing animals can help humans out.",
+          "type": "complex",
+          "pattern": "Inverted sentence (Here is/are...) + Relative clause (that...)"
+        },
+        {
+          "id": "b1l4-s006",
+          "sentence": "In Pingtung, officials in one park *use* trained dogs to find trees that have “brown root rot” disease.",
+          "type": "complex",
+          "pattern": "Prepositional phrase + S + Vt + O + Relative clause (that...)"
+        },
+        {
+          "id": "b1l4-s007",
+          "sentence": "Due to their keen sense of smell, the dogs *can detect* infected trees.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + O"
+        },
+        {
+          "id": "b1l4-s008",
+          "sentence": "Once they locate such a tree, they *sit down* beside it until their trainer hands them a treat as a reward.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Once...) + S + Vi + Adverbial clause (until...)"
+        },
+        {
+          "id": "b1l4-s009",
+          "sentence": "Workers then *dig out* these trees before they fall and hurt people.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Adverbial clause (before...)"
+        },
+        {
+          "id": "b1l4-s010",
+          "sentence": "Since they have realized how useful these sniffer dogs can be, officials in parks across Taiwan *are inviting* them to come and help find the trees with brown root rot disease.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Since...) + S + Vt + O"
+        },
+        {
+          "id": "b1l4-s011",
+          "sentence": "Sniffer dogs’ ability to detect sickness *can be used* for more than just locating sick trees.",
+          "type": "simple",
+          "pattern": "Passive: S + be + p.p. + Prepositional phrase"
+        },
+        {
+          "id": "b1l4-s012",
+          "sentence": "They *have* also *been trained* to predict the onset of certain diseases in humans.",
+          "type": "simple",
+          "pattern": "Passive: S + be + p.p."
+        },
+        {
+          "id": "b1l4-s013",
+          "sentence": "Maria Tello, who was a 58-year-old woman with diabetes, *was* asleep one night.",
+          "type": "complex",
+          "pattern": "S + Relative clause (who...) + Vl + C"
+        },
+        {
+          "id": "b1l4-s014",
+          "sentence": "All of a sudden, her dog Malachi *opened* its eyes and *got up*.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vt +O & / Vi (Compound verb)"
+        },
+        {
+          "id": "b1l4-s015",
+          "sentence": "By using its powerful nose, it *could sense* that Maria’s blood sugar was dropping to a dangerously low level.",
+          "type": "complex",
+          "pattern": "Prepositional phrase + S + Vt + Noun clause (that...)"
+        },
+        {
+          "id": "b1l4-s016",
+          "sentence": "Malachi *woke* her *up* and then *rushed* to get her medicine.",
+          "type": "simple",
+          "pattern": "S + Vt +O & / Vi (Compound verb)"
+        },
+        {
+          "id": "b1l4-s017",
+          "sentence": "It *turned out* that Malachi saved Maria’s life in this way four more times that year.",
+          "type": "complex",
+          "pattern": "It (dummy subject) + Vi + Noun clause (that...)"
+        },
+        {
+          "id": "b1l4-s018",
+          "sentence": "How *can* sniffer dogs *manage* to do the above-mentioned tasks?",
+          "type": "simple",
+          "pattern": "Interrogative sentence (S + Vt + O)"
+        },
+        {
+          "id": "b1l4-s019",
+          "sentence": "The answer *is* that diseases cause chemical changes in plants, animals, and even the human body.",
+          "type": "complex",
+          "pattern": "S + Vl + Noun clause (that...)"
+        },
+        {
+          "id": "b1l4-s020",
+          "sentence": "These chemical changes usually *create* special odors, and trainers *need* to expose their dogs to these smells many times.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"and\")"
+        },
+        {
+          "id": "b1l4-s021",
+          "sentence": "The dogs *are* then *taught* to perform a certain kind of behavior as an alert, such as sitting down or barking, when they come across these smells.",
+          "type": "complex",
+          "pattern": "Passive+ Adverbial clause (when...)"
+        },
+        {
+          "id": "b1l4-s022",
+          "sentence": "Once their training is complete, sniffer dogs *are assigned* to carry out specific duties.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Once...) + Passive"
+        },
+        {
+          "id": "b1l4-s023",
+          "sentence": "Dogs really *are* our best friends.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b1l4-s024",
+          "sentence": "As we continue to understand them better, they *can help* us more.",
+          "type": "complex",
+          "pattern": "Adverbial clause (As...) + S + Vt + O"
+        },
+        {
+          "id": "b1l4-s025",
+          "sentence": "Who *knows* in what other ways their spectacular sense of smell will be useful to us in the future?",
+          "type": "complex",
+          "pattern": "Interrogative sentence (S + Vt + Noun clause)"
+        }
+      ]
     }
   },
   "text_genre": {
