@@ -7,7 +7,7 @@
 <style>
 :root{--green:#075b52;--deep:#06443e;--mint:#e7f3ef;--paper:#f8f5ec;--card:#fffdf8;--line:#ded5c2;--ink:#29261f;--soft:#746d5d;--gold:#d89a25;--red:#a53a36;--serif:Georgia,"Noto Serif TC",serif;--sans:Inter,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55}.hero{background:linear-gradient(135deg,var(--deep),var(--green));color:#fff;border-radius:0 0 30px 30px;padding:26px 20px}.hero-inner,.main{max-width:1180px;margin:auto}.back{color:#d4ece7;text-decoration:none;font-size:.78rem}.hero h1{font:700 clamp(1.6rem,4vw,2.4rem)/1.18 var(--serif);margin:14px 0 6px}.hero p{margin:0;color:#d4ece7;font-size:.86rem}.admin-badge{display:inline-flex;margin-left:8px;padding:4px 9px;border:1px solid rgba(255,255,255,.4);border-radius:999px;font-size:.62rem;letter-spacing:.08em}.main{padding:24px 18px 70px}.status{padding:14px 16px;background:#fff8df;border:1px solid #ead49a;border-radius:14px;color:#6f5717;font-size:.8rem;margin-bottom:16px}.toolbar{display:flex;gap:10px;align-items:end;flex-wrap:wrap;margin-bottom:16px}.field{display:grid;gap:5px}.field label{font-size:.65rem;font-weight:900;letter-spacing:.07em;color:var(--soft)}select,input{min-height:42px;border:1px solid var(--line);border-radius:11px;background:#fff;padding:8px 11px;font:inherit;color:var(--ink)}#searchInput{min-width:240px}.btn{min-height:42px;border:1px solid var(--green);border-radius:999px;background:var(--green);color:#fff;padding:8px 16px;font:800 .75rem var(--sans);cursor:pointer}.btn.ghost{background:transparent;color:var(--green)}.btn.gold{border-color:var(--gold);background:var(--gold)}.btn:disabled{opacity:.55;cursor:wait}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:17px}.stat{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:16px;box-shadow:0 2px 0 var(--line)}.stat b{display:block;color:var(--deep);font:700 1.65rem var(--serif)}.stat span{font-size:.68rem;color:var(--soft)}.card{background:var(--card);border:1px solid var(--line);border-radius:19px;padding:18px;box-shadow:0 2px 0 var(--line);margin-bottom:16px}.card h2{font:700 1.15rem var(--serif);color:var(--deep);margin:0 0 13px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:.76rem}th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{font-size:.63rem;color:var(--soft);letter-spacing:.06em}tbody tr:hover{background:#f2f8f5}.name{font-weight:850}.muted{color:var(--soft)}.active-dot,.idle-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}.active-dot{background:#2f9f73}.idle-dot{background:#c4b9a5}.small-btn{border:1px solid var(--green);background:transparent;color:var(--green);border-radius:999px;padding:6px 10px;font:800 .68rem var(--sans);cursor:pointer}.empty{text-align:center;color:var(--soft);padding:26px}.detail[hidden]{display:none}.detail-head{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.detail-meta{color:var(--soft);font-size:.75rem}.detail-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:14px}.subcard{border:1px solid var(--line);background:#fff;border-radius:14px;padding:13px}.subcard h3{font:700 .9rem var(--serif);color:var(--deep);margin:0 0 9px}.score-list,.page-list,.evidence-grid{display:grid;gap:8px}.score-item,.page-item{display:grid;grid-template-columns:1fr auto;gap:8px;border-left:4px solid var(--gold);padding:8px 10px;background:#fff9e9;border-radius:8px;font-size:.73rem}.score-item span,.page-item span{color:var(--soft)}.privacy{font-size:.68rem;color:var(--soft);margin:8px 0 0}.evidence-grid{grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin-top:12px}.evidence{border:1px solid var(--line);border-radius:12px;padding:10px;background:#fff}.evidence img{width:100%;max-height:240px;object-fit:contain;border-radius:8px}.note-text{white-space:pre-wrap;font-size:.76rem}.denied{max-width:600px;margin:80px auto;background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;text-align:center}.screen-only{}.print-only{display:none}
-.privacy-badge{display:inline-flex;vertical-align:middle;margin-left:7px;padding:3px 8px;border-radius:999px;background:#e5f2ed;color:var(--green);font:800 .6rem var(--sans);letter-spacing:.04em}@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}.detail-grid{grid-template-columns:1fr}}@media(max-width:520px){.stats{grid-template-columns:1fr}.toolbar>*{width:100%}#searchInput{min-width:0}th:nth-child(5),td:nth-child(5),th:nth-child(8),td:nth-child(8){display:none}}
+.privacy-badge{display:inline-flex;vertical-align:middle;margin-left:7px;padding:3px 8px;border-radius:999px;background:#e5f2ed;color:var(--green);font:800 .6rem var(--sans);letter-spacing:.04em}.reminder-editor{display:grid;grid-template-columns:minmax(210px,.65fr) minmax(300px,1.35fr);gap:15px;align-items:start}.reminder-controls{display:grid;gap:11px}.reminder-controls .field select{width:100%}.reminder-compose{display:grid;gap:10px}.reminder-compose textarea{width:100%;min-height:132px;resize:vertical;border:1px solid var(--line);border-radius:13px;background:#fff;padding:12px;font:inherit;line-height:1.6;color:var(--ink)}.reminder-toggle{display:flex;align-items:center;gap:8px;color:var(--soft);font-size:.72rem;font-weight:800}.reminder-toggle input{min-height:0;width:18px;height:18px;accent-color:var(--green)}.reminder-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.reminder-status{min-height:20px;color:var(--soft);font-size:.7rem}.reminder-help{margin:0;color:var(--soft);font-size:.69rem;line-height:1.6}@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}.detail-grid{grid-template-columns:1fr}.reminder-editor{grid-template-columns:1fr}}@media(max-width:520px){.stats{grid-template-columns:1fr}.toolbar>*{width:100%}#searchInput{min-width:0}th:nth-child(5),td:nth-child(5),th:nth-child(8),td:nth-child(8){display:none}}
 .view[hidden]{display:none}.section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:14px}.section-head h2{margin:0;color:var(--deep);font:700 1.45rem var(--serif)}.section-head p{margin:4px 0 0;color:var(--soft);font-size:.76rem}.compare-options{display:flex;gap:8px;flex-wrap:wrap}.compare-chip{position:relative}.compare-chip input{position:absolute;opacity:0;pointer-events:none}.compare-chip span{display:inline-flex;align-items:center;min-height:38px;padding:7px 13px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--soft);font-size:.72rem;font-weight:800;cursor:pointer}.compare-chip input:checked+span{background:var(--green);border-color:var(--green);color:#fff}.charts-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.chart-note{margin:-7px 0 13px;color:var(--soft);font-size:.68rem}.bar-chart{display:grid;gap:11px}.bar-row{display:grid;grid-template-columns:minmax(90px,145px) 1fr auto;gap:9px;align-items:center;font-size:.7rem}.bar-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:800}.bar-track{height:14px;border-radius:999px;background:#edf1ec;overflow:hidden}.bar-fill{height:100%;min-width:2px;border-radius:inherit;background:linear-gradient(90deg,var(--green),#43a886)}.bar-value{min-width:48px;text-align:right;color:var(--soft);font-weight:800}.line-wrap{overflow-x:auto}.line-chart{width:100%;min-width:520px;height:auto;display:block}.chart-legend{display:flex;gap:11px;flex-wrap:wrap;margin-top:8px;font-size:.65rem}.legend-item{display:inline-flex;gap:5px;align-items:center}.legend-dot{width:9px;height:9px;border-radius:50%}.class-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:12px}.class-card{border:1px solid var(--line);border-radius:16px;background:#fff;padding:15px;display:grid;gap:11px}.class-card h3{margin:0;color:var(--deep);font:700 1.05rem var(--serif)}.class-school{color:var(--soft);font-size:.64rem;font-weight:900;letter-spacing:.08em}.class-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.class-metric{padding:8px;background:var(--mint);border-radius:10px}.class-metric b{display:block;color:var(--deep);font-size:.92rem}.class-metric span{font-size:.58rem;color:var(--soft)}.class-card .small-btn{justify-self:start}.comparison-empty{padding:28px;text-align:center;color:var(--soft);background:#faf8f2;border:1px dashed var(--line);border-radius:14px;font-size:.76rem}.class-title{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.class-title .privacy-badge{margin-left:0}@media(max-width:800px){.charts-grid{grid-template-columns:1fr}}@media(max-width:600px){.bar-row{grid-template-columns:90px 1fr auto}.class-metrics{grid-template-columns:1fr 1fr}.class-metric:last-child{grid-column:1/-1}}
 @media print{@page{size:A4 landscape;margin:10mm}.hero{background:#fff!important;color:var(--ink);padding:10px 0;border-radius:0;border-bottom:3px solid var(--green)}.hero p,.back,.toolbar,.screen-only,.status{display:none!important}.main{padding:12px 0}.stats{grid-template-columns:repeat(4,1fr)}.card{box-shadow:none}body{background:#fff}.print-only{display:block}}
 </style>
@@ -33,6 +33,20 @@
       <section class="card"><h2>Recent Accuracy Trend</h2><p class="chart-note">依快照內最近練習紀錄彙整；不會額外讀取 Firebase。</p><div class="line-wrap" id="accuracyLineChart"></div><div class="chart-legend" id="accuracyLegend"></div></section>
     </div>
     <section class="card"><div class="section-head"><div><h2>Class Directory</h2><p>點「查看學生」進入單一班級頁面。</p></div></div><div class="class-grid" id="classGrid"></div></section>
+    <section class="card screen-only">
+      <div class="section-head"><div><h2>Reminders from Your Teacher</h2><p>選擇學校與班級後編輯；學生首頁只會讀到自己班級的這一則提醒。</p></div></div>
+      <div class="reminder-editor">
+        <div class="reminder-controls">
+          <div class="field"><label for="reminderClassSelect">SCHOOL · CLASS</label><select id="reminderClassSelect"><option value="">請選擇班級…</option></select></div>
+          <p class="reminder-help">不會一次下載所有班級公告：只有選取班級時才讀取一筆，儲存時也只寫入該班的一筆。</p>
+        </div>
+        <div class="reminder-compose">
+          <textarea id="reminderMessage" maxlength="1200" disabled placeholder="例如：明天請帶課本與講義，並完成 B1 L3 的 Word Practice。"></textarea>
+          <label class="reminder-toggle"><input id="reminderActive" type="checkbox" disabled> 在該班學生首頁顯示</label>
+          <div class="reminder-actions"><button class="btn" id="saveReminderBtn" type="button" disabled>儲存提醒</button><button class="btn ghost" id="pauseReminderBtn" type="button" disabled>暫停顯示</button><span class="reminder-status" id="reminderStatus">請先選擇班級。</span></div>
+        </div>
+      </div>
+    </section>
   </section>
 
   <section class="view" id="classView" hidden>
@@ -56,11 +70,11 @@
 <div class="denied" id="accessMessage"><h2>正在驗證管理員身份…</h2><p>此頁面只有 Shirley 可以開啟。</p></div>
 
 <script type="module">
-import { collection, doc, getDoc, getDocs, getFirestore } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js";
+import { collection, doc, getDoc, getDocs, getFirestore, serverTimestamp, setDoc } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js";
 import { app, getPortalProfile, observePortalAuth } from "./js/firebase-auth.js";
 
 const db=getFirestore(app),$=id=>document.getElementById(id);
-let summaries=[],filtered=[],selected=null,classGroups=[],currentClassKey="",selectionInitialized=false;
+let summaries=[],filtered=[],selected=null,classGroups=[],currentClassKey="",selectionInitialized=false,portalClassOptions=[];
 const selectedClassKeys=new Set();
 const CHART_COLORS=["#075b52","#d89a25","#a53a36","#3f78a8","#7b5ca8","#3f8d60","#c16f2f","#69747b"];
 const CACHE_KEY="shirley.admin.twice-daily-snapshot.v1";
@@ -80,10 +94,15 @@ const snapshotCycle=()=>{const parts=new Intl.DateTimeFormat("en",{timeZone:"Asi
 const cycleText=value=>!value?"尚未建立":String(value).includes("T")?String(value).replace("T"," ")+":00":`${value}（舊版每日快照）`;
 const normalizeSummary=item=>{const result={...item};["updatedAt","lastActivityAt","latestPracticeAt"].forEach(key=>{if(result[key]?.toDate)result[key]=result[key].toDate().toISOString()});return result};
 const makeClassKey=item=>`${String(item.school||"—").trim().toUpperCase()}::${String(item.className||"—").trim()}`;
+const reminderDocId=(school,className)=>`${encodeURIComponent(String(school||"").trim().toUpperCase())}__${encodeURIComponent(String(className||"").trim())}`;
 const isActive=item=>Boolean(item.hasActivity||Number(item.practiceCount||0)>0||Number(item.totalSeconds||0)>0);
 
 function buildClassGroups(){
   const groups=new Map();
+  portalClassOptions.forEach(item=>{
+    const school=String(item.school||"—").trim().toUpperCase(),className=String(item.className||"—").trim(),key=makeClassKey({school,className});
+    if(!groups.has(key))groups.set(key,{key,school,className,members:[]});
+  });
   summaries.forEach(item=>{
     const key=makeClassKey(item),school=String(item.school||"—").trim().toUpperCase(),className=String(item.className||"—").trim();
     if(!groups.has(key))groups.set(key,{key,school,className,members:[]});
@@ -97,6 +116,15 @@ function buildClassGroups(){
       averageScore:practiced.length?Math.round(practiced.reduce((sum,item)=>sum+Number(item.averageScore||0),0)/practiced.length):0,
       averageAccuracy:practiced.length?Math.round(practiced.reduce((sum,item)=>sum+Number(item.averageAccuracy||0),0)/practiced.length):0};
   }).sort((a,b)=>a.school.localeCompare(b.school,"zh-TW",{numeric:true})||a.className.localeCompare(b.className,"zh-TW",{numeric:true}));
+}
+
+async function loadPortalClassOptions(){
+  try{
+    const response=await fetch("data/portal-options.json",{cache:"no-store"});
+    if(!response.ok)throw new Error(`HTTP ${response.status}`);
+    const options=await response.json();
+    portalClassOptions=Object.entries(options.classSchools||{}).flatMap(([className,schools])=>(Array.isArray(schools)?schools:[]).map(school=>({school,className})));
+  }catch(error){portalClassOptions=[];console.warn("Portal class list could not be loaded.",error)}
 }
 
 function renderLoadedSummaries(message){
@@ -116,7 +144,44 @@ function renderOverview(){
   $("overviewStudentCount").textContent=summaries.length;
   $("overviewActiveCount").textContent=summaries.filter(isActive).length;
   $("overviewAccuracy").textContent=(practiced.length?Math.round(practiced.reduce((sum,item)=>sum+Number(item.averageAccuracy||0),0)/practiced.length):0)+"%";
-  renderCompareOptions();renderBarChart();renderLineChart();renderClassGrid();
+  renderCompareOptions();renderBarChart();renderLineChart();renderClassGrid();renderReminderOptions();
+}
+
+function renderReminderOptions(){
+  const select=$("reminderClassSelect"),previous=select.value;
+  select.innerHTML='<option value="">請選擇班級…</option>'+classGroups.filter(group=>group.school!=="—"&&group.className!=="—").map(group=>`<option value="${esc(group.key)}">${esc(group.school)} · ${esc(group.className)}</option>`).join("");
+  if(classGroups.some(group=>group.key===previous))select.value=previous;
+}
+
+function setReminderEditorEnabled(enabled){
+  $("reminderMessage").disabled=!enabled;$("reminderActive").disabled=!enabled;$("saveReminderBtn").disabled=!enabled;$("pauseReminderBtn").disabled=!enabled;
+}
+
+async function loadReminderEditor(){
+  const key=$("reminderClassSelect").value,group=classGroups.find(item=>item.key===key);
+  $("reminderMessage").value="";$("reminderActive").checked=false;
+  if(!group){setReminderEditorEnabled(false);$("reminderStatus").textContent="請先選擇班級。";return}
+  setReminderEditorEnabled(false);$("reminderStatus").textContent="正在讀取這個班級的提醒…";
+  try{
+    const snapshot=await getDoc(doc(db,"classReminders",reminderDocId(group.school,group.className)));
+    const data=snapshot.exists()?snapshot.data():null;
+    $("reminderMessage").value=String(data?.message||"");$("reminderActive").checked=data?.active===true;
+    $("reminderStatus").textContent=data?`已載入；上次更新 ${dateText(data.updatedAt)}。`:"這個班級尚未建立提醒。";
+  }catch(error){$("reminderStatus").textContent="提醒讀取失敗，請確認 Firestore Rules 已更新。";console.warn(error)}
+  finally{setReminderEditorEnabled(true)}
+}
+
+async function saveReminder(activeOverride=null){
+  const key=$("reminderClassSelect").value,group=classGroups.find(item=>item.key===key),message=$("reminderMessage").value.trim();
+  if(!group)return;
+  const active=activeOverride===null?$("reminderActive").checked:Boolean(activeOverride);
+  if(active&&!message){$("reminderStatus").textContent="要顯示提醒，請先輸入內容。";$("reminderMessage").focus();return}
+  setReminderEditorEnabled(false);$("reminderStatus").textContent=active?"正在儲存…":"正在暫停顯示…";
+  try{
+    await setDoc(doc(db,"classReminders",reminderDocId(group.school,group.className)),{school:group.school,className:group.className,message,active,updatedAt:serverTimestamp()},{merge:true});
+    $("reminderActive").checked=active;$("reminderStatus").textContent=active?"已儲存；該班學生首頁將顯示這則提醒。":"已暫停；內容保留，但學生首頁不會顯示。";
+  }catch(error){$("reminderStatus").textContent="儲存失敗，請確認網路與 Firestore Rules。";console.warn(error)}
+  finally{setReminderEditorEnabled(true)}
 }
 
 function renderCompareOptions(){
@@ -271,7 +336,7 @@ observePortalAuth(async user=>{
   try{
     const profile=await getPortalProfile(user);
     if(!profile?.admin)throw new Error("not-admin");
-    $("accessMessage").hidden=true;$("dashboard").hidden=false;await loadSummaries(false);
+    $("accessMessage").hidden=true;$("dashboard").hidden=false;await loadPortalClassOptions();await loadSummaries(false);
   }catch(_){$("accessMessage").innerHTML='<h2>沒有管理員權限</h2><p>此頁面只有 Shirley 可以開啟。即將返回首頁。</p>';setTimeout(()=>location.replace("index.html"),2200)}
 });
 
@@ -279,6 +344,9 @@ $("searchInput").addEventListener("input",applyFilters);
 $("refreshBtn").addEventListener("click",()=>loadSummaries(true));
 $("selectAllBtn").addEventListener("click",()=>{classGroups.forEach(group=>selectedClassKeys.add(group.key));renderCompareOptions();renderBarChart();renderLineChart()});
 $("clearCompareBtn").addEventListener("click",()=>{selectedClassKeys.clear();renderCompareOptions();renderBarChart();renderLineChart()});
+$("reminderClassSelect").addEventListener("change",loadReminderEditor);
+$("saveReminderBtn").addEventListener("click",()=>saveReminder());
+$("pauseReminderBtn").addEventListener("click",()=>saveReminder(false));
 $("backToOverview").addEventListener("click",()=>showOverview());
 $("csvBtn").addEventListener("click",exportCsv);
 $("overviewPrintBtn").addEventListener("click",()=>window.print());$("classPrintBtn").addEventListener("click",()=>window.print());

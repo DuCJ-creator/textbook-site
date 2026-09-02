@@ -49,6 +49,20 @@ service cloud.firestore {
       allow delete: if false;
     }
 
+    // One reminder document per school + class. Students may read only the
+    // active reminder that exactly matches the school and class in their
+    // signed Firebase token. Only Shirley's admin account may edit reminders.
+    match /classReminders/{reminderId} {
+      allow read: if isAdmin()
+        || (signedIn()
+          && request.auth.token.role == "student"
+          && resource.data.active == true
+          && resource.data.school == request.auth.token.school
+          && resource.data.className == request.auth.token.className);
+      allow create, update: if isAdmin();
+      allow delete: if false;
+    }
+
     // Deny every collection that is not explicitly covered above.
     match /{document=**} {
       allow read, write: if false;
