@@ -153,6 +153,35 @@
   .progress-strip .stat .n { font-family: var(--serif); font-size: 1.4rem; font-weight: 700; color: var(--accent); }
   .progress-strip .stat .l { font-size: 0.78rem; color: var(--ink-soft); }
 
+  /* ===== Class-specific teacher reminder ===== */
+  .teacher-reminder {
+    position: relative; overflow: hidden; display: grid; grid-template-columns: auto 1fr; gap: 14px;
+    margin: -8px 0 32px; padding: 20px 22px; border: 1px solid rgba(216,154,37,.5);
+    border-radius: var(--radius); background: linear-gradient(135deg, #fff9e7, #fffdf8 58%, #edf7f3);
+    box-shadow: var(--shadow);
+  }
+  .teacher-reminder[hidden] { display: none; }
+  .teacher-reminder::after {
+    content: ""; position: absolute; width: 120px; height: 120px; right: -50px; top: -62px;
+    border-radius: 50%; background: rgba(216,154,37,.12); pointer-events: none;
+  }
+  .teacher-reminder-icon {
+    display: grid; place-items: center; width: 44px; height: 44px; border-radius: 14px;
+    background: var(--accent); color: #fff; font-size: 1.15rem; box-shadow: 0 6px 16px rgba(14,107,99,.18);
+  }
+  .teacher-reminder-head { display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap; }
+  .teacher-reminder h2 { margin: 0; color: var(--accent-dark); font: 700 1.05rem/1.35 var(--serif); }
+  .teacher-reminder-audience {
+    padding: 3px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-dark);
+    font-size: .63rem; font-weight: 800; letter-spacing: .04em;
+  }
+  .teacher-reminder-message { margin-top: 8px; color: var(--ink); font-size: .86rem; line-height: 1.75; white-space: pre-wrap; }
+  .teacher-reminder-updated { margin-top: 7px; color: var(--ink-soft); font-size: .64rem; }
+  @media (max-width: 560px) {
+    .teacher-reminder { grid-template-columns: 1fr; }
+    .teacher-reminder-icon { width: 38px; height: 38px; }
+  }
+
   /* ===== Section titles ===== */
   .section-title {
     font-family: var(--serif); font-size: 1.15rem; font-weight: 700;
@@ -328,6 +357,18 @@
 
     <div class="progress-strip" id="progressStrip"></div>
 
+    <section class="teacher-reminder" id="teacherReminder" hidden aria-live="polite">
+      <div class="teacher-reminder-icon" aria-hidden="true">🔔</div>
+      <div>
+        <div class="teacher-reminder-head">
+          <h2>Reminders from Your Teacher</h2>
+          <span class="teacher-reminder-audience" id="teacherReminderAudience"></span>
+        </div>
+        <div class="teacher-reminder-message" id="teacherReminderMessage"></div>
+        <div class="teacher-reminder-updated" id="teacherReminderUpdated"></div>
+      </div>
+    </section>
+
     <div class="section-title"><span>選擇冊次</span><span class="rule"></span></div>
     <div class="book-list" id="bookList">
       <div style="padding:20px; color:var(--ink-soft); font-size:0.85rem;">課程清單載入中…</div>
@@ -352,6 +393,8 @@
   const PORTAL_OPTIONS_URL = "data/portal-options.json";
   const PORTAL_STORAGE_KEY = "shirley.portal.access.v1";
   const FIREBASE_AUTH_MODULE = import("./js/firebase-auth.js");
+  const FIRESTORE_MODULE = import("https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js");
+  const REMINDER_CACHE_TTL = 15 * 60 * 1000;
   let PORTAL_ROLE = "student";
   let PORTAL_OPTIONS = { classes: [], schools: [], studentSchools: [], classSchools: {} };
 
@@ -360,6 +403,58 @@
       const saved = JSON.parse(localStorage.getItem(PORTAL_STORAGE_KEY) || "null");
       return saved && (saved.displayName || saved.className) ? saved : null;
     } catch (_) { return null; }
+  }
+
+  function classReminderId(school, className) {
+    return `${encodeURIComponent(String(school || "").trim().toUpperCase())}__${encodeURIComponent(String(className || "").trim())}`;
+  }
+
+  function hideTeacherReminder() {
+    document.getElementById("teacherReminder").hidden = true;
+  }
+
+  function renderTeacherReminder(profile, reminder) {
+    const panel = document.getElementById("teacherReminder");
+    const matches = reminder && reminder.active === true
+      && String(reminder.school || "").trim().toUpperCase() === String(profile.school || "").trim().toUpperCase()
+      && String(reminder.className || "").trim() === String(profile.className || "").trim()
+      && String(reminder.message || "").trim();
+    if (!matches) { panel.hidden = true; return; }
+    document.getElementById("teacherReminderAudience").textContent = `${profile.school} · ${profile.className}`;
+    document.getElementById("teacherReminderMessage").textContent = String(reminder.message).trim();
+    document.getElementById("teacherReminderUpdated").textContent = reminder.updatedText ? `Updated ${reminder.updatedText}` : "";
+    panel.hidden = false;
+  }
+
+  async function loadTeacherReminder(firebaseAuth, profile) {
+    hideTeacherReminder();
+    if (!profile || profile.admin || profile.role !== "student" || !profile.school || !profile.className) return;
+    const reminderId = classReminderId(profile.school, profile.className);
+    const cacheKey = `shirley.class-reminder.cache.v1:${reminderId}`;
+    let cached = null;
+    try { cached = JSON.parse(localStorage.getItem(cacheKey) || "null"); } catch (_) {}
+    if (cached?.loadedAt && Date.now() - Number(cached.loadedAt) < REMINDER_CACHE_TTL) {
+      renderTeacherReminder(profile, cached.reminder);
+      return;
+    }
+    try {
+      const firestore = await FIRESTORE_MODULE;
+      const database = firestore.getFirestore(firebaseAuth.app);
+      const snapshot = await firestore.getDoc(firestore.doc(database, "classReminders", reminderId));
+      const data = snapshot.exists() ? snapshot.data() : null;
+      const reminder = data ? {
+        active: data.active === true,
+        school: String(data.school || ""),
+        className: String(data.className || ""),
+        message: String(data.message || ""),
+        updatedText: data.updatedAt?.toDate ? data.updatedAt.toDate().toLocaleString("zh-TW", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : ""
+      } : null;
+      localStorage.setItem(cacheKey, JSON.stringify({ loadedAt: Date.now(), reminder }));
+      renderTeacherReminder(profile, reminder);
+    } catch (error) {
+      if (cached?.reminder) renderTeacherReminder(profile, cached.reminder);
+      console.warn("Class reminder could not be loaded.", error);
+    }
   }
 
   function unlockPortal(className, animate = true) {
@@ -430,6 +525,7 @@
     .then(firebaseAuth => firebaseAuth.observePortalAuth(user => {
       if (!user) {
         document.getElementById("adminDashboardBtn").hidden = true;
+        hideTeacherReminder();
         localStorage.removeItem(PORTAL_STORAGE_KEY);
         document.body.classList.add("portal-locked");
         document.getElementById("studentPortal").hidden = false;
@@ -444,8 +540,11 @@
       setPortalRole(saved.role || "student");
       unlockPortal(saved.displayName || user.displayName || "Signed-in user", false);
       firebaseAuth.getPortalProfile(user)
-        .then(profile => { document.getElementById("adminDashboardBtn").hidden = !profile?.admin; })
-        .catch(() => { document.getElementById("adminDashboardBtn").hidden = true; });
+        .then(profile => {
+          document.getElementById("adminDashboardBtn").hidden = !profile?.admin;
+          loadTeacherReminder(firebaseAuth, profile);
+        })
+        .catch(() => { document.getElementById("adminDashboardBtn").hidden = true; hideTeacherReminder(); });
     }))
     .catch(() => {
       document.getElementById("portalError").textContent = "Firebase 登入服務暫時無法連線，請稍後重新整理。";
