@@ -1612,14 +1612,195 @@
       {
         "id": "b1l5-g1",
         "title": "make/have/let sb. VR…. 使役動詞",
-        "examples": []
+        "examples": [
+          "My teacher made me sing a song to the whole class, which made all my classmates happy.",
+          "Let it go!",
+          "I had my brother eat up the whole pizza so that he didn’t waste food."
+        ]
+      },
+      {
+        "id": "b1l5-g2",
+        "title": "because V.S. because of",
+        "examples": [
+          "Because it was raining heavily, we all stayed inside and played a board game.",
+          "Because of the heavy rain, we could only stay inside and played a board game."
+        ]
       }
     ],
     "sentence_structures": {
-      "items": []
+      "items": [
+        {
+          "id": "b1l5-s001",
+          "sentence": "I *am* a plastic bag.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b1l5-s002",
+          "sentence": "When I was very young, I *was sent* from the factory to a convenience store.",
+          "type": "complex",
+          "pattern": "Adverbial clause (When...) + S + (Passive)"
+        },
+        {
+          "id": "b1l5-s003",
+          "sentence": "I *stayed* there for a long time and *waited* eagerly to be used.",
+          "type": "simple",
+          "pattern": "S + Vi (Compound verb)"
+        },
+        {
+          "id": "b1l5-s004",
+          "sentence": "Finally, some kids *came* along, *bought* some snacks, and *took* me along to the beach for a picnic.",
+          "type": "simple",
+          "pattern": "S + Vt / Vi (Compound verb)"
+        },
+        {
+          "id": "b1l5-s005",
+          "sentence": "When it was getting dark, they *packed* everything up and *let* me stay there alone!",
+          "type": "complex",
+          "pattern": "Adverbial clause (When...) + S + Vt (Compound verb)"
+        },
+        {
+          "id": "b1l5-s006",
+          "sentence": "The wind *started* to howl, and suddenly I *was* in the sea all on my own.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"and\")"
+        },
+        {
+          "id": "b1l5-s007",
+          "sentence": "I *floated* helplessly in the water for a while, but soon *realized* I wasn’t alone.",
+          "type": "compound-complex",
+          "pattern": "S + Vi / Vt (Compound verb) + Noun clause"
+        },
+        {
+          "id": "b1l5-s008",
+          "sentence": "I *was surrounded* by plastic cups, plates, and straws.",
+          "type": "simple",
+          "pattern": "S + (Passive: S + be + p.p.)"
+        },
+        {
+          "id": "b1l5-s009",
+          "sentence": "After days of drifting, I *started* to envy the birds up above, who were flying so high and free.",
+          "type": "complex",
+          "pattern": "Prepositional phrase + S + Vt + O + Relative clause (who...)"
+        },
+        {
+          "id": "b1l5-s010",
+          "sentence": "I *could* only *follow* the currents.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b1l5-s011",
+          "sentence": "Suddenly, I *went* down a tunnel into a chamber.",
+          "type": "simple",
+          "pattern": "S + Vi + Prepositional phrase"
+        },
+        {
+          "id": "b1l5-s012",
+          "sentence": "“What *happened*?” I *asked* a fork next to me.",
+          "type": "complex",
+          "pattern": "Direct speech (Interrogative Noun clause) + S + Vt + IO"
+        },
+        {
+          "id": "b1l5-s013",
+          "sentence": "“I *think* we were just swallowed by a huge fish!” he *replied*.",
+          "type": "complex",
+          "pattern": "Direct speech (Complex sentence with Noun clause) + S + Vt"
+        },
+        {
+          "id": "b1l5-s014",
+          "sentence": "More and more of us *were swallowed* until it got quite crowded inside.",
+          "type": "complex",
+          "pattern": "S + (Passive) + Adverbial clause (until...)"
+        },
+        {
+          "id": "b1l5-s015",
+          "sentence": "We obviously *weren’t* that nutritious because the fish died after a few days.",
+          "type": "complex",
+          "pattern": "S + Vl + C + Adverbial clause (because...)"
+        },
+        {
+          "id": "b1l5-s016",
+          "sentence": "The fish’s body slowly *decomposed*, and then I *was* back in the ocean.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"and\")"
+        },
+        {
+          "id": "b1l5-s017",
+          "sentence": "One day, a big wave *came* and *threw* me up onto the shore.",
+          "type": "simple",
+          "pattern": "S + Vi / Vt (Compound verb)"
+        },
+        {
+          "id": "b1l5-s018",
+          "sentence": "A few days later, some schoolchildren *walked* up to me.",
+          "type": "simple",
+          "pattern": "S + Vi + Prepositional phrase"
+        },
+        {
+          "id": "b1l5-s019",
+          "sentence": "They *were carrying* bags and pairs of tongs.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b1l5-s020",
+          "sentence": "I *felt* a sudden pinch, and the next thing I knew, I *was* inside a big bag of trash.",
+          "type": "compound-complex",
+          "pattern": "Compound sentence (with \"and\") + Elliptical Relative clause"
+        },
+        {
+          "id": "b1l5-s021",
+          "sentence": "A teacher *told* the schoolchildren, “Because of all the littering, a lot of plastic products end up in the ocean.”",
+          "type": "complex",
+          "pattern": "S + Vt + IO + Direct speech (Complex clause with prepositional phrase)"
+        },
+        {
+          "id": "b1l5-s022",
+          "sentence": "They *are* then *consumed* by different sea creatures.",
+          "type": "simple",
+          "pattern": "S + (Passive: S + be + p.p.)"
+        },
+        {
+          "id": "b1l5-s023",
+          "sentence": "You *might think* that’s okay, but when we eat seafood, the poisonous substances from the plastic *end up* inside us and *make* us feel sick.",
+          "type": "compound-complex",
+          "pattern": "Compound sentence (with \"but\" + Adverbial clause)"
+        },
+        {
+          "id": "b1l5-s024",
+          "sentence": "According to a plastic bottle nearby, the humans *are going to take* us to a recycling plant.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + O"
+        },
+        {
+          "id": "b1l5-s025",
+          "sentence": "I really *don’t understand* them.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b1l5-s026",
+          "sentence": "They *produce* us to make their lives better, but then they *misuse* us and *make* everyone’s life worse!",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"but\" & \"and\")"
+        },
+        {
+          "id": "b1l5-s027",
+          "sentence": "I *’m* tired of floating around, killing fish, and causing harm to the environment.",
+          "type": "simple",
+          "pattern": "S + Vi + C + Prepositional phrase"
+        },
+        {
+          "id": "b1l5-s028",
+          "sentence": "I really *hope* that my future owner will use me properly in my next life.",
+          "type": "complex",
+          "pattern": "S + Vt + Noun clause (that...)"
+        }
+      ]
     }
   },
   "text_genre": {
-    "raw_text": ""
+    "raw_text": "This is a narrative using personification. A plastic bag “tells” the story of his life with the chronological sequence.  \nThe text is a first-person narrative from the perspective of a plastic bag. The bag describes its journey from a convenience store to the ocean, where it becomes trapped with other plastic waste. The bag expresses its frustration with humans for producing plastic products that harm the environment and endanger marine life. The bag hopes that in its next life, it will be used responsibly."
   }
 }
