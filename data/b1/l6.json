@@ -1,0 +1,551 @@
+{
+  "book": "B1",
+  "lesson": "L6",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b1l6-v01",
+        "base": "free",
+        "verb": [
+          {
+            "en": "free",
+            "zh": "釋放；使自由；解除",
+            "example": "The firefighters freed the driver from the car."
+          }
+        ],
+        "noun": [
+          {
+            "en": "freedom",
+            "zh": "自由；自主權；免除",
+            "example": "Everyone should have the freedom to express an opinion."
+          }
+        ],
+        "adj": [
+          {
+            "en": "free",
+            "zh": "自由的；免費的；空閒的",
+            "example": "Admission to the museum is free today."
+          }
+        ],
+        "adv": [
+          {
+            "en": "free",
+            "zh": "免費地；不受限制地",
+            "example": "Children under five travel free."
+          },
+          {
+            "en": "freely",
+            "zh": "自由地；坦率地；順暢地",
+            "example": "The students discussed their ideas freely."
+          }
+        ]
+      },
+      {
+        "id": "b1l6-v02",
+        "base": "move",
+        "verb": [
+          {
+            "en": "move",
+            "zh": "移動；搬家；感動",
+            "example": "Please move the chair closer to the table."
+          },
+          {
+            "en": "remove",
+            "zh": "移除；脫下；免職",
+            "example": "Please remove your shoes before entering."
+          }
+        ],
+        "noun": [
+          {
+            "en": "move",
+            "zh": "移動；行動；一步棋",
+            "example": "Changing jobs was a difficult move for him."
+          },
+          {
+            "en": "removal",
+            "zh": "移除；搬走；免職",
+            "example": "The removal of the old bridge took two weeks."
+          },
+          {
+            "en": "remover",
+            "zh": "去除劑；移除工具；搬運者",
+            "example": "This stain remover works well on cotton."
+          }
+        ],
+        "adj": [
+          {
+            "en": "moving",
+            "zh": "感人的；移動中的",
+            "example": "The film tells a deeply moving story."
+          },
+          {
+            "en": "moved",
+            "zh": "感動的；被移動的",
+            "example": "We were moved by her kindness."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l6-v03",
+        "base": "celebrate",
+        "verb": [
+          {
+            "en": "celebrate",
+            "zh": "慶祝；讚揚；紀念",
+            "example": "We celebrated her birthday with a family dinner."
+          }
+        ],
+        "noun": [
+          {
+            "en": "celebration",
+            "zh": "慶祝；慶典；頌揚",
+            "example": "The victory led to celebrations across the city."
+          }
+        ],
+        "adj": [
+          {
+            "en": "celebrated",
+            "zh": "著名的；備受讚譽的",
+            "example": "She is a celebrated writer and historian."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l6-v04",
+        "base": "depend",
+        "verb": [
+          {
+            "en": "depend",
+            "zh": "依靠；取決於；信賴",
+            "example": "Success depends on careful preparation."
+          }
+        ],
+        "noun": [
+          {
+            "en": "independence",
+            "zh": "獨立；自主；自立",
+            "example": "The child is learning greater independence."
+          },
+          {
+            "en": "dependence",
+            "zh": "依賴；依存；依靠",
+            "example": "The city wants to reduce its dependence on cars."
+          }
+        ],
+        "adj": [
+          {
+            "en": "independent",
+            "zh": "獨立的；自主的；不相干的",
+            "example": "She became financially independent at a young age."
+          },
+          {
+            "en": "dependent",
+            "zh": "依賴的；取決於……的",
+            "example": "The farmers are dependent on regular rainfall."
+          }
+        ],
+        "adv": [
+          {
+            "en": "dependently",
+            "zh": "依賴地；從屬地（少見）",
+            "example": "The two processes operate dependently rather than separately."
+          },
+          {
+            "en": "independently",
+            "zh": "獨立地；自主地",
+            "example": "Students completed the project independently."
+          }
+        ]
+      },
+      {
+        "id": "b1l6-v05",
+        "base": "monument",
+        "verb": [],
+        "noun": [
+          {
+            "en": "monument",
+            "zh": "紀念碑；歷史遺跡；豐碑",
+            "example": "The monument honors those who served the community."
+          },
+          {
+            "en": "monumentality",
+            "zh": "宏偉；紀念碑性；巨大規模",
+            "example": "The monumentality of the building impressed visitors."
+          }
+        ],
+        "adj": [
+          {
+            "en": "monumental",
+            "zh": "巨大的；重要的；紀念碑般的",
+            "example": "Completing the project was a monumental achievement."
+          }
+        ],
+        "adv": [
+          {
+            "en": "monumentally",
+            "zh": "極其；以宏偉方式",
+            "example": "The team faced a monumentally difficult task."
+          }
+        ]
+      },
+      {
+        "id": "b1l6-v06",
+        "base": "symbol",
+        "verb": [
+          {
+            "en": "symbolize",
+            "zh": "象徵；代表",
+            "example": "The dove symbolizes peace."
+          }
+        ],
+        "noun": [
+          {
+            "en": "symbol",
+            "zh": "象徵；符號；標誌",
+            "example": "The heart is often used as a symbol of love."
+          }
+        ],
+        "adj": [
+          {
+            "en": "symbolic",
+            "zh": "象徵性的；符號的",
+            "example": "The gift had great symbolic value."
+          }
+        ],
+        "adv": [
+          {
+            "en": "symbolically",
+            "zh": "象徵性地；以符號表示",
+            "example": "The bridge symbolically connects the two communities."
+          }
+        ]
+      },
+      {
+        "id": "b1l6-v07",
+        "base": "firm",
+        "verb": [
+          {
+            "en": "firm",
+            "zh": "使穩固；使堅定；穩定",
+            "example": "The agreement helped firm prices in the market."
+          }
+        ],
+        "noun": [
+          {
+            "en": "firm",
+            "zh": "公司；商號；事務所",
+            "example": "She works for an international law firm."
+          },
+          {
+            "en": "firmness",
+            "zh": "堅固；堅定；硬度",
+            "example": "She spoke with calmness and firmness."
+          }
+        ],
+        "adj": [
+          {
+            "en": "firm",
+            "zh": "堅固的；堅定的；嚴格的",
+            "example": "The mattress is firm but comfortable."
+          }
+        ],
+        "adv": [
+          {
+            "en": "firm",
+            "zh": "穩固地；堅定地",
+            "example": "Hold firm until help arrives."
+          },
+          {
+            "en": "firmly",
+            "zh": "堅定地；牢固地",
+            "example": "She firmly refused the unfair request."
+          }
+        ]
+      },
+      {
+        "id": "b1l6-v08",
+        "base": "present",
+        "verb": [
+          {
+            "en": "present",
+            "zh": "呈現；提出；頒發",
+            "example": "The students will present their research tomorrow."
+          },
+          {
+            "en": "represent",
+            "zh": "代表；象徵；描繪",
+            "example": "This chart represents changes in population."
+          }
+        ],
+        "noun": [
+          {
+            "en": "presentation",
+            "zh": "簡報；呈現；贈送",
+            "example": "Her presentation was clear and informative."
+          },
+          {
+            "en": "representation",
+            "zh": "代表；描繪；表現形式",
+            "example": "The painting is a representation of village life."
+          }
+        ],
+        "adj": [
+          {
+            "en": "presentative",
+            "zh": "呈現的；表象性的（少見）",
+            "example": "The display has a presentative function in the exhibition."
+          },
+          {
+            "en": "representative",
+            "zh": "具代表性的；典型的；代理的",
+            "example": "The survey used a representative sample of residents."
+          }
+        ],
+        "adv": [
+          {
+            "en": "presentatively",
+            "zh": "以呈現方式；表象性地（少見）",
+            "example": "The ideas were arranged presentatively on the poster."
+          },
+          {
+            "en": "representatively",
+            "zh": "具代表性地；典型地（少見）",
+            "example": "The examples were selected representatively from each region."
+          }
+        ]
+      },
+      {
+        "id": "b1l6-v09",
+        "base": "slave",
+        "verb": [
+          {
+            "en": "slave",
+            "zh": "苦幹；拚命工作；奴役",
+            "example": "He slaved over the report all weekend."
+          }
+        ],
+        "noun": [
+          {
+            "en": "slave",
+            "zh": "奴隸；受制於某事的人",
+            "example": "The novel tells the story of an escaped slave."
+          },
+          {
+            "en": "slavery",
+            "zh": "奴隸制度；奴役",
+            "example": "The museum documents the history of slavery."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b1l6-v10",
+        "base": "fair",
+        "verb": [],
+        "noun": [
+          {
+            "en": "fairness",
+            "zh": "公平；公正；合理性",
+            "example": "Students questioned the fairness of the rule."
+          },
+          {
+            "en": "unfairness",
+            "zh": "不公平；不公正",
+            "example": "She complained about the unfairness of the decision."
+          }
+        ],
+        "adj": [
+          {
+            "en": "fair",
+            "zh": "公平的；合理的；晴朗的",
+            "example": "Everyone deserves a fair chance."
+          },
+          {
+            "en": "unfair",
+            "zh": "不公平的；不合理的",
+            "example": "It is unfair to blame one person for the mistake."
+          }
+        ],
+        "adv": [
+          {
+            "en": "fair",
+            "zh": "公平地；正面地（較少見）",
+            "example": "The two teams agreed to play fair."
+          },
+          {
+            "en": "fairly",
+            "zh": "公平地；相當地；適度地",
+            "example": "The teacher treated every student fairly."
+          },
+          {
+            "en": "unfairly",
+            "zh": "不公平地；不正當地",
+            "example": "He felt that the article judged him unfairly."
+          }
+        ]
+      },
+      {
+        "id": "b1l6-v11",
+        "base": "treat",
+        "verb": [
+          {
+            "en": "treat",
+            "zh": "對待；治療；款待",
+            "example": "Doctors treated the patient immediately."
+          }
+        ],
+        "noun": [
+          {
+            "en": "treatment",
+            "zh": "治療；對待；處理",
+            "example": "The patient responded well to the treatment."
+          }
+        ],
+        "adj": [
+          {
+            "en": "untreated",
+            "zh": "未治療的；未處理的",
+            "example": "Untreated water may contain harmful bacteria."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l6-v12",
+        "base": "tour",
+        "verb": [
+          {
+            "en": "tour",
+            "zh": "遊覽；巡迴；參觀",
+            "example": "We toured the old castle in the morning."
+          }
+        ],
+        "noun": [
+          {
+            "en": "tour",
+            "zh": "旅行；參觀；巡迴演出",
+            "example": "The guide took us on a tour of the museum."
+          },
+          {
+            "en": "tourist",
+            "zh": "觀光客；遊客",
+            "example": "The night market attracts many tourists."
+          },
+          {
+            "en": "tourism",
+            "zh": "觀光業；旅遊活動",
+            "example": "Tourism provides jobs for local residents."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b1l6-v13",
+        "base": "attract",
+        "verb": [
+          {
+            "en": "attract",
+            "zh": "吸引；引起；招引",
+            "example": "The festival attracts visitors from across the country."
+          },
+          {
+            "en": "distract",
+            "zh": "使分心；轉移注意力",
+            "example": "Noise can distract students from their work."
+          }
+        ],
+        "noun": [
+          {
+            "en": "attraction",
+            "zh": "吸引力；景點；吸引",
+            "example": "The waterfall is the area's main tourist attraction."
+          },
+          {
+            "en": "distraction",
+            "zh": "使人分心的事物；分心；消遣",
+            "example": "Turn off your phone to avoid distraction."
+          }
+        ],
+        "adj": [
+          {
+            "en": "attractive",
+            "zh": "有吸引力的；美觀的；誘人的",
+            "example": "The apartment is small but attractive."
+          },
+          {
+            "en": "distractive",
+            "zh": "使人分心的（少見；通常用 distracting）",
+            "example": "The classroom had several distractive noises."
+          }
+        ],
+        "adv": [
+          {
+            "en": "attractively",
+            "zh": "有吸引力地；美觀地",
+            "example": "The products were attractively displayed."
+          },
+          {
+            "en": "distractively",
+            "zh": "使人分心地（少見）",
+            "example": "The lights flashed distractively during the lesson."
+          }
+        ]
+      },
+      {
+        "id": "b1l6-v14",
+        "base": "globe",
+        "verb": [
+          {
+            "en": "globalize",
+            "zh": "使全球化；全球拓展",
+            "example": "Digital technology has helped globalize the industry."
+          }
+        ],
+        "noun": [
+          {
+            "en": "globe",
+            "zh": "地球；地球儀；球體",
+            "example": "The map shows trade routes around the globe."
+          },
+          {
+            "en": "globalization",
+            "zh": "全球化",
+            "example": "Globalization has increased international trade."
+          }
+        ],
+        "adj": [
+          {
+            "en": "global",
+            "zh": "全球的；全世界的；整體的",
+            "example": "Climate change is a global challenge."
+          }
+        ],
+        "adv": [
+          {
+            "en": "globally",
+            "zh": "全球地；在全世界",
+            "example": "The company sells its products globally."
+          }
+        ]
+      }
+    ]
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": []
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}
