@@ -1697,7 +1697,26 @@
     ]
   },
   "grammar": {
-    "points": [],
+    "points": [
+      {
+        "id": "b1l4-g1",
+        "title": "Adjective Clause/Relative Clause: Defining 形容詞子句/關係子句：限定用法",
+        "examples": [
+          "Those students who failed the first test have to work harder this time.",
+          "This is the house (which/that) he talked about before.",
+          "This is the house where (or: in which) I was born."
+        ]
+      },
+      {
+        "id": "b1l4-g2",
+        "title": "Adjective Clause/Relative Clause: Non-Defining形容詞子句/關係子句：非限定用法",
+        "examples": [
+          "Hsinchu, which is also called “a windy city”, is famous for its rice noodles.",
+          "Jenny’s grandma, who lives in Japan, recently came back to Taiwan to visit her.",
+          "Scott, who(m) I’ve known since childhood, is able to speak five languages."
+        ]
+      }
+    ],
     "sentence_structures": {
       "items": [
         {

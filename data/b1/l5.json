@@ -1,0 +1,1625 @@
+{
+  "book": "B1",
+  "lesson": "L5",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b1l5-v01",
+        "base": "plastic",
+        "verb": [],
+        "noun": [
+          {
+            "en": "plastic",
+            "zh": "塑膠；塑膠製品",
+            "example": "The chair is made from recycled plastic."
+          }
+        ],
+        "adj": [
+          {
+            "en": "plastic",
+            "zh": "塑膠的；可塑的；不自然的",
+            "example": "Please place plastic bottles in this bin."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l5-v02",
+        "base": "convenient",
+        "verb": [],
+        "noun": [
+          {
+            "en": "convenience",
+            "zh": "方便；便利；便利設施",
+            "example": "Online shopping offers great convenience."
+          }
+        ],
+        "adj": [
+          {
+            "en": "convenient",
+            "zh": "方便的；便利的；就近的",
+            "example": "The hotel is convenient for the train station."
+          }
+        ],
+        "adv": [
+          {
+            "en": "conveniently",
+            "zh": "方便地；便利地",
+            "example": "The store is conveniently located near my office."
+          }
+        ]
+      },
+      {
+        "id": "b1l5-v03",
+        "base": "eager",
+        "verb": [],
+        "noun": [
+          {
+            "en": "eagerness",
+            "zh": "渴望；熱切；積極",
+            "example": "Her eagerness to learn impressed the teacher."
+          }
+        ],
+        "adj": [
+          {
+            "en": "eager",
+            "zh": "渴望的；熱切的；積極的",
+            "example": "The students were eager to begin the experiment."
+          }
+        ],
+        "adv": [
+          {
+            "en": "eagerly",
+            "zh": "熱切地；渴望地",
+            "example": "The children eagerly opened their gifts."
+          }
+        ]
+      },
+      {
+        "id": "b1l5-v04",
+        "base": "surround",
+        "verb": [
+          {
+            "en": "surround",
+            "zh": "包圍；環繞；圍住",
+            "example": "Tall trees surround the small lake."
+          }
+        ],
+        "noun": [
+          {
+            "en": "surroundings",
+            "zh": "周圍環境；附近地區",
+            "example": "The cabin blends naturally with its surroundings."
+          }
+        ],
+        "adj": [
+          {
+            "en": "surrounding",
+            "zh": "周圍的；附近的",
+            "example": "People came from the surrounding villages."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l5-v05",
+        "base": "drift",
+        "verb": [
+          {
+            "en": "drift",
+            "zh": "漂流；飄移；逐漸偏離",
+            "example": "The boat drifted slowly toward the shore."
+          }
+        ],
+        "noun": [
+          {
+            "en": "drift",
+            "zh": "漂流；趨勢；大意",
+            "example": "I understood the general drift of his argument."
+          }
+        ],
+        "adj": [
+          {
+            "en": "drifting",
+            "zh": "漂流的；飄動的；逐漸移動的",
+            "example": "We watched the drifting clouds above the hills."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l5-v06",
+        "base": "envy",
+        "verb": [
+          {
+            "en": "envy",
+            "zh": "羨慕；嫉妒",
+            "example": "I envy her ability to remain calm."
+          }
+        ],
+        "noun": [
+          {
+            "en": "envy",
+            "zh": "羨慕；嫉妒；令人羨慕的事物",
+            "example": "His success filled some colleagues with envy."
+          }
+        ],
+        "adj": [
+          {
+            "en": "envious",
+            "zh": "羨慕的；嫉妒的",
+            "example": "She was envious of her friend's long vacation."
+          }
+        ],
+        "adv": [
+          {
+            "en": "enviously",
+            "zh": "羨慕地；嫉妒地",
+            "example": "He looked enviously at their new car."
+          }
+        ]
+      },
+      {
+        "id": "b1l5-v07",
+        "base": "crowd",
+        "verb": [
+          {
+            "en": "crowd",
+            "zh": "擠滿；聚集；靠近",
+            "example": "Fans crowded around the entrance."
+          }
+        ],
+        "noun": [
+          {
+            "en": "crowd",
+            "zh": "人群；群眾；一群人",
+            "example": "A large crowd gathered in the square."
+          }
+        ],
+        "adj": [
+          {
+            "en": "crowded",
+            "zh": "擁擠的；塞滿的",
+            "example": "The train was crowded during rush hour."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l5-v08",
+        "base": "obvious",
+        "verb": [],
+        "noun": [
+          {
+            "en": "obviousness",
+            "zh": "明顯；顯而易見",
+            "example": "The obviousness of the mistake surprised everyone."
+          }
+        ],
+        "adj": [
+          {
+            "en": "obvious",
+            "zh": "明顯的；顯而易見的",
+            "example": "It was obvious that she needed help."
+          }
+        ],
+        "adv": [
+          {
+            "en": "obviously",
+            "zh": "顯然地；明顯地",
+            "example": "Obviously, we need a different plan."
+          }
+        ]
+      },
+      {
+        "id": "b1l5-v09",
+        "base": "produce",
+        "verb": [
+          {
+            "en": "produce",
+            "zh": "生產；製造；產生",
+            "example": "The factory produces electric bicycles."
+          }
+        ],
+        "noun": [
+          {
+            "en": "product",
+            "zh": "產品；產物；結果",
+            "example": "This product is made from natural ingredients."
+          },
+          {
+            "en": "production",
+            "zh": "生產；產量；製作",
+            "example": "The company increased production last month."
+          },
+          {
+            "en": "produce",
+            "zh": "農產品；蔬果",
+            "example": "The market sells fresh local produce."
+          }
+        ],
+        "adj": [
+          {
+            "en": "productive",
+            "zh": "有生產力的；多產的；富有成效的",
+            "example": "We had a productive meeting this morning."
+          },
+          {
+            "en": "unproductive",
+            "zh": "沒有成效的；生產力低的",
+            "example": "The argument became repetitive and unproductive."
+          }
+        ],
+        "adv": [
+          {
+            "en": "productively",
+            "zh": "有效率地；有成果地",
+            "example": "She used the waiting time productively."
+          },
+          {
+            "en": "unproductively",
+            "zh": "沒有效率地；無成果地",
+            "example": "The afternoon was spent unproductively."
+          }
+        ]
+      },
+      {
+        "id": "b1l5-v10",
+        "base": "consume",
+        "verb": [
+          {
+            "en": "consume",
+            "zh": "消耗；食用；使著迷",
+            "example": "Older machines consume more electricity."
+          }
+        ],
+        "noun": [
+          {
+            "en": "consumer",
+            "zh": "消費者；使用者",
+            "example": "Consumers are demanding less packaging."
+          },
+          {
+            "en": "consumption",
+            "zh": "消耗；消費；食用量",
+            "example": "The new system reduces energy consumption."
+          }
+        ],
+        "adj": [
+          {
+            "en": "consuming",
+            "zh": "強烈的；令人全神貫注的；消耗性的",
+            "example": "He developed a consuming interest in astronomy."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l5-v11",
+        "base": "poison",
+        "verb": [
+          {
+            "en": "poison",
+            "zh": "使中毒；毒害；破壞",
+            "example": "Chemicals can poison rivers and lakes."
+          }
+        ],
+        "noun": [
+          {
+            "en": "poison",
+            "zh": "毒藥；毒物；有害事物",
+            "example": "Keep this poison away from children."
+          }
+        ],
+        "adj": [
+          {
+            "en": "poisonous",
+            "zh": "有毒的；有害的；惡毒的",
+            "example": "Some wild mushrooms are poisonous."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l5-v12",
+        "base": "substance",
+        "verb": [],
+        "noun": [
+          {
+            "en": "substance",
+            "zh": "物質；實質；要旨",
+            "example": "The laboratory identified an unknown substance."
+          }
+        ],
+        "adj": [
+          {
+            "en": "substantial",
+            "zh": "大量的；重大的；實質的",
+            "example": "The project requires a substantial investment."
+          }
+        ],
+        "adv": [
+          {
+            "en": "substantially",
+            "zh": "大幅地；實質上；基本上",
+            "example": "The new design substantially reduces waste."
+          }
+        ]
+      },
+      {
+        "id": "b1l5-v13",
+        "base": "recycle",
+        "verb": [
+          {
+            "en": "recycle",
+            "zh": "回收；再利用",
+            "example": "Please recycle paper, glass, and metal."
+          }
+        ],
+        "noun": [
+          {
+            "en": "recycling",
+            "zh": "回收；資源再利用",
+            "example": "Recycling helps reduce the amount of waste."
+          }
+        ],
+        "adj": [
+          {
+            "en": "recyclable",
+            "zh": "可回收的；可再利用的",
+            "example": "Most of this packaging is recyclable."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l5-v14",
+        "base": "harm",
+        "verb": [
+          {
+            "en": "harm",
+            "zh": "傷害；損害",
+            "example": "Too much sunlight can harm your skin."
+          }
+        ],
+        "noun": [
+          {
+            "en": "harm",
+            "zh": "傷害；損害；危害",
+            "example": "The spill caused serious harm to marine life."
+          }
+        ],
+        "adj": [
+          {
+            "en": "harmful",
+            "zh": "有害的；造成傷害的",
+            "example": "Smoking is harmful to your health."
+          },
+          {
+            "en": "harmless",
+            "zh": "無害的；不會造成傷害的",
+            "example": "This small insect is completely harmless."
+          }
+        ],
+        "adv": [
+          {
+            "en": "harmfully",
+            "zh": "有害地；造成傷害地",
+            "example": "The chemical reacts harmfully with water."
+          },
+          {
+            "en": "harmlessly",
+            "zh": "無害地；沒有造成傷害地",
+            "example": "The meteor burned up harmlessly in the atmosphere."
+          }
+        ]
+      },
+      {
+        "id": "b1l5-v15",
+        "base": "environment",
+        "verb": [],
+        "noun": [
+          {
+            "en": "environment",
+            "zh": "環境；周遭；自然環境",
+            "example": "Children need a safe learning environment."
+          },
+          {
+            "en": "environmentalist",
+            "zh": "環境保護人士；環保主義者",
+            "example": "The environmentalist campaigned to protect the forest."
+          }
+        ],
+        "adj": [
+          {
+            "en": "environmental",
+            "zh": "環境的；與自然環境有關的",
+            "example": "The report examines the project's environmental impact."
+          }
+        ],
+        "adv": [
+          {
+            "en": "environmentally",
+            "zh": "在環境方面；有利環境地",
+            "example": "The company uses environmentally friendly materials."
+          }
+        ]
+      },
+      {
+        "id": "b1l5-v16",
+        "base": "proper",
+        "verb": [],
+        "noun": [
+          {
+            "en": "property",
+            "zh": "財產；房地產；特性",
+            "example": "Water has several unusual properties."
+          }
+        ],
+        "adj": [
+          {
+            "en": "proper",
+            "zh": "適當的；正確的；正式的",
+            "example": "Proper training can prevent accidents."
+          }
+        ],
+        "adv": [
+          {
+            "en": "properly",
+            "zh": "適當地；正確地；完全地",
+            "example": "Please make sure the door is properly locked."
+          }
+        ]
+      }
+    ]
+  },
+  "phrases": {
+    "items": [
+      {
+        "id": "b1l5-p001",
+        "phrase": "a convenience store",
+        "pos": "ph.",
+        "zh": "便利商店",
+        "example_en": "I bought some water at a convenience store.",
+        "example_zh": "我在便利商店買了一些水。"
+      },
+      {
+        "id": "b1l5-p002",
+        "phrase": "come along",
+        "pos": "ph.",
+        "zh": "一起來；出現",
+        "example_en": "You can come along with us.",
+        "example_zh": "你可以和我們一起來。"
+      },
+      {
+        "id": "b1l5-p003",
+        "phrase": "take … along",
+        "pos": "ph.",
+        "zh": "隨身帶著……",
+        "example_en": "Take an umbrella along with you.",
+        "example_zh": "隨身帶把雨傘。"
+      },
+      {
+        "id": "b1l5-p004",
+        "phrase": "pack everything up",
+        "pos": "ph.",
+        "zh": "把所有東西打包好",
+        "example_en": "We packed everything up before noon.",
+        "example_zh": "我們中午前把所有東西打包好了。"
+      },
+      {
+        "id": "b1l5-p005",
+        "phrase": "on one’s own",
+        "pos": "ph.",
+        "zh": "獨自；靠自己",
+        "example_en": "She traveled abroad on her own.",
+        "example_zh": "她獨自出國旅行。"
+      },
+      {
+        "id": "b1l5-p006",
+        "phrase": "cutting-edge technology",
+        "pos": "ph.",
+        "zh": "尖端科技",
+        "example_en": "The hospital uses cutting-edge technology.",
+        "example_zh": "這家醫院採用尖端科技。"
+      },
+      {
+        "id": "b1l5-p007",
+        "phrase": "run at top speed",
+        "pos": "ph.",
+        "zh": "全速奔跑",
+        "example_en": "The dog ran at top speed.",
+        "example_zh": "那隻狗全速奔跑。"
+      },
+      {
+        "id": "b1l5-p008",
+        "phrase": "slow down",
+        "pos": "ph.",
+        "zh": "減速；放慢",
+        "example_en": "Slow down near the school.",
+        "example_zh": "在學校附近請減速。"
+      },
+      {
+        "id": "b1l5-p009",
+        "phrase": "the rest of",
+        "pos": "ph.",
+        "zh": "其餘的……",
+        "example_en": "I spent the rest of the day reading.",
+        "example_zh": "那天剩下的時間我都在閱讀。"
+      },
+      {
+        "id": "b1l5-p010",
+        "phrase": "a deep sense of achievement",
+        "pos": "ph.",
+        "zh": "深刻的成就感",
+        "example_en": "Finishing the climb gave me a deep sense of achievement.",
+        "example_zh": "完成登山讓我有深刻的成就感。"
+      },
+      {
+        "id": "b1l5-p011",
+        "phrase": "enjoy a bird’s-eye view of",
+        "pos": "ph.",
+        "zh": "俯瞰……",
+        "example_en": "From the tower, we enjoyed a bird’s-eye view of the city.",
+        "example_zh": "我們從塔上俯瞰整座城市。"
+      },
+      {
+        "id": "b1l5-p012",
+        "phrase": "suffer from a gunshot wound",
+        "pos": "ph.",
+        "zh": "遭受槍傷",
+        "example_en": "The victim suffered from a gunshot wound.",
+        "example_zh": "受害者遭受槍傷。"
+      },
+      {
+        "id": "b1l5-p013",
+        "phrase": "get…day by day",
+        "pos": "ph.",
+        "zh": "一天比一天變得……",
+        "example_en": "The weather is getting warmer day by day.",
+        "example_zh": "天氣一天比一天暖和。"
+      },
+      {
+        "id": "b1l5-p014",
+        "phrase": "the shallow end of the pool",
+        "pos": "ph.",
+        "zh": "游泳池的淺水區",
+        "example_en": "The children played in the shallow end of the pool.",
+        "example_zh": "孩子們在游泳池的淺水區玩耍。"
+      },
+      {
+        "id": "b1l5-p015",
+        "phrase": "build one’s confidence",
+        "pos": "ph.",
+        "zh": "建立某人的自信",
+        "example_en": "Practice will build your confidence.",
+        "example_zh": "練習能建立你的自信。"
+      },
+      {
+        "id": "b1l5-p016",
+        "phrase": "all of a sudden",
+        "pos": "ph.",
+        "zh": "突然間",
+        "example_en": "All of a sudden, the lights went out.",
+        "example_zh": "突然間，燈全熄了。"
+      },
+      {
+        "id": "b1l5-p017",
+        "phrase": "occur to sb.",
+        "pos": "ph.",
+        "zh": "某人突然想到",
+        "example_en": "A good idea occurred to me.",
+        "example_zh": "我突然想到一個好主意。"
+      },
+      {
+        "id": "b1l5-p018",
+        "phrase": "print out",
+        "pos": "ph.",
+        "zh": "列印出來",
+        "example_en": "Please print out the report.",
+        "example_zh": "請把報告列印出來。"
+      },
+      {
+        "id": "b1l5-p019",
+        "phrase": "learn some basic skills",
+        "pos": "ph.",
+        "zh": "學習一些基本技能",
+        "example_en": "Students learn some basic cooking skills.",
+        "example_zh": "學生學習一些基本烹飪技巧。"
+      },
+      {
+        "id": "b1l5-p020",
+        "phrase": "catch one’s breath",
+        "pos": "ph.",
+        "zh": "喘口氣；恢復呼吸",
+        "example_en": "We stopped to catch our breath.",
+        "example_zh": "我們停下來喘口氣。"
+      },
+      {
+        "id": "b1l5-p021",
+        "phrase": "come out of nowhere",
+        "pos": "ph.",
+        "zh": "突然出現",
+        "example_en": "A car came out of nowhere.",
+        "example_zh": "一輛車突然出現。"
+      },
+      {
+        "id": "b1l5-p022",
+        "phrase": "chase wildly after",
+        "pos": "ph.",
+        "zh": "瘋狂追趕……",
+        "example_en": "The dog chased wildly after the ball.",
+        "example_zh": "那隻狗瘋狂追趕球。"
+      },
+      {
+        "id": "b1l5-p023",
+        "phrase": "picturesque scene",
+        "pos": "ph.",
+        "zh": "如畫的景色",
+        "example_en": "The village offers a picturesque scene.",
+        "example_zh": "這座村莊呈現如畫的景色。"
+      },
+      {
+        "id": "b1l5-p024",
+        "phrase": "family and friends back home",
+        "pos": "ph.",
+        "zh": "家鄉的親友",
+        "example_en": "She missed her family and friends back home.",
+        "example_zh": "她想念家鄉的親友。"
+      },
+      {
+        "id": "b1l5-p025",
+        "phrase": "for a while",
+        "pos": "ph.",
+        "zh": "一會兒；一段時間",
+        "example_en": "Let’s rest here for a while.",
+        "example_zh": "我們在這裡休息一會兒吧。"
+      },
+      {
+        "id": "b1l5-p026",
+        "phrase": "up above",
+        "pos": "ph.",
+        "zh": "在上方",
+        "example_en": "Birds circled high up above.",
+        "example_zh": "鳥兒在高空盤旋。"
+      },
+      {
+        "id": "b1l5-p027",
+        "phrase": "fly high and free",
+        "pos": "ph.",
+        "zh": "自由自在地高飛",
+        "example_en": "The eagle flew high and free.",
+        "example_zh": "老鷹自由自在地高飛。"
+      },
+      {
+        "id": "b1l5-p028",
+        "phrase": "follow the currents",
+        "pos": "ph.",
+        "zh": "順著氣流／水流",
+        "example_en": "The birds follow the air currents.",
+        "example_zh": "鳥兒順著氣流飛行。"
+      },
+      {
+        "id": "b1l5-p029",
+        "phrase": "more and more of",
+        "pos": "ph.",
+        "zh": "愈來愈多的……",
+        "example_en": "More and more of our work is done online.",
+        "example_zh": "我們愈來愈多的工作在線上完成。"
+      },
+      {
+        "id": "b1l5-p030",
+        "phrase": "take a gap year",
+        "pos": "ph.",
+        "zh": "休學／空檔一年",
+        "example_en": "He took a gap year before college.",
+        "example_zh": "他上大學前休息了一年。"
+      },
+      {
+        "id": "b1l5-p031",
+        "phrase": "do a part-time job",
+        "pos": "ph.",
+        "zh": "做兼職工作",
+        "example_en": "She does a part-time job on weekends.",
+        "example_zh": "她週末做兼職工作。"
+      },
+      {
+        "id": "b1l5-p032",
+        "phrase": "pepper spray",
+        "pos": "ph.",
+        "zh": "胡椒噴霧",
+        "example_en": "She carries pepper spray for safety.",
+        "example_zh": "她隨身攜帶胡椒噴霧以防身。"
+      },
+      {
+        "id": "b1l5-p033",
+        "phrase": "flight delay",
+        "pos": "ph.",
+        "zh": "班機延誤",
+        "example_en": "Bad weather caused a flight delay.",
+        "example_zh": "惡劣天氣造成班機延誤。"
+      },
+      {
+        "id": "b1l5-p034",
+        "phrase": "afford a house",
+        "pos": "ph.",
+        "zh": "買得起房子",
+        "example_en": "Young families struggle to afford a house.",
+        "example_zh": "年輕家庭很難買得起房子。"
+      },
+      {
+        "id": "b1l5-p035",
+        "phrase": "spare a few minutes",
+        "pos": "ph.",
+        "zh": "抽出幾分鐘",
+        "example_en": "Can you spare a few minutes to help me?",
+        "example_zh": "你能抽出幾分鐘幫我嗎？"
+      },
+      {
+        "id": "b1l5-p036",
+        "phrase": "fast-paced world",
+        "pos": "ph.",
+        "zh": "步調快速的世界",
+        "example_en": "It is hard to relax in our fast-paced world.",
+        "example_zh": "在步調快速的世界裡很難放鬆。"
+      },
+      {
+        "id": "b1l5-p037",
+        "phrase": "take a deep breath",
+        "pos": "ph.",
+        "zh": "深呼吸",
+        "example_en": "Take a deep breath and stay calm.",
+        "example_zh": "深呼吸並保持冷靜。"
+      },
+      {
+        "id": "b1l5-p038",
+        "phrase": "appreciate the beauty around us",
+        "pos": "ph.",
+        "zh": "欣賞周遭的美",
+        "example_en": "Walking helps us appreciate the beauty around us.",
+        "example_zh": "散步幫助我們欣賞周遭的美。"
+      },
+      {
+        "id": "b1l5-p039",
+        "phrase": "a sense of peace",
+        "pos": "ph.",
+        "zh": "平靜感",
+        "example_en": "The quiet lake gave me a sense of peace.",
+        "example_zh": "寧靜的湖泊帶給我平靜感。"
+      },
+      {
+        "id": "b1l5-p040",
+        "phrase": "a pair of tongs",
+        "pos": "ph.",
+        "zh": "一把夾子",
+        "example_en": "Use a pair of tongs to pick up the meat.",
+        "example_zh": "用一把夾子夾起肉。"
+      },
+      {
+        "id": "b1l5-p041",
+        "phrase": "feel a sudden pinch",
+        "pos": "ph.",
+        "zh": "突然感到一陣刺痛",
+        "example_en": "I felt a sudden pinch in my finger.",
+        "example_zh": "我的手指突然感到一陣刺痛。"
+      },
+      {
+        "id": "b1l5-p042",
+        "phrase": "plastic products",
+        "pos": "ph.",
+        "zh": "塑膠製品",
+        "example_en": "We should use fewer plastic products.",
+        "example_zh": "我們應該少用塑膠製品。"
+      },
+      {
+        "id": "b1l5-p043",
+        "phrase": "plastic waste",
+        "pos": "ph.",
+        "zh": "塑膠廢棄物",
+        "example_en": "Plastic waste harms marine life.",
+        "example_zh": "塑膠廢棄物危害海洋生物。"
+      },
+      {
+        "id": "b1l5-p044",
+        "phrase": "end up",
+        "pos": "ph.",
+        "zh": "最後成為／結果",
+        "example_en": "We ended up staying home.",
+        "example_zh": "我們最後待在家裡。"
+      },
+      {
+        "id": "b1l5-p045",
+        "phrase": "poisonous substance",
+        "pos": "ph.",
+        "zh": "有毒物質",
+        "example_en": "Keep this poisonous substance away from children.",
+        "example_zh": "請讓兒童遠離這種有毒物質。"
+      },
+      {
+        "id": "b1l5-p046",
+        "phrase": "a recycling plant",
+        "pos": "ph.",
+        "zh": "資源回收廠",
+        "example_en": "The bottles were sent to a recycling plant.",
+        "example_zh": "這些瓶子被送到資源回收廠。"
+      },
+      {
+        "id": "b1l5-p047",
+        "phrase": "be tired of",
+        "pos": "ph.",
+        "zh": "厭倦……",
+        "example_en": "I am tired of hearing the same complaint.",
+        "example_zh": "我厭倦聽到同樣的抱怨。"
+      },
+      {
+        "id": "b1l5-p048",
+        "phrase": "cause harm to",
+        "pos": "ph.",
+        "zh": "對……造成傷害",
+        "example_en": "Smoke can cause harm to your lungs.",
+        "example_zh": "煙霧可能傷害肺部。"
+      },
+      {
+        "id": "b1l5-p049",
+        "phrase": "step onto the platform",
+        "pos": "ph.",
+        "zh": "踏上月臺",
+        "example_en": "Passengers stepped onto the platform.",
+        "example_zh": "乘客踏上月臺。"
+      },
+      {
+        "id": "b1l5-p050",
+        "phrase": "go missing",
+        "pos": "ph.",
+        "zh": "失蹤；不見",
+        "example_en": "The child went missing in the crowd.",
+        "example_zh": "那名孩子在人群中失蹤了。"
+      },
+      {
+        "id": "b1l5-p051",
+        "phrase": "on one’s own",
+        "pos": "ph.",
+        "zh": "獨自；靠自己",
+        "example_en": "He solved the problem on his own.",
+        "example_zh": "他靠自己解決了問題。"
+      },
+      {
+        "id": "b1l5-p052",
+        "phrase": "commit the crime",
+        "pos": "ph.",
+        "zh": "犯下罪行",
+        "example_en": "Police arrested the man who committed the crime.",
+        "example_zh": "警方逮捕了犯下罪行的男子。"
+      },
+      {
+        "id": "b1l5-p053",
+        "phrase": "watch the latest blockbuster",
+        "pos": "ph.",
+        "zh": "觀看最新的賣座大片",
+        "example_en": "We watched the latest blockbuster last night.",
+        "example_zh": "我們昨晚看了最新的賣座大片。"
+      },
+      {
+        "id": "b1l5-p054",
+        "phrase": "outbreak of",
+        "pos": "ph.",
+        "zh": "……的爆發",
+        "example_en": "The outbreak of disease worried residents.",
+        "example_zh": "疾病爆發令居民擔憂。"
+      },
+      {
+        "id": "b1l5-p055",
+        "phrase": "dare to take on new challenges",
+        "pos": "ph.",
+        "zh": "敢於接受新挑戰",
+        "example_en": "She dares to take on new challenges.",
+        "example_zh": "她敢於接受新挑戰。"
+      },
+      {
+        "id": "b1l5-p056",
+        "phrase": "endless complaints",
+        "pos": "ph.",
+        "zh": "沒完沒了的抱怨",
+        "example_en": "His endless complaints annoyed everyone.",
+        "example_zh": "他沒完沒了的抱怨惹惱了大家。"
+      },
+      {
+        "id": "b1l5-p057",
+        "phrase": "be dissatisfied with",
+        "pos": "ph.",
+        "zh": "對……不滿意",
+        "example_en": "Customers were dissatisfied with the service.",
+        "example_zh": "顧客對服務不滿意。"
+      },
+      {
+        "id": "b1l5-p058",
+        "phrase": "quit a well-paid job",
+        "pos": "ph.",
+        "zh": "辭去高薪工作",
+        "example_en": "He quit a well-paid job to pursue his dream.",
+        "example_zh": "他辭去高薪工作追求夢想。"
+      },
+      {
+        "id": "b1l5-p059",
+        "phrase": "repeat the same routine day after day",
+        "pos": "ph.",
+        "zh": "日復一日重複相同生活",
+        "example_en": "She was tired of repeating the same routine day after day.",
+        "example_zh": "她厭倦日復一日重複相同生活。"
+      },
+      {
+        "id": "b1l5-p060",
+        "phrase": "live a boring life",
+        "pos": "ph.",
+        "zh": "過著無聊的生活",
+        "example_en": "He did not want to live a boring life.",
+        "example_zh": "他不想過著無聊的生活。"
+      },
+      {
+        "id": "b1l5-p061",
+        "phrase": "move to a rural area",
+        "pos": "ph.",
+        "zh": "搬到鄉村地區",
+        "example_en": "They moved to a rural area last year.",
+        "example_zh": "他們去年搬到鄉村地區。"
+      },
+      {
+        "id": "b1l5-p062",
+        "phrase": "slip a pair of sunglasses onto one’s face",
+        "pos": "ph.",
+        "zh": "迅速戴上太陽眼鏡",
+        "example_en": "She slipped a pair of sunglasses onto her face.",
+        "example_zh": "她迅速戴上太陽眼鏡。"
+      },
+      {
+        "id": "b1l5-p063",
+        "phrase": "enjoy the cool breeze",
+        "pos": "ph.",
+        "zh": "享受涼爽微風",
+        "example_en": "We sat outside and enjoyed the cool breeze.",
+        "example_zh": "我們坐在戶外享受涼爽微風。"
+      },
+      {
+        "id": "b1l5-p064",
+        "phrase": "enjoy the surrounding sights",
+        "pos": "ph.",
+        "zh": "欣賞周遭景色",
+        "example_en": "Tourists stopped to enjoy the surrounding sights.",
+        "example_zh": "遊客停下來欣賞周遭景色。"
+      },
+      {
+        "id": "b1l5-p065",
+        "phrase": "plastic surgery",
+        "pos": "ph.",
+        "zh": "整形手術",
+        "example_en": "She considered having plastic surgery.",
+        "example_zh": "她考慮接受整形手術。"
+      },
+      {
+        "id": "b1l5-p066",
+        "phrase": "be made of plastic",
+        "pos": "ph.",
+        "zh": "由塑膠製成",
+        "example_en": "The toy is made of plastic.",
+        "example_zh": "這個玩具由塑膠製成。"
+      },
+      {
+        "id": "b1l5-p067",
+        "phrase": "in the old days",
+        "pos": "ph.",
+        "zh": "從前；過去",
+        "example_en": "People wrote letters in the old days.",
+        "example_zh": "從前人們會寫信。"
+      },
+      {
+        "id": "b1l5-p068",
+        "phrase": "for the convenience of the public",
+        "pos": "ph.",
+        "zh": "為了大眾方便",
+        "example_en": "The service was created for the convenience of the public.",
+        "example_zh": "這項服務是為了大眾方便而設立的。"
+      },
+      {
+        "id": "b1l5-p069",
+        "phrase": "at one’s convenience",
+        "pos": "ph.",
+        "zh": "在某人方便時",
+        "example_en": "Please call me at your convenience.",
+        "example_zh": "請在你方便時打電話給我。"
+      },
+      {
+        "id": "b1l5-p070",
+        "phrase": "work schedule",
+        "pos": "ph.",
+        "zh": "工作時間表",
+        "example_en": "My work schedule changes every week.",
+        "example_zh": "我的工作時間表每週都會改變。"
+      },
+      {
+        "id": "b1l5-p071",
+        "phrase": "be eager for",
+        "pos": "ph.",
+        "zh": "渴望……",
+        "example_en": "The students are eager for new experiences.",
+        "example_zh": "學生們渴望新的體驗。"
+      },
+      {
+        "id": "b1l5-p072",
+        "phrase": "be surrounded by",
+        "pos": "ph.",
+        "zh": "被……包圍",
+        "example_en": "The house is surrounded by trees.",
+        "example_zh": "這棟房子被樹木包圍。"
+      },
+      {
+        "id": "b1l5-p073",
+        "phrase": "in beautiful natural surroundings",
+        "pos": "ph.",
+        "zh": "在美麗的自然環境中",
+        "example_en": "The hotel stands in beautiful natural surroundings.",
+        "example_zh": "飯店坐落在美麗的自然環境中。"
+      },
+      {
+        "id": "b1l5-p074",
+        "phrase": "blend in with one’s surroundings",
+        "pos": "ph.",
+        "zh": "融入周遭環境",
+        "example_en": "The animal’s color helps it blend in with its surroundings.",
+        "example_zh": "這種動物的顏色幫助牠融入周遭環境。"
+      },
+      {
+        "id": "b1l5-p075",
+        "phrase": "drift toward sth.",
+        "pos": "ph.",
+        "zh": "漂向……",
+        "example_en": "The boat drifted toward the shore.",
+        "example_zh": "小船漂向岸邊。"
+      },
+      {
+        "id": "b1l5-p076",
+        "phrase": "green with envy",
+        "pos": "ph.",
+        "zh": "非常嫉妒",
+        "example_en": "He was green with envy when she won.",
+        "example_zh": "她獲勝時，他非常嫉妒。"
+      },
+      {
+        "id": "b1l5-p077",
+        "phrase": "be crowded with",
+        "pos": "ph.",
+        "zh": "擠滿……",
+        "example_en": "The station was crowded with passengers.",
+        "example_zh": "車站擠滿乘客。"
+      },
+      {
+        "id": "b1l5-p078",
+        "phrase": "a crowd of screaming fans",
+        "pos": "ph.",
+        "zh": "一群尖叫的粉絲",
+        "example_en": "A crowd of screaming fans greeted the singer.",
+        "example_zh": "一群尖叫的粉絲迎接歌手。"
+      },
+      {
+        "id": "b1l5-p079",
+        "phrase": "attract a crowd",
+        "pos": "ph.",
+        "zh": "吸引人群",
+        "example_en": "The street performer attracted a crowd.",
+        "example_zh": "街頭藝人吸引了一群人。"
+      },
+      {
+        "id": "b1l5-p080",
+        "phrase": "be in love with",
+        "pos": "ph.",
+        "zh": "愛上……",
+        "example_en": "She is in love with her childhood friend.",
+        "example_zh": "她愛上了青梅竹馬。"
+      },
+      {
+        "id": "b1l5-p081",
+        "phrase": "a variety of health and food products",
+        "pos": "ph.",
+        "zh": "各種健康與食品產品",
+        "example_en": "The store sells a variety of health and food products.",
+        "example_zh": "這家店販售各種健康與食品產品。"
+      },
+      {
+        "id": "b1l5-p082",
+        "phrase": "dairy product",
+        "pos": "ph.",
+        "zh": "乳製品",
+        "example_en": "Cheese is a dairy product.",
+        "example_zh": "起司是一種乳製品。"
+      },
+      {
+        "id": "b1l5-p083",
+        "phrase": "the production of high-quality …",
+        "pos": "ph.",
+        "zh": "高品質……的生產",
+        "example_en": "The region is famous for the production of high-quality tea.",
+        "example_zh": "這個地區以生產高品質茶葉聞名。"
+      },
+      {
+        "id": "b1l5-p084",
+        "phrase": "out of production",
+        "pos": "ph.",
+        "zh": "停產",
+        "example_en": "This model is now out of production.",
+        "example_zh": "這款型號現在已停產。"
+      },
+      {
+        "id": "b1l5-p085",
+        "phrase": "consume too much beer or wine",
+        "pos": "ph.",
+        "zh": "飲用過多啤酒或葡萄酒",
+        "example_en": "Do not consume too much beer or wine.",
+        "example_zh": "不要飲用過多啤酒或葡萄酒。"
+      },
+      {
+        "id": "b1l5-p086",
+        "phrase": "lead to a car crash",
+        "pos": "ph.",
+        "zh": "導致車禍",
+        "example_en": "Drunk driving may lead to a car crash.",
+        "example_zh": "酒駕可能導致車禍。"
+      },
+      {
+        "id": "b1l5-p087",
+        "phrase": "consume sb’s free time",
+        "pos": "ph.",
+        "zh": "耗費某人的空閒時間",
+        "example_en": "Online games can consume all your free time.",
+        "example_zh": "線上遊戲可能耗費你所有空閒時間。"
+      },
+      {
+        "id": "b1l5-p088",
+        "phrase": "on the weekend",
+        "pos": "ph.",
+        "zh": "在週末",
+        "example_en": "We go hiking on the weekend.",
+        "example_zh": "我們週末去健行。"
+      },
+      {
+        "id": "b1l5-p089",
+        "phrase": "be poisonous to",
+        "pos": "ph.",
+        "zh": "對……有毒",
+        "example_en": "This plant is poisonous to cats.",
+        "example_zh": "這種植物對貓有毒。"
+      },
+      {
+        "id": "b1l5-p090",
+        "phrase": "poison A with B",
+        "pos": "ph.",
+        "zh": "用 B 毒害 A",
+        "example_en": "The criminal poisoned the victim with a chemical.",
+        "example_zh": "罪犯用化學物質毒害受害者。"
+      },
+      {
+        "id": "b1l5-p091",
+        "phrase": "food poisoning",
+        "pos": "ph.",
+        "zh": "食物中毒",
+        "example_en": "Several customers suffered from food poisoning.",
+        "example_zh": "幾名顧客食物中毒。"
+      },
+      {
+        "id": "b1l5-p092",
+        "phrase": "deadly poison",
+        "pos": "ph.",
+        "zh": "致命毒物",
+        "example_en": "The snake produces a deadly poison.",
+        "example_zh": "這種蛇會產生致命毒液。"
+      },
+      {
+        "id": "b1l5-p093",
+        "phrase": "take poison",
+        "pos": "ph.",
+        "zh": "服毒",
+        "example_en": "The character tried to take poison.",
+        "example_zh": "那個角色試圖服毒。"
+      },
+      {
+        "id": "b1l5-p094",
+        "phrase": "by mistake",
+        "pos": "ph.",
+        "zh": "不小心；誤以為",
+        "example_en": "I took your bag by mistake.",
+        "example_zh": "我不小心拿錯了你的包包。"
+      },
+      {
+        "id": "b1l5-p095",
+        "phrase": "soft drink",
+        "pos": "ph.",
+        "zh": "軟性飲料；汽水",
+        "example_en": "He ordered a soft drink with lunch.",
+        "example_zh": "他午餐點了一杯汽水。"
+      },
+      {
+        "id": "b1l5-p096",
+        "phrase": "a chemical substance",
+        "pos": "ph.",
+        "zh": "化學物質",
+        "example_en": "Water is a chemical substance.",
+        "example_zh": "水是一種化學物質。"
+      },
+      {
+        "id": "b1l5-p097",
+        "phrase": "at the murder scene",
+        "pos": "ph.",
+        "zh": "在謀殺現場",
+        "example_en": "Police found evidence at the murder scene.",
+        "example_zh": "警方在謀殺現場找到證據。"
+      },
+      {
+        "id": "b1l5-p098",
+        "phrase": "recycling bin",
+        "pos": "ph.",
+        "zh": "資源回收桶",
+        "example_en": "Put the bottle in the recycling bin.",
+        "example_zh": "把瓶子放進資源回收桶。"
+      },
+      {
+        "id": "b1l5-p099",
+        "phrase": "do harm to",
+        "pos": "ph.",
+        "zh": "傷害……",
+        "example_en": "Plastic waste does harm to sea animals.",
+        "example_zh": "塑膠廢棄物傷害海洋動物。"
+      },
+      {
+        "id": "b1l5-p100",
+        "phrase": "harm one’s image",
+        "pos": "ph.",
+        "zh": "損害某人的形象",
+        "example_en": "The scandal harmed the company’s image.",
+        "example_zh": "這起醜聞損害了公司形象。"
+      },
+      {
+        "id": "b1l5-p101",
+        "phrase": "be harmful to",
+        "pos": "ph.",
+        "zh": "對……有害",
+        "example_en": "Too much sugar is harmful to your health.",
+        "example_zh": "過多糖分對健康有害。"
+      },
+      {
+        "id": "b1l5-p102",
+        "phrase": "natural environment",
+        "pos": "ph.",
+        "zh": "自然環境",
+        "example_en": "We must protect the natural environment.",
+        "example_zh": "我們必須保護自然環境。"
+      },
+      {
+        "id": "b1l5-p103",
+        "phrase": "pollute the environment",
+        "pos": "ph.",
+        "zh": "污染環境",
+        "example_en": "Factories should not pollute the environment.",
+        "example_zh": "工廠不應污染環境。"
+      },
+      {
+        "id": "b1l5-p104",
+        "phrase": "create a safe working environment",
+        "pos": "ph.",
+        "zh": "創造安全的工作環境",
+        "example_en": "Managers must create a safe working environment.",
+        "example_zh": "管理者必須創造安全的工作環境。"
+      },
+      {
+        "id": "b1l5-p105",
+        "phrase": "learning environment",
+        "pos": "ph.",
+        "zh": "學習環境",
+        "example_en": "A quiet classroom provides a good learning environment.",
+        "example_zh": "安靜的教室提供良好的學習環境。"
+      },
+      {
+        "id": "b1l5-p106",
+        "phrase": "play a key role in",
+        "pos": "ph.",
+        "zh": "在……扮演關鍵角色",
+        "example_en": "Trees play a key role in the ecosystem.",
+        "example_zh": "樹木在生態系統中扮演關鍵角色。"
+      },
+      {
+        "id": "b1l5-p107",
+        "phrase": "environmental problem",
+        "pos": "ph.",
+        "zh": "環境問題",
+        "example_en": "Air pollution is a serious environmental problem.",
+        "example_zh": "空氣污染是嚴重的環境問題。"
+      },
+      {
+        "id": "b1l5-p108",
+        "phrase": "environmental protection",
+        "pos": "ph.",
+        "zh": "環境保護",
+        "example_en": "Everyone can contribute to environmental protection.",
+        "example_zh": "每個人都能為環境保護盡一份力。"
+      },
+      {
+        "id": "b1l5-p109",
+        "phrase": "shrinking forests",
+        "pos": "ph.",
+        "zh": "日益縮減的森林",
+        "example_en": "Shrinking forests threaten wildlife.",
+        "example_zh": "日益縮減的森林威脅野生動物。"
+      },
+      {
+        "id": "b1l5-p110",
+        "phrase": "climate change",
+        "pos": "ph.",
+        "zh": "氣候變遷",
+        "example_en": "Climate change affects the whole planet.",
+        "example_zh": "氣候變遷影響整個地球。"
+      },
+      {
+        "id": "b1l5-p111",
+        "phrase": "properly speaking",
+        "pos": "ph.",
+        "zh": "嚴格說來",
+        "example_en": "Properly speaking, a tomato is a fruit.",
+        "example_zh": "嚴格說來，番茄是一種水果。"
+      },
+      {
+        "id": "b1l5-p112",
+        "phrase": "at the proper place and time",
+        "pos": "ph.",
+        "zh": "在適當的地點與時間",
+        "example_en": "Please discuss this at the proper place and time.",
+        "example_zh": "請在適當的地點與時間討論此事。"
+      },
+      {
+        "id": "b1l5-p113",
+        "phrase": "amusement park",
+        "pos": "ph.",
+        "zh": "遊樂園",
+        "example_en": "The children spent the day at an amusement park.",
+        "example_zh": "孩子們在遊樂園玩了一整天。"
+      },
+      {
+        "id": "b1l5-p114",
+        "phrase": "have no idea",
+        "pos": "ph.",
+        "zh": "不知道",
+        "example_en": "I have no idea where he went.",
+        "example_zh": "我不知道他去了哪裡。"
+      },
+      {
+        "id": "b1l5-p115",
+        "phrase": "behave properly in front of",
+        "pos": "ph.",
+        "zh": "在……面前舉止得體",
+        "example_en": "Children should behave properly in front of guests.",
+        "example_zh": "孩子在客人面前應舉止得體。"
+      },
+      {
+        "id": "b1l5-p116",
+        "phrase": "enjoy the convenience of",
+        "pos": "ph.",
+        "zh": "享受……的便利",
+        "example_en": "Residents enjoy the convenience of public transportation.",
+        "example_zh": "居民享受大眾運輸的便利。"
+      },
+      {
+        "id": "b1l5-p117",
+        "phrase": "get to one’s destination",
+        "pos": "ph.",
+        "zh": "抵達目的地",
+        "example_en": "We got to our destination before dark.",
+        "example_zh": "我們在天黑前抵達目的地。"
+      },
+      {
+        "id": "b1l5-p118",
+        "phrase": "an all-you-can-eat restaurant",
+        "pos": "ph.",
+        "zh": "吃到飽餐廳",
+        "example_en": "We had dinner at an all-you-can-eat restaurant.",
+        "example_zh": "我們在吃到飽餐廳吃晚餐。"
+      },
+      {
+        "id": "b1l5-p119",
+        "phrase": "stare at smartphone screens for too long",
+        "pos": "ph.",
+        "zh": "長時間盯著手機螢幕",
+        "example_en": "Do not stare at smartphone screens for too long.",
+        "example_zh": "不要長時間盯著手機螢幕。"
+      },
+      {
+        "id": "b1l5-p120",
+        "phrase": "take action to",
+        "pos": "ph.",
+        "zh": "採取行動……",
+        "example_en": "We must take action to reduce waste.",
+        "example_zh": "我們必須採取行動減少浪費。"
+      },
+      {
+        "id": "b1l5-p121",
+        "phrase": "save the environment",
+        "pos": "ph.",
+        "zh": "拯救環境",
+        "example_en": "Small changes can help save the environment.",
+        "example_zh": "小改變能幫助拯救環境。"
+      },
+      {
+        "id": "b1l5-p122",
+        "phrase": "quality product",
+        "pos": "ph.",
+        "zh": "優質產品",
+        "example_en": "Customers are willing to pay for a quality product.",
+        "example_zh": "顧客願意為優質產品付費。"
+      },
+      {
+        "id": "b1l5-p123",
+        "phrase": "clean up the mess",
+        "pos": "ph.",
+        "zh": "收拾亂局／髒亂",
+        "example_en": "Please clean up the mess in the kitchen.",
+        "example_zh": "請收拾廚房裡的髒亂。"
+      },
+      {
+        "id": "b1l5-p124",
+        "phrase": "be stuck in a traffic jam",
+        "pos": "ph.",
+        "zh": "困在塞車中",
+        "example_en": "We were stuck in a traffic jam for an hour.",
+        "example_zh": "我們困在塞車中一小時。"
+      },
+      {
+        "id": "b1l5-p125",
+        "phrase": "call the professional for help",
+        "pos": "ph.",
+        "zh": "請專業人士幫忙",
+        "example_en": "If the pipe breaks, call a professional for help.",
+        "example_zh": "如果水管破裂，請專業人士幫忙。"
+      },
+      {
+        "id": "b1l5-p126",
+        "phrase": "end up in prison",
+        "pos": "ph.",
+        "zh": "最後入獄",
+        "example_en": "The criminal ended up in prison.",
+        "example_zh": "那名罪犯最後入獄。"
+      },
+      {
+        "id": "b1l5-p127",
+        "phrase": "take bribes",
+        "pos": "ph.",
+        "zh": "收受賄賂",
+        "example_en": "The official was arrested for taking bribes.",
+        "example_zh": "那名官員因收受賄賂而被捕。"
+      },
+      {
+        "id": "b1l5-p128",
+        "phrase": "driver’s license",
+        "pos": "ph.",
+        "zh": "駕照",
+        "example_en": "You need a driver’s license to drive legally.",
+        "example_zh": "合法駕車需要駕照。"
+      },
+      {
+        "id": "b1l5-p129",
+        "phrase": "pick…up",
+        "pos": "ph.",
+        "zh": "撿起；接載；學會",
+        "example_en": "I will pick you up at the station.",
+        "example_zh": "我會到車站接你。"
+      },
+      {
+        "id": "b1l5-p130",
+        "phrase": "have a day off",
+        "pos": "ph.",
+        "zh": "休假一天",
+        "example_en": "I have a day off tomorrow.",
+        "example_zh": "我明天休假一天。"
+      },
+      {
+        "id": "b1l5-p131",
+        "phrase": "memorize new words",
+        "pos": "ph.",
+        "zh": "背新單字",
+        "example_en": "She memorizes new words every morning.",
+        "example_zh": "她每天早上背新單字。"
+      },
+      {
+        "id": "b1l5-p132",
+        "phrase": "take medicine",
+        "pos": "ph.",
+        "zh": "吃藥",
+        "example_en": "Take this medicine after meals.",
+        "example_zh": "飯後服用這個藥。"
+      },
+      {
+        "id": "b1l5-p133",
+        "phrase": "treat one’s cold",
+        "pos": "ph.",
+        "zh": "治療某人的感冒",
+        "example_en": "He took medicine to treat his cold.",
+        "example_zh": "他吃藥治療感冒。"
+      },
+      {
+        "id": "b1l5-p134",
+        "phrase": "catch a cold",
+        "pos": "ph.",
+        "zh": "感冒",
+        "example_en": "Wear a jacket, or you may catch a cold.",
+        "example_zh": "穿上外套，否則你可能會感冒。"
+      },
+      {
+        "id": "b1l5-p135",
+        "phrase": "car accident",
+        "pos": "ph.",
+        "zh": "車禍",
+        "example_en": "The road was closed after a car accident.",
+        "example_zh": "發生車禍後，這條路被封閉。"
+      },
+      {
+        "id": "b1l5-p136",
+        "phrase": "block the road",
+        "pos": "ph.",
+        "zh": "封鎖／堵住道路",
+        "example_en": "A fallen tree blocked the road.",
+        "example_zh": "一棵倒下的樹堵住了道路。"
+      },
+      {
+        "id": "b1l5-p137",
+        "phrase": "regular exercise",
+        "pos": "ph.",
+        "zh": "規律運動",
+        "example_en": "Regular exercise improves your health.",
+        "example_zh": "規律運動能改善健康。"
+      },
+      {
+        "id": "b1l5-p138",
+        "phrase": "a low-fat diet",
+        "pos": "ph.",
+        "zh": "低脂飲食",
+        "example_en": "The doctor advised him to follow a low-fat diet.",
+        "example_zh": "醫生建議他採取低脂飲食。"
+      },
+      {
+        "id": "b1l5-p139",
+        "phrase": "go on a picnic",
+        "pos": "ph.",
+        "zh": "去野餐",
+        "example_en": "We went on a picnic by the lake.",
+        "example_zh": "我們到湖邊野餐。"
+      },
+      {
+        "id": "b1l5-p140",
+        "phrase": "regular workouts",
+        "pos": "ph.",
+        "zh": "規律鍛鍊",
+        "example_en": "Regular workouts keep her energetic.",
+        "example_zh": "規律鍛鍊使她保持活力。"
+      },
+      {
+        "id": "b1l5-p141",
+        "phrase": "laugh out loud",
+        "pos": "ph.",
+        "zh": "放聲大笑",
+        "example_en": "The joke made everyone laugh out loud.",
+        "example_zh": "這個笑話讓每個人放聲大笑。"
+      }
+    ]
+  },
+  "grammar": {
+    "points": [
+      {
+        "id": "b1l5-g1",
+        "title": "make/have/let sb. VR…. 使役動詞",
+        "examples": []
+      }
+    ],
+    "sentence_structures": {
+      "items": []
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}
