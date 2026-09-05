@@ -1789,7 +1789,7 @@
           "id": "b1l5-s027",
           "sentence": "I *’m* tired of floating around, killing fish, and causing harm to the environment.",
           "type": "simple",
-          "pattern": "S + Vi + C + Prepositional phrase"
+          "pattern": "S + Vl + C + Prepositional phrase"
         },
         {
           "id": "b1l5-s028",

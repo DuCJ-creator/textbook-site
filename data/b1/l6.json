@@ -291,6 +291,11 @@
             "en": "representation",
             "zh": "代表；描繪；表現形式",
             "example": "The painting is a representation of village life."
+          },
+          {
+            "en": "representative",
+            "zh": "代表(人)",
+            "example": "She's our representative in France."
           }
         ],
         "adj": [
@@ -537,15 +542,1163 @@
     ]
   },
   "phrases": {
-    "items": []
+    "items": [
+      {
+        "id": "b1l6-p001",
+        "phrase": "even though",
+        "pos": "ph.",
+        "zh": "儘管；即使",
+        "example_en": "Even though it was raining, we went out.",
+        "example_zh": "儘管下雨，我們還是出門了。"
+      },
+      {
+        "id": "b1l6-p002",
+        "phrase": "close to",
+        "pos": "ph.",
+        "zh": "接近；靠近",
+        "example_en": "Our hotel is close to the station.",
+        "example_zh": "我們的飯店靠近車站。"
+      },
+      {
+        "id": "b1l6-p003",
+        "phrase": "remove…from",
+        "pos": "ph.",
+        "zh": "從……移除……",
+        "example_en": "Please remove your shoes from the table.",
+        "example_zh": "請把你的鞋子從桌上移開。"
+      },
+      {
+        "id": "b1l6-p004",
+        "phrase": "fire guns",
+        "pos": "ph.",
+        "zh": "開槍",
+        "example_en": "The soldiers fired their guns into the air.",
+        "example_zh": "士兵朝空中開槍。"
+      },
+      {
+        "id": "b1l6-p005",
+        "phrase": "grand sight before one’s eyes",
+        "pos": "ph.",
+        "zh": "眼前的壯觀景象",
+        "example_en": "A grand sight appeared before our eyes.",
+        "example_zh": "壯觀的景象出現在我們眼前。"
+      },
+      {
+        "id": "b1l6-p006",
+        "phrase": "take a look at",
+        "pos": "ph.",
+        "zh": "看一看……",
+        "example_en": "Take a look at this old photograph.",
+        "example_zh": "看一看這張老照片。"
+      },
+      {
+        "id": "b1l6-p007",
+        "phrase": "price tag",
+        "pos": "ph.",
+        "zh": "價格標籤",
+        "example_en": "I checked the price tag before buying the coat.",
+        "example_zh": "買外套前我看了價格標籤。"
+      },
+      {
+        "id": "b1l6-p008",
+        "phrase": "a playful puppy",
+        "pos": "ph.",
+        "zh": "活潑愛玩的小狗",
+        "example_en": "A playful puppy ran around the yard.",
+        "example_zh": "一隻活潑愛玩的小狗在院子裡跑來跑去。"
+      },
+      {
+        "id": "b1l6-p009",
+        "phrase": "a new addition to",
+        "pos": "ph.",
+        "zh": "……的新成員／新增事物",
+        "example_en": "The puppy is a new addition to our family.",
+        "example_zh": "這隻小狗是我們家的新成員。"
+      },
+      {
+        "id": "b1l6-p010",
+        "phrase": "mesmerize sb.",
+        "pos": "ph.",
+        "zh": "使某人著迷",
+        "example_en": "The dancer’s performance mesmerized the audience.",
+        "example_zh": "舞者的表演使觀眾著迷。"
+      },
+      {
+        "id": "b1l6-p011",
+        "phrase": "historic charm",
+        "pos": "ph.",
+        "zh": "歷史魅力",
+        "example_en": "The old town is full of historic charm.",
+        "example_zh": "這座古城充滿歷史魅力。"
+      },
+      {
+        "id": "b1l6-p012",
+        "phrase": "modern vibrancy",
+        "pos": "ph.",
+        "zh": "現代活力",
+        "example_en": "The city combines historic charm with modern vibrancy.",
+        "example_zh": "這座城市融合歷史魅力與現代活力。"
+      },
+      {
+        "id": "b1l6-p013",
+        "phrase": "coffee stain",
+        "pos": "ph.",
+        "zh": "咖啡漬",
+        "example_en": "There is a coffee stain on my shirt.",
+        "example_zh": "我的襯衫上有一塊咖啡漬。"
+      },
+      {
+        "id": "b1l6-p014",
+        "phrase": "fire a gun",
+        "pos": "ph.",
+        "zh": "開槍",
+        "example_en": "The guard fired a gun to warn them.",
+        "example_zh": "警衛開槍警告他們。"
+      },
+      {
+        "id": "b1l6-p015",
+        "phrase": "dash forward",
+        "pos": "ph.",
+        "zh": "向前猛衝",
+        "example_en": "The runners dashed forward at the signal.",
+        "example_zh": "信號一響，跑者便向前猛衝。"
+      },
+      {
+        "id": "b1l6-p016",
+        "phrase": "the inauguration of",
+        "pos": "ph.",
+        "zh": "……的落成／就職典禮",
+        "example_en": "Many guests attended the inauguration of the museum.",
+        "example_zh": "許多賓客出席了博物館的落成典禮。"
+      },
+      {
+        "id": "b1l6-p017",
+        "phrase": "a bustling city",
+        "pos": "ph.",
+        "zh": "繁華忙碌的城市",
+        "example_en": "Taipei is a bustling city.",
+        "example_zh": "臺北是一座繁華忙碌的城市。"
+      },
+      {
+        "id": "b1l6-p018",
+        "phrase": "remarkable cityscape",
+        "pos": "ph.",
+        "zh": "非凡的城市景觀",
+        "example_en": "The tower offers a remarkable cityscape.",
+        "example_zh": "這座高塔可欣賞非凡的城市景觀。"
+      },
+      {
+        "id": "b1l6-p019",
+        "phrase": "a gift presented to",
+        "pos": "ph.",
+        "zh": "贈送給……的禮物",
+        "example_en": "The statue was a gift presented to the nation.",
+        "example_zh": "這座雕像是贈送給該國的禮物。"
+      },
+      {
+        "id": "b1l6-p020",
+        "phrase": "present a heartfelt gift to",
+        "pos": "ph.",
+        "zh": "向……贈送真誠的禮物",
+        "example_en": "The students presented a heartfelt gift to their teacher.",
+        "example_zh": "學生們向老師贈送一份真誠的禮物。"
+      },
+      {
+        "id": "b1l6-p021",
+        "phrase": "along with",
+        "pos": "ph.",
+        "zh": "連同；以及",
+        "example_en": "She came along with her family.",
+        "example_zh": "她和家人一起來了。"
+      },
+      {
+        "id": "b1l6-p022",
+        "phrase": "independence from",
+        "pos": "ph.",
+        "zh": "脫離……的獨立",
+        "example_en": "The country celebrated its independence from colonial rule.",
+        "example_zh": "該國慶祝脫離殖民統治而獨立。"
+      },
+      {
+        "id": "b1l6-p023",
+        "phrase": "stand…tall",
+        "pos": "ph.",
+        "zh": "高高矗立；挺直站立",
+        "example_en": "The monument stands tall above the square.",
+        "example_zh": "紀念碑高高矗立在廣場上。"
+      },
+      {
+        "id": "b1l6-p024",
+        "phrase": "over time",
+        "pos": "ph.",
+        "zh": "隨著時間推移",
+        "example_en": "The metal changed color over time.",
+        "example_zh": "金屬隨著時間推移而變色。"
+      },
+      {
+        "id": "b1l6-p025",
+        "phrase": "outer layer",
+        "pos": "ph.",
+        "zh": "外層",
+        "example_en": "The fruit has a thick outer layer.",
+        "example_zh": "這種水果有厚厚的外層。"
+      },
+      {
+        "id": "b1l6-p026",
+        "phrase": "be exposed to the air",
+        "pos": "ph.",
+        "zh": "暴露在空氣中",
+        "example_en": "The metal rusts when it is exposed to the air.",
+        "example_zh": "金屬暴露在空氣中時會生鏽。"
+      },
+      {
+        "id": "b1l6-p027",
+        "phrase": "be exposed to art",
+        "pos": "ph.",
+        "zh": "接觸藝術",
+        "example_en": "Children should be exposed to art at an early age.",
+        "example_zh": "孩子應從小接觸藝術。"
+      },
+      {
+        "id": "b1l6-p028",
+        "phrase": "long-term goal",
+        "pos": "ph.",
+        "zh": "長期目標",
+        "example_en": "Learning English well is my long-term goal.",
+        "example_zh": "學好英文是我的長期目標。"
+      },
+      {
+        "id": "b1l6-p029",
+        "phrase": "motivational quote",
+        "pos": "ph.",
+        "zh": "勵志名言",
+        "example_en": "She wrote a motivational quote on her desk.",
+        "example_zh": "她在書桌上寫了一句勵志名言。"
+      },
+      {
+        "id": "b1l6-p030",
+        "phrase": "overlook the cityscape",
+        "pos": "ph.",
+        "zh": "俯瞰城市景觀",
+        "example_en": "Our room overlooks the cityscape.",
+        "example_zh": "我們的房間可以俯瞰城市景觀。"
+      },
+      {
+        "id": "b1l6-p031",
+        "phrase": "stand empty",
+        "pos": "ph.",
+        "zh": "空置；空無一物地矗立",
+        "example_en": "The old building stood empty for years.",
+        "example_zh": "那棟老建築空置了多年。"
+      },
+      {
+        "id": "b1l6-p032",
+        "phrase": "be quite familiar with",
+        "pos": "ph.",
+        "zh": "相當熟悉……",
+        "example_en": "I am quite familiar with this neighborhood.",
+        "example_zh": "我對這個社區相當熟悉。"
+      },
+      {
+        "id": "b1l6-p033",
+        "phrase": "catch up with",
+        "pos": "ph.",
+        "zh": "趕上；與……敘舊",
+        "example_en": "I met Amy to catch up with her.",
+        "example_zh": "我和艾美見面聊近況。"
+      },
+      {
+        "id": "b1l6-p034",
+        "phrase": "during sunrise and sunset",
+        "pos": "ph.",
+        "zh": "在日出與日落期間",
+        "example_en": "The monument looks golden during sunrise and sunset.",
+        "example_zh": "紀念碑在日出與日落期間看起來金光閃耀。"
+      },
+      {
+        "id": "b1l6-p035",
+        "phrase": "express one’s gratitude",
+        "pos": "ph.",
+        "zh": "表達某人的感謝",
+        "example_en": "She wrote a letter to express her gratitude.",
+        "example_zh": "她寫信表達感謝。"
+      },
+      {
+        "id": "b1l6-p036",
+        "phrase": "a symbol of the enduring friendship",
+        "pos": "ph.",
+        "zh": "長久友誼的象徵",
+        "example_en": "The statue is a symbol of the enduring friendship between the two countries.",
+        "example_zh": "這座雕像是兩國長久友誼的象徵。"
+      },
+      {
+        "id": "b1l6-p037",
+        "phrase": "become independent",
+        "pos": "ph.",
+        "zh": "變得獨立",
+        "example_en": "She became independent after leaving home.",
+        "example_zh": "她離家後變得獨立。"
+      },
+      {
+        "id": "b1l6-p038",
+        "phrase": "light the way to",
+        "pos": "ph.",
+        "zh": "照亮通往……的道路",
+        "example_en": "The torch lights the way to freedom.",
+        "example_zh": "火炬照亮通往自由的道路。"
+      },
+      {
+        "id": "b1l6-p039",
+        "phrase": "be held firmly",
+        "pos": "ph.",
+        "zh": "被牢牢握住／固定",
+        "example_en": "The torch is held firmly in her hand.",
+        "example_zh": "火炬被她牢牢握在手中。"
+      },
+      {
+        "id": "b1l6-p040",
+        "phrase": "take a closer look",
+        "pos": "ph.",
+        "zh": "仔細看",
+        "example_en": "Let’s take a closer look at the details.",
+        "example_zh": "讓我們仔細看看這些細節。"
+      },
+      {
+        "id": "b1l6-p041",
+        "phrase": "write in elegant calligraphy",
+        "pos": "ph.",
+        "zh": "以優雅的書法書寫",
+        "example_en": "The poem was written in elegant calligraphy.",
+        "example_zh": "這首詩以優雅的書法寫成。"
+      },
+      {
+        "id": "b1l6-p042",
+        "phrase": "reach one’s destination",
+        "pos": "ph.",
+        "zh": "抵達目的地",
+        "example_en": "We reached our destination before dark.",
+        "example_zh": "我們在天黑前抵達目的地。"
+      },
+      {
+        "id": "b1l6-p043",
+        "phrase": "draw illustrations",
+        "pos": "ph.",
+        "zh": "繪製插圖",
+        "example_en": "She draws illustrations for children’s books.",
+        "example_zh": "她為兒童讀物繪製插圖。"
+      },
+      {
+        "id": "b1l6-p044",
+        "phrase": "with blonde hair",
+        "pos": "ph.",
+        "zh": "有金色頭髮的",
+        "example_en": "A girl with blonde hair stood nearby.",
+        "example_zh": "一名金髮女孩站在附近。"
+      },
+      {
+        "id": "b1l6-p045",
+        "phrase": "the way to the parking lot",
+        "pos": "ph.",
+        "zh": "通往停車場的路",
+        "example_en": "Can you show me the way to the parking lot?",
+        "example_zh": "你能告訴我通往停車場的路嗎？"
+      },
+      {
+        "id": "b1l6-p046",
+        "phrase": "local resident",
+        "pos": "ph.",
+        "zh": "當地居民",
+        "example_en": "A local resident showed us around.",
+        "example_zh": "一位當地居民帶我們四處參觀。"
+      },
+      {
+        "id": "b1l6-p047",
+        "phrase": "rays of the sun",
+        "pos": "ph.",
+        "zh": "陽光；太陽光線",
+        "example_en": "The rays of the sun lit the room.",
+        "example_zh": "陽光照亮了房間。"
+      },
+      {
+        "id": "b1l6-p048",
+        "phrase": "shine light on",
+        "pos": "ph.",
+        "zh": "照亮；闡明",
+        "example_en": "The report shines light on the problem.",
+        "example_zh": "這份報告闡明了這個問題。"
+      },
+      {
+        "id": "b1l6-p049",
+        "phrase": "in the ancient Roman style",
+        "pos": "ph.",
+        "zh": "以古羅馬風格",
+        "example_en": "The hall was built in the ancient Roman style.",
+        "example_zh": "這座大廳以古羅馬風格建造。"
+      },
+      {
+        "id": "b1l6-p050",
+        "phrase": "be inspired by",
+        "pos": "ph.",
+        "zh": "受到……啟發",
+        "example_en": "The design was inspired by nature.",
+        "example_zh": "這項設計受到大自然啟發。"
+      },
+      {
+        "id": "b1l6-p051",
+        "phrase": "goddess of freedom",
+        "pos": "ph.",
+        "zh": "自由女神",
+        "example_en": "The statue represents the goddess of freedom.",
+        "example_zh": "這座雕像代表自由女神。"
+      },
+      {
+        "id": "b1l6-p052",
+        "phrase": "the end of slavery",
+        "pos": "ph.",
+        "zh": "奴隸制度的終結",
+        "example_en": "The law marked the end of slavery.",
+        "example_zh": "這項法律標誌著奴隸制度的終結。"
+      },
+      {
+        "id": "b1l6-p053",
+        "phrase": "freedom from unfair treatment",
+        "pos": "ph.",
+        "zh": "免受不公平待遇的自由",
+        "example_en": "Everyone deserves freedom from unfair treatment.",
+        "example_zh": "每個人都應享有免受不公平待遇的自由。"
+      },
+      {
+        "id": "b1l6-p054",
+        "phrase": "keep sb’s company",
+        "pos": "ph.",
+        "zh": "陪伴某人",
+        "example_en": "I stayed home to keep Grandma’s company.",
+        "example_zh": "我待在家陪伴奶奶。"
+      },
+      {
+        "id": "b1l6-p055",
+        "phrase": "go through one’s updates",
+        "pos": "ph.",
+        "zh": "查看某人的更新內容",
+        "example_en": "She went through her friends’ updates.",
+        "example_zh": "她查看了朋友們的動態更新。"
+      },
+      {
+        "id": "b1l6-p056",
+        "phrase": "remove the app from my phone",
+        "pos": "ph.",
+        "zh": "從手機移除應用程式",
+        "example_en": "I removed the app from my phone.",
+        "example_zh": "我從手機移除了這個應用程式。"
+      },
+      {
+        "id": "b1l6-p057",
+        "phrase": "bring sb. freedom from stress and anxiety",
+        "pos": "ph.",
+        "zh": "使某人擺脫壓力與焦慮",
+        "example_en": "Meditation can bring people freedom from stress and anxiety.",
+        "example_zh": "冥想可以使人擺脫壓力與焦慮。"
+      },
+      {
+        "id": "b1l6-p058",
+        "phrase": "instant noodle",
+        "pos": "ph.",
+        "zh": "泡麵",
+        "example_en": "He cooked an instant noodle for lunch.",
+        "example_zh": "他午餐煮了一包泡麵。"
+      },
+      {
+        "id": "b1l6-p059",
+        "phrase": "canned food",
+        "pos": "ph.",
+        "zh": "罐頭食品",
+        "example_en": "We stored canned food for emergencies.",
+        "example_zh": "我們儲存罐頭食品以備不時之需。"
+      },
+      {
+        "id": "b1l6-p060",
+        "phrase": "freedom from worldly worries",
+        "pos": "ph.",
+        "zh": "擺脫世俗煩惱",
+        "example_en": "The quiet retreat gave her freedom from worldly worries.",
+        "example_zh": "這處寧靜的休養地使她擺脫世俗煩惱。"
+      },
+      {
+        "id": "b1l6-p061",
+        "phrase": "tourist attraction",
+        "pos": "ph.",
+        "zh": "旅遊景點",
+        "example_en": "The tower is a famous tourist attraction.",
+        "example_zh": "這座高塔是著名的旅遊景點。"
+      },
+      {
+        "id": "b1l6-p062",
+        "phrase": "a popular landmark",
+        "pos": "ph.",
+        "zh": "熱門地標",
+        "example_en": "The bridge is a popular landmark.",
+        "example_zh": "這座橋是熱門地標。"
+      },
+      {
+        "id": "b1l6-p063",
+        "phrase": "hear of",
+        "pos": "ph.",
+        "zh": "聽說",
+        "example_en": "Have you ever heard of this artist?",
+        "example_zh": "你聽說過這位藝術家嗎？"
+      },
+      {
+        "id": "b1l6-p064",
+        "phrase": "pay a visit to",
+        "pos": "ph.",
+        "zh": "造訪……",
+        "example_en": "We paid a visit to the museum.",
+        "example_zh": "我們造訪了博物館。"
+      },
+      {
+        "id": "b1l6-p065",
+        "phrase": "as always",
+        "pos": "ph.",
+        "zh": "一如往常",
+        "example_en": "As always, the market was crowded.",
+        "example_zh": "一如往常，市場十分擁擠。"
+      },
+      {
+        "id": "b1l6-p066",
+        "phrase": "stand tall and proud",
+        "pos": "ph.",
+        "zh": "高大而自豪地矗立",
+        "example_en": "The statue stands tall and proud.",
+        "example_zh": "這座雕像高大而自豪地矗立著。"
+      },
+      {
+        "id": "b1l6-p067",
+        "phrase": "a symbol of hope and freedom",
+        "pos": "ph.",
+        "zh": "希望與自由的象徵",
+        "example_en": "The torch is a symbol of hope and freedom.",
+        "example_zh": "火炬是希望與自由的象徵。"
+      },
+      {
+        "id": "b1l6-p068",
+        "phrase": "visitors from around the globe",
+        "pos": "ph.",
+        "zh": "來自世界各地的遊客",
+        "example_en": "The landmark attracts visitors from around the globe.",
+        "example_zh": "這座地標吸引來自世界各地的遊客。"
+      },
+      {
+        "id": "b1l6-p069",
+        "phrase": "be adapted into a movie",
+        "pos": "ph.",
+        "zh": "被改編成電影",
+        "example_en": "The novel was adapted into a movie.",
+        "example_zh": "這本小說被改編成電影。"
+      },
+      {
+        "id": "b1l6-p070",
+        "phrase": "solve a puzzle",
+        "pos": "ph.",
+        "zh": "解開謎題",
+        "example_en": "The children worked together to solve a puzzle.",
+        "example_zh": "孩子們合作解開謎題。"
+      },
+      {
+        "id": "b1l6-p071",
+        "phrase": "hold a vast collection of artifacts",
+        "pos": "ph.",
+        "zh": "收藏大量文物",
+        "example_en": "The museum holds a vast collection of artifacts.",
+        "example_zh": "這座博物館收藏大量文物。"
+      },
+      {
+        "id": "b1l6-p072",
+        "phrase": "offer a glimpse into",
+        "pos": "ph.",
+        "zh": "讓人一窺……",
+        "example_en": "The exhibition offers a glimpse into ancient life.",
+        "example_zh": "這場展覽讓人一窺古代生活。"
+      },
+      {
+        "id": "b1l6-p073",
+        "phrase": "a different era",
+        "pos": "ph.",
+        "zh": "不同的時代",
+        "example_en": "The photographs belong to a different era.",
+        "example_zh": "這些照片屬於不同的時代。"
+      },
+      {
+        "id": "b1l6-p074",
+        "phrase": "give sb the freedom to",
+        "pos": "ph.",
+        "zh": "給某人做……的自由",
+        "example_en": "Remote work gives employees the freedom to choose where they work.",
+        "example_zh": "遠距工作讓員工能自由選擇工作地點。"
+      },
+      {
+        "id": "b1l6-p075",
+        "phrase": "in celebration of",
+        "pos": "ph.",
+        "zh": "為慶祝……",
+        "example_en": "A concert was held in celebration of the anniversary.",
+        "example_zh": "人們舉辦音樂會慶祝週年紀念。"
+      },
+      {
+        "id": "b1l6-p076",
+        "phrase": "sticky rice and red eggs",
+        "pos": "ph.",
+        "zh": "油飯與紅蛋",
+        "example_en": "Guests received sticky rice and red eggs.",
+        "example_zh": "賓客收到了油飯與紅蛋。"
+      },
+      {
+        "id": "b1l6-p077",
+        "phrase": "achieve independence from",
+        "pos": "ph.",
+        "zh": "脫離……而獲得獨立",
+        "example_en": "The country achieved independence from colonial rule.",
+        "example_zh": "這個國家脫離殖民統治而獲得獨立。"
+      },
+      {
+        "id": "b1l6-p078",
+        "phrase": "financial independence",
+        "pos": "ph.",
+        "zh": "經濟獨立",
+        "example_en": "She saved money to achieve financial independence.",
+        "example_zh": "她存錢以實現經濟獨立。"
+      },
+      {
+        "id": "b1l6-p079",
+        "phrase": "be independent from",
+        "pos": "ph.",
+        "zh": "獨立於……",
+        "example_en": "The organization is independent from the government.",
+        "example_zh": "這個組織獨立於政府。"
+      },
+      {
+        "id": "b1l6-p080",
+        "phrase": "a monument to",
+        "pos": "ph.",
+        "zh": "紀念……的紀念碑／證明",
+        "example_en": "The statue is a monument to freedom.",
+        "example_zh": "這座雕像是紀念自由的紀念碑。"
+      },
+      {
+        "id": "b1l6-p081",
+        "phrase": "be regarded as",
+        "pos": "ph.",
+        "zh": "被視為……",
+        "example_en": "The building is regarded as a national treasure.",
+        "example_zh": "這棟建築被視為國寶。"
+      },
+      {
+        "id": "b1l6-p082",
+        "phrase": "be symbolic of sth",
+        "pos": "ph.",
+        "zh": "象徵某事物",
+        "example_en": "The dove is symbolic of peace.",
+        "example_zh": "鴿子象徵和平。"
+      },
+      {
+        "id": "b1l6-p083",
+        "phrase": "the lid of the jar",
+        "pos": "ph.",
+        "zh": "罐子的蓋子",
+        "example_en": "She lifted the lid of the jar.",
+        "example_zh": "她掀開罐子的蓋子。"
+      },
+      {
+        "id": "b1l6-p084",
+        "phrase": "representation of",
+        "pos": "ph.",
+        "zh": "……的象徵／呈現",
+        "example_en": "The painting is a representation of village life.",
+        "example_zh": "這幅畫呈現了鄉村生活。"
+      },
+      {
+        "id": "b1l6-p085",
+        "phrase": "a plastic representation of",
+        "pos": "ph.",
+        "zh": "……的塑膠模型",
+        "example_en": "The shop displayed a plastic representation of the monument.",
+        "example_zh": "店裡展示了這座紀念碑的塑膠模型。"
+      },
+      {
+        "id": "b1l6-p086",
+        "phrase": "ancient history",
+        "pos": "ph.",
+        "zh": "古代史",
+        "example_en": "He teaches ancient history at college.",
+        "example_zh": "他在大學教授古代史。"
+      },
+      {
+        "id": "b1l6-p087",
+        "phrase": "be sold into slavery",
+        "pos": "ph.",
+        "zh": "被賣為奴隸",
+        "example_en": "Many people were sold into slavery.",
+        "example_zh": "許多人被賣為奴隸。"
+      },
+      {
+        "id": "b1l6-p088",
+        "phrase": "fair treatment",
+        "pos": "ph.",
+        "zh": "公平待遇",
+        "example_en": "All workers deserve fair treatment.",
+        "example_zh": "所有勞工都應獲得公平待遇。"
+      },
+      {
+        "id": "b1l6-p089",
+        "phrase": "poor treatment",
+        "pos": "ph.",
+        "zh": "惡劣待遇",
+        "example_en": "The workers complained about poor treatment.",
+        "example_zh": "工人抱怨受到惡劣待遇。"
+      },
+      {
+        "id": "b1l6-p090",
+        "phrase": "get the royal treatment",
+        "pos": "ph.",
+        "zh": "受到貴賓般的款待",
+        "example_en": "We got the royal treatment at the hotel.",
+        "example_zh": "我們在飯店受到貴賓般的款待。"
+      },
+      {
+        "id": "b1l6-p091",
+        "phrase": "tourist trap",
+        "pos": "ph.",
+        "zh": "專騙觀光客的景點／商店",
+        "example_en": "The restaurant is an expensive tourist trap.",
+        "example_zh": "這家餐廳是昂貴的觀光客陷阱。"
+      },
+      {
+        "id": "b1l6-p092",
+        "phrase": "tourist destination",
+        "pos": "ph.",
+        "zh": "旅遊目的地",
+        "example_en": "The island is a popular tourist destination.",
+        "example_zh": "這座島是熱門旅遊目的地。"
+      },
+      {
+        "id": "b1l6-p093",
+        "phrase": "ask for information about",
+        "pos": "ph.",
+        "zh": "詢問有關……的資訊",
+        "example_en": "We asked for information about local tours.",
+        "example_zh": "我們詢問有關當地行程的資訊。"
+      },
+      {
+        "id": "b1l6-p094",
+        "phrase": "grow sharply",
+        "pos": "ph.",
+        "zh": "急遽增長",
+        "example_en": "Visitor numbers grew sharply last year.",
+        "example_zh": "遊客人數去年急遽增長。"
+      },
+      {
+        "id": "b1l6-p095",
+        "phrase": "main attraction",
+        "pos": "ph.",
+        "zh": "主要景點／吸引力",
+        "example_en": "The castle is the town’s main attraction.",
+        "example_zh": "這座城堡是城鎮的主要景點。"
+      },
+      {
+        "id": "b1l6-p096",
+        "phrase": "tourist attraction",
+        "pos": "ph.",
+        "zh": "旅遊景點",
+        "example_en": "The night market is a tourist attraction.",
+        "example_zh": "這座夜市是旅遊景點。"
+      },
+      {
+        "id": "b1l6-p097",
+        "phrase": "attract A to B",
+        "pos": "ph.",
+        "zh": "把 A 吸引到 B",
+        "example_en": "The festival attracts tourists to the town.",
+        "example_zh": "節慶把遊客吸引到這座城鎮。"
+      },
+      {
+        "id": "b1l6-p098",
+        "phrase": "be attractive to sb.",
+        "pos": "ph.",
+        "zh": "對某人有吸引力",
+        "example_en": "Flexible hours are attractive to young workers.",
+        "example_zh": "彈性工時對年輕工作者很有吸引力。"
+      },
+      {
+        "id": "b1l6-p099",
+        "phrase": "around the globe",
+        "pos": "ph.",
+        "zh": "世界各地",
+        "example_en": "The song became popular around the globe.",
+        "example_zh": "這首歌風靡世界各地。"
+      },
+      {
+        "id": "b1l6-p100",
+        "phrase": "in memory of sb.",
+        "pos": "ph.",
+        "zh": "為紀念某人",
+        "example_en": "They planted a tree in memory of their teacher.",
+        "example_zh": "他們種了一棵樹紀念老師。"
+      },
+      {
+        "id": "b1l6-p101",
+        "phrase": "global warming",
+        "pos": "ph.",
+        "zh": "全球暖化",
+        "example_en": "Global warming is raising sea levels.",
+        "example_zh": "全球暖化正使海平面上升。"
+      },
+      {
+        "id": "b1l6-p102",
+        "phrase": "an increasing number of",
+        "pos": "ph.",
+        "zh": "愈來愈多的……",
+        "example_en": "An increasing number of people work from home.",
+        "example_zh": "愈來愈多人在家工作。"
+      },
+      {
+        "id": "b1l6-p103",
+        "phrase": "face an unfair situation",
+        "pos": "ph.",
+        "zh": "面對不公平的處境",
+        "example_en": "She spoke up when she faced an unfair situation.",
+        "example_zh": "她面對不公平處境時挺身發言。"
+      },
+      {
+        "id": "b1l6-p104",
+        "phrase": "be treated equally",
+        "pos": "ph.",
+        "zh": "受到平等對待",
+        "example_en": "Everyone should be treated equally.",
+        "example_zh": "每個人都應受到平等對待。"
+      },
+      {
+        "id": "b1l6-p105",
+        "phrase": "falling leaf",
+        "pos": "ph.",
+        "zh": "落葉",
+        "example_en": "A falling leaf landed on my shoulder.",
+        "example_zh": "一片落葉落在我的肩上。"
+      },
+      {
+        "id": "b1l6-p106",
+        "phrase": "recognizable landmark in the skyline",
+        "pos": "ph.",
+        "zh": "天際線中容易辨識的地標",
+        "example_en": "The tower is a recognizable landmark in the skyline.",
+        "example_zh": "這座高塔是天際線中容易辨識的地標。"
+      },
+      {
+        "id": "b1l6-p107",
+        "phrase": "receive medical treatment",
+        "pos": "ph.",
+        "zh": "接受醫療",
+        "example_en": "The injured man received medical treatment.",
+        "example_zh": "傷者接受了醫療。"
+      },
+      {
+        "id": "b1l6-p108",
+        "phrase": "no longer",
+        "pos": "ph.",
+        "zh": "不再",
+        "example_en": "The building is no longer open to the public.",
+        "example_zh": "這棟建築不再對外開放。"
+      },
+      {
+        "id": "b1l6-p109",
+        "phrase": "sing along with the band",
+        "pos": "ph.",
+        "zh": "跟著樂團一起唱",
+        "example_en": "The crowd sang along with the band.",
+        "example_zh": "群眾跟著樂團一起唱。"
+      },
+      {
+        "id": "b1l6-p110",
+        "phrase": "create an unforgettable memory",
+        "pos": "ph.",
+        "zh": "創造難忘的回憶",
+        "example_en": "The trip created an unforgettable memory for us.",
+        "example_zh": "這趟旅行為我們創造了難忘的回憶。"
+      },
+      {
+        "id": "b1l6-p111",
+        "phrase": "on a business trip",
+        "pos": "ph.",
+        "zh": "出差中",
+        "example_en": "My father is in Tokyo on a business trip.",
+        "example_zh": "我父親正在東京出差。"
+      },
+      {
+        "id": "b1l6-p112",
+        "phrase": "sold out in seconds",
+        "pos": "ph.",
+        "zh": "幾秒內售罄",
+        "example_en": "The concert tickets sold out in seconds.",
+        "example_zh": "演唱會門票幾秒內就售罄。"
+      },
+      {
+        "id": "b1l6-p113",
+        "phrase": "get along",
+        "pos": "ph.",
+        "zh": "相處融洽；進展",
+        "example_en": "The new classmates get along well.",
+        "example_zh": "新同學們相處融洽。"
+      },
+      {
+        "id": "b1l6-p114",
+        "phrase": "spare some time to",
+        "pos": "ph.",
+        "zh": "抽出時間做……",
+        "example_en": "Please spare some time to review the report.",
+        "example_zh": "請抽出時間審閱報告。"
+      },
+      {
+        "id": "b1l6-p115",
+        "phrase": "house great art masterpieces of all time",
+        "pos": "ph.",
+        "zh": "收藏歷代藝術傑作",
+        "example_en": "The museum houses great art masterpieces of all time.",
+        "example_zh": "這座博物館收藏歷代藝術傑作。"
+      },
+      {
+        "id": "b1l6-p116",
+        "phrase": "graduate from junior high school",
+        "pos": "ph.",
+        "zh": "國中畢業",
+        "example_en": "She will graduate from junior high school in June.",
+        "example_zh": "她將在六月國中畢業。"
+      },
+      {
+        "id": "b1l6-p117",
+        "phrase": "light bulb",
+        "pos": "ph.",
+        "zh": "燈泡",
+        "example_en": "We need to replace the light bulb.",
+        "example_zh": "我們需要更換燈泡。"
+      },
+      {
+        "id": "b1l6-p118",
+        "phrase": "talk to sb. on the phone",
+        "pos": "ph.",
+        "zh": "與某人通電話",
+        "example_en": "I talked to my mother on the phone.",
+        "example_zh": "我和母親通了電話。"
+      },
+      {
+        "id": "b1l6-p119",
+        "phrase": "come across sb.",
+        "pos": "ph.",
+        "zh": "偶然遇見某人",
+        "example_en": "I came across an old friend downtown.",
+        "example_zh": "我在市中心偶然遇見一位老朋友。"
+      },
+      {
+        "id": "b1l6-p120",
+        "phrase": "give a wonderful performance",
+        "pos": "ph.",
+        "zh": "帶來精彩表演",
+        "example_en": "The students gave a wonderful performance.",
+        "example_zh": "學生們帶來了一場精彩表演。"
+      },
+      {
+        "id": "b1l6-p121",
+        "phrase": "put down the book",
+        "pos": "ph.",
+        "zh": "放下書本",
+        "example_en": "She put down the book and looked up.",
+        "example_zh": "她放下書本並抬起頭。"
+      },
+      {
+        "id": "b1l6-p122",
+        "phrase": "catch up with",
+        "pos": "ph.",
+        "zh": "趕上；與……敘舊",
+        "example_en": "I called my cousin to catch up with her.",
+        "example_zh": "我打電話和表姊聊近況。"
+      },
+      {
+        "id": "b1l6-p123",
+        "phrase": "walk on one’s own",
+        "pos": "ph.",
+        "zh": "獨自行走",
+        "example_en": "The baby can now walk on his own.",
+        "example_zh": "寶寶現在能自己走路了。"
+      },
+      {
+        "id": "b1l6-p124",
+        "phrase": "dazzling fireworks",
+        "pos": "ph.",
+        "zh": "璀璨的煙火",
+        "example_en": "Dazzling fireworks lit up the sky.",
+        "example_zh": "璀璨的煙火照亮天空。"
+      },
+      {
+        "id": "b1l6-p125",
+        "phrase": "grow to a great height",
+        "pos": "ph.",
+        "zh": "長得很高",
+        "example_en": "These trees can grow to a great height.",
+        "example_zh": "這些樹可以長得很高。"
+      },
+      {
+        "id": "b1l6-p126",
+        "phrase": "have a global fan base",
+        "pos": "ph.",
+        "zh": "擁有全球粉絲群",
+        "example_en": "The singer has a global fan base.",
+        "example_zh": "這位歌手擁有全球粉絲群。"
+      }
+    ]
   },
   "grammar": {
-    "points": [],
+    "points": [
+      {
+        "id": "b1l6-g1",
+        "title": "so/such…that… 如此...以致... (結果副詞子句)",
+        "examples": [
+          "It was on this day that the United States became independent.",
+          "It was Jason that won first place in the English speech contest.",
+          "It was in the French restaurant that I lost my wallet.",
+          "Gary is so tired that he can’t focus on the exam now.",
+          "Math is such a difficult subject that most students don’t like it."
+        ]
+      }
+    ],
     "sentence_structures": {
-      "items": []
+      "items": [
+        {
+          "id": "b1l6-s001",
+          "sentence": "It *was* October 28, 1886.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b1l6-s002",
+          "sentence": "Even though it was a rainy day in New York City, close to a million people *were* out for their first look at the city’s newest addition on Bedloe’s Island, which was later renamed Liberty Island.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Even though...) + S + Vi + Relative clause (which...)"
+        },
+        {
+          "id": "b1l6-s003",
+          "sentence": "When French sculptor Frédéric Auguste Bartholdi removed the large French flag from the front of his latest creation, the crowds *cheered* and the soldiers *fired* their guns in celebration.",
+          "type": "compound-complex",
+          "pattern": "Adverbial clause (When...) + Compound sentence (with \"and\")"
+        },
+        {
+          "id": "b1l6-s004",
+          "sentence": "The grand sight before their eyes *was* the Statue of Liberty.",
+          "type": "simple",
+          "pattern": "S + Prepositional phrase + Vl + C"
+        },
+        {
+          "id": "b1l6-s005",
+          "sentence": "The Statue of Liberty *is* a gift that France presented to America to celebrate its one hundred years of independence from Great Britain.",
+          "type": "complex",
+          "pattern": "S + Vl + C + Relative clause (that...)"
+        },
+        {
+          "id": "b1l6-s006",
+          "sentence": "The full height of the monument *is* 305 feet, and the statue itself *stands* 151 feet tall.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"and\")"
+        },
+        {
+          "id": "b1l6-s007",
+          "sentence": "When it was first created, the statue’s copper surface *was* reddish-brown.",
+          "type": "complex",
+          "pattern": "Adverbial clause (When...) + S + Vl + C"
+        },
+        {
+          "id": "b1l6-s008",
+          "sentence": "Over time, this outer layer *has been exposed* to the air and *oxidized* so much that it has turned green.",
+          "type": "complex",
+          "pattern": "S + Vi (Passive / Compound verb) + Result clause (so... that...)"
+        },
+        {
+          "id": "b1l6-s009",
+          "sentence": "Each part of the statue *has* a special meaning.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b1l6-s010",
+          "sentence": "In her left hand, Lady Liberty *holds* a giant tablet with the date “July 4, 1776” on it.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + O"
+        },
+        {
+          "id": "b1l6-s011",
+          "sentence": "It *was* on this day that the United States became independent, and the tablet *symbolizes* a new and free America.",
+          "type": "compound-complex",
+          "pattern": "It-Cleft sentence (It was... that...) + Compound sentence (with \"and\")"
+        },
+        {
+          "id": "b1l6-s012",
+          "sentence": "A giant torch, which symbolizes that Lady Liberty lights the way to freedom, *is held* firmly in her right hand.",
+          "type": "complex",
+          "pattern": "S + Relative clause (which... with inner Noun clause) + Vi (Passive)"
+        },
+        {
+          "id": "b1l6-s013",
+          "sentence": "Other symbolic parts of the statue *include* Lady Liberty’s crown, her dress, and the broken chains at her feet.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b1l6-s014",
+          "sentence": "Seven spikes *rise* from the top of the crown and *represent* the rays of the sun.",
+          "type": "simple",
+          "pattern": "S + Vi / Vt (Compound verb)"
+        },
+        {
+          "id": "b1l6-s015",
+          "sentence": "Lady Liberty *is* thus divine and *shines* her heavenly light on the world.",
+          "type": "simple",
+          "pattern": "S + Vl/Vt (Compound verb with adjective C and object)"
+        },
+        {
+          "id": "b1l6-s016",
+          "sentence": "Her robe in the ancient Roman style *shows* that Bartholdi was also inspired by Libertas, the Roman goddess of freedom.",
+          "type": "complex",
+          "pattern": "S + Vt + Noun clause (that...)"
+        },
+        {
+          "id": "b1l6-s017",
+          "sentence": "The broken chains *represent* the end of slavery in the United States and *symbolize* freedom from unfair treatment.",
+          "type": "simple",
+          "pattern": "S + Vt (Compound verb) + O"
+        },
+        {
+          "id": "b1l6-s018",
+          "sentence": "Today, the Statue of Liberty *is* one of America’s biggest tourist attractions.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b1l6-s019",
+          "sentence": "It *is* such a popular landmark that every visitor to New York City has heard of it and wants to pay a visit.",
+          "type": "complex",
+          "pattern": "S + Vl + C + Result clause (such... that...)"
+        },
+        {
+          "id": "b1l6-s020",
+          "sentence": "As always, Lady Liberty *stands* tall and proud.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vl + C (Subject complements)"
+        },
+        {
+          "id": "b1l6-s021",
+          "sentence": "She *has* now *become* a symbol of hope and freedom for visitors from around the globe.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        }
+      ]
     }
   },
   "text_genre": {
-    "raw_text": ""
+    "raw_text": "This is a descriptive text that tells readers about the history and symbol of the Statue of Liberty.  Through reading the text, readers can get relevant information regarding the Statue of Liberty. It follows the structure of: the opening & introduction, meaning of each part of the statue, and the conclusion."
   }
 }
