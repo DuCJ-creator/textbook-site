@@ -54,20 +54,20 @@ const ExternalViewer = (function () {
   function renderFrame(container, card, allCards) {
     container.innerHTML = `
       <div class="ext-frame-toolbar">
-        <button type="button" class="btn" id="extBackBtn">← 返回列表</button>
+        <button type="button" class="btn ext-back-btn">← 返回列表</button>
         <span class="ext-frame-title">${Loader.escapeHtml(card.title)}</span>
-        <a class="btn" id="extOpenNewTab" href="${Loader.escapeHtml(card.url)}" target="_blank" rel="noopener">在新分頁開啟 ↗</a>
+        <a class="btn ext-open-new-tab" href="${Loader.escapeHtml(card.url)}" target="_blank" rel="noopener">在新分頁開啟 ↗</a>
       </div>
-      <div class="ext-frame-wrap" id="extFrameWrap">
-        <div class="ext-frame-loading" id="extFrameLoading">載入中…</div>
-        <iframe id="extIframe" src="${Loader.escapeHtml(card.url)}" title="${Loader.escapeHtml(card.title)}" loading="lazy"></iframe>
+      <div class="ext-frame-wrap">
+        <div class="ext-frame-loading">載入中…</div>
+        <iframe src="${Loader.escapeHtml(card.url)}" title="${Loader.escapeHtml(card.title)}" loading="lazy"></iframe>
       </div>
     `;
 
-    document.getElementById("extBackBtn").addEventListener("click", () => renderCardList(container, allCards));
+    container.querySelector(".ext-back-btn").addEventListener("click", () => renderCardList(container, allCards));
 
-    const iframe = document.getElementById("extIframe");
-    const loadingEl = document.getElementById("extFrameLoading");
+    const iframe = container.querySelector(".ext-frame-wrap iframe");
+    const loadingEl = container.querySelector(".ext-frame-loading");
     let settled = false;
 
     iframe.addEventListener("load", () => {
