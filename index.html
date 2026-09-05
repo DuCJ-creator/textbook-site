@@ -280,6 +280,8 @@
     background: var(--blue-soft); color: var(--accent-dark); padding: 3px 8px; border-radius: 999px;
   }
 
+  #gsatMockArea { margin-bottom: 40px; }
+
   footer.site-foot {
     max-width: 1040px; margin: 0 auto; padding: 20px 20px 0;
     font-size: 0.74rem; color: var(--ink-soft); border-top: 1px solid var(--paper-line);
@@ -376,6 +378,9 @@
 
     <div class="section-title"><span>跨課總覽工具</span><span class="rule"></span></div>
     <div class="tool-grid" id="toolGrid"></div>
+
+    <div class="section-title"><span>GSAT Mock 學測英文模擬專區</span><span class="rule"></span></div>
+    <div id="gsatMockArea"></div>
 
     <div class="section-title"><span>Beyond Textbooks 教材之上</span><span class="rule"></span></div>
     <div id="beyondTextbooksArea"></div>
@@ -609,7 +614,18 @@
         </div>`;
     });
 
-  // Beyond Textbooks：三個延伸學習資源，點卡片在頁面內用 iframe 開啟
+  // GSAT Mock：四種學測題型，點卡片後在頁面內開啟。
+  ExternalViewer.render({
+    containerId: "gsatMockArea",
+    cards: [
+      { title: "Vocabulary 詞彙題", url: "https://ducj-creator.github.io/Teacher-Shirley/study-tools/GSAT%20Vocab.html" },
+      { title: "Comprehensive 綜合測驗", url: "https://ducj-creator.github.io/Teacher-Shirley/tests/GSAT%20Comprehensive.html" },
+      { title: "Cloze 文意選填", url: "https://ducj-creator.github.io/Teacher-Shirley/tests/GSAT%20cloze.html" },
+      { title: "Reading 閱讀理解", url: "https://ducj-creator.github.io/Teacher-Shirley/tests/gsat%20reading.html" }
+    ]
+  });
+
+  // Beyond Textbooks：延伸學習資源，點卡片在頁面內用 iframe 開啟。
   ExternalViewer.render({
     containerId: "beyondTextbooksArea",
     cards: [
