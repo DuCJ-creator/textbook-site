@@ -1,0 +1,2074 @@
+{
+  "book": "B1",
+  "lesson": "L7",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b1l7-v01",
+        "base": "triumph",
+        "verb": [
+          {
+            "en": "triumph",
+            "zh": "獲勝；成功；戰勝",
+            "example": "The team triumphed over its strongest rival."
+          }
+        ],
+        "noun": [
+          {
+            "en": "triumph",
+            "zh": "勝利；成功；重大成就",
+            "example": "Winning the championship was a great triumph."
+          }
+        ],
+        "adj": [
+          {
+            "en": "triumphant",
+            "zh": "勝利的；成功的；洋洋得意的",
+            "example": "The triumphant players lifted the trophy."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l7-v02",
+        "base": "apply",
+        "verb": [
+          {
+            "en": "apply",
+            "zh": "申請；應用；適用",
+            "example": "She applied for a summer internship."
+          }
+        ],
+        "noun": [
+          {
+            "en": "application",
+            "zh": "申請；申請表；應用",
+            "example": "Please submit your application by Friday."
+          },
+          {
+            "en": "applicant",
+            "zh": "申請人；應徵者",
+            "example": "Each applicant must provide two references."
+          }
+        ],
+        "adj": [
+          {
+            "en": "applicable",
+            "zh": "適用的；可應用的",
+            "example": "This rule is applicable to all employees."
+          },
+          {
+            "en": "inapplicable",
+            "zh": "不適用的；無法應用的",
+            "example": "The old regulation is inapplicable to this case."
+          },
+          {
+            "en": "applied",
+            "zh": "應用的；實用的",
+            "example": "She studies applied mathematics at university."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l7-v03",
+        "base": "instrument",
+        "verb": [],
+        "noun": [
+          {
+            "en": "instrument",
+            "zh": "儀器；工具；樂器",
+            "example": "The scientist checked the measuring instrument."
+          }
+        ],
+        "adj": [
+          {
+            "en": "instrumental",
+            "zh": "起重要作用的；器樂的；儀器的",
+            "example": "Her advice was instrumental in our success."
+          }
+        ],
+        "adv": [
+          {
+            "en": "instrumentally",
+            "zh": "起關鍵作用地；以器樂方式",
+            "example": "Technology contributed instrumentally to the discovery."
+          }
+        ]
+      },
+      {
+        "id": "b1l7-v04",
+        "base": "bare",
+        "verb": [],
+        "noun": [
+          {
+            "en": "bareness",
+            "zh": "赤裸；空蕩；樸素",
+            "example": "The bareness of the room made it feel cold."
+          }
+        ],
+        "adj": [
+          {
+            "en": "bare",
+            "zh": "裸露的；空的；僅有的",
+            "example": "The trees were bare in winter."
+          }
+        ],
+        "adv": [
+          {
+            "en": "barely",
+            "zh": "幾乎不；勉強才",
+            "example": "We barely caught the last train."
+          }
+        ]
+      },
+      {
+        "id": "b1l7-v05",
+        "base": "value",
+        "verb": [
+          {
+            "en": "value",
+            "zh": "重視；珍惜；估價",
+            "example": "We value your honest opinion."
+          },
+          {
+            "en": "overvalue",
+            "zh": "高估；過分重視",
+            "example": "Investors may overvalue a fashionable company."
+          },
+          {
+            "en": "undervalue",
+            "zh": "低估；輕視",
+            "example": "People often undervalue the importance of sleep."
+          },
+          {
+            "en": "evaluate",
+            "zh": "評估；評價",
+            "example": "The committee will evaluate each proposal carefully."
+          }
+        ],
+        "noun": [
+          {
+            "en": "value",
+            "zh": "價值；重要性；價值觀",
+            "example": "This course offers excellent value for money."
+          },
+          {
+            "en": "valuables",
+            "zh": "貴重物品；財物",
+            "example": "Guests should keep their valuables in the hotel safe."
+          },
+          {
+            "en": "evaluation",
+            "zh": "評估；評價",
+            "example": "The program is undergoing a formal evaluation."
+          }
+        ],
+        "adj": [
+          {
+            "en": "invaluable",
+            "zh": "極寶貴的；非常有用的",
+            "example": "Her experience was invaluable to the project."
+          },
+          {
+            "en": "valuable",
+            "zh": "有價值的；貴重的；有益的",
+            "example": "The workshop provided valuable information."
+          },
+          {
+            "en": "valueless",
+            "zh": "沒有價值的；無用的",
+            "example": "The damaged coupons were now valueless."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l7-v06",
+        "base": "courage",
+        "verb": [
+          {
+            "en": "encourage",
+            "zh": "鼓勵；促進；支持",
+            "example": "Teachers encourage students to ask questions."
+          },
+          {
+            "en": "discourage",
+            "zh": "使洩氣；勸阻；阻礙",
+            "example": "One failure should not discourage you."
+          }
+        ],
+        "noun": [
+          {
+            "en": "courage",
+            "zh": "勇氣；膽量",
+            "example": "It took courage to admit the mistake."
+          },
+          {
+            "en": "encouragement",
+            "zh": "鼓勵；支持；促進",
+            "example": "Her words of encouragement gave me confidence."
+          },
+          {
+            "en": "discouragement",
+            "zh": "洩氣；阻礙；勸阻",
+            "example": "Despite early discouragement, he continued practicing."
+          }
+        ],
+        "adj": [
+          {
+            "en": "courageous",
+            "zh": "勇敢的；有膽量的",
+            "example": "The firefighter made a courageous rescue."
+          },
+          {
+            "en": "encouraging",
+            "zh": "令人鼓舞的；有希望的",
+            "example": "The latest test results are encouraging."
+          },
+          {
+            "en": "encouraged",
+            "zh": "受到鼓舞的；更有信心的",
+            "example": "I felt encouraged by the positive feedback."
+          },
+          {
+            "en": "discouraging",
+            "zh": "令人洩氣的；令人沮喪的",
+            "example": "The slow progress was discouraging."
+          },
+          {
+            "en": "discouraged",
+            "zh": "洩氣的；沮喪的",
+            "example": "She felt discouraged after the rejection."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l7-v07",
+        "base": "receive",
+        "verb": [
+          {
+            "en": "receive",
+            "zh": "收到；接待；接受",
+            "example": "Did you receive my email yesterday?"
+          }
+        ],
+        "noun": [
+          {
+            "en": "reception",
+            "zh": "接待；接待處；反應",
+            "example": "Please leave the package at reception."
+          },
+          {
+            "en": "receptionist",
+            "zh": "接待員；櫃檯人員",
+            "example": "The receptionist scheduled my appointment."
+          },
+          {
+            "en": "receptor",
+            "zh": "受體；感受器；接收器",
+            "example": "The drug attaches to a receptor on the cell."
+          },
+          {
+            "en": "receipt",
+            "zh": "收據；收到；接收",
+            "example": "Keep the receipt in case you need a refund."
+          }
+        ],
+        "adj": [
+          {
+            "en": "receptive",
+            "zh": "樂於接受的；善於接納的",
+            "example": "The manager was receptive to our suggestions."
+          }
+        ],
+        "adv": [
+          {
+            "en": "receptively",
+            "zh": "樂於接受地；接納地",
+            "example": "The audience listened receptively to the new proposal."
+          }
+        ]
+      },
+      {
+        "id": "b1l7-v08",
+        "base": "potenial",
+        "verb": [],
+        "noun": [
+          {
+            "en": "potential",
+            "zh": "潛力；可能性",
+            "example": "The young athlete has great potential."
+          }
+        ],
+        "adj": [
+          {
+            "en": "potential",
+            "zh": "潛在的；可能的",
+            "example": "We discussed several potential solutions."
+          }
+        ],
+        "adv": [
+          {
+            "en": "potentially",
+            "zh": "可能地；潛在地",
+            "example": "This change could potentially save time."
+          }
+        ]
+      },
+      {
+        "id": "b1l7-v09",
+        "base": "scream",
+        "verb": [
+          {
+            "en": "scream",
+            "zh": "尖叫；高聲喊叫",
+            "example": "She screamed when she saw the spider."
+          }
+        ],
+        "noun": [
+          {
+            "en": "scream",
+            "zh": "尖叫聲；高喊聲",
+            "example": "A loud scream came from the hallway."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b1l7-v10",
+        "base": "dizzy",
+        "verb": [],
+        "noun": [
+          {
+            "en": "dizziness",
+            "zh": "頭暈；眩暈",
+            "example": "The medicine may cause mild dizziness."
+          }
+        ],
+        "adj": [
+          {
+            "en": "dizzy",
+            "zh": "頭暈的；眩暈的",
+            "example": "I felt dizzy after standing up too quickly."
+          }
+        ],
+        "adv": [
+          {
+            "en": "dizzily",
+            "zh": "暈眩地；搖晃地",
+            "example": "He stood up dizzily and held the wall."
+          }
+        ]
+      },
+      {
+        "id": "b1l7-v11",
+        "base": "determine",
+        "verb": [
+          {
+            "en": "determine",
+            "zh": "決定；查明；確定",
+            "example": "The test will determine the cause of the problem."
+          }
+        ],
+        "noun": [
+          {
+            "en": "determination",
+            "zh": "決心；判定；確定",
+            "example": "Her determination helped her finish the race."
+          }
+        ],
+        "adj": [
+          {
+            "en": "determined",
+            "zh": "堅定的；下定決心的",
+            "example": "He is determined to improve his English."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l7-v12",
+        "base": "faith",
+        "verb": [],
+        "noun": [
+          {
+            "en": "faith",
+            "zh": "信心；信仰；信任",
+            "example": "She never lost faith in her team."
+          }
+        ],
+        "adj": [
+          {
+            "en": "faithful",
+            "zh": "忠誠的；忠實的；如實的",
+            "example": "The film is faithful to the original novel."
+          }
+        ],
+        "adv": [
+          {
+            "en": "faithfully",
+            "zh": "忠實地；忠誠地；如實地",
+            "example": "He faithfully followed the doctor's instructions."
+          }
+        ]
+      },
+      {
+        "id": "b1l7-v13",
+        "base": "pursue",
+        "verb": [
+          {
+            "en": "pursue",
+            "zh": "追求；從事；追趕",
+            "example": "She plans to pursue a career in medicine."
+          }
+        ],
+        "noun": [
+          {
+            "en": "pursuit",
+            "zh": "追求；追趕；從事的活動",
+            "example": "He moved abroad in pursuit of better opportunities."
+          },
+          {
+            "en": "pursuance",
+            "zh": "實行；追求；依照（正式用語）",
+            "example": "The changes were made in pursuance of the agreement."
+          }
+        ],
+        "adj": [
+          {
+            "en": "pursuant",
+            "zh": "依據……的；隨後的（正式用語）",
+            "example": "The records were released pursuant to the court order."
+          }
+        ],
+        "adv": []
+      }
+    ]
+  },
+  "phrases": {
+    "items": [
+      {
+        "id": "b1l7-p001",
+        "phrase": "grow up in a slum",
+        "pos": "ph.",
+        "zh": "在貧民窟長大",
+        "example_en": "He grew up in a slum but never gave up.",
+        "example_zh": "他在貧民窟長大，卻從未放棄。"
+      },
+      {
+        "id": "b1l7-p002",
+        "phrase": "roll into the landfill",
+        "pos": "ph.",
+        "zh": "滾入垃圾掩埋場",
+        "example_en": "The bottle rolled into the landfill.",
+        "example_zh": "瓶子滾入垃圾掩埋場。"
+      },
+      {
+        "id": "b1l7-p003",
+        "phrase": "unload trash",
+        "pos": "ph.",
+        "zh": "卸下垃圾",
+        "example_en": "Workers unloaded trash from the truck.",
+        "example_zh": "工人從卡車上卸下垃圾。"
+      },
+      {
+        "id": "b1l7-p004",
+        "phrase": "look through…for",
+        "pos": "ph.",
+        "zh": "翻找……以尋找……",
+        "example_en": "She looked through the box for her keys.",
+        "example_zh": "她翻找箱子尋找鑰匙。"
+      },
+      {
+        "id": "b1l7-p005",
+        "phrase": "make a living (v-ing)",
+        "pos": "ph.",
+        "zh": "靠（做）……維生",
+        "example_en": "He makes a living selling recycled art.",
+        "example_zh": "他靠販售回收藝術品維生。"
+      },
+      {
+        "id": "b1l7-p006",
+        "phrase": "be no different",
+        "pos": "ph.",
+        "zh": "沒有不同",
+        "example_en": "Their situation was no different.",
+        "example_zh": "他們的情況沒有不同。"
+      },
+      {
+        "id": "b1l7-p007",
+        "phrase": "look forward to",
+        "pos": "ph.",
+        "zh": "期待",
+        "example_en": "We look forward to seeing you.",
+        "example_zh": "我們期待見到你。"
+      },
+      {
+        "id": "b1l7-p008",
+        "phrase": "be carried away by",
+        "pos": "ph.",
+        "zh": "被……深深吸引／沖走",
+        "example_en": "The audience was carried away by the music.",
+        "example_zh": "觀眾被音樂深深吸引。"
+      },
+      {
+        "id": "b1l7-p009",
+        "phrase": "the power of music",
+        "pos": "ph.",
+        "zh": "音樂的力量",
+        "example_en": "The film shows the power of music.",
+        "example_zh": "這部電影展現音樂的力量。"
+      },
+      {
+        "id": "b1l7-p010",
+        "phrase": "take responsibility for one’s own actions",
+        "pos": "ph.",
+        "zh": "為自己的行為負責",
+        "example_en": "Everyone must take responsibility for their own actions.",
+        "example_zh": "每個人都必須為自己的行為負責。"
+      },
+      {
+        "id": "b1l7-p011",
+        "phrase": "go to the gym to work out",
+        "pos": "ph.",
+        "zh": "去健身房運動",
+        "example_en": "She goes to the gym to work out after work.",
+        "example_zh": "她下班後去健身房運動。"
+      },
+      {
+        "id": "b1l7-p012",
+        "phrase": "keep fit",
+        "pos": "ph.",
+        "zh": "保持健康／體態",
+        "example_en": "He swims every day to keep fit.",
+        "example_zh": "他每天游泳以保持健康。"
+      },
+      {
+        "id": "b1l7-p013",
+        "phrase": "work hard every single day at one’s job",
+        "pos": "ph.",
+        "zh": "每天在工作崗位上努力工作",
+        "example_en": "She works hard every single day at her job.",
+        "example_zh": "她每天都在工作崗位上努力工作。"
+      },
+      {
+        "id": "b1l7-p014",
+        "phrase": "be scheduled to take place",
+        "pos": "ph.",
+        "zh": "預定舉行",
+        "example_en": "The concert is scheduled to take place on Friday.",
+        "example_zh": "演唱會預定於星期五舉行。"
+      },
+      {
+        "id": "b1l7-p015",
+        "phrase": "change a flat tire",
+        "pos": "ph.",
+        "zh": "更換爆胎的輪胎",
+        "example_en": "He learned how to change a flat tire.",
+        "example_zh": "他學會如何更換爆胎的輪胎。"
+      },
+      {
+        "id": "b1l7-p016",
+        "phrase": "despite one’s best efforts to",
+        "pos": "ph.",
+        "zh": "儘管某人盡力……",
+        "example_en": "Despite his best efforts to help, the plan failed.",
+        "example_zh": "儘管他盡力幫忙，計畫仍失敗了。"
+      },
+      {
+        "id": "b1l7-p017",
+        "phrase": "the upcoming summer break",
+        "pos": "ph.",
+        "zh": "即將到來的暑假",
+        "example_en": "We made plans for the upcoming summer break.",
+        "example_zh": "我們為即將到來的暑假做了計畫。"
+      },
+      {
+        "id": "b1l7-p018",
+        "phrase": "provide a welcome escape from one’s daily routine",
+        "pos": "ph.",
+        "zh": "讓某人暫時擺脫日常生活",
+        "example_en": "The trip provided a welcome escape from my daily routine.",
+        "example_zh": "這趟旅行讓我暫時擺脫日常生活。"
+      },
+      {
+        "id": "b1l7-p019",
+        "phrase": "dream of",
+        "pos": "ph.",
+        "zh": "夢想……",
+        "example_en": "She dreams of becoming an artist.",
+        "example_zh": "她夢想成為藝術家。"
+      },
+      {
+        "id": "b1l7-p020",
+        "phrase": "find a practical way to",
+        "pos": "ph.",
+        "zh": "找到實際可行的方法……",
+        "example_en": "We found a practical way to reuse the cans.",
+        "example_zh": "我們找到重複利用罐子的實際方法。"
+      },
+      {
+        "id": "b1l7-p021",
+        "phrase": "master the art of time management",
+        "pos": "ph.",
+        "zh": "精通時間管理的技巧",
+        "example_en": "Students should master the art of time management.",
+        "example_zh": "學生應精通時間管理的技巧。"
+      },
+      {
+        "id": "b1l7-p022",
+        "phrase": "a crucial step in",
+        "pos": "ph.",
+        "zh": "……的關鍵步驟",
+        "example_en": "Planning is a crucial step in achieving a goal.",
+        "example_zh": "規劃是達成目標的關鍵步驟。"
+      },
+      {
+        "id": "b1l7-p023",
+        "phrase": "balance work and personal life",
+        "pos": "ph.",
+        "zh": "平衡工作與個人生活",
+        "example_en": "It is difficult to balance work and personal life.",
+        "example_zh": "平衡工作與個人生活並不容易。"
+      },
+      {
+        "id": "b1l7-p024",
+        "phrase": "take an online class",
+        "pos": "ph.",
+        "zh": "上線上課程",
+        "example_en": "I take an online class every Tuesday.",
+        "example_zh": "我每週二上線上課程。"
+      },
+      {
+        "id": "b1l7-p025",
+        "phrase": "take a lesson",
+        "pos": "ph.",
+        "zh": "上課；接受教訓",
+        "example_en": "She takes a piano lesson on Saturday.",
+        "example_zh": "她星期六上鋼琴課。"
+      },
+      {
+        "id": "b1l7-p026",
+        "phrase": "be good at",
+        "pos": "ph.",
+        "zh": "擅長……",
+        "example_en": "He is good at solving problems.",
+        "example_zh": "他擅長解決問題。"
+      },
+      {
+        "id": "b1l7-p027",
+        "phrase": "learn about",
+        "pos": "ph.",
+        "zh": "了解；學習有關……",
+        "example_en": "We learned about local history.",
+        "example_zh": "我們學習了當地歷史。"
+      },
+      {
+        "id": "b1l7-p028",
+        "phrase": "at hand",
+        "pos": "ph.",
+        "zh": "在手邊；即將到來",
+        "example_en": "Keep the tools at hand.",
+        "example_zh": "把工具放在手邊。"
+      },
+      {
+        "id": "b1l7-p029",
+        "phrase": "put together",
+        "pos": "ph.",
+        "zh": "組裝；彙整",
+        "example_en": "They put together a simple lamp.",
+        "example_zh": "他們組裝了一盞簡單的燈。"
+      },
+      {
+        "id": "b1l7-p030",
+        "phrase": "metal can",
+        "pos": "ph.",
+        "zh": "金屬罐",
+        "example_en": "She turned a metal can into a lantern.",
+        "example_zh": "她把金屬罐做成燈籠。"
+      },
+      {
+        "id": "b1l7-p031",
+        "phrase": "somehow manage to",
+        "pos": "ph.",
+        "zh": "不知怎地設法做到",
+        "example_en": "We somehow managed to finish on time.",
+        "example_zh": "我們不知怎地設法準時完成了。"
+      },
+      {
+        "id": "b1l7-p032",
+        "phrase": "barely cost anything",
+        "pos": "ph.",
+        "zh": "幾乎不花任何錢",
+        "example_en": "The project barely cost anything.",
+        "example_zh": "這項計畫幾乎不花任何錢。"
+      },
+      {
+        "id": "b1l7-p033",
+        "phrase": "the power be out",
+        "pos": "ph.",
+        "zh": "停電",
+        "example_en": "The power was out all night.",
+        "example_zh": "整晚都停電。"
+      },
+      {
+        "id": "b1l7-p034",
+        "phrase": "there is no way to",
+        "pos": "ph.",
+        "zh": "不可能／沒有辦法……",
+        "example_en": "There is no way to finish this today.",
+        "example_zh": "今天不可能完成這件事。"
+      },
+      {
+        "id": "b1l7-p035",
+        "phrase": "keep the house lit",
+        "pos": "ph.",
+        "zh": "使屋內保持明亮",
+        "example_en": "Candles kept the house lit.",
+        "example_zh": "蠟燭使屋內保持明亮。"
+      },
+      {
+        "id": "b1l7-p036",
+        "phrase": "go straight to bed",
+        "pos": "ph.",
+        "zh": "直接上床睡覺",
+        "example_en": "I went straight to bed after work.",
+        "example_zh": "我下班後直接上床睡覺。"
+      },
+      {
+        "id": "b1l7-p037",
+        "phrase": "solve complex mathematical problems",
+        "pos": "ph.",
+        "zh": "解決複雜的數學問題",
+        "example_en": "The computer can solve complex mathematical problems.",
+        "example_zh": "這臺電腦能解決複雜的數學問題。"
+      },
+      {
+        "id": "b1l7-p038",
+        "phrase": "the best tip to being happy",
+        "pos": "ph.",
+        "zh": "保持快樂的最佳祕訣",
+        "example_en": "Gratitude may be the best tip to being happy.",
+        "example_zh": "感恩可能是保持快樂的最佳祕訣。"
+      },
+      {
+        "id": "b1l7-p039",
+        "phrase": "make sb. truly fulfilled",
+        "pos": "ph.",
+        "zh": "使某人真正感到充實",
+        "example_en": "Helping others makes her truly fulfilled.",
+        "example_zh": "幫助他人使她真正感到充實。"
+      },
+      {
+        "id": "b1l7-p040",
+        "phrase": "in every aspect of life",
+        "pos": "ph.",
+        "zh": "在生活的每個層面",
+        "example_en": "Balance matters in every aspect of life.",
+        "example_zh": "平衡在生活的每個層面都很重要。"
+      },
+      {
+        "id": "b1l7-p041",
+        "phrase": "by doing regular exercise",
+        "pos": "ph.",
+        "zh": "藉由規律運動",
+        "example_en": "You can stay healthy by doing regular exercise.",
+        "example_zh": "你可以藉由規律運動保持健康。"
+      },
+      {
+        "id": "b1l7-p042",
+        "phrase": "stay perfectly fit and healthy",
+        "pos": "ph.",
+        "zh": "保持非常健康的狀態",
+        "example_en": "A good diet helps her stay perfectly fit and healthy.",
+        "example_zh": "良好飲食幫助她保持健康。"
+      },
+      {
+        "id": "b1l7-p043",
+        "phrase": "with perseverance and hard work",
+        "pos": "ph.",
+        "zh": "憑毅力與努力",
+        "example_en": "She succeeded with perseverance and hard work.",
+        "example_zh": "她憑毅力與努力獲得成功。"
+      },
+      {
+        "id": "b1l7-p044",
+        "phrase": "showcase one’s artwork",
+        "pos": "ph.",
+        "zh": "展示某人的藝術作品",
+        "example_en": "The gallery showcased her artwork.",
+        "example_zh": "畫廊展示了她的藝術作品。"
+      },
+      {
+        "id": "b1l7-p045",
+        "phrase": "despite one’s inexperience",
+        "pos": "ph.",
+        "zh": "儘管某人缺乏經驗",
+        "example_en": "Despite his inexperience, he performed well.",
+        "example_zh": "儘管缺乏經驗，他仍表現出色。"
+      },
+      {
+        "id": "b1l7-p046",
+        "phrase": "adapt to",
+        "pos": "ph.",
+        "zh": "適應……",
+        "example_en": "She quickly adapted to her new school.",
+        "example_zh": "她很快適應新學校。"
+      },
+      {
+        "id": "b1l7-p047",
+        "phrase": "time management skill",
+        "pos": "ph.",
+        "zh": "時間管理能力",
+        "example_en": "Good time management skills reduce stress.",
+        "example_zh": "良好的時間管理能力能減少壓力。"
+      },
+      {
+        "id": "b1l7-p048",
+        "phrase": "communication skill",
+        "pos": "ph.",
+        "zh": "溝通能力",
+        "example_en": "Teamwork improves communication skills.",
+        "example_zh": "團隊合作能提升溝通能力。"
+      },
+      {
+        "id": "b1l7-p049",
+        "phrase": "finish all tasks efficiently",
+        "pos": "ph.",
+        "zh": "有效率地完成所有任務",
+        "example_en": "He finished all tasks efficiently.",
+        "example_zh": "他有效率地完成所有任務。"
+      },
+      {
+        "id": "b1l7-p050",
+        "phrase": "improve one’s fitness level",
+        "pos": "ph.",
+        "zh": "提升某人的體能",
+        "example_en": "Running can improve your fitness level.",
+        "example_zh": "跑步可以提升你的體能。"
+      },
+      {
+        "id": "b1l7-p051",
+        "phrase": "by exercising regularly",
+        "pos": "ph.",
+        "zh": "藉由規律運動",
+        "example_en": "She became stronger by exercising regularly.",
+        "example_zh": "她藉由規律運動變得更強壯。"
+      },
+      {
+        "id": "b1l7-p052",
+        "phrase": "crucial to maintaining good health",
+        "pos": "ph.",
+        "zh": "對維持健康至關重要",
+        "example_en": "Sleep is crucial to maintaining good health.",
+        "example_zh": "睡眠對維持健康至關重要。"
+      },
+      {
+        "id": "b1l7-p053",
+        "phrase": "in one’s own way",
+        "pos": "ph.",
+        "zh": "以某人自己的方式",
+        "example_en": "Each student solved the problem in their own way.",
+        "example_zh": "每位學生都用自己的方式解決問題。"
+      },
+      {
+        "id": "b1l7-p054",
+        "phrase": "come out of",
+        "pos": "ph.",
+        "zh": "從……出來；源自",
+        "example_en": "A beautiful sound came out of the instrument.",
+        "example_zh": "樂器傳出美妙的聲音。"
+      },
+      {
+        "id": "b1l7-p055",
+        "phrase": "quit a lesson",
+        "pos": "ph.",
+        "zh": "停止上某項課程",
+        "example_en": "He wanted to quit his piano lessons.",
+        "example_zh": "他想停止上鋼琴課。"
+      },
+      {
+        "id": "b1l7-p056",
+        "phrase": "with sb’s encouragement",
+        "pos": "ph.",
+        "zh": "在某人的鼓勵下",
+        "example_en": "With her teacher’s encouragement, she kept practicing.",
+        "example_zh": "在老師的鼓勵下，她持續練習。"
+      },
+      {
+        "id": "b1l7-p057",
+        "phrase": "keep practicing",
+        "pos": "ph.",
+        "zh": "持續練習",
+        "example_en": "Keep practicing, and you will improve.",
+        "example_zh": "持續練習，你就會進步。"
+      },
+      {
+        "id": "b1l7-p058",
+        "phrase": "musical skill",
+        "pos": "ph.",
+        "zh": "音樂技能",
+        "example_en": "Years of practice improved his musical skills.",
+        "example_zh": "多年的練習提升了他的音樂技能。"
+      },
+      {
+        "id": "b1l7-p059",
+        "phrase": "hit all the right notes",
+        "pos": "ph.",
+        "zh": "唱／奏準所有音符",
+        "example_en": "She hit all the right notes.",
+        "example_zh": "她唱準了所有音符。"
+      },
+      {
+        "id": "b1l7-p060",
+        "phrase": "play together harmoniously",
+        "pos": "ph.",
+        "zh": "和諧地一起演奏",
+        "example_en": "The musicians played together harmoniously.",
+        "example_zh": "音樂家們和諧地一起演奏。"
+      },
+      {
+        "id": "b1l7-p061",
+        "phrase": "perform a concert",
+        "pos": "ph.",
+        "zh": "舉行音樂會",
+        "example_en": "The band performed a concert at school.",
+        "example_zh": "樂團在學校舉行音樂會。"
+      },
+      {
+        "id": "b1l7-p062",
+        "phrase": "attract wider attention",
+        "pos": "ph.",
+        "zh": "吸引更廣泛的關注",
+        "example_en": "The video attracted wider attention online.",
+        "example_zh": "這部影片在網路上吸引更廣泛的關注。"
+      },
+      {
+        "id": "b1l7-p063",
+        "phrase": "receive invitations",
+        "pos": "ph.",
+        "zh": "收到邀請",
+        "example_en": "The band received invitations to perform abroad.",
+        "example_zh": "樂團收到到國外演出的邀請。"
+      },
+      {
+        "id": "b1l7-p064",
+        "phrase": "just as",
+        "pos": "ph.",
+        "zh": "正如；恰如",
+        "example_en": "Just as she predicted, the show was a success.",
+        "example_zh": "正如她所預測，表演很成功。"
+      },
+      {
+        "id": "b1l7-p065",
+        "phrase": "dazzle the world",
+        "pos": "ph.",
+        "zh": "令全世界驚艷",
+        "example_en": "The young singer dazzled the world.",
+        "example_zh": "這位年輕歌手令全世界驚艷。"
+      },
+      {
+        "id": "b1l7-p066",
+        "phrase": "at first",
+        "pos": "ph.",
+        "zh": "起初",
+        "example_en": "At first, I was nervous.",
+        "example_zh": "起初，我很緊張。"
+      },
+      {
+        "id": "b1l7-p067",
+        "phrase": "board member",
+        "pos": "ph.",
+        "zh": "董事會成員",
+        "example_en": "Every board member attended the meeting.",
+        "example_zh": "每位董事會成員都出席會議。"
+      },
+      {
+        "id": "b1l7-p068",
+        "phrase": "work through a few complicated problems",
+        "pos": "ph.",
+        "zh": "逐一解決幾個複雜問題",
+        "example_en": "We worked through a few complicated problems.",
+        "example_zh": "我們逐一解決了幾個複雜問題。"
+      },
+      {
+        "id": "b1l7-p069",
+        "phrase": "reach a consensus",
+        "pos": "ph.",
+        "zh": "達成共識",
+        "example_en": "The members finally reached a consensus.",
+        "example_zh": "成員們終於達成共識。"
+      },
+      {
+        "id": "b1l7-p070",
+        "phrase": "carry out the project",
+        "pos": "ph.",
+        "zh": "執行專案",
+        "example_en": "The team will carry out the project next month.",
+        "example_zh": "團隊將於下個月執行專案。"
+      },
+      {
+        "id": "b1l7-p071",
+        "phrase": "with confidence",
+        "pos": "ph.",
+        "zh": "有自信地",
+        "example_en": "She answered the question with confidence.",
+        "example_zh": "她有自信地回答問題。"
+      },
+      {
+        "id": "b1l7-p072",
+        "phrase": "be aware of",
+        "pos": "ph.",
+        "zh": "意識到；注意",
+        "example_en": "Drivers must be aware of road conditions.",
+        "example_zh": "駕駛必須注意路況。"
+      },
+      {
+        "id": "b1l7-p073",
+        "phrase": "K-pop singer",
+        "pos": "ph.",
+        "zh": "韓國流行音樂歌手",
+        "example_en": "She dreams of becoming a K-pop singer.",
+        "example_zh": "她夢想成為韓國流行音樂歌手。"
+      },
+      {
+        "id": "b1l7-p074",
+        "phrase": "left for the rest of this month",
+        "pos": "ph.",
+        "zh": "本月剩餘時間可用／留下",
+        "example_en": "We have little time left for the rest of this month.",
+        "example_zh": "本月剩餘時間不多了。"
+      },
+      {
+        "id": "b1l7-p075",
+        "phrase": "tighten one’s belt",
+        "pos": "ph.",
+        "zh": "勒緊褲帶；節省開支",
+        "example_en": "We must tighten our belts this month.",
+        "example_zh": "我們這個月必須節省開支。"
+      },
+      {
+        "id": "b1l7-p076",
+        "phrase": "spend a little time doing",
+        "pos": "ph.",
+        "zh": "花一點時間做……",
+        "example_en": "Spend a little time reviewing your notes.",
+        "example_zh": "花一點時間複習筆記。"
+      },
+      {
+        "id": "b1l7-p077",
+        "phrase": "greatly increase over time",
+        "pos": "ph.",
+        "zh": "隨時間大幅增加",
+        "example_en": "Her confidence greatly increased over time.",
+        "example_zh": "她的自信隨時間大幅增加。"
+      },
+      {
+        "id": "b1l7-p078",
+        "phrase": "enough to",
+        "pos": "ph.",
+        "zh": "足以……",
+        "example_en": "The room is large enough to hold fifty people.",
+        "example_zh": "這個房間大得足以容納五十人。"
+      },
+      {
+        "id": "b1l7-p079",
+        "phrase": "shine with potential",
+        "pos": "ph.",
+        "zh": "展現潛力",
+        "example_en": "The young artist shines with potential.",
+        "example_zh": "這位年輕藝術家展現出潛力。"
+      },
+      {
+        "id": "b1l7-p080",
+        "phrase": "brighten the world",
+        "pos": "ph.",
+        "zh": "照亮世界",
+        "example_en": "Her music helps brighten the world.",
+        "example_zh": "她的音樂有助於照亮世界。"
+      },
+      {
+        "id": "b1l7-p081",
+        "phrase": "with enthusiasm and creativity",
+        "pos": "ph.",
+        "zh": "充滿熱忱與創意地",
+        "example_en": "The students worked with enthusiasm and creativity.",
+        "example_zh": "學生們充滿熱忱與創意地工作。"
+      },
+      {
+        "id": "b1l7-p082",
+        "phrase": "seem daunting",
+        "pos": "ph.",
+        "zh": "似乎令人畏懼",
+        "example_en": "The challenge seemed daunting at first.",
+        "example_zh": "這項挑戰起初似乎令人畏懼。"
+      },
+      {
+        "id": "b1l7-p083",
+        "phrase": "a moment of hesitation",
+        "pos": "ph.",
+        "zh": "片刻的猶豫",
+        "example_en": "After a moment of hesitation, he agreed.",
+        "example_zh": "片刻猶豫後，他同意了。"
+      },
+      {
+        "id": "b1l7-p084",
+        "phrase": "gather one’s courage",
+        "pos": "ph.",
+        "zh": "鼓起勇氣",
+        "example_en": "She gathered her courage and spoke.",
+        "example_zh": "她鼓起勇氣發言。"
+      },
+      {
+        "id": "b1l7-p085",
+        "phrase": "take the first step to",
+        "pos": "ph.",
+        "zh": "踏出……的第一步",
+        "example_en": "Applying is the first step to reaching your goal.",
+        "example_zh": "提出申請是達成目標的第一步。"
+      },
+      {
+        "id": "b1l7-p086",
+        "phrase": "fulfill one’s dream",
+        "pos": "ph.",
+        "zh": "實現某人的夢想",
+        "example_en": "He worked hard to fulfill his dream.",
+        "example_zh": "他努力實現夢想。"
+      },
+      {
+        "id": "b1l7-p087",
+        "phrase": "an insightful question",
+        "pos": "ph.",
+        "zh": "有見地的問題",
+        "example_en": "A student asked an insightful question.",
+        "example_zh": "一名學生提出了有見地的問題。"
+      },
+      {
+        "id": "b1l7-p088",
+        "phrase": "world-famous rock band",
+        "pos": "ph.",
+        "zh": "世界知名的搖滾樂團",
+        "example_en": "The world-famous rock band toured Asia.",
+        "example_zh": "這支世界知名的搖滾樂團到亞洲巡演。"
+      },
+      {
+        "id": "b1l7-p089",
+        "phrase": "see one’s potential",
+        "pos": "ph.",
+        "zh": "看見某人的潛力",
+        "example_en": "Her teacher saw her potential.",
+        "example_zh": "她的老師看見她的潛力。"
+      },
+      {
+        "id": "b1l7-p090",
+        "phrase": "as soon as",
+        "pos": "ph.",
+        "zh": "一……就……",
+        "example_en": "Call me as soon as you arrive.",
+        "example_zh": "你一到就打電話給我。"
+      },
+      {
+        "id": "b1l7-p091",
+        "phrase": "step on stage",
+        "pos": "ph.",
+        "zh": "登上舞臺",
+        "example_en": "He felt nervous when he stepped on stage.",
+        "example_zh": "他登上舞臺時感到緊張。"
+      },
+      {
+        "id": "b1l7-p092",
+        "phrase": "in front of",
+        "pos": "ph.",
+        "zh": "在……前面",
+        "example_en": "She spoke in front of a large crowd.",
+        "example_zh": "她在一大群人面前演說。"
+      },
+      {
+        "id": "b1l7-p093",
+        "phrase": "glaring lights",
+        "pos": "ph.",
+        "zh": "刺眼的燈光",
+        "example_en": "The glaring lights made him dizzy.",
+        "example_zh": "刺眼的燈光使他頭暈。"
+      },
+      {
+        "id": "b1l7-p094",
+        "phrase": "hear screams of excitement",
+        "pos": "ph.",
+        "zh": "聽見興奮的尖叫聲",
+        "example_en": "The band heard screams of excitement.",
+        "example_zh": "樂團聽見興奮的尖叫聲。"
+      },
+      {
+        "id": "b1l7-p095",
+        "phrase": "feel dizzy",
+        "pos": "ph.",
+        "zh": "感到頭暈",
+        "example_en": "I felt dizzy after spinning around.",
+        "example_zh": "我轉圈後感到頭暈。"
+      },
+      {
+        "id": "b1l7-p096",
+        "phrase": "as soon as",
+        "pos": "ph.",
+        "zh": "一……就……",
+        "example_en": "As soon as the music began, the crowd cheered.",
+        "example_zh": "音樂一開始，群眾便歡呼。"
+      },
+      {
+        "id": "b1l7-p097",
+        "phrase": "bow to the crowd",
+        "pos": "ph.",
+        "zh": "向群眾鞠躬",
+        "example_en": "The performers bowed to the crowd.",
+        "example_zh": "表演者向群眾鞠躬。"
+      },
+      {
+        "id": "b1l7-p098",
+        "phrase": "at the end",
+        "pos": "ph.",
+        "zh": "在最後",
+        "example_en": "At the end, everyone sang together.",
+        "example_zh": "最後，每個人一起唱歌。"
+      },
+      {
+        "id": "b1l7-p099",
+        "phrase": "be a triumph",
+        "pos": "ph.",
+        "zh": "是一次重大成功",
+        "example_en": "The concert was a triumph.",
+        "example_zh": "這場音樂會非常成功。"
+      },
+      {
+        "id": "b1l7-p100",
+        "phrase": "tour overseas",
+        "pos": "ph.",
+        "zh": "到海外巡演／旅行",
+        "example_en": "The band will tour overseas next year.",
+        "example_zh": "樂團明年將到海外巡演。"
+      },
+      {
+        "id": "b1l7-p101",
+        "phrase": "in other ways",
+        "pos": "ph.",
+        "zh": "以其他方式",
+        "example_en": "You can help in other ways.",
+        "example_zh": "你可以用其他方式幫忙。"
+      },
+      {
+        "id": "b1l7-p102",
+        "phrase": "earn money",
+        "pos": "ph.",
+        "zh": "賺錢",
+        "example_en": "She earns money by teaching music.",
+        "example_zh": "她靠教音樂賺錢。"
+      },
+      {
+        "id": "b1l7-p103",
+        "phrase": "end up",
+        "pos": "ph.",
+        "zh": "最後結果是",
+        "example_en": "We ended up staying home.",
+        "example_zh": "我們最後待在家裡。"
+      },
+      {
+        "id": "b1l7-p104",
+        "phrase": "through determination and hard work",
+        "pos": "ph.",
+        "zh": "憑決心與努力",
+        "example_en": "He succeeded through determination and hard work.",
+        "example_zh": "他憑決心與努力獲得成功。"
+      },
+      {
+        "id": "b1l7-p105",
+        "phrase": "create…out of",
+        "pos": "ph.",
+        "zh": "用……創造……",
+        "example_en": "She created art out of recycled metal.",
+        "example_zh": "她用回收金屬創作藝術。"
+      },
+      {
+        "id": "b1l7-p106",
+        "phrase": "have faith in…",
+        "pos": "ph.",
+        "zh": "相信……",
+        "example_en": "You should have faith in yourself.",
+        "example_zh": "你應該相信自己。"
+      },
+      {
+        "id": "b1l7-p107",
+        "phrase": "pursue great things",
+        "pos": "ph.",
+        "zh": "追求偉大的事物",
+        "example_en": "She encouraged us to pursue great things.",
+        "example_zh": "她鼓勵我們追求偉大的事物。"
+      },
+      {
+        "id": "b1l7-p108",
+        "phrase": "strike a balance between one’s career and family",
+        "pos": "ph.",
+        "zh": "在事業與家庭間取得平衡",
+        "example_en": "He tries to strike a balance between his career and family.",
+        "example_zh": "他努力在事業與家庭間取得平衡。"
+      },
+      {
+        "id": "b1l7-p109",
+        "phrase": "prioritize one’s personal well-being",
+        "pos": "ph.",
+        "zh": "優先考量個人身心健康",
+        "example_en": "She learned to prioritize her personal well-being.",
+        "example_zh": "她學會優先考量個人身心健康。"
+      },
+      {
+        "id": "b1l7-p110",
+        "phrase": "take many wrong turns and detours",
+        "pos": "ph.",
+        "zh": "走許多錯路與繞路",
+        "example_en": "We took many wrong turns and detours.",
+        "example_zh": "我們走了許多錯路與繞路。"
+      },
+      {
+        "id": "b1l7-p111",
+        "phrase": "end up in unexpected situations",
+        "pos": "ph.",
+        "zh": "最後陷入意外情況",
+        "example_en": "Travelers sometimes end up in unexpected situations.",
+        "example_zh": "旅客有時最後會陷入意外情況。"
+      },
+      {
+        "id": "b1l7-p112",
+        "phrase": "shared love for",
+        "pos": "ph.",
+        "zh": "對……共同的熱愛",
+        "example_en": "They became friends through their shared love for music.",
+        "example_zh": "他們因共同熱愛音樂而成為朋友。"
+      },
+      {
+        "id": "b1l7-p113",
+        "phrase": "transcend barriers",
+        "pos": "ph.",
+        "zh": "跨越障礙",
+        "example_en": "Music can transcend cultural barriers.",
+        "example_zh": "音樂可以跨越文化障礙。"
+      },
+      {
+        "id": "b1l7-p114",
+        "phrase": "different corners of the world",
+        "pos": "ph.",
+        "zh": "世界不同角落",
+        "example_en": "Fans came from different corners of the world.",
+        "example_zh": "粉絲來自世界不同角落。"
+      },
+      {
+        "id": "b1l7-p115",
+        "phrase": "exceptional problem-solving skill",
+        "pos": "ph.",
+        "zh": "卓越的解決問題能力",
+        "example_en": "She has exceptional problem-solving skills.",
+        "example_zh": "她有卓越的解決問題能力。"
+      },
+      {
+        "id": "b1l7-p116",
+        "phrase": "tackle complex challenges precisely",
+        "pos": "ph.",
+        "zh": "精準處理複雜挑戰",
+        "example_en": "The system tackles complex challenges precisely.",
+        "example_zh": "這套系統能精準處理複雜挑戰。"
+      },
+      {
+        "id": "b1l7-p117",
+        "phrase": "with ease",
+        "pos": "ph.",
+        "zh": "輕鬆地",
+        "example_en": "She solved the puzzle with ease.",
+        "example_zh": "她輕鬆解開謎題。"
+      },
+      {
+        "id": "b1l7-p118",
+        "phrase": "absorb knowledge",
+        "pos": "ph.",
+        "zh": "吸收知識",
+        "example_en": "Children absorb knowledge quickly.",
+        "example_zh": "孩子吸收知識很快。"
+      },
+      {
+        "id": "b1l7-p119",
+        "phrase": "navigate assignments and exams",
+        "pos": "ph.",
+        "zh": "應付作業與考試",
+        "example_en": "Good planning helps students navigate assignments and exams.",
+        "example_zh": "良好規劃幫助學生應付作業與考試。"
+      },
+      {
+        "id": "b1l7-p120",
+        "phrase": "overcome hurdles",
+        "pos": "ph.",
+        "zh": "克服障礙",
+        "example_en": "We worked together to overcome hurdles.",
+        "example_zh": "我們合作克服障礙。"
+      },
+      {
+        "id": "b1l7-p121",
+        "phrase": "emerge stronger",
+        "pos": "ph.",
+        "zh": "變得更加堅強",
+        "example_en": "She emerged stronger from the experience.",
+        "example_zh": "她從這段經歷中變得更加堅強。"
+      },
+      {
+        "id": "b1l7-p122",
+        "phrase": "academic focus",
+        "pos": "ph.",
+        "zh": "學業重心／專注力",
+        "example_en": "The program helps students maintain academic focus.",
+        "example_zh": "這項計畫幫助學生維持學業重心。"
+      },
+      {
+        "id": "b1l7-p123",
+        "phrase": "fill the corridor",
+        "pos": "ph.",
+        "zh": "充滿走廊",
+        "example_en": "Music filled the corridor.",
+        "example_zh": "音樂充滿走廊。"
+      },
+      {
+        "id": "b1l7-p124",
+        "phrase": "gain memories",
+        "pos": "ph.",
+        "zh": "獲得回憶",
+        "example_en": "Students gained precious memories from the trip.",
+        "example_zh": "學生從旅行中獲得珍貴回憶。"
+      },
+      {
+        "id": "b1l7-p125",
+        "phrase": "last a lifetime",
+        "pos": "ph.",
+        "zh": "持續一輩子",
+        "example_en": "These friendships may last a lifetime.",
+        "example_zh": "這些友誼可能持續一輩子。"
+      },
+      {
+        "id": "b1l7-p126",
+        "phrase": "enjoy immensely",
+        "pos": "ph.",
+        "zh": "非常享受",
+        "example_en": "We enjoyed the concert immensely.",
+        "example_zh": "我們非常享受這場音樂會。"
+      },
+      {
+        "id": "b1l7-p127",
+        "phrase": "amidst the music and flashing lights",
+        "pos": "ph.",
+        "zh": "在音樂與閃爍燈光之中",
+        "example_en": "They danced amidst the music and flashing lights.",
+        "example_zh": "他們在音樂與閃爍燈光之中跳舞。"
+      },
+      {
+        "id": "b1l7-p128",
+        "phrase": "a sense of unity",
+        "pos": "ph.",
+        "zh": "團結感",
+        "example_en": "Singing together created a sense of unity.",
+        "example_zh": "一起唱歌營造出團結感。"
+      },
+      {
+        "id": "b1l7-p129",
+        "phrase": "sing along to",
+        "pos": "ph.",
+        "zh": "跟著……一起唱",
+        "example_en": "The crowd sang along to every song.",
+        "example_zh": "群眾跟著每首歌一起唱。"
+      },
+      {
+        "id": "b1l7-p130",
+        "phrase": "moment of triumph",
+        "pos": "ph.",
+        "zh": "勝利時刻",
+        "example_en": "The final whistle marked a moment of triumph.",
+        "example_zh": "終場哨聲標誌著勝利時刻。"
+      },
+      {
+        "id": "b1l7-p131",
+        "phrase": "a triumph over",
+        "pos": "ph.",
+        "zh": "戰勝……的勝利",
+        "example_en": "The recovery was a triumph over illness.",
+        "example_zh": "這次康復是戰勝疾病的勝利。"
+      },
+      {
+        "id": "b1l7-p132",
+        "phrase": "presented with an award",
+        "pos": "ph.",
+        "zh": "獲頒獎項",
+        "example_en": "She was presented with an award.",
+        "example_zh": "她獲頒一個獎項。"
+      },
+      {
+        "id": "b1l7-p133",
+        "phrase": "in triumph",
+        "pos": "ph.",
+        "zh": "勝利地；得意洋洋地",
+        "example_en": "The team returned home in triumph.",
+        "example_zh": "球隊勝利返鄉。"
+      },
+      {
+        "id": "b1l7-p134",
+        "phrase": "apply for a job",
+        "pos": "ph.",
+        "zh": "應徵工作",
+        "example_en": "He applied for a job at the bank.",
+        "example_zh": "他應徵銀行的工作。"
+      },
+      {
+        "id": "b1l7-p135",
+        "phrase": "fill out a form",
+        "pos": "ph.",
+        "zh": "填寫表格",
+        "example_en": "Please fill out this form.",
+        "example_zh": "請填寫這份表格。"
+      },
+      {
+        "id": "b1l7-p136",
+        "phrase": "letter of application",
+        "pos": "ph.",
+        "zh": "求職信／申請信",
+        "example_en": "She attached a letter of application.",
+        "example_zh": "她附上了一封申請信。"
+      },
+      {
+        "id": "b1l7-p137",
+        "phrase": "fill out an application",
+        "pos": "ph.",
+        "zh": "填寫申請表",
+        "example_en": "You must fill out an application online.",
+        "example_zh": "你必須在線上填寫申請表。"
+      },
+      {
+        "id": "b1l7-p138",
+        "phrase": "in case",
+        "pos": "ph.",
+        "zh": "以防萬一",
+        "example_en": "Take an umbrella in case it rains.",
+        "example_zh": "帶把雨傘以防下雨。"
+      },
+      {
+        "id": "b1l7-p139",
+        "phrase": "suitable applicant for the position of",
+        "pos": "ph.",
+        "zh": "……職位的合適申請者",
+        "example_en": "She is a suitable applicant for the position of manager.",
+        "example_zh": "她是經理職位的合適申請者。"
+      },
+      {
+        "id": "b1l7-p140",
+        "phrase": "strong leadership skills",
+        "pos": "ph.",
+        "zh": "優秀的領導能力",
+        "example_en": "The job requires strong leadership skills.",
+        "example_zh": "這份工作需要優秀的領導能力。"
+      },
+      {
+        "id": "b1l7-p141",
+        "phrase": "play an instrument",
+        "pos": "ph.",
+        "zh": "演奏樂器",
+        "example_en": "Can you play an instrument?",
+        "example_zh": "你會演奏樂器嗎？"
+      },
+      {
+        "id": "b1l7-p142",
+        "phrase": "scientific instrument",
+        "pos": "ph.",
+        "zh": "科學儀器",
+        "example_en": "The laboratory bought a new scientific instrument.",
+        "example_zh": "實驗室購買了一臺新的科學儀器。"
+      },
+      {
+        "id": "b1l7-p143",
+        "phrase": "barely believe one’s ears",
+        "pos": "ph.",
+        "zh": "幾乎不敢相信自己的耳朵",
+        "example_en": "I could barely believe my ears.",
+        "example_zh": "我幾乎不敢相信自己的耳朵。"
+      },
+      {
+        "id": "b1l7-p144",
+        "phrase": "in bare feet",
+        "pos": "ph.",
+        "zh": "赤腳",
+        "example_en": "The child ran outside in bare feet.",
+        "example_zh": "孩子赤腳跑到外面。"
+      },
+      {
+        "id": "b1l7-p145",
+        "phrase": "be invaluable to sb.",
+        "pos": "ph.",
+        "zh": "對某人極其寶貴",
+        "example_en": "Her advice was invaluable to me.",
+        "example_zh": "她的建議對我極其寶貴。"
+      },
+      {
+        "id": "b1l7-p146",
+        "phrase": "encourage sb. to",
+        "pos": "ph.",
+        "zh": "鼓勵某人做……",
+        "example_en": "My teacher encouraged me to apply.",
+        "example_zh": "老師鼓勵我提出申請。"
+      },
+      {
+        "id": "b1l7-p147",
+        "phrase": "discourage sb. from",
+        "pos": "ph.",
+        "zh": "勸阻某人做……",
+        "example_en": "The rain discouraged us from hiking.",
+        "example_zh": "下雨使我們打消健行的念頭。"
+      },
+      {
+        "id": "b1l7-p148",
+        "phrase": "go to a classical concert",
+        "pos": "ph.",
+        "zh": "去聽古典音樂會",
+        "example_en": "We went to a classical concert last night.",
+        "example_zh": "我們昨晚去聽古典音樂會。"
+      },
+      {
+        "id": "b1l7-p149",
+        "phrase": "lights from an oncoming car",
+        "pos": "ph.",
+        "zh": "迎面而來車輛的燈光",
+        "example_en": "Lights from an oncoming car blinded him briefly.",
+        "example_zh": "迎面來車的燈光使他一時看不清楚。"
+      },
+      {
+        "id": "b1l7-p150",
+        "phrase": "reach one’s full potential",
+        "pos": "ph.",
+        "zh": "充分發揮某人的潛力",
+        "example_en": "Practice helps you reach your full potential.",
+        "example_zh": "練習幫助你充分發揮潛力。"
+      },
+      {
+        "id": "b1l7-p151",
+        "phrase": "potential for traffic accidents",
+        "pos": "ph.",
+        "zh": "發生交通事故的可能性",
+        "example_en": "Heavy rain increases the potential for traffic accidents.",
+        "example_zh": "大雨增加發生交通事故的可能性。"
+      },
+      {
+        "id": "b1l7-p152",
+        "phrase": "on rainy days",
+        "pos": "ph.",
+        "zh": "在下雨天",
+        "example_en": "Drive slowly on rainy days.",
+        "example_zh": "下雨天要慢慢開車。"
+      },
+      {
+        "id": "b1l7-p153",
+        "phrase": "potential danger",
+        "pos": "ph.",
+        "zh": "潛在危險",
+        "example_en": "The broken wire is a potential danger.",
+        "example_zh": "這條斷裂的電線是潛在危險。"
+      },
+      {
+        "id": "b1l7-p154",
+        "phrase": "self-driving car",
+        "pos": "ph.",
+        "zh": "自動駕駛汽車",
+        "example_en": "A self-driving car uses many sensors.",
+        "example_zh": "自動駕駛汽車使用許多感測器。"
+      },
+      {
+        "id": "b1l7-p155",
+        "phrase": "pose potential dangers",
+        "pos": "ph.",
+        "zh": "造成潛在危險",
+        "example_en": "Poorly designed systems may pose potential dangers.",
+        "example_zh": "設計不良的系統可能造成潛在危險。"
+      },
+      {
+        "id": "b1l7-p156",
+        "phrase": "scream of pain",
+        "pos": "ph.",
+        "zh": "痛苦的尖叫聲",
+        "example_en": "We heard a scream of pain.",
+        "example_zh": "我們聽見一聲痛苦的尖叫。"
+      },
+      {
+        "id": "b1l7-p157",
+        "phrase": "scream of terror",
+        "pos": "ph.",
+        "zh": "驚恐的尖叫聲",
+        "example_en": "A scream of terror came from the room.",
+        "example_zh": "房間裡傳出驚恐的尖叫聲。"
+      },
+      {
+        "id": "b1l7-p158",
+        "phrase": "let out screams of delight",
+        "pos": "ph.",
+        "zh": "發出喜悅的尖叫",
+        "example_en": "The children let out screams of delight.",
+        "example_zh": "孩子們發出喜悅的尖叫。"
+      },
+      {
+        "id": "b1l7-p159",
+        "phrase": "during the roller-coaster ride",
+        "pos": "ph.",
+        "zh": "在搭乘雲霄飛車期間",
+        "example_en": "She laughed during the roller-coaster ride.",
+        "example_zh": "她在搭乘雲霄飛車期間笑個不停。"
+      },
+      {
+        "id": "b1l7-p160",
+        "phrase": "let out a shrill scream",
+        "pos": "ph.",
+        "zh": "發出刺耳尖叫",
+        "example_en": "He let out a shrill scream.",
+        "example_zh": "他發出刺耳的尖叫。"
+      },
+      {
+        "id": "b1l7-p161",
+        "phrase": "scream in terror",
+        "pos": "ph.",
+        "zh": "驚恐尖叫",
+        "example_en": "The visitors screamed in terror.",
+        "example_zh": "遊客們驚恐尖叫。"
+      },
+      {
+        "id": "b1l7-p162",
+        "phrase": "in the middle of the night",
+        "pos": "ph.",
+        "zh": "在半夜",
+        "example_en": "I woke up in the middle of the night.",
+        "example_zh": "我在半夜醒來。"
+      },
+      {
+        "id": "b1l7-p163",
+        "phrase": "be shaken awake",
+        "pos": "ph.",
+        "zh": "被搖醒",
+        "example_en": "She was shaken awake by her sister.",
+        "example_zh": "她被妹妹搖醒。"
+      },
+      {
+        "id": "b1l7-p164",
+        "phrase": "live overseas",
+        "pos": "ph.",
+        "zh": "住在海外",
+        "example_en": "My brother lives overseas.",
+        "example_zh": "我哥哥住在海外。"
+      },
+      {
+        "id": "b1l7-p165",
+        "phrase": "overseas student",
+        "pos": "ph.",
+        "zh": "海外學生／留學生",
+        "example_en": "The school welcomes overseas students.",
+        "example_zh": "學校歡迎海外學生。"
+      },
+      {
+        "id": "b1l7-p166",
+        "phrase": "show determination to",
+        "pos": "ph.",
+        "zh": "展現做……的決心",
+        "example_en": "The team showed determination to win.",
+        "example_zh": "球隊展現獲勝的決心。"
+      },
+      {
+        "id": "b1l7-p167",
+        "phrase": "at halftime",
+        "pos": "ph.",
+        "zh": "在中場休息時",
+        "example_en": "We were behind at halftime.",
+        "example_zh": "我們在中場休息時落後。"
+      },
+      {
+        "id": "b1l7-p168",
+        "phrase": "turn the game around and win",
+        "pos": "ph.",
+        "zh": "扭轉戰局並獲勝",
+        "example_en": "The team turned the game around and won.",
+        "example_zh": "球隊扭轉戰局並獲勝。"
+      },
+      {
+        "id": "b1l7-p169",
+        "phrase": "remain faithful to",
+        "pos": "ph.",
+        "zh": "忠於……",
+        "example_en": "She remained faithful to her principles.",
+        "example_zh": "她始終忠於自己的原則。"
+      },
+      {
+        "id": "b1l7-p170",
+        "phrase": "pursue one’s goal of",
+        "pos": "ph.",
+        "zh": "追求……的目標",
+        "example_en": "He pursued his goal of becoming a doctor.",
+        "example_zh": "他追求成為醫師的目標。"
+      },
+      {
+        "id": "b1l7-p171",
+        "phrase": "in pursuit of",
+        "pos": "ph.",
+        "zh": "追求……",
+        "example_en": "She moved abroad in pursuit of her dream.",
+        "example_zh": "她為追求夢想而移居國外。"
+      },
+      {
+        "id": "b1l7-p172",
+        "phrase": "let out a cry of triumph",
+        "pos": "ph.",
+        "zh": "發出勝利的歡呼",
+        "example_en": "The players let out a cry of triumph.",
+        "example_zh": "球員們發出勝利的歡呼。"
+      },
+      {
+        "id": "b1l7-p173",
+        "phrase": "play the flute in the school band",
+        "pos": "ph.",
+        "zh": "在學校樂團吹長笛",
+        "example_en": "She plays the flute in the school band.",
+        "example_zh": "她在學校樂團吹長笛。"
+      },
+      {
+        "id": "b1l7-p174",
+        "phrase": "overcome difficulties in",
+        "pos": "ph.",
+        "zh": "克服……方面的困難",
+        "example_en": "He overcame difficulties in learning English.",
+        "example_zh": "他克服學習英文的困難。"
+      },
+      {
+        "id": "b1l7-p175",
+        "phrase": "development of good manners from a young age",
+        "pos": "ph.",
+        "zh": "從小培養良好禮貌",
+        "example_en": "Parents value the development of good manners from a young age.",
+        "example_zh": "父母重視從小培養良好禮貌。"
+      },
+      {
+        "id": "b1l7-p176",
+        "phrase": "leading actor",
+        "pos": "ph.",
+        "zh": "男主角；主要演員",
+        "example_en": "The leading actor gave a strong performance.",
+        "example_zh": "男主角帶來出色的表演。"
+      },
+      {
+        "id": "b1l7-p177",
+        "phrase": "deeply impressed by",
+        "pos": "ph.",
+        "zh": "對……印象深刻",
+        "example_en": "I was deeply impressed by her courage.",
+        "example_zh": "她的勇氣令我印象深刻。"
+      },
+      {
+        "id": "b1l7-p178",
+        "phrase": "outstanding acting skills",
+        "pos": "ph.",
+        "zh": "傑出的演技",
+        "example_en": "The actor is known for his outstanding acting skills.",
+        "example_zh": "這位演員以傑出的演技聞名。"
+      },
+      {
+        "id": "b1l7-p179",
+        "phrase": "show up",
+        "pos": "ph.",
+        "zh": "出現；到場",
+        "example_en": "He did not show up for the meeting.",
+        "example_zh": "他沒有出席會議。"
+      },
+      {
+        "id": "b1l7-p180",
+        "phrase": "fill the entire room",
+        "pos": "ph.",
+        "zh": "充滿整個房間",
+        "example_en": "Her voice filled the entire room.",
+        "example_zh": "她的聲音充滿整個房間。"
+      },
+      {
+        "id": "b1l7-p181",
+        "phrase": "spin in circles",
+        "pos": "ph.",
+        "zh": "不停轉圈",
+        "example_en": "The dancer spun in circles.",
+        "example_zh": "舞者不停轉圈。"
+      },
+      {
+        "id": "b1l7-p182",
+        "phrase": "an exchange student",
+        "pos": "ph.",
+        "zh": "交換學生",
+        "example_en": "An exchange student joined our class.",
+        "example_zh": "一名交換學生加入我們班。"
+      },
+      {
+        "id": "b1l7-p183",
+        "phrase": "add to the collection",
+        "pos": "ph.",
+        "zh": "加入收藏",
+        "example_en": "She added the painting to the collection.",
+        "example_zh": "她把這幅畫加入收藏。"
+      },
+      {
+        "id": "b1l7-p184",
+        "phrase": "reader interest survey",
+        "pos": "ph.",
+        "zh": "讀者興趣調查",
+        "example_en": "The library conducted a reader interest survey.",
+        "example_zh": "圖書館進行了讀者興趣調查。"
+      },
+      {
+        "id": "b1l7-p185",
+        "phrase": "keep one’s faith in",
+        "pos": "ph.",
+        "zh": "持續相信……",
+        "example_en": "Keep your faith in yourself.",
+        "example_zh": "持續相信自己。"
+      },
+      {
+        "id": "b1l7-p186",
+        "phrase": "come true",
+        "pos": "ph.",
+        "zh": "實現",
+        "example_en": "Her dream finally came true.",
+        "example_zh": "她的夢想終於實現了。"
+      },
+      {
+        "id": "b1l7-p187",
+        "phrase": "pursue one’s dream",
+        "pos": "ph.",
+        "zh": "追求某人的夢想",
+        "example_en": "He moved to the city to pursue his dream.",
+        "example_zh": "他搬到城市追求夢想。"
+      },
+      {
+        "id": "b1l7-p188",
+        "phrase": "tons of",
+        "pos": "ph.",
+        "zh": "大量的",
+        "example_en": "We had tons of fun at the party.",
+        "example_zh": "我們在派對上玩得非常開心。"
+      },
+      {
+        "id": "b1l7-p189",
+        "phrase": "loads of",
+        "pos": "ph.",
+        "zh": "大量的",
+        "example_en": "She has loads of homework.",
+        "example_zh": "她有大量作業。"
+      },
+      {
+        "id": "b1l7-p190",
+        "phrase": "scores of",
+        "pos": "ph.",
+        "zh": "許多；大量的",
+        "example_en": "Scores of fans waited outside.",
+        "example_zh": "許多粉絲在外面等候。"
+      },
+      {
+        "id": "b1l7-p191",
+        "phrase": "make a decent living",
+        "pos": "ph.",
+        "zh": "過上體面的生活；賺取尚可收入",
+        "example_en": "She makes a decent living as a writer.",
+        "example_zh": "她靠寫作過著體面的生活。"
+      },
+      {
+        "id": "b1l7-p192",
+        "phrase": "in the gymnasium",
+        "pos": "ph.",
+        "zh": "在體育館裡",
+        "example_en": "The ceremony was held in the gymnasium.",
+        "example_zh": "典禮在體育館舉行。"
+      },
+      {
+        "id": "b1l7-p193",
+        "phrase": "at the swim meet",
+        "pos": "ph.",
+        "zh": "在游泳比賽中",
+        "example_en": "He won two medals at the swim meet.",
+        "example_zh": "他在游泳比賽中贏得兩面獎牌。"
+      },
+      {
+        "id": "b1l7-p194",
+        "phrase": "a freelance writer",
+        "pos": "ph.",
+        "zh": "自由撰稿人",
+        "example_en": "She works as a freelance writer.",
+        "example_zh": "她是一名自由撰稿人。"
+      },
+      {
+        "id": "b1l7-p195",
+        "phrase": "take a souvenir back home",
+        "pos": "ph.",
+        "zh": "帶紀念品回家",
+        "example_en": "I took a souvenir back home for my sister.",
+        "example_zh": "我帶了一份紀念品回家送妹妹。"
+      },
+      {
+        "id": "b1l7-p196",
+        "phrase": "an enduring friendship",
+        "pos": "ph.",
+        "zh": "長久的友誼",
+        "example_en": "Shared experiences created an enduring friendship.",
+        "example_zh": "共同經歷造就了長久的友誼。"
+      },
+      {
+        "id": "b1l7-p197",
+        "phrase": "shared difficulties",
+        "pos": "ph.",
+        "zh": "共同的困難",
+        "example_en": "They grew closer through shared difficulties.",
+        "example_zh": "他們因共同的困難而更加親近。"
+      },
+      {
+        "id": "b1l7-p198",
+        "phrase": "hand in an assignment",
+        "pos": "ph.",
+        "zh": "繳交作業",
+        "example_en": "Please hand in the assignment tomorrow.",
+        "example_zh": "請明天繳交作業。"
+      },
+      {
+        "id": "b1l7-p199",
+        "phrase": "check for grammatical errors",
+        "pos": "ph.",
+        "zh": "檢查文法錯誤",
+        "example_en": "Check your essay for grammatical errors.",
+        "example_zh": "檢查作文中的文法錯誤。"
+      },
+      {
+        "id": "b1l7-p200",
+        "phrase": "turn to sb.",
+        "pos": "ph.",
+        "zh": "向某人求助",
+        "example_en": "She turned to her teacher for advice.",
+        "example_zh": "她向老師尋求建議。"
+      },
+      {
+        "id": "b1l7-p201",
+        "phrase": "create a trendy hairstyle",
+        "pos": "ph.",
+        "zh": "打造時尚髮型",
+        "example_en": "The stylist created a trendy hairstyle for her.",
+        "example_zh": "造型師為她打造了時尚髮型。"
+      }
+    ]
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": []
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}
