@@ -39,7 +39,8 @@ const SYNC_POLICIES = {
   "studentNotepadData": { idleMs: 20000, minIntervalMs: 0, maxWaitMs: 5 * 60 * 1000 },
   "vocabStarredIds": { idleMs: 1800, minIntervalMs: 0, maxWaitMs: 10000 },
   "vocab-bank.starred": { idleMs: 1800, minIntervalMs: 0, maxWaitMs: 10000 },
-  "phraseStarredIds": { idleMs: 1800, minIntervalMs: 0, maxWaitMs: 10000 }
+  "phraseStarredIds": { idleMs: 1800, minIntervalMs: 0, maxWaitMs: 10000 },
+  "learning.spirit-garden.v1": { idleMs: 2500, minIntervalMs: 0, maxWaitMs: 10000 }
 };
 
 const TRACKED_KEYS = new Map([
@@ -50,7 +51,8 @@ const TRACKED_KEYS = new Map([
   ["studentNotepadData", "notepad"],
   ["vocabStarredIds", "vocab-family-stars"],
   ["vocab-bank.starred", "vocab-detail-stars"],
-  ["phraseStarredIds", "phrase-stars"]
+  ["phraseStarredIds", "phrase-stars"],
+  ["learning.spirit-garden.v1", "spirit-garden"]
 ]);
 
 const nativeGetItem = Storage.prototype.getItem;
@@ -335,18 +337,50 @@ function mergeNotepad(localValue, remoteValue) {
   });
 }
 
+function mergeSpiritGarden(localValue, remoteValue) {
+  const empty = { schemaVersion: 2, timeDew: 0, examDew: 0, spentDew: 0, active: null, pets: [], updatedAt: null };
+  const local = safeParse(localValue || "null", empty);
+  const remote = safeParse(remoteValue || "null", empty);
+  const pets = new Map();
+  [...(Array.isArray(remote.pets) ? remote.pets : []), ...(Array.isArray(local.pets) ? local.pets : [])].forEach(pet => {
+    if (!pet?.id) return;
+    const existing = pets.get(String(pet.id));
+    if (!existing || String(pet.completedAt || "") >= String(existing.completedAt || "")) pets.set(String(pet.id), pet);
+  });
+  const completedIds = new Set(pets.keys());
+  const activeCandidates = [remote.active, local.active]
+    .filter(item => item?.id && !completedIds.has(String(item.id)))
+    .sort((a, b) => String(a.selectedAt || "").localeCompare(String(b.selectedAt || "")));
+  const mergedPets = [...pets.values()].sort((a, b) => String(a.completedAt || "").localeCompare(String(b.completedAt || "")));
+  const maturityCost = 36 * 37 / 2;
+  const normalizedSpent = value => Number(value?.schemaVersion || 1) < 2
+    ? (Array.isArray(value?.pets) ? value.pets.length : 0) * maturityCost
+    : Number(value?.spentDew || 0);
+  return JSON.stringify({
+    schemaVersion: 2,
+    timeDew: Math.max(Number(local.timeDew || 0), Number(remote.timeDew || 0)),
+    examDew: Math.max(Number(local.examDew || 0), Number(remote.examDew || 0)),
+    spentDew: Math.max(normalizedSpent(local), normalizedSpent(remote), mergedPets.length * maturityCost),
+    active: activeCandidates.at(-1) || null,
+    pets: mergedPets,
+    updatedAt: [local.updatedAt, remote.updatedAt].filter(Boolean).sort().pop() || null
+  });
+}
+
 function mergeForMigration(key, localValue, remoteValue) {
   if (key === "learning.progress.history.v1") return mergeHistory(localValue, remoteValue);
   if (key === "learning.progress.time.v1") return mergeTime(localValue, remoteValue);
   if (key === "learning.progress.images.v1") return mergeArraysById(localValue, remoteValue, 8);
   if (key === "studentNotepadData") return mergeNotepad(localValue, remoteValue);
   if (["vocabStarredIds", "vocab-bank.starred", "phraseStarredIds"].includes(key)) return mergeStringSets(localValue, remoteValue);
+  if (key === "learning.spirit-garden.v1") return mergeSpiritGarden(localValue, remoteValue);
   return remoteValue ?? localValue;
 }
 
 function mergeBeforeUpload(key, localValue, remoteValue) {
   if (key === "learning.progress.history.v1") return mergeHistory(localValue, remoteValue);
   if (key === "learning.progress.time.v1") return mergeTime(localValue, remoteValue);
+  if (key === "learning.spirit-garden.v1") return mergeSpiritGarden(localValue, remoteValue);
   return localValue;
 }
 
