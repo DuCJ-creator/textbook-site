@@ -2063,12 +2063,210 @@
     ]
   },
   "grammar": {
-    "points": [],
+    "points": [
+      {
+        "id": "b1l7-g1",
+        "title": "wh-…+ to do 簡化含有疑問詞的間接問句",
+        "examples": [
+          "Johnny had his bike fixed this morning.",
+          "Harry had the gift wrapped beautifully before he gave it to Irene.",
+          "Robert is telling the new student where to buy his uniform. = …where he can buy",
+          "Mary didn’t know whether to tell John the bad news=...whether she should tell"
+        ]
+      }
+    ],
     "sentence_structures": {
-      "items": []
+      "items": [
+        {
+          "id": "b1l7-s001",
+          "sentence": "Ada Ríos *grew up* in a slum near the Cateura landfill in Paraguay.",
+          "type": "simple",
+          "pattern": "S + Vi + Prepositional phrase"
+        },
+        {
+          "id": "b1l7-s002",
+          "sentence": "Every morning, garbage trucks *rolled* into the landfill and *unloaded* tons of trash.",
+          "type": "simple",
+          "pattern": "S + Vi / Vt (Compound verb)"
+        },
+        {
+          "id": "b1l7-s003",
+          "sentence": "People in the slum then *looked* through the trash for things they could recycle or sell.",
+          "type": "complex",
+          "pattern": "S + Vi + Prepositional phrase + Elliptical Relative clause"
+        },
+        {
+          "id": "b1l7-s004",
+          "sentence": "This *was* how they made a living, and Ada *believed* her future would be no different.",
+          "type": "compound-complex",
+          "pattern": "Compound sentence (with \"and\") + Noun clause"
+        },
+        {
+          "id": "b1l7-s005",
+          "sentence": "One day, Ada’s grandma *saw* a poster that said “Free music lessons from Mr. Chávez.”",
+          "type": "complex",
+          "pattern": "S + Vt + O + Relative clause (that...)"
+        },
+        {
+          "id": "b1l7-s006",
+          "sentence": "Ada’s grandma *knew* Ada loved music, so she *applied* for Ada.",
+          "type": "compound-complex",
+          "pattern": "Compound sentence (with \"so\") + Noun clause"
+        },
+        {
+          "id": "b1l7-s007",
+          "sentence": "Ada really *looked forward to* the lessons.",
+          "type": "simple",
+          "pattern": "S + Vt (Phrasal verb) + O"
+        },
+        {
+          "id": "b1l7-s008",
+          "sentence": "She *wanted* to learn how to play the violin and be carried away by the power of music.",
+          "type": "simple",
+          "pattern": "S + Vt + Infinitival O (Compound object)"
+        },
+        {
+          "id": "b1l7-s009",
+          "sentence": "Ada and some other children *took* Mr. Chávez’s lessons, but there *were* not enough instruments.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"but\")"
+        },
+        {
+          "id": "b1l7-s010",
+          "sentence": "Buying new ones *was* impossible, since a violin cost more than a local house!",
+          "type": "complex",
+          "pattern": "Gerund Phrase (S) + Vi + C + Adverbial clause (since...)"
+        },
+        {
+          "id": "b1l7-s011",
+          "sentence": "Fortunately, a garbage picker who was good at using tools *learned* about their trouble and *tried* to use what was at hand.",
+          "type": "complex",
+          "pattern": "S + Relative clause (who...) + Vt (Compound verb) + Noun clause"
+        },
+        {
+          "id": "b1l7-s012",
+          "sentence": "By putting together metal cans, forks, and other items from the landfill, the garbage picker somehow *managed* to make various instruments.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + Infinitival O"
+        },
+        {
+          "id": "b1l7-s013",
+          "sentence": "They *weren’t* very traditional and barely *cost* anything, but to these children they *were* invaluable.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"and\" & \"but\")"
+        },
+        {
+          "id": "b1l7-s014",
+          "sentence": "At first, each child *played* in his or her own way, and only screeches *came* out of the instruments.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"and\")"
+        },
+        {
+          "id": "b1l7-s015",
+          "sentence": "Some kids *quit* the music lessons after a few weeks, but with Mr. Chávez’s encouragement, Ada and the others *kept* practicing, sometimes for several hours a day.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"but\")"
+        },
+        {
+          "id": "b1l7-s016",
+          "sentence": "Slowly, their musical skills *improved*.",
+          "type": "simple",
+          "pattern": "S + Vi"
+        },
+        {
+          "id": "b1l7-s017",
+          "sentence": "They *began* to hit all the right notes and *played* together harmoniously.",
+          "type": "simple",
+          "pattern": "S + Vt / Vi (Compound verb)"
+        },
+        {
+          "id": "b1l7-s018",
+          "sentence": "Finally, they *formed* the “Recycled Orchestra.”",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b1l7-s019",
+          "sentence": "After the orchestra performed several local concerts, they *attracted* wider attention and even *received* invitations to perform abroad.",
+          "type": "complex",
+          "pattern": "Adverbial clause (After...) + S + Vt (Compound verb) + O"
+        },
+        {
+          "id": "b1l7-s020",
+          "sentence": "Ada and the other members *visited* different countries.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b1l7-s021",
+          "sentence": "The world *dazzled* them just as they dazzled the world.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Adverbial clause (just as...)"
+        },
+        {
+          "id": "b1l7-s022",
+          "sentence": "Four years later, a world-famous rock band *saw* the children’s potential and *invited* the orchestra to tour with them.",
+          "type": "simple",
+          "pattern": "S + Vt (Compound verb) + O"
+        },
+        {
+          "id": "b1l7-s023",
+          "sentence": "At their first concert with the band, Ada and her friends nervously *stepped* on stage in front of nearly 35,000 people.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vi + Prepositional phrase"
+        },
+        {
+          "id": "b1l7-s024",
+          "sentence": "They *saw* glaring lights and *heard* screams of excitement.",
+          "type": "simple",
+          "pattern": "S + Vt (Compound verb) + O"
+        },
+        {
+          "id": "b1l7-s025",
+          "sentence": "These children *felt* dizzy and *didn’t know* what to do.",
+          "type": "simple",
+          "pattern": "S + Vi / Vt (Compound verb) + C"
+        },
+        {
+          "id": "b1l7-s026",
+          "sentence": "However, as soon as the orchestra began to play, everyone *cheered*.",
+          "type": "complex",
+          "pattern": "Adverbial clause (as soon as...) + S + Vi"
+        },
+        {
+          "id": "b1l7-s027",
+          "sentence": "When Ada and her friends bowed to the crowd at the end, they *knew* that the performance was a triumph.",
+          "type": "complex",
+          "pattern": "Adverbial clause (When...) + S + Vt + Noun clause (that...)"
+        },
+        {
+          "id": "b1l7-s028",
+          "sentence": "Touring overseas *changed* their lives in other ways, too.",
+          "type": "simple",
+          "pattern": "Gerund Phrase (S) + Vt + O"
+        },
+        {
+          "id": "b1l7-s029",
+          "sentence": "With the money they earned, Ada and her friends *had* larger, safer houses *built* for their families.",
+          "type": "complex",
+          "pattern": "Prepositional phrase (with Elliptical Relative clause) + S + Vt + O + OC (p.p.)"
+        },
+        {
+          "id": "b1l7-s030",
+          "sentence": "More importantly, they *showed* the locals that children’s dreams didn’t have to end up in the trash.",
+          "type": "complex",
+          "pattern": "S + Vt + IO + Noun clause (that...)"
+        },
+        {
+          "id": "b1l7-s031",
+          "sentence": "Through determination and hard work, these children *were able to create* beauty out of garbage and *have* faith in their abilities to pursue greater things.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt (Compound verb) + O"
+        }
+      ]
     }
   },
   "text_genre": {
-    "raw_text": ""
+    "raw_text": "The text of “From Trash to Triumph” is a narrative text telling the story about how Ada and her friends changed their lives through their determination and hard work, rising from trash to triumph on stage. It follows the structure of a “story mountain” with the exposition (beginning), the rising action (build-up), the climax, the falling action, and the resolution (ending). Study the graphic organizer on page 158 and learn how to build a story mountain."
   }
 }
