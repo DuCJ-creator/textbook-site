@@ -227,7 +227,7 @@
     border: 1px solid rgba(111,218,188,.32); border-radius: 25px;
     background:
       linear-gradient(rgba(7,43,49,.02), rgba(5,34,43,.14)),
-      url("assets/spirit-garden/cultivation-altar-v1.webp") center 54% / cover no-repeat,
+      url("assets/spirit-garden/cultivation-altar-v1.webp?v=20260907a") center 54% / cover no-repeat,
       linear-gradient(155deg, #174e59, #8edbd0);
     box-shadow: inset 0 0 42px rgba(13,54,62,.26), 0 14px 30px rgba(19,65,51,.16);
   }
@@ -423,7 +423,7 @@
         <button class="portal-submit" id="portalSubmit" type="submit" disabled>Enter the Platform →</button>
         <p class="portal-error" id="portalError" role="alert"></p>
         <p class="portal-note">本裝置登入後會保持登入；換裝置時請使用同一組學校、班級、座號、姓名與鑰匙。</p>
-        <p class="portal-contact">Want an access? Please fill out the <a href="https://forms.gle/1pE5j3svdZWoANv8A" target="_blank" rel="noopener">contact form</a> to contact Tr. Shirley.</p>
+        <p class="portal-contact">Want an access? Please fill out the <a href="https://forms.gle/1pE5j3svdZWoANv8A" target="_blank" rel="noopener" data-no-learning-time>contact form</a> to contact Tr. Shirley.</p>
       </form>
     </div>
   </div>
@@ -513,8 +513,8 @@
     Prepared by Shirley Du@CHHS
   </footer>
 
-<script src="js/loader.js"></script>
-<script src="js/external-viewer.js"></script>
+<script src="js/loader.js?v=2"></script>
+<script src="js/external-viewer.js?v=2"></script>
 <script>
   const INDEX_URL = "data/index.json";
   const PORTAL_OPTIONS_URL = "data/portal-options.json";
@@ -875,6 +875,9 @@
   const firstLessonBtn = document.getElementById("firstLessonBtn");
 
   function closeFirstLesson({ scrollBack = true } = {}) {
+    window.dispatchEvent(new CustomEvent("learning-external-view-stop", {
+      detail: { token: "first-lesson" }
+    }));
     document.getElementById("firstLessonFrame").style.display = "none";
     firstLessonBtn.setAttribute("aria-expanded", "false");
     if (scrollBack) {
@@ -888,7 +891,7 @@
       <div class="flf-toolbar">
         <span class="flf-title">🎬 Shirley Du's Very First Lesson 高中第一課</span>
         <span class="flf-actions">
-          <a class="btn" href="${FIRST_LESSON_URL}" target="_blank" rel="noopener">在新分頁開啟 ↗</a>
+          <a class="btn" href="${FIRST_LESSON_URL}" target="_blank" rel="noopener" data-learning-title="Shirley Du's Very First Lesson 高中第一課">在新分頁開啟 ↗</a>
           <button type="button" class="flf-close" id="flfClose">收起 ✕</button>
         </span>
       </div>
@@ -914,7 +917,7 @@
       if (loadingEl) {
         loadingEl.innerHTML = `
           載入時間較長，若畫面持續空白，這個網站可能不允許嵌入顯示。
-          <br />可以直接<a href="${FIRST_LESSON_URL}" target="_blank" rel="noopener">在新分頁開啟</a>。
+          <br />可以直接<a href="${FIRST_LESSON_URL}" target="_blank" rel="noopener" data-learning-title="Shirley Du's Very First Lesson 高中第一課">在新分頁開啟</a>。
         `;
       }
     }, 4000);
@@ -935,6 +938,14 @@
 
     if (!firstLessonLoaded) buildFirstLesson(area);
 
+    window.dispatchEvent(new CustomEvent("learning-external-view-start", {
+      detail: {
+        url: FIRST_LESSON_URL,
+        title: "Shirley Du's Very First Lesson 高中第一課",
+        token: "first-lesson"
+      }
+    }));
+
     area.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
@@ -946,8 +957,8 @@
   });
 </script>
 <script type="module" src="js/firebase-sync.js"></script>
-<script src="js/progress-tracker.js"></script>
-<script src="js/spirit-garden.js?v=5"></script>
+<script src="js/progress-tracker.js?v=2"></script>
+<script src="js/spirit-garden.js?v=6"></script>
 <script>SpiritGarden.mount();</script>
 <script src="js/notepad.js"></script>
 <script>Notepad.mount();</script>
