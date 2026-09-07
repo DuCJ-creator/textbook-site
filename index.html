@@ -182,6 +182,77 @@
     .teacher-reminder-icon { width: 38px; height: 38px; }
   }
 
+  /* ===== Spirit Garden ===== */
+  .spirit-garden {
+    position: relative; overflow: hidden; margin: 0 0 38px; padding: clamp(20px, 4vw, 32px);
+    border: 1px solid #cfe0d5; border-radius: 26px;
+    background:
+      radial-gradient(circle at 10% 10%, rgba(255,236,166,.72), transparent 25%),
+      radial-gradient(circle at 88% 14%, rgba(168,224,204,.55), transparent 28%),
+      linear-gradient(145deg, #fffdf7 0%, #f2f8ee 62%, #e8f3ec 100%);
+    box-shadow: var(--shadow);
+  }
+  .spirit-garden::after {
+    content: ""; position: absolute; inset: auto -8% -50px -8%; height: 105px; opacity: .55;
+    background: radial-gradient(ellipse at center, #8eb986 0 15%, transparent 16%) 0 0/54px 38px;
+    pointer-events: none;
+  }
+  .spirit-garden[hidden] { display: none; }
+  .spirit-garden-head { position: relative; z-index: 1; display: flex; justify-content: space-between; gap: 18px; align-items: flex-start; flex-wrap: wrap; }
+  .spirit-garden-kicker { color: var(--accent); font-size: .65rem; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
+  .spirit-garden h2 { margin: 4px 0 5px; color: var(--accent-dark); font: 700 clamp(1.35rem, 3vw, 1.85rem)/1.2 var(--serif); }
+  .spirit-garden-intro { max-width: 610px; margin: 0; color: var(--ink-soft); font-size: .78rem; line-height: 1.65; }
+  .spirit-dew-bank { display: flex; align-items: center; gap: 9px; min-width: 150px; padding: 11px 15px; border: 1px solid rgba(39,103,73,.16); border-radius: 16px; background: rgba(255,255,255,.78); }
+  .spirit-dew-icon { font-size: 1.45rem; filter: drop-shadow(0 3px 5px rgba(50,130,160,.2)); }
+  .spirit-dew-bank b { display: block; color: var(--accent-dark); font: 700 1.25rem/1 var(--serif); }
+  .spirit-dew-bank span:last-child { display: block; margin-top: 3px; color: var(--ink-soft); font-size: .6rem; }
+  .spirit-garden-body { position: relative; z-index: 1; margin-top: 22px; }
+  .spirit-loading { padding: 26px; border: 1px dashed #b7cfbd; border-radius: 18px; color: var(--ink-soft); text-align: center; font-size: .78rem; background: rgba(255,255,255,.6); }
+  .spirit-choose-title { margin: 0 0 12px; color: var(--ink); font-size: .82rem; font-weight: 850; }
+  .spirit-species-grid { display: grid; grid-template-columns: repeat(4, minmax(125px, 1fr)); gap: 10px; }
+  .spirit-species { 
+    display: grid; grid-template-columns: 62px 1fr; gap: 9px; align-items: center; min-height: 100px; padding: 9px;
+    border: 1px solid rgba(39,103,73,.18); border-radius: 17px; background: rgba(255,255,255,.82); color: var(--ink);
+    text-align: left; cursor: pointer; transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease;
+  }
+  .spirit-species:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 9px 20px rgba(28,72,48,.12); }
+  .spirit-sprite { --x: 0%; --y: 0%; background-image: url("assets/spirit-garden/spirit-sprites-v1.png"); background-size: 400% 200%; background-position: var(--x) var(--y); background-repeat: no-repeat; }
+  .spirit-species-art { width: 60px; height: 80px; border-radius: 44%; box-shadow: inset 0 0 0 1px rgba(255,255,255,.7); }
+  .spirit-species b { display: block; color: var(--accent-dark); font-size: .78rem; }
+  .spirit-species small { display: block; margin-top: 2px; color: var(--ink-soft); font-size: .58rem; }
+  .spirit-active { display: grid; grid-template-columns: minmax(230px,.8fr) minmax(280px,1.2fr); gap: 22px; align-items: center; }
+  .spirit-habitat { position: relative; min-height: 315px; display: grid; place-items: center; overflow: hidden; border: 1px solid rgba(39,103,73,.15); border-radius: 22px; background: linear-gradient(#dff2ed 0 57%, #cbe0ad 58%, #a9ca88 100%); }
+  .spirit-habitat::before { content: ""; position: absolute; width: 68px; height: 68px; top: 24px; right: 28px; border-radius: 50%; background: rgba(255,241,171,.86); box-shadow: 0 0 28px rgba(255,222,94,.52); }
+  .spirit-main-art { position: relative; z-index: 1; width: 210px; height: 280px; border-radius: 44%; filter: saturate(var(--saturation,1)); transform: scale(var(--growth,.7)); transition: transform .7s cubic-bezier(.2,.8,.2,1), filter .7s ease; animation: spiritBreathe 3.4s ease-in-out infinite; }
+  @keyframes spiritBreathe { 0%,100%{translate:0 2px} 50%{translate:0 -5px} }
+  .spirit-stage-card { padding: 4px 0; }
+  .spirit-name-line { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+  .spirit-name-line h3 { margin: 0; color: var(--accent-dark); font: 700 1.35rem/1.25 var(--serif); }
+  .spirit-realm { padding: 4px 9px; border-radius: 999px; background: var(--gold-soft); color: #7b5b12; font-size: .63rem; font-weight: 850; }
+  .spirit-next { margin: 8px 0 15px; color: var(--ink-soft); font-size: .72rem; }
+  .spirit-progress-track { height: 14px; overflow: hidden; border-radius: 999px; background: rgba(39,103,73,.12); box-shadow: inset 0 1px 2px rgba(0,0,0,.08); }
+  .spirit-progress-fill { height: 100%; width: 0; border-radius: inherit; background: linear-gradient(90deg, #60bfa0, #2a8e69 58%, #e9b949); transition: width .65s ease; }
+  .spirit-progress-label { display: flex; justify-content: space-between; gap: 12px; margin-top: 6px; color: var(--ink-soft); font-size: .63rem; }
+  .spirit-sources { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 17px; }
+  .spirit-source { padding: 11px 12px; border: 1px solid rgba(39,103,73,.13); border-radius: 13px; background: rgba(255,255,255,.72); }
+  .spirit-source b { display: block; color: var(--accent-dark); font: 700 1.05rem var(--serif); }
+  .spirit-source span { color: var(--ink-soft); font-size: .6rem; }
+  .spirit-rule-note { margin: 12px 0 0; color: var(--ink-soft); font-size: .64rem; line-height: 1.55; }
+  .spirit-collection { margin-top: 20px; padding-top: 17px; border-top: 1px solid rgba(39,103,73,.14); }
+  .spirit-collection-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
+  .spirit-collection-head h3 { margin: 0; color: var(--accent-dark); font: 700 .95rem var(--serif); }
+  .spirit-collection-head span { color: var(--ink-soft); font-size: .62rem; }
+  .spirit-pet-list { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 8px; }
+  .spirit-pet-token { flex: 0 0 auto; display: grid; justify-items: center; gap: 3px; width: 70px; color: var(--ink-soft); font-size: .56rem; text-align: center; }
+  .spirit-pet-token .spirit-sprite { width: 54px; height: 72px; border-radius: 44%; border: 2px solid rgba(233,185,73,.55); }
+  .spirit-empty-collection { color: var(--ink-soft); font-size: .67rem; }
+  .spirit-roam-layer { position: fixed; inset: 0; z-index: 80; pointer-events: none; overflow: hidden; }
+  .spirit-roamer { --size: 66px; position: absolute; width: var(--size); height: calc(var(--size) * 1.333); left: -90px; top: var(--top); border-radius: 44%; opacity: .94; filter: drop-shadow(0 7px 8px rgba(22,55,38,.18)); animation: spiritRoam var(--duration) linear infinite; animation-delay: var(--delay); }
+  @keyframes spiritRoam { 0%{left:-90px;translate:0 0;rotate:-4deg} 25%{translate:0 -18px;rotate:5deg} 50%{translate:0 8px;rotate:-3deg} 75%{translate:0 -12px;rotate:6deg} 100%{left:calc(100vw + 90px);translate:0 0;rotate:-4deg} }
+  @media (prefers-reduced-motion: reduce) { .spirit-main-art,.spirit-roamer{animation:none}.spirit-roamer{display:none} }
+  @media (max-width: 780px) { .spirit-species-grid{grid-template-columns:repeat(2,minmax(130px,1fr))}.spirit-active{grid-template-columns:1fr}.spirit-habitat{min-height:290px}.spirit-main-art{width:190px;height:253px} }
+  @media (max-width: 430px) { .spirit-species-grid{grid-template-columns:1fr}.spirit-sources{grid-template-columns:1fr}.spirit-dew-bank{width:100%} }
+
   /* ===== Section titles ===== */
   .section-title {
     font-family: var(--serif); font-size: 1.15rem; font-weight: 700;
@@ -303,7 +374,7 @@
       <p class="portal-welcome">Welcome to <strong>Shirley Du老師的高中英文充電站🔋 to Recharge⚡️</strong>，歡迎隨時來給你的英文充個電。</p>
       <p class="portal-instruction" id="portalInstruction">Enter Your School, Class, Seat No., Name and Password<br><span style="font-size:.78rem;color:var(--ink-soft);font-weight:600;">請輸入您的學校、班級、座號、姓名及鑰匙</span></p>
       <form class="portal-form" id="portalForm">
-        <div class="portal-role-switch" aria-label="選擇入口身份"><button class="portal-role-btn active" id="studentRoleBtn" type="button" data-role="student" aria-pressed="true">🎒 Student 學生</button><button class="portal-role-btn" id="teacherRoleBtn" type="button" data-role="teacher" aria-pressed="false">🍎 Teacher 老師</button></div>
+        <div class="portal-role-switch" aria-label="選擇入口身份"><button class="portal-role-btn active" id="studentRoleBtn" type="button" data-role="student" aria-pressed="true">🎒 Student 學生</button><button class="portal-role-btn" id="teacherRoleBtn" type="button" data-role="teacher" aria-pressed="false">🍎 Teacher 杜老師</button></div>
         <div id="portalStudentFields">
           <div class="portal-field"><label for="portalStudentSchool">School 學校</label><select id="portalStudentSchool" required disabled><option value="">學校資料讀取中…</option></select></div>
           <div class="portal-field" style="margin-top:13px;"><label for="portalClass">Class 班級</label><select id="portalClass" required disabled><option value="">請先選擇學校…</option></select></div>
@@ -370,6 +441,23 @@
         <div class="teacher-reminder-updated" id="teacherReminderUpdated"></div>
       </div>
     </section>
+
+    <section class="spirit-garden" id="spiritGarden" aria-labelledby="spiritGardenTitle">
+      <div class="spirit-garden-head">
+        <div>
+          <div class="spirit-garden-kicker">Your Learning Companion · 靈植養成</div>
+          <h2 id="spiritGardenTitle">露華靈植園</h2>
+          <p class="spirit-garden-intro">每累積 5 分鐘有效學習，或完成一次正確率 88% 以上的練習，就會凝成一顆露珠。時間與成績都會完整保留，不折抵、不扣除。</p>
+        </div>
+        <div class="spirit-dew-bank" aria-label="目前可用露珠"><span class="spirit-dew-icon">💧</span><span><b id="spiritAvailableDew">0</b><span>AVAILABLE DEW · 可用露珠</span></span></div>
+      </div>
+      <div class="spirit-garden-body" id="spiritGardenBody"><div class="spirit-loading">正在喚醒你的靈植園…</div></div>
+      <div class="spirit-collection" id="spiritCollection" hidden>
+        <div class="spirit-collection-head"><h3>My Spirit Companions · 我的靈寵</h3><span id="spiritCollectionCount">0 隻</span></div>
+        <div class="spirit-pet-list" id="spiritPetList"></div>
+      </div>
+    </section>
+    <div class="spirit-roam-layer" id="spiritRoamLayer" aria-hidden="true"></div>
 
     <div class="section-title"><span>選擇冊次</span><span class="rule"></span></div>
     <div class="book-list" id="bookList">
@@ -632,8 +720,8 @@
       { title: "Grammar Basics 文法基礎", url: "https://ducj-creator.github.io/gbasics.html" },
       { title: "Vocabulary Basics 單字基礎", url: "https://ducj-creator.github.io/shirleyvocab.html#home" },
       { title: "Hexagon Warrior 英文六邊形戰士", url: "https://ducj-creator.github.io/hexagonw.html" },
-      { title: "To 1Campus (with your 1Campus account)", url: "https://1campus.net/intl?lang=zh-TW" },
-      { title: "To Tr. Shirley Du (with your email account)", url: "https://shirley-du-app.vercel.app/" }
+      { title: "To 1Campus", url: "https://1campus.net/intl?lang=zh-TW" },
+      { title: "To Tr. Shirley Du", url: "https://shirley-du-app.vercel.app/" }
     ]
   });
 
@@ -825,6 +913,8 @@
 </script>
 <script type="module" src="js/firebase-sync.js"></script>
 <script src="js/progress-tracker.js"></script>
+<script src="js/spirit-garden.js"></script>
+<script>SpiritGarden.mount();</script>
 <script src="js/notepad.js"></script>
 <script>Notepad.mount();</script>
 </body>
