@@ -17,14 +17,14 @@ const SpiritGarden = (function () {
   const STAGE_COSTS = STAGES.map((_, index) => index + 1);
   const MATURITY_COST = STAGE_COSTS.reduce((sum, value) => sum + value, 0);
   const SPECIES = [
-    { id: "jade-sprout", name: "翠芽", english: "Jade Sprout", col: 0, row: 0 },
-    { id: "sunpetal", name: "曦葵", english: "Sunpetal", col: 1, row: 0 },
-    { id: "azure-lotus", name: "澄蓮", english: "Azure Lotus", col: 2, row: 0 },
-    { id: "coral-berry", name: "珊莓", english: "Coral Berry", col: 3, row: 0 },
-    { id: "violet-ferncap", name: "紫蕈", english: "Violet Ferncap", col: 0, row: 1 },
-    { id: "mint-clover", name: "幸草", english: "Mint Clover", col: 1, row: 1 },
-    { id: "snow-cotton", name: "雪絮", english: "Snow Cotton", col: 2, row: 1 },
-    { id: "ember-maple", name: "燼楓", english: "Ember Maple", col: 3, row: 1 }
+    { id: "jade-sprout", name: "翠芽", english: "Jade Sprout", asset: "assets/spirit-garden/jade-sprout-evolution-v2-960.png" },
+    { id: "sunpetal", name: "曦葵", english: "Sunpetal", asset: "assets/spirit-garden/sunpetal-evolution-v2-960.png" },
+    { id: "azure-lotus", name: "澄蓮", english: "Azure Lotus", asset: "assets/spirit-garden/azure-lotus-evolution-v2-960.png" },
+    { id: "coral-berry", name: "珊莓", english: "Coral Berry", asset: "assets/spirit-garden/coral-berry-evolution-v2-960.png" },
+    { id: "violet-ferncap", name: "紫蕈", english: "Violet Ferncap", asset: "assets/spirit-garden/violet-ferncap-evolution-v2-960.png" },
+    { id: "mint-clover", name: "幸草", english: "Mint Clover", asset: "assets/spirit-garden/mint-clover-evolution-v2-960.png" },
+    { id: "snow-cotton", name: "雪絮", english: "Snow Cotton", asset: "assets/spirit-garden/snow-cotton-evolution-v2-960.png" },
+    { id: "ember-maple", name: "燼楓", english: "Ember Maple", asset: "assets/spirit-garden/ember-maple-evolution-v2-960.png" }
   ];
 
   let mounted = false;
@@ -93,7 +93,17 @@ const SpiritGarden = (function () {
   function totalDew(state) { return Number(state.timeDew || 0) + Number(state.examDew || 0); }
   function availableDew(state) { return Math.max(0, totalDew(state) - Number(state.spentDew || 0)); }
   function speciesById(id) { return SPECIES.find(item => item.id === id) || SPECIES[0]; }
-  function spriteStyle(species) { return `--x:${(species.col * 100 / 3).toFixed(3)}%;--y:${species.row * 100}%`; }
+  function spriteStyle(species, formIndex = 9) {
+    const safeForm = Math.max(0, Math.min(9, Number(formIndex) || 0));
+    const col = safeForm % 5;
+    const row = Math.floor(safeForm / 5);
+    return `--spirit-sheet:url("${species.asset}");--x:${col * 25}%;--y:${row * 100}%`;
+  }
+
+  function realmFormIndex(completedStages) {
+    if (!completedStages) return 0;
+    return Math.min(REALMS.length - 1, Math.floor((completedStages - 1) / LAYERS.length));
+  }
 
   function stageAt(progressDew) {
     let spent = 0;
@@ -163,7 +173,7 @@ const SpiritGarden = (function () {
         <div class="spirit-species-grid">
           ${SPECIES.map(species => `
             <button class="spirit-species" type="button" data-spirit-species="${species.id}">
-              <span class="spirit-species-art spirit-sprite" style="${spriteStyle(species)}"></span>
+              <span class="spirit-species-art spirit-sprite" style="${spriteStyle(species, 9)}"></span>
               <span><b>${species.name}</b><small>${species.english}</small></span>
             </button>`).join("")}
         </div>
@@ -175,15 +185,26 @@ const SpiritGarden = (function () {
     const species = speciesById(state.active.speciesId);
     const progressDew = Math.min(MATURITY_COST, availableDew(state));
     const stage = stageAt(progressDew);
-    const growth = (.56 + .44 * progressDew / MATURITY_COST).toFixed(3);
-    const saturation = (.7 + .3 * progressDew / MATURITY_COST).toFixed(3);
+    const formIndex = realmFormIndex(stage.completed);
+    const layerIndex = stage.completed ? (stage.completed - 1) % LAYERS.length : 0;
+    const growth = (.87 + layerIndex * .035 + stage.percent * .00025).toFixed(3);
+    const saturation = (.88 + formIndex * .025).toFixed(3);
+    const realmGlow = 5 + formIndex * 2;
+    const auraOpacity = (.42 + formIndex * .045).toFixed(2);
+    const runeSpeed = (15 - formIndex * .7).toFixed(1);
     const stageLabel = stage.current ? stage.current.label : "靈芽 · 初醒";
     const nextText = stage.next ? `下一層：${stage.next.label}，還需 ${stage.nextCost - stage.within} 顆露珠` : "即將渡劫成為靈寵";
     return `
       <div class="spirit-active">
-        <div class="spirit-habitat"><div class="spirit-main-art spirit-sprite" style="${spriteStyle(species)};--growth:${growth};--saturation:${saturation}"></div></div>
+        <div class="spirit-habitat" style="--realm-power:${formIndex};--aura-opacity:${auraOpacity};--rune-speed:${runeSpeed}s">
+          <div class="spirit-mist spirit-mist-back" aria-hidden="true"></div>
+          <div class="spirit-qi-particles" aria-hidden="true">${Array.from({ length: 12 }, (_, index) => `<i style="--x:${index * 37 % 100}%;--size:${3 + index % 3 * 2}px;--duration:${5.2 + index % 4 * .8}s;--delay:${(index * -.47).toFixed(2)}s;--drift:${index % 2 ? 9 : -9}px"></i>`).join("")}</div>
+          <div class="spirit-main-art spirit-sprite" style="${spriteStyle(species, formIndex)};--growth:${growth};--saturation:${saturation};--realm-glow:${realmGlow}px"></div>
+          <div class="spirit-altar" aria-hidden="true"><span class="spirit-altar-halo"></span><span class="spirit-altar-disc"></span><span class="spirit-altar-base"></span></div>
+          <div class="spirit-mist spirit-mist-front" aria-hidden="true"></div>
+        </div>
         <div class="spirit-stage-card">
-          <div class="spirit-name-line"><h3>${species.name} <small>${species.english}</small></h3><span class="spirit-realm">${stageLabel}</span></div>
+          <div class="spirit-name-line"><h3>${species.name} <small>${species.english}</small></h3><span class="spirit-realm">${stageLabel}</span><span class="spirit-form-note">第 ${formIndex + 1}／9 形態</span></div>
           <p class="spirit-next">${nextText}</p>
           <div class="spirit-progress-track" role="progressbar" aria-label="目前層級養成進度" aria-valuemin="0" aria-valuemax="${stage.nextCost || 1}" aria-valuenow="${stage.within}"><div class="spirit-progress-fill" style="width:${stage.percent}%"></div></div>
           <div class="spirit-progress-label"><span>本層 ${stage.within}／${stage.nextCost || stage.within} 💧</span><span>總養成 ${progressDew}／${MATURITY_COST} 💧</span></div>
@@ -204,7 +225,7 @@ const SpiritGarden = (function () {
     document.getElementById("spiritCollectionCount").textContent = `${pets.length} 隻`;
     list.innerHTML = pets.length ? pets.map(pet => {
       const species = speciesById(pet.speciesId);
-      return `<div class="spirit-pet-token" title="${species.name} · ${new Date(pet.completedAt).toLocaleDateString("zh-TW")}"><span class="spirit-sprite" style="${spriteStyle(species)}"></span><span>${species.name}</span></div>`;
+      return `<div class="spirit-pet-token" title="${species.name} · ${new Date(pet.completedAt).toLocaleDateString("zh-TW")}"><span class="spirit-sprite" style="${spriteStyle(species, 9)}"></span><span>${species.name}</span></div>`;
     }).join("") : '<span class="spirit-empty-collection">完成渡劫後，靈寵會住進這裡，並在首頁自在游動。</span>';
   }
 
@@ -216,7 +237,7 @@ const SpiritGarden = (function () {
       const duration = 24 + (index * 7 % 19);
       const delay = -(index * 8 % duration);
       const size = 54 + (index * 9 % 25);
-      return `<span class="spirit-roamer spirit-sprite" style="${spriteStyle(species)};--top:${top}vh;--duration:${duration}s;--delay:${delay}s;--size:${size}px"></span>`;
+      return `<span class="spirit-roamer spirit-sprite" style="${spriteStyle(species, 9)};--top:${top}vh;--duration:${duration}s;--delay:${delay}s;--size:${size}px"></span>`;
     }).join("");
   }
 
