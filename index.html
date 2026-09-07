@@ -216,7 +216,7 @@
     text-align: left; cursor: pointer; transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease;
   }
   .spirit-species:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 9px 20px rgba(28,72,48,.12); }
-  .spirit-sprite { --x: 0%; --y: 0%; --spirit-sheet: url("assets/spirit-garden/jade-sprout-evolution-v2-960.png"); background-image: var(--spirit-sheet); background-size: 500% 200%; background-position: var(--x) var(--y); background-repeat: no-repeat; }
+  .spirit-sprite { display: block; object-fit: contain; object-position: center; }
   .spirit-species-art { width: 60px; height: 100px; border-radius: 18px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.7); }
   .spirit-species b { display: block; color: var(--accent-dark); font-size: .78rem; }
   .spirit-species small { display: block; margin-top: 2px; color: var(--ink-soft); font-size: .58rem; }
@@ -226,30 +226,26 @@
     position: relative; min-height: 380px; display: grid; place-items: center; overflow: hidden; isolation: isolate;
     border: 1px solid rgba(111,218,188,.32); border-radius: 25px;
     background:
-      radial-gradient(circle at 78% 19%, rgba(240,255,211,.2) 0 6%, transparent 15%),
-      radial-gradient(ellipse at 50% 72%, rgba(67,255,206,.13), transparent 44%),
-      linear-gradient(155deg, #071d2b 0%, #123c48 48%, #0d2f39 72%, #061b29 100%);
-    box-shadow: inset 0 0 55px rgba(4,14,27,.48), 0 14px 30px rgba(19,65,51,.13);
+      linear-gradient(rgba(7,43,49,.02), rgba(5,34,43,.14)),
+      url("assets/spirit-garden/cultivation-altar-v1.webp") center 54% / cover no-repeat,
+      linear-gradient(155deg, #174e59, #8edbd0);
+    box-shadow: inset 0 0 42px rgba(13,54,62,.26), 0 14px 30px rgba(19,65,51,.16);
   }
   .spirit-habitat::before {
-    content: ""; position: absolute; width: 74px; height: 74px; top: 25px; right: 31px; z-index: 0;
-    border: 1px solid rgba(228,255,220,.72); border-radius: 50%;
-    background: radial-gradient(circle at 38% 35%, #f7ffe3, #bcebd2 58%, rgba(101,206,188,.58) 72%, transparent 74%);
-    box-shadow: 0 0 20px rgba(150,255,215,.44), 0 0 58px rgba(92,235,204,.25);
-    animation: spiritMoonPulse 5s ease-in-out infinite;
+    content: ""; position: absolute; z-index: 1; left: 50%; bottom: 65px; width: 210px; height: 270px; translate: -50% 0;
+    background: radial-gradient(ellipse at 50% 100%, rgba(224,255,228,.58), rgba(126,255,217,.2) 34%, transparent 68%);
+    filter: blur(7px); opacity: var(--aura-opacity); animation: spiritAuraBeam 4.2s ease-in-out infinite;
   }
   .spirit-habitat::after {
-    content: ""; position: absolute; z-index: 0; inset: auto -8% 74px; height: 135px; opacity: .62;
-    background: linear-gradient(145deg, transparent 0 18%, #174d4e 19% 31%, transparent 32% 36%, #0d3c45 37% 55%, transparent 56% 59%, #174d4e 60% 75%, transparent 76%);
-    clip-path: polygon(0 100%,0 67%,13% 36%,21% 63%,35% 18%,48% 68%,61% 27%,70% 58%,82% 22%,100% 67%,100% 100%);
-    filter: blur(1px);
+    content: ""; position: absolute; z-index: 1; inset: 0; pointer-events: none;
+    background: radial-gradient(ellipse at center, transparent 45%, rgba(4,37,45,.23) 100%);
   }
-  .spirit-main-art { position: relative; z-index: 5; width: 192px; height: 320px; margin-top: -42px; border-radius: 28px; filter: saturate(var(--saturation,1)) drop-shadow(0 0 var(--realm-glow,5px) rgba(171,255,218,.66)); transform: scale(var(--growth,.87)); transition: transform .7s cubic-bezier(.2,.8,.2,1), filter .7s ease; animation: spiritReveal .7s cubic-bezier(.2,.8,.2,1) both, spiritBreathe 3.4s .7s ease-in-out infinite; }
-  .spirit-altar { position: absolute; z-index: 3; left: 50%; bottom: 7px; width: min(82%,330px); height: 124px; translate: -50% 0; pointer-events: none; }
-  .spirit-altar-halo { position: absolute; left: 50%; bottom: 40px; width: 92%; aspect-ratio: 2.8; translate: -50% 0; border-radius: 50%; background: radial-gradient(ellipse, rgba(202,255,223,.54), rgba(79,255,207,.2) 42%, transparent 70%); filter: blur(5px); opacity: var(--aura-opacity); animation: spiritHalo 3.5s ease-in-out infinite; }
-  .spirit-altar-disc { position: absolute; z-index: 2; left: 50%; bottom: 42px; width: 78%; aspect-ratio: 2.75; translate: -50% 0; border: 2px solid rgba(180,255,224,.78); border-radius: 50%; background: repeating-conic-gradient(from 8deg, rgba(191,255,225,.92) 0 3deg, transparent 3deg 29deg), radial-gradient(ellipse, rgba(111,225,187,.42) 0 23%, transparent 24% 38%, rgba(139,255,217,.42) 39% 43%, rgba(20,80,75,.72) 44% 68%, rgba(118,238,195,.76) 69% 72%, #194b4b 73%); box-shadow: inset 0 0 16px rgba(191,255,227,.48), 0 0 18px rgba(81,255,203,.42); animation: spiritRuneSpin var(--rune-speed,15s) linear infinite; }
-  .spirit-altar-base { position: absolute; z-index: 1; left: 50%; bottom: 5px; width: 64%; height: 62px; translate: -50% 0; clip-path: polygon(8% 0,92% 0,81% 100%,19% 100%); border-radius: 0 0 32px 32px; background: linear-gradient(90deg, #183c3e, #40746b 22%, #6e9a80 48%, #39685f 75%, #17383c); box-shadow: inset 0 9px 10px rgba(204,255,222,.15), 0 14px 18px rgba(0,0,0,.32); }
-  .spirit-mist { position: absolute; left: -18%; width: 136%; height: 76px; z-index: 2; opacity: .48; filter: blur(7px); background: radial-gradient(ellipse at 12% 58%,rgba(213,255,240,.7),transparent 23%),radial-gradient(ellipse at 42% 36%,rgba(169,246,224,.58),transparent 27%),radial-gradient(ellipse at 72% 63%,rgba(213,255,240,.64),transparent 25%),radial-gradient(ellipse at 94% 34%,rgba(142,230,218,.5),transparent 20%); }
+  .spirit-main-art { position: relative; z-index: 5; width: 192px; height: 320px; margin-top: -72px; border-radius: 28px; filter: saturate(var(--saturation,1)) drop-shadow(0 0 var(--realm-glow,5px) rgba(219,255,226,.88)); transform: scale(var(--growth,.87)); transition: transform .7s cubic-bezier(.2,.8,.2,1), filter .7s ease; animation: spiritReveal .7s cubic-bezier(.2,.8,.2,1) both, spiritBreathe 3.4s .7s ease-in-out infinite; }
+  .spirit-altar { position: absolute; z-index: 3; left: 50%; bottom: 24px; width: min(72%,310px); height: 104px; translate: -50% 0; pointer-events: none; }
+  .spirit-altar-halo { position: absolute; left: 50%; bottom: 15px; width: 98%; aspect-ratio: 2.8; translate: -50% 0; border-radius: 50%; background: radial-gradient(ellipse, rgba(239,255,224,.72), rgba(86,255,205,.28) 42%, transparent 72%); filter: blur(7px); opacity: var(--aura-opacity); animation: spiritHalo 3.5s ease-in-out infinite; }
+  .spirit-altar-disc { position: absolute; z-index: 2; left: 50%; bottom: 28px; width: 74%; aspect-ratio: 3.1; translate: -50% 0; border: 1px solid rgba(225,255,217,.9); border-radius: 50%; background: radial-gradient(ellipse, rgba(229,255,213,.34), rgba(83,240,198,.12) 47%, transparent 69%); box-shadow: inset 0 0 13px rgba(230,255,219,.65), 0 0 17px rgba(101,255,208,.7); animation: spiritRuneGlow 3.2s ease-in-out infinite; }
+  .spirit-altar-base { display: none; }
+  .spirit-mist { position: absolute; left: -18%; width: 136%; height: 92px; z-index: 2; opacity: .62; filter: blur(8px); background: radial-gradient(ellipse at 12% 58%,rgba(236,255,247,.88),transparent 23%),radial-gradient(ellipse at 42% 36%,rgba(192,255,233,.76),transparent 27%),radial-gradient(ellipse at 72% 63%,rgba(229,255,247,.82),transparent 25%),radial-gradient(ellipse at 94% 34%,rgba(166,245,230,.68),transparent 20%); }
   .spirit-mist-back { bottom: 88px; animation: spiritMist 13s ease-in-out infinite alternate; }
   .spirit-mist-front { z-index: 6; bottom: 13px; opacity: .34; animation: spiritMist 9s -3s ease-in-out infinite alternate-reverse; }
   .spirit-qi-particles { position: absolute; z-index: 4; inset: 28px 11% 70px; pointer-events: none; }
@@ -257,8 +253,9 @@
   @keyframes spiritReveal { 0%{opacity:0;scale:.82;filter:brightness(1.7) saturate(.6)} 100%{opacity:1;scale:1} }
   @keyframes spiritBreathe { 0%,100%{translate:0 2px} 50%{translate:0 -5px} }
   @keyframes spiritMoonPulse { 0%,100%{scale:1;opacity:.78} 50%{scale:1.06;opacity:1} }
+  @keyframes spiritAuraBeam { 0%,100%{scale:.88 1;opacity:calc(var(--aura-opacity) - .12)} 50%{scale:1.06 1.04;opacity:var(--aura-opacity)} }
   @keyframes spiritHalo { 0%,100%{scale:.92;opacity:calc(var(--aura-opacity) - .12)} 50%{scale:1.08;opacity:var(--aura-opacity)} }
-  @keyframes spiritRuneSpin { to{rotate:360deg} }
+  @keyframes spiritRuneGlow { 0%,100%{opacity:.72;filter:brightness(.9)} 50%{opacity:1;filter:brightness(1.35) drop-shadow(0 0 8px rgba(133,255,216,.72))} }
   @keyframes spiritMist { from{translate:-4% 0;scale:1} to{translate:4% -7px;scale:1.08} }
   @keyframes spiritQiRise { 0%{translate:0 0;opacity:0;scale:.55} 18%{opacity:var(--aura-opacity)} 72%{opacity:.62} 100%{translate:var(--drift) -245px;opacity:0;scale:1.3} }
   .spirit-stage-card { padding: 4px 0; }
@@ -286,7 +283,7 @@
   .spirit-roam-layer { position: fixed; inset: 0; z-index: 80; pointer-events: none; overflow: hidden; }
   .spirit-roamer { --size: 66px; position: absolute; width: var(--size); height: calc(var(--size) * 1.667); left: -90px; top: var(--top); border-radius: 18px; opacity: .94; filter: drop-shadow(0 7px 8px rgba(22,55,38,.18)); animation: spiritRoam var(--duration) linear infinite; animation-delay: var(--delay); }
   @keyframes spiritRoam { 0%{left:-90px;translate:0 0;rotate:-4deg} 25%{translate:0 -18px;rotate:5deg} 50%{translate:0 8px;rotate:-3deg} 75%{translate:0 -12px;rotate:6deg} 100%{left:calc(100vw + 90px);translate:0 0;rotate:-4deg} }
-  @media (prefers-reduced-motion: reduce) { .spirit-main-art,.spirit-roamer,.spirit-habitat::before,.spirit-altar-halo,.spirit-altar-disc,.spirit-mist,.spirit-qi-particles i{animation:none}.spirit-roamer{display:none}.spirit-qi-particles i{opacity:.4} }
+  @media (prefers-reduced-motion: reduce) { .spirit-main-art,.spirit-roamer,.spirit-habitat::before,.spirit-altar-halo,.spirit-altar-disc,.spirit-mist,.spirit-qi-particles i{animation:none}.spirit-altar-disc{opacity:1}.spirit-roamer{display:none}.spirit-qi-particles i{opacity:.4} }
   @media (max-width: 780px) { .spirit-species-grid{grid-template-columns:repeat(2,minmax(130px,1fr))}.spirit-active{grid-template-columns:1fr}.spirit-habitat{min-height:355px}.spirit-main-art{width:180px;height:300px}.spirit-altar{width:min(78%,310px)} }
   @media (max-width: 430px) { .spirit-species-grid{grid-template-columns:1fr}.spirit-sources{grid-template-columns:1fr}.spirit-dew-bank{width:100%} }
 
@@ -950,7 +947,7 @@
 </script>
 <script type="module" src="js/firebase-sync.js"></script>
 <script src="js/progress-tracker.js"></script>
-<script src="js/spirit-garden.js?v=4"></script>
+<script src="js/spirit-garden.js?v=5"></script>
 <script>SpiritGarden.mount();</script>
 <script src="js/notepad.js"></script>
 <script>Notepad.mount();</script>
