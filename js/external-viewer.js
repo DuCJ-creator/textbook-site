@@ -24,6 +24,25 @@
 =========================================================== */
 
 const ExternalViewer = (function () {
+  function startLearningTime(container, card) {
+    container.dataset.externalLearningActive = "true";
+    window.dispatchEvent(new CustomEvent("learning-external-view-start", {
+      detail: {
+        url: card.url,
+        title: card.title,
+        token: container.id || "external-viewer"
+      }
+    }));
+  }
+
+  function stopLearningTime(container) {
+    if (container.dataset.externalLearningActive !== "true") return;
+    window.dispatchEvent(new CustomEvent("learning-external-view-stop", {
+      detail: { token: container.id || "external-viewer" }
+    }));
+    delete container.dataset.externalLearningActive;
+  }
+
   function render(options) {
     const container = document.getElementById(options.containerId);
     if (!container) {
@@ -35,6 +54,7 @@ const ExternalViewer = (function () {
   }
 
   function renderCardList(container, cards) {
+    stopLearningTime(container);
     container.innerHTML = `
       <div class="ext-card-grid">
         ${cards.map((c, i) => `
@@ -52,11 +72,12 @@ const ExternalViewer = (function () {
   }
 
   function renderFrame(container, card, allCards) {
+    startLearningTime(container, card);
     container.innerHTML = `
       <div class="ext-frame-toolbar">
         <button type="button" class="btn ext-back-btn">← 返回列表</button>
         <span class="ext-frame-title">${Loader.escapeHtml(card.title)}</span>
-        <a class="btn ext-open-new-tab" href="${Loader.escapeHtml(card.url)}" target="_blank" rel="noopener">在新分頁開啟 ↗</a>
+        <a class="btn ext-open-new-tab" href="${Loader.escapeHtml(card.url)}" target="_blank" rel="noopener" data-learning-title="${Loader.escapeHtml(card.title)}">在新分頁開啟 ↗</a>
       </div>
       <div class="ext-frame-wrap">
         <div class="ext-frame-loading">載入中…</div>
@@ -84,7 +105,7 @@ const ExternalViewer = (function () {
       if (loadingEl) {
         loadingEl.innerHTML = `
           載入時間較長，若畫面持續空白，這個網站可能不允許嵌入顯示。
-          <br />可以直接<a href="${Loader.escapeHtml(card.url)}" target="_blank" rel="noopener">在新分頁開啟</a>。
+          <br />可以直接<a href="${Loader.escapeHtml(card.url)}" target="_blank" rel="noopener" data-learning-title="${Loader.escapeHtml(card.title)}">在新分頁開啟</a>。
         `;
       }
     }, 4000);
