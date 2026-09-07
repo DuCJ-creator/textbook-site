@@ -93,11 +93,9 @@ const SpiritGarden = (function () {
   function totalDew(state) { return Number(state.timeDew || 0) + Number(state.examDew || 0); }
   function availableDew(state) { return Math.max(0, totalDew(state) - Number(state.spentDew || 0)); }
   function speciesById(id) { return SPECIES.find(item => item.id === id) || SPECIES[0]; }
-  function spriteStyle(species, formIndex = 9) {
+  function formAsset(species, formIndex = 9) {
     const safeForm = Math.max(0, Math.min(9, Number(formIndex) || 0));
-    const col = safeForm % 5;
-    const row = Math.floor(safeForm / 5);
-    return `--spirit-sheet:url("${species.asset}");--x:${col * 25}%;--y:${row * 100}%`;
+    return `assets/spirit-garden/forms/${species.id}-${safeForm}.webp`;
   }
 
   function realmFormIndex(completedStages) {
@@ -173,7 +171,7 @@ const SpiritGarden = (function () {
         <div class="spirit-species-grid">
           ${SPECIES.map(species => `
             <button class="spirit-species" type="button" data-spirit-species="${species.id}">
-              <span class="spirit-species-art spirit-sprite" style="${spriteStyle(species, 9)}"></span>
+              <img class="spirit-species-art spirit-sprite" src="${formAsset(species, 9)}" alt="${species.name}飛升形態">
               <span><b>${species.name}</b><small>${species.english}</small></span>
             </button>`).join("")}
         </div>
@@ -199,7 +197,7 @@ const SpiritGarden = (function () {
         <div class="spirit-habitat" style="--realm-power:${formIndex};--aura-opacity:${auraOpacity};--rune-speed:${runeSpeed}s">
           <div class="spirit-mist spirit-mist-back" aria-hidden="true"></div>
           <div class="spirit-qi-particles" aria-hidden="true">${Array.from({ length: 12 }, (_, index) => `<i style="--x:${index * 37 % 100}%;--size:${3 + index % 3 * 2}px;--duration:${5.2 + index % 4 * .8}s;--delay:${(index * -.47).toFixed(2)}s;--drift:${index % 2 ? 9 : -9}px"></i>`).join("")}</div>
-          <div class="spirit-main-art spirit-sprite" style="${spriteStyle(species, formIndex)};--growth:${growth};--saturation:${saturation};--realm-glow:${realmGlow}px"></div>
+          <img class="spirit-main-art spirit-sprite" src="${formAsset(species, formIndex)}" alt="${species.name}，${stageLabel}" style="--growth:${growth};--saturation:${saturation};--realm-glow:${realmGlow}px">
           <div class="spirit-altar" aria-hidden="true"><span class="spirit-altar-halo"></span><span class="spirit-altar-disc"></span><span class="spirit-altar-base"></span></div>
           <div class="spirit-mist spirit-mist-front" aria-hidden="true"></div>
         </div>
@@ -225,7 +223,7 @@ const SpiritGarden = (function () {
     document.getElementById("spiritCollectionCount").textContent = `${pets.length} 隻`;
     list.innerHTML = pets.length ? pets.map(pet => {
       const species = speciesById(pet.speciesId);
-      return `<div class="spirit-pet-token" title="${species.name} · ${new Date(pet.completedAt).toLocaleDateString("zh-TW")}"><span class="spirit-sprite" style="${spriteStyle(species, 9)}"></span><span>${species.name}</span></div>`;
+      return `<div class="spirit-pet-token" title="${species.name} · ${new Date(pet.completedAt).toLocaleDateString("zh-TW")}"><img class="spirit-sprite" src="${formAsset(species, 9)}" alt=""><span>${species.name}</span></div>`;
     }).join("") : '<span class="spirit-empty-collection">完成渡劫後，靈寵會住進這裡，並在首頁自在游動。</span>';
   }
 
@@ -237,7 +235,7 @@ const SpiritGarden = (function () {
       const duration = 24 + (index * 7 % 19);
       const delay = -(index * 8 % duration);
       const size = 54 + (index * 9 % 25);
-      return `<span class="spirit-roamer spirit-sprite" style="${spriteStyle(species, 9)};--top:${top}vh;--duration:${duration}s;--delay:${delay}s;--size:${size}px"></span>`;
+      return `<img class="spirit-roamer spirit-sprite" src="${formAsset(species, 9)}" alt="" style="--top:${top}vh;--duration:${duration}s;--delay:${delay}s;--size:${size}px">`;
     }).join("");
   }
 
