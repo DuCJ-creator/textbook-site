@@ -2066,10 +2066,16 @@
     "points": [
       {
         "id": "b1l7-g1",
-        "title": "wh-…+ to do 簡化含有疑問詞的間接問句",
+        "title": "S + have + O + p.p…. 使役動詞被動用法：「請/叫別人幫主詞做某事」或「使受詞遭受某種狀況」",
         "examples": [
           "Johnny had his bike fixed this morning.",
-          "Harry had the gift wrapped beautifully before he gave it to Irene.",
+          "Harry had the gift wrapped beautifully before he gave it to Irene."
+        ]
+      },
+      {
+        "id": "b1l7-g2",
+        "title": "wh-…+ to do 簡化含有疑問詞的間接問句",
+        "examples": [
           "Robert is telling the new student where to buy his uniform. = …where he can buy",
           "Mary didn’t know whether to tell John the bad news=...whether she should tell"
         ]

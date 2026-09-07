@@ -1557,11 +1557,17 @@
     "points": [
       {
         "id": "b1l6-g1",
-        "title": "so/such…that… 如此...以致... (結果副詞子句)",
+        "title": "It is/was…that… 強調句/分裂句",
         "examples": [
           "It was on this day that the United States became independent.",
           "It was Jason that won first place in the English speech contest.",
-          "It was in the French restaurant that I lost my wallet.",
+          "It was in the French restaurant that I lost my wallet."
+        ]
+      },
+      {
+        "id": "b1l6-g2",
+        "title": "so/such…that… 如此...以致... (結果副詞子句)",
+        "examples": [
           "Gary is so tired that he can’t focus on the exam now.",
           "Math is such a difficult subject that most students don’t like it."
         ]
