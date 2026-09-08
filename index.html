@@ -206,6 +206,14 @@
   .spirit-dew-icon { font-size: 1.45rem; filter: drop-shadow(0 3px 5px rgba(50,130,160,.2)); }
   .spirit-dew-bank b { display: block; color: var(--accent-dark); font: 700 1.25rem/1 var(--serif); }
   .spirit-dew-bank span:last-child { display: block; margin-top: 3px; color: var(--ink-soft); font-size: .6rem; }
+  .spirit-garden-actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; flex-wrap: wrap; }
+  .spirit-garden-toggle {
+    min-height: 48px; padding: 10px 16px; border: 1px solid var(--accent); border-radius: 15px;
+    background: var(--accent); color: #fff; font: 800 .72rem/1.2 var(--sans); cursor: pointer;
+    box-shadow: 0 7px 16px rgba(24,92,65,.14); transition: transform .16s ease, background .16s ease;
+  }
+  .spirit-garden-toggle:hover { transform: translateY(-2px); background: var(--accent-dark); }
+  .spirit-garden-toggle:focus-visible { outline: 3px solid rgba(233,185,73,.55); outline-offset: 3px; }
   .spirit-garden-body { position: relative; z-index: 1; margin-top: 22px; }
   .spirit-loading { padding: 26px; border: 1px dashed #b7cfbd; border-radius: 18px; color: var(--ink-soft); text-align: center; font-size: .78rem; background: rgba(255,255,255,.6); }
   .spirit-choose-title { margin: 0 0 12px; color: var(--ink); font-size: .82rem; font-weight: 850; }
@@ -283,9 +291,65 @@
   .spirit-roam-layer { position: fixed; inset: 0; z-index: 80; pointer-events: none; overflow: hidden; }
   .spirit-roamer { --size: 66px; position: absolute; width: var(--size); height: calc(var(--size) * 1.667); left: -90px; top: var(--top); border-radius: 18px; opacity: .94; filter: drop-shadow(0 7px 8px rgba(22,55,38,.18)); animation: spiritRoam var(--duration) linear infinite; animation-delay: var(--delay); }
   @keyframes spiritRoam { 0%{left:-90px;translate:0 0;rotate:-4deg} 25%{translate:0 -18px;rotate:5deg} 50%{translate:0 8px;rotate:-3deg} 75%{translate:0 -12px;rotate:6deg} 100%{left:calc(100vw + 90px);translate:0 0;rotate:-4deg} }
+
+  /* 首頁預設只顯示精簡養成卡；完整仙境由學生自行展開。 */
+  .spirit-garden:not(.is-expanded) { padding: 17px 21px 19px; border-radius: 22px; }
+  .spirit-garden:not(.is-expanded)::after { height: 46px; bottom: -25px; opacity: .32; }
+  .spirit-garden:not(.is-expanded) .spirit-garden-head { align-items: center; }
+  .spirit-garden:not(.is-expanded) .spirit-garden-kicker { font-size: .57rem; }
+  .spirit-garden:not(.is-expanded) h2 { margin: 2px 0 0; font-size: 1.18rem; }
+  .spirit-garden:not(.is-expanded) .spirit-garden-intro { display: none; }
+  .spirit-garden:not(.is-expanded) .spirit-dew-bank { min-width: 126px; padding: 8px 11px; border-radius: 13px; }
+  .spirit-garden:not(.is-expanded) .spirit-dew-icon { font-size: 1.15rem; }
+  .spirit-garden:not(.is-expanded) .spirit-dew-bank b { font-size: 1.05rem; }
+  .spirit-garden:not(.is-expanded) .spirit-dew-bank span:last-child { font-size: .53rem; }
+  .spirit-garden:not(.is-expanded) .spirit-garden-toggle { min-height: 42px; padding: 8px 14px; }
+  .spirit-garden:not(.is-expanded) .spirit-garden-body { margin-top: 12px; }
+  .spirit-garden:not(.is-expanded) .spirit-active { grid-template-columns: 172px minmax(0,1fr); gap: 17px; }
+  .spirit-garden:not(.is-expanded) .spirit-habitat { min-height: 150px; border-radius: 17px; }
+  .spirit-garden:not(.is-expanded) .spirit-habitat::before { bottom: 21px; width: 105px; height: 135px; }
+  .spirit-garden:not(.is-expanded) .spirit-main-art { width: 78px; height: 130px; margin-top: -27px; border-radius: 18px; }
+  .spirit-garden:not(.is-expanded) .spirit-altar { bottom: 3px; width: 142px; height: 61px; }
+  .spirit-garden:not(.is-expanded) .spirit-mist { height: 44px; filter: blur(5px); }
+  .spirit-garden:not(.is-expanded) .spirit-mist-back { bottom: 28px; }
+  .spirit-garden:not(.is-expanded) .spirit-mist-front { bottom: 0; }
+  .spirit-garden:not(.is-expanded) .spirit-qi-particles { inset: 12px 10% 28px; }
+  .spirit-garden:not(.is-expanded) .spirit-name-line h3 { font-size: 1.08rem; }
+  .spirit-garden:not(.is-expanded) .spirit-next { margin: 5px 0 9px; font-size: .66rem; }
+  .spirit-garden:not(.is-expanded) .spirit-progress-track { height: 10px; }
+  .spirit-garden:not(.is-expanded) .spirit-sources,
+  .spirit-garden:not(.is-expanded) .spirit-rule-note,
+  .spirit-garden:not(.is-expanded) .spirit-collection { display: none !important; }
+  .spirit-garden:not(.is-expanded) .spirit-chooser .spirit-choose-title { margin: 3px 0 0; }
+  .spirit-garden:not(.is-expanded) .spirit-species-grid { display: none; }
+
   @media (prefers-reduced-motion: reduce) { .spirit-main-art,.spirit-roamer,.spirit-habitat::before,.spirit-altar-halo,.spirit-altar-disc,.spirit-mist,.spirit-qi-particles i{animation:none}.spirit-altar-disc{opacity:1}.spirit-roamer{display:none}.spirit-qi-particles i{opacity:.4} }
   @media (max-width: 780px) { .spirit-species-grid{grid-template-columns:repeat(2,minmax(130px,1fr))}.spirit-active{grid-template-columns:1fr}.spirit-habitat{min-height:355px}.spirit-main-art{width:180px;height:300px}.spirit-altar{width:min(78%,310px)} }
-  @media (max-width: 430px) { .spirit-species-grid{grid-template-columns:1fr}.spirit-sources{grid-template-columns:1fr}.spirit-dew-bank{width:100%} }
+  @media (max-width: 780px) {
+    .spirit-garden:not(.is-expanded) .spirit-active { grid-template-columns: 142px minmax(0,1fr); }
+    .spirit-garden:not(.is-expanded) .spirit-habitat { min-height: 145px; }
+    .spirit-garden:not(.is-expanded) .spirit-main-art { width: 72px; height: 120px; }
+  }
+  @media (max-width: 560px) {
+    .spirit-garden:not(.is-expanded) { padding: 15px; }
+    .spirit-garden:not(.is-expanded) .spirit-garden-head { gap: 10px; }
+    .spirit-garden-actions { width: 100%; justify-content: space-between; flex-wrap: nowrap; }
+    .spirit-garden:not(.is-expanded) .spirit-active { grid-template-columns: 108px minmax(0,1fr); gap: 11px; }
+    .spirit-garden:not(.is-expanded) .spirit-habitat { min-height: 128px; }
+    .spirit-garden:not(.is-expanded) .spirit-main-art { width: 60px; height: 100px; margin-top: -22px; }
+    .spirit-garden:not(.is-expanded) .spirit-altar { width: 100px; }
+    .spirit-garden:not(.is-expanded) .spirit-form-note { display: none; }
+    .spirit-garden:not(.is-expanded) .spirit-name-line { gap: 5px; }
+    .spirit-garden:not(.is-expanded) .spirit-name-line h3 { font-size: .91rem; }
+    .spirit-garden:not(.is-expanded) .spirit-realm { padding: 3px 6px; font-size: .54rem; }
+    .spirit-garden:not(.is-expanded) .spirit-progress-label { font-size: .54rem; }
+  }
+  @media (max-width: 430px) {
+    .spirit-species-grid{grid-template-columns:1fr}.spirit-sources{grid-template-columns:1fr}
+    .spirit-garden.is-expanded .spirit-garden-actions { flex-wrap: wrap; }
+    .spirit-garden.is-expanded .spirit-dew-bank,
+    .spirit-garden.is-expanded .spirit-garden-toggle { width: 100%; }
+  }
 
   /* ===== Section titles ===== */
   .section-title {
@@ -483,7 +547,10 @@
           <h2 id="spiritGardenTitle">露華靈植園</h2>
           <p class="spirit-garden-intro">每累積 5 分鐘有效學習，或完成一次正確率 88% 以上的練習，就會凝成一顆露珠。時間與成績都會完整保留，不折抵、不扣除。</p>
         </div>
-        <div class="spirit-dew-bank" aria-label="目前可用露珠"><span class="spirit-dew-icon">💧</span><span><b id="spiritAvailableDew">0</b><span>AVAILABLE DEW · 可用露珠</span></span></div>
+        <div class="spirit-garden-actions">
+          <div class="spirit-dew-bank" aria-label="目前可用露珠"><span class="spirit-dew-icon">💧</span><span><b id="spiritAvailableDew">0</b><span>AVAILABLE DEW · 可用露珠</span></span></div>
+          <button class="spirit-garden-toggle" id="spiritGardenToggle" type="button" aria-expanded="false" aria-controls="spiritGardenBody spiritCollection"><span id="spiritGardenToggleText">展開修煉台</span> <span aria-hidden="true">⌄</span></button>
+        </div>
       </div>
       <div class="spirit-garden-body" id="spiritGardenBody"><div class="spirit-loading">正在喚醒你的靈植園…</div></div>
       <div class="spirit-collection" id="spiritCollection" hidden>
@@ -958,7 +1025,7 @@
 </script>
 <script type="module" src="js/firebase-sync.js"></script>
 <script src="js/progress-tracker.js?v=2"></script>
-<script src="js/spirit-garden.js?v=6"></script>
+<script src="js/spirit-garden.js?v=7"></script>
 <script>SpiritGarden.mount();</script>
 <script src="js/notepad.js"></script>
 <script>Notepad.mount();</script>
