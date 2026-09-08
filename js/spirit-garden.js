@@ -95,7 +95,7 @@ const SpiritGarden = (function () {
   function speciesById(id) { return SPECIES.find(item => item.id === id) || SPECIES[0]; }
   function formAsset(species, formIndex = 9) {
     const safeForm = Math.max(0, Math.min(9, Number(formIndex) || 0));
-    return `assets/spirit-garden/forms/${species.id}-${safeForm}.webp`;
+    return `assets/spirit-garden/forms/${species.id}-${safeForm}.webp?v=20260907a`;
   }
 
   function realmFormIndex(completedStages) {
@@ -219,7 +219,7 @@ const SpiritGarden = (function () {
     const area = document.getElementById("spiritCollection");
     const list = document.getElementById("spiritPetList");
     const pets = state.pets || [];
-    area.hidden = false;
+    area.hidden = pets.length === 0;
     document.getElementById("spiritCollectionCount").textContent = `${pets.length} 隻`;
     list.innerHTML = pets.length ? pets.map(pet => {
       const species = speciesById(pet.speciesId);
@@ -259,6 +259,15 @@ const SpiritGarden = (function () {
   function mount() {
     if (mounted || !document.getElementById("spiritGarden")) return;
     mounted = true;
+    const garden = document.getElementById("spiritGarden");
+    const toggle = document.getElementById("spiritGardenToggle");
+    const toggleText = document.getElementById("spiritGardenToggleText");
+    toggle?.addEventListener("click", () => {
+      const expanded = garden.classList.toggle("is-expanded");
+      toggle.setAttribute("aria-expanded", String(expanded));
+      if (toggleText) toggleText.textContent = expanded ? "收起修煉台" : "展開修煉台";
+      toggle.querySelector("[aria-hidden]").textContent = expanded ? "⌃" : "⌄";
+    });
     window.addEventListener("firebase-sync-ready", initialize, { once: true });
     window.addEventListener("firebase-sync-updated", event => {
       if (initialized && (event.detail?.key === STORAGE_KEY || event.detail?.key === TIME_KEY || event.detail?.key === HISTORY_KEY)) refreshState();
