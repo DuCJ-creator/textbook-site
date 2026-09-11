@@ -170,6 +170,14 @@
   .wp-result-card strong { display: block; font-size: 1.25rem; color: var(--accent-dark); font-family: var(--serif); }
   .wp-result-card span { font-size: 0.6rem; color: var(--ink-soft); letter-spacing: 0.06em; text-transform: uppercase; }
   .wp-result-actions { display: flex; justify-content: center; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
+
+  /* 作答頁維持專注，避免全站工具遮住手機上的字母鍵盤。 */
+  #notepadFab,
+  #notepadPanel,
+  #annotationFab,
+  #annotationPanel,
+  #annotationCanvas,
+  .text-annotation { display: none !important; }
 </style>
 </head>
 <body>
