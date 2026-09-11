@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Classroom Sparks Studio · Shirley Admin</title>
+<style>
+:root{--green:#075b52;--deep:#06443e;--mint:#e7f3ef;--paper:#f8f5ec;--card:#fffdf8;--line:#ded5c2;--ink:#29261f;--soft:#746d5d;--gold:#d89a25;--gold-soft:#fff2c9;--red:#a53a36;--serif:Georgia,"Noto Serif TC",serif;--sans:Inter,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.6}.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--deep),var(--green));color:#fff;border-radius:0 0 34px 34px;padding:26px 20px 32px}.hero:after{content:"✦";position:absolute;right:7%;top:-55px;color:rgba(255,255,255,.08);font:700 12rem var(--serif);transform:rotate(12deg)}.hero-inner,.main{max-width:1240px;margin:auto}.back{position:relative;z-index:1;color:#d8eee9;text-decoration:none;font-size:.78rem}.hero-row{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:end;gap:18px;flex-wrap:wrap}.kicker{margin-top:17px;color:#f2c969;font-size:.67rem;font-weight:900;letter-spacing:.16em}.hero h1{font:700 clamp(1.75rem,4vw,2.7rem)/1.16 var(--serif);margin:4px 0}.hero p{margin:0;color:#d8eee9;font-size:.82rem}.admin-pill{padding:7px 12px;border:1px solid rgba(255,255,255,.38);border-radius:999px;font-size:.63rem;font-weight:850;letter-spacing:.07em}.main{padding:24px 18px 80px}.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:15px}.status{color:var(--soft);font-size:.72rem}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:43px;border:1px solid var(--green);border-radius:999px;background:var(--green);color:#fff;padding:8px 16px;font:800 .73rem var(--sans);text-decoration:none;cursor:pointer}.btn:hover{filter:brightness(.95)}.btn.ghost{background:transparent;color:var(--green)}.btn.gold{background:var(--gold);border-color:var(--gold)}.btn.danger{background:transparent;border-color:#d7aaa7;color:var(--red)}.btn:disabled{opacity:.5;cursor:wait}.studio{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(330px,.85fr);gap:17px;align-items:start}.panel{border:1px solid var(--line);border-radius:22px;background:var(--card);box-shadow:0 3px 0 rgba(222,213,194,.85)}.panel-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:19px 20px;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#fbfaf5,#eff7f3);border-radius:22px 22px 0 0}.panel h2{margin:0;color:var(--deep);font:700 1.2rem var(--serif)}.panel-head p{margin:3px 0 0;color:var(--soft);font-size:.68rem}.status-pill{padding:5px 9px;border-radius:999px;background:#ece7dc;color:var(--soft);font-size:.58rem;font-weight:900;letter-spacing:.08em}.status-pill.published{background:#dcefe7;color:var(--green)}.status-pill.archived{background:#f2dfdd;color:var(--red)}.form{padding:20px}.field{display:grid;gap:6px;margin-bottom:15px}.field label,.group-label{color:var(--soft);font-size:.63rem;font-weight:900;letter-spacing:.08em}.field small{color:var(--soft);font-size:.61rem}.field input,.field textarea{width:100%;border:1px solid var(--line);border-radius:13px;background:#fff;padding:11px 12px;font:inherit;color:var(--ink);outline:none}.field input:focus,.field textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(7,91,82,.09)}.field textarea{min-height:92px;resize:vertical;line-height:1.6}.field textarea.tall{min-height:145px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.audience-box{margin:3px 0 17px;padding:14px;border:1px solid var(--line);border-radius:15px;background:#fbfaf5}.audience-modes{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 11px}.choice{position:relative}.choice input{position:absolute;opacity:0}.choice span{display:inline-flex;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--soft);font-size:.67rem;font-weight:800;cursor:pointer}.choice input:checked+span{background:var(--green);border-color:var(--green);color:#fff}.class-options{display:flex;gap:7px;flex-wrap:wrap}.class-options[hidden]{display:none}.class-chip{position:relative}.class-chip input{position:absolute;opacity:0}.class-chip span{display:inline-flex;padding:6px 10px;border:1px solid #cfded7;border-radius:999px;background:#fff;color:var(--green);font-size:.62rem;font-weight:800;cursor:pointer}.class-chip input:checked+span{background:var(--mint);box-shadow:inset 0 0 0 1px var(--green)}.form-actions{position:sticky;bottom:10px;display:flex;gap:8px;flex-wrap:wrap;padding:12px;margin:4px -7px -7px;border:1px solid rgba(222,213,194,.9);border-radius:16px;background:rgba(255,253,248,.94);backdrop-filter:blur(10px)}.preview-panel{position:sticky;top:14px;overflow:hidden}.preview-wrap{padding:20px}.preview-paper{overflow:hidden;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 8px 28px rgba(32,60,45,.08)}.preview-cover{padding:20px;background:linear-gradient(145deg,#edf6f2,#fff8e2)}.preview-cover h3{margin:10px 0 6px;color:var(--deep);font:700 1.35rem/1.3 var(--serif)}.preview-question{margin:0;color:var(--soft);font-size:.76rem}.preview-body{padding:5px 20px 20px}.preview-block{padding:15px 0;border-bottom:1px solid var(--line)}.preview-block:last-child{border:0}.preview-label{color:var(--green);font-size:.57rem;font-weight:900;letter-spacing:.1em}.preview-content{margin-top:6px;white-space:pre-wrap;font-size:.74rem}.preview-answer{font:700 .92rem/1.55 var(--serif)}.tags{display:flex;gap:5px;flex-wrap:wrap}.tag{padding:3px 7px;border-radius:999px;background:var(--mint);color:var(--green);font-size:.54rem;font-weight:850}.library{margin-top:18px;padding:19px}.library-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:13px}.library-head h2{margin:0;color:var(--deep);font:700 1.25rem var(--serif)}.library-list{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.library-item{display:grid;gap:8px;padding:13px;border:1px solid var(--line);border-radius:15px;background:#fff}.library-item h3{margin:0;font:700 .88rem/1.35 var(--serif);color:var(--deep)}.library-meta{display:flex;justify-content:space-between;gap:8px;color:var(--soft);font-size:.59rem}.library-actions{display:flex;gap:6px;flex-wrap:wrap}.small-btn{border:1px solid var(--green);border-radius:999px;background:transparent;color:var(--green);padding:5px 9px;font:800 .61rem var(--sans);cursor:pointer}.small-btn.archive{border-color:#d7aaa7;color:var(--red)}.empty{grid-column:1/-1;padding:28px;text-align:center;color:var(--soft);border:1px dashed var(--line);border-radius:14px}.denied{max-width:590px;margin:70px auto;padding:30px;border:1px solid var(--line);border-radius:20px;background:#fff;text-align:center}.denied[hidden],.main[hidden]{display:none}@media(max-width:920px){.studio{grid-template-columns:1fr}.preview-panel{position:static}.library-list{grid-template-columns:1fr 1fr}}@media(max-width:560px){.two,.library-list{grid-template-columns:1fr}.topbar{align-items:flex-start;flex-direction:column}.form-actions .btn{flex:1}.hero-row{align-items:flex-start}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="hero-inner"><a class="back" href="admin-dashboard.html">← 回管理面板</a><div class="hero-row"><div><div class="kicker">SHIRLEY'S CONTENT STUDIO</div><h1>Classroom Sparks Studio</h1><p>把課堂上來不及展開的好問題，慢慢整理成學生可以長期帶走的知識。</p></div><span class="admin-pill">TEACHER EDIT &amp; PUBLISH</span></div></div></header>
+<main class="main" id="main" hidden>
+  <div class="topbar"><span class="status" id="status">正在載入內容工作室…</span><button class="btn ghost" id="newBtn" type="button">＋ 新增課堂火花</button></div>
+  <div class="studio">
+    <section class="panel">
+      <div class="panel-head"><div><h2 id="editorTitle">New Spark · 新內容</h2><p>可以先存草稿，準備好後再發佈給指定班級。</p></div><span class="status-pill" id="editorStatus">NEW</span></div>
+      <form class="form" id="sparkForm">
+        <div class="field"><label for="titleInput">TITLE · 標題 *</label><input id="titleInput" maxlength="120" required placeholder="例如：tuition 可以表示所有費用嗎？"></div>
+        <div class="field"><label for="questionInput">THE CLASSROOM QUESTION · 課堂上的問題 *</label><textarea id="questionInput" maxlength="800" required placeholder="記下學生當時真正想問的問題……"></textarea></div>
+        <div class="field"><label for="quickInput">SHORT ANSWER · 快速回答 *</label><textarea id="quickInput" maxlength="1200" required placeholder="先用一小段話直接回答核心問題。"></textarea></div>
+        <div class="field"><label for="explanationInput">DEEP DIVE · 深入說明</label><textarea class="tall" id="explanationInput" maxlength="6000" placeholder="補充概念、用法、常見誤解與使用情境。"></textarea></div>
+        <div class="field"><label for="comparisonInput">COMPARE · 容易混淆的說法</label><textarea class="tall" id="comparisonInput" maxlength="5000" placeholder="每行一項，用 | 分隔：&#10;tuition | 學費 | 支付給學校的教學費用&#10;fee | 費用 | 為特定服務支付的費用"></textarea><small>格式：單字或說法｜中文意思｜使用提醒，一行一項。</small></div>
+        <div class="field"><label for="examplesInput">EXAMPLES · 例句</label><textarea class="tall" id="examplesInput" maxlength="5000" placeholder="每行一個例句，可以在英文後補上中文。"></textarea></div>
+        <div class="field"><label for="challengeInput">TRY IT · 小挑戰</label><textarea id="challengeInput" maxlength="1800" placeholder="留一個情境、判斷題或小問題，讓學生立即想一想。"></textarea></div>
+        <div class="two"><div class="field"><label for="tagsInput">TAGS · 分類標籤</label><input id="tagsInput" maxlength="300" placeholder="Vocabulary, Money, Usage"><small>使用逗號分隔。</small></div><div class="field"><label for="sourceInput">SOURCE · 課程來源</label><input id="sourceInput" maxlength="120" placeholder="例如：B3 L3／2027TCLIIPa"></div></div>
+        <div class="audience-box"><div class="group-label">AUDIENCE · 發佈對象 *</div><div class="audience-modes"><label class="choice"><input type="radio" name="audienceMode" value="all" checked><span>所有學生</span></label><label class="choice"><input type="radio" name="audienceMode" value="selected"><span>指定學校與班級</span></label></div><div class="class-options" id="classOptions" hidden></div></div>
+        <div class="form-actions"><button class="btn ghost" id="draftBtn" type="button">儲存草稿</button><button class="btn gold" id="publishBtn" type="button">發佈給學生</button><button class="btn danger" id="archiveBtn" type="button" hidden>封存</button></div>
+      </form>
+    </section>
+    <aside class="panel preview-panel"><div class="panel-head"><div><h2>Student Preview</h2><p>學生實際閱讀時的內容預覽。</p></div><span class="status-pill published">LIVE PREVIEW</span></div><div class="preview-wrap"><article class="preview-paper" id="preview"></article></div></aside>
+  </div>
+  <section class="panel library"><div class="library-head"><div><h2>Content Library · 內容庫</h2><span class="status" id="libraryCount">0 則</span></div><button class="btn ghost" id="reloadBtn" type="button">重新讀取</button></div><div class="library-list" id="libraryList"></div></section>
+</main>
+<div class="denied" id="accessMessage"><h2>正在驗證 Shirley 的管理員身份…</h2><p>這個內容工作室只有 Shirley 可以開啟。</p></div>
+
+<script type="module">
+import { collection, doc, getDocs, getFirestore, serverTimestamp, setDoc } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js";
+import { app, getPortalProfile, observePortalAuth } from "./js/firebase-auth.js";
+import { clearClassroomSparksCache } from "./js/classroom-sparks-data.js";
+
+const db=getFirestore(app),$=id=>document.getElementById(id),fields={title:"titleInput",question:"questionInput",quickAnswer:"quickInput",explanation:"explanationInput",comparison:"comparisonInput",examples:"examplesInput",challenge:"challengeInput",source:"sourceInput"};
+const esc=value=>String(value??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\"/g,"&quot;").replace(/'/g,"&#039;");
+let items=[],selectedId=null,classOptions=[];
+const dateText=value=>{if(!value)return"—";const date=value?.toDate?value.toDate():new Date(value);return Number.isNaN(date.getTime())?"—":date.toLocaleString("zh-TW",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"})};
+const audienceKey=(school,className)=>`${String(school||"").trim()}::${String(className||"").trim()}`;
+const statusLabel=status=>status==="published"?"PUBLISHED":status==="archived"?"ARCHIVED":"DRAFT";
+const timeValue=value=>value?.toMillis?value.toMillis():value?.seconds?Number(value.seconds)*1000:Number(new Date(value||0))||0;
+
+function setStatus(message){$("status").textContent=message}
+function tags(){return [...new Set($("tagsInput").value.split(/[,，]/).map(value=>value.trim()).filter(Boolean))].slice(0,12)}
+function selectedAudience(){return [...$("classOptions").querySelectorAll("input:checked")].map(input=>input.value)}
+function formData(){return Object.fromEntries(Object.entries(fields).map(([key,id])=>[key,$(id).value.trim()]))}
+function currentMode(){return document.querySelector('input[name="audienceMode"]:checked')?.value||"all"}
+function setButtons(disabled){["draftBtn","publishBtn","archiveBtn","newBtn","reloadBtn"].forEach(id=>$(id).disabled=disabled)}
+
+function renderClassOptions(){
+  $("classOptions").innerHTML=classOptions.map(item=>`<label class="class-chip"><input type="checkbox" value="${esc(item.key)}"><span>${esc(item.school)} · ${esc(item.className)}</span></label>`).join("")||'<span class="status">尚無班級選項。</span>';
+}
+function applyAudienceMode(){$("classOptions").hidden=currentMode()!=="selected";updatePreview()}
+function previewBlock(label,value,extra=""){return value?`<section class="preview-block"><div class="preview-label">${label}</div><div class="preview-content ${extra}">${esc(value)}</div></section>`:""}
+function updatePreview(){
+  const data=formData(),tagList=tags();
+  $("preview").innerHTML=`<header class="preview-cover"><div class="tags">${tagList.map(tag=>`<span class="tag">${esc(tag)}</span>`).join("")}</div><h3>${esc(data.title||"一則值得留下的課堂火花")}</h3><p class="preview-question">${esc(data.question||"學生在課堂上提出的問題，會顯示在這裡。")}</p></header><div class="preview-body">${previewBlock("SHORT ANSWER · 快速回答",data.quickAnswer,"preview-answer")}${previewBlock("DEEP DIVE · 深入說明",data.explanation)}${previewBlock("COMPARE · 容易混淆的說法",data.comparison)}${previewBlock("EXAMPLES · 例句",data.examples)}${previewBlock("TRY IT · 想一想",data.challenge)}</div>`;
+}
+function resetEditor(){
+  selectedId=null;Object.values(fields).forEach(id=>$(id).value="");$("tagsInput").value="";document.querySelector('input[name="audienceMode"][value="all"]').checked=true;$("classOptions").querySelectorAll("input").forEach(input=>input.checked=false);$("editorTitle").textContent="New Spark · 新內容";$("editorStatus").textContent="NEW";$("editorStatus").className="status-pill";$("archiveBtn").hidden=true;applyAudienceMode();updatePreview();window.scrollTo({top:0,behavior:"smooth"});
+}
+function editItem(id){
+  const item=items.find(value=>value.id===id);if(!item)return;selectedId=id;
+  Object.entries(fields).forEach(([key,fieldId])=>$(fieldId).value=String(item[key]||""));$("tagsInput").value=(item.tags||[]).join(", ");
+  const all=(item.audienceKeys||[]).includes("ALL");document.querySelector(`input[name="audienceMode"][value="${all?"all":"selected"}"]`).checked=true;
+  $("classOptions").querySelectorAll("input").forEach(input=>input.checked=(item.audienceKeys||[]).includes(input.value));
+  $("editorTitle").textContent=`Edit Spark · ${item.title}`;$("editorStatus").textContent=statusLabel(item.status);$("editorStatus").className=`status-pill ${item.status||"draft"}`;$("archiveBtn").hidden=item.status==="archived";applyAudienceMode();updatePreview();window.scrollTo({top:0,behavior:"smooth"});
+}
+function renderLibrary(){
+  const sorted=[...items].sort((a,b)=>timeValue(b.updatedAt)-timeValue(a.updatedAt));
+  $("libraryCount").textContent=`${sorted.length} 則（${sorted.filter(item=>item.status==="published").length} 則已發佈）`;
+  $("libraryList").innerHTML=sorted.length?sorted.map(item=>`<article class="library-item"><div class="library-meta"><span class="status-pill ${esc(item.status)}">${statusLabel(item.status)}</span><span>${esc(dateText(item.updatedAt))}</span></div><h3>${esc(item.title||"未命名內容")}</h3><div class="tags">${(item.tags||[]).slice(0,4).map(tag=>`<span class="tag">${esc(tag)}</span>`).join("")}</div><div class="library-actions"><button class="small-btn" type="button" data-edit="${esc(item.id)}">編輯</button>${item.status!=="published"?`<button class="small-btn" type="button" data-publish="${esc(item.id)}">發佈</button>`:""}${item.status!=="archived"?`<button class="small-btn archive" type="button" data-archive="${esc(item.id)}">封存</button>`:""}</div></article>`).join(""):'<div class="empty">還沒有課堂火花。從上方新增第一則吧！</div>';
+  $("libraryList").querySelectorAll("[data-edit]").forEach(button=>button.addEventListener("click",()=>editItem(button.dataset.edit)));
+  $("libraryList").querySelectorAll("[data-publish]").forEach(button=>button.addEventListener("click",()=>{editItem(button.dataset.publish);save("published")}));
+  $("libraryList").querySelectorAll("[data-archive]").forEach(button=>button.addEventListener("click",()=>archiveItem(button.dataset.archive)));
+}
+async function loadItems(){
+  setButtons(true);setStatus("正在讀取課堂火花內容庫…");
+  try{const snapshot=await getDocs(collection(db,"classroomSparks"));items=snapshot.docs.map(item=>({id:item.id,...item.data()}));renderLibrary();setStatus(`內容庫已就緒，共 ${items.length} 則。`)}
+  catch(error){setStatus("內容庫讀取失敗，請確認 Firestore Rules 已發佈。");console.warn(error)}finally{setButtons(false)}
+}
+async function save(status){
+  if(!$("sparkForm").reportValidity())return;
+  const audienceKeys=currentMode()==="all"?["ALL"]:selectedAudience();
+  if(!audienceKeys.length){setStatus("請至少選擇一個學校與班級。");$("classOptions").scrollIntoView({behavior:"smooth",block:"center"});return}
+  const data=formData(),existing=items.find(item=>item.id===selectedId),reference=selectedId?doc(db,"classroomSparks",selectedId):doc(collection(db,"classroomSparks"));
+  const payload={...data,tags:tags(),audienceKeys,status,updatedAt:serverTimestamp()};
+  if(!existing)payload.createdAt=serverTimestamp();
+  if(status==="published"&&!existing?.publishedAt)payload.publishedAt=serverTimestamp();
+  setButtons(true);setStatus(status==="published"?"正在發佈給學生…":"正在儲存草稿…");
+  try{await setDoc(reference,payload,{merge:true});selectedId=reference.id;clearClassroomSparksCache();await loadItems();editItem(selectedId);setStatus(status==="published"?"發佈成功；學生快取更新後會看到，也可以在課堂火花頁按「更新內容」立即讀取。":"草稿已安全儲存。")}
+  catch(error){setStatus("儲存失敗，請確認網路與 Firestore Rules。");console.warn(error)}finally{setButtons(false)}
+}
+async function archiveItem(id=selectedId){
+  if(!id||!confirm("確定封存這則課堂火花？封存後學生將看不到，但內容會保留。"))return;
+  setButtons(true);setStatus("正在封存…");
+  try{await setDoc(doc(db,"classroomSparks",id),{status:"archived",updatedAt:serverTimestamp()},{merge:true});clearClassroomSparksCache();await loadItems();if(selectedId===id)editItem(id);setStatus("已封存，內容仍保留在資料庫中。")}
+  catch(error){setStatus("封存失敗。");console.warn(error)}finally{setButtons(false)}
+}
+async function loadClassOptions(){
+  try{const response=await fetch("data/portal-options.json",{cache:"no-store"}),options=await response.json(),seen=new Set();classOptions=Object.entries(options.classSchools||{}).flatMap(([className,schools])=>(schools||[]).map(school=>({school,className,key:audienceKey(school,className)}))).filter(item=>item.school&&item.className&&!seen.has(item.key)&&seen.add(item.key));renderClassOptions()}
+  catch(error){classOptions=[];renderClassOptions();console.warn(error)}
+}
+
+observePortalAuth(async user=>{
+  if(!user){location.replace("index.html");return}
+  try{const profile=await getPortalProfile(user);if(!profile?.admin)throw new Error("not-admin");$("accessMessage").hidden=true;$("main").hidden=false;await loadClassOptions();resetEditor();await loadItems()}
+  catch(error){$("accessMessage").innerHTML='<h2>沒有管理員權限</h2><p>此頁面只有 Shirley 可以開啟。</p>';console.warn(error)}
+});
+Object.values(fields).forEach(id=>$(id).addEventListener("input",updatePreview));$("tagsInput").addEventListener("input",updatePreview);document.querySelectorAll('input[name="audienceMode"]').forEach(input=>input.addEventListener("change",applyAudienceMode));$("classOptions").addEventListener("change",updatePreview);$("sparkForm").addEventListener("submit",event=>event.preventDefault());$("newBtn").addEventListener("click",resetEditor);$("draftBtn").addEventListener("click",()=>save("draft"));$("publishBtn").addEventListener("click",()=>save("published"));$("archiveBtn").addEventListener("click",()=>archiveItem());$("reloadBtn").addEventListener("click",loadItems);
+</script>
+</body>
+</html>

@@ -63,6 +63,22 @@ service cloud.firestore {
       allow delete: if false;
     }
 
+    // Long-term classroom questions and teacher explanations. Shirley may
+    // create drafts and publish them. Learners can read only published items
+    // addressed to everybody or to their exact school + class.
+    match /classroomSparks/{sparkId} {
+      allow read: if isAdmin()
+        || (signedIn()
+          && request.auth.token.role == "student"
+          && resource.data.status == "published"
+          && resource.data.audienceKeys.hasAny([
+            "ALL",
+            request.auth.token.school + "::" + request.auth.token.className
+          ]));
+      allow create, update: if isAdmin();
+      allow delete: if false;
+    }
+
     // Deny every collection that is not explicitly covered above.
     match /{document=**} {
       allow read, write: if false;
