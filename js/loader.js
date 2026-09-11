@@ -179,11 +179,11 @@ const Loader = (function () {
 
     const startMounting = () => {
       // 1. 登入後，把學習紀錄在 localStorage 與 Firestore 之間自動同步
-      loadModule('js/firebase-sync.js')
+      loadModule('js/firebase-sync.js?v=2')
         .catch(() => console.warn('學習紀錄雲端同步載入失敗'));
 
       // 2. 每一個頂層頁面都載入學習時間追蹤
-      loadScript('js/progress-tracker.js')
+      loadScript('js/progress-tracker.js?v=3')
         .catch(() => console.warn('學習時間追蹤載入失敗'));
 
       // 3. 載入截圖依賴庫

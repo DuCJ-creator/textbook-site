@@ -48,7 +48,7 @@
   function pageInfo() {
     const file = currentFile();
     const params = new URLSearchParams(location.search);
-    const scope = ["book", "lesson"].filter(k => params.get(k)).map(k => `${k}=${params.get(k)}`).join("&");
+    const scope = ["book", "lesson", "spark"].filter(k => params.get(k)).map(k => `${k}=${params.get(k)}`).join("&");
     return {
       key: scope ? `${file}?${scope}` : file,
       title: document.title || file,

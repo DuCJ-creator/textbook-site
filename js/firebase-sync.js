@@ -40,6 +40,7 @@ const SYNC_POLICIES = {
   "vocabStarredIds": { idleMs: 1800, minIntervalMs: 0, maxWaitMs: 10000 },
   "vocab-bank.starred": { idleMs: 1800, minIntervalMs: 0, maxWaitMs: 10000 },
   "phraseStarredIds": { idleMs: 1800, minIntervalMs: 0, maxWaitMs: 10000 },
+  "classroomSparkStars": { idleMs: 1800, minIntervalMs: 0, maxWaitMs: 10000 },
   "learning.spirit-garden.v1": { idleMs: 2500, minIntervalMs: 0, maxWaitMs: 10000 }
 };
 
@@ -52,6 +53,7 @@ const TRACKED_KEYS = new Map([
   ["vocabStarredIds", "vocab-family-stars"],
   ["vocab-bank.starred", "vocab-detail-stars"],
   ["phraseStarredIds", "phrase-stars"],
+  ["classroomSparkStars", "classroom-spark-stars"],
   ["learning.spirit-garden.v1", "spirit-garden"]
 ]);
 
@@ -179,7 +181,7 @@ function buildLearningSummary() {
   );
   const notepad = safeParse(getLocal("studentNotepadData") || "null", { notes: [] });
   const annotations = safeParse(getLocal("learning.progress.images.v1") || "[]", []);
-  const stars = ["vocabStarredIds", "vocab-bank.starred", "phraseStarredIds"].reduce((total, key) => {
+  const stars = ["vocabStarredIds", "vocab-bank.starred", "phraseStarredIds", "classroomSparkStars"].reduce((total, key) => {
     const value = safeParse(getLocal(key) || "[]", []);
     return total + (Array.isArray(value) ? value.length : 0);
   }, 0);
@@ -372,7 +374,7 @@ function mergeForMigration(key, localValue, remoteValue) {
   if (key === "learning.progress.time.v1") return mergeTime(localValue, remoteValue);
   if (key === "learning.progress.images.v1") return mergeArraysById(localValue, remoteValue, 8);
   if (key === "studentNotepadData") return mergeNotepad(localValue, remoteValue);
-  if (["vocabStarredIds", "vocab-bank.starred", "phraseStarredIds"].includes(key)) return mergeStringSets(localValue, remoteValue);
+  if (["vocabStarredIds", "vocab-bank.starred", "phraseStarredIds", "classroomSparkStars"].includes(key)) return mergeStringSets(localValue, remoteValue);
   if (key === "learning.spirit-garden.v1") return mergeSpiritGarden(localValue, remoteValue);
   return remoteValue ?? localValue;
 }
