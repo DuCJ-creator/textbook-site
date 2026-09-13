@@ -22,10 +22,10 @@
 </main>
 <div class="denied" id="accessMessage"><h2>正在確認學習者身份…</h2><p>登入後就能閱讀屬於你班級的課堂火花。</p></div>
 
-<script src="js/loader.js?v=3"></script>
+<script src="js/loader.js?v=4"></script>
 <script type="module">
 import { getPortalProfile, observePortalAuth } from "./js/firebase-auth.js";
-import { clearClassroomSparksCache, loadPublishedSparks } from "./js/classroom-sparks-data.js";
+import { clearClassroomSparksCache, loadPublishedSparks } from "./js/classroom-sparks-data.js?v=2";
 import { linkifyText } from "./js/linkify-text.js";
 
 const STAR_KEY="classroomSparkStars",$=id=>document.getElementById(id);

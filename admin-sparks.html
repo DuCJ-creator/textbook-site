@@ -38,7 +38,7 @@
 <script type="module">
 import { collection, doc, getDocs, getFirestore, serverTimestamp, setDoc } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js";
 import { app, getPortalProfile, observePortalAuth } from "./js/firebase-auth.js";
-import { clearClassroomSparksCache } from "./js/classroom-sparks-data.js";
+import { clearClassroomSparksCache } from "./js/classroom-sparks-data.js?v=2";
 import { linkifyText } from "./js/linkify-text.js";
 
 const db=getFirestore(app),$=id=>document.getElementById(id),fields={title:"titleInput",question:"questionInput",quickAnswer:"quickInput",explanation:"explanationInput",comparison:"comparisonInput",examples:"examplesInput",challenge:"challengeInput",source:"sourceInput"};

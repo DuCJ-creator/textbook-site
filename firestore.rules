@@ -41,11 +41,17 @@ service cloud.firestore {
         && request.resource.data.seatNo == request.auth.token.seatNo;
       allow update: if isOwner(userId)
         && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          "uid", "role", "name", "className", "school", "seatNo",
           "totalSeconds", "practiceCount", "averageScore", "averageAccuracy",
           "latestPracticeAt", "lastActivityAt", "starCount", "noteCount",
           "annotationCount", "hasActivity", "pageBreakdown",
           "recentPractices", "snapshotCycle", "updatedAt"
-        ]);
+        ])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.role == request.auth.token.role
+        && request.resource.data.className == request.auth.token.className
+        && request.resource.data.school == request.auth.token.school
+        && request.resource.data.seatNo == request.auth.token.seatNo;
       allow delete: if false;
     }
 
