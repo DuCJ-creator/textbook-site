@@ -10,6 +10,7 @@ import { app } from "./firebase-auth.js";
 const db = getFirestore(app);
 const CACHE_PREFIX = "shirley.classroom-sparks.cache.v1:";
 const DEFAULT_MAX_AGE = 6 * 60 * 60 * 1000;
+const EMPTY_MAX_AGE = 5 * 60 * 1000;
 
 export function classroomAudienceKey(profile) {
   return `${String(profile?.school || "").trim()}::${String(profile?.className || "").trim()}`;
@@ -56,7 +57,10 @@ export async function loadPublishedSparks(profile, options = {}) {
   if (!force) {
     try {
       const cached = JSON.parse(localStorage.getItem(cacheKey) || "null");
-      if (cached?.loadedAt && Date.now() - Number(cached.loadedAt) < maxAgeMs && Array.isArray(cached.items)) {
+      const cacheAgeLimit = Array.isArray(cached?.items) && cached.items.length
+        ? maxAgeMs
+        : Math.min(maxAgeMs, EMPTY_MAX_AGE);
+      if (cached?.loadedAt && Date.now() - Number(cached.loadedAt) < cacheAgeLimit && Array.isArray(cached.items)) {
         return sortNewest(cached.items);
       }
     } catch (_) {}
