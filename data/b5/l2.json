@@ -713,7 +713,28 @@
             "example": "Identity verification is required."
           }
         ],
-        "adj": [],
+        "adj": [
+          {
+            "en": "verified",
+            "zh": "經證實的",
+            "example": "The journalist would only publish the story after confirming the details with a verified source."
+          },
+          {
+            "en": "unverified",
+            "zh": "未經證實的",
+            "example": "Please be cautious when reading breaking news online, as much of the initial information remains unverified."
+          },
+          {
+            "en": "verifiable",
+            "zh": "可證實的",
+            "example": "The scientist provided verifiable evidence to support her new theory during the conference."
+          },
+          {
+            "en": "unverifiable",
+            "zh": "不可證實的",
+            "example": "Without any official documents or eyewitnesses, his claims about the historic event are completely unverifiable."
+          }
+        ],
         "adv": []
       },
       {
@@ -835,7 +856,27 @@
     "items": []
   },
   "grammar": {
-    "points": [],
+    "points": [
+      {
+        "id": "b5l2-g1",
+        "title": "S + V + lest + S (+ should) + VR..../S + V + for fear that + S + would/should/might... + VR.... 以免、唯恐、以防",
+        "examples": [
+          "You should not leave the kitchen stove unattended lest a fire (should) break out.",
+          "The mother stayed by her baby’s side for fear that he would wake up in the night.",
+          "You should wear a face mask lest droplets (should) spread the virus.",
+          "People are advised against spreading fake news lest they (should) be fined."
+        ]
+      },
+      {
+        "id": "b5l2-g2",
+        "title": "Repetition (重複)/Synonymy / Near-Synonymy(同義詞/近義詞)/Antonymy (反義詞)",
+        "examples": [
+          "在篇章中,為使主題貫穿全文,主題字彙會不斷出現,常見的手法有: 原詞重複，讓主題更鮮明",
+          "同義詞/近義詞：增加變化性，在語意上相互補充。",
+          "除了多次出現與主題意義相同或相近的字詞外,也常常出現與主題意義相反或對比的字詞。雖為反義詞,實質上仍圍繞著同一主題並加以闡述,因此有助於強化篇章的連貫性。"
+        ]
+      }
+    ],
     "sentence_structures": {
       "items": [
         {
@@ -1034,6 +1075,6 @@
     }
   },
   "text_genre": {
-    "raw_text": ""
+    "raw_text": "The text follows a classic Problem-Solution expository framework:\nParagraph 1 — Definition & Problem (Background)\nDefinition: Fake news is false or misleading information presented as truth.\nContext: Social media and the Internet accelerate its spread, deceiving readers who fail to verify sources.\nParagraph 2 — Root Causes (Origins)\nCause 1 (Sloppy Journalism): Unintentional spread due to poor fact-checking by journalists.\nCause 2 (Deliberate Manipulation): Intentional creation of false stories to achieve political or social goals.\nParagraphs 3 & 4 — Real-World Examples (Consequences)\nExample 1 (Public Health): The flawed 1998 MMR vaccine study caused long-term fears and declining vaccination rates worldwide.\nExample 2 (Economic Panic): A 2018 Taiwan retailer exaggerated price hikes, triggering panic buying and supply chain disruptions.\nParagraph 5 — Solutions & Criteria (Evaluation)\nCriterion 1 (Author Credibility): Look for writer bylines and verifiable biographies.\nCriterion 2 (Source Diversity): Ensure the report cites multiple primary sources.\nCriterion 3 (Platform Reputation): Rely on established media (e.g., BBC, CNN).\nCriterion 4 (Objective Tone): Prefer fact-based, neutral language over emotional manipulation.\nParagraph 6 — Conclusion (Call to Action)\nUrges readers to exercise critical thinking and perform due diligence to combat misinformation in the digital age."
   }
 }
