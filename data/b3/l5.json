@@ -2136,7 +2136,7 @@
           "id": "b3l5-s017",
           "sentence": "These highly skilled entertainers *spend* years mastering different musical instruments, songs, and literature.",
           "type": "simple",
-          "pattern": "S + Vt + O + Participle clause"
+          "pattern": "S + Vt + O + participle phrase"
         },
         {
           "id": "b3l5-s018",

@@ -1,0 +1,1039 @@
+{
+  "book": "B5",
+  "lesson": "L2",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b5l2-v01",
+        "base": "define",
+        "verb": [
+          {
+            "en": "define",
+            "zh": "定義；說明；界定",
+            "example": "The teacher asked us to define the key term."
+          }
+        ],
+        "noun": [
+          {
+            "en": "definition",
+            "zh": "定義；釋義；清晰度",
+            "example": "The dictionary gives a clear definition of the word."
+          }
+        ],
+        "adj": [
+          {
+            "en": "definite",
+            "zh": "明確的；確定的",
+            "example": "We need a definite answer by tomorrow."
+          },
+          {
+            "en": "indefinite",
+            "zh": "不確定的；無限期的；模糊的",
+            "example": "The meeting was postponed for an indefinite period."
+          }
+        ],
+        "adv": [
+          {
+            "en": "definitely",
+            "zh": "肯定地；明確地",
+            "example": "I will definitely attend the workshop."
+          }
+        ]
+      },
+      {
+        "id": "b5l2-v02",
+        "base": "mislead",
+        "verb": [
+          {
+            "en": "mislead",
+            "zh": "誤導；使產生錯誤想法",
+            "example": "The advertisement may mislead customers."
+          }
+        ],
+        "noun": [],
+        "adj": [
+          {
+            "en": "misleading",
+            "zh": "誤導性的；使人誤解的",
+            "example": "The headline gives a misleading impression."
+          },
+          {
+            "en": "misled",
+            "zh": "受誤導的；被欺騙的",
+            "example": "Many readers felt misled by the report."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l2-v03",
+        "base": "true",
+        "verb": [],
+        "noun": [
+          {
+            "en": "truth",
+            "zh": "真相；事實；真理",
+            "example": "We may never know the whole truth."
+          },
+          {
+            "en": "truthfulness",
+            "zh": "誠實；真實性",
+            "example": "The witness's truthfulness was questioned."
+          }
+        ],
+        "adj": [
+          {
+            "en": "true",
+            "zh": "真實的；正確的；忠實的",
+            "example": "The story is based on true events."
+          },
+          {
+            "en": "truthful",
+            "zh": "誠實的；如實的",
+            "example": "Please give a truthful account of what happened."
+          }
+        ],
+        "adv": [
+          {
+            "en": "truly",
+            "zh": "真正地；確實地；真誠地",
+            "example": "She is truly grateful for your help."
+          },
+          {
+            "en": "truthfully",
+            "zh": "誠實地；如實地",
+            "example": "He answered every question truthfully."
+          }
+        ]
+      },
+      {
+        "id": "b5l2-v04",
+        "base": "deceive",
+        "verb": [
+          {
+            "en": "deceive",
+            "zh": "欺騙；蒙蔽",
+            "example": "He tried to deceive the investigators."
+          }
+        ],
+        "noun": [
+          {
+            "en": "deceit",
+            "zh": "欺騙；欺詐；謊言",
+            "example": "Their friendship ended because of his deceit."
+          }
+        ],
+        "adj": [
+          {
+            "en": "deceitful",
+            "zh": "欺騙的；不誠實的",
+            "example": "The seller used deceitful tactics."
+          }
+        ],
+        "adv": [
+          {
+            "en": "deceitfully",
+            "zh": "欺騙地；不誠實地",
+            "example": "The company deceitfully hid important facts."
+          }
+        ]
+      },
+      {
+        "id": "b5l2-v05",
+        "base": "journal",
+        "verb": [],
+        "noun": [
+          {
+            "en": "journal",
+            "zh": "期刊；日誌；日記",
+            "example": "She records her ideas in a journal."
+          },
+          {
+            "en": "journalist",
+            "zh": "新聞記者；新聞工作者",
+            "example": "The journalist interviewed local residents."
+          },
+          {
+            "en": "journalism",
+            "zh": "新聞業；新聞工作；新聞學",
+            "example": "Good journalism checks facts carefully."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b5l2-v06",
+        "base": "prior",
+        "verb": [
+          {
+            "en": "prioritize",
+            "zh": "優先處理；按重要性排序",
+            "example": "We must prioritize the most urgent tasks."
+          }
+        ],
+        "noun": [
+          {
+            "en": "priority",
+            "zh": "優先事項；優先權",
+            "example": "Safety is our highest priority."
+          }
+        ],
+        "adj": [
+          {
+            "en": "prior",
+            "zh": "先前的；較早的；優先的",
+            "example": "No prior experience is required."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l2-v07",
+        "base": "politics",
+        "verb": [
+          {
+            "en": "politicize",
+            "zh": "使政治化；以政治角度處理",
+            "example": "Both sides accused the other of trying to politicize the issue."
+          }
+        ],
+        "noun": [
+          {
+            "en": "politics",
+            "zh": "政治；政治活動；政治學",
+            "example": "She has always been interested in politics."
+          },
+          {
+            "en": "politician",
+            "zh": "政治人物；政治家",
+            "example": "The politician answered questions from reporters."
+          },
+          {
+            "en": "politicization",
+            "zh": "政治化",
+            "example": "The politicization of the debate divided the community."
+          }
+        ],
+        "adj": [
+          {
+            "en": "political",
+            "zh": "政治的；政黨的",
+            "example": "The country is facing political uncertainty."
+          }
+        ],
+        "adv": [
+          {
+            "en": "politically",
+            "zh": "政治上；以政治方式",
+            "example": "The proposal is politically sensitive."
+          }
+        ]
+      },
+      {
+        "id": "b5l2-v08",
+        "base": "attempt",
+        "verb": [
+          {
+            "en": "attempt",
+            "zh": "嘗試；企圖",
+            "example": "They attempted to repair the machine."
+          }
+        ],
+        "noun": [
+          {
+            "en": "attempt",
+            "zh": "嘗試；企圖",
+            "example": "Her first attempt was successful."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b5l2-v09",
+        "base": "candidate",
+        "verb": [],
+        "noun": [
+          {
+            "en": "candidate",
+            "zh": "候選人；應徵者；考生",
+            "example": "Each candidate will attend an interview."
+          },
+          {
+            "en": "candidacy",
+            "zh": "候選資格；候選人身分",
+            "example": "She announced her candidacy for mayor."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b5l2-v10",
+        "base": "illustrate",
+        "verb": [
+          {
+            "en": "illustrate",
+            "zh": "說明；闡明；為……畫插圖",
+            "example": "This example illustrates the main idea."
+          }
+        ],
+        "noun": [
+          {
+            "en": "illustration",
+            "zh": "插圖；例證；說明",
+            "example": "The book contains colorful illustrations."
+          },
+          {
+            "en": "illustrator",
+            "zh": "插畫家；繪圖者",
+            "example": "The illustrator created the book's characters."
+          }
+        ],
+        "adj": [
+          {
+            "en": "illustrative",
+            "zh": "說明性的；作為例證的",
+            "example": "The chart provides an illustrative example."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l2-v11",
+        "base": "extend",
+        "verb": [
+          {
+            "en": "extend",
+            "zh": "延伸；延長；擴大",
+            "example": "The school will extend the deadline by one week."
+          }
+        ],
+        "noun": [
+          {
+            "en": "extent",
+            "zh": "程度；範圍；面積",
+            "example": "We did not realize the extent of the damage."
+          },
+          {
+            "en": "extension",
+            "zh": "延長；擴建部分；分機",
+            "example": "He requested an extension of the deadline."
+          }
+        ],
+        "adj": [
+          {
+            "en": "extensive",
+            "zh": "廣泛的；大量的；全面的",
+            "example": "The storm caused extensive damage."
+          }
+        ],
+        "adv": [
+          {
+            "en": "extensively",
+            "zh": "廣泛地；大量地",
+            "example": "The topic has been extensively researched."
+          }
+        ]
+      },
+      {
+        "id": "b5l2-v12",
+        "base": "flaw",
+        "verb": [],
+        "noun": [
+          {
+            "en": "flaw",
+            "zh": "缺點；瑕疵；裂縫",
+            "example": "The reviewer found a flaw in the argument."
+          }
+        ],
+        "adj": [
+          {
+            "en": "flawed",
+            "zh": "有缺陷的；不完美的",
+            "example": "The decision was based on flawed data."
+          },
+          {
+            "en": "flawless",
+            "zh": "完美無瑕的；沒有缺點的",
+            "example": "She gave a flawless performance."
+          }
+        ],
+        "adv": [
+          {
+            "en": "flawlessly",
+            "zh": "完美地；毫無瑕疵地",
+            "example": "The new system operated flawlessly."
+          }
+        ]
+      },
+      {
+        "id": "b5l2-v13",
+        "base": "shatter",
+        "verb": [
+          {
+            "en": "shatter",
+            "zh": "粉碎；打破；使震驚",
+            "example": "The impact shattered the glass."
+          }
+        ],
+        "noun": [],
+        "adj": [
+          {
+            "en": "shattering",
+            "zh": "令人震驚的；毀滅性的",
+            "example": "The family received shattering news."
+          },
+          {
+            "en": "shattered",
+            "zh": "破碎的；極度震驚的；精疲力竭的",
+            "example": "She was shattered by the sudden loss."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l2-v14",
+        "base": "sequence",
+        "verb": [],
+        "noun": [
+          {
+            "en": "sequence",
+            "zh": "順序；一連串；序列",
+            "example": "Put the pictures in the correct sequence."
+          },
+          {
+            "en": "subsequence",
+            "zh": "子序列；後續部分",
+            "example": "This pattern appears in a subsequence of the data."
+          },
+          {
+            "en": "consequence",
+            "zh": "結果；後果；重要性",
+            "example": "Every choice has a consequence."
+          }
+        ],
+        "adj": [
+          {
+            "en": "sequent",
+            "zh": "連續的；隨後",
+            "example": "The sequent stages became more difficult."
+          },
+          {
+            "en": "subsequent",
+            "zh": "隨後的；後來的",
+            "example": "Subsequent tests confirmed the result."
+          },
+          {
+            "en": "consequent",
+            "zh": "隨之發生的；作為結果的",
+            "example": "Heavy rain and the consequent flooding damaged homes."
+          }
+        ],
+        "adv": [
+          {
+            "en": "subsequently",
+            "zh": "後來；隨後",
+            "example": "He apologized and subsequently changed his behavior."
+          },
+          {
+            "en": "consequently",
+            "zh": "因此；所以",
+            "example": "The road was closed. Consequently, we took another route."
+          }
+        ]
+      },
+      {
+        "id": "b5l2-v15",
+        "base": "stream",
+        "verb": [
+          {
+            "en": "stream",
+            "zh": "串流播放；流動；接連湧入",
+            "example": "You can stream the lecture online."
+          }
+        ],
+        "noun": [
+          {
+            "en": "stream",
+            "zh": "溪流；一連串；資料流",
+            "example": "A narrow stream runs through the forest."
+          },
+          {
+            "en": "mainstream",
+            "zh": "主流；主流思想",
+            "example": "The idea has entered the mainstream."
+          }
+        ],
+        "adj": [
+          {
+            "en": "mainstream",
+            "zh": "主流的；普遍接受的",
+            "example": "The issue received attention from mainstream media."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l2-v16",
+        "base": "panic",
+        "verb": [
+          {
+            "en": "panic",
+            "zh": "使恐慌；驚慌失措",
+            "example": "Do not panic if the alarm sounds."
+          }
+        ],
+        "noun": [
+          {
+            "en": "panic",
+            "zh": "恐慌；驚慌",
+            "example": "A sudden panic spread through the crowd."
+          }
+        ],
+        "adj": [
+          {
+            "en": "panicky",
+            "zh": "驚慌的；容易恐慌的",
+            "example": "She felt panicky in the crowded room."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l2-v17",
+        "base": "necessary",
+        "verb": [
+          {
+            "en": "necessitate",
+            "zh": "使成為必要；需要",
+            "example": "The repairs may necessitate closing the road."
+          }
+        ],
+        "noun": [
+          {
+            "en": "necessity",
+            "zh": "必要；必需品；需要",
+            "example": "Clean water is a basic necessity."
+          }
+        ],
+        "adj": [
+          {
+            "en": "necessary",
+            "zh": "必要的；必需的",
+            "example": "Bring all the necessary documents."
+          }
+        ],
+        "adv": [
+          {
+            "en": "necessarily",
+            "zh": "必然地；必要地",
+            "example": "A high price does not necessarily mean high quality."
+          }
+        ]
+      },
+      {
+        "id": "b5l2-v18",
+        "base": "value",
+        "verb": [
+          {
+            "en": "value",
+            "zh": "重視；珍惜；估價",
+            "example": "We value your honest feedback."
+          },
+          {
+            "en": "valuate",
+            "zh": "估價；評定價值（專業用語）",
+            "example": "An expert will valuate the property."
+          },
+          {
+            "en": "evaluate",
+            "zh": "評估；評價",
+            "example": "The panel will evaluate every proposal."
+          },
+          {
+            "en": "overevaluate",
+            "zh": "過度評估；高估",
+            "example": "We should not overevaluate one test result."
+          },
+          {
+            "en": "underevaluate",
+            "zh": "低估；評估不足",
+            "example": "Managers sometimes underevaluate quiet employees."
+          }
+        ],
+        "noun": [
+          {
+            "en": "value",
+            "zh": "價值；重要性；價值觀",
+            "example": "The course offers good value for money."
+          },
+          {
+            "en": "valuables",
+            "zh": "貴重物品；財物",
+            "example": "Keep your valuables in a safe place."
+          },
+          {
+            "en": "valuation",
+            "zh": "估價；估值；評價",
+            "example": "The company received a higher market valuation."
+          },
+          {
+            "en": "evaluation",
+            "zh": "評估；評價",
+            "example": "The program needs a careful evaluation."
+          },
+          {
+            "en": "overevaluation",
+            "zh": "過高評價；過度評估",
+            "example": "Overevaluation of the asset created financial risk."
+          },
+          {
+            "en": "underevaluation",
+            "zh": "低估；評估不足",
+            "example": "Underevaluation of the problem delayed action."
+          }
+        ],
+        "adj": [
+          {
+            "en": "valuable",
+            "zh": "有價值的；貴重的；有益的",
+            "example": "She offered valuable advice."
+          },
+          {
+            "en": "invaluable",
+            "zh": "極寶貴的；非常有用的",
+            "example": "His local knowledge was invaluable."
+          }
+        ],
+        "adv": [
+          {
+            "en": "valuably",
+            "zh": "有價值地；有益地（少見）",
+            "example": "Her experience contributed valuably to the discussion."
+          }
+        ]
+      },
+      {
+        "id": "b5l2-v19",
+        "base": "valid",
+        "verb": [
+          {
+            "en": "validate",
+            "zh": "證實；確認有效；認可",
+            "example": "The experiment will validate the theory."
+          }
+        ],
+        "noun": [
+          {
+            "en": "validity",
+            "zh": "有效性；正確性；合法性",
+            "example": "Researchers questioned the validity of the survey."
+          },
+          {
+            "en": "validation",
+            "zh": "驗證；確認；認可",
+            "example": "The form requires email validation."
+          }
+        ],
+        "adj": [
+          {
+            "en": "valid",
+            "zh": "有效的；合理的；合法的",
+            "example": "Your ticket is valid for one month."
+          },
+          {
+            "en": "invalid",
+            "zh": "無效的；不成立的",
+            "example": "The system rejected the invalid password."
+          }
+        ],
+        "adv": [
+          {
+            "en": "validly",
+            "zh": "有效地；合法地；合理地",
+            "example": "The agreement was validly signed by both parties."
+          }
+        ]
+      },
+      {
+        "id": "b5l2-v20",
+        "base": "note",
+        "verb": [
+          {
+            "en": "note",
+            "zh": "注意；記下；指出",
+            "example": "Please note the change in schedule."
+          }
+        ],
+        "noun": [
+          {
+            "en": "note",
+            "zh": "筆記；便條；音符",
+            "example": "She left a note on my desk."
+          },
+          {
+            "en": "notability",
+            "zh": "顯著性；知名度；著名人物",
+            "example": "The scientist gained notability for her discovery."
+          }
+        ],
+        "adj": [
+          {
+            "en": "notable",
+            "zh": "顯著的；值得注意的；著名的",
+            "example": "There was a notable improvement in his work."
+          }
+        ],
+        "adv": [
+          {
+            "en": "notably",
+            "zh": "尤其；顯著地；值得注意地",
+            "example": "Several cities, notably Tainan, preserved old buildings."
+          }
+        ]
+      },
+      {
+        "id": "b5l2-v21",
+        "base": "verify",
+        "verb": [
+          {
+            "en": "verify",
+            "zh": "核實；查證；證明",
+            "example": "Please verify your email address."
+          }
+        ],
+        "noun": [
+          {
+            "en": "verification",
+            "zh": "核實；驗證；證明",
+            "example": "Identity verification is required."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b5l2-v22",
+        "base": "credit",
+        "verb": [],
+        "noun": [
+          {
+            "en": "credit",
+            "zh": "信用；功勞；學分；貸款",
+            "example": "She deserves credit for solving the problem."
+          },
+          {
+            "en": "credibility",
+            "zh": "可信度；可靠性",
+            "example": "Accurate reporting builds credibility."
+          },
+          {
+            "en": "incredibility",
+            "zh": "難以置信；不可信性",
+            "example": "The incredibility of his story made everyone suspicious."
+          }
+        ],
+        "adj": [
+          {
+            "en": "credible",
+            "zh": "可信的；可靠的",
+            "example": "The witness gave a credible account."
+          },
+          {
+            "en": "incredible",
+            "zh": "難以置信的；極好的",
+            "example": "The view from the mountain was incredible."
+          }
+        ],
+        "adv": [
+          {
+            "en": "credibly",
+            "zh": "可信地；可靠地",
+            "example": "She spoke credibly about the risks."
+          },
+          {
+            "en": "incredibly",
+            "zh": "難以置信地；非常地",
+            "example": "The exam was incredibly difficult."
+          }
+        ]
+      },
+      {
+        "id": "b5l2-v23",
+        "base": "cite",
+        "verb": [
+          {
+            "en": "cite",
+            "zh": "引用；引證；表揚",
+            "example": "The article cites several recent studies."
+          }
+        ],
+        "noun": [
+          {
+            "en": "citation",
+            "zh": "引文；引用；嘉獎",
+            "example": "Every quotation needs a proper citation."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b5l2-v24",
+        "base": "object",
+        "verb": [
+          {
+            "en": "object",
+            "zh": "反對；不贊成",
+            "example": "Several residents objected to the plan."
+          }
+        ],
+        "noun": [
+          {
+            "en": "object",
+            "zh": "物體；物件；目標",
+            "example": "The museum displayed a strange metal object."
+          },
+          {
+            "en": "objective",
+            "zh": "目標；目的",
+            "example": "Our main objective is to reduce waste."
+          },
+          {
+            "en": "objectivity",
+            "zh": "客觀性；公正",
+            "example": "Good reporting requires objectivity."
+          },
+          {
+            "en": "objection",
+            "zh": "反對；異議；反對理由",
+            "example": "No one raised an objection to the proposal."
+          }
+        ],
+        "adj": [
+          {
+            "en": "objective",
+            "zh": "客觀的；不帶偏見的",
+            "example": "We need an objective assessment of the evidence."
+          }
+        ],
+        "adv": [
+          {
+            "en": "objectively",
+            "zh": "客觀地；公正地",
+            "example": "The judge considered the evidence objectively."
+          }
+        ]
+      }
+    ]
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": [
+        {
+          "id": "b5l2-s001",
+          "sentence": "Fake news *can be defined* as news containing false or misleading information that appears truthful.",
+          "type": "complex",
+          "pattern": "S + Vt (Passive) + Prepositional phrase + Relative clause / Participle modifier"
+        },
+        {
+          "id": "b5l2-s002",
+          "sentence": "Although fake news has long been in existence and this issue is as old as the news industry itself, the Internet and social media *have made* creating and sharing fake news easier and faster than ever.",
+          "type": "compound-complex",
+          "pattern": "Adverbial clause (Although...) + S + Vt + O + OC"
+        },
+        {
+          "id": "b5l2-s003",
+          "sentence": "People *may be deceived* by fake news, believing the content to be genuine without questioning the sources.",
+          "type": "simple",
+          "pattern": "S + Vt (Passive) + Participle phrase"
+        },
+        {
+          "id": "b5l2-s004",
+          "sentence": "With so much fake news being spread every day, it *is* now more important than ever to understand where such news comes from and to question the news stories we read.",
+          "type": "complex",
+          "pattern": "Prepositional phrase (With...) + It (Formal S) + Vi + C + Infinitive clause + Noun clause"
+        },
+        {
+          "id": "b5l2-s005",
+          "sentence": "Fake news *comes* in many forms, but two types *are* the most common.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"but\")"
+        },
+        {
+          "id": "b5l2-s006",
+          "sentence": "First, fake news *can come* from sloppy journalism, which occurs when journalists write stories based on unreliable information or without fact-checking their sources prior to publication.",
+          "type": "complex",
+          "pattern": "S + Vi + Non-restrictive Relative clause + Adverbial clause (when...)"
+        },
+        {
+          "id": "b5l2-s007",
+          "sentence": "Second, some news *contains* deliberately false information to achieve social or political goals; examples *include* attempts to influence people to vote for a certain candidate or support a particular cause.",
+          "type": "compound",
+          "pattern": "S + Vt + O + Infinitive phrase ; S + Vt + O"
+        },
+        {
+          "id": "b5l2-s008",
+          "sentence": "The following example *illustrates* the potential long-lasting consequences of spreading false information.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b5l2-s009",
+          "sentence": "In 1998, a British researcher *published* a small-scale study in a respected medical journal.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + O + Prepositional phrase"
+        },
+        {
+          "id": "b5l2-s010",
+          "sentence": "The study *claimed* a link between the MMR vaccine and autism.",
+          "type": "simple",
+          "pattern": "S + Vt + O + Prepositional phrase"
+        },
+        {
+          "id": "b5l2-s011",
+          "sentence": "The media *provided* extensive coverage of this flawed study, leading to the widespread belief that the vaccine could cause autism.",
+          "type": "complex",
+          "pattern": "S + Vt + O + participle phrase + Appositive clause (that...)"
+        },
+        {
+          "id": "b5l2-s012",
+          "sentence": "As a result, public confidence in the vaccine *was shattered*, and vaccination rates *declined*.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"and\")"
+        },
+        {
+          "id": "b5l2-s013",
+          "sentence": "However, subsequent studies with larger samples *revealed* different findings, and the original study *was eventually proved* inaccurate.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"and\")"
+        },
+        {
+          "id": "b5l2-s014",
+          "sentence": "Despite this, misleading details from the initial study *have continued* to spread for years.",
+          "type": "simple",
+          "pattern": "Prepositional phrase (Despite...) + S + Vt + Infinitive phrase"
+        },
+        {
+          "id": "b5l2-s015",
+          "sentence": "Some parents thus *have refused* to vaccinate their children for fear that it might do more harm than good.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Prepositional phrase + Noun clause (that...)"
+        },
+        {
+          "id": "b5l2-s016",
+          "sentence": "More than two decades *have now passed* since the original study was published, but its effects *can still be observed* worldwide.",
+          "type": "compound-complex",
+          "pattern": "Adverbial clause (since...) + Compound sentence (with \"but\")"
+        },
+        {
+          "id": "b5l2-s017",
+          "sentence": "Another example *shows* how companies manipulate the news for their own advantage.",
+          "type": "complex",
+          "pattern": "S + Vt + Noun clause (how...)"
+        },
+        {
+          "id": "b5l2-s018",
+          "sentence": "On February 23, 2018, a major hypermarket in Taiwan *sent* an email to several media outlets, exaggerating an upcoming increase in the price of toilet paper.",
+          "type": "simple",
+          "pattern": "S + Vt + O + participle phrase"
+        },
+        {
+          "id": "b5l2-s019",
+          "sentence": "It *was later found* that the retailer’s true intention in doing so was merely to advertise its own toilet paper promotion, but by noon that day, the damage *had already been done*.",
+          "type": "compound-complex",
+          "pattern": "It (Formal S) + Noun clause (that...) + Compound sentence (with \"but\")"
+        },
+        {
+          "id": "b5l2-s020",
+          "sentence": "Two mainstream media outlets *reported* on the imminent price hike without fact-checking, and others soon *followed* suit.",
+          "type": "compound",
+          "pattern": "Compound sentence (with \"and\")"
+        },
+        {
+          "id": "b5l2-s021",
+          "sentence": "The reporting *prompted* a wave of panic buying among Taiwanese people, many of whom feared that if they didn’t stock up, they would run out of the precious daily necessity.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Non-restrictive Relative clause + Adverbial clause (if...)"
+        },
+        {
+          "id": "b5l2-s022",
+          "sentence": "Even manufacturers *were negatively impacted*, as their factories had to work overtime to handle the sudden increase in demand.",
+          "type": "complex",
+          "pattern": "S + Vi (Passive) + Adverbial clause (as...)"
+        },
+        {
+          "id": "b5l2-s023",
+          "sentence": "These events *remind* us that we must remain alert to fake news.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Noun clause (that...)"
+        },
+        {
+          "id": "b5l2-s024",
+          "sentence": "Whenever we come across new information, it *is* essential to evaluate its validity so that we do not mistake fake news for the truth.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Whenever...) + It (Formal S) + Adverbial clause (so that...)"
+        },
+        {
+          "id": "b5l2-s025",
+          "sentence": "One notable feature of reliable reporting *is* the inclusion of the writer’s name, which allows readers to view that writer’s biography and verify his or her credibility.",
+          "type": "complex",
+          "pattern": "S + Vi + C + Non-restrictive Relative clause"
+        },
+        {
+          "id": "b5l2-s026",
+          "sentence": "Another important sign *is* whether the article cites multiple primary sources, a practice that supports its trustworthiness.",
+          "type": "complex",
+          "pattern": "S + Vi + Noun clause (whether...) + Appositive phrase + Relative clause"
+        },
+        {
+          "id": "b5l2-s027",
+          "sentence": "It *is* also worth considering where the article was published, since respected media platforms such as the BBC or CNN tend to provide dependable coverage.",
+          "type": "complex",
+          "pattern": "It (Formal S) + Gerund phrase + Noun clause + Adverbial clause (since...)"
+        },
+        {
+          "id": "b5l2-s028",
+          "sentence": "Last but not least, factual reports *are usually written* in an objective manner that avoids emotional manipulation and provocative language.",
+          "type": "complex",
+          "pattern": "S + Vi (Passive) + Relative clause (that...)"
+        },
+        {
+          "id": "b5l2-s029",
+          "sentence": "By paying attention to these features, we *can reduce* the risk of falling for fake news.",
+          "type": "simple",
+          "pattern": "Prepositional phrase (By...) + S + Vt + O"
+        },
+        {
+          "id": "b5l2-s030",
+          "sentence": "In the current age of news overload, we *must all watch out* for fake news lest we fall victim to it.",
+          "type": "complex",
+          "pattern": "Prepositional phrase + S + Vi + Adverbial clause (lest...)"
+        },
+        {
+          "id": "b5l2-s031",
+          "sentence": "Useful strategies *include* thinking critically about what we are reading and conducting further research on news stories to check their content before accepting them as truth.",
+          "type": "complex",
+          "pattern": "S + Vt + Gerund phrase + Noun clause + Adverbial clause (before...)"
+        },
+        {
+          "id": "b5l2-s032",
+          "sentence": "With due diligence, we *can win* the war against fake news and *help* improve society.",
+          "type": "simple",
+          "pattern": "Prepositional phrase (With...) + S + Vt (Compound verb) + O"
+        }
+      ]
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}

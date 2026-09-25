@@ -2495,13 +2495,13 @@
           "id": "b3l2-s009",
           "sentence": "CEOs *performed* slightly better than average, coming in third.",
           "type": "simple",
-          "pattern": "S + Vi + Participle clause"
+          "pattern": "S + Vi + participle phrase"
         },
         {
           "id": "b3l2-s010",
           "sentence": "Lawyers, on the other hand, *performed* below average, ranking second to last.",
           "type": "simple",
-          "pattern": "S + Vi + Participle clause"
+          "pattern": "S + Vi + participle phrase"
         },
         {
           "id": "b3l2-s011",
@@ -2513,7 +2513,7 @@
           "id": "b3l2-s012",
           "sentence": "Amazingly, kindergarteners *outperformed* most of the adult teams, achieving the second-best performance.",
           "type": "simple",
-          "pattern": "S + Vt + O + Participle clause"
+          "pattern": "S + Vt + O + participle phrase"
         },
         {
           "id": "b3l2-s013",

@@ -230,7 +230,8 @@
         {
           "id": "l2",
           "title": "",
-          "status": "draft"
+          "status": "published",
+          "data": "data/b5/l2.json"
         },
         {
           "id": "l3",

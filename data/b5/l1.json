@@ -23,13 +23,7 @@
             "example": "The museum displays contemporary Taiwanese art."
           }
         ],
-        "adv": [
-          {
-            "en": "contemporarily",
-            "zh": "在當代；以當代方式",
-            "example": "The old story was contemporarily retold for young readers."
-          }
-        ]
+        "adv": []
       },
       {
         "id": "b5l1-v02",
@@ -239,11 +233,6 @@
             "en": "decide",
             "zh": "決定；判定",
             "example": "We decided to take the earlier train."
-          },
-          {
-            "en": "undecide",
-            "zh": "使撤回決定；使重新猶豫",
-            "example": "The new evidence may undecide some committee members."
           }
         ],
         "noun": [
@@ -285,11 +274,6 @@
             "en": "indecisively",
             "zh": "猶豫不決地",
             "example": "She stood indecisively between the two doors."
-          },
-          {
-            "en": "undecidedly",
-            "zh": "未決地；猶豫地",
-            "example": "He answered undecidedly when asked about his plans."
           }
         ]
       },
@@ -310,13 +294,7 @@
             "example": "The film offers a realistic depiction of city life."
           }
         ],
-        "adj": [
-          {
-            "en": "depictive",
-            "zh": "描繪的；描述性的",
-            "example": "The novel uses depictive language to create vivid scenes."
-          }
-        ],
+        "adj": [],
         "adv": []
       },
       {
@@ -2694,7 +2672,7 @@
           "id": "b5l1-s007",
           "sentence": "During their woodland walks, Thomas *would hesitate* at every fork, wondering about unexplored routes.",
           "type": "simple",
-          "pattern": "S + Vi + Participle clause"
+          "pattern": "S + Vi + participle phrase"
         },
         {
           "id": "b5l1-s008",
@@ -2748,7 +2726,7 @@
           "id": "b5l1-s016",
           "sentence": "Some readers *celebrate* the speaker’s declaration, “I *took* the one less traveled by, / And that *has made* all the difference,” seeing it as encouragement to choose an unconventional path.",
           "type": "compound",
-          "pattern": "Direct quote + Participle clause"
+          "pattern": "Direct quote + participle phrase"
         },
         {
           "id": "b5l1-s017",
@@ -2784,7 +2762,7 @@
           "id": "b5l1-s022",
           "sentence": "The dash *suggests* that the speaker is struggling to find words, making the sigh (echoing the sound of “I”) that follows feel natural.",
           "type": "complex",
-          "pattern": "Noun clause (that...) + Participle clause + Relative clause (that...)"
+          "pattern": "Noun clause (that...) + participle phrase + Relative clause (that...)"
         },
         {
           "id": "b5l1-s023",
@@ -2856,7 +2834,7 @@
           "id": "b5l1-s034",
           "sentence": "It *strikes* a chord with anyone who has faced difficult decisions, making it a timeless classic.",
           "type": "complex",
-          "pattern": "Relative clause (who...) + Participle clause"
+          "pattern": "Relative clause (who...) + participle phrase"
         }
       ]
     }
