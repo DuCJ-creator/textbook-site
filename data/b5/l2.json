@@ -853,7 +853,1488 @@
     ]
   },
   "phrases": {
-    "items": []
+    "items": [
+      {
+        "id": "b5l2-p001",
+        "phrase": "false or misleading information",
+        "pos": "ph.",
+        "zh": "虛假或誤導性資訊",
+        "example_en": "The post contained false or misleading information.",
+        "example_zh": "這篇貼文含有虛假或誤導性資訊。"
+      },
+      {
+        "id": "b5l2-p002",
+        "phrase": "appear truthful",
+        "pos": "ph.",
+        "zh": "看似真實",
+        "example_en": "The story appeared truthful at first.",
+        "example_zh": "這則故事起初看似真實。"
+      },
+      {
+        "id": "b5l2-p003",
+        "phrase": "long be in existence",
+        "pos": "ph.",
+        "zh": "已存在很久",
+        "example_en": "False reports have long been in existence.",
+        "example_zh": "虛假報導早已存在很久。"
+      },
+      {
+        "id": "b5l2-p004",
+        "phrase": "the news industry",
+        "pos": "ph.",
+        "zh": "新聞產業",
+        "example_en": "Technology has changed the news industry.",
+        "example_zh": "科技已改變新聞產業。"
+      },
+      {
+        "id": "b5l2-p005",
+        "phrase": "be deceived by",
+        "pos": "ph.",
+        "zh": "被……欺騙",
+        "example_en": "Do not be deceived by a dramatic headline.",
+        "example_zh": "不要被聳動的標題欺騙。"
+      },
+      {
+        "id": "b5l2-p006",
+        "phrase": "question the source",
+        "pos": "ph.",
+        "zh": "質疑消息來源",
+        "example_en": "Readers should question the source of the claim.",
+        "example_zh": "讀者應質疑該說法的消息來源。"
+      },
+      {
+        "id": "b5l2-p007",
+        "phrase": "come in many forms",
+        "pos": "ph.",
+        "zh": "有多種形式",
+        "example_en": "Fake news comes in many forms.",
+        "example_zh": "假新聞有多種形式。"
+      },
+      {
+        "id": "b5l2-p008",
+        "phrase": "come in various sizes",
+        "pos": "ph.",
+        "zh": "有各種尺寸",
+        "example_en": "These boxes come in various sizes.",
+        "example_zh": "這些箱子有各種尺寸。"
+      },
+      {
+        "id": "b5l2-p009",
+        "phrase": "fact-check the source",
+        "pos": "ph.",
+        "zh": "查核消息來源",
+        "example_en": "Always fact-check the source before sharing a post.",
+        "example_zh": "分享貼文前務必查核消息來源。"
+      },
+      {
+        "id": "b5l2-p010",
+        "phrase": "prior to",
+        "pos": "ph.",
+        "zh": "在……之前",
+        "example_en": "Check the facts prior to publication.",
+        "example_zh": "發布前要查核事實。"
+      },
+      {
+        "id": "b5l2-p011",
+        "phrase": "achieve political goals",
+        "pos": "ph.",
+        "zh": "達成政治目標",
+        "example_en": "The group used the campaign to achieve political goals.",
+        "example_zh": "該團體利用這場活動達成政治目標。"
+      },
+      {
+        "id": "b5l2-p012",
+        "phrase": "achieve social goals",
+        "pos": "ph.",
+        "zh": "達成社會目標",
+        "example_en": "The program helps communities achieve social goals.",
+        "example_zh": "這項計畫協助社區達成社會目標。"
+      },
+      {
+        "id": "b5l2-p013",
+        "phrase": "attempt to influence",
+        "pos": "ph.",
+        "zh": "試圖影響",
+        "example_en": "The advertisement attempted to influence voters.",
+        "example_zh": "這則廣告試圖影響選民。"
+      },
+      {
+        "id": "b5l2-p014",
+        "phrase": "a particular cause",
+        "pos": "ph.",
+        "zh": "特定理念／事業",
+        "example_en": "She raised money for a particular cause.",
+        "example_zh": "她為一項特定理念募款。"
+      },
+      {
+        "id": "b5l2-p015",
+        "phrase": "remote working",
+        "pos": "ph.",
+        "zh": "遠距工作",
+        "example_en": "Remote working has become more common.",
+        "example_zh": "遠距工作已變得更普遍。"
+      },
+      {
+        "id": "b5l2-p016",
+        "phrase": "remote learning",
+        "pos": "ph.",
+        "zh": "遠距學習",
+        "example_en": "Remote learning requires self-discipline.",
+        "example_zh": "遠距學習需要自律。"
+      },
+      {
+        "id": "b5l2-p017",
+        "phrase": "range from…to",
+        "pos": "ph.",
+        "zh": "範圍從……到……不等",
+        "example_en": "The topics range from science to history.",
+        "example_zh": "主題範圍從科學到歷史不等。"
+      },
+      {
+        "id": "b5l2-p018",
+        "phrase": "move on to a new stage in one’s life",
+        "pos": "ph.",
+        "zh": "邁向人生新階段",
+        "example_en": "She moved on to a new stage in her life after graduation.",
+        "example_zh": "畢業後，她邁向人生的新階段。"
+      },
+      {
+        "id": "b5l2-p019",
+        "phrase": "marriage proposal to",
+        "pos": "ph.",
+        "zh": "向……求婚",
+        "example_en": "He made a marriage proposal to his girlfriend.",
+        "example_zh": "他向女友求婚。"
+      },
+      {
+        "id": "b5l2-p020",
+        "phrase": "pop a question",
+        "pos": "ph.",
+        "zh": "提出求婚",
+        "example_en": "He planned to pop the question at dinner.",
+        "example_zh": "他計畫在晚餐時求婚。"
+      },
+      {
+        "id": "b5l2-p021",
+        "phrase": "burst into tears",
+        "pos": "ph.",
+        "zh": "突然哭了起來",
+        "example_en": "She burst into tears of joy.",
+        "example_zh": "她喜極而泣。"
+      },
+      {
+        "id": "b5l2-p022",
+        "phrase": "figure out",
+        "pos": "ph.",
+        "zh": "弄清楚；想出",
+        "example_en": "We must figure out what really happened.",
+        "example_zh": "我們必須弄清楚究竟發生了什麼。"
+      },
+      {
+        "id": "b5l2-p023",
+        "phrase": "long-lasting consequences of",
+        "pos": "ph.",
+        "zh": "……的長期後果",
+        "example_en": "The lie had long-lasting consequences for the company.",
+        "example_zh": "這個謊言對公司造成長期後果。"
+      },
+      {
+        "id": "b5l2-p024",
+        "phrase": "publish a small-scale study",
+        "pos": "ph.",
+        "zh": "發表小規模研究",
+        "example_en": "The team published a small-scale study.",
+        "example_zh": "該團隊發表了一項小規模研究。"
+      },
+      {
+        "id": "b5l2-p025",
+        "phrase": "a respected medical journal",
+        "pos": "ph.",
+        "zh": "受尊敬的醫學期刊",
+        "example_en": "The paper appeared in a respected medical journal.",
+        "example_zh": "這篇論文刊登於一份受尊敬的醫學期刊。"
+      },
+      {
+        "id": "b5l2-p026",
+        "phrase": "claim a link between A and B",
+        "pos": "ph.",
+        "zh": "聲稱 A 與 B 之間有關聯",
+        "example_en": "The report claimed a link between diet and sleep.",
+        "example_zh": "該報告聲稱飲食與睡眠之間有關聯。"
+      },
+      {
+        "id": "b5l2-p027",
+        "phrase": "extensive coverage of",
+        "pos": "ph.",
+        "zh": "對……的廣泛報導",
+        "example_en": "The event received extensive coverage in the media.",
+        "example_zh": "這起事件獲得媒體廣泛報導。"
+      },
+      {
+        "id": "b5l2-p028",
+        "phrase": "lead to the widespread belief",
+        "pos": "ph.",
+        "zh": "導致普遍的看法",
+        "example_en": "The report led to the widespread belief that the product was unsafe.",
+        "example_zh": "該報導導致大眾普遍認為此產品不安全。"
+      },
+      {
+        "id": "b5l2-p029",
+        "phrase": "public confidence in",
+        "pos": "ph.",
+        "zh": "大眾對……的信心",
+        "example_en": "The scandal damaged public confidence in the agency.",
+        "example_zh": "這起醜聞損害大眾對該機構的信心。"
+      },
+      {
+        "id": "b5l2-p030",
+        "phrase": "vaccination rate",
+        "pos": "ph.",
+        "zh": "疫苗接種率",
+        "example_en": "The vaccination rate increased this year.",
+        "example_zh": "今年的疫苗接種率提高了。"
+      },
+      {
+        "id": "b5l2-p031",
+        "phrase": "a subsequent study with larger samples",
+        "pos": "ph.",
+        "zh": "後續採用較大樣本的研究",
+        "example_en": "A subsequent study with larger samples reached another conclusion.",
+        "example_zh": "後續採用較大樣本的研究得出不同結論。"
+      },
+      {
+        "id": "b5l2-p032",
+        "phrase": "reveal different findings",
+        "pos": "ph.",
+        "zh": "揭示不同的研究結果",
+        "example_en": "New research revealed different findings.",
+        "example_zh": "新研究揭示了不同的結果。"
+      },
+      {
+        "id": "b5l2-p033",
+        "phrase": "be proved inaccurate",
+        "pos": "ph.",
+        "zh": "被證明不正確",
+        "example_en": "The original claim was proved inaccurate.",
+        "example_zh": "最初的說法被證明不正確。"
+      },
+      {
+        "id": "b5l2-p034",
+        "phrase": "for fear that",
+        "pos": "ph.",
+        "zh": "唯恐；擔心",
+        "example_en": "He stayed silent for fear that others would criticize him.",
+        "example_zh": "他唯恐遭到他人批評而保持沉默。"
+      },
+      {
+        "id": "b5l2-p035",
+        "phrase": "do more harm than good",
+        "pos": "ph.",
+        "zh": "弊大於利",
+        "example_en": "Sharing unchecked advice may do more harm than good.",
+        "example_zh": "分享未經查證的建議可能弊大於利。"
+      },
+      {
+        "id": "b5l2-p036",
+        "phrase": "reduced concentration",
+        "pos": "ph.",
+        "zh": "專注力下降",
+        "example_en": "Lack of sleep can cause reduced concentration.",
+        "example_zh": "睡眠不足可能造成專注力下降。"
+      },
+      {
+        "id": "b5l2-p037",
+        "phrase": "critics’ harsh comments on the Internet",
+        "pos": "ph.",
+        "zh": "評論者在網路上的嚴厲批評",
+        "example_en": "She ignored critics’ harsh comments on the Internet.",
+        "example_zh": "她不理會評論者在網路上的嚴厲批評。"
+      },
+      {
+        "id": "b5l2-p038",
+        "phrase": "a lack of experience",
+        "pos": "ph.",
+        "zh": "缺乏經驗",
+        "example_en": "The mistake resulted from a lack of experience.",
+        "example_zh": "這個錯誤源於缺乏經驗。"
+      },
+      {
+        "id": "b5l2-p039",
+        "phrase": "the spread of fake news",
+        "pos": "ph.",
+        "zh": "假新聞的傳播",
+        "example_en": "Education can slow the spread of fake news.",
+        "example_zh": "教育能減緩假新聞的傳播。"
+      },
+      {
+        "id": "b5l2-p040",
+        "phrase": "stockpile toilet paper",
+        "pos": "ph.",
+        "zh": "囤積衛生紙",
+        "example_en": "Some people began to stockpile toilet paper.",
+        "example_zh": "有些人開始囤積衛生紙。"
+      },
+      {
+        "id": "b5l2-p041",
+        "phrase": "spread unverified health advice online",
+        "pos": "ph.",
+        "zh": "在網路上散播未經證實的健康建議",
+        "example_en": "Do not spread unverified health advice online.",
+        "example_zh": "不要在網路上散播未經證實的健康建議。"
+      },
+      {
+        "id": "b5l2-p042",
+        "phrase": "consult a medical professional",
+        "pos": "ph.",
+        "zh": "諮詢醫療專業人員",
+        "example_en": "Consult a medical professional if symptoms continue.",
+        "example_zh": "若症狀持續，請諮詢醫療專業人員。"
+      },
+      {
+        "id": "b5l2-p043",
+        "phrase": "face severe financial crises",
+        "pos": "ph.",
+        "zh": "面臨嚴重財務危機",
+        "example_en": "Several firms faced severe financial crises.",
+        "example_zh": "數家公司面臨嚴重財務危機。"
+      },
+      {
+        "id": "b5l2-p044",
+        "phrase": "shatter one’s confidence in",
+        "pos": "ph.",
+        "zh": "摧毀某人對……的信心",
+        "example_en": "The fraud shattered investors’ confidence in the market.",
+        "example_zh": "這起詐欺摧毀投資人對市場的信心。"
+      },
+      {
+        "id": "b5l2-p045",
+        "phrase": "the stock market",
+        "pos": "ph.",
+        "zh": "股票市場",
+        "example_en": "The stock market fell sharply today.",
+        "example_zh": "股票市場今天大幅下跌。"
+      },
+      {
+        "id": "b5l2-p046",
+        "phrase": "natural talent in music",
+        "pos": "ph.",
+        "zh": "音樂方面的天賦",
+        "example_en": "She has a natural talent in music.",
+        "example_zh": "她具有音樂方面的天賦。"
+      },
+      {
+        "id": "b5l2-p047",
+        "phrase": "rely on last-minute preparation",
+        "pos": "ph.",
+        "zh": "依賴臨時抱佛腳",
+        "example_en": "Do not rely on last-minute preparation.",
+        "example_zh": "不要依賴臨時抱佛腳。"
+      },
+      {
+        "id": "b5l2-p048",
+        "phrase": "make small but noticeable mistakes",
+        "pos": "ph.",
+        "zh": "犯下細微但明顯的錯誤",
+        "example_en": "He made small but noticeable mistakes.",
+        "example_zh": "他犯了一些細微但明顯的錯誤。"
+      },
+      {
+        "id": "b5l2-p049",
+        "phrase": "consistent effort",
+        "pos": "ph.",
+        "zh": "持續的努力",
+        "example_en": "Real progress requires consistent effort.",
+        "example_zh": "真正的進步需要持續的努力。"
+      },
+      {
+        "id": "b5l2-p050",
+        "phrase": "the key to real improvement",
+        "pos": "ph.",
+        "zh": "真正進步的關鍵",
+        "example_en": "Daily practice is the key to real improvement.",
+        "example_zh": "每日練習是真正進步的關鍵。"
+      },
+      {
+        "id": "b5l2-p051",
+        "phrase": "manipulate…for one’s own advantage",
+        "pos": "ph.",
+        "zh": "為自己的利益操弄……",
+        "example_en": "The company manipulated the data for its own advantage.",
+        "example_zh": "該公司為自身利益操弄數據。"
+      },
+      {
+        "id": "b5l2-p052",
+        "phrase": "mainstream media outlet",
+        "pos": "ph.",
+        "zh": "主流媒體機構",
+        "example_en": "Several mainstream media outlets reported the story.",
+        "example_zh": "數家主流媒體機構報導了這則消息。"
+      },
+      {
+        "id": "b5l2-p053",
+        "phrase": "an upcoming increase in the price of",
+        "pos": "ph.",
+        "zh": "即將上漲的……價格",
+        "example_en": "People worried about an upcoming increase in the price of fuel.",
+        "example_zh": "人們擔心燃料價格即將上漲。"
+      },
+      {
+        "id": "b5l2-p054",
+        "phrase": "true intention in doing",
+        "pos": "ph.",
+        "zh": "做……的真正意圖",
+        "example_en": "We questioned his true intention in sharing the rumor.",
+        "example_zh": "我們質疑他散播謠言的真正意圖。"
+      },
+      {
+        "id": "b5l2-p055",
+        "phrase": "imminent price hike",
+        "pos": "ph.",
+        "zh": "即將來臨的漲價",
+        "example_en": "The rumor warned of an imminent price hike.",
+        "example_zh": "謠言警告價格即將上漲。"
+      },
+      {
+        "id": "b5l2-p056",
+        "phrase": "follow suit",
+        "pos": "ph.",
+        "zh": "跟著做；仿效",
+        "example_en": "Other shoppers soon followed suit.",
+        "example_zh": "其他購物者很快也跟著做。"
+      },
+      {
+        "id": "b5l2-p057",
+        "phrase": "prompt a wave of panic buying",
+        "pos": "ph.",
+        "zh": "引發一波恐慌性搶購",
+        "example_en": "The false report prompted a wave of panic buying.",
+        "example_zh": "這則假報導引發一波恐慌性搶購。"
+      },
+      {
+        "id": "b5l2-p058",
+        "phrase": "stock up",
+        "pos": "ph.",
+        "zh": "囤貨",
+        "example_en": "Families stocked up on food and water.",
+        "example_zh": "各家各戶囤積食物和水。"
+      },
+      {
+        "id": "b5l2-p059",
+        "phrase": "daily necessity",
+        "pos": "ph.",
+        "zh": "日常必需品",
+        "example_en": "Soap is a daily necessity.",
+        "example_zh": "肥皂是日常必需品。"
+      },
+      {
+        "id": "b5l2-p060",
+        "phrase": "work overtime",
+        "pos": "ph.",
+        "zh": "加班",
+        "example_en": "Factory workers had to work overtime.",
+        "example_zh": "工廠員工不得不加班。"
+      },
+      {
+        "id": "b5l2-p061",
+        "phrase": "handle a sudden increase in demand",
+        "pos": "ph.",
+        "zh": "應付需求突然增加",
+        "example_en": "The store struggled to handle a sudden increase in demand.",
+        "example_zh": "商店難以應付需求突然增加。"
+      },
+      {
+        "id": "b5l2-p062",
+        "phrase": "loss of sleep caused by staying up late",
+        "pos": "ph.",
+        "zh": "熬夜造成的睡眠不足",
+        "example_en": "His headache came from loss of sleep caused by staying up late.",
+        "example_zh": "他的頭痛來自熬夜造成的睡眠不足。"
+      },
+      {
+        "id": "b5l2-p063",
+        "phrase": "clear one’s mind",
+        "pos": "ph.",
+        "zh": "讓頭腦清醒",
+        "example_en": "A short walk can clear your mind.",
+        "example_zh": "短暫散步能讓你的頭腦清醒。"
+      },
+      {
+        "id": "b5l2-p064",
+        "phrase": "enjoy the beauty of nature",
+        "pos": "ph.",
+        "zh": "欣賞大自然之美",
+        "example_en": "We hiked to enjoy the beauty of nature.",
+        "example_zh": "我們健行以欣賞大自然之美。"
+      },
+      {
+        "id": "b5l2-p065",
+        "phrase": "historic landmark",
+        "pos": "ph.",
+        "zh": "歷史地標",
+        "example_en": "The tower is a historic landmark.",
+        "example_zh": "這座塔是一處歷史地標。"
+      },
+      {
+        "id": "b5l2-p066",
+        "phrase": "offer guided tours",
+        "pos": "ph.",
+        "zh": "提供導覽行程",
+        "example_en": "The museum offers guided tours every morning.",
+        "example_zh": "博物館每天上午提供導覽行程。"
+      },
+      {
+        "id": "b5l2-p067",
+        "phrase": "preview before class and review after class",
+        "pos": "ph.",
+        "zh": "課前預習、課後複習",
+        "example_en": "Students should preview before class and review after class.",
+        "example_zh": "學生應課前預習、課後複習。"
+      },
+      {
+        "id": "b5l2-p068",
+        "phrase": "make good use of one’s time",
+        "pos": "ph.",
+        "zh": "善用時間",
+        "example_en": "She makes good use of her time on the train.",
+        "example_zh": "她善用搭火車的時間。"
+      },
+      {
+        "id": "b5l2-p069",
+        "phrase": "complete the assignment in a timely manner",
+        "pos": "ph.",
+        "zh": "及時完成作業",
+        "example_en": "Please complete the assignment in a timely manner.",
+        "example_zh": "請及時完成作業。"
+      },
+      {
+        "id": "b5l2-p070",
+        "phrase": "remain alert to",
+        "pos": "ph.",
+        "zh": "對……保持警覺",
+        "example_en": "Remain alert to misleading headlines.",
+        "example_zh": "對誤導性標題保持警覺。"
+      },
+      {
+        "id": "b5l2-p071",
+        "phrase": "come across new information",
+        "pos": "ph.",
+        "zh": "偶然發現新資訊",
+        "example_en": "We often come across new information online.",
+        "example_zh": "我們常在網路上偶然發現新資訊。"
+      },
+      {
+        "id": "b5l2-p072",
+        "phrase": "evaluate the validity of",
+        "pos": "ph.",
+        "zh": "評估……的有效性／真實性",
+        "example_en": "Readers must evaluate the validity of each claim.",
+        "example_zh": "讀者必須評估每項說法的真實性。"
+      },
+      {
+        "id": "b5l2-p073",
+        "phrase": "mistake…for",
+        "pos": "ph.",
+        "zh": "把……誤認為……",
+        "example_en": "Do not mistake opinion for fact.",
+        "example_zh": "不要把意見誤認為事實。"
+      },
+      {
+        "id": "b5l2-p074",
+        "phrase": "verify the credibility of",
+        "pos": "ph.",
+        "zh": "查證……的可信度",
+        "example_en": "We verified the credibility of the website.",
+        "example_zh": "我們查證了該網站的可信度。"
+      },
+      {
+        "id": "b5l2-p075",
+        "phrase": "cite primary sources",
+        "pos": "ph.",
+        "zh": "引用第一手資料",
+        "example_en": "Good articles cite primary sources.",
+        "example_zh": "好的文章會引用第一手資料。"
+      },
+      {
+        "id": "b5l2-p076",
+        "phrase": "provide dependable coverage",
+        "pos": "ph.",
+        "zh": "提供可靠的報導",
+        "example_en": "The station provides dependable coverage of local news.",
+        "example_zh": "該電視臺提供可靠的地方新聞報導。"
+      },
+      {
+        "id": "b5l2-p077",
+        "phrase": "last but not least",
+        "pos": "ph.",
+        "zh": "最後但同樣重要的是",
+        "example_en": "Last but not least, check the publication date.",
+        "example_zh": "最後但同樣重要的是，要查看發布日期。"
+      },
+      {
+        "id": "b5l2-p078",
+        "phrase": "in an objective manner",
+        "pos": "ph.",
+        "zh": "以客觀的方式",
+        "example_en": "Reporters should write in an objective manner.",
+        "example_zh": "記者應以客觀的方式撰寫報導。"
+      },
+      {
+        "id": "b5l2-p079",
+        "phrase": "emotional manipulation",
+        "pos": "ph.",
+        "zh": "情緒操弄",
+        "example_en": "The advertisement relies on emotional manipulation.",
+        "example_zh": "這則廣告仰賴情緒操弄。"
+      },
+      {
+        "id": "b5l2-p080",
+        "phrase": "provocative language",
+        "pos": "ph.",
+        "zh": "煽動性言語",
+        "example_en": "The post used provocative language.",
+        "example_zh": "這篇貼文使用煽動性言語。"
+      },
+      {
+        "id": "b5l2-p081",
+        "phrase": "fall for",
+        "pos": "ph.",
+        "zh": "上……的當；信以為真",
+        "example_en": "Do not fall for online scams.",
+        "example_zh": "不要上網路詐騙的當。"
+      },
+      {
+        "id": "b5l2-p082",
+        "phrase": "in the current age of",
+        "pos": "ph.",
+        "zh": "在當今……的時代",
+        "example_en": "Critical thinking matters in the current age of social media.",
+        "example_zh": "在當今社群媒體時代，批判思考很重要。"
+      },
+      {
+        "id": "b5l2-p083",
+        "phrase": "news overload",
+        "pos": "ph.",
+        "zh": "新聞資訊過量",
+        "example_en": "News overload can make people anxious.",
+        "example_zh": "新聞資訊過量可能使人焦慮。"
+      },
+      {
+        "id": "b5l2-p084",
+        "phrase": "watch out for",
+        "pos": "ph.",
+        "zh": "小心；留意",
+        "example_en": "Watch out for fake accounts.",
+        "example_zh": "留意假帳號。"
+      },
+      {
+        "id": "b5l2-p085",
+        "phrase": "fall victim to",
+        "pos": "ph.",
+        "zh": "成為……的受害者",
+        "example_en": "Many people fall victim to fraud.",
+        "example_zh": "許多人成為詐欺的受害者。"
+      },
+      {
+        "id": "b5l2-p086",
+        "phrase": "think critically about",
+        "pos": "ph.",
+        "zh": "批判性地思考……",
+        "example_en": "Think critically about what you read.",
+        "example_zh": "要批判性地思考你所閱讀的內容。"
+      },
+      {
+        "id": "b5l2-p087",
+        "phrase": "conduct further research on",
+        "pos": "ph.",
+        "zh": "對……進行進一步研究",
+        "example_en": "Scientists conducted further research on the vaccine.",
+        "example_zh": "科學家對該疫苗進行進一步研究。"
+      },
+      {
+        "id": "b5l2-p088",
+        "phrase": "due diligence",
+        "pos": "ph.",
+        "zh": "盡職調查；審慎查證",
+        "example_en": "Investors should perform due diligence.",
+        "example_zh": "投資人應進行審慎查證。"
+      },
+      {
+        "id": "b5l2-p089",
+        "phrase": "win the war against",
+        "pos": "ph.",
+        "zh": "打贏對抗……的戰爭",
+        "example_en": "Education can help win the war against misinformation.",
+        "example_zh": "教育有助於打贏對抗錯誤資訊的戰爭。"
+      },
+      {
+        "id": "b5l2-p090",
+        "phrase": "lose one’s appetite",
+        "pos": "ph.",
+        "zh": "失去食慾",
+        "example_en": "Stress made him lose his appetite.",
+        "example_zh": "壓力使他失去食慾。"
+      },
+      {
+        "id": "b5l2-p091",
+        "phrase": "have difficulty falling asleep",
+        "pos": "ph.",
+        "zh": "難以入睡",
+        "example_en": "She had difficulty falling asleep after reading the news.",
+        "example_zh": "她看完新聞後難以入睡。"
+      },
+      {
+        "id": "b5l2-p092",
+        "phrase": "the main concern of",
+        "pos": "ph.",
+        "zh": "……的主要擔憂",
+        "example_en": "Accuracy is the main concern of the editor.",
+        "example_zh": "準確性是編輯最主要的考量。"
+      },
+      {
+        "id": "b5l2-p093",
+        "phrase": "look suspicious",
+        "pos": "ph.",
+        "zh": "看起來可疑",
+        "example_en": "The email looked suspicious.",
+        "example_zh": "這封電子郵件看起來可疑。"
+      },
+      {
+        "id": "b5l2-p094",
+        "phrase": "fall victim to procrastination",
+        "pos": "ph.",
+        "zh": "成為拖延的受害者",
+        "example_en": "Students may fall victim to procrastination.",
+        "example_zh": "學生可能會受拖延所害。"
+      },
+      {
+        "id": "b5l2-p095",
+        "phrase": "miss deadlines for",
+        "pos": "ph.",
+        "zh": "錯過……的截止期限",
+        "example_en": "He often misses deadlines for assignments.",
+        "example_zh": "他常錯過作業的截止期限。"
+      },
+      {
+        "id": "b5l2-p096",
+        "phrase": "be truly grateful for",
+        "pos": "ph.",
+        "zh": "真正感激……",
+        "example_en": "I am truly grateful for your help.",
+        "example_zh": "我由衷感激你的幫助。"
+      },
+      {
+        "id": "b5l2-p097",
+        "phrase": "tackle the problem of",
+        "pos": "ph.",
+        "zh": "處理……的問題",
+        "example_en": "The campaign tackles the problem of fake news.",
+        "example_zh": "這項活動處理假新聞的問題。"
+      },
+      {
+        "id": "b5l2-p098",
+        "phrase": "develop a vaccine",
+        "pos": "ph.",
+        "zh": "研發疫苗",
+        "example_en": "Scientists worked to develop a vaccine.",
+        "example_zh": "科學家努力研發疫苗。"
+      },
+      {
+        "id": "b5l2-p099",
+        "phrase": "eradicate the disease",
+        "pos": "ph.",
+        "zh": "根除疾病",
+        "example_en": "Vaccination may help eradicate the disease.",
+        "example_zh": "疫苗接種可能有助於根除疾病。"
+      },
+      {
+        "id": "b5l2-p100",
+        "phrase": "a war-stricken country",
+        "pos": "ph.",
+        "zh": "飽受戰火蹂躪的國家",
+        "example_en": "Aid was sent to the war-stricken country.",
+        "example_zh": "援助物資被送往這個飽受戰火蹂躪的國家。"
+      },
+      {
+        "id": "b5l2-p101",
+        "phrase": "contaminated water",
+        "pos": "ph.",
+        "zh": "受污染的水",
+        "example_en": "Contaminated water can spread disease.",
+        "example_zh": "受污染的水會傳播疾病。"
+      },
+      {
+        "id": "b5l2-p102",
+        "phrase": "reduce the risk of",
+        "pos": "ph.",
+        "zh": "降低……的風險",
+        "example_en": "Washing hands reduces the risk of infection.",
+        "example_zh": "洗手能降低感染風險。"
+      },
+      {
+        "id": "b5l2-p103",
+        "phrase": "be infected with",
+        "pos": "ph.",
+        "zh": "感染……",
+        "example_en": "He was infected with the virus.",
+        "example_zh": "他感染了這種病毒。"
+      },
+      {
+        "id": "b5l2-p104",
+        "phrase": "under intense pressure",
+        "pos": "ph.",
+        "zh": "在巨大壓力下",
+        "example_en": "The team worked under intense pressure.",
+        "example_zh": "團隊在巨大壓力下工作。"
+      },
+      {
+        "id": "b5l2-p105",
+        "phrase": "increase the intensity of",
+        "pos": "ph.",
+        "zh": "增加……的強度",
+        "example_en": "The coach increased the intensity of training.",
+        "example_zh": "教練提高了訓練強度。"
+      },
+      {
+        "id": "b5l2-p106",
+        "phrase": "daily training session",
+        "pos": "ph.",
+        "zh": "每日訓練課程",
+        "example_en": "She never misses her daily training session.",
+        "example_zh": "她從不錯過每日訓練。"
+      },
+      {
+        "id": "b5l2-p107",
+        "phrase": "change over time",
+        "pos": "ph.",
+        "zh": "隨時間改變",
+        "example_en": "Public opinion can change over time.",
+        "example_zh": "公眾意見會隨時間改變。"
+      },
+      {
+        "id": "b5l2-p108",
+        "phrase": "by definition",
+        "pos": "ph.",
+        "zh": "按照定義",
+        "example_en": "By definition, evidence must support the claim.",
+        "example_zh": "按照定義，證據必須支持這項說法。"
+      },
+      {
+        "id": "b5l2-p109",
+        "phrase": "be truthful with",
+        "pos": "ph.",
+        "zh": "對……誠實",
+        "example_en": "Be truthful with your parents.",
+        "example_zh": "要對父母誠實。"
+      },
+      {
+        "id": "b5l2-p110",
+        "phrase": "look away",
+        "pos": "ph.",
+        "zh": "把目光移開",
+        "example_en": "He looked away from the screen.",
+        "example_zh": "他把目光從螢幕移開。"
+      },
+      {
+        "id": "b5l2-p111",
+        "phrase": "deceive sb. into doing",
+        "pos": "ph.",
+        "zh": "欺騙某人做……",
+        "example_en": "The scam deceived her into sending money.",
+        "example_zh": "這場詐騙騙她匯款。"
+      },
+      {
+        "id": "b5l2-p112",
+        "phrase": "press conference",
+        "pos": "ph.",
+        "zh": "記者會",
+        "example_en": "The mayor held a press conference.",
+        "example_zh": "市長舉行了記者會。"
+      },
+      {
+        "id": "b5l2-p113",
+        "phrase": "take turns doing",
+        "pos": "ph.",
+        "zh": "輪流做……",
+        "example_en": "We took turns checking the facts.",
+        "example_zh": "我們輪流查核事實。"
+      },
+      {
+        "id": "b5l2-p114",
+        "phrase": "prior knowledge",
+        "pos": "ph.",
+        "zh": "先備知識",
+        "example_en": "Prior knowledge helps readers understand the article.",
+        "example_zh": "先備知識有助讀者理解文章。"
+      },
+      {
+        "id": "b5l2-p115",
+        "phrase": "political issue",
+        "pos": "ph.",
+        "zh": "政治議題",
+        "example_en": "They discussed a sensitive political issue.",
+        "example_zh": "他們討論了一項敏感的政治議題。"
+      },
+      {
+        "id": "b5l2-p116",
+        "phrase": "run for mayor",
+        "pos": "ph.",
+        "zh": "競選市長",
+        "example_en": "She plans to run for mayor.",
+        "example_zh": "她計畫競選市長。"
+      },
+      {
+        "id": "b5l2-p117",
+        "phrase": "be familiar with local politics",
+        "pos": "ph.",
+        "zh": "熟悉地方政治",
+        "example_en": "A candidate should be familiar with local politics.",
+        "example_zh": "候選人應熟悉地方政治。"
+      },
+      {
+        "id": "b5l2-p118",
+        "phrase": "make public appearances",
+        "pos": "ph.",
+        "zh": "公開露面",
+        "example_en": "The candidate made several public appearances.",
+        "example_zh": "候選人多次公開露面。"
+      },
+      {
+        "id": "b5l2-p119",
+        "phrase": "get promoted",
+        "pos": "ph.",
+        "zh": "獲得升遷",
+        "example_en": "She got promoted last month.",
+        "example_zh": "她上個月獲得升遷。"
+      },
+      {
+        "id": "b5l2-p120",
+        "phrase": "make an attempt",
+        "pos": "ph.",
+        "zh": "嘗試",
+        "example_en": "He made an attempt to correct the report.",
+        "example_zh": "他嘗試更正報導。"
+      },
+      {
+        "id": "b5l2-p121",
+        "phrase": "attempt to do",
+        "pos": "ph.",
+        "zh": "試圖做……",
+        "example_en": "They attempted to influence public opinion.",
+        "example_zh": "他們試圖影響公眾意見。"
+      },
+      {
+        "id": "b5l2-p122",
+        "phrase": "candidate for mayor",
+        "pos": "ph.",
+        "zh": "市長候選人",
+        "example_en": "Each candidate for mayor joined the debate.",
+        "example_zh": "每位市長候選人都參加了辯論。"
+      },
+      {
+        "id": "b5l2-p123",
+        "phrase": "law firm",
+        "pos": "ph.",
+        "zh": "律師事務所",
+        "example_en": "She works for a large law firm.",
+        "example_zh": "她在一家大型律師事務所工作。"
+      },
+      {
+        "id": "b5l2-p124",
+        "phrase": "do extensive research on a subject",
+        "pos": "ph.",
+        "zh": "對某主題進行廣泛研究",
+        "example_en": "He did extensive research on the subject.",
+        "example_zh": "他對該主題進行廣泛研究。"
+      },
+      {
+        "id": "b5l2-p125",
+        "phrase": "cover an extensive area of",
+        "pos": "ph.",
+        "zh": "涵蓋廣大範圍的……",
+        "example_en": "The forest covers an extensive area of the island.",
+        "example_zh": "這片森林涵蓋島上的廣大區域。"
+      },
+      {
+        "id": "b5l2-p126",
+        "phrase": "extend one’s relations with",
+        "pos": "ph.",
+        "zh": "擴展與……的關係",
+        "example_en": "The city hopes to extend its relations with neighboring towns.",
+        "example_zh": "該市希望擴展與鄰近城鎮的關係。"
+      },
+      {
+        "id": "b5l2-p127",
+        "phrase": "extension of new technologies",
+        "pos": "ph.",
+        "zh": "新科技的延伸應用",
+        "example_en": "The project supports the extension of new technologies.",
+        "example_zh": "這項計畫支持新科技的延伸應用。"
+      },
+      {
+        "id": "b5l2-p128",
+        "phrase": "waterproof watch",
+        "pos": "ph.",
+        "zh": "防水手錶",
+        "example_en": "He wore a waterproof watch while swimming.",
+        "example_zh": "他游泳時戴著防水手錶。"
+      },
+      {
+        "id": "b5l2-p129",
+        "phrase": "shatter the glass into tiny pieces",
+        "pos": "ph.",
+        "zh": "把玻璃摔成碎片",
+        "example_en": "The impact shattered the glass into tiny pieces.",
+        "example_zh": "撞擊把玻璃震成碎片。"
+      },
+      {
+        "id": "b5l2-p130",
+        "phrase": "do extensive damage to",
+        "pos": "ph.",
+        "zh": "對……造成廣泛損害",
+        "example_en": "The storm did extensive damage to the coast.",
+        "example_zh": "暴風雨對海岸造成廣泛損害。"
+      },
+      {
+        "id": "b5l2-p131",
+        "phrase": "mainstream fashion trend",
+        "pos": "ph.",
+        "zh": "主流時尚潮流",
+        "example_en": "The style soon became a mainstream fashion trend.",
+        "example_zh": "這種風格很快成為主流時尚潮流。"
+      },
+      {
+        "id": "b5l2-p132",
+        "phrase": "world-renowned masterpiece",
+        "pos": "ph.",
+        "zh": "舉世聞名的傑作",
+        "example_en": "The museum displays a world-renowned masterpiece.",
+        "example_zh": "博物館展出一件舉世聞名的傑作。"
+      },
+      {
+        "id": "b5l2-p133",
+        "phrase": "run this way and that",
+        "pos": "ph.",
+        "zh": "東奔西跑",
+        "example_en": "People ran this way and that after the alarm.",
+        "example_zh": "警報響起後，人們四處奔跑。"
+      },
+      {
+        "id": "b5l2-p134",
+        "phrase": "rush around in panic",
+        "pos": "ph.",
+        "zh": "驚慌地四處奔走",
+        "example_en": "Shoppers rushed around in panic.",
+        "example_zh": "購物者驚慌地四處奔走。"
+      },
+      {
+        "id": "b5l2-p135",
+        "phrase": "panic and freeze",
+        "pos": "ph.",
+        "zh": "驚慌失措而僵住",
+        "example_en": "Some people panic and freeze in an emergency.",
+        "example_zh": "有些人在緊急情況下會驚慌失措而僵住。"
+      },
+      {
+        "id": "b5l2-p136",
+        "phrase": "basic necessities",
+        "pos": "ph.",
+        "zh": "基本生活必需品",
+        "example_en": "The shelter provides basic necessities.",
+        "example_zh": "收容所提供基本生活必需品。"
+      },
+      {
+        "id": "b5l2-p137",
+        "phrase": "further evaluation",
+        "pos": "ph.",
+        "zh": "進一步評估",
+        "example_en": "The patient needs further evaluation.",
+        "example_zh": "這名病患需要進一步評估。"
+      },
+      {
+        "id": "b5l2-p138",
+        "phrase": "doubt the validity of one’s statement",
+        "pos": "ph.",
+        "zh": "懷疑某人說法的真實性",
+        "example_en": "The evidence made us doubt the validity of his statement.",
+        "example_zh": "證據使我們懷疑他說法的真實性。"
+      },
+      {
+        "id": "b5l2-p139",
+        "phrase": "be brought into question",
+        "pos": "ph.",
+        "zh": "受到質疑",
+        "example_en": "The report’s accuracy was brought into question.",
+        "example_zh": "該報告的準確性受到質疑。"
+      },
+      {
+        "id": "b5l2-p140",
+        "phrase": "be equally valid",
+        "pos": "ph.",
+        "zh": "同樣有效／合理",
+        "example_en": "Both interpretations may be equally valid.",
+        "example_zh": "兩種解釋可能同樣合理。"
+      },
+      {
+        "id": "b5l2-p141",
+        "phrase": "no longer valid",
+        "pos": "ph.",
+        "zh": "不再有效",
+        "example_en": "The old ticket is no longer valid.",
+        "example_zh": "這張舊票已不再有效。"
+      },
+      {
+        "id": "b5l2-p142",
+        "phrase": "verify the facts and sources for accuracy",
+        "pos": "ph.",
+        "zh": "查證事實與來源的準確性",
+        "example_en": "Editors verify the facts and sources for accuracy.",
+        "example_zh": "編輯會查證事實與來源的準確性。"
+      },
+      {
+        "id": "b5l2-p143",
+        "phrase": "result from a lack of verification",
+        "pos": "ph.",
+        "zh": "源於缺乏查證",
+        "example_en": "The error resulted from a lack of verification.",
+        "example_zh": "這個錯誤源於缺乏查證。"
+      },
+      {
+        "id": "b5l2-p144",
+        "phrase": "lose credibility",
+        "pos": "ph.",
+        "zh": "失去可信度",
+        "example_en": "A news outlet can lose credibility after repeated errors.",
+        "example_zh": "新聞機構在一再出錯後可能失去可信度。"
+      },
+      {
+        "id": "b5l2-p145",
+        "phrase": "make up figures",
+        "pos": "ph.",
+        "zh": "捏造數字",
+        "example_en": "The writer made up figures to support his claim.",
+        "example_zh": "作者捏造數字來支持其說法。"
+      },
+      {
+        "id": "b5l2-p146",
+        "phrase": "lend credibility to",
+        "pos": "ph.",
+        "zh": "增加……的可信度",
+        "example_en": "Expert testimony lent credibility to the report.",
+        "example_zh": "專家證詞增加了報告的可信度。"
+      },
+      {
+        "id": "b5l2-p147",
+        "phrase": "credible witness to",
+        "pos": "ph.",
+        "zh": "……的可信目擊者",
+        "example_en": "She was a credible witness to the accident.",
+        "example_zh": "她是這起事故的可信目擊者。"
+      },
+      {
+        "id": "b5l2-p148",
+        "phrase": "remain completely objective",
+        "pos": "ph.",
+        "zh": "保持完全客觀",
+        "example_en": "Judges must remain completely objective.",
+        "example_zh": "法官必須保持完全客觀。"
+      },
+      {
+        "id": "b5l2-p149",
+        "phrase": "be at risk",
+        "pos": "ph.",
+        "zh": "處於風險中",
+        "example_en": "Children without clean water are at risk.",
+        "example_zh": "缺乏乾淨飲水的兒童處於風險中。"
+      },
+      {
+        "id": "b5l2-p150",
+        "phrase": "election campaign",
+        "pos": "ph.",
+        "zh": "競選活動",
+        "example_en": "The election campaign lasted three months.",
+        "example_zh": "競選活動持續了三個月。"
+      },
+      {
+        "id": "b5l2-p151",
+        "phrase": "talk sb. into",
+        "pos": "ph.",
+        "zh": "說服某人做……",
+        "example_en": "He talked me into joining the team.",
+        "example_zh": "他說服我加入團隊。"
+      },
+      {
+        "id": "b5l2-p152",
+        "phrase": "seek an official position",
+        "pos": "ph.",
+        "zh": "尋求公職",
+        "example_en": "She decided to seek an official position.",
+        "example_zh": "她決定尋求公職。"
+      },
+      {
+        "id": "b5l2-p153",
+        "phrase": "for the first time",
+        "pos": "ph.",
+        "zh": "第一次",
+        "example_en": "He voted for the first time.",
+        "example_zh": "他第一次投票。"
+      },
+      {
+        "id": "b5l2-p154",
+        "phrase": "the popularity of digital marketing",
+        "pos": "ph.",
+        "zh": "數位行銷的普及",
+        "example_en": "The popularity of digital marketing continues to grow.",
+        "example_zh": "數位行銷的普及程度持續上升。"
+      },
+      {
+        "id": "b5l2-p155",
+        "phrase": "consumer behavior",
+        "pos": "ph.",
+        "zh": "消費者行為",
+        "example_en": "Advertising can affect consumer behavior.",
+        "example_zh": "廣告會影響消費者行為。"
+      },
+      {
+        "id": "b5l2-p156",
+        "phrase": "develop an extensive vocabulary",
+        "pos": "ph.",
+        "zh": "培養廣泛的詞彙量",
+        "example_en": "Reading helps students develop an extensive vocabulary.",
+        "example_zh": "閱讀幫助學生培養廣泛的詞彙量。"
+      },
+      {
+        "id": "b5l2-p157",
+        "phrase": "range from fiction to non-fiction",
+        "pos": "ph.",
+        "zh": "涵蓋小說到非小說類作品",
+        "example_en": "The books range from fiction to non-fiction.",
+        "example_zh": "這些書涵蓋小說到非小說類作品。"
+      },
+      {
+        "id": "b5l2-p158",
+        "phrase": "spread across the Internet like wildfire",
+        "pos": "ph.",
+        "zh": "在網路上迅速傳開",
+        "example_en": "The rumor spread across the Internet like wildfire.",
+        "example_zh": "這則謠言在網路上迅速傳開。"
+      },
+      {
+        "id": "b5l2-p159",
+        "phrase": "flawed theory",
+        "pos": "ph.",
+        "zh": "有缺陷的理論",
+        "example_en": "Later evidence disproved the flawed theory.",
+        "example_zh": "後來的證據推翻了這個有缺陷的理論。"
+      },
+      {
+        "id": "b5l2-p160",
+        "phrase": "failure in the college entrance examination",
+        "pos": "ph.",
+        "zh": "大學入學考試失利",
+        "example_en": "His failure in the college entrance examination upset him.",
+        "example_zh": "大學入學考試失利使他很難過。"
+      },
+      {
+        "id": "b5l2-p161",
+        "phrase": "shatter one’s dream of",
+        "pos": "ph.",
+        "zh": "粉碎某人……的夢想",
+        "example_en": "The injury shattered her dream of becoming an athlete.",
+        "example_zh": "受傷粉碎了她成為運動員的夢想。"
+      },
+      {
+        "id": "b5l2-p162",
+        "phrase": "be taken for granted",
+        "pos": "ph.",
+        "zh": "被視為理所當然",
+        "example_en": "Clean water should not be taken for granted.",
+        "example_zh": "不應把乾淨的水視為理所當然。"
+      },
+      {
+        "id": "b5l2-p163",
+        "phrase": "Internet access",
+        "pos": "ph.",
+        "zh": "網際網路存取",
+        "example_en": "Many students need reliable Internet access.",
+        "example_zh": "許多學生需要穩定的網路連線。"
+      },
+      {
+        "id": "b5l2-p164",
+        "phrase": "verify the accuracy of the data collected",
+        "pos": "ph.",
+        "zh": "查證所蒐集資料的準確性",
+        "example_en": "Researchers verified the accuracy of the data collected.",
+        "example_zh": "研究人員查證了所蒐集資料的準確性。"
+      },
+      {
+        "id": "b5l2-p165",
+        "phrase": "the field experiment",
+        "pos": "ph.",
+        "zh": "實地實驗",
+        "example_en": "The field experiment lasted six weeks.",
+        "example_zh": "這項實地實驗持續了六週。"
+      },
+      {
+        "id": "b5l2-p166",
+        "phrase": "the approaching deadline",
+        "pos": "ph.",
+        "zh": "即將到來的截止期限",
+        "example_en": "The approaching deadline made us nervous.",
+        "example_zh": "即將到來的截止期限使我們緊張。"
+      },
+      {
+        "id": "b5l2-p167",
+        "phrase": "employment seeker",
+        "pos": "ph.",
+        "zh": "求職者",
+        "example_en": "The workshop helps employment seekers write résumés.",
+        "example_zh": "這場工作坊幫助求職者撰寫履歷。"
+      },
+      {
+        "id": "b5l2-p168",
+        "phrase": "take…into consideration",
+        "pos": "ph.",
+        "zh": "把……納入考量",
+        "example_en": "Take salary and location into consideration.",
+        "example_zh": "把薪資和地點納入考量。"
+      },
+      {
+        "id": "b5l2-p169",
+        "phrase": "salary and benefits",
+        "pos": "ph.",
+        "zh": "薪資與福利",
+        "example_en": "She compared the salary and benefits.",
+        "example_zh": "她比較了薪資與福利。"
+      },
+      {
+        "id": "b5l2-p170",
+        "phrase": "evaluate a job offer",
+        "pos": "ph.",
+        "zh": "評估工作機會",
+        "example_en": "He took a week to evaluate the job offer.",
+        "example_zh": "他花了一週評估這份工作機會。"
+      },
+      {
+        "id": "b5l2-p171",
+        "phrase": "fail to handle the crisis efficiently",
+        "pos": "ph.",
+        "zh": "未能有效處理危機",
+        "example_en": "The manager failed to handle the crisis efficiently.",
+        "example_zh": "經理未能有效處理危機。"
+      },
+      {
+        "id": "b5l2-p172",
+        "phrase": "one’s credibility as a leader",
+        "pos": "ph.",
+        "zh": "某人身為領導者的公信力",
+        "example_en": "The mistake damaged his credibility as a leader.",
+        "example_zh": "這個錯誤損害了他身為領導者的公信力。"
+      },
+      {
+        "id": "b5l2-p173",
+        "phrase": "lose faith in",
+        "pos": "ph.",
+        "zh": "對……失去信心",
+        "example_en": "Voters began to lose faith in the government.",
+        "example_zh": "選民開始對政府失去信心。"
+      },
+      {
+        "id": "b5l2-p174",
+        "phrase": "purchase a ticket prior to boarding",
+        "pos": "ph.",
+        "zh": "上車前購票",
+        "example_en": "Passengers must purchase a ticket prior to boarding.",
+        "example_zh": "乘客必須在上車前購票。"
+      },
+      {
+        "id": "b5l2-p175",
+        "phrase": "trick sb. into",
+        "pos": "ph.",
+        "zh": "誘騙某人做……",
+        "example_en": "The message tricked him into clicking the link.",
+        "example_zh": "這則訊息誘騙他點擊連結。"
+      },
+      {
+        "id": "b5l2-p176",
+        "phrase": "fall for the email scam",
+        "pos": "ph.",
+        "zh": "上電子郵件詐騙的當",
+        "example_en": "Several users fell for the email scam.",
+        "example_zh": "數名使用者上了電子郵件詐騙的當。"
+      },
+      {
+        "id": "b5l2-p177",
+        "phrase": "be deceived into",
+        "pos": "ph.",
+        "zh": "被騙去做……",
+        "example_en": "She was deceived into revealing her password.",
+        "example_zh": "她被騙而洩露密碼。"
+      },
+      {
+        "id": "b5l2-p178",
+        "phrase": "hand over savings to the scam gang",
+        "pos": "ph.",
+        "zh": "把積蓄交給詐騙集團",
+        "example_en": "The victim handed over his savings to the scam gang.",
+        "example_zh": "受害者把積蓄交給了詐騙集團。"
+      },
+      {
+        "id": "b5l2-p179",
+        "phrase": "leave the stove unattended",
+        "pos": "ph.",
+        "zh": "讓爐火無人看管",
+        "example_en": "Never leave the stove unattended.",
+        "example_zh": "絕不要讓爐火無人看管。"
+      },
+      {
+        "id": "b5l2-p180",
+        "phrase": "(a fire) break out",
+        "pos": "ph.",
+        "zh": "（火災）爆發",
+        "example_en": "A fire broke out in the kitchen.",
+        "example_zh": "廚房發生火災。"
+      },
+      {
+        "id": "b5l2-p181",
+        "phrase": "be stuck in the traffic jam",
+        "pos": "ph.",
+        "zh": "受困於塞車中",
+        "example_en": "We were stuck in the traffic jam for an hour.",
+        "example_zh": "我們受困於塞車中一小時。"
+      },
+      {
+        "id": "b5l2-p182",
+        "phrase": "complain about the heavy workload",
+        "pos": "ph.",
+        "zh": "抱怨繁重的工作量",
+        "example_en": "Employees complained about the heavy workload.",
+        "example_zh": "員工抱怨繁重的工作量。"
+      },
+      {
+        "id": "b5l2-p183",
+        "phrase": "harm one’s reputation",
+        "pos": "ph.",
+        "zh": "損害某人的名譽",
+        "example_en": "False accusations can harm one’s reputation.",
+        "example_zh": "不實指控會損害一個人的名譽。"
+      },
+      {
+        "id": "b5l2-p184",
+        "phrase": "double-check the source",
+        "pos": "ph.",
+        "zh": "再次核對消息來源",
+        "example_en": "Double-check the source before reposting.",
+        "example_zh": "轉發前再次核對消息來源。"
+      },
+      {
+        "id": "b5l2-p185",
+        "phrase": "question the validity of",
+        "pos": "ph.",
+        "zh": "質疑……的有效性／真實性",
+        "example_en": "Scientists questioned the validity of the claim.",
+        "example_zh": "科學家質疑該說法的真實性。"
+      }
+    ]
   },
   "grammar": {
     "points": [
@@ -901,7 +2382,7 @@
           "id": "b5l2-s004",
           "sentence": "With so much fake news being spread every day, it *is* now more important than ever to understand where such news comes from and to question the news stories we read.",
           "type": "complex",
-          "pattern": "Prepositional phrase (With...) + It (Formal S) + Vi + C + Infinitive clause + Noun clause"
+          "pattern": "Prepositional phrase (With...) + It (Formal S) + Vl + C + Infinitive clause + Noun clause"
         },
         {
           "id": "b5l2-s005",
@@ -1027,7 +2508,7 @@
           "id": "b5l2-s025",
           "sentence": "One notable feature of reliable reporting *is* the inclusion of the writer’s name, which allows readers to view that writer’s biography and verify his or her credibility.",
           "type": "complex",
-          "pattern": "S + Vi + C + Non-restrictive Relative clause"
+          "pattern": "S + Vl + C + Non-restrictive Relative clause"
         },
         {
           "id": "b5l2-s026",

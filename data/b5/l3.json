@@ -1,0 +1,190 @@
+{
+  "book": "B5",
+  "lesson": "L3",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": []
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": [
+        {
+          "id": "b5l3-s001",
+          "sentence": "\"Formosa\" *is* commonly known as an unofficial name for Taiwan.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b5l3-s002",
+          "sentence": "However, what many people don't know *is* that there is another Formosa located on the banks of the Paraguay River in Argentina.",
+          "type": "complex",
+          "pattern": "Noun clause (S) + Vl + C + Noun clause (that...)"
+        },
+        {
+          "id": "b5l3-s003",
+          "sentence": "To explore this connection, we can *take* a closer look at these two namesakes to see how they are similar and how they differ.",
+          "type": "complex",
+          "pattern": "Infinitival phrase + S + Vt (Phrasal verb) + O + Infinitival phrase + Noun clauses"
+        },
+        {
+          "id": "b5l3-s004",
+          "sentence": "Interestingly, it *appears* that both Formosas were unintentionally reached by European explorers in the sixteenth century.",
+          "type": "complex",
+          "pattern": "It + Vi + Noun clause (that...)"
+        },
+        {
+          "id": "b5l3-s005",
+          "sentence": "It *is believed* that a crew of Portuguese sailors came across Taiwan and named it \"Ilha Formosa,\" which means \"beautiful island.\"",
+          "type": "complex",
+          "pattern": "Passive reporting structure + Noun clause (that...) + Relative clause (which...)"
+        },
+        {
+          "id": "b5l3-s006",
+          "sentence": "Similarly, Formosa *was* the European name given to an area of land in South America by Spanish explorers around the same time.",
+          "type": "simple",
+          "pattern": "S + Vl + C + Participial phrase (p.p.)"
+        },
+        {
+          "id": "b5l3-s007",
+          "sentence": "These explorers *decided* to settle there mainly because the area possessed an exceptional strategic location and economic advantages.",
+          "type": "complex",
+          "pattern": "S + Vt + Infinitival O + Adverbial clause (because...)"
+        },
+        {
+          "id": "b5l3-s008",
+          "sentence": "Apart from their shared name and historical similarities, there *is* an interesting geographical fact that connects these two locations.",
+          "type": "complex",
+          "pattern": "Prepositional phrase + There + Vi + S + Relative clause (that...)"
+        },
+        {
+          "id": "b5l3-s009",
+          "sentence": "Taiwan *is located* at 23° N and Argentina's Formosa at 23° S, which means both areas are roughly the same distance from the equator.",
+          "type": "complex",
+          "pattern": "S + Vi + Prepositional phrase + Relative clause (which...)"
+        },
+        {
+          "id": "b5l3-s010",
+          "sentence": "What's more, each of them *sits* on the exact opposite side of the world from the other.",
+          "type": "simple",
+          "pattern": "S + Vi + Prepositional phrase"
+        },
+        {
+          "id": "b5l3-s011",
+          "sentence": "If someone in northern Taiwan dug a hole straight down into the Earth, penetrated its core, and then continued digging to the surface on the other side, he or she would *end up* in Formosa, Argentina!",
+          "type": "complex",
+          "pattern": "Adverbial clause (If...) with compound verbs + S + Vi (Phrasal verb) + Prepositional phrase"
+        },
+        {
+          "id": "b5l3-s012",
+          "sentence": "Since most of the globe is covered in ocean, it *is* remarkable to find that the two Formosas are exactly antipodal!",
+          "type": "complex",
+          "pattern": "Adverbial clause (Since...) + It + Vl + C + Infinitival phrase + Noun clause (that...)"
+        },
+        {
+          "id": "b5l3-s013",
+          "sentence": "Despite these things that they have in common, the two Formosas *are*, in many ways, still worlds apart.",
+          "type": "complex",
+          "pattern": "Prepositional phrase with Relative clause (that...) + S + Vl + C"
+        },
+        {
+          "id": "b5l3-s014",
+          "sentence": "Their natural landscapes, for a start, *differ* considerably.",
+          "type": "simple",
+          "pattern": "S + Vi + Adv"
+        },
+        {
+          "id": "b5l3-s015",
+          "sentence": "Two thirds of Taiwan's 36,000 square kilometers *are covered* with densely forested majestic mountains, some of which soar thousands of meters above sea level.",
+          "type": "complex",
+          "pattern": "S + Vi + Prepositional phrase + Relative clause (of which...)"
+        },
+        {
+          "id": "b5l3-s016",
+          "sentence": "Furthermore, the island's mountains, valleys, rivers, and reefs *are* home to hundreds of unique species found only in Taiwan.",
+          "type": "simple",
+          "pattern": "S + Vl + C + Participial phrase (p.p.)"
+        },
+        {
+          "id": "b5l3-s017",
+          "sentence": "By contrast, most of Argentina's Formosa, which is two times the size of Taiwan, *is* fairly flat and made up of trees, grassland, or marshland.",
+          "type": "complex",
+          "pattern": "S + Relative clause (which...) + Vl + C (Compound complement)"
+        },
+        {
+          "id": "b5l3-s018",
+          "sentence": "Its eastern region *receives* more rain than its other parts and also *has* more forests and streams.",
+          "type": "simple",
+          "pattern": "S + Vt (Compound verb) + O"
+        },
+        {
+          "id": "b5l3-s019",
+          "sentence": "There *is*, in addition, a stark contrast between their economies.",
+          "type": "simple",
+          "pattern": "There + Vi + S + Prepositional phrase"
+        },
+        {
+          "id": "b5l3-s020",
+          "sentence": "Present-day Taiwan *is known* worldwide for its lively economy and its advanced information technology industry.",
+          "type": "simple",
+          "pattern": "S + Vl + C + Prepositional phrase"
+        },
+        {
+          "id": "b5l3-s021",
+          "sentence": "Moreover, the Asian island *is* famous for its natural beauty and friendly people and thus *attracts* visitors from far and wide.",
+          "type": "simple",
+          "pattern": "S + Vi / Vt (Compound verb) + C / O"
+        },
+        {
+          "id": "b5l3-s022",
+          "sentence": "By contrast, Formosa *is* one of Argentina's least developed areas.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b5l3-s023",
+          "sentence": "Its economy *relies* primarily on raising cattle and other agricultural activities such as growing cotton and fruit.",
+          "type": "simple",
+          "pattern": "S + Vi + Prepositional phrase + Gerund phrase"
+        },
+        {
+          "id": "b5l3-s024",
+          "sentence": "The number of cattle in the area *exceeds* 1.5 million, which is more than three times the number of people living there!",
+          "type": "complex",
+          "pattern": "S + Vt + O + Relative clause (which...)"
+        },
+        {
+          "id": "b5l3-s025",
+          "sentence": "Whatever differences or similarities exist between the pair, each *has* a beauty that makes it special.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Whatever...) + S + Vt + O + Relative clause (that...)"
+        },
+        {
+          "id": "b5l3-s026",
+          "sentence": "Both Argentina's Formosa, with its gorgeous green plains and lush forests, and Taiwan, with its bustling cities and mighty, mountainous landscapes, *are* sure to impress visitors.",
+          "type": "simple",
+          "pattern": "Compound S + Vl + C + Infinitival phrase"
+        },
+        {
+          "id": "b5l3-s027",
+          "sentence": "Perhaps the people of these two lands on opposite sides of the world could even *come* face to face one day as well and *get* to know each other a little better!",
+          "type": "simple",
+          "pattern": "S + Vi / Vt (Compound verb) + C / Infinitival O"
+        },
+        {
+          "id": "b5l3-s028",
+          "sentence": "That would *make for* a beautiful friendship!",
+          "type": "simple",
+          "pattern": "S + Vt (Phrasal verb) + O"
+        }
+      ]
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}

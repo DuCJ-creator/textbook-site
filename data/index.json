@@ -236,7 +236,8 @@
         {
           "id": "l3",
           "title": "",
-          "status": "draft"
+          "status": "published",
+          "data": "data/b5/l3.json"
         },
         {
           "id": "l4",
