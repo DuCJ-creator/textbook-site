@@ -1,0 +1,190 @@
+{
+  "book": "B5",
+  "lesson": "L4",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": []
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": [
+        {
+          "id": "b5l4-s001",
+          "sentence": "*Can* you *imagine* taking a bite of a steak that was grown in a Petri dish instead of on a farm?",
+          "type": "complex",
+          "pattern": "S + Vt + Gerund O + Relative clause (that...)"
+        },
+        {
+          "id": "b5l4-s002",
+          "sentence": "It *may sound* like something from a sci-fi movie, but these steaks *are* already a reality!",
+          "type": "compound",
+          "pattern": "S + Vl+ C + but + S + Vl+ C"
+        },
+        {
+          "id": "b5l4-s003",
+          "sentence": "Many start-ups *have developed* a special production process in which meat is created by taking animal stem cells, transforming them into primitive fibers, and combining these fibers to form muscle tissue.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Relative clause (in which...) + Gerund phrases"
+        },
+        {
+          "id": "b5l4-s004",
+          "sentence": "The final product, known as lab-grown meat, *is* a thought-provoking recent trend in food science backed by Bill Gates and agricultural giant Cargill.",
+          "type": "simple",
+          "pattern": "S + Participial phrase (p.p.) + Vl+ C + Participial phrase (p.p.)"
+        },
+        {
+          "id": "b5l4-s005",
+          "sentence": "As this technology moves toward mainstream adoption, it *is* important to understand both the promises and the problems with this emerging food source.",
+          "type": "complex",
+          "pattern": "Adverbial clause (As...) + It + Vl+ C + Infinitival phrase"
+        },
+        {
+          "id": "b5l4-s006",
+          "sentence": "Supporters of lab-grown meat *highlight* several substantial benefits that traditional meat production cannot offer.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Relative clause (that...)"
+        },
+        {
+          "id": "b5l4-s007",
+          "sentence": "First, one could *argue* that traditional meat production facilities, such as farms or factories, hardly ever have animals' best interests at heart.",
+          "type": "complex",
+          "pattern": "S + Vt + Noun clause (that...)"
+        },
+        {
+          "id": "b5l4-s008",
+          "sentence": "Growing meat in a laboratory instead *eliminates* the need for slaughterhouses as well as the unethical treatment of animals.",
+          "type": "simple",
+          "pattern": "Gerund phrase (S) + Vt + Compound O"
+        },
+        {
+          "id": "b5l4-s009",
+          "sentence": "In other words, you could *rest assured* that the lab-grown beef patty on your plate didn't come from a cow that had to endure physical or mental torment.",
+          "type": "complex",
+          "pattern": "S + Vl+ C + Noun clause (that...) + Relative clause (that...)"
+        },
+        {
+          "id": "b5l4-s010",
+          "sentence": "Better still, lab-grown meat could *make* meat production more sustainable.",
+          "type": "simple",
+          "pattern": "S + Vt + O + C"
+        },
+        {
+          "id": "b5l4-s011",
+          "sentence": "The raising of livestock needed to fulfill the current global demand for meat actually *takes* a heavy toll on the environment.",
+          "type": "simple",
+          "pattern": "S + Participial phrase (p.p.) + Vt (Phrasal verb) + O"
+        },
+        {
+          "id": "b5l4-s012",
+          "sentence": "According to FAO, it *accounts for* nearly fifteen percent of all greenhouse gas emissions worldwide.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt (Phrasal verb) + O"
+        },
+        {
+          "id": "b5l4-s013",
+          "sentence": "Experts *estimate* that by switching to lab-grown meat, emissions could be lowered by up to ninety-six percent.",
+          "type": "complex",
+          "pattern": "S + Vt + Noun clause (that...) with Gerund phrase"
+        },
+        {
+          "id": "b5l4-s014",
+          "sentence": "In addition, many *claim* it won't just be the environment that benefits.",
+          "type": "complex",
+          "pattern": "S + Vt + Noun clause + Relative clause (that...)"
+        },
+        {
+          "id": "b5l4-s015",
+          "sentence": "Scientists can actually *make* lab-grown meat healthier and more nutritious by adding vitamins and minerals that are not always found in natural meat.",
+          "type": "complex",
+          "pattern": "S + Vt + O + C + Gerund phrase + Relative clause (that...)"
+        },
+        {
+          "id": "b5l4-s016",
+          "sentence": "However, despite the evident advantages of this forward-thinking method of food production, there *are* also some concerns surrounding the meat of tomorrow.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + There + Vi + S + Participial phrase (pres. p.)"
+        },
+        {
+          "id": "b5l4-s017",
+          "sentence": "For a start, studies *have shown* that the development of lab-grown meat could actually have far-reaching negative effects in the long term.",
+          "type": "complex",
+          "pattern": "S + Vt + Noun clause (that...)"
+        },
+        {
+          "id": "b5l4-s018",
+          "sentence": "While advocates for lab-grown meat say it can help fight climate change, some research *suggests* that maintaining the infrastructure to grow cell cultures requires significant quantities of energy and leads to substantial gas emissions.",
+          "type": "complex",
+          "pattern": "Adverbial clause (While...) + S + Vt + Noun clause (that...) with compound verbs"
+        },
+        {
+          "id": "b5l4-s019",
+          "sentence": "Another issue to consider *is* whether this type of artificial meat is actually healthy and safe for humans to consume.",
+          "type": "complex",
+          "pattern": "S + Infinitival phrase + Vi + Noun clause (whether...)"
+        },
+        {
+          "id": "b5l4-s020",
+          "sentence": "Although great in theory, lab-grown meat *is* unnatural, similar to genetically modified food.",
+          "type": "complex",
+          "pattern": "Elliptical adverbial clause (Although...) + S + Vl+ C"
+        },
+        {
+          "id": "b5l4-s021",
+          "sentence": "Since the latter is sometimes said to induce allergic reactions or even cause more serious health problems like cancer, some people *are warning* against human-made meat for fear that it might have similar side effects.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Since...) + S + Vi + Prepositional phrase + Noun clause (that...)"
+        },
+        {
+          "id": "b5l4-s022",
+          "sentence": "One final area of concern *is* the actual taste of lab-grown meat.",
+          "type": "simple",
+          "pattern": "S + Vl+ C"
+        },
+        {
+          "id": "b5l4-s023",
+          "sentence": "Without the naturally occurring connective tissue and fat that are present in real meat, lab-grown meat *may be* somewhat *lacking* in taste and texture and thus less appealing to some consumers.",
+          "type": "complex",
+          "pattern": "Prepositional phrase with Relative clause (that...) + S + Vl+ C"
+        },
+        {
+          "id": "b5l4-s024",
+          "sentence": "Therefore, more extensive research *is needed* to determine how the flavor and composition of this new meat might be altered to better suit consumer tastes.",
+          "type": "complex",
+          "pattern": "S + Vi + Infinitival phrase + Noun clause (how...)"
+        },
+        {
+          "id": "b5l4-s025",
+          "sentence": "Whether we welcome it or not, lab-grown meat *is* an innovative product that could have a long-term impact on a global scale.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Whether...) + S + Vl+ C + Relative clause (that...)"
+        },
+        {
+          "id": "b5l4-s026",
+          "sentence": "It *might*, however, *come* at a price.",
+          "type": "simple",
+          "pattern": "S + Vi + Prepositional phrase"
+        },
+        {
+          "id": "b5l4-s027",
+          "sentence": "To ensure that future foods are both sustainable and healthy, it *is* therefore essential for us to conduct more comprehensive research before we jump to any conclusions.",
+          "type": "complex",
+          "pattern": "Infinitival phrase with Noun clause + It + Vl+ C + Adverbial clause (before...)"
+        },
+        {
+          "id": "b5l4-s028",
+          "sentence": "For now, all we can do *is* keep a close eye on this rapidly growing trend.",
+          "type": "complex",
+          "pattern": "Prepositional phrase + S with Relative clause + Vi + Bare infinitival C"
+        }
+      ]
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}

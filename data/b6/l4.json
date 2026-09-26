@@ -1,0 +1,21 @@
+{
+  "book": "B6",
+  "lesson": "L4",
+  "title": "",
+  "status": "draft",
+  "vocabulary": {
+    "rows": []
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": []
+    }
+  },
+  "text_genre": {
+    "raw_text": "The text follows a Pros & Cons/ Evaluative Pattern:\nIntroduction (Para 1): Introduces lab-grown meat and states the thesis (examining both its promises and problems).\nPros (Para 2): Highlights benefits—eliminating animal cruelty, lowering greenhouse emissions ($96\\%$), and boosting nutrition.\nCons (Para 3): Raises concerns—high energy consumption, health/allergy risks, and potential lack of taste/texture.\nConclusion (Para 4): Summarizes it as an innovative global trend and calls for comprehensive research before mainstream adoption."
+  }
+}

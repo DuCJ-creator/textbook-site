@@ -4,13 +4,1835 @@
   "title": "",
   "status": "published",
   "vocabulary": {
-    "rows": []
+    "rows": [
+      {
+        "id": "b5l3-v01",
+        "base": "differ",
+        "verb": [
+          {
+            "en": "differ",
+            "zh": "不同；有差異；意見不合",
+            "example": "The two designs differ in several ways."
+          },
+          {
+            "en": "differentiate",
+            "zh": "區分；辨別；使不同",
+            "example": "It can be difficult to differentiate the twins."
+          }
+        ],
+        "noun": [
+          {
+            "en": "difference",
+            "zh": "差異；不同；差額",
+            "example": "There is a clear difference between the two methods."
+          },
+          {
+            "en": "differentiation",
+            "zh": "區分；差異化；分化",
+            "example": "Product differentiation helps a brand stand out."
+          }
+        ],
+        "adj": [
+          {
+            "en": "different",
+            "zh": "不同的；各別的；不尋常的",
+            "example": "We chose a different route home."
+          }
+        ],
+        "adv": [
+          {
+            "en": "differently",
+            "zh": "不同地；以不同方式",
+            "example": "People may respond differently to the same situation."
+          }
+        ]
+      },
+      {
+        "id": "b5l3-v02",
+        "base": "sail",
+        "verb": [
+          {
+            "en": "sail",
+            "zh": "航行；乘船；揚帆",
+            "example": "They sailed across the lake before sunset."
+          }
+        ],
+        "noun": [
+          {
+            "en": "sail",
+            "zh": "帆；航程；乘船遊覽",
+            "example": "The boat raised its white sail."
+          },
+          {
+            "en": "sailor",
+            "zh": "水手；海員；帆船運動員",
+            "example": "The sailor checked the weather forecast."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b5l3-v03",
+        "base": "settle",
+        "verb": [
+          {
+            "en": "settle",
+            "zh": "定居；解決；使安定；結清",
+            "example": "The two sides agreed to settle the dispute peacefully."
+          }
+        ],
+        "noun": [
+          {
+            "en": "settler",
+            "zh": "定居者；移民者",
+            "example": "Early settlers built farms near the river."
+          },
+          {
+            "en": "settlement",
+            "zh": "定居點；協議；解決；結算",
+            "example": "The parties reached a legal settlement."
+          }
+        ],
+        "adj": [
+          {
+            "en": "settled",
+            "zh": "安定的；已解決的；固定的",
+            "example": "After years of travel, she finally felt settled."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l3-v04",
+        "base": "possess",
+        "verb": [
+          {
+            "en": "possess",
+            "zh": "擁有；具備；佔有",
+            "example": "The museum possesses several rare paintings."
+          }
+        ],
+        "noun": [
+          {
+            "en": "possession",
+            "zh": "擁有；所有物；財產",
+            "example": "This watch is my most valuable possession."
+          }
+        ],
+        "adj": [
+          {
+            "en": "possessive",
+            "zh": "佔有慾強的；所有格的",
+            "example": "The child became possessive about his toys."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l3-v05",
+        "base": "except",
+        "verb": [
+          {
+            "en": "except",
+            "zh": "把……除外；不包括（正式用語）",
+            "example": "The rule excepts children under five."
+          }
+        ],
+        "noun": [
+          {
+            "en": "exception",
+            "zh": "例外；異議；除外",
+            "example": "Everyone attended with one exception."
+          }
+        ],
+        "adj": [
+          {
+            "en": "exceptional",
+            "zh": "卓越的；異常的；例外的",
+            "example": "She showed exceptional skill in the competition."
+          }
+        ],
+        "adv": [
+          {
+            "en": "exceptionally",
+            "zh": "非常；格外地；例外地",
+            "example": "The weather was exceptionally warm today."
+          }
+        ]
+      },
+      {
+        "id": "b5l3-v06",
+        "base": "strategy",
+        "verb": [],
+        "noun": [
+          {
+            "en": "strategy",
+            "zh": "策略；戰略；計畫",
+            "example": "The team developed a new marketing strategy."
+          }
+        ],
+        "adj": [
+          {
+            "en": "strategic",
+            "zh": "策略性的；戰略上的；關鍵的",
+            "example": "The town occupies a strategic location near the port."
+          }
+        ],
+        "adv": [
+          {
+            "en": "strategically",
+            "zh": "策略性地；在戰略上",
+            "example": "The stores are strategically located near stations."
+          }
+        ]
+      },
+      {
+        "id": "b5l3-v07",
+        "base": "oppose",
+        "verb": [
+          {
+            "en": "oppose",
+            "zh": "反對；抵制；與……競爭",
+            "example": "Many residents oppose the proposed development."
+          }
+        ],
+        "noun": [
+          {
+            "en": "opposition",
+            "zh": "反對；反對黨；對立",
+            "example": "The plan faced strong public opposition."
+          }
+        ],
+        "adj": [
+          {
+            "en": "opposite",
+            "zh": "相反的；對面的；另一邊的",
+            "example": "The two brothers have opposite personalities."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l3-v08",
+        "base": "core",
+        "verb": [],
+        "noun": [
+          {
+            "en": "core",
+            "zh": "核心；果核；中心部分",
+            "example": "Trust is at the core of their partnership."
+          }
+        ],
+        "adj": [
+          {
+            "en": "core",
+            "zh": "核心的；最重要的；基礎的",
+            "example": "Reading is a core skill for every student."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l3-v09",
+        "base": "consider",
+        "verb": [
+          {
+            "en": "consider",
+            "zh": "考慮；認為；體諒",
+            "example": "Please consider all the options carefully."
+          }
+        ],
+        "noun": [
+          {
+            "en": "consideration",
+            "zh": "考慮；體諒；考量因素",
+            "example": "Cost is an important consideration."
+          }
+        ],
+        "adj": [
+          {
+            "en": "considerate",
+            "zh": "體貼的；替人著想的",
+            "example": "It was considerate of him to call first."
+          },
+          {
+            "en": "considerable",
+            "zh": "相當大的；重要的；可觀的",
+            "example": "The project requires considerable time and effort."
+          }
+        ],
+        "adv": [
+          {
+            "en": "considerately",
+            "zh": "體貼地；周到地",
+            "example": "She spoke considerately to the worried child."
+          },
+          {
+            "en": "considerably",
+            "zh": "相當地；大幅地",
+            "example": "Sales increased considerably last month."
+          }
+        ]
+      },
+      {
+        "id": "b5l3-v10",
+        "base": "dense",
+        "verb": [],
+        "noun": [
+          {
+            "en": "density",
+            "zh": "密度；稠密程度；人口密度",
+            "example": "This material has a high density."
+          }
+        ],
+        "adj": [
+          {
+            "en": "dense",
+            "zh": "密集的；濃密的；難懂的",
+            "example": "A dense fog covered the highway."
+          }
+        ],
+        "adv": [
+          {
+            "en": "densely",
+            "zh": "密集地；濃密地",
+            "example": "The coastal area is densely populated."
+          }
+        ]
+      },
+      {
+        "id": "b5l3-v11",
+        "base": "majesty",
+        "verb": [],
+        "noun": [
+          {
+            "en": "majesty",
+            "zh": "威嚴；壯麗；陛下",
+            "example": "Visitors admired the majesty of the mountains."
+          }
+        ],
+        "adj": [
+          {
+            "en": "majestic",
+            "zh": "雄偉的；壯麗的；威嚴的",
+            "example": "A majestic eagle flew over the valley."
+          }
+        ],
+        "adv": [
+          {
+            "en": "majestically",
+            "zh": "雄偉地；莊嚴地",
+            "example": "The ship moved majestically into the harbor."
+          }
+        ]
+      },
+      {
+        "id": "b5l3-v12",
+        "base": "stark",
+        "verb": [],
+        "noun": [
+          {
+            "en": "starkness",
+            "zh": "嚴酷；鮮明；光禿；簡樸",
+            "example": "The starkness of the landscape surprised us."
+          }
+        ],
+        "adj": [
+          {
+            "en": "stark",
+            "zh": "鮮明的；嚴酷的；光禿的",
+            "example": "The report reveals a stark contrast between the regions."
+          }
+        ],
+        "adv": [
+          {
+            "en": "stark",
+            "zh": "完全地；極其（用於特定搭配）",
+            "example": "The walls were painted stark white."
+          }
+        ]
+      },
+      {
+        "id": "b5l3-v13",
+        "base": "agriculture",
+        "verb": [],
+        "noun": [
+          {
+            "en": "agriculture",
+            "zh": "農業；農耕",
+            "example": "Agriculture remains important to the local economy."
+          }
+        ],
+        "adj": [
+          {
+            "en": "agricultural",
+            "zh": "農業的；農用的",
+            "example": "The region is known for its agricultural products."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l3-v14",
+        "base": "bustle",
+        "verb": [
+          {
+            "en": "bustle",
+            "zh": "忙碌地走動；催促",
+            "example": "Workers bustled around the busy kitchen."
+          }
+        ],
+        "noun": [
+          {
+            "en": "bustle",
+            "zh": "忙亂；喧鬧；繁忙活動",
+            "example": "I enjoy the bustle of the night market."
+          }
+        ],
+        "adj": [
+          {
+            "en": "bustling",
+            "zh": "熙來攘往的；繁忙熱鬧的",
+            "example": "The station was bustling with travelers."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l3-v15",
+        "base": "might",
+        "verb": [],
+        "noun": [
+          {
+            "en": "might",
+            "zh": "力量；威力；權勢",
+            "example": "The empire displayed its military might."
+          }
+        ],
+        "adj": [
+          {
+            "en": "mighty",
+            "zh": "強大的；有力的；宏偉的",
+            "example": "The mighty river flows through several countries."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l3-v16",
+        "base": "mountain",
+        "verb": [],
+        "noun": [
+          {
+            "en": "mountain",
+            "zh": "山；高山；大量",
+            "example": "Snow covered the top of the mountain."
+          }
+        ],
+        "adj": [
+          {
+            "en": "mountainous",
+            "zh": "多山的；山一般巨大的",
+            "example": "The northern region is remote and mountainous."
+          }
+        ],
+        "adv": []
+      }
+    ]
   },
   "phrases": {
-    "items": []
+    "items": [
+      {
+        "id": "b5l3-p001",
+        "phrase": "take a closer look at",
+        "pos": "ph.",
+        "zh": "仔細看看……",
+        "example_en": "Let us take a closer look at the evidence.",
+        "example_zh": "讓我們仔細看看這些證據。"
+      },
+      {
+        "id": "b5l3-p002",
+        "phrase": "a crew of",
+        "pos": "ph.",
+        "zh": "一組／一群……工作人員",
+        "example_en": "A crew of sailors prepared the ship.",
+        "example_zh": "一群水手為船隻做好準備。"
+      },
+      {
+        "id": "b5l3-p003",
+        "phrase": "come across",
+        "pos": "ph.",
+        "zh": "偶然遇見；發現",
+        "example_en": "I came across an old photograph.",
+        "example_zh": "我偶然發現一張老照片。"
+      },
+      {
+        "id": "b5l3-p004",
+        "phrase": "around the same time",
+        "pos": "ph.",
+        "zh": "大約在同一時間",
+        "example_en": "The two events happened around the same time.",
+        "example_zh": "這兩件事大約在同一時間發生。"
+      },
+      {
+        "id": "b5l3-p005",
+        "phrase": "an exceptional strategic location",
+        "pos": "ph.",
+        "zh": "極佳的戰略位置",
+        "example_en": "The port occupies an exceptional strategic location.",
+        "example_zh": "這座港口占有極佳的戰略位置。"
+      },
+      {
+        "id": "b5l3-p006",
+        "phrase": "economic advantage",
+        "pos": "ph.",
+        "zh": "經濟優勢",
+        "example_en": "The new railway gives the region an economic advantage.",
+        "example_zh": "新鐵路為該地區帶來經濟優勢。"
+      },
+      {
+        "id": "b5l3-p007",
+        "phrase": "end up doing",
+        "pos": "ph.",
+        "zh": "最後做了……",
+        "example_en": "We ended up staying another night.",
+        "example_zh": "我們最後又多住了一晚。"
+      },
+      {
+        "id": "b5l3-p008",
+        "phrase": "go bankrupt",
+        "pos": "ph.",
+        "zh": "破產",
+        "example_en": "The company went bankrupt last year.",
+        "example_zh": "這家公司去年破產了。"
+      },
+      {
+        "id": "b5l3-p009",
+        "phrase": "shut down the company",
+        "pos": "ph.",
+        "zh": "關閉公司",
+        "example_en": "The owners decided to shut down the company.",
+        "example_zh": "老闆決定關閉公司。"
+      },
+      {
+        "id": "b5l3-p010",
+        "phrase": "throw a birthday party",
+        "pos": "ph.",
+        "zh": "舉辦生日派對",
+        "example_en": "We threw a birthday party for Mia.",
+        "example_zh": "我們為米雅舉辦生日派對。"
+      },
+      {
+        "id": "b5l3-p011",
+        "phrase": "save energy",
+        "pos": "ph.",
+        "zh": "節省能源",
+        "example_en": "Turn off the lights to save energy.",
+        "example_zh": "關燈以節省能源。"
+      },
+      {
+        "id": "b5l3-p012",
+        "phrase": "increase work efficiency",
+        "pos": "ph.",
+        "zh": "提高工作效率",
+        "example_en": "The new system increased work efficiency.",
+        "example_zh": "新系統提高了工作效率。"
+      },
+      {
+        "id": "b5l3-p013",
+        "phrase": "win a scholarship",
+        "pos": "ph.",
+        "zh": "獲得獎學金",
+        "example_en": "She studied hard and won a scholarship.",
+        "example_zh": "她努力讀書並獲得獎學金。"
+      },
+      {
+        "id": "b5l3-p014",
+        "phrase": "be admitted to a prestigious university",
+        "pos": "ph.",
+        "zh": "獲一所名校錄取",
+        "example_en": "He was admitted to a prestigious university.",
+        "example_zh": "他獲一所名校錄取。"
+      },
+      {
+        "id": "b5l3-p015",
+        "phrase": "cardiovascular disease",
+        "pos": "ph.",
+        "zh": "心血管疾病",
+        "example_en": "Regular exercise lowers the risk of cardiovascular disease.",
+        "example_zh": "規律運動能降低心血管疾病的風險。"
+      },
+      {
+        "id": "b5l3-p016",
+        "phrase": "high blood pressure",
+        "pos": "ph.",
+        "zh": "高血壓",
+        "example_en": "Too much salt may cause high blood pressure.",
+        "example_zh": "攝取過多鹽分可能造成高血壓。"
+      },
+      {
+        "id": "b5l3-p017",
+        "phrase": "former colleague",
+        "pos": "ph.",
+        "zh": "前同事",
+        "example_en": "I had lunch with a former colleague.",
+        "example_zh": "我和一位前同事共進午餐。"
+      },
+      {
+        "id": "b5l3-p018",
+        "phrase": "undergo mandatory quarantine",
+        "pos": "ph.",
+        "zh": "接受強制隔離",
+        "example_en": "Travelers had to undergo mandatory quarantine.",
+        "example_zh": "旅客必須接受強制隔離。"
+      },
+      {
+        "id": "b5l3-p019",
+        "phrase": "upon entry",
+        "pos": "ph.",
+        "zh": "入境時；一進入時",
+        "example_en": "Visitors must show identification upon entry.",
+        "example_zh": "訪客進入時必須出示身分證明。"
+      },
+      {
+        "id": "b5l3-p020",
+        "phrase": "obey the protocol",
+        "pos": "ph.",
+        "zh": "遵守規定／程序",
+        "example_en": "Everyone must obey the safety protocol.",
+        "example_zh": "每個人都必須遵守安全規定。"
+      },
+      {
+        "id": "b5l3-p021",
+        "phrase": "during a difficult time",
+        "pos": "ph.",
+        "zh": "在艱難時期",
+        "example_en": "Her friends supported her during a difficult time.",
+        "example_zh": "朋友們在她艱難時期給予支持。"
+      },
+      {
+        "id": "b5l3-p022",
+        "phrase": "a popular manga series",
+        "pos": "ph.",
+        "zh": "一部受歡迎的漫畫系列",
+        "example_en": "The film is based on a popular manga series.",
+        "example_zh": "這部電影改編自一部受歡迎的漫畫系列。"
+      },
+      {
+        "id": "b5l3-p023",
+        "phrase": "be adapted into",
+        "pos": "ph.",
+        "zh": "被改編成……",
+        "example_en": "The novel was adapted into a movie.",
+        "example_zh": "這本小說被改編成電影。"
+      },
+      {
+        "id": "b5l3-p024",
+        "phrase": "best-selling animation of all time",
+        "pos": "ph.",
+        "zh": "史上最暢銷的動畫作品",
+        "example_en": "It became the best-selling animation of all time.",
+        "example_zh": "它成為史上最暢銷的動畫作品。"
+      },
+      {
+        "id": "b5l3-p025",
+        "phrase": "inappropriate for",
+        "pos": "ph.",
+        "zh": "不適合……",
+        "example_en": "The violent scene is inappropriate for young children.",
+        "example_zh": "這個暴力場景不適合幼童。"
+      },
+      {
+        "id": "b5l3-p026",
+        "phrase": "violent scene",
+        "pos": "ph.",
+        "zh": "暴力場景",
+        "example_en": "The director removed a violent scene.",
+        "example_zh": "導演刪除了一個暴力場景。"
+      },
+      {
+        "id": "b5l3-p027",
+        "phrase": "apart from",
+        "pos": "ph.",
+        "zh": "除……之外",
+        "example_en": "Apart from English, she speaks French.",
+        "example_zh": "除了英文之外，她也會說法文。"
+      },
+      {
+        "id": "b5l3-p028",
+        "phrase": "be antipodal",
+        "pos": "ph.",
+        "zh": "截然相反；位於地球對蹠點",
+        "example_en": "Their views are almost antipodal.",
+        "example_zh": "他們的觀點幾乎截然相反。"
+      },
+      {
+        "id": "b5l3-p029",
+        "phrase": "have…in common",
+        "pos": "ph.",
+        "zh": "有……共同之處",
+        "example_en": "The two islands have much in common.",
+        "example_zh": "這兩座島有許多共同之處。"
+      },
+      {
+        "id": "b5l3-p030",
+        "phrase": "worlds apart",
+        "pos": "ph.",
+        "zh": "天壤之別",
+        "example_en": "Their lifestyles are worlds apart.",
+        "example_zh": "他們的生活方式有天壤之別。"
+      },
+      {
+        "id": "b5l3-p031",
+        "phrase": "natural landscape",
+        "pos": "ph.",
+        "zh": "自然景觀",
+        "example_en": "The region is famous for its natural landscape.",
+        "example_zh": "該地區以自然景觀聞名。"
+      },
+      {
+        "id": "b5l3-p032",
+        "phrase": "for a start",
+        "pos": "ph.",
+        "zh": "首先",
+        "example_en": "For a start, the climates are very different.",
+        "example_zh": "首先，兩地的氣候非常不同。"
+      },
+      {
+        "id": "b5l3-p033",
+        "phrase": "differ considerably",
+        "pos": "ph.",
+        "zh": "差異很大",
+        "example_en": "The two countries differ considerably in size.",
+        "example_zh": "這兩個國家的面積差異很大。"
+      },
+      {
+        "id": "b5l3-p034",
+        "phrase": "densely forested",
+        "pos": "ph.",
+        "zh": "森林茂密的",
+        "example_en": "The mountains are densely forested.",
+        "example_zh": "這些山區森林茂密。"
+      },
+      {
+        "id": "b5l3-p035",
+        "phrase": "above sea level",
+        "pos": "ph.",
+        "zh": "海拔……以上",
+        "example_en": "The village lies 2,000 meters above sea level.",
+        "example_zh": "這座村莊位於海拔兩千公尺處。"
+      },
+      {
+        "id": "b5l3-p036",
+        "phrase": "be home to",
+        "pos": "ph.",
+        "zh": "是……的棲息地／所在地",
+        "example_en": "The island is home to many rare birds.",
+        "example_zh": "這座島是許多稀有鳥類的棲息地。"
+      },
+      {
+        "id": "b5l3-p037",
+        "phrase": "unique species",
+        "pos": "ph.",
+        "zh": "獨特物種",
+        "example_en": "The forest contains several unique species.",
+        "example_zh": "這片森林有數種獨特物種。"
+      },
+      {
+        "id": "b5l3-p038",
+        "phrase": "by contrast",
+        "pos": "ph.",
+        "zh": "相比之下",
+        "example_en": "The north is wet; by contrast, the south is dry.",
+        "example_zh": "北部潮濕；相比之下，南部乾燥。"
+      },
+      {
+        "id": "b5l3-p039",
+        "phrase": "two times the size of",
+        "pos": "ph.",
+        "zh": "是……的兩倍大",
+        "example_en": "The new park is two times the size of the old one.",
+        "example_zh": "新公園是舊公園的兩倍大。"
+      },
+      {
+        "id": "b5l3-p040",
+        "phrase": "be made up of",
+        "pos": "ph.",
+        "zh": "由……組成",
+        "example_en": "The nation is made up of many islands.",
+        "example_zh": "這個國家由許多島嶼組成。"
+      },
+      {
+        "id": "b5l3-p041",
+        "phrase": "an amazing milestone in",
+        "pos": "ph.",
+        "zh": "……方面了不起的里程碑",
+        "example_en": "The discovery was an amazing milestone in medicine.",
+        "example_zh": "這項發現是醫學上的一大里程碑。"
+      },
+      {
+        "id": "b5l3-p042",
+        "phrase": "the field of genetic engineering",
+        "pos": "ph.",
+        "zh": "基因工程領域",
+        "example_en": "She conducts research in the field of genetic engineering.",
+        "example_zh": "她在基因工程領域從事研究。"
+      },
+      {
+        "id": "b5l3-p043",
+        "phrase": "on stage",
+        "pos": "ph.",
+        "zh": "在舞臺上",
+        "example_en": "The singer performed on stage.",
+        "example_zh": "這位歌手在舞臺上演出。"
+      },
+      {
+        "id": "b5l3-p044",
+        "phrase": "in terms of",
+        "pos": "ph.",
+        "zh": "就……而言",
+        "example_en": "The cities differ in terms of population.",
+        "example_zh": "就人口而言，這兩座城市有所不同。"
+      },
+      {
+        "id": "b5l3-p045",
+        "phrase": "highest-grossing movie",
+        "pos": "ph.",
+        "zh": "票房最高的電影",
+        "example_en": "It became the year’s highest-grossing movie.",
+        "example_zh": "它成為該年度票房最高的電影。"
+      },
+      {
+        "id": "b5l3-p046",
+        "phrase": "a populous country",
+        "pos": "ph.",
+        "zh": "人口眾多的國家",
+        "example_en": "India is a populous country.",
+        "example_zh": "印度是一個人口眾多的國家。"
+      },
+      {
+        "id": "b5l3-p047",
+        "phrase": "harsh conditions",
+        "pos": "ph.",
+        "zh": "惡劣的環境",
+        "example_en": "Few plants survive in such harsh conditions.",
+        "example_zh": "很少植物能在如此惡劣的環境中存活。"
+      },
+      {
+        "id": "b5l3-p048",
+        "phrase": "when it comes to",
+        "pos": "ph.",
+        "zh": "談到……時",
+        "example_en": "When it comes to music, she knows a lot.",
+        "example_zh": "談到音樂時，她懂得很多。"
+      },
+      {
+        "id": "b5l3-p049",
+        "phrase": "remarkable ability to",
+        "pos": "ph.",
+        "zh": "做……的非凡能力",
+        "example_en": "The bird has a remarkable ability to navigate.",
+        "example_zh": "這種鳥具有非凡的導航能力。"
+      },
+      {
+        "id": "b5l3-p050",
+        "phrase": "point of view",
+        "pos": "ph.",
+        "zh": "觀點",
+        "example_en": "Try to understand her point of view.",
+        "example_zh": "試著理解她的觀點。"
+      },
+      {
+        "id": "b5l3-p051",
+        "phrase": "take the responsibility for",
+        "pos": "ph.",
+        "zh": "承擔……的責任",
+        "example_en": "He took responsibility for the mistake.",
+        "example_zh": "他承擔了這個錯誤的責任。"
+      },
+      {
+        "id": "b5l3-p052",
+        "phrase": "a stark contrast between",
+        "pos": "ph.",
+        "zh": "……之間的鮮明對比",
+        "example_en": "There is a stark contrast between the two neighborhoods.",
+        "example_zh": "這兩個社區之間有鮮明對比。"
+      },
+      {
+        "id": "b5l3-p053",
+        "phrase": "be known world-wide for",
+        "pos": "ph.",
+        "zh": "因……聞名全球",
+        "example_en": "The city is known worldwide for its cuisine.",
+        "example_zh": "這座城市以美食聞名全球。"
+      },
+      {
+        "id": "b5l3-p054",
+        "phrase": "lively economy",
+        "pos": "ph.",
+        "zh": "活躍的經濟",
+        "example_en": "Tourism supports the island’s lively economy.",
+        "example_zh": "觀光業支撐著島上活躍的經濟。"
+      },
+      {
+        "id": "b5l3-p055",
+        "phrase": "from far and wide",
+        "pos": "ph.",
+        "zh": "來自四面八方",
+        "example_en": "Visitors came from far and wide.",
+        "example_zh": "遊客從四面八方而來。"
+      },
+      {
+        "id": "b5l3-p056",
+        "phrase": "by contrast",
+        "pos": "ph.",
+        "zh": "相比之下",
+        "example_en": "The capital is crowded; by contrast, the village is quiet.",
+        "example_zh": "首都很擁擠；相比之下，村莊很安靜。"
+      },
+      {
+        "id": "b5l3-p057",
+        "phrase": "least developed country",
+        "pos": "ph.",
+        "zh": "最低度開發國家",
+        "example_en": "The program supports farmers in a least developed country.",
+        "example_zh": "這項計畫支援最低度開發國家的農民。"
+      },
+      {
+        "id": "b5l3-p058",
+        "phrase": "rely primarily on",
+        "pos": "ph.",
+        "zh": "主要依靠……",
+        "example_en": "The community relies primarily on farming.",
+        "example_zh": "這個社區主要依靠農業。"
+      },
+      {
+        "id": "b5l3-p059",
+        "phrase": "raise cattle",
+        "pos": "ph.",
+        "zh": "飼養牛隻",
+        "example_en": "Many families raise cattle for a living.",
+        "example_zh": "許多家庭以飼養牛隻維生。"
+      },
+      {
+        "id": "b5l3-p060",
+        "phrase": "three times the number of",
+        "pos": "ph.",
+        "zh": "是……數量的三倍",
+        "example_en": "The city has three times the number of residents.",
+        "example_zh": "這座城市的居民人數是另一地的三倍。"
+      },
+      {
+        "id": "b5l3-p061",
+        "phrase": "lively nightlife",
+        "pos": "ph.",
+        "zh": "熱鬧的夜生活",
+        "example_en": "The district is famous for its lively nightlife.",
+        "example_zh": "這個地區以熱鬧的夜生活聞名。"
+      },
+      {
+        "id": "b5l3-p062",
+        "phrase": "luxury shopping mall",
+        "pos": "ph.",
+        "zh": "高級購物中心",
+        "example_en": "A luxury shopping mall opened downtown.",
+        "example_zh": "市中心開了一家高級購物中心。"
+      },
+      {
+        "id": "b5l3-p063",
+        "phrase": "modern skyscrapers",
+        "pos": "ph.",
+        "zh": "現代摩天大樓",
+        "example_en": "Modern skyscrapers dominate the skyline.",
+        "example_zh": "現代摩天大樓主宰著天際線。"
+      },
+      {
+        "id": "b5l3-p064",
+        "phrase": "non-profit organization",
+        "pos": "ph.",
+        "zh": "非營利組織",
+        "example_en": "She volunteers for a non-profit organization.",
+        "example_zh": "她在一家非營利組織擔任志工。"
+      },
+      {
+        "id": "b5l3-p065",
+        "phrase": "maintain its operation",
+        "pos": "ph.",
+        "zh": "維持其營運",
+        "example_en": "Donations help the center maintain its operation.",
+        "example_zh": "捐款幫助該中心維持營運。"
+      },
+      {
+        "id": "b5l3-p066",
+        "phrase": "act suspiciously",
+        "pos": "ph.",
+        "zh": "舉止可疑",
+        "example_en": "The man was acting suspiciously near the bank.",
+        "example_zh": "那名男子在銀行附近舉止可疑。"
+      },
+      {
+        "id": "b5l3-p067",
+        "phrase": "be arrested by",
+        "pos": "ph.",
+        "zh": "被……逮捕",
+        "example_en": "The suspect was arrested by the police.",
+        "example_zh": "嫌疑犯被警方逮捕。"
+      },
+      {
+        "id": "b5l3-p068",
+        "phrase": "food delicacies",
+        "pos": "ph.",
+        "zh": "特色美食；佳餚",
+        "example_en": "The market offers many local food delicacies.",
+        "example_zh": "這個市場提供許多當地特色美食。"
+      },
+      {
+        "id": "b5l3-p069",
+        "phrase": "experience the local culture",
+        "pos": "ph.",
+        "zh": "體驗當地文化",
+        "example_en": "Travelers stayed with families to experience the local culture.",
+        "example_zh": "旅客寄宿家庭以體驗當地文化。"
+      },
+      {
+        "id": "b5l3-p070",
+        "phrase": "avoid physical contact with",
+        "pos": "ph.",
+        "zh": "避免與……肢體接觸",
+        "example_en": "Avoid physical contact with wild animals.",
+        "example_zh": "避免與野生動物肢體接觸。"
+      },
+      {
+        "id": "b5l3-p071",
+        "phrase": "lush forest",
+        "pos": "ph.",
+        "zh": "茂密的森林",
+        "example_en": "A lush forest surrounds the lake.",
+        "example_zh": "茂密的森林環繞著湖泊。"
+      },
+      {
+        "id": "b5l3-p072",
+        "phrase": "bustling city",
+        "pos": "ph.",
+        "zh": "繁華的城市",
+        "example_en": "She moved to a bustling city.",
+        "example_zh": "她搬到一座繁華的城市。"
+      },
+      {
+        "id": "b5l3-p073",
+        "phrase": "mountainous landscape",
+        "pos": "ph.",
+        "zh": "多山的地形景觀",
+        "example_en": "The country has a dramatic mountainous landscape.",
+        "example_zh": "這個國家擁有壯麗的多山景觀。"
+      },
+      {
+        "id": "b5l3-p074",
+        "phrase": "be sure to",
+        "pos": "ph.",
+        "zh": "務必……",
+        "example_en": "Be sure to bring a raincoat.",
+        "example_zh": "務必帶上雨衣。"
+      },
+      {
+        "id": "b5l3-p075",
+        "phrase": "come face to face",
+        "pos": "ph.",
+        "zh": "面對面相遇",
+        "example_en": "We came face to face with a deer.",
+        "example_zh": "我們與一頭鹿面對面相遇。"
+      },
+      {
+        "id": "b5l3-p076",
+        "phrase": "get to know each other",
+        "pos": "ph.",
+        "zh": "逐漸了解彼此",
+        "example_en": "The students played games to get to know each other.",
+        "example_zh": "學生玩遊戲以逐漸了解彼此。"
+      },
+      {
+        "id": "b5l3-p077",
+        "phrase": "make for",
+        "pos": "ph.",
+        "zh": "促成；造就",
+        "example_en": "Clear skies make for a pleasant trip.",
+        "example_zh": "晴朗的天空使旅程更加愉快。"
+      },
+      {
+        "id": "b5l3-p078",
+        "phrase": "suspicion of plagiarism",
+        "pos": "ph.",
+        "zh": "抄襲嫌疑",
+        "example_en": "The essay raised suspicion of plagiarism.",
+        "example_zh": "這篇文章引起抄襲嫌疑。"
+      },
+      {
+        "id": "b5l3-p079",
+        "phrase": "on a regular basis",
+        "pos": "ph.",
+        "zh": "定期地",
+        "example_en": "We meet on a regular basis.",
+        "example_zh": "我們定期見面。"
+      },
+      {
+        "id": "b5l3-p080",
+        "phrase": "do some warm-ups beforehand",
+        "pos": "ph.",
+        "zh": "事先做些暖身運動",
+        "example_en": "Do some warm-ups beforehand to prevent injury.",
+        "example_zh": "事先做些暖身運動以預防受傷。"
+      },
+      {
+        "id": "b5l3-p081",
+        "phrase": "meet distant friends",
+        "pos": "ph.",
+        "zh": "與遠方朋友見面",
+        "example_en": "The holiday is a chance to meet distant friends.",
+        "example_zh": "這個假期是與遠方朋友見面的機會。"
+      },
+      {
+        "id": "b5l3-p082",
+        "phrase": "as well",
+        "pos": "ph.",
+        "zh": "也；同樣地",
+        "example_en": "Tom came to the party as well.",
+        "example_zh": "湯姆也來參加派對。"
+      },
+      {
+        "id": "b5l3-p083",
+        "phrase": "keep in touch with…through social media",
+        "pos": "ph.",
+        "zh": "透過社群媒體與……保持聯絡",
+        "example_en": "She keeps in touch with classmates through social media.",
+        "example_zh": "她透過社群媒體與同學保持聯絡。"
+      },
+      {
+        "id": "b5l3-p084",
+        "phrase": "share old memories",
+        "pos": "ph.",
+        "zh": "分享往日回憶",
+        "example_en": "We spent the evening sharing old memories.",
+        "example_zh": "我們整晚分享往日回憶。"
+      },
+      {
+        "id": "b5l3-p085",
+        "phrase": "cattle raising",
+        "pos": "ph.",
+        "zh": "畜牧養牛",
+        "example_en": "Cattle raising is important to the local economy.",
+        "example_zh": "畜牧養牛對當地經濟很重要。"
+      },
+      {
+        "id": "b5l3-p086",
+        "phrase": "a beautiful coincidence",
+        "pos": "ph.",
+        "zh": "美麗的巧合",
+        "example_en": "Our meeting in Paris was a beautiful coincidence.",
+        "example_zh": "我們在巴黎相遇是一個美麗的巧合。"
+      },
+      {
+        "id": "b5l3-p087",
+        "phrase": "differ from",
+        "pos": "ph.",
+        "zh": "與……不同",
+        "example_en": "This design differs from the original.",
+        "example_zh": "這個設計與原版不同。"
+      },
+      {
+        "id": "b5l3-p088",
+        "phrase": "differ with sb. over sth.",
+        "pos": "ph.",
+        "zh": "在某事上與某人意見不同",
+        "example_en": "I differ with him over the budget.",
+        "example_zh": "我在預算問題上與他意見不同。"
+      },
+      {
+        "id": "b5l3-p089",
+        "phrase": "differentiate between A and B",
+        "pos": "ph.",
+        "zh": "區分 A 與 B",
+        "example_en": "Children must learn to differentiate between fact and opinion.",
+        "example_zh": "孩子必須學會區分事實與意見。"
+      },
+      {
+        "id": "b5l3-p090",
+        "phrase": "differentiate fiction from reality",
+        "pos": "ph.",
+        "zh": "區分虛構與現實",
+        "example_en": "Young viewers may struggle to differentiate fiction from reality.",
+        "example_zh": "年幼觀眾可能難以區分虛構與現實。"
+      },
+      {
+        "id": "b5l3-p091",
+        "phrase": "flight crew",
+        "pos": "ph.",
+        "zh": "機組人員",
+        "example_en": "The flight crew welcomed the passengers.",
+        "example_zh": "機組人員歡迎乘客登機。"
+      },
+      {
+        "id": "b5l3-p092",
+        "phrase": "demonstrate safety procedures",
+        "pos": "ph.",
+        "zh": "示範安全程序",
+        "example_en": "The crew demonstrated safety procedures.",
+        "example_zh": "機組人員示範了安全程序。"
+      },
+      {
+        "id": "b5l3-p093",
+        "phrase": "fill the sails",
+        "pos": "ph.",
+        "zh": "鼓滿船帆",
+        "example_en": "A strong wind filled the sails.",
+        "example_zh": "強風吹鼓了船帆。"
+      },
+      {
+        "id": "b5l3-p094",
+        "phrase": "settle in",
+        "pos": "ph.",
+        "zh": "安頓下來；適應",
+        "example_en": "It took us a week to settle in.",
+        "example_zh": "我們花了一週才安頓下來。"
+      },
+      {
+        "id": "b5l3-p095",
+        "phrase": "legend has it that",
+        "pos": "ph.",
+        "zh": "傳說……",
+        "example_en": "Legend has it that a dragon lived here.",
+        "example_zh": "傳說曾有一條龍住在這裡。"
+      },
+      {
+        "id": "b5l3-p096",
+        "phrase": "settle the argument",
+        "pos": "ph.",
+        "zh": "平息爭論",
+        "example_en": "New evidence finally settled the argument.",
+        "example_zh": "新證據終於平息了爭論。"
+      },
+      {
+        "id": "b5l3-p097",
+        "phrase": "settle the difference",
+        "pos": "ph.",
+        "zh": "解決分歧",
+        "example_en": "The two sides met to settle their differences.",
+        "example_zh": "雙方會面以解決分歧。"
+      },
+      {
+        "id": "b5l3-p098",
+        "phrase": "settle a case out of court",
+        "pos": "ph.",
+        "zh": "庭外和解案件",
+        "example_en": "They agreed to settle the case out of court.",
+        "example_zh": "他們同意庭外和解此案。"
+      },
+      {
+        "id": "b5l3-p099",
+        "phrase": "reach a settlement",
+        "pos": "ph.",
+        "zh": "達成和解",
+        "example_en": "The workers and company reached a settlement.",
+        "example_zh": "工人與公司達成和解。"
+      },
+      {
+        "id": "b5l3-p100",
+        "phrase": "an annual pay raise",
+        "pos": "ph.",
+        "zh": "年度加薪",
+        "example_en": "Employees received an annual pay raise.",
+        "example_zh": "員工獲得年度加薪。"
+      },
+      {
+        "id": "b5l3-p101",
+        "phrase": "for the purpose of",
+        "pos": "ph.",
+        "zh": "為了……的目的",
+        "example_en": "The survey was conducted for the purpose of research.",
+        "example_zh": "這項調查是為了研究而進行。"
+      },
+      {
+        "id": "b5l3-p102",
+        "phrase": "in possession of",
+        "pos": "ph.",
+        "zh": "持有；擁有",
+        "example_en": "The police found him in possession of stolen goods.",
+        "example_zh": "警方發現他持有贓物。"
+      },
+      {
+        "id": "b5l3-p103",
+        "phrase": "personal possessions",
+        "pos": "ph.",
+        "zh": "個人物品",
+        "example_en": "She packed her personal possessions.",
+        "example_zh": "她收拾好個人物品。"
+      },
+      {
+        "id": "b5l3-p104",
+        "phrase": "demonstrate an exceptional talent for",
+        "pos": "ph.",
+        "zh": "展現……的非凡天賦",
+        "example_en": "He demonstrated an exceptional talent for painting.",
+        "example_zh": "他展現了繪畫方面的非凡天賦。"
+      },
+      {
+        "id": "b5l3-p105",
+        "phrase": "under exceptional circumstances",
+        "pos": "ph.",
+        "zh": "在特殊情況下",
+        "example_en": "Refunds are given only under exceptional circumstances.",
+        "example_zh": "只有在特殊情況下才會退款。"
+      },
+      {
+        "id": "b5l3-p106",
+        "phrase": "without exception",
+        "pos": "ph.",
+        "zh": "無一例外",
+        "example_en": "All students, without exception, joined the activity.",
+        "example_zh": "所有學生無一例外地參加了活動。"
+      },
+      {
+        "id": "b5l3-p107",
+        "phrase": "flash photography",
+        "pos": "ph.",
+        "zh": "閃光燈攝影",
+        "example_en": "Flash photography is not allowed here.",
+        "example_zh": "此處不允許使用閃光燈攝影。"
+      },
+      {
+        "id": "b5l3-p108",
+        "phrase": "bright light exposure",
+        "pos": "ph.",
+        "zh": "暴露於強光",
+        "example_en": "Bright light exposure can hurt your eyes.",
+        "example_zh": "暴露於強光可能傷害眼睛。"
+      },
+      {
+        "id": "b5l3-p109",
+        "phrase": "make an exception",
+        "pos": "ph.",
+        "zh": "破例",
+        "example_en": "The manager made an exception for us.",
+        "example_zh": "經理為我們破例。"
+      },
+      {
+        "id": "b5l3-p110",
+        "phrase": "strategic position",
+        "pos": "ph.",
+        "zh": "戰略位置",
+        "example_en": "The island occupies a strategic position.",
+        "example_zh": "這座島占有戰略位置。"
+      },
+      {
+        "id": "b5l3-p111",
+        "phrase": "rival powers",
+        "pos": "ph.",
+        "zh": "敵對強權",
+        "example_en": "Rival powers competed for control of the port.",
+        "example_zh": "敵對強權爭奪港口控制權。"
+      },
+      {
+        "id": "b5l3-p112",
+        "phrase": "seize control of",
+        "pos": "ph.",
+        "zh": "奪取……的控制權",
+        "example_en": "The army seized control of the capital.",
+        "example_zh": "軍隊奪取首都的控制權。"
+      },
+      {
+        "id": "b5l3-p113",
+        "phrase": "protect trade interests",
+        "pos": "ph.",
+        "zh": "保護貿易利益",
+        "example_en": "The country built a navy to protect its trade interests.",
+        "example_zh": "該國建立海軍以保護貿易利益。"
+      },
+      {
+        "id": "b5l3-p114",
+        "phrase": "adopt a long-term strategy",
+        "pos": "ph.",
+        "zh": "採取長期策略",
+        "example_en": "The government adopted a long-term strategy.",
+        "example_zh": "政府採取了長期策略。"
+      },
+      {
+        "id": "b5l3-p115",
+        "phrase": "reduce unemployment",
+        "pos": "ph.",
+        "zh": "降低失業率",
+        "example_en": "The project aims to reduce unemployment.",
+        "example_zh": "這項計畫旨在降低失業率。"
+      },
+      {
+        "id": "b5l3-p116",
+        "phrase": "improve workforce skills",
+        "pos": "ph.",
+        "zh": "提升勞動力技能",
+        "example_en": "Training programs improve workforce skills.",
+        "example_zh": "培訓計畫提升勞動力技能。"
+      },
+      {
+        "id": "b5l3-p117",
+        "phrase": "on the opposite side of…",
+        "pos": "ph.",
+        "zh": "在……的另一側",
+        "example_en": "The station is on the opposite side of the river.",
+        "example_zh": "車站位於河的另一側。"
+      },
+      {
+        "id": "b5l3-p118",
+        "phrase": "have opposite opinions",
+        "pos": "ph.",
+        "zh": "持相反意見",
+        "example_en": "The two experts have opposite opinions.",
+        "example_zh": "兩位專家持相反意見。"
+      },
+      {
+        "id": "b5l3-p119",
+        "phrase": "opposite each other",
+        "pos": "ph.",
+        "zh": "彼此相對",
+        "example_en": "The two shops stand opposite each other.",
+        "example_zh": "這兩家商店彼此相對。"
+      },
+      {
+        "id": "b5l3-p120",
+        "phrase": "apple core",
+        "pos": "ph.",
+        "zh": "蘋果核",
+        "example_en": "He threw the apple core into the compost bin.",
+        "example_zh": "他把蘋果核丟進堆肥桶。"
+      },
+      {
+        "id": "b5l3-p121",
+        "phrase": "at the core of",
+        "pos": "ph.",
+        "zh": "在……的核心",
+        "example_en": "Trust is at the core of friendship.",
+        "example_zh": "信任是友誼的核心。"
+      },
+      {
+        "id": "b5l3-p122",
+        "phrase": "a deep desire for justice and equality",
+        "pos": "ph.",
+        "zh": "對正義與平等的強烈渴望",
+        "example_en": "She has a deep desire for justice and equality.",
+        "example_zh": "她對正義與平等有強烈渴望。"
+      },
+      {
+        "id": "b5l3-p123",
+        "phrase": "core belief",
+        "pos": "ph.",
+        "zh": "核心信念",
+        "example_en": "Honesty is one of his core beliefs.",
+        "example_zh": "誠實是他的核心信念之一。"
+      },
+      {
+        "id": "b5l3-p124",
+        "phrase": "considerable size and strength",
+        "pos": "ph.",
+        "zh": "相當大的體型與力量",
+        "example_en": "The animal has considerable size and strength.",
+        "example_zh": "這種動物有相當大的體型與力量。"
+      },
+      {
+        "id": "b5l3-p125",
+        "phrase": "create cool shade",
+        "pos": "ph.",
+        "zh": "形成涼爽的樹蔭",
+        "example_en": "Large trees create cool shade.",
+        "example_zh": "大樹形成涼爽的樹蔭。"
+      },
+      {
+        "id": "b5l3-p126",
+        "phrase": "dense population",
+        "pos": "ph.",
+        "zh": "人口稠密",
+        "example_en": "The area has a dense population.",
+        "example_zh": "該地區人口稠密。"
+      },
+      {
+        "id": "b5l3-p127",
+        "phrase": "dense fog",
+        "pos": "ph.",
+        "zh": "濃霧",
+        "example_en": "Dense fog delayed the flight.",
+        "example_zh": "濃霧造成航班延誤。"
+      },
+      {
+        "id": "b5l3-p128",
+        "phrase": "density of sth.",
+        "pos": "ph.",
+        "zh": "……的密度",
+        "example_en": "Scientists measured the density of the liquid.",
+        "example_zh": "科學家測量了液體的密度。"
+      },
+      {
+        "id": "b5l3-p129",
+        "phrase": "sit atop a hill",
+        "pos": "ph.",
+        "zh": "坐落於山頂",
+        "example_en": "An old castle sits atop a hill.",
+        "example_zh": "一座古堡坐落於山頂。"
+      },
+      {
+        "id": "b5l3-p130",
+        "phrase": "be struck dumb by",
+        "pos": "ph.",
+        "zh": "因……而驚訝得說不出話",
+        "example_en": "We were struck dumb by the view.",
+        "example_zh": "我們被眼前景色驚得說不出話。"
+      },
+      {
+        "id": "b5l3-p131",
+        "phrase": "soar above",
+        "pos": "ph.",
+        "zh": "翱翔於……上方",
+        "example_en": "Eagles soared above the valley.",
+        "example_zh": "老鷹翱翔於山谷上方。"
+      },
+      {
+        "id": "b5l3-p132",
+        "phrase": "soar to new heights",
+        "pos": "ph.",
+        "zh": "攀升至新高",
+        "example_en": "Online sales soared to new heights.",
+        "example_zh": "線上銷售攀升至新高。"
+      },
+      {
+        "id": "b5l3-p133",
+        "phrase": "a heavy stream of rainwater",
+        "pos": "ph.",
+        "zh": "一股大量雨水",
+        "example_en": "A heavy stream of rainwater rushed down the street.",
+        "example_zh": "一股大量雨水沿街奔流。"
+      },
+      {
+        "id": "b5l3-p134",
+        "phrase": "stream through",
+        "pos": "ph.",
+        "zh": "流過；湧入",
+        "example_en": "Sunlight streamed through the windows.",
+        "example_zh": "陽光透過窗戶灑入。"
+      },
+      {
+        "id": "b5l3-p135",
+        "phrase": "notice a stark difference between",
+        "pos": "ph.",
+        "zh": "注意到……之間的明顯差異",
+        "example_en": "I noticed a stark difference between the two plans.",
+        "example_zh": "我注意到兩個方案之間的明顯差異。"
+      },
+      {
+        "id": "b5l3-p136",
+        "phrase": "live in a stark room",
+        "pos": "ph.",
+        "zh": "住在簡陋的房間裡",
+        "example_en": "The monk lived in a stark room.",
+        "example_zh": "這名僧侶住在簡陋的房間裡。"
+      },
+      {
+        "id": "b5l3-p137",
+        "phrase": "become lively with parades and other celebrations",
+        "pos": "",
+        "zh": "",
+        "example_en": "",
+        "example_zh": ""
+      },
+      {
+        "id": "b5l3-p138",
+        "phrase": "ph.",
+        "pos": "因遊行及其他慶典而熱鬧起來",
+        "zh": "The streets become lively with parades and other celebrations.",
+        "example_en": "街道因遊行及其他慶典而熱鬧起來。",
+        "example_zh": ""
+      },
+      {
+        "id": "b5l3-p139",
+        "phrase": "prompt a lively discussion",
+        "pos": "ph.",
+        "zh": "引發熱烈討論",
+        "example_en": "The question prompted a lively discussion.",
+        "example_zh": "這個問題引發熱烈討論。"
+      },
+      {
+        "id": "b5l3-p140",
+        "phrase": "a herd of cattle",
+        "pos": "ph.",
+        "zh": "一群牛",
+        "example_en": "A herd of cattle crossed the road.",
+        "example_zh": "一群牛穿過馬路。"
+      },
+      {
+        "id": "b5l3-p141",
+        "phrase": "agricultural trade",
+        "pos": "ph.",
+        "zh": "農業貿易",
+        "example_en": "The agreement encourages agricultural trade.",
+        "example_zh": "這項協議促進農業貿易。"
+      },
+      {
+        "id": "b5l3-p142",
+        "phrase": "exceed one’s expectation",
+        "pos": "ph.",
+        "zh": "超出某人的預期",
+        "example_en": "The performance exceeded our expectations.",
+        "example_zh": "這場表演超出我們的預期。"
+      },
+      {
+        "id": "b5l3-p143",
+        "phrase": "exceed the speed limit",
+        "pos": "ph.",
+        "zh": "超速",
+        "example_en": "Do not exceed the speed limit.",
+        "example_zh": "不要超速。"
+      },
+      {
+        "id": "b5l3-p144",
+        "phrase": "attend a safe driving workshop",
+        "pos": "ph.",
+        "zh": "參加安全駕駛研習",
+        "example_en": "New drivers attended a safe driving workshop.",
+        "example_zh": "新手駕駛參加了安全駕駛研習。"
+      },
+      {
+        "id": "b5l3-p145",
+        "phrase": "feature a gorgeous pattern of",
+        "pos": "ph.",
+        "zh": "呈現……的華麗圖案",
+        "example_en": "The fabric features a gorgeous pattern of flowers.",
+        "example_zh": "這塊布料呈現華麗的花卉圖案。"
+      },
+      {
+        "id": "b5l3-p146",
+        "phrase": "lush vegetation",
+        "pos": "ph.",
+        "zh": "茂盛的植被",
+        "example_en": "Lush vegetation covers the valley.",
+        "example_zh": "茂盛的植被覆蓋山谷。"
+      },
+      {
+        "id": "b5l3-p147",
+        "phrase": "large amount of annual rainfall",
+        "pos": "ph.",
+        "zh": "大量年降雨量",
+        "example_en": "The region receives a large amount of annual rainfall.",
+        "example_zh": "該地區年降雨量很大。"
+      },
+      {
+        "id": "b5l3-p148",
+        "phrase": "lush sounds coming from the orchestra",
+        "pos": "ph.",
+        "zh": "管弦樂團傳來的豐潤樂聲",
+        "example_en": "Lush sounds coming from the orchestra filled the hall.",
+        "example_zh": "管弦樂團傳來的豐潤樂聲充滿大廳。"
+      },
+      {
+        "id": "b5l3-p149",
+        "phrase": "delight the audience",
+        "pos": "ph.",
+        "zh": "取悅觀眾",
+        "example_en": "The dancers delighted the audience.",
+        "example_zh": "舞者們令觀眾十分愉悅。"
+      },
+      {
+        "id": "b5l3-p150",
+        "phrase": "an enthusiastic round of applause",
+        "pos": "ph.",
+        "zh": "一陣熱烈掌聲",
+        "example_en": "The singer received an enthusiastic round of applause.",
+        "example_zh": "這位歌手獲得一陣熱烈掌聲。"
+      },
+      {
+        "id": "b5l3-p151",
+        "phrase": "be bustling with",
+        "pos": "ph.",
+        "zh": "充滿繁忙活動／擠滿……",
+        "example_en": "The market was bustling with shoppers.",
+        "example_zh": "市場裡擠滿了購物人潮。"
+      },
+      {
+        "id": "b5l3-p152",
+        "phrase": "bustle around",
+        "pos": "ph.",
+        "zh": "忙碌地四處奔走",
+        "example_en": "Servers bustled around the restaurant.",
+        "example_zh": "服務生在餐廳裡忙碌地四處奔走。"
+      },
+      {
+        "id": "b5l3-p153",
+        "phrase": "the hustle and bustle of",
+        "pos": "ph.",
+        "zh": "……的熙來攘往",
+        "example_en": "She enjoys the hustle and bustle of city life.",
+        "example_zh": "她喜歡都市生活的熙來攘往。"
+      },
+      {
+        "id": "b5l3-p154",
+        "phrase": "tower above",
+        "pos": "ph.",
+        "zh": "高聳於……之上",
+        "example_en": "The mountain towers above the village.",
+        "example_zh": "這座山高聳於村莊之上。"
+      },
+      {
+        "id": "b5l3-p155",
+        "phrase": "mountainous region",
+        "pos": "ph.",
+        "zh": "山區",
+        "example_en": "Travel is difficult in this mountainous region.",
+        "example_zh": "在這個山區旅行並不容易。"
+      },
+      {
+        "id": "b5l3-p156",
+        "phrase": "sharp observation skill",
+        "pos": "ph.",
+        "zh": "敏銳的觀察力",
+        "example_en": "A detective needs sharp observation skills.",
+        "example_zh": "偵探需要敏銳的觀察力。"
+      },
+      {
+        "id": "b5l3-p157",
+        "phrase": "hold opposite positions regarding",
+        "pos": "ph.",
+        "zh": "對……持相反立場",
+        "example_en": "The parties hold opposite positions regarding the law.",
+        "example_zh": "各政黨對這項法律持相反立場。"
+      },
+      {
+        "id": "b5l3-p158",
+        "phrase": "lead to heated discussions",
+        "pos": "ph.",
+        "zh": "導致激烈討論",
+        "example_en": "The proposal led to heated discussions.",
+        "example_zh": "這項提案導致激烈討論。"
+      },
+      {
+        "id": "b5l3-p159",
+        "phrase": "significant growth of e-commerce",
+        "pos": "ph.",
+        "zh": "電子商務的顯著成長",
+        "example_en": "The country has seen significant growth of e-commerce.",
+        "example_zh": "該國見證了電子商務的顯著成長。"
+      },
+      {
+        "id": "b5l3-p160",
+        "phrase": "in dense urban areas",
+        "pos": "ph.",
+        "zh": "在人口稠密的都市地區",
+        "example_en": "Public transport is essential in dense urban areas.",
+        "example_zh": "大眾運輸在人口稠密的都市地區十分重要。"
+      },
+      {
+        "id": "b5l3-p161",
+        "phrase": "dominate the skyline",
+        "pos": "ph.",
+        "zh": "主宰天際線",
+        "example_en": "Two towers dominate the skyline.",
+        "example_zh": "兩座高塔主宰著天際線。"
+      },
+      {
+        "id": "b5l3-p162",
+        "phrase": "on board",
+        "pos": "ph.",
+        "zh": "在船上／飛機上",
+        "example_en": "There were 120 passengers on board.",
+        "example_zh": "船上有一百二十名乘客。"
+      },
+      {
+        "id": "b5l3-p163",
+        "phrase": "take in the spectacular fireworks show",
+        "pos": "ph.",
+        "zh": "欣賞壯觀的煙火秀",
+        "example_en": "We stood by the river to take in the spectacular fireworks show.",
+        "example_zh": "我們站在河邊欣賞壯觀的煙火秀。"
+      },
+      {
+        "id": "b5l3-p164",
+        "phrase": "sudden outbreak of a contagious disease",
+        "pos": "ph.",
+        "zh": "傳染病突然爆發",
+        "example_en": "A sudden outbreak of a contagious disease closed the school.",
+        "example_zh": "傳染病突然爆發使學校停課。"
+      },
+      {
+        "id": "b5l3-p165",
+        "phrase": "a chaotic situation",
+        "pos": "ph.",
+        "zh": "混亂的局面",
+        "example_en": "The power failure created a chaotic situation.",
+        "example_zh": "停電造成混亂的局面。"
+      },
+      {
+        "id": "b5l3-p166",
+        "phrase": "a mountain resort",
+        "pos": "ph.",
+        "zh": "山區度假村",
+        "example_en": "They spent the weekend at a mountain resort.",
+        "example_zh": "他們在山區度假村度過週末。"
+      },
+      {
+        "id": "b5l3-p167",
+        "phrase": "food preference",
+        "pos": "ph.",
+        "zh": "食物偏好",
+        "example_en": "The survey asks about each guest’s food preferences.",
+        "example_zh": "這份調查詢問每位賓客的食物偏好。"
+      },
+      {
+        "id": "b5l3-p168",
+        "phrase": "French cuisine",
+        "pos": "ph.",
+        "zh": "法國料理",
+        "example_en": "The restaurant specializes in French cuisine.",
+        "example_zh": "這家餐廳專門提供法國料理。"
+      },
+      {
+        "id": "b5l3-p169",
+        "phrase": "sumo wrestler",
+        "pos": "ph.",
+        "zh": "相撲選手",
+        "example_en": "The sumo wrestler trained every morning.",
+        "example_zh": "這位相撲選手每天早上訓練。"
+      },
+      {
+        "id": "b5l3-p170",
+        "phrase": "weekly allowance",
+        "pos": "ph.",
+        "zh": "每週零用錢",
+        "example_en": "She saves part of her weekly allowance.",
+        "example_zh": "她會存下部分每週零用錢。"
+      },
+      {
+        "id": "b5l3-p171",
+        "phrase": "bustling city life",
+        "pos": "ph.",
+        "zh": "繁忙熱鬧的都市生活",
+        "example_en": "He enjoys the energy of bustling city life.",
+        "example_zh": "他喜歡繁忙熱鬧的都市生活所帶來的活力。"
+      }
+    ]
   },
   "grammar": {
-    "points": [],
+    "points": [
+      {
+        "id": "b5l3-g1",
+        "title": "S + V + half/twice/two times/three times/many times/... + the N of....",
+        "examples": [
+          "此句型用來表示兩者的倍數關係,以數據來呈現兩者的差異。常見的比較項目有:height(高度)、length(長度) width(寬度)、weight(重量)、size(規模/面積)、 price(價格)、number(數目,可數)、amount(數量,不可數)等。",
+          "My bedroom is half the size of my living room.",
+          "Jason’s weekly allowance is three times the amount of Mickey’s."
+        ]
+      },
+      {
+        "id": "b5l3-g2",
+        "title": "Superordinate-Subordinate Relation (上下位關係)/Part-Whole Relation(整體-局部關係)",
+        "examples": [
+          "在篇章中,可透過詞彙的語意關聯性,來維持主題連貫,並增添敘述的變化性。常見的手法有:\n1. 上下位關係:上位詞通常代表某種主題或概念,下位詞則為其分類下的實例。(例:color—blue)\n2. 整體局部關係:整體通常代表單一事物,局部則為此事物中的一部分。(例:body—leg)",
+          "natural landscapes: mountains, valleys, rivers, and reefs;  trees, grassland, or marshland."
+        ]
+      }
+    ],
     "sentence_structures": {
       "items": [
         {
@@ -27,7 +1849,7 @@
         },
         {
           "id": "b5l3-s003",
-          "sentence": "To explore this connection, we can *take* a closer look at these two namesakes to see how they are similar and how they differ.",
+          "sentence": "To explore this connection, we *can take* a closer look at these two namesakes to see how they are similar and how they differ.",
           "type": "complex",
           "pattern": "Infinitival phrase + S + Vt (Phrasal verb) + O + Infinitival phrase + Noun clauses"
         },
@@ -185,6 +2007,6 @@
     }
   },
   "text_genre": {
-    "raw_text": ""
+    "raw_text": "The text follows a classic compare-contrast framework:\nIntroduction (Para 1): Introduces Taiwan and Formosa (Argentina) as namesakes and states the thesis (to examine their similarities and differences).\nComparison — History (Para 2): Both were named by 16th-century European explorers (Portuguese and Spanish) due to strategic and economic potential.\nComparison — Geography (Para 3): Both sit at 23 latitude and are exact antipodes (opposite sides of the Earth).\nContrast — Landscape (Para 4): Taiwan is mountainous with rich biodiversity; Formosa, Argentina, is twice as large and mostly flat (grasslands and marshlands).\nContrast — Economy (Para 5): Taiwan has a bustling IT-driven economy; Formosa relies on agriculture and cattle raising (cattle outnumber people 3:1).\nConclusion (Para 6): Reaffirms that both places share unique beauty and expresses hope for future connection."
   }
 }
