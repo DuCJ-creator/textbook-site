@@ -7,7 +7,1448 @@
     "rows": []
   },
   "phrases": {
-    "items": []
+    "items": [
+      {
+        "id": "b5l5-p001",
+        "phrase": "set apart from",
+        "pos": "ph.",
+        "zh": "與……區別開來",
+        "example_en": "The blue roof sets the house apart from its neighbors.",
+        "example_zh": "藍色屋頂使這棟房子與鄰居的房子區別開來。"
+      },
+      {
+        "id": "b5l5-p002",
+        "phrase": "center of commerce",
+        "pos": "ph.",
+        "zh": "商業中心",
+        "example_en": "The port became a center of commerce.",
+        "example_zh": "這座港口成為商業中心。"
+      },
+      {
+        "id": "b5l5-p003",
+        "phrase": "depend largely on",
+        "pos": "ph.",
+        "zh": "主要依賴……",
+        "example_en": "The island depends largely on tourism.",
+        "example_zh": "這座島主要依賴觀光業。"
+      },
+      {
+        "id": "b5l5-p004",
+        "phrase": "tens of millions of",
+        "pos": "ph.",
+        "zh": "數千萬的……",
+        "example_en": "Tens of millions of people watched the event.",
+        "example_zh": "數千萬人觀看了這場活動。"
+      },
+      {
+        "id": "b5l5-p005",
+        "phrase": "in recent years",
+        "pos": "ph.",
+        "zh": "近年來",
+        "example_en": "In recent years, online learning has expanded.",
+        "example_zh": "近年來，線上學習有所擴展。"
+      },
+      {
+        "id": "b5l5-p006",
+        "phrase": "as a result of",
+        "pos": "ph.",
+        "zh": "由於；因為",
+        "example_en": "Flights were delayed as a result of the storm.",
+        "example_zh": "航班因暴風雨而延誤。"
+      },
+      {
+        "id": "b5l5-p007",
+        "phrase": "count on",
+        "pos": "ph.",
+        "zh": "依靠；指望",
+        "example_en": "You can count on me for help.",
+        "example_zh": "你可以指望我幫忙。"
+      },
+      {
+        "id": "b5l5-p008",
+        "phrase": "use e-learning platforms",
+        "pos": "ph.",
+        "zh": "使用電子學習平台",
+        "example_en": "Students use e-learning platforms at home.",
+        "example_zh": "學生在家使用電子學習平台。"
+      },
+      {
+        "id": "b5l5-p009",
+        "phrase": "a hot Instagram check-in place",
+        "pos": "ph.",
+        "zh": "熱門 Instagram 打卡地點",
+        "example_en": "The café is a hot Instagram check-in place.",
+        "example_zh": "這家咖啡館是熱門的 Instagram 打卡地點。"
+      },
+      {
+        "id": "b5l5-p010",
+        "phrase": "become increasingly popular among",
+        "pos": "ph.",
+        "zh": "在……之間越來越受歡迎",
+        "example_en": "Podcasts have become increasingly popular among teenagers.",
+        "example_zh": "Podcast 在青少年之間越來越受歡迎。"
+      },
+      {
+        "id": "b5l5-p011",
+        "phrase": "in various age groups",
+        "pos": "ph.",
+        "zh": "在不同年齡層",
+        "example_en": "The survey included people in various age groups.",
+        "example_zh": "這項調查包含不同年齡層的人。"
+      },
+      {
+        "id": "b5l5-p012",
+        "phrase": "access educational resources",
+        "pos": "ph.",
+        "zh": "取得教育資源",
+        "example_en": "The website helps students access educational resources.",
+        "example_zh": "這個網站幫助學生取得教育資源。"
+      },
+      {
+        "id": "b5l5-p013",
+        "phrase": "balance online and offline learning experiences",
+        "pos": "ph.",
+        "zh": "平衡線上與線下學習經驗",
+        "example_en": "Teachers balance online and offline learning experiences.",
+        "example_zh": "教師平衡線上與線下學習經驗。"
+      },
+      {
+        "id": "b5l5-p014",
+        "phrase": "result from",
+        "pos": "ph.",
+        "zh": "起因於",
+        "example_en": "The delay resulted from heavy rain.",
+        "example_zh": "延誤起因於大雨。"
+      },
+      {
+        "id": "b5l5-p015",
+        "phrase": "natural factor",
+        "pos": "ph.",
+        "zh": "自然因素",
+        "example_en": "Weather is an important natural factor.",
+        "example_zh": "天氣是重要的自然因素。"
+      },
+      {
+        "id": "b5l5-p016",
+        "phrase": "literally mean",
+        "pos": "ph.",
+        "zh": "字面上意思是",
+        "example_en": "The phrase literally means “good luck.”",
+        "example_zh": "這個詞組字面上意思是「好運」。"
+      },
+      {
+        "id": "b5l5-p017",
+        "phrase": "a combination of",
+        "pos": "ph.",
+        "zh": "……的組合",
+        "example_en": "The dish is a combination of sweet and sour flavors.",
+        "example_zh": "這道菜是酸甜口味的組合。"
+      },
+      {
+        "id": "b5l5-p018",
+        "phrase": "high tides",
+        "pos": "ph.",
+        "zh": "高潮；滿潮",
+        "example_en": "High tides flooded the coastal road.",
+        "example_zh": "滿潮淹沒了沿海道路。"
+      },
+      {
+        "id": "b5l5-p019",
+        "phrase": "a huge volume of",
+        "pos": "ph.",
+        "zh": "大量的……",
+        "example_en": "A huge volume of water entered the tunnel.",
+        "example_zh": "大量的水流入隧道。"
+      },
+      {
+        "id": "b5l5-p020",
+        "phrase": "greatly increase the likelihood of",
+        "pos": "ph.",
+        "zh": "大幅增加……的可能性",
+        "example_en": "Smoke greatly increases the likelihood of disease.",
+        "example_zh": "煙霧大幅增加疾病的可能性。"
+      },
+      {
+        "id": "b5l5-p021",
+        "phrase": "natural subsidence",
+        "pos": "ph.",
+        "zh": "自然沉陷",
+        "example_en": "The building slowly sank because of natural subsidence.",
+        "example_zh": "建築物因自然沉陷而慢慢下沉。"
+      },
+      {
+        "id": "b5l5-p022",
+        "phrase": "lack a solid, stable foundation",
+        "pos": "ph.",
+        "zh": "缺乏穩固的地基",
+        "example_en": "The old wall lacks a solid, stable foundation.",
+        "example_zh": "這面老牆缺乏穩固的地基。"
+      },
+      {
+        "id": "b5l5-p023",
+        "phrase": "in consequence",
+        "pos": "ph.",
+        "zh": "因此；結果",
+        "example_en": "The road was closed and, in consequence, traffic increased.",
+        "example_zh": "道路關閉，因此交通量增加。"
+      },
+      {
+        "id": "b5l5-p024",
+        "phrase": "drop in elevation",
+        "pos": "ph.",
+        "zh": "海拔下降",
+        "example_en": "The trail has a sudden drop in elevation.",
+        "example_zh": "這條步道的海拔突然下降。"
+      },
+      {
+        "id": "b5l5-p025",
+        "phrase": "way too heavy workload",
+        "pos": "ph.",
+        "zh": "過於沉重的工作量",
+        "example_en": "She quit because of her way too heavy workload.",
+        "example_zh": "她因工作量過於沉重而離職。"
+      },
+      {
+        "id": "b5l5-p026",
+        "phrase": "join the army",
+        "pos": "ph.",
+        "zh": "參軍",
+        "example_en": "His brother decided to join the army.",
+        "example_zh": "他的哥哥決定參軍。"
+      },
+      {
+        "id": "b5l5-p027",
+        "phrase": "a food connoisseur",
+        "pos": "ph.",
+        "zh": "美食鑑賞家",
+        "example_en": "A food connoisseur recommended this restaurant.",
+        "example_zh": "一位美食鑑賞家推薦了這家餐廳。"
+      },
+      {
+        "id": "b5l5-p028",
+        "phrase": "racial issues",
+        "pos": "ph.",
+        "zh": "種族議題",
+        "example_en": "The documentary discusses racial issues.",
+        "example_zh": "這部紀錄片探討種族議題。"
+      },
+      {
+        "id": "b5l5-p029",
+        "phrase": "feel fatigued",
+        "pos": "ph.",
+        "zh": "感到疲倦",
+        "example_en": "I feel fatigued after working all day.",
+        "example_zh": "工作一整天後我感到疲倦。"
+      },
+      {
+        "id": "b5l5-p030",
+        "phrase": "sugary, processed food",
+        "pos": "ph.",
+        "zh": "含糖加工食品",
+        "example_en": "Children should eat less sugary, processed food.",
+        "example_zh": "兒童應少吃含糖加工食品。"
+      },
+      {
+        "id": "b5l5-p031",
+        "phrase": "contain little nutritional value",
+        "pos": "ph.",
+        "zh": "幾乎沒有營養價值",
+        "example_en": "Some snacks contain little nutritional value.",
+        "example_zh": "有些零食幾乎沒有營養價值。"
+      },
+      {
+        "id": "b5l5-p032",
+        "phrase": "lack of exercise",
+        "pos": "ph.",
+        "zh": "缺乏運動",
+        "example_en": "A lack of exercise can harm your health.",
+        "example_zh": "缺乏運動可能損害健康。"
+      },
+      {
+        "id": "b5l5-p033",
+        "phrase": "take action",
+        "pos": "ph.",
+        "zh": "採取行動",
+        "example_en": "We must take action now.",
+        "example_zh": "我們現在必須採取行動。"
+      },
+      {
+        "id": "b5l5-p034",
+        "phrase": "make changes to one’s lifestyle",
+        "pos": "ph.",
+        "zh": "改變某人的生活方式",
+        "example_en": "She made changes to her lifestyle.",
+        "example_zh": "她改變了自己的生活方式。"
+      },
+      {
+        "id": "b5l5-p035",
+        "phrase": "in addition to",
+        "pos": "ph.",
+        "zh": "除了……之外",
+        "example_en": "In addition to exercise, eat a balanced diet.",
+        "example_zh": "除了運動之外，也要均衡飲食。"
+      },
+      {
+        "id": "b5l5-p036",
+        "phrase": "natural force",
+        "pos": "ph.",
+        "zh": "自然力量",
+        "example_en": "The bridge was damaged by a natural force.",
+        "example_zh": "橋梁受到自然力量的損害。"
+      },
+      {
+        "id": "b5l5-p037",
+        "phrase": "for industrial purposes",
+        "pos": "ph.",
+        "zh": "用於工業目的",
+        "example_en": "The water is used for industrial purposes.",
+        "example_zh": "這些水用於工業目的。"
+      },
+      {
+        "id": "b5l5-p038",
+        "phrase": "pump out",
+        "pos": "ph.",
+        "zh": "抽出；排出",
+        "example_en": "Pumps removed the water from the basement.",
+        "example_zh": "幫浦抽出了地下室的水。"
+      },
+      {
+        "id": "b5l5-p039",
+        "phrase": "accelerate dramatically",
+        "pos": "ph.",
+        "zh": "大幅加速",
+        "example_en": "The project accelerated dramatically after funding arrived.",
+        "example_zh": "資金到位後，計畫大幅加速。"
+      },
+      {
+        "id": "b5l5-p040",
+        "phrase": "do considerable damage to",
+        "pos": "ph.",
+        "zh": "對……造成相當大的損害",
+        "example_en": "The fire did considerable damage to the warehouse.",
+        "example_zh": "火災對倉庫造成相當大的損害。"
+      },
+      {
+        "id": "b5l5-p041",
+        "phrase": "contend with",
+        "pos": "ph.",
+        "zh": "處理；應付",
+        "example_en": "The city must contend with rising costs.",
+        "example_zh": "城市必須應付不斷上升的成本。"
+      },
+      {
+        "id": "b5l5-p042",
+        "phrase": "vast quantities of",
+        "pos": "ph.",
+        "zh": "大量的……",
+        "example_en": "The factory uses vast quantities of water.",
+        "example_zh": "工廠使用大量的水。"
+      },
+      {
+        "id": "b5l5-p043",
+        "phrase": "release excessive carbon dioxide into the atmosphere",
+        "pos": "ph.",
+        "zh": "將過量二氧化碳排入大氣",
+        "example_en": "Cars release excessive carbon dioxide into the atmosphere.",
+        "example_zh": "汽車將過量二氧化碳排入大氣。"
+      },
+      {
+        "id": "b5l5-p044",
+        "phrase": "in turn",
+        "pos": "ph.",
+        "zh": "反過來；依次",
+        "example_en": "The policy lowers costs and in turn helps families.",
+        "example_zh": "這項政策降低成本，反過來幫助家庭。"
+      },
+      {
+        "id": "b5l5-p045",
+        "phrase": "result in",
+        "pos": "ph.",
+        "zh": "導致",
+        "example_en": "Heavy rain resulted in flooding.",
+        "example_zh": "大雨導致淹水。"
+      },
+      {
+        "id": "b5l5-p046",
+        "phrase": "rising sea levels",
+        "pos": "ph.",
+        "zh": "上升的海平面",
+        "example_en": "Rising sea levels threaten coastal towns.",
+        "example_zh": "上升的海平面威脅沿海城鎮。"
+      },
+      {
+        "id": "b5l5-p047",
+        "phrase": "polar ice caps",
+        "pos": "ph.",
+        "zh": "極地冰帽",
+        "example_en": "The polar ice caps are melting.",
+        "example_zh": "極地冰帽正在融化。"
+      },
+      {
+        "id": "b5l5-p048",
+        "phrase": "have a serious impact",
+        "pos": "ph.",
+        "zh": "產生嚴重影響",
+        "example_en": "Pollution can have a serious impact on health.",
+        "example_zh": "污染可能對健康產生嚴重影響。"
+      },
+      {
+        "id": "b5l5-p049",
+        "phrase": "surgical mask",
+        "pos": "ph.",
+        "zh": "外科口罩",
+        "example_en": "She wore a surgical mask on the train.",
+        "example_zh": "她在火車上戴著外科口罩。"
+      },
+      {
+        "id": "b5l5-p050",
+        "phrase": "stock up on",
+        "pos": "ph.",
+        "zh": "囤積……",
+        "example_en": "We stocked up on water before the storm.",
+        "example_zh": "暴風雨前我們囤積了水。"
+      },
+      {
+        "id": "b5l5-p051",
+        "phrase": "prepare for the upcoming exam",
+        "pos": "ph.",
+        "zh": "準備即將到來的考試",
+        "example_en": "Students prepared for the upcoming exam.",
+        "example_zh": "學生準備即將到來的考試。"
+      },
+      {
+        "id": "b5l5-p052",
+        "phrase": "make it",
+        "pos": "ph.",
+        "zh": "成功做到；及時抵達",
+        "example_en": "I hope you can make it to the meeting.",
+        "example_zh": "我希望你能及時參加會議。"
+      },
+      {
+        "id": "b5l5-p053",
+        "phrase": "impose stricter laws",
+        "pos": "ph.",
+        "zh": "制定更嚴格的法律",
+        "example_en": "The government imposed stricter laws.",
+        "example_zh": "政府制定了更嚴格的法律。"
+      },
+      {
+        "id": "b5l5-p054",
+        "phrase": "flee one’s home to",
+        "pos": "ph.",
+        "zh": "逃離家園前往……",
+        "example_en": "Families fled their homes to seek safety.",
+        "example_zh": "家庭逃離家園尋求安全。"
+      },
+      {
+        "id": "b5l5-p055",
+        "phrase": "as if",
+        "pos": "ph.",
+        "zh": "好像",
+        "example_en": "He spoke as if he knew everything.",
+        "example_zh": "他說話好像什麼都知道。"
+      },
+      {
+        "id": "b5l5-p056",
+        "phrase": "go rock climbing",
+        "pos": "ph.",
+        "zh": "去攀岩",
+        "example_en": "We went rock climbing last weekend.",
+        "example_zh": "我們上週末去攀岩。"
+      },
+      {
+        "id": "b5l5-p057",
+        "phrase": "sprain one’s left ankle",
+        "pos": "ph.",
+        "zh": "扭傷某人的左腳踝",
+        "example_en": "She sprained her left ankle while running.",
+        "example_zh": "她跑步時扭傷左腳踝。"
+      },
+      {
+        "id": "b5l5-p058",
+        "phrase": "toxic chemical waste",
+        "pos": "ph.",
+        "zh": "有毒化學廢料",
+        "example_en": "The factory must dispose of toxic chemical waste safely.",
+        "example_zh": "工廠必須安全處理有毒化學廢料。"
+      },
+      {
+        "id": "b5l5-p059",
+        "phrase": "do grocery shopping",
+        "pos": "ph.",
+        "zh": "採買日用品",
+        "example_en": "I do grocery shopping every Saturday.",
+        "example_zh": "我每週六採買日用品。"
+      },
+      {
+        "id": "b5l5-p060",
+        "phrase": "household product",
+        "pos": "ph.",
+        "zh": "家用產品",
+        "example_en": "This household product is environmentally friendly.",
+        "example_zh": "這項家用產品很環保。"
+      },
+      {
+        "id": "b5l5-p061",
+        "phrase": "plastic wrap",
+        "pos": "ph.",
+        "zh": "保鮮膜",
+        "example_en": "Cover the bowl with plastic wrap.",
+        "example_zh": "用保鮮膜蓋住碗。"
+      },
+      {
+        "id": "b5l5-p062",
+        "phrase": "turn to …for help",
+        "pos": "ph.",
+        "zh": "向……求助",
+        "example_en": "She turned to her teacher for help.",
+        "example_zh": "她向老師求助。"
+      },
+      {
+        "id": "b5l5-p063",
+        "phrase": "get worse",
+        "pos": "ph.",
+        "zh": "變得更糟",
+        "example_en": "The weather may get worse tonight.",
+        "example_zh": "天氣今晚可能變得更糟。"
+      },
+      {
+        "id": "b5l5-p064",
+        "phrase": "as a matter of fact",
+        "pos": "ph.",
+        "zh": "事實上",
+        "example_en": "As a matter of fact, I already knew.",
+        "example_zh": "事實上，我早就知道了。"
+      },
+      {
+        "id": "b5l5-p065",
+        "phrase": "take a glimpse",
+        "pos": "ph.",
+        "zh": "看一眼",
+        "example_en": "We took a glimpse of the ocean.",
+        "example_zh": "我們看了一眼海洋。"
+      },
+      {
+        "id": "b5l5-p066",
+        "phrase": "back in history",
+        "pos": "ph.",
+        "zh": "回顧歷史",
+        "example_en": "Back in history, this road was a trade route.",
+        "example_zh": "回顧歷史，這條路曾是貿易路線。"
+      },
+      {
+        "id": "b5l5-p067",
+        "phrase": "reach an extraordinary height",
+        "pos": "ph.",
+        "zh": "達到非凡高度",
+        "example_en": "The tower reaches an extraordinary height.",
+        "example_zh": "這座塔達到非凡高度。"
+      },
+      {
+        "id": "b5l5-p068",
+        "phrase": "in response",
+        "pos": "ph.",
+        "zh": "作為回應",
+        "example_en": "The company changed its policy in response.",
+        "example_zh": "公司作為回應改變了政策。"
+      },
+      {
+        "id": "b5l5-p069",
+        "phrase": "face a financial crisis",
+        "pos": "ph.",
+        "zh": "面臨財務危機",
+        "example_en": "The business faced a financial crisis.",
+        "example_zh": "這家企業面臨財務危機。"
+      },
+      {
+        "id": "b5l5-p070",
+        "phrase": "come up with",
+        "pos": "ph.",
+        "zh": "想出；提出",
+        "example_en": "She came up with a practical solution.",
+        "example_zh": "她想出一個實際的解決方案。"
+      },
+      {
+        "id": "b5l5-p071",
+        "phrase": "a popular tourist spot",
+        "pos": "ph.",
+        "zh": "熱門觀光景點",
+        "example_en": "The temple is a popular tourist spot.",
+        "example_zh": "這座寺廟是熱門觀光景點。"
+      },
+      {
+        "id": "b5l5-p072",
+        "phrase": "run through a red light",
+        "pos": "ph.",
+        "zh": "闖紅燈",
+        "example_en": "The driver ran through a red light.",
+        "example_zh": "駕駛闖了紅燈。"
+      },
+      {
+        "id": "b5l5-p073",
+        "phrase": "during the rush hour",
+        "pos": "ph.",
+        "zh": "在尖峰時段",
+        "example_en": "Traffic is heavy during the rush hour.",
+        "example_zh": "尖峰時段交通很擁擠。"
+      },
+      {
+        "id": "b5l5-p074",
+        "phrase": "as busy as a bee",
+        "pos": "ph.",
+        "zh": "忙得不可開交",
+        "example_en": "She was as busy as a bee before the event.",
+        "example_zh": "活動前她忙得不可開交。"
+      },
+      {
+        "id": "b5l5-p075",
+        "phrase": "raise public awareness of",
+        "pos": "ph.",
+        "zh": "提高大眾對……的意識",
+        "example_en": "The campaign raises public awareness of recycling.",
+        "example_zh": "這項活動提高大眾對回收的意識。"
+      },
+      {
+        "id": "b5l5-p076",
+        "phrase": "take…for example",
+        "pos": "ph.",
+        "zh": "以……為例",
+        "example_en": "Take solar power for example.",
+        "example_zh": "以太陽能為例。"
+      },
+      {
+        "id": "b5l5-p077",
+        "phrase": "largely owing to",
+        "pos": "ph.",
+        "zh": "主要歸功於",
+        "example_en": "The project succeeded largely owing to teamwork.",
+        "example_zh": "這項計畫主要歸功於團隊合作而成功。"
+      },
+      {
+        "id": "b5l5-p078",
+        "phrase": "ongoing protective efforts",
+        "pos": "ph.",
+        "zh": "持續進行的保護工作",
+        "example_en": "Ongoing protective efforts saved the species.",
+        "example_zh": "持續進行的保護工作拯救了這個物種。"
+      },
+      {
+        "id": "b5l5-p079",
+        "phrase": "a test for humanity",
+        "pos": "ph.",
+        "zh": "對人類的考驗",
+        "example_en": "The crisis became a test for humanity.",
+        "example_zh": "這場危機成為對人類的考驗。"
+      },
+      {
+        "id": "b5l5-p080",
+        "phrase": "make the joint efforts to",
+        "pos": "ph.",
+        "zh": "共同努力……",
+        "example_en": "Countries made joint efforts to protect the ocean.",
+        "example_zh": "各國共同努力保護海洋。"
+      },
+      {
+        "id": "b5l5-p081",
+        "phrase": "curb global warming",
+        "pos": "ph.",
+        "zh": "遏止全球暖化",
+        "example_en": "We must curb global warming.",
+        "example_zh": "我們必須遏止全球暖化。"
+      },
+      {
+        "id": "b5l5-p082",
+        "phrase": "far from",
+        "pos": "ph.",
+        "zh": "遠非；離……很遠",
+        "example_en": "The problem is far from solved.",
+        "example_zh": "這個問題遠未解決。"
+      },
+      {
+        "id": "b5l5-p083",
+        "phrase": "work toward the common goal",
+        "pos": "ph.",
+        "zh": "朝共同目標努力",
+        "example_en": "The teams worked toward the common goal.",
+        "example_zh": "各團隊朝共同目標努力。"
+      },
+      {
+        "id": "b5l5-p084",
+        "phrase": "be craving",
+        "pos": "ph.",
+        "zh": "渴望；想吃……",
+        "example_en": "I am craving something sweet.",
+        "example_zh": "我很想吃甜食。"
+      },
+      {
+        "id": "b5l5-p085",
+        "phrase": "be turned down",
+        "pos": "ph.",
+        "zh": "被拒絕",
+        "example_en": "His application was turned down.",
+        "example_zh": "他的申請被拒絕了。"
+      },
+      {
+        "id": "b5l5-p086",
+        "phrase": "halfway through",
+        "pos": "ph.",
+        "zh": "進行到一半",
+        "example_en": "We were halfway through the movie.",
+        "example_zh": "電影演到一半。"
+      },
+      {
+        "id": "b5l5-p087",
+        "phrase": "a pulled muscle",
+        "pos": "ph.",
+        "zh": "拉傷的肌肉",
+        "example_en": "He rested because of a pulled muscle.",
+        "example_zh": "他因肌肉拉傷而休息。"
+      },
+      {
+        "id": "b5l5-p088",
+        "phrase": "wear protective equipment",
+        "pos": "ph.",
+        "zh": "穿戴防護設備",
+        "example_en": "Workers must wear protective equipment.",
+        "example_zh": "工人必須穿戴防護設備。"
+      },
+      {
+        "id": "b5l5-p089",
+        "phrase": "handle heavy machinery",
+        "pos": "ph.",
+        "zh": "操作重型機械",
+        "example_en": "Only trained staff may handle heavy machinery.",
+        "example_zh": "只有受訓員工可以操作重型機械。"
+      },
+      {
+        "id": "b5l5-p090",
+        "phrase": "get injured",
+        "pos": "ph.",
+        "zh": "受傷",
+        "example_en": "He got injured during practice.",
+        "example_zh": "他在練習時受傷。"
+      },
+      {
+        "id": "b5l5-p091",
+        "phrase": "take…seriously",
+        "pos": "ph.",
+        "zh": "認真看待……",
+        "example_en": "We should take this warning seriously.",
+        "example_zh": "我們應認真看待這項警告。"
+      },
+      {
+        "id": "b5l5-p092",
+        "phrase": "couldn’t help doing",
+        "pos": "ph.",
+        "zh": "忍不住做……",
+        "example_en": "I couldn’t help laughing at the joke.",
+        "example_zh": "我忍不住笑了這個笑話。"
+      },
+      {
+        "id": "b5l5-p093",
+        "phrase": "complain about",
+        "pos": "ph.",
+        "zh": "抱怨……",
+        "example_en": "They complained about the noise.",
+        "example_zh": "他們抱怨噪音。"
+      },
+      {
+        "id": "b5l5-p094",
+        "phrase": "meet the requirements",
+        "pos": "ph.",
+        "zh": "符合要求",
+        "example_en": "The applicant meets the requirements.",
+        "example_zh": "申請人符合要求。"
+      },
+      {
+        "id": "b5l5-p095",
+        "phrase": "muscle endurance",
+        "pos": "ph.",
+        "zh": "肌肉耐力",
+        "example_en": "Swimming improves muscle endurance.",
+        "example_zh": "游泳能提升肌肉耐力。"
+      },
+      {
+        "id": "b5l5-p096",
+        "phrase": "in hindsight",
+        "pos": "ph.",
+        "zh": "事後看來",
+        "example_en": "In hindsight, we should have waited.",
+        "example_zh": "事後看來，我們應該等待。"
+      },
+      {
+        "id": "b5l5-p097",
+        "phrase": "be under threat",
+        "pos": "ph.",
+        "zh": "受到威脅",
+        "example_en": "The forest is under threat from development.",
+        "example_zh": "森林受到開發的威脅。"
+      },
+      {
+        "id": "b5l5-p098",
+        "phrase": "play a prominent part",
+        "pos": "ph.",
+        "zh": "扮演重要角色",
+        "example_en": "Education plays a prominent part in development.",
+        "example_zh": "教育在發展中扮演重要角色。"
+      },
+      {
+        "id": "b5l5-p099",
+        "phrase": "original founder",
+        "pos": "ph.",
+        "zh": "最初創辦人",
+        "example_en": "The original founder still advises the company.",
+        "example_zh": "最初創辦人仍為公司提供建議。"
+      },
+      {
+        "id": "b5l5-p100",
+        "phrase": "broaden the scope of",
+        "pos": "ph.",
+        "zh": "擴大……的範圍",
+        "example_en": "The course broadened the scope of the research.",
+        "example_zh": "這門課擴大了研究範圍。"
+      },
+      {
+        "id": "b5l5-p101",
+        "phrase": "have a vast amount of",
+        "pos": "ph.",
+        "zh": "擁有大量的……",
+        "example_en": "The library has a vast amount of information.",
+        "example_zh": "圖書館擁有大量資訊。"
+      },
+      {
+        "id": "b5l5-p102",
+        "phrase": "run the marathon",
+        "pos": "ph.",
+        "zh": "跑馬拉松",
+        "example_en": "She trained hard to run the marathon.",
+        "example_zh": "她努力訓練以參加馬拉松。"
+      },
+      {
+        "id": "b5l5-p103",
+        "phrase": "literal meaning",
+        "pos": "ph.",
+        "zh": "字面意思",
+        "example_en": "What is the literal meaning of this word?",
+        "example_zh": "這個字的字面意思是什麼？"
+      },
+      {
+        "id": "b5l5-p104",
+        "phrase": "the tide is in",
+        "pos": "ph.",
+        "zh": "潮水漲了",
+        "example_en": "The tide is in, so the beach is narrow.",
+        "example_zh": "潮水漲了，所以沙灘變窄。"
+      },
+      {
+        "id": "b5l5-p105",
+        "phrase": "the tide is out",
+        "pos": "ph.",
+        "zh": "潮水退了",
+        "example_en": "The tide is out, revealing the rocks.",
+        "example_zh": "潮水退了，露出岩石。"
+      },
+      {
+        "id": "b5l5-p106",
+        "phrase": "surge forward",
+        "pos": "ph.",
+        "zh": "向前猛衝",
+        "example_en": "The horse surged forward.",
+        "example_zh": "馬向前猛衝。"
+      },
+      {
+        "id": "b5l5-p107",
+        "phrase": "at the sight of",
+        "pos": "ph.",
+        "zh": "一看到……",
+        "example_en": "She screamed at the sight of the spider.",
+        "example_zh": "她一看到蜘蛛就尖叫。"
+      },
+      {
+        "id": "b5l5-p108",
+        "phrase": "feel a surge of",
+        "pos": "ph.",
+        "zh": "感到一股……",
+        "example_en": "He felt a surge of joy.",
+        "example_zh": "他感到一股喜悅。"
+      },
+      {
+        "id": "b5l5-p109",
+        "phrase": "in all likelihood",
+        "pos": "ph.",
+        "zh": "很可能",
+        "example_en": "In all likelihood, the train will be late.",
+        "example_zh": "很可能火車會晚點。"
+      },
+      {
+        "id": "b5l5-p110",
+        "phrase": "a dramatic shift in",
+        "pos": "ph.",
+        "zh": "……的劇烈轉變",
+        "example_en": "There was a dramatic shift in public opinion.",
+        "example_zh": "公眾意見出現劇烈轉變。"
+      },
+      {
+        "id": "b5l5-p111",
+        "phrase": "in a car crash",
+        "pos": "ph.",
+        "zh": "在車禍中",
+        "example_en": "He was injured in a car crash.",
+        "example_zh": "他在車禍中受傷。"
+      },
+      {
+        "id": "b5l5-p112",
+        "phrase": "beneath the surface of",
+        "pos": "ph.",
+        "zh": "在……表面下",
+        "example_en": "Fish moved beneath the surface of the water.",
+        "example_zh": "魚在水面下游動。"
+      },
+      {
+        "id": "b5l5-p113",
+        "phrase": "sit at an elevation of",
+        "pos": "ph.",
+        "zh": "位於……海拔",
+        "example_en": "The town sits at an elevation of 1,500 meters.",
+        "example_zh": "這座城鎮位於海拔一千五百公尺處。"
+      },
+      {
+        "id": "b5l5-p114",
+        "phrase": "elevation to the position of",
+        "pos": "ph.",
+        "zh": "升任……職位",
+        "example_en": "Her elevation to the position of director was announced.",
+        "example_zh": "她升任董事職位的消息公布了。"
+      },
+      {
+        "id": "b5l5-p115",
+        "phrase": "elevate …to sth.",
+        "pos": "ph.",
+        "zh": "提升……至某物／某地位",
+        "example_en": "The award elevated her to international fame.",
+        "example_zh": "這個獎項使她提升至國際知名度。"
+      },
+      {
+        "id": "b5l5-p116",
+        "phrase": "sustain one’s interest",
+        "pos": "ph.",
+        "zh": "維持某人的興趣",
+        "example_en": "The story sustained my interest.",
+        "example_zh": "這個故事維持了我的興趣。"
+      },
+      {
+        "id": "b5l5-p117",
+        "phrase": "press the gas pedal",
+        "pos": "ph.",
+        "zh": "踩下油門",
+        "example_en": "He pressed the gas pedal carefully.",
+        "example_zh": "他小心地踩下油門。"
+      },
+      {
+        "id": "b5l5-p118",
+        "phrase": "work day and night",
+        "pos": "ph.",
+        "zh": "日夜工作",
+        "example_en": "The engineers worked day and night.",
+        "example_zh": "工程師們日夜工作。"
+      },
+      {
+        "id": "b5l5-p119",
+        "phrase": "in an effort to",
+        "pos": "ph.",
+        "zh": "為了……",
+        "example_en": "They changed the design in an effort to save energy.",
+        "example_zh": "他們為了節省能源而改變設計。"
+      },
+      {
+        "id": "b5l5-p120",
+        "phrase": "accelerate the development of vaccines against the disease",
+        "pos": "ph.",
+        "zh": "加速針對該疾病的疫苗研發",
+        "example_en": "Scientists collaborated to accelerate the development of vaccines against the disease.",
+        "example_zh": "科學家合作加速針對該疾病的疫苗研發。"
+      },
+      {
+        "id": "b5l5-p121",
+        "phrase": "be in a sharp acceleration in",
+        "pos": "ph.",
+        "zh": "在……方面急遽加速",
+        "example_en": "There has been a sharp acceleration in demand.",
+        "example_zh": "需求出現急遽加速。"
+      },
+      {
+        "id": "b5l5-p122",
+        "phrase": "the rate of unemployment",
+        "pos": "ph.",
+        "zh": "失業率",
+        "example_en": "The rate of unemployment fell slightly.",
+        "example_zh": "失業率略微下降。"
+      },
+      {
+        "id": "b5l5-p123",
+        "phrase": "contend for the championship",
+        "pos": "ph.",
+        "zh": "爭奪冠軍",
+        "example_en": "The two teams contend for the championship.",
+        "example_zh": "兩支隊伍爭奪冠軍。"
+      },
+      {
+        "id": "b5l5-p124",
+        "phrase": "in the basketball tournament",
+        "pos": "ph.",
+        "zh": "在籃球錦標賽中",
+        "example_en": "Our school competed in the basketball tournament.",
+        "example_zh": "我們學校參加籃球錦標賽。"
+      },
+      {
+        "id": "b5l5-p125",
+        "phrase": "green fuel",
+        "pos": "ph.",
+        "zh": "綠色燃料",
+        "example_en": "Green fuel can reduce emissions.",
+        "example_zh": "綠色燃料能減少排放。"
+      },
+      {
+        "id": "b5l5-p126",
+        "phrase": "power electric devices",
+        "pos": "ph.",
+        "zh": "為電子設備供電",
+        "example_en": "Solar panels power electric devices.",
+        "example_zh": "太陽能板為電子設備供電。"
+      },
+      {
+        "id": "b5l5-p127",
+        "phrase": "environmentally friendly",
+        "pos": "ph.",
+        "zh": "環境友善的",
+        "example_en": "We chose an environmentally friendly product.",
+        "example_zh": "我們選擇環境友善的產品。"
+      },
+      {
+        "id": "b5l5-p128",
+        "phrase": "run out of fuel",
+        "pos": "ph.",
+        "zh": "燃料用盡",
+        "example_en": "The plane nearly ran out of fuel.",
+        "example_zh": "飛機差點燃料用盡。"
+      },
+      {
+        "id": "b5l5-p129",
+        "phrase": "be ready for take-off",
+        "pos": "ph.",
+        "zh": "準備起飛",
+        "example_en": "Passengers must be ready for take-off.",
+        "example_zh": "乘客必須準備起飛。"
+      },
+      {
+        "id": "b5l5-p130",
+        "phrase": "an excessive amount of",
+        "pos": "ph.",
+        "zh": "過量的……",
+        "example_en": "An excessive amount of sugar is unhealthy.",
+        "example_zh": "過量的糖分不健康。"
+      },
+      {
+        "id": "b5l5-p131",
+        "phrase": "intense heat",
+        "pos": "ph.",
+        "zh": "酷熱；強烈熱力",
+        "example_en": "The workers endured intense heat.",
+        "example_zh": "工人們忍受酷熱。"
+      },
+      {
+        "id": "b5l5-p132",
+        "phrase": "in a matter of seconds",
+        "pos": "ph.",
+        "zh": "在幾秒鐘內",
+        "example_en": "The machine stopped in a matter of seconds.",
+        "example_zh": "機器在幾秒鐘內停止。"
+      },
+      {
+        "id": "b5l5-p133",
+        "phrase": "polar region",
+        "pos": "ph.",
+        "zh": "極地區域",
+        "example_en": "The polar region is warming rapidly.",
+        "example_zh": "極地區域正在迅速變暖。"
+      },
+      {
+        "id": "b5l5-p134",
+        "phrase": "the polar opposite",
+        "pos": "ph.",
+        "zh": "截然相反的人／事物",
+        "example_en": "Their personalities are the polar opposite.",
+        "example_zh": "他們的個性截然相反。"
+      },
+      {
+        "id": "b5l5-p135",
+        "phrase": "telephone pole",
+        "pos": "ph.",
+        "zh": "電線桿",
+        "example_en": "A bird rested on the telephone pole.",
+        "example_zh": "一隻鳥停在電線桿上。"
+      },
+      {
+        "id": "b5l5-p136",
+        "phrase": "leading role",
+        "pos": "ph.",
+        "zh": "主要角色",
+        "example_en": "She played the leading role in the film.",
+        "example_zh": "她在電影中飾演主要角色。"
+      },
+      {
+        "id": "b5l5-p137",
+        "phrase": "be disappointed at",
+        "pos": "ph.",
+        "zh": "對……感到失望",
+        "example_en": "He was disappointed at the result.",
+        "example_zh": "他對結果感到失望。"
+      },
+      {
+        "id": "b5l5-p138",
+        "phrase": "confirm the police’s suspicion",
+        "pos": "ph.",
+        "zh": "證實警方的懷疑",
+        "example_en": "The evidence confirmed the police’s suspicion.",
+        "example_zh": "證據證實了警方的懷疑。"
+      },
+      {
+        "id": "b5l5-p139",
+        "phrase": "reduce incidence of",
+        "pos": "ph.",
+        "zh": "降低……的發生率",
+        "example_en": "Vaccines reduce the incidence of disease.",
+        "example_zh": "疫苗降低疾病的發生率。"
+      },
+      {
+        "id": "b5l5-p140",
+        "phrase": "tighten security around",
+        "pos": "ph.",
+        "zh": "加強……周邊的安全",
+        "example_en": "Officials tightened security around the stadium.",
+        "example_zh": "官員加強體育場周邊的安全。"
+      },
+      {
+        "id": "b5l5-p141",
+        "phrase": "fierce hurricane",
+        "pos": "ph.",
+        "zh": "猛烈颶風",
+        "example_en": "A fierce hurricane approached the coast.",
+        "example_zh": "猛烈颶風接近海岸。"
+      },
+      {
+        "id": "b5l5-p142",
+        "phrase": "sweep into",
+        "pos": "ph.",
+        "zh": "席捲進入",
+        "example_en": "The storm swept into the city.",
+        "example_zh": "暴風雨席捲進入城市。"
+      },
+      {
+        "id": "b5l5-p143",
+        "phrase": "have an extraordinary gift for",
+        "pos": "ph.",
+        "zh": "有……的非凡天賦",
+        "example_en": "She has an extraordinary gift for languages.",
+        "example_zh": "她有語言方面的非凡天賦。"
+      },
+      {
+        "id": "b5l5-p144",
+        "phrase": "make an extraordinary escape",
+        "pos": "ph.",
+        "zh": "完成非凡逃脫",
+        "example_en": "The prisoner made an extraordinary escape.",
+        "example_zh": "囚犯完成了非凡逃脫。"
+      },
+      {
+        "id": "b5l5-p145",
+        "phrase": "over a two-year period",
+        "pos": "ph.",
+        "zh": "在兩年期間",
+        "example_en": "The study followed patients over a two-year period.",
+        "example_zh": "這項研究在兩年期間追蹤病患。"
+      },
+      {
+        "id": "b5l5-p146",
+        "phrase": "be optimistic about",
+        "pos": "ph.",
+        "zh": "對……感到樂觀",
+        "example_en": "We are optimistic about the future.",
+        "example_zh": "我們對未來感到樂觀。"
+      },
+      {
+        "id": "b5l5-p147",
+        "phrase": "the outlook for",
+        "pos": "ph.",
+        "zh": "……的前景",
+        "example_en": "The outlook for renewable energy is promising.",
+        "example_zh": "再生能源的前景很有希望。"
+      },
+      {
+        "id": "b5l5-p148",
+        "phrase": "open a joint bank account",
+        "pos": "ph.",
+        "zh": "開立聯名銀行帳戶",
+        "example_en": "The couple opened a joint bank account.",
+        "example_zh": "這對伴侶開立聯名銀行帳戶。"
+      },
+      {
+        "id": "b5l5-p149",
+        "phrase": "deposit money into",
+        "pos": "ph.",
+        "zh": "把錢存入……",
+        "example_en": "She deposited money into her savings account.",
+        "example_zh": "她把錢存入儲蓄帳戶。"
+      },
+      {
+        "id": "b5l5-p150",
+        "phrase": "take a series of emergency measures",
+        "pos": "ph.",
+        "zh": "採取一系列緊急措施",
+        "example_en": "The government took a series of emergency measures.",
+        "example_zh": "政府採取一系列緊急措施。"
+      },
+      {
+        "id": "b5l5-p151",
+        "phrase": "curb the spread of",
+        "pos": "ph.",
+        "zh": "遏止……的傳播",
+        "example_en": "Masks can curb the spread of the virus.",
+        "example_zh": "口罩能遏止病毒傳播。"
+      },
+      {
+        "id": "b5l5-p152",
+        "phrase": "place a curb on",
+        "pos": "ph.",
+        "zh": "對……加以限制",
+        "example_en": "The law places a curb on pollution.",
+        "example_zh": "這項法律限制污染。"
+      },
+      {
+        "id": "b5l5-p153",
+        "phrase": "wasteful spending habit",
+        "pos": "ph.",
+        "zh": "浪費的消費習慣",
+        "example_en": "He is trying to change his wasteful spending habit.",
+        "example_zh": "他正試著改變浪費的消費習慣。"
+      },
+      {
+        "id": "b5l5-p154",
+        "phrase": "cut one’s allowance",
+        "pos": "ph.",
+        "zh": "削減某人的零用錢",
+        "example_en": "His parents cut his allowance.",
+        "example_zh": "他的父母削減他的零用錢。"
+      },
+      {
+        "id": "b5l5-p155",
+        "phrase": "official acknowledgement of",
+        "pos": "ph.",
+        "zh": "對……的正式承認",
+        "example_en": "The award was an official acknowledgement of her work.",
+        "example_zh": "這個獎項是對她工作的正式承認。"
+      },
+      {
+        "id": "b5l5-p156",
+        "phrase": "public health crisis",
+        "pos": "ph.",
+        "zh": "公共衛生危機",
+        "example_en": "The outbreak created a public health crisis.",
+        "example_zh": "疫情造成公共衛生危機。"
+      },
+      {
+        "id": "b5l5-p157",
+        "phrase": "make an apology to the public",
+        "pos": "ph.",
+        "zh": "向大眾道歉",
+        "example_en": "The company made an apology to the public.",
+        "example_zh": "公司向大眾道歉。"
+      },
+      {
+        "id": "b5l5-p158",
+        "phrase": "in acknowledgement of",
+        "pos": "ph.",
+        "zh": "為了表示對……的承認",
+        "example_en": "A ceremony was held in acknowledgement of their service.",
+        "example_zh": "舉行典禮以表彰他們的服務。"
+      },
+      {
+        "id": "b5l5-p159",
+        "phrase": "prosperous country",
+        "pos": "ph.",
+        "zh": "繁榮國家",
+        "example_en": "The prosperous country invests in education.",
+        "example_zh": "這個繁榮國家投資教育。"
+      },
+      {
+        "id": "b5l5-p160",
+        "phrase": "trade and commerce",
+        "pos": "ph.",
+        "zh": "貿易與商業",
+        "example_en": "The harbor supports trade and commerce.",
+        "example_zh": "港口支援貿易與商業。"
+      },
+      {
+        "id": "b5l5-p161",
+        "phrase": "break the silence",
+        "pos": "ph.",
+        "zh": "打破沉默",
+        "example_en": "She finally broke the silence.",
+        "example_zh": "她終於打破沉默。"
+      },
+      {
+        "id": "b5l5-p162",
+        "phrase": "falling debris",
+        "pos": "ph.",
+        "zh": "墜落的碎片",
+        "example_en": "People ran away from the falling debris.",
+        "example_zh": "人們逃離墜落的碎片。"
+      },
+      {
+        "id": "b5l5-p163",
+        "phrase": "nominated movie",
+        "pos": "ph.",
+        "zh": "獲提名的電影",
+        "example_en": "We watched the nominated movie last night.",
+        "example_zh": "我們昨晚觀看了獲提名的電影。"
+      },
+      {
+        "id": "b5l5-p164",
+        "phrase": "excessive exposure to the sun",
+        "pos": "ph.",
+        "zh": "過度曝曬",
+        "example_en": "Excessive exposure to the sun damages skin.",
+        "example_zh": "過度曝曬會傷害皮膚。"
+      },
+      {
+        "id": "b5l5-p165",
+        "phrase": "offer compensation to",
+        "pos": "ph.",
+        "zh": "向……提供賠償",
+        "example_en": "The company offered compensation to the victims.",
+        "example_zh": "公司向受害者提供賠償。"
+      },
+      {
+        "id": "b5l5-p166",
+        "phrase": "with the rapid development of green technology",
+        "pos": "ph.",
+        "zh": "隨著綠色科技快速發展",
+        "example_en": "With the rapid development of green technology, costs are falling.",
+        "example_zh": "隨著綠色科技快速發展，成本正在下降。"
+      },
+      {
+        "id": "b5l5-p167",
+        "phrase": "outlook for renewable energy industries",
+        "pos": "ph.",
+        "zh": "再生能源產業的前景",
+        "example_en": "The outlook for renewable energy industries is bright.",
+        "example_zh": "再生能源產業的前景光明。"
+      },
+      {
+        "id": "b5l5-p168",
+        "phrase": "appear promising",
+        "pos": "ph.",
+        "zh": "看起來很有希望",
+        "example_en": "The early results appear promising.",
+        "example_zh": "初步結果看起來很有希望。"
+      },
+      {
+        "id": "b5l5-p169",
+        "phrase": "introduction of strict penalties",
+        "pos": "ph.",
+        "zh": "嚴格處罰的引入",
+        "example_en": "The introduction of strict penalties reduced violations.",
+        "example_zh": "引入嚴格處罰降低了違規行為。"
+      },
+      {
+        "id": "b5l5-p170",
+        "phrase": "curb criminal activities",
+        "pos": "ph.",
+        "zh": "遏止犯罪活動",
+        "example_en": "Better lighting can curb criminal activities.",
+        "example_zh": "更好的照明能遏止犯罪活動。"
+      },
+      {
+        "id": "b5l5-p171",
+        "phrase": "commit murder",
+        "pos": "ph.",
+        "zh": "犯下謀殺罪",
+        "example_en": "The suspect was charged with committing murder.",
+        "example_zh": "嫌疑犯被控犯下謀殺罪。"
+      },
+      {
+        "id": "b5l5-p172",
+        "phrase": "be jailed",
+        "pos": "ph.",
+        "zh": "被監禁",
+        "example_en": "The thief was jailed for three years.",
+        "example_zh": "小偷被監禁三年。"
+      },
+      {
+        "id": "b5l5-p173",
+        "phrase": "far from the truth",
+        "pos": "ph.",
+        "zh": "遠非事實",
+        "example_en": "The rumor is far from the truth.",
+        "example_zh": "這則謠言遠非事實。"
+      },
+      {
+        "id": "b5l5-p174",
+        "phrase": "remain intact",
+        "pos": "ph.",
+        "zh": "保持完整",
+        "example_en": "The ancient painting remained intact.",
+        "example_zh": "這幅古畫保持完整。"
+      },
+      {
+        "id": "b5l5-p175",
+        "phrase": "leave a trace on",
+        "pos": "ph.",
+        "zh": "在……留下痕跡",
+        "example_en": "The flood left a trace on the wall.",
+        "example_zh": "洪水在牆上留下痕跡。"
+      },
+      {
+        "id": "b5l5-p176",
+        "phrase": "harm local ecosystems",
+        "pos": "ph.",
+        "zh": "危害當地生態系統",
+        "example_en": "Chemicals can harm local ecosystems.",
+        "example_zh": "化學物質可能危害當地生態系統。"
+      },
+      {
+        "id": "b5l5-p177",
+        "phrase": "witness severe consequences",
+        "pos": "ph.",
+        "zh": "見證嚴重後果",
+        "example_en": "The region witnessed severe consequences of the drought.",
+        "example_zh": "該地區見證乾旱的嚴重後果。"
+      },
+      {
+        "id": "b5l5-p178",
+        "phrase": "space exploration",
+        "pos": "ph.",
+        "zh": "太空探索",
+        "example_en": "Space exploration inspires young scientists.",
+        "example_zh": "太空探索激勵年輕科學家。"
+      },
+      {
+        "id": "b5l5-p179",
+        "phrase": "evolve from…to…",
+        "pos": "ph.",
+        "zh": "從……演變成……",
+        "example_en": "The village evolved from a port to a modern city.",
+        "example_zh": "這個村莊從港口演變成現代城市。"
+      },
+      {
+        "id": "b5l5-p180",
+        "phrase": "manned mission",
+        "pos": "ph.",
+        "zh": "載人任務",
+        "example_en": "The agency planned a manned mission to the moon.",
+        "example_zh": "太空機構規劃月球載人任務。"
+      }
+    ]
   },
   "grammar": {
     "points": [
@@ -236,6 +1677,6 @@
     }
   },
   "text_genre": {
-    "raw_text": ""
+    "raw_text": "The text follows a Cause-and-Effect pattern (addressing an environmental or lifestyle issue outside of tourism/flooding):\nIntroduction (Para 1): Introduces Venice's unique history and beauty, followed by the thesis statement (Venice is sinking and flooding due to natural conditions and human activities).\nBody 1: Natural Factors (Para 2): Details natural causes—acqua alta (high tides/winds) and natural land subsidence (marshland foundation and shifting tectonic plates).\nBody 2: Human Factors (Para 3): Details human causes—historical underground water pumping (accelerated sinking) and global climate change (rising sea levels due to fossil fuel emissions).\nBody 3: Consequences & Countermeasures (Para 4): Illustrates the severe impact (increased flood frequency, record-high floods in 1966 and 2019) and mentions a technological response (the MOSE barrier system).\nConclusion (Para 5): Summarizes the situation as a global test, urging worldwide collective action against climate change to protect vulnerable areas for future generations."
   }
 }

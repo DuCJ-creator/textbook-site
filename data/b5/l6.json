@@ -1,0 +1,293 @@
+{
+  "book": "B5",
+  "lesson": "L6",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": []
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [
+      {
+        "id": "b5l6-g1",
+        "title": "Were + S +..., S + would/could/might/should + VR....\nHad + S + p.p...., S + would/could/might/should + have + p.p....\n假設語氣的倒裝句",
+        "examples": [
+          "Were I rich, I would buy a fancy car.",
+          "Had I finished the homework, I wouldn’t have been scolded by the teacher.",
+          "Had the authorities concerned been aware of the massive problem, they would \thave taken proper action to deal with it."
+        ]
+      },
+      {
+        "id": "b5l6-g2",
+        "title": "Parallelism (平行結構) & Ellipsis (省略)",
+        "examples": [
+          "在篇章中，前後文重複出現句構相似的平行結構，可強化篇章的連貫性，並達到強調或加深印象的效果。平行結構常應用於廣告標語、名言佳句、歌詞及演講等。",
+          "在篇章中，前文已出現的名詞（片語）或動詞（片語），在語意清楚的情況下，可在後文中省略，以使語句更精簡，這樣的手法稱為「省略」",
+          "A bird in the hand is worth two (birds) in the bush.\nA stitch in time saves nine (stitches)."
+        ]
+      }
+    ],
+    "sentence_structures": {
+      "items": [
+        {
+          "id": "b5l6-s001",
+          "sentence": "On August 28, 1963, Martin Luther King, Jr., *marched* to the Lincoln Memorial in Washington, DC, and *delivered* a historic speech before a crowd of over 250,000 people.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vi / Vt (Compound predicate) + Prepositional phrase"
+        },
+        {
+          "id": "b5l6-s002",
+          "sentence": "In that speech, King *outlined* his hopes for the future - a time when racism would end and African Americans would be treated by whites as equals.",
+          "type": "complex",
+          "pattern": "Adverbial phrase + S + Vt + O + Noun phrase with Relative clause (when...)"
+        },
+        {
+          "id": "b5l6-s003",
+          "sentence": "That speech *turned out* to be a decisive moment in the civil rights movement.",
+          "type": "simple",
+          "pattern": "S + Vi (Phrasal verb) + Infinitival complement"
+        },
+        {
+          "id": "b5l6-s004",
+          "sentence": "Had Dr. King not made the speech, the United States might not have *introduced* a series of laws to grant new rights to African Americans within just a few years.",
+          "type": "complex",
+          "pattern": "Inverted conditional clause (Had...) + S + Modal verb phrase + O + Infinitival phrase"
+        },
+        {
+          "id": "b5l6-s005",
+          "sentence": "I *am* happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.",
+          "type": "complex",
+          "pattern": "S + Vl + C + Infinitival phrase + Noun clause (what...)"
+        },
+        {
+          "id": "b5l6-s006",
+          "sentence": "Five score years ago, a great American, in whose symbolic shadow we stand today, *signed* the Emancipation Proclamation.",
+          "type": "complex",
+          "pattern": "Adverbial phrase + S + Relative clause (whose...) + Vt + O"
+        },
+        {
+          "id": "b5l6-s007",
+          "sentence": "This momentous decree *came* as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice.",
+          "type": "complex",
+          "pattern": "S + Vl + C + Prepositional phrase + Relative clause (who...)"
+        },
+        {
+          "id": "b5l6-s008",
+          "sentence": "It *came* as a joyous daybreak to end the long night of their captivity.",
+          "type": "simple",
+          "pattern": "S + Vl + C + Infinitival phrase"
+        },
+        {
+          "id": "b5l6-s009",
+          "sentence": "But one hundred years later, the Negro still *is* not free.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vl + C"
+        },
+        {
+          "id": "b5l6-s010",
+          "sentence": "One hundred years later, the life of the Negro *is* still sadly crippled by the manacles of segregation and the chains of discrimination.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vl + C + Prepositional phrase"
+        },
+        {
+          "id": "b5l6-s011",
+          "sentence": "One hundred years later, the Negro *lives* on a lonely island of poverty in the midst of a vast ocean of material prosperity.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vi + Prepositional phrase"
+        },
+        {
+          "id": "b5l6-s012",
+          "sentence": "One hundred years later, the Negro *is still languishing* in the corners of American society and *finds* himself an exile in his own land.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vi / Vt (Compound predicate) + Complement"
+        },
+        {
+          "id": "b5l6-s013",
+          "sentence": "And so we've *come* here today to dramatize a shameful condition.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vi + Infinitival phrase"
+        },
+        {
+          "id": "b5l6-s014",
+          "sentence": "We *can never be satisfied* as long as the Negro is the victim of the unspeakable horrors of police brutality.",
+          "type": "complex",
+          "pattern": "S + Modal verb phrase + Adverbial clause (as long as...)"
+        },
+        {
+          "id": "b5l6-s015",
+          "sentence": "We *can never be satisfied* as long as our bodies, heavy with the fatigue of travel, cannot gain lodging in the motels of the highways and the hotels of the cities.",
+          "type": "complex",
+          "pattern": "S + Modal verb phrase + Adverbial clause (as long as...) with Participial phrase"
+        },
+        {
+          "id": "b5l6-s016",
+          "sentence": "We *cannot be satisfied* as long as the Negro's basic mobility is from a smaller ghetto to a larger one.",
+          "type": "complex",
+          "pattern": "S + Modal verb phrase + Adverbial clause (as long as...)"
+        },
+        {
+          "id": "b5l6-s017",
+          "sentence": "We *can never be satisfied* as long as our children are stripped of their self-hood and robbed of their dignity by a sign stating: \"For Whites Only.\"",
+          "type": "complex",
+          "pattern": "S + Modal verb phrase + Adverbial clause (as long as...) with Compound passive verbs"
+        },
+        {
+          "id": "b5l6-s018",
+          "sentence": "We *cannot be satisfied* as long as a Negro in Mississippi cannot vote and a Negro in New York believes he has nothing for which to vote.",
+          "type": "complex",
+          "pattern": "S + Modal verb phrase + Adverbial clause (as long as...) with Compound subjects + Noun clause"
+        },
+        {
+          "id": "b5l6-s019",
+          "sentence": "No, no, we *are not satisfied*, and we *will not be satisfied* until justice rolls down like waters, and righteousness like a mighty stream.",
+          "type": "compound-complex",
+          "pattern": "S + Vl + C + and + S + Passive verb phrase + Adverbial clause (until...)"
+        },
+        {
+          "id": "b5l6-s020",
+          "sentence": "Let us not *wallow* in the valley of despair, I say to you today, my friends.",
+          "type": "simple",
+          "pattern": "Imperative sentence + Reporting clause"
+        },
+        {
+          "id": "b5l6-s021",
+          "sentence": "And so even though we face the difficulties of today and tomorrow, I still *have* a dream.",
+          "type": "complex",
+          "pattern": "Adverbial clause (even though...) + S + Vt + O"
+        },
+        {
+          "id": "b5l6-s022",
+          "sentence": "It *is* a dream deeply rooted in the American dream.",
+          "type": "simple",
+          "pattern": "S + Vl + C + Participial phrase"
+        },
+        {
+          "id": "b5l6-s023",
+          "sentence": "I *have* a dream that one day this nation will rise up and live out the true meaning of its creed: \"We hold these truths to be self-evident, that all men are created equal.\"",
+          "type": "complex",
+          "pattern": "S + Vt + O + Noun clause (that...) + Quoted clause"
+        },
+        {
+          "id": "b5l6-s024",
+          "sentence": "I *have* a dream that one day on the red hills of Georgia, the sons of former slaves and the sons of former slave owners will be able to sit down together at the table of brotherhood.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Noun clause (that...) with Compound subject"
+        },
+        {
+          "id": "b5l6-s025",
+          "sentence": "I *have* a dream that one day even the state of Mississippi, a state sweltering with the heat of injustice, sweltering with the heat of oppression, will be transformed into an oasis of freedom and justice.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Noun clause (that...) with Appositive and Participial phrases"
+        },
+        {
+          "id": "b5l6-s026",
+          "sentence": "I *have* a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Noun clause (that...) + Relative clause (where...) with Compound passive structure"
+        },
+        {
+          "id": "b5l6-s027",
+          "sentence": "I *have* a dream today!",
+          "type": "simple",
+          "pattern": "S + Vt + O + Adverb"
+        },
+        {
+          "id": "b5l6-s028",
+          "sentence": "I *have* a dream that one day, down in Alabama, with its vicious racists, with its governor having his lips dripping with the words of \"interposition\" and \"nullification\" - one day right there in Alabama little black boys and little black girls will be able to join hands with little white boys and little white girls as sisters and brothers.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Noun clause (that...) with Participial phrases and Compound subject"
+        },
+        {
+          "id": "b5l6-s029",
+          "sentence": "I *have* a dream today!",
+          "type": "simple",
+          "pattern": "S + Vt + O + Adverb"
+        },
+        {
+          "id": "b5l6-s030",
+          "sentence": "I *have* a dream that one day every valley shall be exalted, and every hill and mountain shall be made low, the rough places will be made plain, and the crooked places will be made straight; and the glory of the Lord shall be revealed and all flesh shall see it together.",
+          "type": "compound-complex",
+          "pattern": "S + Vt + O + Noun clause (that...) with coordinated clauses"
+        },
+        {
+          "id": "b5l6-s031",
+          "sentence": "This *is* our hope, and this *is* the faith that I go back to the South with.",
+          "type": "compound-complex",
+          "pattern": "S + Vl + C + and + S + Vl + C + Relative clause (that...)"
+        },
+        {
+          "id": "b5l6-s032",
+          "sentence": "With this faith, we will be able to *hew* out of the mountain of despair a stone of hope.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Modal verb phrase + Phrasal verb + O"
+        },
+        {
+          "id": "b5l6-s033",
+          "sentence": "With this faith, we will be able to *transform* the jangling discords of our nation into a beautiful symphony of brotherhood.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Modal verb phrase + Vt + O + C"
+        },
+        {
+          "id": "b5l6-s034",
+          "sentence": "With this faith, we will be able to *work* together, to pray together, to struggle together, to go to jail together, to stand up for freedom together, knowing that we will be free one day.",
+          "type": "complex",
+          "pattern": "Prepositional phrase + S + Modal verb phrase + Coordinated infinitives"
+        },
+        {
+          "id": "b5l6-s035",
+          "sentence": "And when this happens, when we allow freedom [to] ring, when we let it ring from every village and every hamlet, from every state and every city, we will *be able to speed up* that day when all of God’s children, black men and white men, Jews and Gentiles, Protestants and Catholics, will be able to join hands and sing in the words of the old Negro spiritual:",
+          "type": "complex",
+          "pattern": "Adverbial clauses (when...) + S + Modal verb phrase + Relative clauses"
+        },
+        {
+          "id": "b5l6-s036",
+          "sentence": "Free at last!",
+          "type": "simple",
+          "pattern": "Adjective phrase + Adverb"
+        },
+        {
+          "id": "b5l6-s037",
+          "sentence": "Free at last!",
+          "type": "simple",
+          "pattern": "Adjective phrase + Adverb"
+        },
+        {
+          "id": "b5l6-s038",
+          "sentence": "Thank God Almighty, we *are* free at last!",
+          "type": "compound",
+          "pattern": "Imperative clause + S + Vl + C"
+        },
+        {
+          "id": "b5l6-s039",
+          "sentence": "Although Dr. King’s dream has yet to be fully realized, his speech *did lead* to significant change.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Although...) + S + Vi + Prepositional phrase"
+        },
+        {
+          "id": "b5l6-s040",
+          "sentence": "His eloquence *appealed* to human emotions, and his rhetorical skills *awoke* the consciences of many Americans who had ignored or condoned racial oppression.",
+          "type": "compound-complex",
+          "pattern": "S + Vi + Prepositional phrase + and + S + Vt + O + Relative clause"
+        },
+        {
+          "id": "b5l6-s041",
+          "sentence": "“I Have a Dream” *was* to civil rights supporters what a battle cry is to a warrior.",
+          "type": "complex",
+          "pattern": "S + Vl + C + Comparative noun clause (what...)"
+        },
+        {
+          "id": "b5l6-s042",
+          "sentence": "The speech *continues* to inspire people to this day and will likely *do* so as long as inequality exists.",
+          "type": "complex",
+          "pattern": "S + Vi + Infinitival phrase + and + Modal verb phrase + Adverbial clause"
+        }
+      ]
+    }
+  },
+  "text_genre": {
+    "raw_text": "The text is a reflective essay on the famous speech delivered by Martin Luther King: I Have a Dream. \nPassage Structure Analysis\nIntroduction / Historical Context (Para 1): Sets the scene (August 28, 1963) and highlights the speech's historical importance as a turning point in the civil rights movement.\nBody 1: Broken Promises (Paras 2–3): Recalls the Emancipation Proclamation and points out that 100 years later, African Americans still face segregation, poverty, and injustice.\nBody 2: Demands for Justice (Para 4): Emphasizes that civil rights activists will not be satisfied until police brutality, disenfranchisement, and racial barriers end.\nBody 3: The Vision — \"I Have a Dream\" (Paras 5–12): Outlines King's core vision of equality, character over skin color, unity across races, and divine justice.\nBody 4: Faith & Call to Action (Paras 13–15): Expresses hope that faith will transform despair into unity and lead to true freedom for all.\nConclusion / Impact (Para 16): Summarizes the speech's lasting impact on awakening public conscience and continuing to inspire fights against inequality."
+  }
+}
