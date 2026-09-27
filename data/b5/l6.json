@@ -4,10 +4,1721 @@
   "title": "",
   "status": "published",
   "vocabulary": {
-    "rows": []
+    "rows": [
+      {
+        "id": "b5l6-v01",
+        "base": "march",
+        "verb": [
+          {
+            "en": "march",
+            "zh": "行進；遊行；大步走",
+            "example": "The soldiers marched across the bridge."
+          }
+        ],
+        "noun": [
+          {
+            "en": "march",
+            "zh": "遊行；行軍；進行曲",
+            "example": "Thousands joined the peaceful march."
+          }
+        ],
+        "adj": [
+          {
+            "en": "marching",
+            "zh": "行進的；遊行的；行軍用的",
+            "example": "A marching band led the parade."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l6-v02",
+        "base": "outline",
+        "verb": [
+          {
+            "en": "outline",
+            "zh": "概述；勾勒；畫出輪廓",
+            "example": "The report outlines three possible solutions."
+          }
+        ],
+        "noun": [
+          {
+            "en": "outline",
+            "zh": "大綱；輪廓；概要",
+            "example": "She prepared an outline for her presentation."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b5l6-v03",
+        "base": "race",
+        "verb": [],
+        "noun": [
+          {
+            "en": "race",
+            "zh": "種族；族群；競賽",
+            "example": "The policy must treat people of every race equally."
+          },
+          {
+            "en": "racism",
+            "zh": "種族主義；種族歧視",
+            "example": "The campaign raises awareness of racism."
+          },
+          {
+            "en": "racist",
+            "zh": "種族主義者；種族歧視者",
+            "example": "The organization rejected the views of the racist."
+          }
+        ],
+        "adj": [
+          {
+            "en": "racial",
+            "zh": "種族的；族群的",
+            "example": "The law prohibits racial discrimination."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l6-v04",
+        "base": "decide",
+        "verb": [
+          {
+            "en": "decide",
+            "zh": "決定；判定；作出選擇",
+            "example": "We must decide where to hold the meeting."
+          }
+        ],
+        "noun": [
+          {
+            "en": "decision",
+            "zh": "決定；決策；判決",
+            "example": "The committee will announce its decision tomorrow."
+          }
+        ],
+        "adj": [
+          {
+            "en": "decisive",
+            "zh": "果斷的；決定性的；明確的",
+            "example": "Her decisive action prevented further damage."
+          },
+          {
+            "en": "undecided",
+            "zh": "尚未決定的；猶豫不決的",
+            "example": "I am still undecided about which course to take."
+          },
+          {
+            "en": "indecisive",
+            "zh": "優柔寡斷的；不明確的",
+            "example": "The indecisive leader delayed the response."
+          }
+        ],
+        "adv": [
+          {
+            "en": "decisively",
+            "zh": "果斷地；決定性地",
+            "example": "The team acted decisively during the emergency."
+          }
+        ]
+      },
+      {
+        "id": "b5l6-v05",
+        "base": "civil",
+        "verb": [
+          {
+            "en": "civilize",
+            "zh": "使文明；教化",
+            "example": "The rulers claimed they wanted to civilize the region."
+          }
+        ],
+        "noun": [
+          {
+            "en": "civilian",
+            "zh": "平民；非軍職人員",
+            "example": "The shelter protected civilians during the conflict."
+          },
+          {
+            "en": "civilization",
+            "zh": "文明；文明社會",
+            "example": "The river supported an ancient civilization."
+          }
+        ],
+        "adj": [
+          {
+            "en": "civil",
+            "zh": "公民的；民事的；有禮貌的",
+            "example": "The two sides held a civil discussion."
+          },
+          {
+            "en": "civic",
+            "zh": "市民的；城市的；公民責任的",
+            "example": "Voting is an important civic duty."
+          },
+          {
+            "en": "civilized",
+            "zh": "文明的；有禮貌的；開化的",
+            "example": "They reached a civilized solution through dialogue."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l6-v06",
+        "base": "grant",
+        "verb": [
+          {
+            "en": "grant",
+            "zh": "授予；准許；承認",
+            "example": "The court granted her request."
+          }
+        ],
+        "noun": [
+          {
+            "en": "grant",
+            "zh": "補助金；撥款；授予",
+            "example": "The school received a research grant."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b5l6-v07",
+        "base": "capture",
+        "verb": [
+          {
+            "en": "capture",
+            "zh": "捕捉；俘虜；記錄",
+            "example": "The camera captured the moment perfectly."
+          }
+        ],
+        "noun": [
+          {
+            "en": "capture",
+            "zh": "捕獲；俘虜；取得",
+            "example": "The capture of the suspect ended the search."
+          },
+          {
+            "en": "captive",
+            "zh": "俘虜；被囚禁者",
+            "example": "The captives were released safely."
+          },
+          {
+            "en": "captivity",
+            "zh": "囚禁；被俘狀態",
+            "example": "The animals were born in captivity."
+          }
+        ],
+        "adj": [
+          {
+            "en": "captive",
+            "zh": "被俘的；被囚禁的；受控制的",
+            "example": "The rescue team freed the captive workers."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l6-v08",
+        "base": "cripple",
+        "verb": [
+          {
+            "en": "cripple",
+            "zh": "使殘障；嚴重削弱；使癱瘓",
+            "example": "The cyberattack could cripple the transport system."
+          }
+        ],
+        "noun": [
+          {
+            "en": "cripple",
+            "zh": "跛子；身障者（冒犯性的過時稱呼）",
+            "example": "The noun “cripple” is now widely considered offensive."
+          }
+        ],
+        "adj": [
+          {
+            "en": "crippled",
+            "zh": "受重創的；癱瘓的；有肢體障礙的（描述人時宜謹慎）",
+            "example": "The storm left the region with a crippled power system."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l6-v09",
+        "base": "segregate",
+        "verb": [
+          {
+            "en": "segregate",
+            "zh": "隔離；分開；實施種族隔離",
+            "example": "The old law segregated students by race."
+          }
+        ],
+        "noun": [
+          {
+            "en": "segregation",
+            "zh": "隔離；種族隔離；分離",
+            "example": "The movement fought against racial segregation."
+          }
+        ],
+        "adj": [
+          {
+            "en": "segregated",
+            "zh": "隔離的；分開的",
+            "example": "The city once had segregated schools."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l6-v10",
+        "base": "exile",
+        "verb": [
+          {
+            "en": "exile",
+            "zh": "流放；放逐",
+            "example": "The regime exiled several opposition leaders."
+          }
+        ],
+        "noun": [
+          {
+            "en": "exile",
+            "zh": "流亡；流亡者；放逐",
+            "example": "The writer spent many years in exile."
+          },
+          {
+            "en": "exiler",
+            "zh": "流放他人者（罕見）",
+            "example": "The novel portrays the ruler as a cruel exiler."
+          }
+        ],
+        "adj": [
+          {
+            "en": "exiled",
+            "zh": "被流放的；流亡的",
+            "example": "The exiled leader returned after twenty years."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l6-v11",
+        "base": "shame",
+        "verb": [
+          {
+            "en": "shame",
+            "zh": "使羞愧；公開羞辱",
+            "example": "No one should shame a child for making a mistake."
+          }
+        ],
+        "noun": [
+          {
+            "en": "shame",
+            "zh": "羞恥；羞愧；憾事",
+            "example": "He felt deep shame about his behavior."
+          }
+        ],
+        "adj": [
+          {
+            "en": "shameful",
+            "zh": "可恥的；丟臉的",
+            "example": "The report exposed the shameful treatment of workers."
+          },
+          {
+            "en": "shameless",
+            "zh": "無恥的，不要臉的",
+            "example": "That was a shameless betrayal."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l6-v12",
+        "base": "mobile",
+        "verb": [
+          {
+            "en": "mobilize",
+            "zh": "動員；調動；使流動",
+            "example": "The organization mobilized volunteers after the storm."
+          }
+        ],
+        "noun": [
+          {
+            "en": "mobility",
+            "zh": "移動能力；流動性；機動性",
+            "example": "The new ramp improves mobility for wheelchair users."
+          },
+          {
+            "en": "immobility",
+            "zh": "無法移動；不流動；固定",
+            "example": "The injury caused temporary immobility."
+          },
+          {
+            "en": "automobile",
+            "zh": "汽車",
+            "example": "The automobile changed modern transportation."
+          }
+        ],
+        "adj": [
+          {
+            "en": "mobile",
+            "zh": "可移動的；行動方便的；流動的",
+            "example": "The clinic uses a mobile medical unit."
+          },
+          {
+            "en": "immobile",
+            "zh": "不動的；無法移動的；固定的",
+            "example": "The injured bird remained immobile."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l6-v13",
+        "base": "rob",
+        "verb": [
+          {
+            "en": "rob",
+            "zh": "搶劫；奪取；使喪失",
+            "example": "Someone tried to rob the convenience store."
+          }
+        ],
+        "noun": [
+          {
+            "en": "robber",
+            "zh": "搶匪；強盜",
+            "example": "The robber escaped on a motorcycle."
+          },
+          {
+            "en": "robbery",
+            "zh": "搶劫；劫案",
+            "example": "Police are investigating the bank robbery."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b5l6-v14",
+        "base": "dignity",
+        "verb": [
+          {
+            "en": "dignify",
+            "zh": "使有尊嚴；使顯得高貴",
+            "example": "Respectful language can dignify difficult discussions."
+          }
+        ],
+        "noun": [
+          {
+            "en": "dignity",
+            "zh": "尊嚴；莊重；自尊",
+            "example": "Every person deserves to be treated with dignity."
+          }
+        ],
+        "adj": [
+          {
+            "en": "dignified",
+            "zh": "有尊嚴的；莊重的；高貴的",
+            "example": "She gave a calm and dignified response."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l6-v15",
+        "base": "oppress",
+        "verb": [
+          {
+            "en": "oppress",
+            "zh": "壓迫；壓制；使苦惱",
+            "example": "The regime used fear to oppress the population."
+          }
+        ],
+        "noun": [
+          {
+            "en": "oppression",
+            "zh": "壓迫；壓制；苦難",
+            "example": "The novel describes resistance to oppression."
+          }
+        ],
+        "adj": [
+          {
+            "en": "oppressive",
+            "zh": "壓迫性的；專制的；悶熱的",
+            "example": "People protested against the oppressive law."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b5l6-v16",
+        "base": "eloquent",
+        "verb": [],
+        "noun": [
+          {
+            "en": "eloquence",
+            "zh": "雄辯；口才；流暢有力的表達",
+            "example": "Her eloquence impressed the audience."
+          }
+        ],
+        "adj": [
+          {
+            "en": "eloquent",
+            "zh": "雄辯的；有說服力的；善於表達的",
+            "example": "He gave an eloquent speech about justice."
+          }
+        ],
+        "adv": [
+          {
+            "en": "eloquently",
+            "zh": "雄辯地；有說服力地",
+            "example": "She spoke eloquently in support of the proposal."
+          }
+        ]
+      },
+      {
+        "id": "b5l6-v17",
+        "base": "rhetoric",
+        "verb": [],
+        "noun": [
+          {
+            "en": "rhetoric",
+            "zh": "修辭；花言巧語；政治言論",
+            "example": "The speech relied on emotion and rhetoric."
+          }
+        ],
+        "adj": [
+          {
+            "en": "rhetorical",
+            "zh": "修辭的；反問的；誇張言辭的",
+            "example": "The speaker asked a rhetorical question."
+          }
+        ],
+        "adv": [
+          {
+            "en": "rhetorically",
+            "zh": "在修辭上；以反問方式",
+            "example": "The question was asked rhetorically."
+          }
+        ]
+      },
+      {
+        "id": "b5l6-v18",
+        "base": "conscience",
+        "verb": [],
+        "noun": [
+          {
+            "en": "conscience",
+            "zh": "良心；道德感",
+            "example": "His conscience would not let him remain silent."
+          }
+        ],
+        "adj": [
+          {
+            "en": "conscientious",
+            "zh": "認真的；盡責的；憑良心的",
+            "example": "She is a conscientious and reliable employee."
+          }
+        ],
+        "adv": [
+          {
+            "en": "conscientiously",
+            "zh": "認真地；盡責地；憑良心地",
+            "example": "He conscientiously checked every detail."
+          }
+        ]
+      }
+    ]
   },
   "phrases": {
-    "items": []
+    "items": [
+      {
+        "id": "b5l6-p001",
+        "phrase": "march to",
+        "pos": "ph.",
+        "zh": "向……行進",
+        "example_en": "The protesters marched to the city hall.",
+        "example_zh": "抗議者向市政府大樓行進。"
+      },
+      {
+        "id": "b5l6-p002",
+        "phrase": "deliver a historic speech",
+        "pos": "ph.",
+        "zh": "發表歷史性演說",
+        "example_en": "The leader delivered a historic speech.",
+        "example_zh": "這位領袖發表歷史性演說。"
+      },
+      {
+        "id": "b5l6-p003",
+        "phrase": "a crowd of",
+        "pos": "ph.",
+        "zh": "一群……",
+        "example_en": "A crowd of students gathered outside.",
+        "example_zh": "一群學生聚集在外面。"
+      },
+      {
+        "id": "b5l6-p004",
+        "phrase": "turn out to be",
+        "pos": "ph.",
+        "zh": "結果是……",
+        "example_en": "The rumor turned out to be false.",
+        "example_zh": "這則謠言結果是假的。"
+      },
+      {
+        "id": "b5l6-p005",
+        "phrase": "a decisive moment",
+        "pos": "ph.",
+        "zh": "關鍵時刻",
+        "example_en": "The final vote was a decisive moment.",
+        "example_zh": "最後投票是關鍵時刻。"
+      },
+      {
+        "id": "b5l6-p006",
+        "phrase": "civil rights movement",
+        "pos": "ph.",
+        "zh": "民權運動",
+        "example_en": "The civil rights movement changed the country.",
+        "example_zh": "民權運動改變了這個國家。"
+      },
+      {
+        "id": "b5l6-p007",
+        "phrase": "grant sth. to sb.",
+        "pos": "ph.",
+        "zh": "將某物授予某人",
+        "example_en": "The school granted a scholarship to her.",
+        "example_zh": "學校將獎學金授予她。"
+      },
+      {
+        "id": "b5l6-p008",
+        "phrase": "grant sb. sth.",
+        "pos": "ph.",
+        "zh": "授予某人某物",
+        "example_en": "The judge granted him permission.",
+        "example_zh": "法官准許他這麼做。"
+      },
+      {
+        "id": "b5l6-p009",
+        "phrase": "antivirus software",
+        "pos": "ph.",
+        "zh": "防毒軟體",
+        "example_en": "Install antivirus software on your computer.",
+        "example_zh": "在電腦上安裝防毒軟體。"
+      },
+      {
+        "id": "b5l6-p010",
+        "phrase": "fake sb.’s signature",
+        "pos": "ph.",
+        "zh": "偽造某人的簽名",
+        "example_en": "He was arrested for faking his manager’s signature.",
+        "example_zh": "他因偽造經理的簽名而被捕。"
+      },
+      {
+        "id": "b5l6-p011",
+        "phrase": "be grounded",
+        "pos": "ph.",
+        "zh": "被禁足；被停飛",
+        "example_en": "The child was grounded for a week.",
+        "example_zh": "這個孩子被禁足一週。"
+      },
+      {
+        "id": "b5l6-p012",
+        "phrase": "stimulate sales",
+        "pos": "ph.",
+        "zh": "刺激銷售",
+        "example_en": "The discount stimulated sales.",
+        "example_zh": "折扣刺激了銷售。"
+      },
+      {
+        "id": "b5l6-p013",
+        "phrase": "launch a series of promotional campaigns",
+        "pos": "ph.",
+        "zh": "推出一系列促銷活動",
+        "example_en": "The company launched a series of promotional campaigns.",
+        "example_zh": "公司推出一系列促銷活動。"
+      },
+      {
+        "id": "b5l6-p014",
+        "phrase": "communications technology",
+        "pos": "ph.",
+        "zh": "通訊科技",
+        "example_en": "Communications technology connects distant communities.",
+        "example_zh": "通訊科技連結遙遠的社區。"
+      },
+      {
+        "id": "b5l6-p015",
+        "phrase": "take part in community service",
+        "pos": "ph.",
+        "zh": "參加社區服務",
+        "example_en": "Students take part in community service.",
+        "example_zh": "學生參加社區服務。"
+      },
+      {
+        "id": "b5l6-p016",
+        "phrase": "make better use of",
+        "pos": "ph.",
+        "zh": "更善用……",
+        "example_en": "We should make better use of our time.",
+        "example_zh": "我們應更善用時間。"
+      },
+      {
+        "id": "b5l6-p017",
+        "phrase": "familiarize oneself with",
+        "pos": "ph.",
+        "zh": "使自己熟悉……",
+        "example_en": "Please familiarize yourself with the rules.",
+        "example_zh": "請熟悉這些規則。"
+      },
+      {
+        "id": "b5l6-p018",
+        "phrase": "go down in history",
+        "pos": "ph.",
+        "zh": "載入史冊",
+        "example_en": "The victory will go down in history.",
+        "example_zh": "這場勝利將載入史冊。"
+      },
+      {
+        "id": "b5l6-p019",
+        "phrase": "demonstration for freedom",
+        "pos": "ph.",
+        "zh": "爭取自由的示威",
+        "example_en": "A demonstration for freedom filled the square.",
+        "example_zh": "爭取自由的示威充滿廣場。"
+      },
+      {
+        "id": "b5l6-p020",
+        "phrase": "five score",
+        "pos": "ph.",
+        "zh": "五個二十；一百",
+        "example_en": "The speech began with “five score years ago.”",
+        "example_zh": "演說以「一百年前」開始。"
+      },
+      {
+        "id": "b5l6-p021",
+        "phrase": "come as",
+        "pos": "ph.",
+        "zh": "成為；被視為",
+        "example_en": "The news came as a surprise.",
+        "example_zh": "這消息令人意外。"
+      },
+      {
+        "id": "b5l6-p022",
+        "phrase": "a great beacon light of hope",
+        "pos": "ph.",
+        "zh": "偉大的希望燈塔",
+        "example_en": "The school became a great beacon light of hope.",
+        "example_zh": "這所學校成為偉大的希望燈塔。"
+      },
+      {
+        "id": "b5l6-p023",
+        "phrase": "sear in the flames",
+        "pos": "ph.",
+        "zh": "在火焰中灼痛／烙印",
+        "example_en": "The image was seared in the flames.",
+        "example_zh": "這個影像在火焰中留下烙印。"
+      },
+      {
+        "id": "b5l6-p024",
+        "phrase": "in the midst of",
+        "pos": "ph.",
+        "zh": "在……之中",
+        "example_en": "She stayed calm in the midst of chaos.",
+        "example_zh": "她在混亂之中保持冷靜。"
+      },
+      {
+        "id": "b5l6-p025",
+        "phrase": "a vast ocean of",
+        "pos": "ph.",
+        "zh": "一片浩瀚的……",
+        "example_en": "We saw a vast ocean of stars.",
+        "example_zh": "我們看見一片浩瀚星海。"
+      },
+      {
+        "id": "b5l6-p026",
+        "phrase": "material prosperity",
+        "pos": "ph.",
+        "zh": "物質繁榮",
+        "example_en": "Material prosperity does not guarantee happiness.",
+        "example_zh": "物質繁榮不保證幸福。"
+      },
+      {
+        "id": "b5l6-p027",
+        "phrase": "a born artist",
+        "pos": "ph.",
+        "zh": "天生的藝術家",
+        "example_en": "She is a born artist.",
+        "example_zh": "她是天生的藝術家。"
+      },
+      {
+        "id": "b5l6-p028",
+        "phrase": "presidential election",
+        "pos": "ph.",
+        "zh": "總統大選",
+        "example_en": "The presidential election takes place in January.",
+        "example_zh": "總統大選在一月舉行。"
+      },
+      {
+        "id": "b5l6-p029",
+        "phrase": "be accused of bribery",
+        "pos": "ph.",
+        "zh": "被控賄賂",
+        "example_en": "The official was accused of bribery.",
+        "example_zh": "這名官員被控賄賂。"
+      },
+      {
+        "id": "b5l6-p030",
+        "phrase": "withdraw from the mayoral election",
+        "pos": "ph.",
+        "zh": "退出市長選舉",
+        "example_en": "She withdrew from the mayoral election.",
+        "example_zh": "她退出市長選舉。"
+      },
+      {
+        "id": "b5l6-p031",
+        "phrase": "in-depth news report",
+        "pos": "ph.",
+        "zh": "深入新聞報導",
+        "example_en": "The paper published an in-depth news report.",
+        "example_zh": "報紙刊登深入新聞報導。"
+      },
+      {
+        "id": "b5l6-p032",
+        "phrase": "authorities concerned",
+        "pos": "ph.",
+        "zh": "有關當局",
+        "example_en": "The authorities concerned issued a warning.",
+        "example_zh": "有關當局發布警告。"
+      },
+      {
+        "id": "b5l6-p033",
+        "phrase": "conduct an investigation",
+        "pos": "ph.",
+        "zh": "進行調查",
+        "example_en": "Police conducted an investigation.",
+        "example_zh": "警方進行調查。"
+      },
+      {
+        "id": "b5l6-p034",
+        "phrase": "commit bribery",
+        "pos": "ph.",
+        "zh": "行賄",
+        "example_en": "The businessman was charged with committing bribery.",
+        "example_zh": "這名商人被控行賄。"
+      },
+      {
+        "id": "b5l6-p035",
+        "phrase": "be a scapegoat",
+        "pos": "ph.",
+        "zh": "成為代罪羔羊",
+        "example_en": "He was made a scapegoat for the failure.",
+        "example_zh": "他成了失敗的代罪羔羊。"
+      },
+      {
+        "id": "b5l6-p036",
+        "phrase": "police brutality",
+        "pos": "ph.",
+        "zh": "警察暴力",
+        "example_en": "The report documented police brutality.",
+        "example_zh": "這份報告記錄警察暴力。"
+      },
+      {
+        "id": "b5l6-p037",
+        "phrase": "heavy with",
+        "pos": "ph.",
+        "zh": "充滿；承載……",
+        "example_en": "The air was heavy with smoke.",
+        "example_zh": "空氣中充滿煙霧。"
+      },
+      {
+        "id": "b5l6-p038",
+        "phrase": "fatigue of travel",
+        "pos": "ph.",
+        "zh": "旅行疲勞",
+        "example_en": "The fatigue of travel made her sleepy.",
+        "example_zh": "旅行疲勞使她想睡。"
+      },
+      {
+        "id": "b5l6-p039",
+        "phrase": "be stripped of",
+        "pos": "ph.",
+        "zh": "被剝奪……",
+        "example_en": "The athlete was stripped of his title.",
+        "example_zh": "這名運動員被剝奪頭銜。"
+      },
+      {
+        "id": "b5l6-p040",
+        "phrase": "be robbed of",
+        "pos": "ph.",
+        "zh": "被奪走……",
+        "example_en": "The victims were robbed of their savings.",
+        "example_zh": "受害者被奪走積蓄。"
+      },
+      {
+        "id": "b5l6-p041",
+        "phrase": "one’s self-hood",
+        "pos": "ph.",
+        "zh": "某人的自我認同",
+        "example_en": "Art helped her recover her self-hood.",
+        "example_zh": "藝術幫助她找回自我認同。"
+      },
+      {
+        "id": "b5l6-p042",
+        "phrase": "roll down like waters",
+        "pos": "ph.",
+        "zh": "像水一樣滾滾而下",
+        "example_en": "Tears rolled down like waters.",
+        "example_zh": "淚水像水一樣滾滾而下。"
+      },
+      {
+        "id": "b5l6-p043",
+        "phrase": "wallow in the valley of despair",
+        "pos": "ph.",
+        "zh": "沉溺於絕望的深谷",
+        "example_en": "He refused to wallow in the valley of despair.",
+        "example_zh": "他拒絕沉溺於絕望的深谷。"
+      },
+      {
+        "id": "b5l6-p044",
+        "phrase": "deeply rooted in",
+        "pos": "ph.",
+        "zh": "深深根植於",
+        "example_en": "The custom is deeply rooted in history.",
+        "example_zh": "這項習俗深深根植於歷史。"
+      },
+      {
+        "id": "b5l6-p045",
+        "phrase": "rise up",
+        "pos": "ph.",
+        "zh": "起身；奮起",
+        "example_en": "The people rose up against injustice.",
+        "example_zh": "人民奮起反抗不公。"
+      },
+      {
+        "id": "b5l6-p046",
+        "phrase": "live out the true meaning of",
+        "pos": "ph.",
+        "zh": "實踐……的真正意義",
+        "example_en": "They lived out the true meaning of equality.",
+        "example_zh": "他們實踐平等的真正意義。"
+      },
+      {
+        "id": "b5l6-p047",
+        "phrase": "be released from the hospital",
+        "pos": "ph.",
+        "zh": "從醫院出院",
+        "example_en": "He was released from the hospital yesterday.",
+        "example_zh": "他昨天從醫院出院。"
+      },
+      {
+        "id": "b5l6-p048",
+        "phrase": "take a practice test",
+        "pos": "ph.",
+        "zh": "參加練習測驗",
+        "example_en": "I took a practice test before the exam.",
+        "example_zh": "我在考試前參加練習測驗。"
+      },
+      {
+        "id": "b5l6-p049",
+        "phrase": "be self-evident",
+        "pos": "ph.",
+        "zh": "不證自明",
+        "example_en": "The need for clean water is self-evident.",
+        "example_zh": "乾淨用水的必要性不證自明。"
+      },
+      {
+        "id": "b5l6-p050",
+        "phrase": "declare a state of emergency",
+        "pos": "ph.",
+        "zh": "宣布進入緊急狀態",
+        "example_en": "The government declared a state of emergency.",
+        "example_zh": "政府宣布進入緊急狀態。"
+      },
+      {
+        "id": "b5l6-p051",
+        "phrase": "ban entry for travellers",
+        "pos": "ph.",
+        "zh": "禁止旅客入境",
+        "example_en": "The country banned entry for travellers.",
+        "example_zh": "該國禁止旅客入境。"
+      },
+      {
+        "id": "b5l6-p052",
+        "phrase": "lift the travel ban",
+        "pos": "ph.",
+        "zh": "解除旅遊禁令",
+        "example_en": "Officials lifted the travel ban.",
+        "example_zh": "官員解除旅遊禁令。"
+      },
+      {
+        "id": "b5l6-p053",
+        "phrase": "join hands with",
+        "pos": "ph.",
+        "zh": "與……攜手合作",
+        "example_en": "The groups joined hands with local schools.",
+        "example_zh": "這些團體與當地學校攜手合作。"
+      },
+      {
+        "id": "b5l6-p054",
+        "phrase": "snow-covered mountain",
+        "pos": "ph.",
+        "zh": "積雪覆蓋的山",
+        "example_en": "We photographed the snow-covered mountain.",
+        "example_zh": "我們拍攝了積雪覆蓋的山。"
+      },
+      {
+        "id": "b5l6-p055",
+        "phrase": "not…but…",
+        "pos": "ph.",
+        "zh": "不是……而是……",
+        "example_en": "It was not luck but hard work.",
+        "example_zh": "那不是運氣而是努力。"
+      },
+      {
+        "id": "b5l6-p056",
+        "phrase": "take full responsibility for",
+        "pos": "ph.",
+        "zh": "對……負完全責任",
+        "example_en": "She took full responsibility for the error.",
+        "example_zh": "她對錯誤負完全責任。"
+      },
+      {
+        "id": "b5l6-p057",
+        "phrase": "work steadily toward a shared goal",
+        "pos": "ph.",
+        "zh": "穩定地朝共同目標努力",
+        "example_en": "The teams worked steadily toward a shared goal.",
+        "example_zh": "各團隊穩定地朝共同目標努力。"
+      },
+      {
+        "id": "b5l6-p058",
+        "phrase": "have a stroke",
+        "pos": "ph.",
+        "zh": "中風",
+        "example_en": "His grandfather had a stroke.",
+        "example_zh": "他的祖父中風了。"
+      },
+      {
+        "id": "b5l6-p059",
+        "phrase": "burn the candle at both ends",
+        "pos": "ph.",
+        "zh": "過度操勞",
+        "example_en": "You cannot burn the candle at both ends forever.",
+        "example_zh": "你不能永遠過度操勞。"
+      },
+      {
+        "id": "b5l6-p060",
+        "phrase": "a strong-willed person",
+        "pos": "ph.",
+        "zh": "意志堅強的人",
+        "example_en": "She is a strong-willed person.",
+        "example_zh": "她是一個意志堅強的人。"
+      },
+      {
+        "id": "b5l6-p061",
+        "phrase": "speed up",
+        "pos": "ph.",
+        "zh": "加速",
+        "example_en": "The car sped up on the highway.",
+        "example_zh": "汽車在高速公路上加速。"
+      },
+      {
+        "id": "b5l6-p062",
+        "phrase": "be workaholic",
+        "pos": "ph.",
+        "zh": "是工作狂",
+        "example_en": "He is a workaholic who rarely rests.",
+        "example_zh": "他是很少休息的工作狂。"
+      },
+      {
+        "id": "b5l6-p063",
+        "phrase": "tense atmosphere",
+        "pos": "ph.",
+        "zh": "緊張氣氛",
+        "example_en": "The tense atmosphere worried everyone.",
+        "example_zh": "緊張氣氛讓大家擔心。"
+      },
+      {
+        "id": "b5l6-p064",
+        "phrase": "stand at the intersection",
+        "pos": "ph.",
+        "zh": "站在十字路口",
+        "example_en": "A police officer stood at the intersection.",
+        "example_zh": "一名警察站在十字路口。"
+      },
+      {
+        "id": "b5l6-p065",
+        "phrase": "appeal to",
+        "pos": "ph.",
+        "zh": "呼籲；吸引",
+        "example_en": "The message appeals to young voters.",
+        "example_zh": "這則訊息吸引年輕選民。"
+      },
+      {
+        "id": "b5l6-p066",
+        "phrase": "rhetorical skill",
+        "pos": "ph.",
+        "zh": "修辭技巧",
+        "example_en": "The speaker used rhetorical skill effectively.",
+        "example_zh": "演講者有效運用修辭技巧。"
+      },
+      {
+        "id": "b5l6-p067",
+        "phrase": "condone racial oppression",
+        "pos": "ph.",
+        "zh": "寬恕種族壓迫",
+        "example_en": "No society should condone racial oppression.",
+        "example_zh": "任何社會都不應寬恕種族壓迫。"
+      },
+      {
+        "id": "b5l6-p068",
+        "phrase": "to this day",
+        "pos": "ph.",
+        "zh": "直到今天",
+        "example_en": "To this day, she remembers the speech.",
+        "example_zh": "直到今天，她仍記得那場演說。"
+      },
+      {
+        "id": "b5l6-p069",
+        "phrase": "a lack of communication",
+        "pos": "ph.",
+        "zh": "缺乏溝通",
+        "example_en": "The conflict resulted from a lack of communication.",
+        "example_zh": "衝突源於缺乏溝通。"
+      },
+      {
+        "id": "b5l6-p070",
+        "phrase": "drift apart after graduation",
+        "pos": "ph.",
+        "zh": "畢業後逐漸疏遠",
+        "example_en": "The friends drifted apart after graduation.",
+        "example_zh": "朋友們畢業後逐漸疏遠。"
+      },
+      {
+        "id": "b5l6-p071",
+        "phrase": "half-hearted attitude",
+        "pos": "ph.",
+        "zh": "敷衍的態度",
+        "example_en": "His half-hearted attitude disappointed the team.",
+        "example_zh": "他敷衍的態度令團隊失望。"
+      },
+      {
+        "id": "b5l6-p072",
+        "phrase": "march through",
+        "pos": "ph.",
+        "zh": "行進穿過",
+        "example_en": "The parade marched through the main street.",
+        "example_zh": "遊行隊伍行進穿過主要街道。"
+      },
+      {
+        "id": "b5l6-p073",
+        "phrase": "march along",
+        "pos": "ph.",
+        "zh": "沿著……行進",
+        "example_en": "We marched along the river.",
+        "example_zh": "我們沿著河流行進。"
+      },
+      {
+        "id": "b5l6-p074",
+        "phrase": "in an orderly fashion",
+        "pos": "ph.",
+        "zh": "井然有序地",
+        "example_en": "The crowd left in an orderly fashion.",
+        "example_zh": "人群井然有序地離開。"
+      },
+      {
+        "id": "b5l6-p075",
+        "phrase": "go on a march",
+        "pos": "ph.",
+        "zh": "參加遊行",
+        "example_en": "Thousands went on a march for peace.",
+        "example_zh": "數千人參加和平遊行。"
+      },
+      {
+        "id": "b5l6-p076",
+        "phrase": "as a memorial to",
+        "pos": "ph.",
+        "zh": "作為對……的紀念",
+        "example_en": "The statue was built as a memorial to the victims.",
+        "example_zh": "這座雕像建作對受害者的紀念。"
+      },
+      {
+        "id": "b5l6-p077",
+        "phrase": "memorial ceremony",
+        "pos": "ph.",
+        "zh": "紀念儀式",
+        "example_en": "A memorial ceremony was held on Sunday.",
+        "example_zh": "星期日舉行了紀念儀式。"
+      },
+      {
+        "id": "b5l6-p078",
+        "phrase": "late president",
+        "pos": "ph.",
+        "zh": "已故總統",
+        "example_en": "The late president was honored at the ceremony.",
+        "example_zh": "典禮上向已故總統致敬。"
+      },
+      {
+        "id": "b5l6-p079",
+        "phrase": "pay one’s respects",
+        "pos": "ph.",
+        "zh": "致意；致敬",
+        "example_en": "Citizens came to pay their respects.",
+        "example_zh": "市民前來致意。"
+      },
+      {
+        "id": "b5l6-p080",
+        "phrase": "draw up an outline of",
+        "pos": "ph.",
+        "zh": "擬定……的大綱",
+        "example_en": "She drew up an outline of the report.",
+        "example_zh": "她擬定報告大綱。"
+      },
+      {
+        "id": "b5l6-p081",
+        "phrase": "explain in outline",
+        "pos": "ph.",
+        "zh": "概略說明",
+        "example_en": "The guide explained the plan in outline.",
+        "example_zh": "導遊概略說明計畫。"
+      },
+      {
+        "id": "b5l6-p082",
+        "phrase": "a fair trial",
+        "pos": "ph.",
+        "zh": "公平審判",
+        "example_en": "Everyone deserves a fair trial.",
+        "example_zh": "每個人都應獲得公平審判。"
+      },
+      {
+        "id": "b5l6-p083",
+        "phrase": "decisive factor",
+        "pos": "ph.",
+        "zh": "決定性因素",
+        "example_en": "Cost was the decisive factor.",
+        "example_zh": "成本是決定性因素。"
+      },
+      {
+        "id": "b5l6-p084",
+        "phrase": "civil war",
+        "pos": "ph.",
+        "zh": "內戰",
+        "example_en": "The country suffered through a civil war.",
+        "example_zh": "這個國家經歷內戰。"
+      },
+      {
+        "id": "b5l6-p085",
+        "phrase": "grant permission",
+        "pos": "ph.",
+        "zh": "給予許可",
+        "example_en": "The owner granted permission to enter.",
+        "example_zh": "屋主給予進入許可。"
+      },
+      {
+        "id": "b5l6-p086",
+        "phrase": "receive a research grant",
+        "pos": "ph.",
+        "zh": "獲得研究補助",
+        "example_en": "The scientist received a research grant.",
+        "example_zh": "這位科學家獲得研究補助。"
+      },
+      {
+        "id": "b5l6-p087",
+        "phrase": "in flames",
+        "pos": "ph.",
+        "zh": "在火焰中",
+        "example_en": "The building was in flames.",
+        "example_zh": "建築物陷入火海。"
+      },
+      {
+        "id": "b5l6-p088",
+        "phrase": "in captivity",
+        "pos": "ph.",
+        "zh": "在圈養中",
+        "example_en": "The rare bird was born in captivity.",
+        "example_zh": "這隻稀有鳥在圈養中出生。"
+      },
+      {
+        "id": "b5l6-p089",
+        "phrase": "suffer physical abuse",
+        "pos": "ph.",
+        "zh": "遭受身體虐待",
+        "example_en": "The child suffered physical abuse.",
+        "example_zh": "這名孩子遭受身體虐待。"
+      },
+      {
+        "id": "b5l6-p090",
+        "phrase": "be tied up with ropes",
+        "pos": "ph.",
+        "zh": "被繩子綁住",
+        "example_en": "The thief was tied up with ropes.",
+        "example_zh": "小偷被繩子綁住。"
+      },
+      {
+        "id": "b5l6-p091",
+        "phrase": "hold sb. captive",
+        "pos": "ph.",
+        "zh": "挾持某人",
+        "example_en": "The criminals held the guard captive.",
+        "example_zh": "罪犯挾持警衛。"
+      },
+      {
+        "id": "b5l6-p092",
+        "phrase": "captive audience",
+        "pos": "ph.",
+        "zh": "被迫聆聽的觀眾",
+        "example_en": "The passengers became a captive audience.",
+        "example_zh": "乘客成為被迫聆聽的觀眾。"
+      },
+      {
+        "id": "b5l6-p093",
+        "phrase": "civil rights movement",
+        "pos": "ph.",
+        "zh": "民權運動",
+        "example_en": "The civil rights movement inspired change.",
+        "example_zh": "民權運動啟發了改變。"
+      },
+      {
+        "id": "b5l6-p094",
+        "phrase": "seek to",
+        "pos": "ph.",
+        "zh": "試圖；力求",
+        "example_en": "The policy seeks to reduce poverty.",
+        "example_zh": "這項政策力求減少貧窮。"
+      },
+      {
+        "id": "b5l6-p095",
+        "phrase": "racial segregation",
+        "pos": "ph.",
+        "zh": "種族隔離",
+        "example_en": "The law ended racial segregation.",
+        "example_zh": "這項法律終結種族隔離。"
+      },
+      {
+        "id": "b5l6-p096",
+        "phrase": "public facilities",
+        "pos": "ph.",
+        "zh": "公共設施",
+        "example_en": "Everyone should have access to public facilities.",
+        "example_zh": "每個人都應能使用公共設施。"
+      },
+      {
+        "id": "b5l6-p097",
+        "phrase": "segregate A from B",
+        "pos": "ph.",
+        "zh": "將 A 與 B 隔離",
+        "example_en": "The rule segregated students from visitors.",
+        "example_zh": "這項規定將學生與訪客隔離。"
+      },
+      {
+        "id": "b5l6-p098",
+        "phrase": "political exile",
+        "pos": "ph.",
+        "zh": "政治流亡",
+        "example_en": "The writer lived in political exile.",
+        "example_zh": "這位作家過著政治流亡生活。"
+      },
+      {
+        "id": "b5l6-p099",
+        "phrase": "tax exile",
+        "pos": "ph.",
+        "zh": "稅務流亡者",
+        "example_en": "The athlete was called a tax exile.",
+        "example_zh": "這名運動員被稱為稅務流亡者。"
+      },
+      {
+        "id": "b5l6-p100",
+        "phrase": "live in exile abroad",
+        "pos": "ph.",
+        "zh": "流亡海外",
+        "example_en": "The leader lived in exile abroad for years.",
+        "example_zh": "這位領袖流亡海外多年。"
+      },
+      {
+        "id": "b5l6-p101",
+        "phrase": "be exiled from",
+        "pos": "ph.",
+        "zh": "被放逐出……",
+        "example_en": "He was exiled from his homeland.",
+        "example_zh": "他被放逐出祖國。"
+      },
+      {
+        "id": "b5l6-p102",
+        "phrase": "military coup",
+        "pos": "ph.",
+        "zh": "軍事政變",
+        "example_en": "The military coup changed the government.",
+        "example_zh": "軍事政變改變了政府。"
+      },
+      {
+        "id": "b5l6-p103",
+        "phrase": "live off one’s parents",
+        "pos": "ph.",
+        "zh": "靠父母供養",
+        "example_en": "He still lives off his parents.",
+        "example_zh": "他仍靠父母供養。"
+      },
+      {
+        "id": "b5l6-p104",
+        "phrase": "blush with shame",
+        "pos": "ph.",
+        "zh": "羞愧得臉紅",
+        "example_en": "She blushed with shame after lying.",
+        "example_zh": "她說謊後羞愧得臉紅。"
+      },
+      {
+        "id": "b5l6-p105",
+        "phrase": "be caught cheating on the exam",
+        "pos": "ph.",
+        "zh": "被抓到考試作弊",
+        "example_en": "He was caught cheating on the exam.",
+        "example_zh": "他被抓到考試作弊。"
+      },
+      {
+        "id": "b5l6-p106",
+        "phrase": "work nonstop",
+        "pos": "ph.",
+        "zh": "不停工作",
+        "example_en": "The nurses worked nonstop.",
+        "example_zh": "護理師不停工作。"
+      },
+      {
+        "id": "b5l6-p107",
+        "phrase": "have upward career mobility",
+        "pos": "ph.",
+        "zh": "有向上職涯流動性",
+        "example_en": "The company offers employees upward career mobility.",
+        "example_zh": "這家公司提供員工向上職涯發展機會。"
+      },
+      {
+        "id": "b5l6-p108",
+        "phrase": "mobile device",
+        "pos": "ph.",
+        "zh": "行動裝置",
+        "example_en": "Keep your mobile device charged.",
+        "example_zh": "讓你的行動裝置保持充電。"
+      },
+      {
+        "id": "b5l6-p109",
+        "phrase": "go online anytime and anywhere",
+        "pos": "ph.",
+        "zh": "隨時隨地上網",
+        "example_en": "Students can go online anytime and anywhere.",
+        "example_zh": "學生可以隨時隨地上網。"
+      },
+      {
+        "id": "b5l6-p110",
+        "phrase": "armed robbery",
+        "pos": "ph.",
+        "zh": "持械搶劫",
+        "example_en": "The suspect was charged with armed robbery.",
+        "example_zh": "嫌疑犯被控持械搶劫。"
+      },
+      {
+        "id": "b5l6-p111",
+        "phrase": "at the sight of",
+        "pos": "ph.",
+        "zh": "一看到……",
+        "example_en": "He froze at the sight of the snake.",
+        "example_zh": "他一看到蛇就僵住。"
+      },
+      {
+        "id": "b5l6-p112",
+        "phrase": "preserve one’s dignity",
+        "pos": "ph.",
+        "zh": "維護某人的尊嚴",
+        "example_en": "She worked hard to preserve her dignity.",
+        "example_zh": "她努力維護自己的尊嚴。"
+      },
+      {
+        "id": "b5l6-p113",
+        "phrase": "social status",
+        "pos": "ph.",
+        "zh": "社會地位",
+        "example_en": "Money does not define social status.",
+        "example_zh": "金錢不能定義社會地位。"
+      },
+      {
+        "id": "b5l6-p114",
+        "phrase": "be free from oppression",
+        "pos": "ph.",
+        "zh": "免於壓迫",
+        "example_en": "Everyone deserves to be free from oppression.",
+        "example_zh": "每個人都應免於壓迫。"
+      },
+      {
+        "id": "b5l6-p115",
+        "phrase": "vicious terrorist attack",
+        "pos": "ph.",
+        "zh": "殘酷的恐怖攻擊",
+        "example_en": "The city suffered a vicious terrorist attack.",
+        "example_zh": "這座城市遭受殘酷的恐怖攻擊。"
+      },
+      {
+        "id": "b5l6-p116",
+        "phrase": "vicious circle",
+        "pos": "ph.",
+        "zh": "惡性循環",
+        "example_en": "Debt can create a vicious circle.",
+        "example_zh": "債務可能造成惡性循環。"
+      },
+      {
+        "id": "b5l6-p117",
+        "phrase": "the second movement of the symphony",
+        "pos": "ph.",
+        "zh": "交響曲的第二樂章",
+        "example_en": "The second movement of the symphony was gentle.",
+        "example_zh": "交響曲的第二樂章很柔和。"
+      },
+      {
+        "id": "b5l6-p118",
+        "phrase": "eloquent speech",
+        "pos": "ph.",
+        "zh": "雄辯的演說",
+        "example_en": "She gave an eloquent speech.",
+        "example_zh": "她發表雄辯的演說。"
+      },
+      {
+        "id": "b5l6-p119",
+        "phrase": "rhetorical device",
+        "pos": "ph.",
+        "zh": "修辭手法",
+        "example_en": "Repetition is a common rhetorical device.",
+        "example_zh": "重複是常見的修辭手法。"
+      },
+      {
+        "id": "b5l6-p120",
+        "phrase": "take a course in rhetoric",
+        "pos": "ph.",
+        "zh": "修習修辭學課程",
+        "example_en": "He took a course in rhetoric.",
+        "example_zh": "他修習修辭學課程。"
+      },
+      {
+        "id": "b5l6-p121",
+        "phrase": "have a guilty conscience",
+        "pos": "ph.",
+        "zh": "有罪惡感",
+        "example_en": "She has a guilty conscience about the lie.",
+        "example_zh": "她對謊言感到罪惡。"
+      },
+      {
+        "id": "b5l6-p122",
+        "phrase": "listen to the voice of conscience",
+        "pos": "ph.",
+        "zh": "聽從良心的聲音",
+        "example_en": "He listened to the voice of conscience.",
+        "example_zh": "他聽從良心的聲音。"
+      },
+      {
+        "id": "b5l6-p123",
+        "phrase": "make a moral judgment",
+        "pos": "ph.",
+        "zh": "作出道德判斷",
+        "example_en": "Children learn to make a moral judgment.",
+        "example_zh": "孩子學習作出道德判斷。"
+      },
+      {
+        "id": "b5l6-p124",
+        "phrase": "table of contents",
+        "pos": "ph.",
+        "zh": "目錄",
+        "example_en": "Check the table of contents first.",
+        "example_zh": "先查看目錄。"
+      },
+      {
+        "id": "b5l6-p125",
+        "phrase": "adequate knowledge of",
+        "pos": "ph.",
+        "zh": "足夠的……知識",
+        "example_en": "She has adequate knowledge of biology.",
+        "example_zh": "她有足夠的生物學知識。"
+      },
+      {
+        "id": "b5l6-p126",
+        "phrase": "be released from captivity",
+        "pos": "ph.",
+        "zh": "從囚禁中獲釋",
+        "example_en": "The hostages were released from captivity.",
+        "example_zh": "人質從囚禁中獲釋。"
+      },
+      {
+        "id": "b5l6-p127",
+        "phrase": "shameful behavior",
+        "pos": "ph.",
+        "zh": "可恥的行為",
+        "example_en": "The school punished his shameful behavior.",
+        "example_zh": "學校懲罰他的可恥行為。"
+      },
+      {
+        "id": "b5l6-p128",
+        "phrase": "fatigue from overwork",
+        "pos": "ph.",
+        "zh": "過度工作造成的疲勞",
+        "example_en": "Fatigue from overwork affected her health.",
+        "example_zh": "過度工作造成的疲勞影響她的健康。"
+      },
+      {
+        "id": "b5l6-p129",
+        "phrase": "pass out",
+        "pos": "ph.",
+        "zh": "昏倒；分發",
+        "example_en": "He passed out from the heat.",
+        "example_zh": "他因炎熱而昏倒。"
+      },
+      {
+        "id": "b5l6-p130",
+        "phrase": "in the presence of",
+        "pos": "ph.",
+        "zh": "在……面前",
+        "example_en": "Do not argue in the presence of children.",
+        "example_zh": "不要在孩子面前爭吵。"
+      },
+      {
+        "id": "b5l6-p131",
+        "phrase": "lose one’s dignity",
+        "pos": "ph.",
+        "zh": "失去某人的尊嚴",
+        "example_en": "He refused to lose his dignity.",
+        "example_zh": "他拒絕失去尊嚴。"
+      },
+      {
+        "id": "b5l6-p132",
+        "phrase": "spread rumors",
+        "pos": "ph.",
+        "zh": "散播謠言",
+        "example_en": "Do not spread rumors online.",
+        "example_zh": "不要在網路上散播謠言。"
+      },
+      {
+        "id": "b5l6-p133",
+        "phrase": "vicious behavior",
+        "pos": "ph.",
+        "zh": "殘暴行為",
+        "example_en": "The court condemned the vicious behavior.",
+        "example_zh": "法院譴責這種殘暴行為。"
+      },
+      {
+        "id": "b5l6-p134",
+        "phrase": "absolutely intolerable",
+        "pos": "ph.",
+        "zh": "完全不可忍受的",
+        "example_en": "The noise was absolutely intolerable.",
+        "example_zh": "噪音完全不可忍受。"
+      },
+      {
+        "id": "b5l6-p135",
+        "phrase": "turn oneself in to the police",
+        "pos": "ph.",
+        "zh": "向警方自首",
+        "example_en": "The suspect turned himself in to the police.",
+        "example_zh": "嫌疑犯向警方自首。"
+      },
+      {
+        "id": "b5l6-p136",
+        "phrase": "commit racial injustice",
+        "pos": "ph.",
+        "zh": "犯下種族不公",
+        "example_en": "No one should commit racial injustice.",
+        "example_zh": "任何人都不應犯下種族不公。"
+      },
+      {
+        "id": "b5l6-p137",
+        "phrase": "a breakthrough in space research",
+        "pos": "ph.",
+        "zh": "太空研究的突破",
+        "example_en": "The mission achieved a breakthrough in space research.",
+        "example_zh": "這項任務在太空研究方面取得突破。"
+      },
+      {
+        "id": "b5l6-p138",
+        "phrase": "put aside differences",
+        "pos": "ph.",
+        "zh": "擱置分歧",
+        "example_en": "The groups put aside differences to cooperate.",
+        "example_zh": "各團體擱置分歧以合作。"
+      },
+      {
+        "id": "b5l6-p139",
+        "phrase": "infectious disease",
+        "pos": "ph.",
+        "zh": "傳染病",
+        "example_en": "Vaccines prevent infectious disease.",
+        "example_zh": "疫苗預防傳染病。"
+      },
+      {
+        "id": "b5l6-p140",
+        "phrase": "have yet to",
+        "pos": "ph.",
+        "zh": "尚未……",
+        "example_en": "The team has yet to announce its decision.",
+        "example_zh": "團隊尚未宣布決定。"
+      },
+      {
+        "id": "b5l6-p141",
+        "phrase": "large inheritance from",
+        "pos": "ph.",
+        "zh": "來自……的大筆遺產",
+        "example_en": "She received a large inheritance from her aunt.",
+        "example_zh": "她收到姑姑留下的大筆遺產。"
+      },
+      {
+        "id": "b5l6-p142",
+        "phrase": "as long as",
+        "pos": "ph.",
+        "zh": "只要；長達",
+        "example_en": "You may go as long as you return by six.",
+        "example_zh": "只要六點前回來，你就可以去。"
+      },
+      {
+        "id": "b5l6-p143",
+        "phrase": "have an affair with",
+        "pos": "ph.",
+        "zh": "與……有婚外情",
+        "example_en": "The actor admitted having an affair with a colleague.",
+        "example_zh": "這名演員承認與同事有婚外情。"
+      },
+      {
+        "id": "b5l6-p144",
+        "phrase": "be heavy with moisture",
+        "pos": "ph.",
+        "zh": "充滿水氣",
+        "example_en": "The air was heavy with moisture.",
+        "example_zh": "空氣中充滿水氣。"
+      },
+      {
+        "id": "b5l6-p145",
+        "phrase": "tackle the problem",
+        "pos": "ph.",
+        "zh": "處理問題",
+        "example_en": "We need to tackle the problem together.",
+        "example_zh": "我們需要一起處理問題。"
+      },
+      {
+        "id": "b5l6-p146",
+        "phrase": "low birth rate",
+        "pos": "ph.",
+        "zh": "低出生率",
+        "example_en": "The country faces a low birth rate.",
+        "example_zh": "這個國家面臨低出生率。"
+      },
+      {
+        "id": "b5l6-p147",
+        "phrase": "deliver a speech to address",
+        "pos": "ph.",
+        "zh": "發表演說以處理／回應……",
+        "example_en": "The mayor delivered a speech to address public concerns.",
+        "example_zh": "市長發表演說以回應大眾疑慮。"
+      },
+      {
+        "id": "b5l6-p148",
+        "phrase": "without controversy",
+        "pos": "ph.",
+        "zh": "沒有爭議地",
+        "example_en": "The decision was not made without controversy.",
+        "example_zh": "這項決定並非毫無爭議。"
+      }
+    ]
   },
   "grammar": {
     "points": [
@@ -52,7 +1763,7 @@
         },
         {
           "id": "b5l6-s004",
-          "sentence": "Had Dr. King not made the speech, the United States might not have *introduced* a series of laws to grant new rights to African Americans within just a few years.",
+          "sentence": "Had Dr. King not made the speech, the United States *might not have introduced* a series of laws to grant new rights to African Americans within just a few years.",
           "type": "complex",
           "pattern": "Inverted conditional clause (Had...) + S + Modal verb phrase + O + Infinitival phrase"
         },
@@ -112,43 +1823,43 @@
         },
         {
           "id": "b5l6-s014",
-          "sentence": "We *can never be satisfied* as long as the Negro is the victim of the unspeakable horrors of police brutality.",
+          "sentence": "We *can never be* satisfied as long as the Negro is the victim of the unspeakable horrors of police brutality.",
           "type": "complex",
           "pattern": "S + Modal verb phrase + Adverbial clause (as long as...)"
         },
         {
           "id": "b5l6-s015",
-          "sentence": "We *can never be satisfied* as long as our bodies, heavy with the fatigue of travel, cannot gain lodging in the motels of the highways and the hotels of the cities.",
+          "sentence": "We *can never be* satisfied as long as our bodies, heavy with the fatigue of travel, cannot gain lodging in the motels of the highways and the hotels of the cities.",
           "type": "complex",
           "pattern": "S + Modal verb phrase + Adverbial clause (as long as...) with Participial phrase"
         },
         {
           "id": "b5l6-s016",
-          "sentence": "We *cannot be satisfied* as long as the Negro's basic mobility is from a smaller ghetto to a larger one.",
+          "sentence": "We *cannot be* satisfied as long as the Negro's basic mobility is from a smaller ghetto to a larger one.",
           "type": "complex",
           "pattern": "S + Modal verb phrase + Adverbial clause (as long as...)"
         },
         {
           "id": "b5l6-s017",
-          "sentence": "We *can never be satisfied* as long as our children are stripped of their self-hood and robbed of their dignity by a sign stating: \"For Whites Only.\"",
+          "sentence": "We *can never be* satisfied as long as our children are stripped of their self-hood and robbed of their dignity by a sign stating: \"For Whites Only.\"",
           "type": "complex",
           "pattern": "S + Modal verb phrase + Adverbial clause (as long as...) with Compound passive verbs"
         },
         {
           "id": "b5l6-s018",
-          "sentence": "We *cannot be satisfied* as long as a Negro in Mississippi cannot vote and a Negro in New York believes he has nothing for which to vote.",
+          "sentence": "We *cannot be* satisfied as long as a Negro in Mississippi cannot vote and a Negro in New York believes he has nothing for which to vote.",
           "type": "complex",
           "pattern": "S + Modal verb phrase + Adverbial clause (as long as...) with Compound subjects + Noun clause"
         },
         {
           "id": "b5l6-s019",
-          "sentence": "No, no, we *are not satisfied*, and we *will not be satisfied* until justice rolls down like waters, and righteousness like a mighty stream.",
+          "sentence": "No, no, we *are* not satisfied, and we *will not be* satisfied until justice rolls down like waters, and righteousness like a mighty stream.",
           "type": "compound-complex",
           "pattern": "S + Vl + C + and + S + Passive verb phrase + Adverbial clause (until...)"
         },
         {
           "id": "b5l6-s020",
-          "sentence": "Let us not *wallow* in the valley of despair, I say to you today, my friends.",
+          "sentence": "*Let* us not wallow in the valley of despair, I say to you today, my friends.",
           "type": "simple",
           "pattern": "Imperative sentence + Reporting clause"
         },
@@ -220,25 +1931,25 @@
         },
         {
           "id": "b5l6-s032",
-          "sentence": "With this faith, we will be able to *hew* out of the mountain of despair a stone of hope.",
+          "sentence": "With this faith, we *will be* able to hew out of the mountain of despair a stone of hope.",
           "type": "simple",
           "pattern": "Prepositional phrase + S + Modal verb phrase + Phrasal verb + O"
         },
         {
           "id": "b5l6-s033",
-          "sentence": "With this faith, we will be able to *transform* the jangling discords of our nation into a beautiful symphony of brotherhood.",
+          "sentence": "With this faith, we *will be* able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.",
           "type": "simple",
           "pattern": "Prepositional phrase + S + Modal verb phrase + Vt + O + C"
         },
         {
           "id": "b5l6-s034",
-          "sentence": "With this faith, we will be able to *work* together, to pray together, to struggle together, to go to jail together, to stand up for freedom together, knowing that we will be free one day.",
+          "sentence": "With this faith, we *will be* able to work together, to pray together, to struggle together, to go to jail together, to stand up for freedom together, knowing that we will be free one day.",
           "type": "complex",
           "pattern": "Prepositional phrase + S + Modal verb phrase + Coordinated infinitives"
         },
         {
           "id": "b5l6-s035",
-          "sentence": "And when this happens, when we allow freedom [to] ring, when we let it ring from every village and every hamlet, from every state and every city, we will *be able to speed up* that day when all of God’s children, black men and white men, Jews and Gentiles, Protestants and Catholics, will be able to join hands and sing in the words of the old Negro spiritual:",
+          "sentence": "And when this happens, when we allow freedom [to] ring, when we let it ring from every village and every hamlet, from every state and every city, we *will be* able to speed up that day when all of God’s children, black men and white men, Jews and Gentiles, Protestants and Catholics, will be able to join hands and sing in the words of the old Negro spiritual:",
           "type": "complex",
           "pattern": "Adverbial clauses (when...) + S + Modal verb phrase + Relative clauses"
         },
