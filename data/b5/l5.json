@@ -1,0 +1,241 @@
+{
+  "book": "B5",
+  "lesson": "L5",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": []
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [
+      {
+        "id": "b5l5-g1",
+        "title": "Tenses & Time Markers (時態與時間標記)",
+        "examples": [
+          "現在：簡單、進行、完成 (完成進行)",
+          "過去：簡單、進行、完成 (完成進行)",
+          "未來：簡單、進行、完成 (完成進行)",
+          "過去未來：簡單、進行、完成 (完成進行)"
+        ]
+      },
+      {
+        "id": "b5l5-g2",
+        "title": "Transition Signals: Cause & Effect",
+        "examples": [
+          "clause connectors: because, as, since, so",
+          "sentence connectors: therefore, thus, as a result, in consequence, consequently, for this reason",
+          "prepositional connectors: because of, due to, on account of, owing to, as a result of",
+          "verbs/phrasl verbs: cause, lead to, contritube to, result in, result from, give rise to, be caused by, arise from"
+        ]
+      }
+    ],
+    "sentence_structures": {
+      "items": [
+        {
+          "id": "b5l5-s001",
+          "sentence": "The magnificence of Venice, which was built on the sea more than a thousand years ago, *sets* it apart from any other city in the world.",
+          "type": "complex",
+          "pattern": "S + Relative clause (which...) + Vt (Phrasal verb) + O + C"
+        },
+        {
+          "id": "b5l5-s002",
+          "sentence": "A prominent center of commerce in its early days, this Italian city *depended* largely on sea trade.",
+          "type": "simple",
+          "pattern": "Participial phrase + S + Vi + Adverb + Prepositional phrase"
+        },
+        {
+          "id": "b5l5-s003",
+          "sentence": "Today, Venice's tranquil lagoons, ancient bridges, and vast web of canals *attract* tens of millions of visitors every year.",
+          "type": "simple",
+          "pattern": "S (Compound subject) + Vt + O + Adverbial phrase"
+        },
+        {
+          "id": "b5l5-s004",
+          "sentence": "In recent years, however, Venice *has become* a city at risk, sinking and flooding as a result of both natural conditions and human activities.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vl + C + Participial phrase"
+        },
+        {
+          "id": "b5l5-s005",
+          "sentence": "Flooding in Venice *results* from two natural factors.",
+          "type": "simple",
+          "pattern": "S + Vi + Prepositional phrase"
+        },
+        {
+          "id": "b5l5-s006",
+          "sentence": "One *is* acqua alta, which literally means \"high water.\"",
+          "type": "complex",
+          "pattern": "S + Vl + C + Relative clause (which...)"
+        },
+        {
+          "id": "b5l5-s007",
+          "sentence": "Acqua alta commonly *occurs* in winter, when a combination of high tides, strong winds, and large waves *causes* a huge volume of water to surge into the city.",
+          "type": "complex",
+          "pattern": "S + Vi + Adverbial phrase + Adverbial clause (when...)"
+        },
+        {
+          "id": "b5l5-s008",
+          "sentence": "This, as one would expect, greatly *increases* the likelihood of flooding.",
+          "type": "simple",
+          "pattern": "S + Adverb + Vt + O"
+        },
+        {
+          "id": "b5l5-s009",
+          "sentence": "The other factor *is* natural subsidence.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b5l5-s010",
+          "sentence": "Venice *was constructed* on marshland and *lacks* a solid, stable foundation.",
+          "type": "simple",
+          "pattern": "S + Vi / Vt (Compound predicate) + Prepositional phrase / O"
+        },
+        {
+          "id": "b5l5-s011",
+          "sentence": "In consequence, the city's buildings *have sunk* over time.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vi + Adverbial phrase"
+        },
+        {
+          "id": "b5l5-s012",
+          "sentence": "Venice's subsidence *is* also due to its location on top of the Adriatic Plate, which is gradually shifting beneath the Apennine Mountains.",
+          "type": "complex",
+          "pattern": "S + Vl + C + Relative clause (which...)"
+        },
+        {
+          "id": "b5l5-s013",
+          "sentence": "This shift *is causing* the land that Venice sits on to drop even further in elevation.",
+          "type": "complex",
+          "pattern": "S + Vt + O with Relative clause (that...) + Infinitival phrase"
+        },
+        {
+          "id": "b5l5-s014",
+          "sentence": "In addition to these natural forces, human actions also *threaten* Venice.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + O"
+        },
+        {
+          "id": "b5l5-s015",
+          "sentence": "In the 1930s, for industrial purposes, people *began* to pump out the water that helped to sustain and support this floating city.",
+          "type": "complex",
+          "pattern": "Adverbial phrases + S + Vi + Infinitival O + Relative clause (that...)"
+        },
+        {
+          "id": "b5l5-s016",
+          "sentence": "This activity *caused* the rate of subsidence to accelerate dramatically throughout the rest of the 20th century.",
+          "type": "simple",
+          "pattern": "S + Vt + O + Infinitival complement"
+        },
+        {
+          "id": "b5l5-s017",
+          "sentence": "Although pumping water was banned in the 1970s, considerable damage *had already been done*.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Although...) + S + Passive verb phrase"
+        },
+        {
+          "id": "b5l5-s018",
+          "sentence": "It *is estimated* that Venice has sunk by about 25 centimeters in the past century alone.",
+          "type": "complex",
+          "pattern": "Passive reporting structure + Noun clause (that...)"
+        },
+        {
+          "id": "b5l5-s019",
+          "sentence": "As if land subsidence were not a serious enough problem, the city also *has to contend with* the effects of climate change.",
+          "type": "complex",
+          "pattern": "Adverbial clause (As if...) + S + Vt (Phrasal verb) + O"
+        },
+        {
+          "id": "b5l5-s020",
+          "sentence": "Since the start of the Industrial Revolution, humans *have burned* vast quantities of fossil fuels and thus *have released* excessive carbon dioxide into the atmosphere.",
+          "type": "complex",
+          "pattern": "Adverbial phrase + S + Vt / Vt (Compound predicate) + Compound O"
+        },
+        {
+          "id": "b5l5-s021",
+          "sentence": "This process *has led* to global warming, which in turn has resulted in the melting of the polar ice caps and rising sea levels around the world.",
+          "type": "complex",
+          "pattern": "S + Vi + Prepositional phrase + Relative clause (which...)"
+        },
+        {
+          "id": "b5l5-s022",
+          "sentence": "Estimates that the overall water level in Venice will rise by as much as 53 centimeters by 2100 *appear* to confirm that climate change is having a very serious and dangerous impact indeed.",
+          "type": "complex",
+          "pattern": "S + Noun clause (that...) + Vi + Infinitival phrase + Noun clause (that...)"
+        },
+        {
+          "id": "b5l5-s023",
+          "sentence": "The natural factors and human actions mentioned *have combined* to cause frequent flooding in Venice, and the situation *is* only getting worse.",
+          "type": "compound",
+          "pattern": "S + Vi + Infinitival phrase + and + S + Vl + C"
+        },
+        {
+          "id": "b5l5-s024",
+          "sentence": "As a matter of fact, in the past century alone, the incidence of flooding *has increased* from fewer than 10 times a year to more than 60!",
+          "type": "simple",
+          "pattern": "Adverbial phrases + S + Vi + Prepositional phrases"
+        },
+        {
+          "id": "b5l5-s025",
+          "sentence": "If this scenario seems hard to imagine, *take* a glimpse back in history.",
+          "type": "complex",
+          "pattern": "Adverbial clause (If...) + Imperative sentence"
+        },
+        {
+          "id": "b5l5-s026",
+          "sentence": "In November 1966, a high tide *swept* into Venice, causing a flood that reached an extraordinary height of 194 centimeters and submerged the city for 22 hours.",
+          "type": "complex",
+          "pattern": "Adverbial phrase + S + Vi + Participial phrase + Relative clause (that...) with compound verbs"
+        },
+        {
+          "id": "b5l5-s027",
+          "sentence": "This flood, the highest on record, *was nearly matched* in 2019, when the water level rose to 187 centimeters.",
+          "type": "complex",
+          "pattern": "S + Appositive phrase + Passive verb phrase + Adverbial clause (when...)"
+        },
+        {
+          "id": "b5l5-s028",
+          "sentence": "Although this latter instance of flooding was not quite as severe as the 1966 event, it *should be noted* that it marked the first of five instances that year when flood waters in the city reached heights of over 140 centimeters.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Although...) + Passive reporting structure + Noun clause (that...) + Relative clause (when...)"
+        },
+        {
+          "id": "b5l5-s029",
+          "sentence": "In response, the Italian government *has introduced* the MOSE, a system of movable barriers to block seawater during high tides.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vt + O + Appositive phrase"
+        },
+        {
+          "id": "b5l5-s030",
+          "sentence": "As the world's sea levels continue to rise, largely owing to human actions, the outlook for Venice *remains* uncertain despite ongoing protective efforts.",
+          "type": "complex",
+          "pattern": "Adverbial clause (As...) + S + Vl + C + Prepositional phrase"
+        },
+        {
+          "id": "b5l5-s031",
+          "sentence": "Indeed, the case of Venice *offers* a test for humanity - a test of whether we can make the joint efforts needed to curb global warming and prevent the environment from being destroyed.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Appositive phrase + Noun clause (whether...) + Infinitival phrases"
+        },
+        {
+          "id": "b5l5-s032",
+          "sentence": "Such efforts *are* far from being the responsibility of only individual governments or groups.",
+          "type": "simple",
+          "pattern": "S + Vl + C + Prepositional phrase"
+        },
+        {
+          "id": "b5l5-s033",
+          "sentence": "Instead, they *require* all humans to acknowledge what is happening and to work toward the common goal of preserving our beloved Earth for future generations.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Infinitival phrases + Noun clause (what...)"
+        }
+      ]
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}
