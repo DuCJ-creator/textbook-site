@@ -1,0 +1,2169 @@
+{
+  "book": "B3",
+  "lesson": "L7",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b3l7-v01",
+        "base": "theory",
+        "verb": [
+          {
+            "en": "theorize",
+            "zh": "建立理論；推測",
+            "example": "Scientists theorize that the lake formed after an eruption."
+          }
+        ],
+        "noun": [
+          {
+            "en": "theory",
+            "zh": "理論；學說；推測",
+            "example": "The experiment supports the theory."
+          },
+          {
+            "en": "theorist",
+            "zh": "理論家；理論研究者",
+            "example": "The theorist proposed a new model of learning."
+          }
+        ],
+        "adj": [
+          {
+            "en": "theoretical",
+            "zh": "理論的；假設的",
+            "example": "The course covers both practical and theoretical issues."
+          }
+        ],
+        "adv": [
+          {
+            "en": "theoretically",
+            "zh": "理論上；假設上",
+            "example": "The plan is theoretically possible."
+          }
+        ]
+      },
+      {
+        "id": "b3l7-v02",
+        "base": "psychology",
+        "verb": [],
+        "noun": [
+          {
+            "en": "psychology",
+            "zh": "心理學；心理狀態",
+            "example": "She studies psychology at university."
+          },
+          {
+            "en": "psychologist",
+            "zh": "心理學家；心理師",
+            "example": "The psychologist interviewed the participants."
+          }
+        ],
+        "adj": [
+          {
+            "en": "psychological",
+            "zh": "心理的；心理學的",
+            "example": "Stress can have psychological effects."
+          }
+        ],
+        "adv": [
+          {
+            "en": "psychologically",
+            "zh": "心理上；從心理學角度",
+            "example": "The experience affected him psychologically."
+          }
+        ]
+      },
+      {
+        "id": "b3l7-v03",
+        "base": "demonstrate",
+        "verb": [
+          {
+            "en": "demonstrate",
+            "zh": "示範；證明；展示",
+            "example": "The instructor demonstrated how to use the equipment."
+          }
+        ],
+        "noun": [
+          {
+            "en": "demonstration",
+            "zh": "示範；證明；示威",
+            "example": "The chef gave a cooking demonstration."
+          }
+        ],
+        "adj": [
+          {
+            "en": "demonstrative",
+            "zh": "善於表達感情的；示範性的；指示的",
+            "example": "She is warm and demonstrative with her family."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l7-v04",
+        "base": "interpret",
+        "verb": [
+          {
+            "en": "interpret",
+            "zh": "解釋；詮釋；口譯",
+            "example": "Different readers may interpret the poem differently."
+          }
+        ],
+        "noun": [
+          {
+            "en": "interpretation",
+            "zh": "解釋；詮釋；口譯",
+            "example": "Her interpretation of the data was convincing."
+          },
+          {
+            "en": "interpreter",
+            "zh": "口譯員；解釋者；直譯器",
+            "example": "An interpreter translated the speaker's remarks."
+          }
+        ],
+        "adj": [
+          {
+            "en": "interpretable",
+            "zh": "可解釋的；可詮釋的",
+            "example": "The results are interpretable in several ways."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l7-v05",
+        "base": "stiff",
+        "verb": [],
+        "noun": [
+          {
+            "en": "stiffness",
+            "zh": "僵硬；硬度；拘謹",
+            "example": "Stretching can reduce muscle stiffness."
+          }
+        ],
+        "adj": [
+          {
+            "en": "stiff",
+            "zh": "僵硬的；堅硬的；不自然的",
+            "example": "My shoulders feel stiff after the long flight."
+          }
+        ],
+        "adv": [
+          {
+            "en": "stiffly",
+            "zh": "僵硬地；生硬地；拘謹地",
+            "example": "He walked stiffly after the injury."
+          }
+        ]
+      },
+      {
+        "id": "b3l7-v06",
+        "base": "scratch",
+        "verb": [
+          {
+            "en": "scratch",
+            "zh": "抓；刮；搔；取消",
+            "example": "Be careful not to scratch the screen."
+          }
+        ],
+        "noun": [
+          {
+            "en": "scratch",
+            "zh": "刮痕；抓痕；搔癢",
+            "example": "There is a small scratch on the table."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l7-v07",
+        "base": "exhibit",
+        "verb": [
+          {
+            "en": "exhibit",
+            "zh": "展示；表現；展出",
+            "example": "The museum will exhibit local artwork."
+          }
+        ],
+        "noun": [
+          {
+            "en": "exhibition",
+            "zh": "展覽；展示；表現",
+            "example": "The photography exhibition opens tomorrow."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l7-v08",
+        "base": "gesture",
+        "verb": [
+          {
+            "en": "gesture",
+            "zh": "用手勢表示；示意",
+            "example": "She gestured toward the empty chair."
+          }
+        ],
+        "noun": [
+          {
+            "en": "gesture",
+            "zh": "手勢；姿態；表示",
+            "example": "Offering help was a kind gesture."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l7-v09",
+        "base": "conscious",
+        "verb": [],
+        "noun": [
+          {
+            "en": "consciousness",
+            "zh": "意識；知覺；覺悟",
+            "example": "The patient slowly regained consciousness."
+          },
+          {
+            "en": "unconsciousness",
+            "zh": "無意識；昏迷",
+            "example": "The fall caused a brief period of unconsciousness."
+          }
+        ],
+        "adj": [
+          {
+            "en": "conscious",
+            "zh": "有意識的；察覺的；刻意的",
+            "example": "She was conscious of the risks."
+          },
+          {
+            "en": "unconscious",
+            "zh": "失去知覺的；無意識的",
+            "example": "The injured driver was unconscious."
+          },
+          {
+            "en": "subconscious",
+            "zh": "潛意識的；下意識的",
+            "example": "Subconscious fears may influence behavior."
+          }
+        ],
+        "adv": [
+          {
+            "en": "consciously",
+            "zh": "有意識地；刻意地",
+            "example": "He consciously slowed his breathing."
+          },
+          {
+            "en": "unconsciously",
+            "zh": "無意識地；不知不覺地",
+            "example": "She unconsciously tapped her foot."
+          },
+          {
+            "en": "subconsciously",
+            "zh": "潛意識地；下意識地",
+            "example": "We may subconsciously copy other people's gestures."
+          }
+        ]
+      },
+      {
+        "id": "b3l7-v10",
+        "base": "observe",
+        "verb": [
+          {
+            "en": "observe",
+            "zh": "觀察；注意到；遵守",
+            "example": "Researchers observed the animals for six months."
+          }
+        ],
+        "noun": [
+          {
+            "en": "observer",
+            "zh": "觀察者；觀測員；旁觀者",
+            "example": "An independent observer attended the meeting."
+          },
+          {
+            "en": "observation",
+            "zh": "觀察；觀察結果；意見",
+            "example": "The conclusion is based on careful observation."
+          },
+          {
+            "en": "observatory",
+            "zh": "天文臺；觀測站",
+            "example": "The observatory tracks distant stars."
+          }
+        ],
+        "adj": [
+          {
+            "en": "observational",
+            "zh": "觀察的；以觀察為基礎的",
+            "example": "The researchers conducted an observational study."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l7-v11",
+        "base": "reverse",
+        "verb": [
+          {
+            "en": "reverse",
+            "zh": "逆轉；倒車；撤銷",
+            "example": "The court reversed the earlier decision."
+          }
+        ],
+        "noun": [
+          {
+            "en": "reverse",
+            "zh": "相反情況；背面；倒檔",
+            "example": "The reverse of the coin shows a bird."
+          }
+        ],
+        "adj": [
+          {
+            "en": "reverse",
+            "zh": "相反的；反向的；背面的",
+            "example": "Follow the steps in reverse order."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l7-v12",
+        "base": "signify",
+        "verb": [
+          {
+            "en": "signify",
+            "zh": "表示；象徵；意味著",
+            "example": "A red light signifies danger."
+          }
+        ],
+        "noun": [
+          {
+            "en": "significance",
+            "zh": "重要性；意義；顯著性",
+            "example": "The discovery has great scientific significance."
+          }
+        ],
+        "adj": [
+          {
+            "en": "significant",
+            "zh": "重要的；顯著的；有意義的",
+            "example": "The study found a significant improvement."
+          }
+        ],
+        "adv": [
+          {
+            "en": "significantly",
+            "zh": "顯著地；大幅地；意味深長地",
+            "example": "Costs decreased significantly last year."
+          }
+        ]
+      },
+      {
+        "id": "b3l7-v13",
+        "base": "initial",
+        "verb": [
+          {
+            "en": "initialize",
+            "zh": "初始化；設定初始值",
+            "example": "The program initializes the system automatically."
+          }
+        ],
+        "noun": [
+          {
+            "en": "initial",
+            "zh": "姓名首字母；首字母",
+            "example": "Write your initials at the bottom of each page."
+          }
+        ],
+        "adj": [
+          {
+            "en": "initial",
+            "zh": "最初的；開始的；首字母的",
+            "example": "The initial results were encouraging."
+          }
+        ],
+        "adv": [
+          {
+            "en": "initially",
+            "zh": "起初；最初",
+            "example": "Initially, the plan seemed too expensive."
+          }
+        ]
+      },
+      {
+        "id": "b3l7-v14",
+        "base": "glance",
+        "verb": [
+          {
+            "en": "glance",
+            "zh": "瞥一眼；快速查看",
+            "example": "She glanced at the clock."
+          }
+        ],
+        "noun": [
+          {
+            "en": "glance",
+            "zh": "一瞥；快速查看",
+            "example": "At first glance, the two images look identical."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l7-v15",
+        "base": "automatic",
+        "verb": [
+          {
+            "en": "automate",
+            "zh": "使自動化",
+            "example": "The factory plans to automate the packing process."
+          }
+        ],
+        "noun": [
+          {
+            "en": "automation",
+            "zh": "自動化；自動控制",
+            "example": "Automation has reduced repetitive work."
+          }
+        ],
+        "adj": [
+          {
+            "en": "automatic",
+            "zh": "自動的；無意識的；必然的",
+            "example": "The doors have an automatic locking system."
+          }
+        ],
+        "adv": [
+          {
+            "en": "automatically",
+            "zh": "自動地；無意識地",
+            "example": "The lights turn off automatically."
+          }
+        ]
+      },
+      {
+        "id": "b3l7-v16",
+        "base": "track",
+        "verb": [
+          {
+            "en": "track",
+            "zh": "追蹤；記錄；循跡",
+            "example": "The app tracks daily exercise."
+          }
+        ],
+        "noun": [
+          {
+            "en": "track",
+            "zh": "軌道；跑道；蹤跡；曲目",
+            "example": "The runners waited beside the track."
+          }
+        ],
+        "adj": [
+          {
+            "en": "trackable",
+            "zh": "可追蹤的；可查詢進度的",
+            "example": "Each package has a trackable code."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l7-v17",
+        "base": "adore",
+        "verb": [
+          {
+            "en": "adore",
+            "zh": "熱愛；喜愛；崇拜",
+            "example": "The children adore their new puppy."
+          }
+        ],
+        "noun": [],
+        "adj": [
+          {
+            "en": "adorable",
+            "zh": "可愛的；討人喜歡的",
+            "example": "The baby panda looks adorable."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l7-v18",
+        "base": "affection",
+        "verb": [],
+        "noun": [
+          {
+            "en": "affection",
+            "zh": "喜愛；感情；愛意",
+            "example": "She showed great affection for her grandparents."
+          }
+        ],
+        "adj": [
+          {
+            "en": "affectionate",
+            "zh": "深情的；親愛的；充滿愛意的",
+            "example": "The dog is friendly and affectionate."
+          }
+        ],
+        "adv": [
+          {
+            "en": "affectionately",
+            "zh": "深情地；親切地",
+            "example": "He affectionately called her his little star."
+          }
+        ]
+      },
+      {
+        "id": "b3l7-v19",
+        "base": "interact",
+        "verb": [
+          {
+            "en": "interact",
+            "zh": "互動；相互作用",
+            "example": "Students interact with the teacher online."
+          }
+        ],
+        "noun": [
+          {
+            "en": "interaction",
+            "zh": "互動；相互作用",
+            "example": "Social interaction supports children's development."
+          }
+        ],
+        "adj": [
+          {
+            "en": "interactive",
+            "zh": "互動式的；相互作用的",
+            "example": "The museum has an interactive science exhibit."
+          }
+        ],
+        "adv": [
+          {
+            "en": "interactively",
+            "zh": "互動地；以互動方式",
+            "example": "The lesson allows students to learn interactively."
+          }
+        ]
+      },
+      {
+        "id": "b3l7-v20",
+        "base": "mean",
+        "verb": [
+          {
+            "en": "mean",
+            "zh": "意思是；意指；打算",
+            "example": "What does this symbol mean?"
+          }
+        ],
+        "noun": [
+          {
+            "en": "mean",
+            "zh": "平均數；中間值；中庸",
+            "example": "The mean of the five scores is eighty."
+          },
+          {
+            "en": "meaning",
+            "zh": "意思；意義；含義",
+            "example": "The word has several different meanings."
+          }
+        ],
+        "adj": [
+          {
+            "en": "mean",
+            "zh": "刻薄的；吝嗇的；平均的",
+            "example": "It was mean of him to laugh at her mistake."
+          },
+          {
+            "en": "meaningful",
+            "zh": "有意義的；意味深長的",
+            "example": "The volunteers made a meaningful contribution."
+          },
+          {
+            "en": "meaningless",
+            "zh": "無意義的；沒有價值的",
+            "example": "The numbers are meaningless without context."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l7-v21",
+        "base": "fellow",
+        "verb": [],
+        "noun": [
+          {
+            "en": "fellow",
+            "zh": "同伴；同事；傢伙；研究員",
+            "example": "She discussed the project with her fellows."
+          },
+          {
+            "en": "fellowship",
+            "zh": "友誼；團體；研究獎助金",
+            "example": "He received a fellowship to study abroad."
+          }
+        ],
+        "adj": [
+          {
+            "en": "fellow",
+            "zh": "同伴的；同事的；同類的",
+            "example": "Please welcome our fellow students."
+          }
+        ],
+        "adv": []
+      }
+    ]
+  },
+  "phrases": {
+    "items": [
+      {
+        "id": "b3l7-p001",
+        "phrase": "account for",
+        "pos": "ph.",
+        "zh": "佔；解釋",
+        "example_en": "The fee accounts for half the cost.",
+        "example_zh": "這項費用佔成本的一半。"
+      },
+      {
+        "id": "b3l7-p002",
+        "phrase": "first proposed by",
+        "pos": "ph.",
+        "zh": "最初由……提出",
+        "example_en": "The theory was first proposed by a young scientist.",
+        "example_zh": "這項理論最初由一位年輕科學家提出。"
+      },
+      {
+        "id": "b3l7-p003",
+        "phrase": "emotional communication",
+        "pos": "ph.",
+        "zh": "情感溝通",
+        "example_en": "Good emotional communication builds trust.",
+        "example_zh": "良好的情感溝通建立信任。"
+      },
+      {
+        "id": "b3l7-p004",
+        "phrase": "body language",
+        "pos": "ph.",
+        "zh": "肢體語言",
+        "example_en": "Body language can reveal feelings.",
+        "example_zh": "肢體語言可以透露感受。"
+      },
+      {
+        "id": "b3l7-p005",
+        "phrase": "interpret a message",
+        "pos": "ph.",
+        "zh": "解讀訊息",
+        "example_en": "She interpreted the message differently.",
+        "example_zh": "她以不同方式解讀訊息。"
+      },
+      {
+        "id": "b3l7-p006",
+        "phrase": "according to",
+        "pos": "ph.",
+        "zh": "根據",
+        "example_en": "According to the report, sales rose.",
+        "example_zh": "根據報告，銷售額上升了。"
+      },
+      {
+        "id": "b3l7-p007",
+        "phrase": "the only witness to",
+        "pos": "ph.",
+        "zh": "……的唯一目擊者",
+        "example_en": "He was the only witness to the accident.",
+        "example_zh": "他是這起事故的唯一目擊者。"
+      },
+      {
+        "id": "b3l7-p008",
+        "phrase": "except for",
+        "pos": "ph.",
+        "zh": "除了……之外",
+        "example_en": "The room was empty except for a chair.",
+        "example_zh": "房間裡除了椅子之外空無一物。"
+      },
+      {
+        "id": "b3l7-p009",
+        "phrase": "have an elective class",
+        "pos": "ph.",
+        "zh": "修習選修課",
+        "example_en": "I have an elective class on Fridays.",
+        "example_zh": "我星期五有一堂選修課。"
+      },
+      {
+        "id": "b3l7-p010",
+        "phrase": "sit in the back row",
+        "pos": "ph.",
+        "zh": "坐在後排",
+        "example_en": "She sat in the back row.",
+        "example_zh": "她坐在後排。"
+      },
+      {
+        "id": "b3l7-p011",
+        "phrase": "without uttering a word",
+        "pos": "ph.",
+        "zh": "一言不發",
+        "example_en": "He left without uttering a word.",
+        "example_zh": "他一言不發地離開了。"
+      },
+      {
+        "id": "b3l7-p012",
+        "phrase": "in contrast",
+        "pos": "ph.",
+        "zh": "相較之下",
+        "example_en": "In contrast, the second plan is cheaper.",
+        "example_zh": "相較之下，第二個方案較便宜。"
+      },
+      {
+        "id": "b3l7-p013",
+        "phrase": "brag about",
+        "pos": "ph.",
+        "zh": "吹噓……",
+        "example_en": "He likes to brag about his grades.",
+        "example_zh": "他喜歡吹噓自己的成績。"
+      },
+      {
+        "id": "b3l7-p014",
+        "phrase": "roll one’s eyes at",
+        "pos": "ph.",
+        "zh": "對……翻白眼",
+        "example_en": "She rolled her eyes at his excuse.",
+        "example_zh": "她對他的藉口翻白眼。"
+      },
+      {
+        "id": "b3l7-p015",
+        "phrase": "rethink the value of",
+        "pos": "ph.",
+        "zh": "重新思考……的價值",
+        "example_en": "We should rethink the value of excessive homework.",
+        "example_zh": "我們應重新思考過多作業的價值。"
+      },
+      {
+        "id": "b3l7-p016",
+        "phrase": "a study conducted by",
+        "pos": "ph.",
+        "zh": "由……進行的研究",
+        "example_en": "A study conducted by the university found a link.",
+        "example_zh": "由該大學進行的研究發現了關聯。"
+      },
+      {
+        "id": "b3l7-p017",
+        "phrase": "education expert",
+        "pos": "ph.",
+        "zh": "教育專家",
+        "example_en": "An education expert offered advice.",
+        "example_zh": "一位教育專家提供建議。"
+      },
+      {
+        "id": "b3l7-p018",
+        "phrase": "excessive homework",
+        "pos": "ph.",
+        "zh": "過多的家庭作業",
+        "example_en": "Excessive homework can reduce motivation.",
+        "example_zh": "過多家庭作業可能降低動機。"
+      },
+      {
+        "id": "b3l7-p019",
+        "phrase": "lead to burnout and reduced motivation",
+        "pos": "ph.",
+        "zh": "導致倦怠及動機降低",
+        "example_en": "Long hours can lead to burnout and reduced motivation.",
+        "example_zh": "長時間工作可能導致倦怠及動機降低。"
+      },
+      {
+        "id": "b3l7-p020",
+        "phrase": "be questioned",
+        "pos": "ph.",
+        "zh": "受到質疑",
+        "example_en": "The decision is being questioned.",
+        "example_zh": "這項決定受到質疑。"
+      },
+      {
+        "id": "b3l7-p021",
+        "phrase": "cut down on assignments",
+        "pos": "ph.",
+        "zh": "減少作業",
+        "example_en": "The teacher cut down on assignments.",
+        "example_zh": "老師減少了作業。"
+      },
+      {
+        "id": "b3l7-p022",
+        "phrase": "explore personal interests",
+        "pos": "ph.",
+        "zh": "探索個人興趣",
+        "example_en": "Students need time to explore personal interests.",
+        "example_zh": "學生需要時間探索個人興趣。"
+      },
+      {
+        "id": "b3l7-p023",
+        "phrase": "tell the truth",
+        "pos": "ph.",
+        "zh": "說實話",
+        "example_en": "Please tell the truth.",
+        "example_zh": "請說實話。"
+      },
+      {
+        "id": "b3l7-p024",
+        "phrase": "a telltale sign",
+        "pos": "ph.",
+        "zh": "明顯的跡象",
+        "example_en": "A red face was a telltale sign of embarrassment.",
+        "example_zh": "臉紅是尷尬的明顯跡象。"
+      },
+      {
+        "id": "b3l7-p025",
+        "phrase": "make stiff body movements",
+        "pos": "ph.",
+        "zh": "做僵硬的身體動作",
+        "example_en": "The robot made stiff body movements.",
+        "example_zh": "機器人做出僵硬的身體動作。"
+      },
+      {
+        "id": "b3l7-p026",
+        "phrase": "stay close to",
+        "pos": "ph.",
+        "zh": "靠近；與……保持親近",
+        "example_en": "Stay close to your guide.",
+        "example_zh": "跟緊你的導遊。"
+      },
+      {
+        "id": "b3l7-p027",
+        "phrase": "rather than",
+        "pos": "ph.",
+        "zh": "而不是",
+        "example_en": "Walk rather than drive.",
+        "example_zh": "走路而不是開車。"
+      },
+      {
+        "id": "b3l7-p028",
+        "phrase": "move in an outward direction",
+        "pos": "ph.",
+        "zh": "向外移動",
+        "example_en": "The branches move in an outward direction.",
+        "example_zh": "樹枝向外伸展。"
+      },
+      {
+        "id": "b3l7-p029",
+        "phrase": "can’t help but",
+        "pos": "ph.",
+        "zh": "忍不住……",
+        "example_en": "I can’t help but smile.",
+        "example_zh": "我忍不住微笑。"
+      },
+      {
+        "id": "b3l7-p030",
+        "phrase": "without being conscious of",
+        "pos": "ph.",
+        "zh": "沒有意識到……",
+        "example_en": "He spoke without being conscious of the danger.",
+        "example_zh": "他沒有意識到危險就說話了。"
+      },
+      {
+        "id": "b3l7-p031",
+        "phrase": "as well",
+        "pos": "ph.",
+        "zh": "也；同樣地",
+        "example_en": "She joined us as well.",
+        "example_zh": "她也加入我們。"
+      },
+      {
+        "id": "b3l7-p032",
+        "phrase": "tell falsehoods",
+        "pos": "ph.",
+        "zh": "說謊",
+        "example_en": "Honest people do not tell falsehoods.",
+        "example_zh": "誠實的人不說謊。"
+      },
+      {
+        "id": "b3l7-p033",
+        "phrase": "left-handed",
+        "pos": "ph.",
+        "zh": "左撇子的",
+        "example_en": "My brother is left-handed.",
+        "example_zh": "我哥哥是左撇子。"
+      },
+      {
+        "id": "b3l7-p034",
+        "phrase": "the reverse",
+        "pos": "ph.",
+        "zh": "相反情況",
+        "example_en": "The reverse is also true.",
+        "example_zh": "相反情況也成立。"
+      },
+      {
+        "id": "b3l7-p035",
+        "phrase": "apologize for one’s mistake",
+        "pos": "ph.",
+        "zh": "為某人的錯誤道歉",
+        "example_en": "He apologized for his mistake.",
+        "example_zh": "他為自己的錯誤道歉。"
+      },
+      {
+        "id": "b3l7-p036",
+        "phrase": "stay alert",
+        "pos": "ph.",
+        "zh": "保持警覺",
+        "example_en": "Stay alert near the road.",
+        "example_zh": "在道路附近保持警覺。"
+      },
+      {
+        "id": "b3l7-p037",
+        "phrase": "slippery trail",
+        "pos": "ph.",
+        "zh": "滑溜的步道",
+        "example_en": "The rain made the trail slippery.",
+        "example_zh": "雨水使步道滑溜。"
+      },
+      {
+        "id": "b3l7-p038",
+        "phrase": "owing to",
+        "pos": "ph.",
+        "zh": "由於",
+        "example_en": "The game was canceled owing to rain.",
+        "example_zh": "比賽因下雨而取消。"
+      },
+      {
+        "id": "b3l7-p039",
+        "phrase": "glance in one’s direction",
+        "pos": "ph.",
+        "zh": "朝某人的方向瞥一眼",
+        "example_en": "She glanced in my direction.",
+        "example_zh": "她朝我的方向瞥了一眼。"
+      },
+      {
+        "id": "b3l7-p040",
+        "phrase": "reveal the secret",
+        "pos": "ph.",
+        "zh": "揭露秘密",
+        "example_en": "He refused to reveal the secret.",
+        "example_zh": "他拒絕揭露秘密。"
+      },
+      {
+        "id": "b3l7-p041",
+        "phrase": "remain in question",
+        "pos": "ph.",
+        "zh": "仍存疑問",
+        "example_en": "The cause remains in question.",
+        "example_zh": "原因仍存疑問。"
+      },
+      {
+        "id": "b3l7-p042",
+        "phrase": "gray-haired lady",
+        "pos": "ph.",
+        "zh": "灰髮女士",
+        "example_en": "A gray-haired lady helped me.",
+        "example_zh": "一位灰髮女士幫助我。"
+      },
+      {
+        "id": "b3l7-p043",
+        "phrase": "dance the waltz",
+        "pos": "ph.",
+        "zh": "跳華爾滋",
+        "example_en": "They danced the waltz together.",
+        "example_zh": "他們一起跳華爾滋。"
+      },
+      {
+        "id": "b3l7-p044",
+        "phrase": "ill-tempered man",
+        "pos": "ph.",
+        "zh": "脾氣暴躁的男人",
+        "example_en": "The ill-tempered man shouted loudly.",
+        "example_zh": "那個脾氣暴躁的男人大聲喊叫。"
+      },
+      {
+        "id": "b3l7-p045",
+        "phrase": "bad-tempered man",
+        "pos": "ph.",
+        "zh": "壞脾氣的男人",
+        "example_en": "A bad-tempered man complained at the counter.",
+        "example_zh": "一個壞脾氣的男人在櫃檯抱怨。"
+      },
+      {
+        "id": "b3l7-p046",
+        "phrase": "consume a lot of fuel",
+        "pos": "ph.",
+        "zh": "消耗大量燃料",
+        "example_en": "Old cars consume a lot of fuel.",
+        "example_zh": "老車消耗大量燃料。"
+      },
+      {
+        "id": "b3l7-p047",
+        "phrase": "an energy-efficient model",
+        "pos": "ph.",
+        "zh": "節能型號",
+        "example_en": "We chose an energy-efficient model.",
+        "example_zh": "我們選擇節能型號。"
+      },
+      {
+        "id": "b3l7-p048",
+        "phrase": "stand still",
+        "pos": "ph.",
+        "zh": "站著不動",
+        "example_en": "Please stand still for the photo.",
+        "example_zh": "拍照時請站著不動。"
+      },
+      {
+        "id": "b3l7-p049",
+        "phrase": "shed leaves",
+        "pos": "ph.",
+        "zh": "落葉",
+        "example_en": "The trees shed leaves in autumn.",
+        "example_zh": "樹木在秋天落葉。"
+      },
+      {
+        "id": "b3l7-p050",
+        "phrase": "endure the cold",
+        "pos": "ph.",
+        "zh": "忍受寒冷",
+        "example_en": "The hikers endured the cold.",
+        "example_zh": "健行者忍受寒冷。"
+      },
+      {
+        "id": "b3l7-p051",
+        "phrase": "take a deep breath",
+        "pos": "ph.",
+        "zh": "深呼吸",
+        "example_en": "Take a deep breath and relax.",
+        "example_zh": "深呼吸並放鬆。"
+      },
+      {
+        "id": "b3l7-p052",
+        "phrase": "step forward",
+        "pos": "ph.",
+        "zh": "向前一步",
+        "example_en": "She stepped forward to volunteer.",
+        "example_zh": "她向前一步當志工。"
+      },
+      {
+        "id": "b3l7-p053",
+        "phrase": "be connected to",
+        "pos": "ph.",
+        "zh": "與……相連",
+        "example_en": "The pipe is connected to the tank.",
+        "example_zh": "管子與水槽相連。"
+      },
+      {
+        "id": "b3l7-p054",
+        "phrase": "in the case of",
+        "pos": "ph.",
+        "zh": "在……的情況下",
+        "example_en": "In the case of fire, use the stairs.",
+        "example_zh": "發生火災時，請使用樓梯。"
+      },
+      {
+        "id": "b3l7-p055",
+        "phrase": "be attracted to",
+        "pos": "ph.",
+        "zh": "被……吸引",
+        "example_en": "Many tourists are attracted to the temple.",
+        "example_zh": "許多遊客被這座寺廟吸引。"
+      },
+      {
+        "id": "b3l7-p056",
+        "phrase": "under the circumstances",
+        "pos": "ph.",
+        "zh": "在這種情況下",
+        "example_en": "Under the circumstances, we left early.",
+        "example_zh": "在這種情況下，我們提早離開。"
+      },
+      {
+        "id": "b3l7-p057",
+        "phrase": "glance at sb. from a distance",
+        "pos": "ph.",
+        "zh": "從遠處瞥某人一眼",
+        "example_en": "She glanced at him from a distance.",
+        "example_zh": "她從遠處瞥了他一眼。"
+      },
+      {
+        "id": "b3l7-p058",
+        "phrase": "rest one’s eyes on",
+        "pos": "ph.",
+        "zh": "把目光停留在……",
+        "example_en": "His eyes rested on the painting.",
+        "example_zh": "他的目光停留在那幅畫上。"
+      },
+      {
+        "id": "b3l7-p059",
+        "phrase": "follow suit",
+        "pos": "ph.",
+        "zh": "跟著做",
+        "example_en": "Other stores followed suit.",
+        "example_zh": "其他商店也跟著做。"
+      },
+      {
+        "id": "b3l7-p060",
+        "phrase": "take a sip of",
+        "pos": "ph.",
+        "zh": "啜飲一口……",
+        "example_en": "Take a sip of the tea.",
+        "example_zh": "啜飲一口茶。"
+      },
+      {
+        "id": "b3l7-p061",
+        "phrase": "aside from",
+        "pos": "ph.",
+        "zh": "除了……之外",
+        "example_en": "Aside from math, he likes history.",
+        "example_zh": "除了數學之外，他喜歡歷史。"
+      },
+      {
+        "id": "b3l7-p062",
+        "phrase": "can’t help doing",
+        "pos": "ph.",
+        "zh": "忍不住做……",
+        "example_en": "She couldn’t help laughing.",
+        "example_zh": "她忍不住笑了。"
+      },
+      {
+        "id": "b3l7-p063",
+        "phrase": "point one’s feet toward",
+        "pos": "ph.",
+        "zh": "將腳尖指向……",
+        "example_en": "Point your feet toward the door.",
+        "example_zh": "把腳尖指向門。"
+      },
+      {
+        "id": "b3l7-p064",
+        "phrase": "the object of one’s affection",
+        "pos": "ph.",
+        "zh": "某人愛慕的對象",
+        "example_en": "He bought flowers for the object of his affection.",
+        "example_zh": "他為愛慕的對象買花。"
+      },
+      {
+        "id": "b3l7-p065",
+        "phrase": "stand close to",
+        "pos": "ph.",
+        "zh": "站得靠近……",
+        "example_en": "Please stand close to your partner.",
+        "example_zh": "請站得靠近你的夥伴。"
+      },
+      {
+        "id": "b3l7-p066",
+        "phrase": "convenient public transportation",
+        "pos": "ph.",
+        "zh": "便利的大眾運輸",
+        "example_en": "The city has convenient public transportation.",
+        "example_zh": "這座城市有便利的大眾運輸。"
+      },
+      {
+        "id": "b3l7-p067",
+        "phrase": "exotic food",
+        "pos": "ph.",
+        "zh": "異國食物",
+        "example_en": "The market offers exotic food.",
+        "example_zh": "市場提供異國食物。"
+      },
+      {
+        "id": "b3l7-p068",
+        "phrase": "be attracted to",
+        "pos": "ph.",
+        "zh": "被……吸引",
+        "example_en": "She was attracted to the bright colors.",
+        "example_zh": "她被鮮豔色彩吸引。"
+      },
+      {
+        "id": "b3l7-p069",
+        "phrase": "turn to sb. for advice",
+        "pos": "ph.",
+        "zh": "向某人尋求建議",
+        "example_en": "I turned to my teacher for advice.",
+        "example_zh": "我向老師尋求建議。"
+      },
+      {
+        "id": "b3l7-p070",
+        "phrase": "be in trouble",
+        "pos": "ph.",
+        "zh": "陷入麻煩",
+        "example_en": "Call me if you are in trouble.",
+        "example_zh": "如果你陷入麻煩就打給我。"
+      },
+      {
+        "id": "b3l7-p071",
+        "phrase": "on the way to school",
+        "pos": "ph.",
+        "zh": "在上學途中",
+        "example_en": "I met her on the way to school.",
+        "example_zh": "我在上學途中遇見她。"
+      },
+      {
+        "id": "b3l7-p072",
+        "phrase": "slightly more than normal",
+        "pos": "ph.",
+        "zh": "稍微超過正常值",
+        "example_en": "The temperature was slightly more than normal.",
+        "example_zh": "溫度稍微超過正常值。"
+      },
+      {
+        "id": "b3l7-p073",
+        "phrase": "stay up late",
+        "pos": "ph.",
+        "zh": "熬夜",
+        "example_en": "Do not stay up late before the test.",
+        "example_zh": "考試前不要熬夜。"
+      },
+      {
+        "id": "b3l7-p074",
+        "phrase": "historic temple",
+        "pos": "ph.",
+        "zh": "歷史悠久的寺廟",
+        "example_en": "We visited a historic temple.",
+        "example_zh": "我們參觀了一座歷史悠久的寺廟。"
+      },
+      {
+        "id": "b3l7-p075",
+        "phrase": "popular tourist spot",
+        "pos": "ph.",
+        "zh": "熱門觀光景點",
+        "example_en": "The bridge is a popular tourist spot.",
+        "example_zh": "這座橋是熱門觀光景點。"
+      },
+      {
+        "id": "b3l7-p076",
+        "phrase": "be known for",
+        "pos": "ph.",
+        "zh": "以……聞名",
+        "example_en": "The town is known for its seafood.",
+        "example_zh": "這個城鎮以海鮮聞名。"
+      },
+      {
+        "id": "b3l7-p077",
+        "phrase": "local street food",
+        "pos": "ph.",
+        "zh": "當地街頭小吃",
+        "example_en": "We tried local street food.",
+        "example_zh": "我們品嚐當地街頭小吃。"
+      },
+      {
+        "id": "b3l7-p078",
+        "phrase": "strike up a conversation with",
+        "pos": "ph.",
+        "zh": "與……攀談",
+        "example_en": "She struck up a conversation with a traveler.",
+        "example_zh": "她與一名旅客攀談。"
+      },
+      {
+        "id": "b3l7-p079",
+        "phrase": "brew coffee",
+        "pos": "ph.",
+        "zh": "沖泡咖啡",
+        "example_en": "He brews coffee every morning.",
+        "example_zh": "他每天早上沖泡咖啡。"
+      },
+      {
+        "id": "b3l7-p080",
+        "phrase": "previously mentioned points",
+        "pos": "ph.",
+        "zh": "先前提到的觀點",
+        "example_en": "The speaker reviewed the previously mentioned points.",
+        "example_zh": "演講者複習先前提到的觀點。"
+      },
+      {
+        "id": "b3l7-p081",
+        "phrase": "reveal the idea",
+        "pos": "ph.",
+        "zh": "揭示想法",
+        "example_en": "The final chapter reveals the idea.",
+        "example_zh": "最後一章揭示了這個想法。"
+      },
+      {
+        "id": "b3l7-p082",
+        "phrase": "interpret one’s thoughts and emotions",
+        "pos": "ph.",
+        "zh": "解讀某人的想法與情緒",
+        "example_en": "Art can interpret one’s thoughts and emotions.",
+        "example_zh": "藝術可以解讀某人的想法與情緒。"
+      },
+      {
+        "id": "b3l7-p083",
+        "phrase": "send out a signal",
+        "pos": "ph.",
+        "zh": "發出訊號",
+        "example_en": "The device sends out a signal.",
+        "example_zh": "這個裝置發出訊號。"
+      },
+      {
+        "id": "b3l7-p084",
+        "phrase": "best of all",
+        "pos": "ph.",
+        "zh": "最棒的是",
+        "example_en": "Best of all, the tickets were free.",
+        "example_zh": "最棒的是，票是免費的。"
+      },
+      {
+        "id": "b3l7-p085",
+        "phrase": "in the emergency room",
+        "pos": "ph.",
+        "zh": "在急診室",
+        "example_en": "He waited in the emergency room.",
+        "example_zh": "他在急診室等候。"
+      },
+      {
+        "id": "b3l7-p086",
+        "phrase": "stay focused",
+        "pos": "ph.",
+        "zh": "保持專注",
+        "example_en": "Stay focused on the task.",
+        "example_zh": "專注於工作。"
+      },
+      {
+        "id": "b3l7-p087",
+        "phrase": "get distracted by",
+        "pos": "ph.",
+        "zh": "被……分心",
+        "example_en": "She got distracted by her phone.",
+        "example_zh": "她被手機分心。"
+      },
+      {
+        "id": "b3l7-p088",
+        "phrase": "social distancing protocol",
+        "pos": "ph.",
+        "zh": "社交距離規範",
+        "example_en": "The school followed the social distancing protocol.",
+        "example_zh": "學校遵守社交距離規範。"
+      },
+      {
+        "id": "b3l7-p089",
+        "phrase": "impress sb. by",
+        "pos": "ph.",
+        "zh": "藉由……給某人留下深刻印象",
+        "example_en": "He impressed us by solving the puzzle.",
+        "example_zh": "他藉由解開謎題給我們留下深刻印象。"
+      },
+      {
+        "id": "b3l7-p090",
+        "phrase": "without leaving a single note",
+        "pos": "ph.",
+        "zh": "沒有留下任何字條",
+        "example_en": "She left without leaving a single note.",
+        "example_zh": "她離開時沒有留下任何字條。"
+      },
+      {
+        "id": "b3l7-p091",
+        "phrase": "avoid cultural mistakes",
+        "pos": "ph.",
+        "zh": "避免文化錯誤",
+        "example_en": "Learn local customs to avoid cultural mistakes.",
+        "example_zh": "學習當地習俗以避免文化錯誤。"
+      },
+      {
+        "id": "b3l7-p092",
+        "phrase": "an important tip",
+        "pos": "ph.",
+        "zh": "重要提示",
+        "example_en": "Here is an important tip for travelers.",
+        "example_zh": "這是給旅客的重要提示。"
+      },
+      {
+        "id": "b3l7-p093",
+        "phrase": "nonverbal cues",
+        "pos": "ph.",
+        "zh": "非語言線索",
+        "example_en": "We read nonverbal cues during conversation.",
+        "example_zh": "我們在對話中讀取非語言線索。"
+      },
+      {
+        "id": "b3l7-p094",
+        "phrase": "show respect",
+        "pos": "ph.",
+        "zh": "表示尊重",
+        "example_en": "Bow to show respect.",
+        "example_zh": "鞠躬以表示尊重。"
+      },
+      {
+        "id": "b3l7-p095",
+        "phrase": "make a better impression",
+        "pos": "ph.",
+        "zh": "留下更好的印象",
+        "example_en": "Smile to make a better impression.",
+        "example_zh": "微笑以留下更好的印象。"
+      },
+      {
+        "id": "b3l7-p096",
+        "phrase": "theory of evolution",
+        "pos": "ph.",
+        "zh": "演化論",
+        "example_en": "We studied the theory of evolution.",
+        "example_zh": "我們研究演化論。"
+      },
+      {
+        "id": "b3l7-p097",
+        "phrase": "literary theory",
+        "pos": "ph.",
+        "zh": "文學理論",
+        "example_en": "The course introduces literary theory.",
+        "example_zh": "這門課介紹文學理論。"
+      },
+      {
+        "id": "b3l7-p098",
+        "phrase": "works of literature",
+        "pos": "ph.",
+        "zh": "文學作品",
+        "example_en": "The library contains many works of literature.",
+        "example_zh": "圖書館收藏許多文學作品。"
+      },
+      {
+        "id": "b3l7-p099",
+        "phrase": "have a theory that…",
+        "pos": "ph.",
+        "zh": "有一個……的理論",
+        "example_en": "Scientists have a theory that the species migrated.",
+        "example_zh": "科學家有一個該物種遷徙的理論。"
+      },
+      {
+        "id": "b3l7-p100",
+        "phrase": "on a theoretical level",
+        "pos": "ph.",
+        "zh": "在理論層面上",
+        "example_en": "On a theoretical level, the plan works.",
+        "example_zh": "在理論層面上，這項計畫可行。"
+      },
+      {
+        "id": "b3l7-p101",
+        "phrase": "make sense",
+        "pos": "ph.",
+        "zh": "有道理；合理",
+        "example_en": "Your explanation makes sense.",
+        "example_zh": "你的解釋有道理。"
+      },
+      {
+        "id": "b3l7-p102",
+        "phrase": "major in psychology",
+        "pos": "ph.",
+        "zh": "主修心理學",
+        "example_en": "She majors in psychology.",
+        "example_zh": "她主修心理學。"
+      },
+      {
+        "id": "b3l7-p103",
+        "phrase": "child abuse",
+        "pos": "ph.",
+        "zh": "兒童虐待",
+        "example_en": "The law protects children from child abuse.",
+        "example_zh": "法律保護兒童免受虐待。"
+      },
+      {
+        "id": "b3l7-p104",
+        "phrase": "social anxiety",
+        "pos": "ph.",
+        "zh": "社交焦慮",
+        "example_en": "Social anxiety made meetings difficult.",
+        "example_zh": "社交焦慮使會議變得困難。"
+      },
+      {
+        "id": "b3l7-p105",
+        "phrase": "trust issues",
+        "pos": "ph.",
+        "zh": "信任問題",
+        "example_en": "Past experiences caused trust issues.",
+        "example_zh": "過去的經歷造成信任問題。"
+      },
+      {
+        "id": "b3l7-p106",
+        "phrase": "demonstrate much excitement and interest in",
+        "pos": "ph.",
+        "zh": "對……表現出高度興奮與興趣",
+        "example_en": "The children demonstrated much excitement and interest in science.",
+        "example_zh": "孩子們對科學表現出高度興奮與興趣。"
+      },
+      {
+        "id": "b3l7-p107",
+        "phrase": "electric scooter",
+        "pos": "ph.",
+        "zh": "電動滑板車",
+        "example_en": "He rides an electric scooter to work.",
+        "example_zh": "他騎電動滑板車上班。"
+      },
+      {
+        "id": "b3l7-p108",
+        "phrase": "as a demonstration of",
+        "pos": "ph.",
+        "zh": "作為……的示範",
+        "example_en": "She sang as a demonstration of her skill.",
+        "example_zh": "她唱歌作為自己技巧的示範。"
+      },
+      {
+        "id": "b3l7-p109",
+        "phrase": "give sb. a demonstration of",
+        "pos": "ph.",
+        "zh": "向某人示範……",
+        "example_en": "The coach gave us a demonstration of the move.",
+        "example_zh": "教練向我們示範這個動作。"
+      },
+      {
+        "id": "b3l7-p110",
+        "phrase": "attract much attention",
+        "pos": "ph.",
+        "zh": "吸引很多注意",
+        "example_en": "The new design attracted much attention.",
+        "example_zh": "新設計吸引很多注意。"
+      },
+      {
+        "id": "b3l7-p111",
+        "phrase": "have a different interpretation of",
+        "pos": "ph.",
+        "zh": "對……有不同解讀",
+        "example_en": "Readers have a different interpretation of the ending.",
+        "example_zh": "讀者對結局有不同解讀。"
+      },
+      {
+        "id": "b3l7-p112",
+        "phrase": "open to interpretation",
+        "pos": "ph.",
+        "zh": "可有不同解釋",
+        "example_en": "The poem is open to interpretation.",
+        "example_zh": "這首詩可以有不同解釋。"
+      },
+      {
+        "id": "b3l7-p113",
+        "phrase": "scratch an itchy mosquito bite",
+        "pos": "ph.",
+        "zh": "抓癢的蚊子叮咬處",
+        "example_en": "Try not to scratch an itchy mosquito bite.",
+        "example_zh": "盡量不要抓癢的蚊子叮咬處。"
+      },
+      {
+        "id": "b3l7-p114",
+        "phrase": "scratch one’s head",
+        "pos": "ph.",
+        "zh": "搔頭；困惑",
+        "example_en": "He scratched his head at the puzzle.",
+        "example_zh": "他對謎題感到困惑。"
+      },
+      {
+        "id": "b3l7-p115",
+        "phrase": "get one or two light scratches",
+        "pos": "ph.",
+        "zh": "有一兩道輕微刮痕",
+        "example_en": "The table got one or two light scratches.",
+        "example_zh": "桌子有一兩道輕微刮痕。"
+      },
+      {
+        "id": "b3l7-p116",
+        "phrase": "stray cat",
+        "pos": "ph.",
+        "zh": "流浪貓",
+        "example_en": "A stray cat sleeps near our door.",
+        "example_zh": "一隻流浪貓睡在我們門旁。"
+      },
+      {
+        "id": "b3l7-p117",
+        "phrase": "have sharp claws",
+        "pos": "ph.",
+        "zh": "有鋒利的爪子",
+        "example_en": "The cat has sharp claws.",
+        "example_zh": "這隻貓有鋒利的爪子。"
+      },
+      {
+        "id": "b3l7-p118",
+        "phrase": "exhibit one’s dislike for",
+        "pos": "ph.",
+        "zh": "表現出某人對……的厭惡",
+        "example_en": "He exhibited his dislike for loud music.",
+        "example_zh": "他表現出對吵鬧音樂的厭惡。"
+      },
+      {
+        "id": "b3l7-p119",
+        "phrase": "an exhibition of sth.",
+        "pos": "ph.",
+        "zh": "某物的展覽",
+        "example_en": "The museum held an exhibition of paintings.",
+        "example_zh": "博物館舉辦畫作展覽。"
+      },
+      {
+        "id": "b3l7-p120",
+        "phrase": "on exhibition",
+        "pos": "ph.",
+        "zh": "展出中",
+        "example_en": "The sculpture is on exhibition.",
+        "example_zh": "這座雕塑正在展出。"
+      },
+      {
+        "id": "b3l7-p121",
+        "phrase": "make a gesture at sb.",
+        "pos": "ph.",
+        "zh": "對某人做手勢",
+        "example_en": "She made a gesture at the driver.",
+        "example_zh": "她對駕駛做了手勢。"
+      },
+      {
+        "id": "b3l7-p122",
+        "phrase": "gesture politics",
+        "pos": "ph.",
+        "zh": "姿態政治",
+        "example_en": "Voters are tired of gesture politics.",
+        "example_zh": "選民厭倦了姿態政治。"
+      },
+      {
+        "id": "b3l7-p123",
+        "phrase": "be/become conscious of",
+        "pos": "ph.",
+        "zh": "意識到……",
+        "example_en": "He became conscious of the noise.",
+        "example_zh": "他意識到噪音。"
+      },
+      {
+        "id": "b3l7-p124",
+        "phrase": "health-conscious",
+        "pos": "ph.",
+        "zh": "注重健康的",
+        "example_en": "Health-conscious shoppers read labels.",
+        "example_zh": "注重健康的購物者會閱讀標籤。"
+      },
+      {
+        "id": "b3l7-p125",
+        "phrase": "regain consciousness",
+        "pos": "ph.",
+        "zh": "恢復意識",
+        "example_en": "The patient regained consciousness.",
+        "example_zh": "病人恢復了意識。"
+      },
+      {
+        "id": "b3l7-p126",
+        "phrase": "do CPR on sb.",
+        "pos": "ph.",
+        "zh": "對某人施行心肺復甦術",
+        "example_en": "The nurse did CPR on the victim.",
+        "example_zh": "護理師對受害者施行心肺復甦術。"
+      },
+      {
+        "id": "b3l7-p127",
+        "phrase": "under observation",
+        "pos": "ph.",
+        "zh": "在觀察中",
+        "example_en": "The patient remained under observation.",
+        "example_zh": "病人持續接受觀察。"
+      },
+      {
+        "id": "b3l7-p128",
+        "phrase": "make an observation",
+        "pos": "ph.",
+        "zh": "做出觀察",
+        "example_en": "She made an observation about the pattern.",
+        "example_zh": "她對模式做出觀察。"
+      },
+      {
+        "id": "b3l7-p129",
+        "phrase": "conduct experiments",
+        "pos": "ph.",
+        "zh": "進行實驗",
+        "example_en": "Students conduct experiments in the lab.",
+        "example_zh": "學生在實驗室進行實驗。"
+      },
+      {
+        "id": "b3l7-p130",
+        "phrase": "make careful observations",
+        "pos": "ph.",
+        "zh": "進行仔細觀察",
+        "example_en": "Researchers make careful observations.",
+        "example_zh": "研究人員進行仔細觀察。"
+      },
+      {
+        "id": "b3l7-p131",
+        "phrase": "quite the reverse",
+        "pos": "ph.",
+        "zh": "恰恰相反",
+        "example_en": "The result was quite the reverse.",
+        "example_zh": "結果恰恰相反。"
+      },
+      {
+        "id": "b3l7-p132",
+        "phrase": "reverse the effects of",
+        "pos": "ph.",
+        "zh": "逆轉……的影響",
+        "example_en": "The treatment may reverse the effects of aging.",
+        "example_zh": "這種療法可能逆轉老化的影響。"
+      },
+      {
+        "id": "b3l7-p133",
+        "phrase": "in reverse order",
+        "pos": "ph.",
+        "zh": "以相反順序",
+        "example_en": "Read the steps in reverse order.",
+        "example_zh": "以相反順序閱讀步驟。"
+      },
+      {
+        "id": "b3l7-p134",
+        "phrase": "significant other",
+        "pos": "ph.",
+        "zh": "重要伴侶",
+        "example_en": "She introduced her significant other.",
+        "example_zh": "她介紹她的重要伴侶。"
+      },
+      {
+        "id": "b3l7-p135",
+        "phrase": "of great significance",
+        "pos": "ph.",
+        "zh": "非常重要的",
+        "example_en": "The discovery is of great significance.",
+        "example_zh": "這項發現非常重要。"
+      },
+      {
+        "id": "b3l7-p136",
+        "phrase": "cancer treatment",
+        "pos": "ph.",
+        "zh": "癌症治療",
+        "example_en": "The hospital offers cancer treatment.",
+        "example_zh": "這家醫院提供癌症治療。"
+      },
+      {
+        "id": "b3l7-p137",
+        "phrase": "under no circumstances",
+        "pos": "ph.",
+        "zh": "在任何情況下都不",
+        "example_en": "Under no circumstances should you open it.",
+        "example_zh": "在任何情況下你都不應打開它。"
+      },
+      {
+        "id": "b3l7-p138",
+        "phrase": "in the initial stage of",
+        "pos": "ph.",
+        "zh": "在……的初始階段",
+        "example_en": "The disease is easier to treat in the initial stage.",
+        "example_zh": "疾病在初始階段較容易治療。"
+      },
+      {
+        "id": "b3l7-p139",
+        "phrase": "glance at the clock",
+        "pos": "ph.",
+        "zh": "瞥一眼時鐘",
+        "example_en": "She glanced at the clock.",
+        "example_zh": "她瞥了一眼時鐘。"
+      },
+      {
+        "id": "b3l7-p140",
+        "phrase": "now and then",
+        "pos": "ph.",
+        "zh": "偶爾",
+        "example_en": "We meet now and then.",
+        "example_zh": "我們偶爾見面。"
+      },
+      {
+        "id": "b3l7-p141",
+        "phrase": "give a glance at",
+        "pos": "ph.",
+        "zh": "看一眼……",
+        "example_en": "Give a glance at this chart.",
+        "example_zh": "看一眼這張圖表。"
+      },
+      {
+        "id": "b3l7-p142",
+        "phrase": "close observation",
+        "pos": "ph.",
+        "zh": "密切觀察",
+        "example_en": "The animal is under close observation.",
+        "example_zh": "這隻動物受到密切觀察。"
+      },
+      {
+        "id": "b3l7-p143",
+        "phrase": "raise one’s eyebrows",
+        "pos": "ph.",
+        "zh": "揚起眉毛",
+        "example_en": "He raised his eyebrows in surprise.",
+        "example_zh": "他驚訝地揚起眉毛。"
+      },
+      {
+        "id": "b3l7-p144",
+        "phrase": "slide open",
+        "pos": "ph.",
+        "zh": "滑開",
+        "example_en": "The door slid open quietly.",
+        "example_zh": "門安靜地滑開。"
+      },
+      {
+        "id": "b3l7-p145",
+        "phrase": "on one’s own",
+        "pos": "ph.",
+        "zh": "獨自地",
+        "example_en": "She completed the project on her own.",
+        "example_zh": "她獨自完成專案。"
+      },
+      {
+        "id": "b3l7-p146",
+        "phrase": "spot one’s location",
+        "pos": "ph.",
+        "zh": "發現某人的位置",
+        "example_en": "The app can spot your location.",
+        "example_zh": "這個應用程式能發現你的位置。"
+      },
+      {
+        "id": "b3l7-p147",
+        "phrase": "at any time",
+        "pos": "ph.",
+        "zh": "隨時",
+        "example_en": "You may call me at any time.",
+        "example_zh": "你隨時可以打給我。"
+      },
+      {
+        "id": "b3l7-p148",
+        "phrase": "show affection to",
+        "pos": "ph.",
+        "zh": "向……表達愛意",
+        "example_en": "The dog showed affection to its owner.",
+        "example_zh": "狗向主人表達愛意。"
+      },
+      {
+        "id": "b3l7-p149",
+        "phrase": "have a deep affection for",
+        "pos": "ph.",
+        "zh": "深深喜愛……",
+        "example_en": "She has a deep affection for her hometown.",
+        "example_zh": "她深深喜愛自己的家鄉。"
+      },
+      {
+        "id": "b3l7-p150",
+        "phrase": "light up",
+        "pos": "ph.",
+        "zh": "照亮；亮起",
+        "example_en": "The fireworks lit up the sky.",
+        "example_zh": "煙火照亮天空。"
+      },
+      {
+        "id": "b3l7-p151",
+        "phrase": "mother tongue",
+        "pos": "ph.",
+        "zh": "母語",
+        "example_en": "Chinese is her mother tongue.",
+        "example_zh": "中文是她的母語。"
+      },
+      {
+        "id": "b3l7-p152",
+        "phrase": "interact with",
+        "pos": "ph.",
+        "zh": "與……互動",
+        "example_en": "Children interact with one another.",
+        "example_zh": "孩子們彼此互動。"
+      },
+      {
+        "id": "b3l7-p153",
+        "phrase": "come up with great ideas",
+        "pos": "ph.",
+        "zh": "想出好點子",
+        "example_en": "The team came up with great ideas.",
+        "example_zh": "團隊想出好點子。"
+      },
+      {
+        "id": "b3l7-p154",
+        "phrase": "fellow worker",
+        "pos": "ph.",
+        "zh": "同事",
+        "example_en": "A fellow worker helped me.",
+        "example_zh": "一位同事幫助我。"
+      },
+      {
+        "id": "b3l7-p155",
+        "phrase": "popular among one’s fellows",
+        "pos": "ph.",
+        "zh": "在同儕之間受歡迎",
+        "example_en": "He is popular among his fellows.",
+        "example_zh": "他在同儕之間很受歡迎。"
+      },
+      {
+        "id": "b3l7-p156",
+        "phrase": "one’s affection for",
+        "pos": "ph.",
+        "zh": "某人對……的喜愛",
+        "example_en": "Her affection for animals is obvious.",
+        "example_zh": "她對動物的喜愛很明顯。"
+      },
+      {
+        "id": "b3l7-p157",
+        "phrase": "come face to face with",
+        "pos": "ph.",
+        "zh": "與……面對面",
+        "example_en": "We came face to face with a bear.",
+        "example_zh": "我們與一頭熊面對面。"
+      },
+      {
+        "id": "b3l7-p158",
+        "phrase": "food delivery",
+        "pos": "ph.",
+        "zh": "外送餐飲",
+        "example_en": "Food delivery is convenient.",
+        "example_zh": "餐飲外送很方便。"
+      },
+      {
+        "id": "b3l7-p159",
+        "phrase": "sentence pattern",
+        "pos": "ph.",
+        "zh": "句型",
+        "example_en": "Practice this sentence pattern.",
+        "example_zh": "練習這個句型。"
+      },
+      {
+        "id": "b3l7-p160",
+        "phrase": "mobile payment",
+        "pos": "ph.",
+        "zh": "行動支付",
+        "example_en": "Mobile payment is widely used.",
+        "example_zh": "行動支付被廣泛使用。"
+      },
+      {
+        "id": "b3l7-p161",
+        "phrase": "deny the fact",
+        "pos": "ph.",
+        "zh": "否認事實",
+        "example_en": "He denied the fact.",
+        "example_zh": "他否認事實。"
+      },
+      {
+        "id": "b3l7-p162",
+        "phrase": "bring up children",
+        "pos": "ph.",
+        "zh": "養育孩子",
+        "example_en": "It takes patience to bring up children.",
+        "example_zh": "養育孩子需要耐心。"
+      },
+      {
+        "id": "b3l7-p163",
+        "phrase": "obey rules",
+        "pos": "ph.",
+        "zh": "遵守規則",
+        "example_en": "All players must obey rules.",
+        "example_zh": "所有球員都必須遵守規則。"
+      },
+      {
+        "id": "b3l7-p164",
+        "phrase": "be deeply rooted in one’s mind",
+        "pos": "ph.",
+        "zh": "深植於某人的心中",
+        "example_en": "The memory is deeply rooted in her mind.",
+        "example_zh": "這段記憶深植於她心中。"
+      },
+      {
+        "id": "b3l7-p165",
+        "phrase": "mosquito bite",
+        "pos": "ph.",
+        "zh": "蚊子叮咬",
+        "example_en": "The mosquito bite became itchy.",
+        "example_zh": "蚊子叮咬處變得很癢。"
+      },
+      {
+        "id": "b3l7-p166",
+        "phrase": "breathe in second-hand smoke",
+        "pos": "ph.",
+        "zh": "吸入二手菸",
+        "example_en": "Children should not breathe in second-hand smoke.",
+        "example_zh": "兒童不應吸入二手菸。"
+      },
+      {
+        "id": "b3l7-p167",
+        "phrase": "can’t help dozing off",
+        "pos": "ph.",
+        "zh": "忍不住打瞌睡",
+        "example_en": "I can’t help dozing off during the lecture.",
+        "example_zh": "我上課時忍不住打瞌睡。"
+      },
+      {
+        "id": "b3l7-p168",
+        "phrase": "go bankrupt",
+        "pos": "ph.",
+        "zh": "破產",
+        "example_en": "The shop went bankrupt after a year.",
+        "example_zh": "這家店一年後破產。"
+      },
+      {
+        "id": "b3l7-p169",
+        "phrase": "shake the entire industry",
+        "pos": "ph.",
+        "zh": "撼動整個產業",
+        "example_en": "The invention shook the entire industry.",
+        "example_zh": "這項發明撼動整個產業。"
+      },
+      {
+        "id": "b3l7-p170",
+        "phrase": "waste efforts",
+        "pos": "ph.",
+        "zh": "浪費努力",
+        "example_en": "Do not waste efforts on a broken plan.",
+        "example_zh": "不要把努力浪費在失敗的計畫上。"
+      }
+    ]
+  },
+  "grammar": {
+    "points": [
+      {
+        "id": "b3l7-g1",
+        "title": "the belief/news/fact...that + S + V 同位語子句",
+        "examples": [
+          "置於某個名詞之後，用以補充解釋該名詞，闡明實質內容，使語意更清楚。that 不可省略，前面名詞的語意通常是想法、事實或理論等，此類名詞有belief、news、fact、idea、theory、suggestion 等",
+          "We should always hold the belief that Where there is a will, there is a way.",
+          "The theory that there is life on other planets is worth thinking about.",
+          "The fact that Beethoven still kept on writing music in spite of his deafness is amazing."
+        ]
+      },
+      {
+        "id": "b3l7-g2",
+        "title": "can’t help doing/ can’t help but do 禁不住/忍不住",
+        "examples": [
+          "I couldn’t help but notice that John was wearing his shirt backward.",
+          "Seeing the naughty boy, Jason couldn’t help frowning."
+        ]
+      }
+    ],
+    "sentence_structures": {
+      "items": [
+        {
+          "id": "b3l7-s001",
+          "sentence": "The theory that spoken words account for only about seven percent of communication involving emotions *may surprise* many people.",
+          "type": "complex",
+          "pattern": "S with Noun clause (that...) + Vt + O"
+        },
+        {
+          "id": "b3l7-s002",
+          "sentence": "This *was first proposed* by Dr. Albert Mehrabian, a famous psychology professor.",
+          "type": "simple",
+          "pattern": "S + Passive verb phrase + Prepositional phrase + Appositive phrase"
+        },
+        {
+          "id": "b3l7-s003",
+          "sentence": "According to his studies, we *achieve* about 55% of our emotional communication with our bodies, for they typically demonstrate our true feelings and what we're actually thinking.",
+          "type": "compound-complex",
+          "pattern": "Prepositional phrase + S + Vt + O + for + S + Vt + O + Noun clause (what...)"
+        },
+        {
+          "id": "b3l7-s004",
+          "sentence": "Therefore, understanding people's body language *is* an important ability to help us better interpret others' messages.",
+          "type": "simple",
+          "pattern": "Gerund phrase (S) + Vl + C + Infinitival phrase"
+        },
+        {
+          "id": "b3l7-s005",
+          "sentence": "Being able to read body language well *is* helpful in determining whether or not someone is telling the truth.",
+          "type": "complex",
+          "pattern": "Gerund phrase (S) + Vl + C + Gerund phrase + Noun clause (whether...)"
+        },
+        {
+          "id": "b3l7-s006",
+          "sentence": "When people are lying, there *are* usually three telltale signs: making stiff body movements, touching or scratching themselves, and making eye movements.",
+          "type": "complex",
+          "pattern": "Adverbial clause (When...) + There + Vi + S + Gerund phrases"
+        },
+        {
+          "id": "b3l7-s007",
+          "sentence": "Typically, liars *exhibit* fewer arm and hand gestures.",
+          "type": "simple",
+          "pattern": "Adverb + S + Vt + O"
+        },
+        {
+          "id": "b3l7-s008",
+          "sentence": "When they do make such gestures, their movements *are* usually stiff, and their hands *tend* to stay close to the body rather than move in an outward direction.",
+          "type": "compound-complex",
+          "pattern": "Adverbial clause (When...) + S + Vl + C + and + S + Vi + Infinitival phrase"
+        },
+        {
+          "id": "b3l7-s009",
+          "sentence": "Moreover, liars often *can't help* but touch or scratch their faces, their necks, or behind their ears.",
+          "type": "simple",
+          "pattern": "S + Modal verb phrase + Coordinated bare infinitives + O"
+        },
+        {
+          "id": "b3l7-s010",
+          "sentence": "They sometimes *rub* their eyes without being conscious of it as well.",
+          "type": "simple",
+          "pattern": "S + Vt + O + Prepositional phrase"
+        },
+        {
+          "id": "b3l7-s011",
+          "sentence": "Whether people are telling falsehoods or not *can also be detected* by observing how their eyes move as they speak.",
+          "type": "complex",
+          "pattern": "Noun clause (Whether...) as S + Passive verb phrase + Gerund phrase + Noun clause (how...) + Adverbial clause (as...)"
+        },
+        {
+          "id": "b3l7-s012",
+          "sentence": "When right-handed people say true things, their eyes *move* to their left.",
+          "type": "complex",
+          "pattern": "Adverbial clause (When...) + S + Vi + Prepositional phrase"
+        },
+        {
+          "id": "b3l7-s013",
+          "sentence": "In contrast, when they are lying or being \"creative\" with the truth, their eyes *tend* to drift toward their right.",
+          "type": "complex",
+          "pattern": "Adverbial clause (when...) + S + Vi + Infinitival phrase"
+        },
+        {
+          "id": "b3l7-s014",
+          "sentence": "The reverse *is* true for left-handed people.",
+          "type": "simple",
+          "pattern": "S + Vl + C + Prepositional phrase"
+        },
+        {
+          "id": "b3l7-s015",
+          "sentence": "Another significant type of telling body language *is connected* to love.",
+          "type": "simple",
+          "pattern": "S + Passive verb phrase + Prepositional phrase"
+        },
+        {
+          "id": "b3l7-s016",
+          "sentence": "In the case of romantic feelings, people's bodies subconsciously *provide* an indication for someone to whom they are attracted.",
+          "type": "complex",
+          "pattern": "Prepositional phrase + S + Vt + O + Relative clause (to whom...)"
+        },
+        {
+          "id": "b3l7-s017",
+          "sentence": "Under the circumstances, their eyes *do* most of the \"talking.\"",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + O"
+        },
+        {
+          "id": "b3l7-s018",
+          "sentence": "Initially, they may *glance* at a person from a distance and for just slightly longer than normal.",
+          "type": "simple",
+          "pattern": "Adverb + S + Vi + Prepositional phrases"
+        },
+        {
+          "id": "b3l7-s019",
+          "sentence": "Afterward, they may *look* away and finally *rest* their eyes on him or her again for an even longer period.",
+          "type": "simple",
+          "pattern": "Adverb + S + Vi / Vt (Compound predicate) + O + Prepositional phrases"
+        },
+        {
+          "id": "b3l7-s020",
+          "sentence": "Furthermore, they automatically *track* or *repeat* his or her actions without even knowing it.",
+          "type": "simple",
+          "pattern": "S + Vt (Compound predicate) + O + Prepositional phrase"
+        },
+        {
+          "id": "b3l7-s021",
+          "sentence": "If he or she sits back, they will *follow suit*.",
+          "type": "complex",
+          "pattern": "Adverbial clause (If...) + S + Vi (Phrasal verb)"
+        },
+        {
+          "id": "b3l7-s022",
+          "sentence": "If that person takes a sip of water, they will probably *do* the same.",
+          "type": "complex",
+          "pattern": "Adverbial clause (If...) + S + Vt + O"
+        },
+        {
+          "id": "b3l7-s023",
+          "sentence": "Aside from copying behavior, they often *can't help* pointing their feet and shoulders toward the one they adore or standing closer to the object of their affection than to others.",
+          "type": "complex",
+          "pattern": "Prepositional phrase + S + Modal verb phrase + Gerund phrases + Relative clause"
+        },
+        {
+          "id": "b3l7-s024",
+          "sentence": "All of the previously mentioned points *reveal* the idea that one of the best methods for interpreting people's thoughts and emotions is to pay attention to their body language.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Noun clause (that...) + Infinitival phrase"
+        },
+        {
+          "id": "b3l7-s025",
+          "sentence": "By understanding the signals that people send out with their body language, we may *interact* in a more meaningful way with our fellow human beings.",
+          "type": "complex",
+          "pattern": "Gerund phrase with Relative clause (that...) + S + Vi + Prepositional phrases"
+        },
+        {
+          "id": "b3l7-s026",
+          "sentence": "Best of all, we can *do* it without even saying a single word!",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vt + O + Prepositional phrase"
+        }
+      ]
+    }
+  },
+  "text_genre": {
+    "raw_text": "Passage Structure Analysis\nIntroduction (Para 1): Introduces Dr. Mehrabian’s theory ($55\\%$ of emotional communication is body language) and states the thesis (reading body language helps interpret true feelings).\nBody 1: Detecting Deception (Para 2): Identifies three body language signs of lying—stiff gestures, touching/scratching the face/neck, and specific eye movement patterns.\nBody 2: Indicating Attraction (Para 3): Explains non-verbal signs of romantic interest—prolonged eye contact, subconscious mirroring of actions, and pointing feet/shoulders toward the person.\nConclusion (Para 4): Summarizes body language as a key tool for understanding hidden thoughts and fostering meaningful non-verbal communication."
+  }
+}
