@@ -1,0 +1,1486 @@
+{
+  "book": "B1",
+  "lesson": "L8",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b1l8-v01",
+        "base": "familiar",
+        "verb": [
+          {
+            "en": "familiarize",
+            "zh": "使熟悉；使了解",
+            "example": "The guide familiarized us with the museum's safety rules."
+          }
+        ],
+        "noun": [
+          {
+            "en": "familiarity",
+            "zh": "熟悉；熟悉程度",
+            "example": "Her familiarity with the software helped the team."
+          },
+          {
+            "en": "unfamiliarity",
+            "zh": "不熟悉；陌生",
+            "example": "His unfamiliarity with the area caused a delay."
+          }
+        ],
+        "adj": [
+          {
+            "en": "familiar",
+            "zh": "熟悉的；常見的",
+            "example": "This song sounds familiar to me."
+          },
+          {
+            "en": "unfamiliar",
+            "zh": "不熟悉的；陌生的",
+            "example": "She felt nervous in the unfamiliar environment."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l8-v02",
+        "base": "urge",
+        "verb": [
+          {
+            "en": "urge",
+            "zh": "敦促；力勸；強烈要求",
+            "example": "Doctors urge people to exercise regularly."
+          }
+        ],
+        "noun": [
+          {
+            "en": "urge",
+            "zh": "衝動；強烈慾望",
+            "example": "He felt an urge to check his phone."
+          },
+          {
+            "en": "urgency",
+            "zh": "緊急；迫切性",
+            "example": "The firefighters understood the urgency of the situation."
+          }
+        ],
+        "adj": [
+          {
+            "en": "urgent",
+            "zh": "緊急的；迫切的",
+            "example": "The patient needs urgent medical attention."
+          }
+        ],
+        "adv": [
+          {
+            "en": "urgently",
+            "zh": "緊急地；迫切地",
+            "example": "The village urgently needs clean water."
+          }
+        ]
+      },
+      {
+        "id": "b1l8-v03",
+        "base": "strategy",
+        "verb": [],
+        "noun": [
+          {
+            "en": "strategy",
+            "zh": "策略；戰略",
+            "example": "The team developed a strategy to reduce waste."
+          }
+        ],
+        "adj": [
+          {
+            "en": "strategic",
+            "zh": "策略性的；戰略上的；位置重要的",
+            "example": "They made a strategic investment in new technology."
+          }
+        ],
+        "adv": [
+          {
+            "en": "strategically",
+            "zh": "策略性地；從戰略角度",
+            "example": "The stores are strategically located near train stations."
+          }
+        ]
+      },
+      {
+        "id": "b1l8-v04",
+        "base": "visual",
+        "verb": [
+          {
+            "en": "visualize",
+            "zh": "想像；使視覺化",
+            "example": "Try to visualize yourself achieving your goal."
+          }
+        ],
+        "noun": [
+          {
+            "en": "vision",
+            "zh": "視力；視野；願景",
+            "example": "The organization has a clear vision for the future."
+          },
+          {
+            "en": "visibility",
+            "zh": "能見度；可見性",
+            "example": "Heavy rain reduced visibility on the highway."
+          }
+        ],
+        "adj": [
+          {
+            "en": "visible",
+            "zh": "可見的；明顯的",
+            "example": "The mountains are visible from our classroom."
+          },
+          {
+            "en": "invisible",
+            "zh": "看不見的；無形的",
+            "example": "Some gases are invisible to the human eye."
+          },
+          {
+            "en": "visual",
+            "zh": "視覺的；視力的",
+            "example": "The teacher used visual aids to explain the idea."
+          }
+        ],
+        "adv": [
+          {
+            "en": "visibly",
+            "zh": "明顯地；看得出地",
+            "example": "She was visibly relieved after hearing the news."
+          },
+          {
+            "en": "visually",
+            "zh": "在視覺上；以視覺方式",
+            "example": "The two designs are visually similar."
+          }
+        ]
+      },
+      {
+        "id": "b1l8-v05",
+        "base": "purchase",
+        "verb": [
+          {
+            "en": "purchase",
+            "zh": "購買；採購",
+            "example": "We purchased the tickets online."
+          }
+        ],
+        "noun": [
+          {
+            "en": "purchase",
+            "zh": "購買；購得之物",
+            "example": "Keep the receipt as proof of purchase."
+          }
+        ],
+        "adj": [
+          {
+            "en": "purchasable",
+            "zh": "可購買的；買得到的",
+            "example": "The digital book is purchasable through the website."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l8-v06",
+        "base": "profit",
+        "verb": [
+          {
+            "en": "profit",
+            "zh": "獲利；得到好處",
+            "example": "Local businesses profited from the festival."
+          }
+        ],
+        "noun": [
+          {
+            "en": "profit",
+            "zh": "利潤；收益；好處",
+            "example": "The company used its profit to expand the factory."
+          }
+        ],
+        "adj": [
+          {
+            "en": "profitable",
+            "zh": "有利潤的；有益的",
+            "example": "The new service became profitable within a year."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l8-v07",
+        "base": "similar",
+        "verb": [],
+        "noun": [
+          {
+            "en": "similarity",
+            "zh": "相似之處；相似性",
+            "example": "There is a strong similarity between the two paintings."
+          }
+        ],
+        "adj": [
+          {
+            "en": "similar",
+            "zh": "相似的；類似的",
+            "example": "The twins have similar voices."
+          }
+        ],
+        "adv": [
+          {
+            "en": "similarly",
+            "zh": "相似地；同樣地",
+            "example": "The two machines operate similarly."
+          }
+        ]
+      },
+      {
+        "id": "b1l8-v08",
+        "base": "aim",
+        "verb": [
+          {
+            "en": "aim",
+            "zh": "以……為目標；瞄準",
+            "example": "The program aims to improve reading skills."
+          }
+        ],
+        "noun": [
+          {
+            "en": "aim",
+            "zh": "目標；目的；瞄準",
+            "example": "Our main aim is to protect the environment."
+          }
+        ],
+        "adj": [
+          {
+            "en": "aimless",
+            "zh": "無目標的；漫無目的的",
+            "example": "He took an aimless walk around the city."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l8-v09",
+        "base": "impulse",
+        "verb": [],
+        "noun": [
+          {
+            "en": "impulse",
+            "zh": "衝動；一時的念頭；脈衝",
+            "example": "She resisted the impulse to interrupt him."
+          }
+        ],
+        "adj": [
+          {
+            "en": "impulsive",
+            "zh": "衝動的；憑一時興起的",
+            "example": "His impulsive decision created extra problems."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l8-v10",
+        "base": "display",
+        "verb": [
+          {
+            "en": "display",
+            "zh": "展示；陳列；顯示",
+            "example": "The screen displays the current temperature."
+          }
+        ],
+        "noun": [
+          {
+            "en": "display",
+            "zh": "展示；陳列；顯示器",
+            "example": "The museum has a display of ancient tools."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b1l8-v11",
+        "base": "offer",
+        "verb": [
+          {
+            "en": "offer",
+            "zh": "提供；提議；出價",
+            "example": "The school offers free language classes."
+          }
+        ],
+        "noun": [
+          {
+            "en": "offer",
+            "zh": "提議；出價；優惠",
+            "example": "She accepted the job offer."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b1l8-v12",
+        "base": "advantage",
+        "verb": [],
+        "noun": [
+          {
+            "en": "advantage",
+            "zh": "優點；優勢；有利條件",
+            "example": "Experience gives her an advantage in the competition."
+          },
+          {
+            "en": "disadvantage",
+            "zh": "缺點；劣勢；不利條件",
+            "example": "The main disadvantage is the high cost."
+          }
+        ],
+        "adj": [
+          {
+            "en": "advantageous",
+            "zh": "有利的；有優勢的",
+            "example": "The agreement is advantageous to both sides."
+          },
+          {
+            "en": "disadvantageous",
+            "zh": "不利的；處於劣勢的",
+            "example": "The delay was disadvantageous to the small company."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l8-v13",
+        "base": "event",
+        "verb": [],
+        "noun": [
+          {
+            "en": "event",
+            "zh": "事件；活動；比賽項目",
+            "example": "The school is hosting a sports event this weekend."
+          }
+        ],
+        "adj": [
+          {
+            "en": "eventual",
+            "zh": "最終的；最後發生的",
+            "example": "Their eventual success surprised many people."
+          }
+        ],
+        "adv": [
+          {
+            "en": "eventually",
+            "zh": "最後；終於",
+            "example": "After several attempts, she eventually solved the problem."
+          }
+        ]
+      },
+      {
+        "id": "b1l8-v14",
+        "base": "trap",
+        "verb": [
+          {
+            "en": "trap",
+            "zh": "使受困；設陷阱捕捉",
+            "example": "The fallen tree trapped the car on the narrow road."
+          }
+        ],
+        "noun": [
+          {
+            "en": "trap",
+            "zh": "陷阱；圈套；困境",
+            "example": "The mouse escaped from the trap."
+          }
+        ],
+        "adj": [
+          {
+            "en": "trapped",
+            "zh": "受困的；被困住的",
+            "example": "Rescuers freed the trapped hikers."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l8-v15",
+        "base": "aware",
+        "verb": [],
+        "noun": [
+          {
+            "en": "awareness",
+            "zh": "意識；認識；察覺",
+            "example": "The campaign raised awareness of ocean pollution."
+          }
+        ],
+        "adj": [
+          {
+            "en": "aware",
+            "zh": "知道的；察覺的；有意識的",
+            "example": "Are you aware of the new school rule?"
+          },
+          {
+            "en": "unaware",
+            "zh": "不知道的；未察覺的",
+            "example": "They were unaware of the danger nearby."
+          }
+        ],
+        "adv": []
+      }
+    ]
+  },
+  "phrases": {
+    "items": [
+      {
+        "id": "b1l8-p001",
+        "phrase": "happen to sb.",
+        "pos": "ph.",
+        "zh": "發生在某人身上",
+        "example_en": "What happened to him yesterday?",
+        "example_zh": "昨天他發生了什麼事？"
+      },
+      {
+        "id": "b1l8-p002",
+        "phrase": "slide open",
+        "pos": "ph.",
+        "zh": "滑開",
+        "example_en": "The door slid open quietly.",
+        "example_zh": "門安靜地滑開。"
+      },
+      {
+        "id": "b1l8-p003",
+        "phrase": "pick up an item",
+        "pos": "ph.",
+        "zh": "拿起物品",
+        "example_en": "She picked up an item from the floor.",
+        "example_zh": "她從地上拿起一件物品。"
+      },
+      {
+        "id": "b1l8-p004",
+        "phrase": "think of",
+        "pos": "ph.",
+        "zh": "想到；認為",
+        "example_en": "What do you think of this idea?",
+        "example_zh": "你覺得這個想法如何？"
+      },
+      {
+        "id": "b1l8-p005",
+        "phrase": "up to now",
+        "pos": "ph.",
+        "zh": "到目前為止",
+        "example_en": "Up to now, everything has gone well.",
+        "example_zh": "到目前為止，一切順利。"
+      },
+      {
+        "id": "b1l8-p006",
+        "phrase": "can’t bear",
+        "pos": "ph.",
+        "zh": "無法忍受",
+        "example_en": "I can’t bear the loud noise.",
+        "example_zh": "我無法忍受喧鬧聲。"
+      },
+      {
+        "id": "b1l8-p007",
+        "phrase": "much to one’s relief",
+        "pos": "ph.",
+        "zh": "令某人十分放心的是",
+        "example_en": "Much to our relief, everyone was safe.",
+        "example_zh": "令我們十分放心的是，大家都平安。"
+      },
+      {
+        "id": "b1l8-p008",
+        "phrase": "withdraw money from an ATM",
+        "pos": "ph.",
+        "zh": "從 ATM 領錢",
+        "example_en": "I withdrew money from an ATM.",
+        "example_zh": "我從 ATM 領了錢。"
+      },
+      {
+        "id": "b1l8-p009",
+        "phrase": "there’s no need to",
+        "pos": "ph.",
+        "zh": "沒有必要……",
+        "example_en": "There’s no need to hurry.",
+        "example_zh": "沒有必要匆忙。"
+      },
+      {
+        "id": "b1l8-p010",
+        "phrase": "sudden urge to do",
+        "pos": "ph.",
+        "zh": "突然想做……的衝動",
+        "example_en": "She felt a sudden urge to dance.",
+        "example_zh": "她突然有跳舞的衝動。"
+      },
+      {
+        "id": "b1l8-p011",
+        "phrase": "follow the rule",
+        "pos": "ph.",
+        "zh": "遵守規則",
+        "example_en": "Everyone must follow the rule.",
+        "example_zh": "每個人都必須遵守規則。"
+      },
+      {
+        "id": "b1l8-p012",
+        "phrase": "the more…the more",
+        "pos": "ph.",
+        "zh": "越……就越……",
+        "example_en": "The more you read, the more you learn.",
+        "example_zh": "你讀得越多，學到的就越多。"
+      },
+      {
+        "id": "b1l8-p013",
+        "phrase": "make sure",
+        "pos": "ph.",
+        "zh": "確定；務必",
+        "example_en": "Make sure the door is locked.",
+        "example_zh": "務必確認門已鎖好。"
+      },
+      {
+        "id": "b1l8-p014",
+        "phrase": "most likely to",
+        "pos": "ph.",
+        "zh": "最有可能……",
+        "example_en": "He is most likely to win.",
+        "example_zh": "他最有可能獲勝。"
+      },
+      {
+        "id": "b1l8-p015",
+        "phrase": "be aimed at",
+        "pos": "ph.",
+        "zh": "以……為目標",
+        "example_en": "The campaign is aimed at teenagers.",
+        "example_zh": "這項活動以青少年為目標。"
+      },
+      {
+        "id": "b1l8-p016",
+        "phrase": "take good care of",
+        "pos": "ph.",
+        "zh": "好好照顧",
+        "example_en": "Please take good care of the puppy.",
+        "example_zh": "請好好照顧小狗。"
+      },
+      {
+        "id": "b1l8-p017",
+        "phrase": "come over for a sleepover",
+        "pos": "ph.",
+        "zh": "過來留宿",
+        "example_en": "My friend came over for a sleepover.",
+        "example_zh": "我的朋友過來留宿。"
+      },
+      {
+        "id": "b1l8-p018",
+        "phrase": "catch the bus to school on time",
+        "pos": "ph.",
+        "zh": "準時搭公車上學",
+        "example_en": "She left early to catch the bus to school on time.",
+        "example_zh": "她提早出門以準時搭公車上學。"
+      },
+      {
+        "id": "b1l8-p019",
+        "phrase": "outstanding academic performance",
+        "pos": "ph.",
+        "zh": "傑出的學業表現",
+        "example_en": "He received an award for outstanding academic performance.",
+        "example_zh": "他因傑出的學業表現獲獎。"
+      },
+      {
+        "id": "b1l8-p020",
+        "phrase": "grasp a new concept",
+        "pos": "ph.",
+        "zh": "理解新概念",
+        "example_en": "The students quickly grasped a new concept.",
+        "example_zh": "學生很快理解了新概念。"
+      },
+      {
+        "id": "b1l8-p021",
+        "phrase": "review a lesson thoroughly",
+        "pos": "ph.",
+        "zh": "徹底複習課程",
+        "example_en": "Review a lesson thoroughly before the test.",
+        "example_zh": "考試前徹底複習課程。"
+      },
+      {
+        "id": "b1l8-p022",
+        "phrase": "eye-catching",
+        "pos": "ph.",
+        "zh": "吸睛的",
+        "example_en": "The poster has an eye-catching design.",
+        "example_zh": "這張海報有吸睛的設計。"
+      },
+      {
+        "id": "b1l8-p023",
+        "phrase": "promote impulse purchases",
+        "pos": "ph.",
+        "zh": "促進衝動購買",
+        "example_en": "Bright displays promote impulse purchases.",
+        "example_zh": "鮮明展示會促進衝動購買。"
+      },
+      {
+        "id": "b1l8-p024",
+        "phrase": "cash register",
+        "pos": "ph.",
+        "zh": "收銀機",
+        "example_en": "The cashier stood beside the cash register.",
+        "example_zh": "收銀員站在收銀機旁。"
+      },
+      {
+        "id": "b1l8-p025",
+        "phrase": "within quick reach",
+        "pos": "ph.",
+        "zh": "在近在咫尺的範圍內",
+        "example_en": "Keep your phone within quick reach.",
+        "example_zh": "把手機放在近在咫尺的地方。"
+      },
+      {
+        "id": "b1l8-p026",
+        "phrase": "special offer",
+        "pos": "ph.",
+        "zh": "特別優惠",
+        "example_en": "The store has a special offer today.",
+        "example_zh": "這家商店今天有特別優惠。"
+      },
+      {
+        "id": "b1l8-p027",
+        "phrase": "line up",
+        "pos": "ph.",
+        "zh": "排隊",
+        "example_en": "Customers lined up outside.",
+        "example_zh": "顧客在外面排隊。"
+      },
+      {
+        "id": "b1l8-p028",
+        "phrase": "on impulse",
+        "pos": "ph.",
+        "zh": "一時衝動地",
+        "example_en": "He bought the shoes on impulse.",
+        "example_zh": "他一時衝動買了鞋子。"
+      },
+      {
+        "id": "b1l8-p029",
+        "phrase": "a luxurious mansion",
+        "pos": "ph.",
+        "zh": "豪華宅邸",
+        "example_en": "They visited a luxurious mansion.",
+        "example_zh": "他們參觀了一座豪華宅邸。"
+      },
+      {
+        "id": "b1l8-p030",
+        "phrase": "afford the mortgage",
+        "pos": "ph.",
+        "zh": "負擔得起房貸",
+        "example_en": "They cannot afford the mortgage.",
+        "example_zh": "他們負擔不起房貸。"
+      },
+      {
+        "id": "b1l8-p031",
+        "phrase": "ignite one’s curiosity",
+        "pos": "ph.",
+        "zh": "激發某人的好奇心",
+        "example_en": "The mystery ignited her curiosity.",
+        "example_zh": "這個謎團激發她的好奇心。"
+      },
+      {
+        "id": "b1l8-p032",
+        "phrase": "take advantage of",
+        "pos": "ph.",
+        "zh": "利用",
+        "example_en": "Do not take advantage of his kindness.",
+        "example_zh": "不要利用他的善良。"
+      },
+      {
+        "id": "b1l8-p033",
+        "phrase": "set up",
+        "pos": "ph.",
+        "zh": "設立；安裝",
+        "example_en": "They set up a new company.",
+        "example_zh": "他們成立一家新公司。"
+      },
+      {
+        "id": "b1l8-p034",
+        "phrase": "hang out",
+        "pos": "ph.",
+        "zh": "閒逛；相處",
+        "example_en": "We hang out after school.",
+        "example_zh": "我們放學後一起閒逛。"
+      },
+      {
+        "id": "b1l8-p035",
+        "phrase": "start off with",
+        "pos": "ph.",
+        "zh": "以……開始",
+        "example_en": "Let’s start off with a simple example.",
+        "example_zh": "讓我們從簡單的例子開始。"
+      },
+      {
+        "id": "b1l8-p036",
+        "phrase": "grow hungry over time",
+        "pos": "ph.",
+        "zh": "隨時間變餓",
+        "example_en": "We grew hungry over time.",
+        "example_zh": "我們隨時間變得飢餓。"
+      },
+      {
+        "id": "b1l8-p037",
+        "phrase": "survive in the era of AI",
+        "pos": "ph.",
+        "zh": "在 AI 時代生存",
+        "example_en": "Workers must learn new skills to survive in the era of AI.",
+        "example_zh": "工作者必須學習新技能，才能在 AI 時代生存。"
+      },
+      {
+        "id": "b1l8-p038",
+        "phrase": "keep being self-centered",
+        "pos": "ph.",
+        "zh": "持續以自我為中心",
+        "example_en": "He must stop keeping being self-centered.",
+        "example_zh": "他必須停止一直以自我為中心。"
+      },
+      {
+        "id": "b1l8-p039",
+        "phrase": "piles of documents",
+        "pos": "ph.",
+        "zh": "成堆的文件",
+        "example_en": "There were piles of documents on the desk.",
+        "example_zh": "桌上有成堆的文件。"
+      },
+      {
+        "id": "b1l8-p040",
+        "phrase": "work overtime",
+        "pos": "ph.",
+        "zh": "加班",
+        "example_en": "The staff worked overtime.",
+        "example_zh": "員工加班。"
+      },
+      {
+        "id": "b1l8-p041",
+        "phrase": "reduce workloads",
+        "pos": "ph.",
+        "zh": "減少工作量",
+        "example_en": "The new system helps reduce workloads.",
+        "example_zh": "新系統有助於減少工作量。"
+      },
+      {
+        "id": "b1l8-p042",
+        "phrase": "a thorny case",
+        "pos": "ph.",
+        "zh": "棘手的案件",
+        "example_en": "The lawyer handled a thorny case.",
+        "example_zh": "律師處理一件棘手的案件。"
+      },
+      {
+        "id": "b1l8-p043",
+        "phrase": "spend quality time",
+        "pos": "ph.",
+        "zh": "共度有品質的時間",
+        "example_en": "Families should spend quality time together.",
+        "example_zh": "家人應共度有品質的時間。"
+      },
+      {
+        "id": "b1l8-p044",
+        "phrase": "have a positive impact on mental health",
+        "pos": "ph.",
+        "zh": "對心理健康有正面影響",
+        "example_en": "Exercise has a positive impact on mental health.",
+        "example_zh": "運動對心理健康有正面影響。"
+      },
+      {
+        "id": "b1l8-p045",
+        "phrase": "hang out with close companions",
+        "pos": "ph.",
+        "zh": "與親近的夥伴相處",
+        "example_en": "She likes to hang out with close companions.",
+        "example_zh": "她喜歡與親近的夥伴相處。"
+      },
+      {
+        "id": "b1l8-p046",
+        "phrase": "fall into a trap",
+        "pos": "ph.",
+        "zh": "掉入陷阱",
+        "example_en": "He fell into a trap set by scammers.",
+        "example_zh": "他掉入詐騙者設下的陷阱。"
+      },
+      {
+        "id": "b1l8-p047",
+        "phrase": "be more aware of",
+        "pos": "ph.",
+        "zh": "更加意識到……",
+        "example_en": "We should be more aware of online risks.",
+        "example_zh": "我們應更加意識到網路風險。"
+      },
+      {
+        "id": "b1l8-p048",
+        "phrase": "fitness coach",
+        "pos": "ph.",
+        "zh": "健身教練",
+        "example_en": "The fitness coach planned my workout.",
+        "example_zh": "健身教練規劃我的運動。"
+      },
+      {
+        "id": "b1l8-p049",
+        "phrase": "have physical contact with",
+        "pos": "ph.",
+        "zh": "與……有肢體接觸",
+        "example_en": "Avoid having physical contact with strangers.",
+        "example_zh": "避免與陌生人有肢體接觸。"
+      },
+      {
+        "id": "b1l8-p050",
+        "phrase": "avoid gaining too much weight",
+        "pos": "ph.",
+        "zh": "避免增加太多體重",
+        "example_en": "She walks daily to avoid gaining too much weight.",
+        "example_zh": "她每天走路以避免增加太多體重。"
+      },
+      {
+        "id": "b1l8-p051",
+        "phrase": "be familiar to sb.",
+        "pos": "ph.",
+        "zh": "對某人來說很熟悉",
+        "example_en": "The melody is familiar to me.",
+        "example_zh": "這旋律對我來說很熟悉。"
+      },
+      {
+        "id": "b1l8-p052",
+        "phrase": "be familiar with",
+        "pos": "ph.",
+        "zh": "熟悉……",
+        "example_en": "Are you familiar with this software?",
+        "example_zh": "你熟悉這套軟體嗎？"
+      },
+      {
+        "id": "b1l8-p053",
+        "phrase": "have an urge to",
+        "pos": "ph.",
+        "zh": "有……的衝動",
+        "example_en": "I had an urge to call her.",
+        "example_zh": "我有打電話給她的衝動。"
+      },
+      {
+        "id": "b1l8-p054",
+        "phrase": "change one’s daily routine",
+        "pos": "ph.",
+        "zh": "改變某人的日常作息",
+        "example_en": "Travel can change one’s daily routine.",
+        "example_zh": "旅行可以改變某人的日常作息。"
+      },
+      {
+        "id": "b1l8-p055",
+        "phrase": "resist the urge to do",
+        "pos": "ph.",
+        "zh": "抗拒做……的衝動",
+        "example_en": "Resist the urge to check your phone.",
+        "example_zh": "抗拒查看手機的衝動。"
+      },
+      {
+        "id": "b1l8-p056",
+        "phrase": "urge sb. to do",
+        "pos": "ph.",
+        "zh": "敦促某人做……",
+        "example_en": "The doctor urged him to rest.",
+        "example_zh": "醫師敦促他休息。"
+      },
+      {
+        "id": "b1l8-p057",
+        "phrase": "strategy for",
+        "pos": "ph.",
+        "zh": "……的策略",
+        "example_en": "We need a strategy for reducing waste.",
+        "example_zh": "我們需要減少浪費的策略。"
+      },
+      {
+        "id": "b1l8-p058",
+        "phrase": "close a deal",
+        "pos": "ph.",
+        "zh": "完成交易",
+        "example_en": "The company closed a deal yesterday.",
+        "example_zh": "公司昨天完成一筆交易。"
+      },
+      {
+        "id": "b1l8-p059",
+        "phrase": "visible to the naked eye",
+        "pos": "ph.",
+        "zh": "肉眼可見",
+        "example_en": "The star is visible to the naked eye.",
+        "example_zh": "這顆星星肉眼可見。"
+      },
+      {
+        "id": "b1l8-p060",
+        "phrase": "make a purchase of",
+        "pos": "ph.",
+        "zh": "購買……",
+        "example_en": "She made a purchase of a new laptop.",
+        "example_zh": "她購買了一臺新筆電。"
+      },
+      {
+        "id": "b1l8-p061",
+        "phrase": "highly profitable",
+        "pos": "ph.",
+        "zh": "非常有利潤的",
+        "example_en": "The business became highly profitable.",
+        "example_zh": "這項生意變得非常有利潤。"
+      },
+      {
+        "id": "b1l8-p062",
+        "phrase": "profitable company",
+        "pos": "ph.",
+        "zh": "有利潤的公司",
+        "example_en": "It is a profitable company.",
+        "example_zh": "這是一家有利潤的公司。"
+      },
+      {
+        "id": "b1l8-p063",
+        "phrase": "nonprofit company",
+        "pos": "ph.",
+        "zh": "非營利公司",
+        "example_en": "She works for a nonprofit company.",
+        "example_zh": "她在一家非營利公司工作。"
+      },
+      {
+        "id": "b1l8-p064",
+        "phrase": "profit from",
+        "pos": "ph.",
+        "zh": "從……獲利",
+        "example_en": "Some firms profit from online sales.",
+        "example_zh": "有些公司從線上銷售獲利。"
+      },
+      {
+        "id": "b1l8-p065",
+        "phrase": "make a profit",
+        "pos": "ph.",
+        "zh": "獲利",
+        "example_en": "The shop made a profit this year.",
+        "example_zh": "這家商店今年獲利。"
+      },
+      {
+        "id": "b1l8-p066",
+        "phrase": "be similar in",
+        "pos": "ph.",
+        "zh": "在……方面相似",
+        "example_en": "The two products are similar in design.",
+        "example_zh": "這兩項產品在設計上相似。"
+      },
+      {
+        "id": "b1l8-p067",
+        "phrase": "the similarity of",
+        "pos": "ph.",
+        "zh": "……的相似性",
+        "example_en": "The similarity of the two paintings is striking.",
+        "example_zh": "兩幅畫的相似性十分明顯。"
+      },
+      {
+        "id": "b1l8-p068",
+        "phrase": "the similarity between A and B",
+        "pos": "ph.",
+        "zh": "A 與 B 之間的相似性",
+        "example_en": "We studied the similarity between A and B.",
+        "example_zh": "我們研究 A 與 B 之間的相似性。"
+      },
+      {
+        "id": "b1l8-p069",
+        "phrase": "be aimed primarily at",
+        "pos": "ph.",
+        "zh": "主要以……為目標",
+        "example_en": "The program is aimed primarily at children.",
+        "example_zh": "這項計畫主要以兒童為目標。"
+      },
+      {
+        "id": "b1l8-p070",
+        "phrase": "with the aim of",
+        "pos": "ph.",
+        "zh": "以……為目的",
+        "example_en": "She joined with the aim of learning.",
+        "example_zh": "她加入是以學習為目的。"
+      },
+      {
+        "id": "b1l8-p071",
+        "phrase": "on impulse",
+        "pos": "ph.",
+        "zh": "一時衝動地",
+        "example_en": "He signed up on impulse.",
+        "example_zh": "他一時衝動報名。"
+      },
+      {
+        "id": "b1l8-p072",
+        "phrase": "have an impulse to",
+        "pos": "ph.",
+        "zh": "有……的衝動",
+        "example_en": "She had an impulse to leave.",
+        "example_zh": "她有離開的衝動。"
+      },
+      {
+        "id": "b1l8-p073",
+        "phrase": "impulse buying",
+        "pos": "ph.",
+        "zh": "衝動購物",
+        "example_en": "Impulse buying can waste money.",
+        "example_zh": "衝動購物可能浪費金錢。"
+      },
+      {
+        "id": "b1l8-p074",
+        "phrase": "display sth. to",
+        "pos": "ph.",
+        "zh": "向……展示某物",
+        "example_en": "The artist displayed her work to visitors.",
+        "example_zh": "藝術家向訪客展示作品。"
+      },
+      {
+        "id": "b1l8-p075",
+        "phrase": "attract potential buyers",
+        "pos": "ph.",
+        "zh": "吸引潛在買家",
+        "example_en": "The advertisement attracts potential buyers.",
+        "example_zh": "廣告吸引潛在買家。"
+      },
+      {
+        "id": "b1l8-p076",
+        "phrase": "on display",
+        "pos": "ph.",
+        "zh": "展示中",
+        "example_en": "The new phone is on display.",
+        "example_zh": "新手機正在展示中。"
+      },
+      {
+        "id": "b1l8-p077",
+        "phrase": "present a public display of",
+        "pos": "ph.",
+        "zh": "公開展示……",
+        "example_en": "The museum presented a public display of artifacts.",
+        "example_zh": "博物館公開展示文物。"
+      },
+      {
+        "id": "b1l8-p078",
+        "phrase": "offer on sth.",
+        "pos": "ph.",
+        "zh": "提供……的優惠",
+        "example_en": "The store offered a discount on shoes.",
+        "example_zh": "商店提供鞋子的折扣。"
+      },
+      {
+        "id": "b1l8-p079",
+        "phrase": "offer sth. to sb.",
+        "pos": "ph.",
+        "zh": "把某物提供給某人",
+        "example_en": "The company offered a job to her.",
+        "example_zh": "公司提供一份工作給她。"
+      },
+      {
+        "id": "b1l8-p080",
+        "phrase": "handle customer complaints",
+        "pos": "ph.",
+        "zh": "處理顧客抱怨",
+        "example_en": "Staff are trained to handle customer complaints.",
+        "example_zh": "員工受訓處理顧客抱怨。"
+      },
+      {
+        "id": "b1l8-p081",
+        "phrase": "regular customer",
+        "pos": "ph.",
+        "zh": "常客",
+        "example_en": "The café knows every regular customer.",
+        "example_zh": "咖啡館認識每位常客。"
+      },
+      {
+        "id": "b1l8-p082",
+        "phrase": "to one’s advantage",
+        "pos": "ph.",
+        "zh": "對某人有利",
+        "example_en": "She used the delay to her advantage.",
+        "example_zh": "她利用延誤使自己受益。"
+      },
+      {
+        "id": "b1l8-p083",
+        "phrase": "promote a new product",
+        "pos": "ph.",
+        "zh": "推廣新產品",
+        "example_en": "The company promoted a new product online.",
+        "example_zh": "公司在線上推廣新產品。"
+      },
+      {
+        "id": "b1l8-p084",
+        "phrase": "give sb. an advantage",
+        "pos": "ph.",
+        "zh": "給某人優勢",
+        "example_en": "Practice gives athletes an advantage.",
+        "example_zh": "練習給運動員優勢。"
+      },
+      {
+        "id": "b1l8-p085",
+        "phrase": "high jump competition",
+        "pos": "ph.",
+        "zh": "跳高比賽",
+        "example_en": "He won the high jump competition.",
+        "example_zh": "他贏得跳高比賽。"
+      },
+      {
+        "id": "b1l8-p086",
+        "phrase": "be at an advantage",
+        "pos": "ph.",
+        "zh": "處於有利地位",
+        "example_en": "Our team is at an advantage.",
+        "example_zh": "我們隊處於有利地位。"
+      },
+      {
+        "id": "b1l8-p087",
+        "phrase": "eventual success",
+        "pos": "ph.",
+        "zh": "最終成功",
+        "example_en": "Hard work led to eventual success.",
+        "example_zh": "努力帶來最終成功。"
+      },
+      {
+        "id": "b1l8-p088",
+        "phrase": "fall into one’s trap",
+        "pos": "ph.",
+        "zh": "掉入某人的陷阱",
+        "example_en": "The spy fell into the enemy’s trap.",
+        "example_zh": "間諜掉入敵人的陷阱。"
+      },
+      {
+        "id": "b1l8-p089",
+        "phrase": "be aware of",
+        "pos": "ph.",
+        "zh": "意識到；注意",
+        "example_en": "Be aware of the warning signs.",
+        "example_zh": "注意警告標誌。"
+      },
+      {
+        "id": "b1l8-p090",
+        "phrase": "as far as I am aware",
+        "pos": "ph.",
+        "zh": "據我所知",
+        "example_en": "As far as I am aware, the shop is closed.",
+        "example_zh": "據我所知，商店關門了。"
+      },
+      {
+        "id": "b1l8-p091",
+        "phrase": "raise one’s awareness of",
+        "pos": "ph.",
+        "zh": "提高某人對……的意識",
+        "example_en": "The campaign raises awareness of recycling.",
+        "example_zh": "這項活動提高人們對回收的意識。"
+      },
+      {
+        "id": "b1l8-p092",
+        "phrase": "a growing awareness",
+        "pos": "ph.",
+        "zh": "日益增長的意識",
+        "example_en": "There is a growing awareness of mental health.",
+        "example_zh": "人們對心理健康的意識日益增長。"
+      },
+      {
+        "id": "b1l8-p093",
+        "phrase": "too clever by half",
+        "pos": "ph.",
+        "zh": "自作聰明",
+        "example_en": "He is too clever by half and often makes mistakes.",
+        "example_zh": "他自作聰明，常常犯錯。"
+      },
+      {
+        "id": "b1l8-p094",
+        "phrase": "be impressed with",
+        "pos": "ph.",
+        "zh": "對……印象深刻",
+        "example_en": "I was impressed with her work.",
+        "example_zh": "我對她的作品印象深刻。"
+      },
+      {
+        "id": "b1l8-p095",
+        "phrase": "special offer of a cheap monthly rate",
+        "pos": "ph.",
+        "zh": "便宜月費的特別優惠",
+        "example_en": "The gym has a special offer of a cheap monthly rate.",
+        "example_zh": "健身房推出便宜月費的特別優惠。"
+      },
+      {
+        "id": "b1l8-p096",
+        "phrase": "make a living",
+        "pos": "ph.",
+        "zh": "謀生",
+        "example_en": "She makes a living as a designer.",
+        "example_zh": "她靠當設計師謀生。"
+      },
+      {
+        "id": "b1l8-p097",
+        "phrase": "be likely to",
+        "pos": "ph.",
+        "zh": "很可能……",
+        "example_en": "The team is likely to win.",
+        "example_zh": "這支隊伍很可能獲勝。"
+      },
+      {
+        "id": "b1l8-p098",
+        "phrase": "the home team",
+        "pos": "ph.",
+        "zh": "主隊",
+        "example_en": "The home team scored first.",
+        "example_zh": "主隊先得分。"
+      },
+      {
+        "id": "b1l8-p099",
+        "phrase": "beat the visiting team",
+        "pos": "ph.",
+        "zh": "擊敗客隊",
+        "example_en": "The home team beat the visiting team.",
+        "example_zh": "主隊擊敗客隊。"
+      },
+      {
+        "id": "b1l8-p100",
+        "phrase": "within arm’s reach of",
+        "pos": "ph.",
+        "zh": "在……伸手可及之處",
+        "example_en": "Keep the phone within arm’s reach of you.",
+        "example_zh": "把手機放在伸手可及之處。"
+      },
+      {
+        "id": "b1l8-p101",
+        "phrase": "within children’s reach",
+        "pos": "ph.",
+        "zh": "在兒童伸手可及之處",
+        "example_en": "Keep medicine out of children’s reach.",
+        "example_zh": "把藥物放在兒童伸手不可及之處。"
+      },
+      {
+        "id": "b1l8-p102",
+        "phrase": "board the plane",
+        "pos": "ph.",
+        "zh": "登上飛機",
+        "example_en": "Passengers began to board the plane.",
+        "example_zh": "乘客開始登上飛機。"
+      },
+      {
+        "id": "b1l8-p103",
+        "phrase": "return home safe and sound",
+        "pos": "ph.",
+        "zh": "平安回家",
+        "example_en": "They returned home safe and sound.",
+        "example_zh": "他們平安回家。"
+      },
+      {
+        "id": "b1l8-p104",
+        "phrase": "provide…with",
+        "pos": "ph.",
+        "zh": "提供……給……",
+        "example_en": "The school provides students with computers.",
+        "example_zh": "學校提供電腦給學生。"
+      },
+      {
+        "id": "b1l8-p105",
+        "phrase": "high-quality medical care",
+        "pos": "ph.",
+        "zh": "高品質醫療照護",
+        "example_en": "The hospital provides high-quality medical care.",
+        "example_zh": "這家醫院提供高品質醫療照護。"
+      },
+      {
+        "id": "b1l8-p106",
+        "phrase": "get off work",
+        "pos": "ph.",
+        "zh": "下班",
+        "example_en": "I get off work at six.",
+        "example_zh": "我六點下班。"
+      },
+      {
+        "id": "b1l8-p107",
+        "phrase": "have a sense of achievement",
+        "pos": "ph.",
+        "zh": "有成就感",
+        "example_en": "Finishing the project gave her a sense of achievement.",
+        "example_zh": "完成專案讓她有成就感。"
+      },
+      {
+        "id": "b1l8-p108",
+        "phrase": "avoid the rush-hour traffic",
+        "pos": "ph.",
+        "zh": "避開尖峰時段交通",
+        "example_en": "We left early to avoid the rush-hour traffic.",
+        "example_zh": "我們提早出發以避開尖峰時段交通。"
+      },
+      {
+        "id": "b1l8-p109",
+        "phrase": "a piano recital",
+        "pos": "ph.",
+        "zh": "鋼琴獨奏會",
+        "example_en": "She performed at a piano recital.",
+        "example_zh": "她在鋼琴獨奏會上演出。"
+      },
+      {
+        "id": "b1l8-p110",
+        "phrase": "attract more attention",
+        "pos": "ph.",
+        "zh": "吸引更多注意",
+        "example_en": "The colorful sign attracted more attention.",
+        "example_zh": "彩色招牌吸引更多注意。"
+      },
+      {
+        "id": "b1l8-p111",
+        "phrase": "think of a solution",
+        "pos": "ph.",
+        "zh": "想出解決方案",
+        "example_en": "We need to think of a solution.",
+        "example_zh": "我們需要想出解決方案。"
+      },
+      {
+        "id": "b1l8-p112",
+        "phrase": "figure out a solution",
+        "pos": "ph.",
+        "zh": "找出解決方案",
+        "example_en": "The team figured out a solution.",
+        "example_zh": "團隊找出了解決方案。"
+      }
+    ]
+  },
+  "grammar": {
+    "points": [
+      {
+        "id": "b1l8-g1",
+        "title": "The comparative + S + V…, the comparative + S + V… 越...，越...",
+        "examples": [
+          "The higher the cost of living is, the less willing people are to raise children.",
+          "The later students stay up at night, the harder they will find it to focus in class.",
+          "The more advanced medical technology is, the longer people can live."
+        ]
+      },
+      {
+        "id": "b1l8-g2",
+        "title": "so that 以便  (表目的的副詞子句)",
+        "examples": [
+          "I keep a diary so that I can relive memorable moments in the future.",
+          "He set the alarm clock so that he wouldn’t oversleep."
+        ]
+      }
+    ],
+    "sentence_structures": {
+      "items": [
+        {
+          "id": "b1l8-s001",
+          "sentence": "It *has probably happened* to you before.",
+          "type": "simple",
+          "pattern": "S + Vi + Prepositional phrase + Adverb"
+        },
+        {
+          "id": "b1l8-s002",
+          "sentence": "The glass doors of the convenience store *slide* open invitingly; you *hear* the familiar \"Welcome!\" and *enter* just to pick up one item.",
+          "type": "compound",
+          "pattern": "S + Vl + C + Adverb + S + Vt / Vi (Compound predicate) + O + Infinitival phrase"
+        },
+        {
+          "id": "b1l8-s003",
+          "sentence": "A few minutes later, you *walk out* with a whole bag full of drinks, snacks, and other goodies you never even thought of buying!",
+          "type": "complex",
+          "pattern": "Adverbial phrase + S + Vi (Phrasal verb) + Prepositional phrase + Relative clause"
+        },
+        {
+          "id": "b1l8-s004",
+          "sentence": "There *is* no need to be embarrassed if you've experienced this sudden urge to shop.",
+          "type": "complex",
+          "pattern": "There + Vi + S + Infinitival phrase + Adverbial clause (if...)"
+        },
+        {
+          "id": "b1l8-s005",
+          "sentence": "Convenience stores *use* certain strategies to make you feel this way.",
+          "type": "simple",
+          "pattern": "S + Vt + O + Infinitival phrase"
+        },
+        {
+          "id": "b1l8-s006",
+          "sentence": "One of these strategies *is* to follow the \"eye level is buy level\" rule.",
+          "type": "simple",
+          "pattern": "S + Vi + Infinitival C"
+        },
+        {
+          "id": "b1l8-s007",
+          "sentence": "The more visible the products are, the easier it *is* for shoppers to notice and purchase them.",
+          "type": "complex",
+          "pattern": "Correlative comparative clause + It + Vl + C + Infinitival phrase"
+        },
+        {
+          "id": "b1l8-s008",
+          "sentence": "Therefore, smart shop owners usually *place* their most profitable and popular items at the average shopper's eye level to make sure that those items are most likely to be seen.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Prepositional phrase + Infinitival phrase + Noun clause (that...)"
+        },
+        {
+          "id": "b1l8-s009",
+          "sentence": "Similarly, products that are aimed at children, such as toys, *are placed* on lower shelves so that younger shoppers will surely see them.",
+          "type": "complex",
+          "pattern": "S + Relative clause (that...) + Appositive phrase + Passive verb phrase + Adverbial clause (so that...)"
+        },
+        {
+          "id": "b1l8-s010",
+          "sentence": "Another eye-catching convenience store strategy *is* to promote impulse purchases of small, cheap items like candy bars.",
+          "type": "simple",
+          "pattern": "S + Vl + Infinitival C"
+        },
+        {
+          "id": "b1l8-s011",
+          "sentence": "These *are displayed* near cash registers and *are* thus easily noticed and within quick reach.",
+          "type": "simple",
+          "pattern": "S + Passive / Linking verb phrases (Compound predicate) + C"
+        },
+        {
+          "id": "b1l8-s012",
+          "sentence": "Special offers, like \"buy one, get one free,\" *make* such little \"extras\" even more attractive.",
+          "type": "simple",
+          "pattern": "S + Parenthetical example + Vt + O + C"
+        },
+        {
+          "id": "b1l8-s013",
+          "sentence": "Since customers are lining up at cash registers to pay for their things anyway, these items *can easily be grabbed and added* to their shopping baskets on impulse.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Since...) + S + Passive compound verb phrase + Prepositional phrases"
+        },
+        {
+          "id": "b1l8-s014",
+          "sentence": "A third strategy *is* to make customers spend more time in stores so that they will spend more money, too.",
+          "type": "complex",
+          "pattern": "S + Vl + Infinitival C + Adverbial clause (so that...)"
+        },
+        {
+          "id": "b1l8-s015",
+          "sentence": "Studies *have shown* that the longer people stay inside, the more products they buy.",
+          "type": "complex",
+          "pattern": "S + Vt + Noun clause (that...) with Correlative comparative clauses"
+        },
+        {
+          "id": "b1l8-s016",
+          "sentence": "Shops *take advantage of* this by setting up bar-style seating or dining areas.",
+          "type": "simple",
+          "pattern": "S + Vt (Phrasal verb) + O + Gerund phrase"
+        },
+        {
+          "id": "b1l8-s017",
+          "sentence": "Here, people *can read* the paper, *hold* a meeting, or just *hang out*.",
+          "type": "simple",
+          "pattern": "Adverb + S + Vt / Vi (Compound predicate) + O"
+        },
+        {
+          "id": "b1l8-s018",
+          "sentence": "Although these customers might start off with just a beverage, they often *grow* hungry over time.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Although...) + S + Vl + C + Adverbial phrase"
+        },
+        {
+          "id": "b1l8-s019",
+          "sentence": "Eventually, they *end up* purchasing more things like microwave dinners and fruit packs.",
+          "type": "simple",
+          "pattern": "Adverb + S + Vi (Phrasal verb) + Gerund phrase"
+        },
+        {
+          "id": "b1l8-s020",
+          "sentence": "To avoid falling into any of the traps above, *try* to be more aware of the clever strategies convenience stores use to get deeper into your pocket.",
+          "type": "complex",
+          "pattern": "Infinitival phrase + Imperative verb + Infinitival phrase + Relative clause"
+        },
+        {
+          "id": "b1l8-s021",
+          "sentence": "If you can always remember the tricks that shop owners use, you *won't have to worry* about spending too much!",
+          "type": "complex",
+          "pattern": "Adverbial clause (If...) with Relative clause + S + Modal verb phrase + Prepositional phrase"
+        }
+      ]
+    }
+  },
+  "text_genre": {
+    "raw_text": "The text of “Convenience Stores” is an informative piece presenting information regarding the three marketing strategies employed by convenience stores to delve deeper into a customer’s pocket. The three strategies are presented and explained one by one: eye level is buy level, promoting impulse purchases, and encouraging customers to spend more time in stores. To avoid falling into any of the traps mentioned above, customers need to be aware of these tricks and stay alert while shopping."
+  }
+}
