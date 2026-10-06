@@ -55,7 +55,8 @@
         {
           "id": "l9",
           "title": "",
-          "status": "draft"
+          "status": "published",
+          "data": "data/b1/l9.json"
         }
       ]
     },

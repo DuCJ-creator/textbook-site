@@ -1,0 +1,407 @@
+{
+  "book": "B1",
+  "lesson": "L9",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b1l9-v01",
+        "base": "detail",
+        "verb": [
+          {
+            "en": "detail",
+            "zh": "詳述；詳細說明",
+            "example": "The report details the causes of the accident."
+          }
+        ],
+        "noun": [
+          {
+            "en": "detail",
+            "zh": "細節；詳情",
+            "example": "Please check every detail before signing the form."
+          }
+        ],
+        "adj": [
+          {
+            "en": "detailed",
+            "zh": "詳細的；精細的",
+            "example": "The guide gave us detailed instructions."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l9-v02",
+        "base": "mess",
+        "verb": [
+          {
+            "en": "mess",
+            "zh": "弄亂；弄髒；搞砸",
+            "example": "Do not mess up the files on my desk."
+          }
+        ],
+        "noun": [
+          {
+            "en": "mess",
+            "zh": "混亂；髒亂；困境",
+            "example": "The kitchen was a mess after the party."
+          }
+        ],
+        "adj": [
+          {
+            "en": "messy",
+            "zh": "凌亂的；髒亂的；棘手的",
+            "example": "His bedroom is always messy."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l9-v03",
+        "base": "express",
+        "verb": [
+          {
+            "en": "express",
+            "zh": "表達；表示；傳達",
+            "example": "She expressed her thanks in a letter."
+          }
+        ],
+        "noun": [
+          {
+            "en": "express",
+            "zh": "快車；快遞服務",
+            "example": "We took the express to the city center."
+          },
+          {
+            "en": "expression",
+            "zh": "表達；表情；措辭",
+            "example": "His facial expression showed surprise."
+          }
+        ],
+        "adj": [
+          {
+            "en": "expressive",
+            "zh": "富有表現力的；表情豐富的",
+            "example": "The dancer's movements were highly expressive."
+          },
+          {
+            "en": "express",
+            "zh": "快速的；特快的；明確的",
+            "example": "We chose express delivery for the package."
+          }
+        ],
+        "adv": [
+          {
+            "en": "expressively",
+            "zh": "富有表情地；有表現力地",
+            "example": "She read the poem expressively."
+          }
+        ]
+      },
+      {
+        "id": "b1l9-v04",
+        "base": "contrast",
+        "verb": [
+          {
+            "en": "contrast",
+            "zh": "對比；形成對照",
+            "example": "The article contrasts life in the city with life in the countryside."
+          }
+        ],
+        "noun": [
+          {
+            "en": "contrast",
+            "zh": "差異；對比；對照",
+            "example": "The contrast between the two designs is striking."
+          }
+        ],
+        "adj": [
+          {
+            "en": "contrasting",
+            "zh": "對比鮮明的；截然不同的",
+            "example": "The room uses contrasting colors."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l9-v05",
+        "base": "horror",
+        "verb": [
+          {
+            "en": "horrify",
+            "zh": "使震驚；使恐懼",
+            "example": "The news of the attack horrified the community."
+          }
+        ],
+        "noun": [
+          {
+            "en": "horror",
+            "zh": "恐怖；驚恐；恐怖事物",
+            "example": "She watched in horror as the fire spread."
+          }
+        ],
+        "adj": [
+          {
+            "en": "horrible",
+            "zh": "可怕的；糟糕的；令人厭惡的",
+            "example": "The food had a horrible smell."
+          }
+        ],
+        "adv": [
+          {
+            "en": "horribly",
+            "zh": "可怕地；糟糕地；非常",
+            "example": "The plan went horribly wrong."
+          }
+        ]
+      },
+      {
+        "id": "b1l9-v06",
+        "base": "innocent",
+        "verb": [],
+        "noun": [
+          {
+            "en": "innocence",
+            "zh": "清白；無罪；天真",
+            "example": "The evidence proved his innocence."
+          }
+        ],
+        "adj": [
+          {
+            "en": "innocent",
+            "zh": "無罪的；清白的；天真的",
+            "example": "The court found the driver innocent."
+          }
+        ],
+        "adv": [
+          {
+            "en": "innocently",
+            "zh": "無辜地；天真地",
+            "example": "The child looked at me innocently."
+          }
+        ]
+      },
+      {
+        "id": "b1l9-v07",
+        "base": "violate",
+        "verb": [
+          {
+            "en": "violate",
+            "zh": "違反；侵犯；侵害",
+            "example": "Companies that violate the law may be fined."
+          }
+        ],
+        "noun": [
+          {
+            "en": "violence",
+            "zh": "暴力；暴行",
+            "example": "The community organized a march against violence."
+          }
+        ],
+        "adj": [
+          {
+            "en": "violent",
+            "zh": "暴力的；猛烈的；激烈的",
+            "example": "A violent storm damaged several houses."
+          }
+        ],
+        "adv": [
+          {
+            "en": "violently",
+            "zh": "猛烈地；暴力地；激烈地",
+            "example": "The door shook violently in the wind."
+          }
+        ]
+      },
+      {
+        "id": "b1l9-v08",
+        "base": "pollute",
+        "verb": [
+          {
+            "en": "pollute",
+            "zh": "污染；弄髒",
+            "example": "Factories must not pollute the river."
+          }
+        ],
+        "noun": [
+          {
+            "en": "pollution",
+            "zh": "污染；污染問題",
+            "example": "Air pollution can harm human health."
+          },
+          {
+            "en": "pollutant",
+            "zh": "污染物；污染源",
+            "example": "The filter removes harmful pollutants from the water."
+          }
+        ],
+        "adj": [
+          {
+            "en": "polluted",
+            "zh": "受污染的；被弄髒的",
+            "example": "The polluted lake is unsafe for swimming."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l9-v09",
+        "base": "permit",
+        "verb": [
+          {
+            "en": "permit",
+            "zh": "允許；准許",
+            "example": "The rules do not permit food in the library."
+          }
+        ],
+        "noun": [
+          {
+            "en": "permission",
+            "zh": "許可；同意",
+            "example": "You need permission to enter the laboratory."
+          },
+          {
+            "en": "permit",
+            "zh": "許可證；執照",
+            "example": "They applied for a building permit."
+          }
+        ],
+        "adj": [
+          {
+            "en": "permissible",
+            "zh": "可允許的；准許的",
+            "example": "Mobile phones are not permissible during the exam."
+          },
+          {
+            "en": "permissive",
+            "zh": "寬容的；放任的",
+            "example": "Some parents are more permissive than others."
+          },
+          {
+            "en": "permitted",
+            "zh": "獲准的；被允許的",
+            "example": "Parking is permitted only in marked spaces."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l9-v10",
+        "base": "effort",
+        "verb": [],
+        "noun": [
+          {
+            "en": "effort",
+            "zh": "努力；嘗試；力氣",
+            "example": "Learning a new language requires effort."
+          }
+        ],
+        "adj": [
+          {
+            "en": "effortless",
+            "zh": "不費力的；輕鬆自如的",
+            "example": "The athlete made the jump look effortless."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l9-v11",
+        "base": "associate",
+        "verb": [
+          {
+            "en": "associate",
+            "zh": "聯想；使有關聯；交往",
+            "example": "Many people associate this song with summer."
+          }
+        ],
+        "noun": [
+          {
+            "en": "association",
+            "zh": "關聯；協會；聯想",
+            "example": "The study found an association between sleep and memory."
+          }
+        ],
+        "adj": [
+          {
+            "en": "associated",
+            "zh": "相關的；有關聯的",
+            "example": "The associated costs were higher than expected."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l9-v12",
+        "base": "crime",
+        "verb": [],
+        "noun": [
+          {
+            "en": "crime",
+            "zh": "犯罪；罪行",
+            "example": "The police are investigating the crime."
+          },
+          {
+            "en": "criminal",
+            "zh": "罪犯；犯人",
+            "example": "The criminal was arrested at the station."
+          }
+        ],
+        "adj": [
+          {
+            "en": "criminal",
+            "zh": "犯罪的；刑事的",
+            "example": "The lawyer specializes in criminal law."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b1l9-v13",
+        "base": "destroy",
+        "verb": [
+          {
+            "en": "destroy",
+            "zh": "摧毀；破壞；消滅",
+            "example": "The wildfire destroyed several homes."
+          }
+        ],
+        "noun": [
+          {
+            "en": "destruction",
+            "zh": "破壞；摧毀；毀滅",
+            "example": "The earthquake caused widespread destruction."
+          }
+        ],
+        "adj": [
+          {
+            "en": "destructive",
+            "zh": "破壞性的；毀滅性的",
+            "example": "The insect can be destructive to crops."
+          }
+        ],
+        "adv": [
+          {
+            "en": "destructively",
+            "zh": "破壞性地；造成毀滅地",
+            "example": "The chemicals reacted destructively with the metal."
+          }
+        ]
+      }
+    ]
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": []
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}
