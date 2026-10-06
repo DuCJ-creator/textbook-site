@@ -393,15 +393,1095 @@
     ]
   },
   "phrases": {
-    "items": []
+    "items": [
+      {
+        "id": "b1l9-p001",
+        "phrase": "spray-paint a picture",
+        "pos": "ph.",
+        "zh": "用噴漆畫畫",
+        "example_en": "He spray-painted a picture on the wall.",
+        "example_zh": "他用噴漆在牆上畫畫。"
+      },
+      {
+        "id": "b1l9-p002",
+        "phrase": "come in all shapes and sizes",
+        "pos": "ph.",
+        "zh": "有各種形狀和尺寸",
+        "example_en": "These boxes come in all shapes and sizes.",
+        "example_zh": "這些盒子有各種形狀和尺寸。"
+      },
+      {
+        "id": "b1l9-p003",
+        "phrase": "a picturesque landscape",
+        "pos": "ph.",
+        "zh": "風景如畫的景色",
+        "example_en": "We photographed a picturesque landscape.",
+        "example_zh": "我們拍攝風景如畫的景色。"
+      },
+      {
+        "id": "b1l9-p004",
+        "phrase": "a wide variety of accessories",
+        "pos": "ph.",
+        "zh": "各式各樣的配件",
+        "example_en": "The shop sells a wide variety of accessories.",
+        "example_zh": "這家商店販售各式各樣的配件。"
+      },
+      {
+        "id": "b1l9-p005",
+        "phrase": "ease restrictions",
+        "pos": "ph.",
+        "zh": "放寬限制",
+        "example_en": "The city decided to ease restrictions.",
+        "example_zh": "城市決定放寬限制。"
+      },
+      {
+        "id": "b1l9-p006",
+        "phrase": "sporting-goods store",
+        "pos": "ph.",
+        "zh": "運動用品店",
+        "example_en": "I bought shoes at a sporting-goods store.",
+        "example_zh": "我在運動用品店買鞋子。"
+      },
+      {
+        "id": "b1l9-p007",
+        "phrase": "a limited edition jersey",
+        "pos": "ph.",
+        "zh": "限量版球衣",
+        "example_en": "He bought a limited edition jersey.",
+        "example_zh": "他買了一件限量版球衣。"
+      },
+      {
+        "id": "b1l9-p008",
+        "phrase": "add charm to",
+        "pos": "ph.",
+        "zh": "增添魅力",
+        "example_en": "Flowers add charm to the room.",
+        "example_zh": "花朵為房間增添魅力。"
+      },
+      {
+        "id": "b1l9-p009",
+        "phrase": "contrast A with B",
+        "pos": "ph.",
+        "zh": "將 A 與 B 對比",
+        "example_en": "The article contrasts city life with country life.",
+        "example_zh": "這篇文章將城市生活與鄉村生活對比。"
+      },
+      {
+        "id": "b1l9-p010",
+        "phrase": "stand for",
+        "pos": "ph.",
+        "zh": "代表；支持",
+        "example_en": "The letters stand for peace.",
+        "example_zh": "這些字母代表和平。"
+      },
+      {
+        "id": "b1l9-p011",
+        "phrase": "call attention to the need for",
+        "pos": "ph.",
+        "zh": "呼籲注意……的需要",
+        "example_en": "The campaign calls attention to the need for clean water.",
+        "example_zh": "這項活動呼籲注意乾淨用水的需要。"
+      },
+      {
+        "id": "b1l9-p012",
+        "phrase": "out on a date",
+        "pos": "ph.",
+        "zh": "外出約會",
+        "example_en": "They are out on a date.",
+        "example_zh": "他們外出約會。"
+      },
+      {
+        "id": "b1l9-p013",
+        "phrase": "hard work",
+        "pos": "ph.",
+        "zh": "努力工作",
+        "example_en": "Success requires hard work.",
+        "example_zh": "成功需要努力工作。"
+      },
+      {
+        "id": "b1l9-p014",
+        "phrase": "work hard",
+        "pos": "ph.",
+        "zh": "努力工作",
+        "example_en": "She works hard every day.",
+        "example_zh": "她每天努力工作。"
+      },
+      {
+        "id": "b1l9-p015",
+        "phrase": "hard-working",
+        "pos": "ph.",
+        "zh": "勤奮的",
+        "example_en": "He is a hard-working student.",
+        "example_zh": "他是勤奮的學生。"
+      },
+      {
+        "id": "b1l9-p016",
+        "phrase": "provide for one’s family",
+        "pos": "ph.",
+        "zh": "養活某人的家庭",
+        "example_en": "She works to provide for her family.",
+        "example_zh": "她工作以養活家人。"
+      },
+      {
+        "id": "b1l9-p017",
+        "phrase": "a ray of sunshine",
+        "pos": "ph.",
+        "zh": "一線陽光；帶來希望的人事物",
+        "example_en": "Her smile was a ray of sunshine.",
+        "example_zh": "她的微笑帶來一線希望。"
+      },
+      {
+        "id": "b1l9-p018",
+        "phrase": "raise everyone’s spirits",
+        "pos": "ph.",
+        "zh": "鼓舞大家的士氣",
+        "example_en": "The music raised everyone’s spirits.",
+        "example_zh": "音樂鼓舞了大家的士氣。"
+      },
+      {
+        "id": "b1l9-p019",
+        "phrase": "covered in dust",
+        "pos": "ph.",
+        "zh": "覆滿灰塵",
+        "example_en": "The old books were covered in dust.",
+        "example_zh": "舊書覆滿灰塵。"
+      },
+      {
+        "id": "b1l9-p020",
+        "phrase": "potted herb",
+        "pos": "ph.",
+        "zh": "盆栽香草",
+        "example_en": "She grows a potted herb on the balcony.",
+        "example_zh": "她在陽台種一盆香草。"
+      },
+      {
+        "id": "b1l9-p021",
+        "phrase": "propose a question",
+        "pos": "ph.",
+        "zh": "提出問題",
+        "example_en": "The teacher proposed a question.",
+        "example_zh": "老師提出一個問題。"
+      },
+      {
+        "id": "b1l9-p022",
+        "phrase": "mainstream media",
+        "pos": "ph.",
+        "zh": "主流媒體",
+        "example_en": "The story appeared in the mainstream media.",
+        "example_zh": "這則故事出現在主流媒體。"
+      },
+      {
+        "id": "b1l9-p023",
+        "phrase": "a collection of works",
+        "pos": "ph.",
+        "zh": "作品集",
+        "example_en": "The museum displayed a collection of works.",
+        "example_zh": "博物館展示一套作品集。"
+      },
+      {
+        "id": "b1l9-p024",
+        "phrase": "renowned artist",
+        "pos": "ph.",
+        "zh": "知名藝術家",
+        "example_en": "The renowned artist visited our school.",
+        "example_zh": "這位知名藝術家參觀我們學校。"
+      },
+      {
+        "id": "b1l9-p025",
+        "phrase": "issues related to gender equality",
+        "pos": "ph.",
+        "zh": "與性別平等相關的議題",
+        "example_en": "The forum discussed issues related to gender equality.",
+        "example_zh": "論壇討論與性別平等相關的議題。"
+      },
+      {
+        "id": "b1l9-p026",
+        "phrase": "hold a parade",
+        "pos": "ph.",
+        "zh": "舉行遊行",
+        "example_en": "The city held a parade.",
+        "example_zh": "這座城市舉行遊行。"
+      },
+      {
+        "id": "b1l9-p027",
+        "phrase": "environmental issue",
+        "pos": "ph.",
+        "zh": "環境議題",
+        "example_en": "Plastic waste is an environmental issue.",
+        "example_zh": "塑膠廢棄物是環境議題。"
+      },
+      {
+        "id": "b1l9-p028",
+        "phrase": "energy policy",
+        "pos": "ph.",
+        "zh": "能源政策",
+        "example_en": "The government changed its energy policy.",
+        "example_zh": "政府改變能源政策。"
+      },
+      {
+        "id": "b1l9-p029",
+        "phrase": "authorities concerned",
+        "pos": "ph.",
+        "zh": "有關當局",
+        "example_en": "The authorities concerned issued a statement.",
+        "example_zh": "有關當局發表聲明。"
+      },
+      {
+        "id": "b1l9-p030",
+        "phrase": "in the shade",
+        "pos": "ph.",
+        "zh": "在陰涼處",
+        "example_en": "We rested in the shade.",
+        "example_zh": "我們在陰涼處休息。"
+      },
+      {
+        "id": "b1l9-p031",
+        "phrase": "make a mess",
+        "pos": "ph.",
+        "zh": "弄得一團亂",
+        "example_en": "The children made a mess in the kitchen.",
+        "example_zh": "孩子們把廚房弄得一團亂。"
+      },
+      {
+        "id": "b1l9-p032",
+        "phrase": "nothing but",
+        "pos": "ph.",
+        "zh": "只有；只是",
+        "example_en": "The box contained nothing but old papers.",
+        "example_zh": "箱子裡只有舊文件。"
+      },
+      {
+        "id": "b1l9-p033",
+        "phrase": "visual pollution",
+        "pos": "ph.",
+        "zh": "視覺污染",
+        "example_en": "Too many signs create visual pollution.",
+        "example_zh": "太多招牌造成視覺污染。"
+      },
+      {
+        "id": "b1l9-p034",
+        "phrase": "done without permission",
+        "pos": "ph.",
+        "zh": "未經許可完成",
+        "example_en": "The painting was done without permission.",
+        "example_zh": "這幅畫未經許可完成。"
+      },
+      {
+        "id": "b1l9-p035",
+        "phrase": "get rid of",
+        "pos": "ph.",
+        "zh": "除掉；擺脫",
+        "example_en": "We need to get rid of the trash.",
+        "example_zh": "我們需要清除垃圾。"
+      },
+      {
+        "id": "b1l9-p036",
+        "phrase": "clean up",
+        "pos": "ph.",
+        "zh": "清理",
+        "example_en": "Let’s clean up the room.",
+        "example_zh": "我們來清理房間。"
+      },
+      {
+        "id": "b1l9-p037",
+        "phrase": "even worse",
+        "pos": "ph.",
+        "zh": "更糟的是",
+        "example_en": "The road was closed, and even worse, it rained.",
+        "example_zh": "道路關閉了，更糟的是還下雨。"
+      },
+      {
+        "id": "b1l9-p038",
+        "phrase": "worse still",
+        "pos": "ph.",
+        "zh": "更糟的是",
+        "example_en": "Worse still, nobody apologized.",
+        "example_zh": "更糟的是，沒有人道歉。"
+      },
+      {
+        "id": "b1l9-p039",
+        "phrase": "associated with",
+        "pos": "ph.",
+        "zh": "與……有關",
+        "example_en": "Smoking is associated with health risks.",
+        "example_zh": "吸菸與健康風險有關。"
+      },
+      {
+        "id": "b1l9-p040",
+        "phrase": "criminal activity",
+        "pos": "ph.",
+        "zh": "犯罪活動",
+        "example_en": "The police investigated criminal activity.",
+        "example_zh": "警方調查犯罪活動。"
+      },
+      {
+        "id": "b1l9-p041",
+        "phrase": "when it comes to",
+        "pos": "ph.",
+        "zh": "談到……時",
+        "example_en": "When it comes to design, she is an expert.",
+        "example_zh": "談到設計時，她是專家。"
+      },
+      {
+        "id": "b1l9-p042",
+        "phrase": "creative or destructive",
+        "pos": "ph.",
+        "zh": "創造性的或破壞性的",
+        "example_en": "Technology can be creative or destructive.",
+        "example_zh": "科技可以是創造性的，也可以是破壞性的。"
+      },
+      {
+        "id": "b1l9-p043",
+        "phrase": "express oneself",
+        "pos": "ph.",
+        "zh": "表達自己",
+        "example_en": "Art helps people express themselves.",
+        "example_zh": "藝術幫助人們表達自己。"
+      },
+      {
+        "id": "b1l9-p044",
+        "phrase": "share one’s thoughts about",
+        "pos": "ph.",
+        "zh": "分享某人對……的想法",
+        "example_en": "She shared her thoughts about the issue.",
+        "example_zh": "她分享對這個議題的想法。"
+      },
+      {
+        "id": "b1l9-p045",
+        "phrase": "sign an executive order",
+        "pos": "ph.",
+        "zh": "簽署行政命令",
+        "example_en": "The president signed an executive order.",
+        "example_zh": "總統簽署行政命令。"
+      },
+      {
+        "id": "b1l9-p046",
+        "phrase": "wage war against",
+        "pos": "ph.",
+        "zh": "對……發動戰爭",
+        "example_en": "The country waged war against corruption.",
+        "example_zh": "這個國家對貪腐開戰。"
+      },
+      {
+        "id": "b1l9-p047",
+        "phrase": "social media platform",
+        "pos": "ph.",
+        "zh": "社群媒體平台",
+        "example_en": "The video spread on a social media platform.",
+        "example_zh": "影片在社群媒體平台上傳播。"
+      },
+      {
+        "id": "b1l9-p048",
+        "phrase": "take to the streets",
+        "pos": "ph.",
+        "zh": "走上街頭",
+        "example_en": "Citizens took to the streets to protest.",
+        "example_zh": "市民走上街頭抗議。"
+      },
+      {
+        "id": "b1l9-p049",
+        "phrase": "in protest of",
+        "pos": "ph.",
+        "zh": "抗議……",
+        "example_en": "They marched in protest of the decision.",
+        "example_zh": "他們遊行抗議這項決定。"
+      },
+      {
+        "id": "b1l9-p050",
+        "phrase": "lockdown order",
+        "pos": "ph.",
+        "zh": "封城命令",
+        "example_en": "The lockdown order lasted two weeks.",
+        "example_zh": "封城命令持續兩週。"
+      },
+      {
+        "id": "b1l9-p051",
+        "phrase": "top consultant",
+        "pos": "ph.",
+        "zh": "頂尖顧問",
+        "example_en": "The firm hired a top consultant.",
+        "example_zh": "公司聘請一位頂尖顧問。"
+      },
+      {
+        "id": "b1l9-p052",
+        "phrase": "management consulting firm",
+        "pos": "ph.",
+        "zh": "管理顧問公司",
+        "example_en": "She works for a management consulting firm.",
+        "example_zh": "她在管理顧問公司工作。"
+      },
+      {
+        "id": "b1l9-p053",
+        "phrase": "run a workshop",
+        "pos": "ph.",
+        "zh": "舉辦工作坊",
+        "example_en": "The teacher ran a workshop on writing.",
+        "example_zh": "老師舉辦寫作工作坊。"
+      },
+      {
+        "id": "b1l9-p054",
+        "phrase": "sign up for",
+        "pos": "ph.",
+        "zh": "報名參加",
+        "example_en": "I signed up for the course.",
+        "example_zh": "我報名參加這門課。"
+      },
+      {
+        "id": "b1l9-p055",
+        "phrase": "multinational corporation",
+        "pos": "ph.",
+        "zh": "跨國企業",
+        "example_en": "He works for a multinational corporation.",
+        "example_zh": "他在跨國企業工作。"
+      },
+      {
+        "id": "b1l9-p056",
+        "phrase": "do some grocery shopping",
+        "pos": "ph.",
+        "zh": "買些日用品",
+        "example_en": "I need to do some grocery shopping.",
+        "example_zh": "我需要買些日用品。"
+      },
+      {
+        "id": "b1l9-p057",
+        "phrase": "a detailed description of",
+        "pos": "ph.",
+        "zh": "對……的詳細描述",
+        "example_en": "The report gives a detailed description of the accident.",
+        "example_zh": "報告詳細描述這起事故。"
+      },
+      {
+        "id": "b1l9-p058",
+        "phrase": "explain in detail",
+        "pos": "ph.",
+        "zh": "詳細解釋",
+        "example_en": "Please explain the process in detail.",
+        "example_zh": "請詳細解釋這個過程。"
+      },
+      {
+        "id": "b1l9-p059",
+        "phrase": "in a mess",
+        "pos": "ph.",
+        "zh": "一團亂",
+        "example_en": "His room is in a mess.",
+        "example_zh": "他的房間一團亂。"
+      },
+      {
+        "id": "b1l9-p060",
+        "phrase": "a real mess",
+        "pos": "ph.",
+        "zh": "真正的混亂",
+        "example_en": "The storm left a real mess.",
+        "example_zh": "暴風雨造成真正的混亂。"
+      },
+      {
+        "id": "b1l9-p061",
+        "phrase": "express one’s view",
+        "pos": "ph.",
+        "zh": "表達某人的看法",
+        "example_en": "Everyone may express their view.",
+        "example_zh": "每個人都可以表達看法。"
+      },
+      {
+        "id": "b1l9-p062",
+        "phrase": "freedom of expression",
+        "pos": "ph.",
+        "zh": "言論自由",
+        "example_en": "Freedom of expression is important.",
+        "example_zh": "言論自由很重要。"
+      },
+      {
+        "id": "b1l9-p063",
+        "phrase": "expression of",
+        "pos": "ph.",
+        "zh": "……的表達",
+        "example_en": "The gift was an expression of gratitude.",
+        "example_zh": "這份禮物是感謝的表達。"
+      },
+      {
+        "id": "b1l9-p064",
+        "phrase": "in one’s opinion",
+        "pos": "ph.",
+        "zh": "依某人之見",
+        "example_en": "In my opinion, the plan is practical.",
+        "example_zh": "依我之見，這項計畫很實際。"
+      },
+      {
+        "id": "b1l9-p065",
+        "phrase": "discourage sb. from",
+        "pos": "ph.",
+        "zh": "勸阻某人不要……",
+        "example_en": "The rain discouraged us from hiking.",
+        "example_zh": "下雨使我們打消健行的念頭。"
+      },
+      {
+        "id": "b1l9-p066",
+        "phrase": "many contrasts between A and B",
+        "pos": "ph.",
+        "zh": "A 與 B 之間的許多對比",
+        "example_en": "There are many contrasts between A and B.",
+        "example_zh": "A 與 B 之間有許多對比。"
+      },
+      {
+        "id": "b1l9-p067",
+        "phrase": "in contrast with",
+        "pos": "ph.",
+        "zh": "與……形成對比",
+        "example_en": "The old building is in contrast with the new tower.",
+        "example_zh": "老建築與新塔形成對比。"
+      },
+      {
+        "id": "b1l9-p068",
+        "phrase": "run on electricity",
+        "pos": "ph.",
+        "zh": "以電力運作",
+        "example_en": "The bus runs on electricity.",
+        "example_zh": "這輛公車以電力運作。"
+      },
+      {
+        "id": "b1l9-p069",
+        "phrase": "environmentally friendly",
+        "pos": "ph.",
+        "zh": "環境友善的",
+        "example_en": "We chose an environmentally friendly package.",
+        "example_zh": "我們選擇環境友善的包裝。"
+      },
+      {
+        "id": "b1l9-p070",
+        "phrase": "in horror",
+        "pos": "ph.",
+        "zh": "驚恐地",
+        "example_en": "She screamed in horror.",
+        "example_zh": "她驚恐地尖叫。"
+      },
+      {
+        "id": "b1l9-p071",
+        "phrase": "tear…to pieces",
+        "pos": "ph.",
+        "zh": "把……撕成碎片",
+        "example_en": "The dog tore the paper to pieces.",
+        "example_zh": "狗把紙撕成碎片。"
+      },
+      {
+        "id": "b1l9-p072",
+        "phrase": "to one’s horror",
+        "pos": "ph.",
+        "zh": "令某人驚恐的是",
+        "example_en": "To my horror, the door was open.",
+        "example_zh": "令我驚恐的是，門是開著的。"
+      },
+      {
+        "id": "b1l9-p073",
+        "phrase": "have a look of innocence",
+        "pos": "ph.",
+        "zh": "看起來很天真",
+        "example_en": "The child had a look of innocence.",
+        "example_zh": "孩子看起來很天真。"
+      },
+      {
+        "id": "b1l9-p074",
+        "phrase": "in all innocence",
+        "pos": "ph.",
+        "zh": "完全無辜地",
+        "example_en": "He asked the question in all innocence.",
+        "example_zh": "他完全無辜地提出問題。"
+      },
+      {
+        "id": "b1l9-p075",
+        "phrase": "use of violence against sb.",
+        "pos": "ph.",
+        "zh": "對某人使用暴力",
+        "example_en": "The use of violence against civilians is wrong.",
+        "example_zh": "對平民使用暴力是不對的。"
+      },
+      {
+        "id": "b1l9-p076",
+        "phrase": "domestic violence",
+        "pos": "ph.",
+        "zh": "家庭暴力",
+        "example_en": "The shelter helps victims of domestic violence.",
+        "example_zh": "收容所幫助家庭暴力受害者。"
+      },
+      {
+        "id": "b1l9-p077",
+        "phrase": "violent behavior",
+        "pos": "ph.",
+        "zh": "暴力行為",
+        "example_en": "The school does not tolerate violent behavior.",
+        "example_zh": "學校不容忍暴力行為。"
+      },
+      {
+        "id": "b1l9-p078",
+        "phrase": "visual arts",
+        "pos": "ph.",
+        "zh": "視覺藝術",
+        "example_en": "She studies visual arts.",
+        "example_zh": "她研究視覺藝術。"
+      },
+      {
+        "id": "b1l9-p079",
+        "phrase": "visual effect",
+        "pos": "ph.",
+        "zh": "視覺效果",
+        "example_en": "The film has a stunning visual effect.",
+        "example_zh": "這部電影有驚人的視覺效果。"
+      },
+      {
+        "id": "b1l9-p080",
+        "phrase": "pollute A with B",
+        "pos": "ph.",
+        "zh": "用 B 污染 A",
+        "example_en": "Factories pollute rivers with chemicals.",
+        "example_zh": "工廠用化學物質污染河流。"
+      },
+      {
+        "id": "b1l9-p081",
+        "phrase": "get special permission for",
+        "pos": "ph.",
+        "zh": "取得……的特別許可",
+        "example_en": "We got special permission for the event.",
+        "example_zh": "我們取得活動的特別許可。"
+      },
+      {
+        "id": "b1l9-p082",
+        "phrase": "ask (sb.) for permission",
+        "pos": "ph.",
+        "zh": "向某人請求許可",
+        "example_en": "Ask your teacher for permission first.",
+        "example_zh": "先向老師請求許可。"
+      },
+      {
+        "id": "b1l9-p083",
+        "phrase": "be permitted to",
+        "pos": "ph.",
+        "zh": "獲准做……",
+        "example_en": "Visitors are permitted to take photos.",
+        "example_zh": "訪客獲准拍照。"
+      },
+      {
+        "id": "b1l9-p084",
+        "phrase": "put effort into sth.",
+        "pos": "ph.",
+        "zh": "在某事上投入努力",
+        "example_en": "She puts effort into every project.",
+        "example_zh": "她在每個專案上投入努力。"
+      },
+      {
+        "id": "b1l9-p085",
+        "phrase": "make an effort to",
+        "pos": "ph.",
+        "zh": "努力做……",
+        "example_en": "Please make an effort to arrive early.",
+        "example_zh": "請努力早點到。"
+      },
+      {
+        "id": "b1l9-p086",
+        "phrase": "get home in time",
+        "pos": "ph.",
+        "zh": "及時到家",
+        "example_en": "We left early to get home in time.",
+        "example_zh": "我們提早離開以便及時到家。"
+      },
+      {
+        "id": "b1l9-p087",
+        "phrase": "spare no effort to do sth.",
+        "pos": "ph.",
+        "zh": "不遺餘力做某事",
+        "example_en": "They spared no effort to help the victims.",
+        "example_zh": "他們不遺餘力幫助受害者。"
+      },
+      {
+        "id": "b1l9-p088",
+        "phrase": "community service",
+        "pos": "ph.",
+        "zh": "社區服務",
+        "example_en": "He completed community service.",
+        "example_zh": "他完成社區服務。"
+      },
+      {
+        "id": "b1l9-p089",
+        "phrase": "association between A & B",
+        "pos": "ph.",
+        "zh": "A 與 B 之間的關聯",
+        "example_en": "Researchers found an association between A and B.",
+        "example_zh": "研究人員發現 A 與 B 之間的關聯。"
+      },
+      {
+        "id": "b1l9-p090",
+        "phrase": "criminal record",
+        "pos": "ph.",
+        "zh": "犯罪紀錄",
+        "example_en": "The applicant has no criminal record.",
+        "example_zh": "申請人沒有犯罪紀錄。"
+      },
+      {
+        "id": "b1l9-p091",
+        "phrase": "a drop in criminal behavior",
+        "pos": "ph.",
+        "zh": "犯罪行為下降",
+        "example_en": "The program led to a drop in criminal behavior.",
+        "example_zh": "這項計畫使犯罪行為下降。"
+      },
+      {
+        "id": "b1l9-p092",
+        "phrase": "beat up",
+        "pos": "ph.",
+        "zh": "痛打",
+        "example_en": "The gang beat up the man.",
+        "example_zh": "那群人痛打那名男子。"
+      },
+      {
+        "id": "b1l9-p093",
+        "phrase": "for no reason",
+        "pos": "ph.",
+        "zh": "無緣無故",
+        "example_en": "He left for no reason.",
+        "example_zh": "他無緣無故離開。"
+      },
+      {
+        "id": "b1l9-p094",
+        "phrase": "rate of violent crime",
+        "pos": "ph.",
+        "zh": "暴力犯罪率",
+        "example_en": "The rate of violent crime fell.",
+        "example_zh": "暴力犯罪率下降了。"
+      },
+      {
+        "id": "b1l9-p095",
+        "phrase": "commit a crime",
+        "pos": "ph.",
+        "zh": "犯罪",
+        "example_en": "It is wrong to commit a crime.",
+        "example_zh": "犯罪是不對的。"
+      },
+      {
+        "id": "b1l9-p096",
+        "phrase": "destructive power",
+        "pos": "ph.",
+        "zh": "破壞力",
+        "example_en": "The storm showed its destructive power.",
+        "example_zh": "暴風雨展現其破壞力。"
+      },
+      {
+        "id": "b1l9-p097",
+        "phrase": "result in the destruction of",
+        "pos": "ph.",
+        "zh": "導致……的毀滅",
+        "example_en": "The fire resulted in the destruction of the forest.",
+        "example_zh": "火災導致森林毀滅。"
+      },
+      {
+        "id": "b1l9-p098",
+        "phrase": "ancient piece of art",
+        "pos": "ph.",
+        "zh": "古代藝術品",
+        "example_en": "The museum protects an ancient piece of art.",
+        "example_zh": "博物館保護一件古代藝術品。"
+      },
+      {
+        "id": "b1l9-p099",
+        "phrase": "after endless efforts",
+        "pos": "ph.",
+        "zh": "經過不懈努力後",
+        "example_en": "After endless efforts, she achieved her goal.",
+        "example_zh": "經過不懈努力後，她達成目標。"
+      },
+      {
+        "id": "b1l9-p100",
+        "phrase": "have a destructive effect on",
+        "pos": "ph.",
+        "zh": "對……有破壞性影響",
+        "example_en": "Pollution has a destructive effect on wildlife.",
+        "example_zh": "污染對野生動物有破壞性影響。"
+      },
+      {
+        "id": "b1l9-p101",
+        "phrase": "parental permission",
+        "pos": "ph.",
+        "zh": "父母許可",
+        "example_en": "Students need parental permission.",
+        "example_zh": "學生需要父母許可。"
+      },
+      {
+        "id": "b1l9-p102",
+        "phrase": "be fed up with",
+        "pos": "ph.",
+        "zh": "厭倦……",
+        "example_en": "She is fed up with the noise.",
+        "example_zh": "她厭倦了噪音。"
+      },
+      {
+        "id": "b1l9-p103",
+        "phrase": "express one’s emotion",
+        "pos": "ph.",
+        "zh": "表達某人的情感",
+        "example_en": "Music helps him express his emotions.",
+        "example_zh": "音樂幫助他表達情感。"
+      },
+      {
+        "id": "b1l9-p104",
+        "phrase": "criminal act",
+        "pos": "ph.",
+        "zh": "犯罪行為",
+        "example_en": "The theft was a criminal act.",
+        "example_zh": "這起竊盜是犯罪行為。"
+      },
+      {
+        "id": "b1l9-p105",
+        "phrase": "powerful visual impact",
+        "pos": "ph.",
+        "zh": "強烈的視覺衝擊",
+        "example_en": "The poster has a powerful visual impact.",
+        "example_zh": "這張海報有強烈的視覺衝擊。"
+      },
+      {
+        "id": "b1l9-p106",
+        "phrase": "spend the honeymoon",
+        "pos": "ph.",
+        "zh": "度蜜月",
+        "example_en": "They spent the honeymoon in Italy.",
+        "example_zh": "他們在義大利度蜜月。"
+      },
+      {
+        "id": "b1l9-p107",
+        "phrase": "a brand-new life",
+        "pos": "ph.",
+        "zh": "嶄新的生活",
+        "example_en": "The couple began a brand-new life.",
+        "example_zh": "這對夫妻開始嶄新的生活。"
+      },
+      {
+        "id": "b1l9-p108",
+        "phrase": "lie awake the whole night",
+        "pos": "ph.",
+        "zh": "整晚醒著躺著",
+        "example_en": "She lay awake the whole night.",
+        "example_zh": "她整晚醒著躺在床上。"
+      },
+      {
+        "id": "b1l9-p109",
+        "phrase": "keep one’s thoughts to oneself",
+        "pos": "ph.",
+        "zh": "把想法放在心裡",
+        "example_en": "He kept his thoughts to himself.",
+        "example_zh": "他把想法放在心裡。"
+      }
+    ]
   },
   "grammar": {
-    "points": [],
+    "points": [
+      {
+        "id": "b1l9-g1",
+        "title": "S + V…, V-ing/p.p… 分詞構句",
+        "examples": [
+          "Harry decided to study in the UK, hoping to find a job there after graduation.",
+          "Liz stared at the model, amazed by his handsome looks.",
+          "The lion roared in pain, struggling to free himself from the net."
+        ]
+      },
+      {
+        "id": "b1l9-g2",
+        "title": "whereas/while (for showing contrast and differences)",
+        "examples": [
+          "Breakfast shops in Taiwan often serve items like soy milk and scallion pancakes, whereas in Japan, breakfast is commonly centered around rice, miso soup, and grilled fish.",
+          "People in Taiwan might talk quietly on the metro, whereas in Japan, it is considered polite to remain completely silent.",
+          "In Taiwan, it is normal to share dishes with others at the same table, whereas in Japan, everyone typically has their own set portion and uses individual chopsticks for serving shared dishes.",
+          "Taiwanese people usually greet with a casual \"hello\" or a handshake, whereas Japanese people bow as a traditional form of greeting."
+        ]
+      }
+    ],
     "sentence_structures": {
-      "items": []
+      "items": [
+        {
+          "id": "b1l9-s001",
+          "sentence": "When people draw or spray-paint pictures or words onto a wall, under bridges, or even on the sides of buses and trains, these pictures or words *are called* graffiti.",
+          "type": "complex",
+          "pattern": "Adverbial clause (When...) + S + Passive verb phrase + C"
+        },
+        {
+          "id": "b1l9-s002",
+          "sentence": "It *comes in* all shapes and sizes, from simple words to detailed paintings.",
+          "type": "simple",
+          "pattern": "S + Vi (Phrasal verb) + O + Prepositional phrase"
+        },
+        {
+          "id": "b1l9-s003",
+          "sentence": "Some *love* it, while others hate it.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Adverbial clause (while...)"
+        },
+        {
+          "id": "b1l9-s004",
+          "sentence": "The question *is*: *Is* graffiti a form of art or just a mess?",
+          "type": "complex",
+          "pattern": "S + Vl + C + Direct interrogative clause"
+        },
+        {
+          "id": "b1l9-s005",
+          "sentence": "Graffiti *is* obviously art.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b1l9-s006",
+          "sentence": "First, it *takes* a lot of time and hard work.",
+          "type": "simple",
+          "pattern": "Adverb + S + Vt + O"
+        },
+        {
+          "id": "b1l9-s007",
+          "sentence": "It *is* not just scribbling.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b1l9-s008",
+          "sentence": "Graffiti artists *are* like other painters.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b1l9-s009",
+          "sentence": "Their art *starts* as sketches and outlines, perfected with vivid pictures and various details later.",
+          "type": "simple",
+          "pattern": "S + Vl + C + Participial phrase"
+        },
+        {
+          "id": "b1l9-s010",
+          "sentence": "The only difference *is* that they paint on walls rather than on paper.",
+          "type": "complex",
+          "pattern": "S + Vi + Noun clause (that...)"
+        },
+        {
+          "id": "b1l9-s011",
+          "sentence": "Second, like other art forms, graffiti *is* about expressing one's feelings and being creative.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vl + C + Gerund phrases"
+        },
+        {
+          "id": "b1l9-s012",
+          "sentence": "Banksy, for example, *is* a famous graffiti artist who paints to show his opinions.",
+          "type": "complex",
+          "pattern": "S + Parenthetical phrase + Vl + C + Relative clause (who...)"
+        },
+        {
+          "id": "b1l9-s013",
+          "sentence": "Many of his works *contrast* the horror of war with the innocence of children.",
+          "type": "simple",
+          "pattern": "S + Vt + O + Prepositional phrase"
+        },
+        {
+          "id": "b1l9-s014",
+          "sentence": "In one of his pieces, a young boy *places* a flower into a soldier's gun.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + O + Prepositional phrase"
+        },
+        {
+          "id": "b1l9-s015",
+          "sentence": "The gun *represents* violence, whereas the flower stands for peace.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Adverbial clause (whereas...)"
+        },
+        {
+          "id": "b1l9-s016",
+          "sentence": "Works like this *call attention to* the need for positive change in the world.",
+          "type": "simple",
+          "pattern": "S + Vt (Phrasal verb) + O + Prepositional phrase"
+        },
+        {
+          "id": "b1l9-s017",
+          "sentence": "*Isn't* it art?",
+          "type": "simple",
+          "pattern": "Interrogative: Vl + S + C"
+        },
+        {
+          "id": "b1l9-s018",
+          "sentence": "Graffiti *makes* a mess.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b1l9-s019",
+          "sentence": "It *is* nothing but visual pollution.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b1l9-s020",
+          "sentence": "Most graffiti *is* \"tagging,\" which is more like just scribbling someone's name.",
+          "type": "complex",
+          "pattern": "S + Vl + C + Relative clause (which...)"
+        },
+        {
+          "id": "b1l9-s021",
+          "sentence": "These ugly paintings *make* cities look messy.",
+          "type": "simple",
+          "pattern": "S + Vt + O + C"
+        },
+        {
+          "id": "b1l9-s022",
+          "sentence": "In addition, most graffiti *is done* without permission.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Passive verb phrase + Prepositional phrase"
+        },
+        {
+          "id": "b1l9-s023",
+          "sentence": "A lot of money and effort *are needed* to get rid of it.",
+          "type": "simple",
+          "pattern": "Compound S + Passive verb phrase + Infinitival phrase"
+        },
+        {
+          "id": "b1l9-s024",
+          "sentence": "The city of Los Angeles, for example, *has* a huge problem with graffiti, spending millions of dollars every year cleaning it up.",
+          "type": "simple",
+          "pattern": "S + Parenthetical phrase + Vt + O + Participial phrase"
+        },
+        {
+          "id": "b1l9-s025",
+          "sentence": "Each month, workers *wash away* hundreds of thousands of square feet of it.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vt (Phrasal verb) + O"
+        },
+        {
+          "id": "b1l9-s026",
+          "sentence": "Even worse, graffiti *harms* communities.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vt + O"
+        },
+        {
+          "id": "b1l9-s027",
+          "sentence": "Many people *believe* that graffiti is associated with criminal activity, feeling that it is unsafe to walk around or live in areas with graffiti.",
+          "type": "complex",
+          "pattern": "S + Vt + Noun clause (that...) + Participial phrase with Noun clause"
+        },
+        {
+          "id": "b1l9-s028",
+          "sentence": "If graffiti causes all these problems, can we really *call* it art?",
+          "type": "complex",
+          "pattern": "Adverbial clause (If...) + Interrogative: S + Vt + O + C"
+        },
+        {
+          "id": "b1l9-s029",
+          "sentence": "Which side of the wall *are* you on when it comes to graffiti?",
+          "type": "complex",
+          "pattern": "Interrogative: C + Vl + S + Adverbial clause (when...)"
+        },
+        {
+          "id": "b1l9-s030",
+          "sentence": "*Is* it creative or destructive?",
+          "type": "simple",
+          "pattern": "Interrogative: Vl + S + C"
+        },
+        {
+          "id": "b1l9-s031",
+          "sentence": "Now, it *is* your turn to express yourself and share your thoughts about it!",
+          "type": "simple",
+          "pattern": "Adverb + S + Vl + C + Infinitival phrases"
+        }
+      ]
     }
   },
   "text_genre": {
-    "raw_text": ""
+    "raw_text": "The text, \"Fighting For or Against Graffiti,\" as its name suggests, is an argumentative essay discussing the pros and cons of graffiti. Two views are listed separately: graffiti is obviously art, and graffiti makes a mess. Each argument is presented following the structure of OREO: Opinion, Reason(s), Example(s), and Opinion (restatement). Which argument convinced you more, and why?"
   }
 }
