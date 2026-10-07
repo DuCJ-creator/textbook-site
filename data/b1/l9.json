@@ -1314,7 +1314,7 @@
           "id": "b1l9-s004",
           "sentence": "The question *is*: *Is* graffiti a form of art or just a mess?",
           "type": "complex",
-          "pattern": "S + Vl + C + Direct interrogative clause"
+          "pattern": "S + Vl + Direct interrogative clause (C)"
         },
         {
           "id": "b1l9-s005",
@@ -1344,13 +1344,13 @@
           "id": "b1l9-s009",
           "sentence": "Their art *starts* as sketches and outlines, perfected with vivid pictures and various details later.",
           "type": "simple",
-          "pattern": "S + Vl + C + Participial phrase"
+          "pattern": "S + Vi"
         },
         {
           "id": "b1l9-s010",
           "sentence": "The only difference *is* that they paint on walls rather than on paper.",
           "type": "complex",
-          "pattern": "S + Vi + Noun clause (that...)"
+          "pattern": "S + Vl + Noun clause (that...)"
         },
         {
           "id": "b1l9-s011",
