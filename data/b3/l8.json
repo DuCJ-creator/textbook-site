@@ -1,0 +1,746 @@
+{
+  "book": "B3",
+  "lesson": "L8",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b3l8-v01",
+        "base": "abuse",
+        "verb": [
+          {
+            "en": "abuse",
+            "zh": "濫用；虐待；辱罵",
+            "example": "No one should abuse their power."
+          }
+        ],
+        "noun": [
+          {
+            "en": "abuse",
+            "zh": "濫用；虐待；辱罵",
+            "example": "The organization works to prevent child abuse."
+          }
+        ],
+        "adj": [
+          {
+            "en": "abusive",
+            "zh": "虐待的；辱罵的；濫用的",
+            "example": "The company does not tolerate abusive behavior."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l8-v02",
+        "base": "highlight",
+        "verb": [
+          {
+            "en": "highlight",
+            "zh": "強調；使醒目；標示",
+            "example": "The report highlights the need for clean water."
+          }
+        ],
+        "noun": [
+          {
+            "en": "highlight",
+            "zh": "最精彩的部分；重點；亮點",
+            "example": "The science show was the highlight of the trip."
+          },
+          {
+            "en": "highlighter",
+            "zh": "螢光筆；打亮產品",
+            "example": "Use a yellow highlighter to mark the key ideas."
+          }
+        ],
+        "adj": [
+          {
+            "en": "highlighted",
+            "zh": "被標示的；突出的；醒目的",
+            "example": "Read the highlighted paragraph carefully."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l8-v03",
+        "base": "economy",
+        "verb": [],
+        "noun": [
+          {
+            "en": "economy",
+            "zh": "經濟；節約；經濟體",
+            "example": "Tourism is important to the local economy."
+          },
+          {
+            "en": "economics",
+            "zh": "經濟學；經濟狀況",
+            "example": "She studies economics at university."
+          },
+          {
+            "en": "economist",
+            "zh": "經濟學家",
+            "example": "The economist predicted slower growth next year."
+          }
+        ],
+        "adj": [
+          {
+            "en": "economic",
+            "zh": "經濟的；經濟學的",
+            "example": "The country faces serious economic challenges."
+          },
+          {
+            "en": "economical",
+            "zh": "節省的；經濟實惠的",
+            "example": "Taking the bus is more economical than driving."
+          }
+        ],
+        "adv": [
+          {
+            "en": "economically",
+            "zh": "在經濟方面；節儉地；划算地",
+            "example": "The region has developed economically in recent years."
+          }
+        ]
+      },
+      {
+        "id": "b3l8-v04",
+        "base": "demand",
+        "verb": [
+          {
+            "en": "demand",
+            "zh": "要求；需要",
+            "example": "The workers demand safer working conditions."
+          }
+        ],
+        "noun": [
+          {
+            "en": "demand",
+            "zh": "需求；要求",
+            "example": "Demand for electric cars is increasing."
+          }
+        ],
+        "adj": [
+          {
+            "en": "demanding",
+            "zh": "要求高的；費力的；吃力的",
+            "example": "Teaching young children can be demanding."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l8-v05",
+        "base": "legal",
+        "verb": [
+          {
+            "en": "legalize",
+            "zh": "使合法化",
+            "example": "The government plans to legalize the new service."
+          }
+        ],
+        "noun": [
+          {
+            "en": "legality",
+            "zh": "合法性；法律認可",
+            "example": "The court questioned the legality of the policy."
+          }
+        ],
+        "adj": [
+          {
+            "en": "legal",
+            "zh": "合法的；法律的",
+            "example": "You should seek legal advice before signing."
+          },
+          {
+            "en": "illegal",
+            "zh": "非法的；違法的",
+            "example": "It is illegal to park here."
+          }
+        ],
+        "adv": [
+          {
+            "en": "legally",
+            "zh": "合法地；依法律",
+            "example": "The couple is legally married."
+          },
+          {
+            "en": "illegally",
+            "zh": "非法地；違法地",
+            "example": "The waste was illegally dumped near the river."
+          }
+        ]
+      },
+      {
+        "id": "b3l8-v06",
+        "base": "lure",
+        "verb": [
+          {
+            "en": "lure",
+            "zh": "引誘；誘惑",
+            "example": "The advertisement lured customers into the store."
+          }
+        ],
+        "noun": [
+          {
+            "en": "lure",
+            "zh": "誘惑；誘餌；吸引力",
+            "example": "The bright lights are part of the city's lure."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l8-v07",
+        "base": "herd",
+        "verb": [
+          {
+            "en": "herd",
+            "zh": "趕牧；把……聚集在一起",
+            "example": "The farmer herded the sheep into a field."
+          }
+        ],
+        "noun": [
+          {
+            "en": "herd",
+            "zh": "獸群；牧群；人群",
+            "example": "A herd of elephants crossed the road."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l8-v08",
+        "base": "brutal",
+        "verb": [],
+        "noun": [
+          {
+            "en": "brutality",
+            "zh": "殘暴；野蠻；暴行",
+            "example": "The documentary exposed the brutality of the conflict."
+          }
+        ],
+        "adj": [
+          {
+            "en": "brutal",
+            "zh": "殘暴的；嚴酷的；直率得傷人的",
+            "example": "The climbers faced brutal weather conditions."
+          }
+        ],
+        "adv": [
+          {
+            "en": "brutally",
+            "zh": "殘忍地；嚴酷地；毫不留情地",
+            "example": "The village was brutally attacked."
+          }
+        ]
+      },
+      {
+        "id": "b3l8-v09",
+        "base": "operate",
+        "verb": [
+          {
+            "en": "operate",
+            "zh": "操作；運作；經營；動手術",
+            "example": "Only trained staff may operate this machine."
+          },
+          {
+            "en": "cooperate",
+            "zh": "合作；配合",
+            "example": "The two schools agreed to cooperate on the project."
+          }
+        ],
+        "noun": [
+          {
+            "en": "operation",
+            "zh": "操作；運作；行動；手術",
+            "example": "The patient recovered quickly after the operation."
+          },
+          {
+            "en": "operator",
+            "zh": "操作員；經營者；接線員",
+            "example": "The machine operator checked the controls."
+          },
+          {
+            "en": "cooperation",
+            "zh": "合作；配合",
+            "example": "The project succeeded through international cooperation."
+          }
+        ],
+        "adj": [
+          {
+            "en": "operational",
+            "zh": "運作的；操作上的；可使用的",
+            "example": "The new hospital will be fully operational next month."
+          }
+        ],
+        "adv": [
+          {
+            "en": "operationally",
+            "zh": "在運作方面；在操作上",
+            "example": "The two systems are operationally independent."
+          }
+        ]
+      },
+      {
+        "id": "b3l8-v10",
+        "base": "mercy",
+        "verb": [],
+        "noun": [
+          {
+            "en": "mercy",
+            "zh": "仁慈；寬恕；憐憫",
+            "example": "The prisoner begged for mercy."
+          }
+        ],
+        "adj": [
+          {
+            "en": "merciful",
+            "zh": "仁慈的；寬大的",
+            "example": "The judge gave the young offender a merciful sentence."
+          },
+          {
+            "en": "merciless",
+            "zh": "無情的；殘忍的",
+            "example": "The desert sun was merciless."
+          }
+        ],
+        "adv": [
+          {
+            "en": "mercifully",
+            "zh": "仁慈地；幸運地",
+            "example": "Mercifully, no one was injured in the crash."
+          },
+          {
+            "en": "mercilessly",
+            "zh": "無情地；殘忍地",
+            "example": "The team was criticized mercilessly after the defeat."
+          }
+        ]
+      },
+      {
+        "id": "b3l8-v11",
+        "base": "strike",
+        "verb": [
+          {
+            "en": "strike",
+            "zh": "打；撞擊；罷工；突然想到",
+            "example": "Lightning struck the old tree."
+          }
+        ],
+        "noun": [
+          {
+            "en": "strike",
+            "zh": "罷工；打擊；襲擊",
+            "example": "The workers began a strike on Monday."
+          }
+        ],
+        "adj": [
+          {
+            "en": "striking",
+            "zh": "引人注目的；顯著的；驚人的",
+            "example": "There is a striking difference between the two photos."
+          }
+        ],
+        "adv": [
+          {
+            "en": "strikingly",
+            "zh": "引人注目地；顯著地",
+            "example": "The two sisters look strikingly similar."
+          }
+        ]
+      },
+      {
+        "id": "b3l8-v12",
+        "base": "commit",
+        "verb": [
+          {
+            "en": "commit",
+            "zh": "犯下；承諾；投入",
+            "example": "The company committed more money to research."
+          }
+        ],
+        "noun": [
+          {
+            "en": "commitment",
+            "zh": "承諾；投入；責任",
+            "example": "Her commitment to the team earned everyone's respect."
+          }
+        ],
+        "adj": [
+          {
+            "en": "committed",
+            "zh": "盡心投入的；堅定的；已承諾的",
+            "example": "He is committed to protecting wildlife."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l8-v13",
+        "base": "obedient",
+        "verb": [],
+        "noun": [
+          {
+            "en": "obedience",
+            "zh": "服從；順從",
+            "example": "The trainer rewards the dog's obedience."
+          }
+        ],
+        "adj": [
+          {
+            "en": "obedient",
+            "zh": "服從的；順從的",
+            "example": "The obedient dog waited by the door."
+          }
+        ],
+        "adv": [
+          {
+            "en": "obediently",
+            "zh": "服從地；順從地",
+            "example": "The students obediently followed the safety instructions."
+          }
+        ]
+      },
+      {
+        "id": "b3l8-v14",
+        "base": "tame",
+        "verb": [
+          {
+            "en": "tame",
+            "zh": "馴服；控制；使緩和",
+            "example": "It took months to tame the wild horse."
+          }
+        ],
+        "noun": [
+          {
+            "en": "tameness",
+            "zh": "溫馴；馴服程度",
+            "example": "The animal's tameness surprised the visitors."
+          }
+        ],
+        "adj": [
+          {
+            "en": "tame",
+            "zh": "馴服的；溫順的；平淡的",
+            "example": "The fox became surprisingly tame."
+          }
+        ],
+        "adv": [
+          {
+            "en": "tamely",
+            "zh": "溫順地；平淡地；順從地",
+            "example": "The horse stood tamely beside its owner."
+          }
+        ]
+      },
+      {
+        "id": "b3l8-v15",
+        "base": "vulnerable",
+        "verb": [],
+        "noun": [
+          {
+            "en": "vulnerability",
+            "zh": "脆弱；易受傷害；弱點",
+            "example": "The report examines the city's vulnerability to floods."
+          }
+        ],
+        "adj": [
+          {
+            "en": "vulnerable",
+            "zh": "脆弱的；易受傷害的",
+            "example": "Young plants are vulnerable to frost."
+          }
+        ],
+        "adv": [
+          {
+            "en": "vulnerably",
+            "zh": "脆弱地；坦露脆弱地",
+            "example": "She spoke vulnerably about her fears."
+          }
+        ]
+      },
+      {
+        "id": "b3l8-v16",
+        "base": "permanent",
+        "verb": [],
+        "noun": [
+          {
+            "en": "permanence",
+            "zh": "永久；持久性",
+            "example": "The stone walls give the building a sense of permanence."
+          }
+        ],
+        "adj": [
+          {
+            "en": "permanent",
+            "zh": "永久的；長期的",
+            "example": "The accident caused permanent damage to the bridge."
+          }
+        ],
+        "adv": [
+          {
+            "en": "permanently",
+            "zh": "永久地；長期地",
+            "example": "The road was permanently closed after the landslide."
+          }
+        ]
+      },
+      {
+        "id": "b3l8-v17",
+        "base": "adequate",
+        "verb": [],
+        "noun": [
+          {
+            "en": "adequacy",
+            "zh": "足夠；適當；充分性",
+            "example": "The committee questioned the adequacy of the safety plan."
+          }
+        ],
+        "adj": [
+          {
+            "en": "adequate",
+            "zh": "足夠的；適當的；合格的",
+            "example": "The shelter has adequate space for fifty people."
+          }
+        ],
+        "adv": [
+          {
+            "en": "adequately",
+            "zh": "充分地；適當地",
+            "example": "The instructions adequately explain the procedure."
+          }
+        ]
+      },
+      {
+        "id": "b3l8-v18",
+        "base": "exhaust",
+        "verb": [
+          {
+            "en": "exhaust",
+            "zh": "使筋疲力盡；耗盡；排出",
+            "example": "The long climb exhausted the hikers."
+          }
+        ],
+        "noun": [
+          {
+            "en": "exhaustion",
+            "zh": "筋疲力盡；耗盡",
+            "example": "She collapsed from heat exhaustion."
+          }
+        ],
+        "adj": [
+          {
+            "en": "exhausted",
+            "zh": "筋疲力盡的；耗盡的",
+            "example": "We were exhausted after the long journey."
+          },
+          {
+            "en": "exhausting",
+            "zh": "令人筋疲力盡的；耗費體力的",
+            "example": "Moving all the boxes was exhausting work."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l8-v19",
+        "base": "complex",
+        "verb": [],
+        "noun": [
+          {
+            "en": "complex",
+            "zh": "建築群；綜合體；情結",
+            "example": "The sports complex includes two swimming pools."
+          },
+          {
+            "en": "complexity",
+            "zh": "複雜性；複雜程度",
+            "example": "The complexity of the problem surprised us."
+          }
+        ],
+        "adj": [
+          {
+            "en": "complex",
+            "zh": "複雜的；難懂的",
+            "example": "The human brain is extremely complex."
+          }
+        ],
+        "adv": [
+          {
+            "en": "complexly",
+            "zh": "複雜地；以複雜方式",
+            "example": "The novel is complexly structured."
+          }
+        ]
+      },
+      {
+        "id": "b3l8-v20",
+        "base": "intelligent",
+        "verb": [],
+        "noun": [
+          {
+            "en": "intelligence",
+            "zh": "智力；智慧；情報",
+            "example": "The test measures several forms of intelligence."
+          }
+        ],
+        "adj": [
+          {
+            "en": "intelligent",
+            "zh": "聰明的；有智慧的；智慧型的",
+            "example": "Dolphins are highly intelligent animals."
+          }
+        ],
+        "adv": [
+          {
+            "en": "intelligently",
+            "zh": "聰明地；理智地",
+            "example": "She responded intelligently to the difficult question."
+          }
+        ]
+      }
+    ]
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": [
+        {
+          "id": "b3l8-s001",
+          "sentence": "Every year, Thailand *sees* millions of tourists, many of whom have a lot of fun riding elephants.",
+          "type": "complex",
+          "pattern": "Adverbial phrase + S + Vt + O + Relative clause (of whom...)"
+        },
+        {
+          "id": "b3l8-s002",
+          "sentence": "In fact, this activity *is* often the highlight of a visitor's vacation, and these rides *bring* a lot of money into the Thai economy.",
+          "type": "compound",
+          "pattern": "S + Vl + C + and + S + Vt + O + Prepositional phrase"
+        },
+        {
+          "id": "b3l8-s003",
+          "sentence": "However, there *is* a dark side to elephant tourism that would horrify many travelers.",
+          "type": "complex",
+          "pattern": "There + Vi + S + Relative clause (that...)"
+        },
+        {
+          "id": "b3l8-s004",
+          "sentence": "Due to high demand in Thailand's tourism industry, some young wild elephants *are illegally captured and sold* to tourist attractions.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Passive compound verb phrase + Prepositional phrase"
+        },
+        {
+          "id": "b3l8-s005",
+          "sentence": "These young elephants *are lured* away from their mothers and into traps.",
+          "type": "simple",
+          "pattern": "S + Passive verb phrase + Prepositional phrases"
+        },
+        {
+          "id": "b3l8-s006",
+          "sentence": "Wild elephants *live* in herds led by females, and it *is* natural for mothers to protect their babies.",
+          "type": "compound",
+          "pattern": "S + Vi + Prepositional phrase + Participial phrase + and + It + Vl + C + Infinitival phrase"
+        },
+        {
+          "id": "b3l8-s007",
+          "sentence": "Any females from the herd that try to defend their calves *may be shot* by brutal trappers.",
+          "type": "complex",
+          "pattern": "S + Relative clause (that...) + Passive modal verb phrase + Prepositional phrase"
+        },
+        {
+          "id": "b3l8-s008",
+          "sentence": "Once the captured elephants are sold to tour operators, the real horror *begins* as they are often violently abused.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Once...) + S + Vi + Adverbial clause (as...)"
+        },
+        {
+          "id": "b3l8-s009",
+          "sentence": "Confined in small cages, these poor creatures *are beaten* mercilessly for days and even *struck* with sharp nails.",
+          "type": "simple",
+          "pattern": "Participial phrase + S + Passive compound verb phrase + Prepositional phrases"
+        },
+        {
+          "id": "b3l8-s010",
+          "sentence": "Such psychological torture and physical abuse, both of which cause extreme suffering, *are committed* in order to make them obedient to their human trainers.",
+          "type": "complex",
+          "pattern": "Compound S + Relative clause (of which...) + Passive verb phrase + Infinitival phrase"
+        },
+        {
+          "id": "b3l8-s011",
+          "sentence": "After the elephants are tamed, they *are forced* into a life of slavery.",
+          "type": "complex",
+          "pattern": "Adverbial clause (After...) + S + Passive verb phrase + Prepositional phrase"
+        },
+        {
+          "id": "b3l8-s012",
+          "sentence": "Many of them *are made* to carry people on their backs at tourist attractions and elephant camps.",
+          "type": "simple",
+          "pattern": "S + Passive verb phrase + Infinitival phrase + Prepositional phrases"
+        },
+        {
+          "id": "b3l8-s013",
+          "sentence": "Since an elephant's spine is vulnerable to pressure from above, carrying heavy tourists for hours every day *can lead to* painful, permanent back injuries.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Since...) + Gerund phrase (S) + Modal phrasal verb + O"
+        },
+        {
+          "id": "b3l8-s014",
+          "sentence": "What's more, they *are denied* an adequate amount of food and water, which further contributes to their exhaustion.",
+          "type": "complex",
+          "pattern": "S + Passive verb phrase + O + Relative clause (which...)"
+        },
+        {
+          "id": "b3l8-s015",
+          "sentence": "Worse still, these elephants *are beaten* as they work; their flesh *is struck* with bullhooks.",
+          "type": "compound-complex",
+          "pattern": "S + Passive verb phrase + Adverbial clause (as...) + S + Passive verb phrase"
+        },
+        {
+          "id": "b3l8-s016",
+          "sentence": "On average, more than 13 million tourists *ride* elephants in Thailand every year.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vt + O + Adverbial phrase"
+        },
+        {
+          "id": "b3l8-s017",
+          "sentence": "This *puts* money in the pockets of those who capture and take advantage of them, which allows the cruel elephant trade to continue.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Relative clause (who...) + Relative clause (which...)"
+        },
+        {
+          "id": "b3l8-s018",
+          "sentence": "Supply never *comes* without demand, so it *is* high time that we dealt with the roots of this problem.",
+          "type": "compound-complex",
+          "pattern": "S + Vi + Prepositional phrase + so + It + Vl + C + Noun clause (that...)"
+        },
+        {
+          "id": "b3l8-s019",
+          "sentence": "When you visit Thailand, *avoid* companies profiting from elephant tourism.",
+          "type": "complex",
+          "pattern": "Adverbial clause (When...) + Imperative verb + O + Participial phrase"
+        },
+        {
+          "id": "b3l8-s020",
+          "sentence": "As an alternative, *visit* one of Thailand's three national parks where wild elephants roam free.",
+          "type": "complex",
+          "pattern": "Prepositional phrase + Imperative verb + O + Relative clause (where...)"
+        },
+        {
+          "id": "b3l8-s021",
+          "sentence": "There, you can *take pleasure in* seeing these complex, intelligent animals as they happily go about their lives in peace.",
+          "type": "complex",
+          "pattern": "Adverb + S + Modal phrasal verb + Gerund phrase + Adverbial clause (as...)"
+        }
+      ]
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}

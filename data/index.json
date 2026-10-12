@@ -160,7 +160,8 @@
         {
           "id": "l8",
           "title": "",
-          "status": "draft"
+          "status": "published",
+          "data": "data/b3/l8.json"
         },
         {
           "id": "l9",
