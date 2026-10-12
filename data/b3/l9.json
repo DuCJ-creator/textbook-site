@@ -1,0 +1,1866 @@
+{
+  "book": "B3",
+  "lesson": "L9",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b3l9-v01",
+        "base": "pilgrim",
+        "verb": [],
+        "noun": [
+          {
+            "en": "pilgrim",
+            "zh": "朝聖者；香客",
+            "example": "Thousands of pilgrims visit the temple each year."
+          },
+          {
+            "en": "pilgrimage",
+            "zh": "朝聖；朝聖之旅",
+            "example": "They made a pilgrimage to the holy city."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l9-v02",
+        "base": "unify",
+        "verb": [
+          {
+            "en": "unify",
+            "zh": "統一；使團結；使一致",
+            "example": "The shared goal helped unify the team."
+          }
+        ],
+        "noun": [
+          {
+            "en": "unification",
+            "zh": "統一；聯合；一致化",
+            "example": "The agreement led to the unification of the two groups."
+          }
+        ],
+        "adj": [
+          {
+            "en": "unified",
+            "zh": "統一的；一致的；團結的",
+            "example": "The committee presented a unified plan."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l9-v03",
+        "base": "exaggerate",
+        "verb": [
+          {
+            "en": "exaggerate",
+            "zh": "誇大；誇張",
+            "example": "Do not exaggerate the size of the problem."
+          }
+        ],
+        "noun": [
+          {
+            "en": "exaggeration",
+            "zh": "誇大；誇張的說法",
+            "example": "His claim was a clear exaggeration."
+          }
+        ],
+        "adj": [
+          {
+            "en": "exaggerated",
+            "zh": "被誇大的；誇張的",
+            "example": "The actor used exaggerated movements for comic effect."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l9-v04",
+        "base": "doubt",
+        "verb": [
+          {
+            "en": "doubt",
+            "zh": "懷疑；不相信",
+            "example": "I doubt that the train will arrive on time."
+          }
+        ],
+        "noun": [
+          {
+            "en": "doubt",
+            "zh": "懷疑；疑問；不確定",
+            "example": "There is no doubt about her ability."
+          }
+        ],
+        "adj": [
+          {
+            "en": "doubtful",
+            "zh": "懷疑的；不確定的；可疑的",
+            "example": "It is doubtful whether the event will continue."
+          },
+          {
+            "en": "undoubted",
+            "zh": "無疑的；確實的",
+            "example": "Her talent is an undoubted advantage."
+          }
+        ],
+        "adv": [
+          {
+            "en": "doubtfully",
+            "zh": "懷疑地；不確定地",
+            "example": "He looked doubtfully at the dark clouds."
+          },
+          {
+            "en": "undoubtedly",
+            "zh": "無疑地；肯定地",
+            "example": "This is undoubtedly her best performance."
+          }
+        ]
+      },
+      {
+        "id": "b3l9-v05",
+        "base": "authority",
+        "verb": [
+          {
+            "en": "authorize",
+            "zh": "授權；批准",
+            "example": "Only the manager can authorize the payment."
+          }
+        ],
+        "noun": [
+          {
+            "en": "authority",
+            "zh": "權力；權威；主管機構",
+            "example": "The principal has the authority to change the rule."
+          },
+          {
+            "en": "authorities",
+            "zh": "當局；官方機構",
+            "example": "The authorities closed the road after the storm."
+          },
+          {
+            "en": "authoritarian",
+            "zh": "權力主義者；獨裁者",
+            "example": "He is known as a strict authoritarian in the workplace."
+          },
+          {
+            "en": "authorization",
+            "zh": "授權；批准",
+            "example": "Who gave the authorization to release the data?"
+          }
+        ],
+        "adj": [
+          {
+            "en": "authorized",
+            "zh": "獲授權的；經批准的",
+            "example": "Only authorized staff may enter this room."
+          },
+          {
+            "en": "authoritarian",
+            "zh": "權威式的",
+            "example": "It isn't uncommon for parents to use spanking as a primary means of punishment in an authoritarian family."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l9-v06",
+        "base": "cast",
+        "verb": [
+          {
+            "en": "cast",
+            "zh": "投擲；投射；選派演員",
+            "example": "The tree cast a long shadow across the road."
+          }
+        ],
+        "noun": [
+          {
+            "en": "cast",
+            "zh": "演員陣容；鑄件；石膏固定模",
+            "example": "The film has a talented cast."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l9-v07",
+        "base": "devote",
+        "verb": [
+          {
+            "en": "devote",
+            "zh": "奉獻；投入；專心於",
+            "example": "She devotes much of her time to teaching children."
+          }
+        ],
+        "noun": [
+          {
+            "en": "devotion",
+            "zh": "奉獻；忠誠；熱愛",
+            "example": "His devotion to his family is admirable."
+          }
+        ],
+        "adj": [
+          {
+            "en": "devoted",
+            "zh": "忠誠的；摯愛的；全心投入的",
+            "example": "She is a devoted teacher."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l9-v08",
+        "base": "explode",
+        "verb": [
+          {
+            "en": "explode",
+            "zh": "爆炸；爆發；激增",
+            "example": "The damaged battery may explode."
+          }
+        ],
+        "noun": [
+          {
+            "en": "explosion",
+            "zh": "爆炸；爆發；激增",
+            "example": "The explosion damaged several nearby buildings."
+          },
+          {
+            "en": "explosive",
+            "zh": "爆炸物；炸藥",
+            "example": "The police safely removed the explosive."
+          }
+        ],
+        "adj": [
+          {
+            "en": "explosive",
+            "zh": "爆炸性的；易爆的；急劇的",
+            "example": "The chemicals can form an explosive mixture."
+          }
+        ],
+        "adv": [
+          {
+            "en": "explosively",
+            "zh": "爆炸性地；猛烈地；急速地",
+            "example": "The gas expanded explosively when heated."
+          }
+        ]
+      },
+      {
+        "id": "b3l9-v09",
+        "base": "emerge",
+        "verb": [
+          {
+            "en": "emerge",
+            "zh": "出現；浮現；擺脫",
+            "example": "New evidence emerged during the investigation."
+          }
+        ],
+        "noun": [
+          {
+            "en": "emergency",
+            "zh": "緊急情況；突發事件",
+            "example": "Call this number in an emergency."
+          }
+        ],
+        "adj": [
+          {
+            "en": "emergent",
+            "zh": "新興的；逐漸出現的；緊急的",
+            "example": "The researchers studied emergent patterns in the data."
+          }
+        ],
+        "adv": [
+          {
+            "en": "emergently",
+            "zh": "緊急地（常見於醫療語境）",
+            "example": "The patient was treated emergently."
+          }
+        ]
+      },
+      {
+        "id": "b3l9-v10",
+        "base": "bless",
+        "verb": [
+          {
+            "en": "bless",
+            "zh": "祝福；保佑；使有幸擁有",
+            "example": "The priest blessed the new building."
+          }
+        ],
+        "noun": [
+          {
+            "en": "blessing",
+            "zh": "祝福；幸事；恩惠",
+            "example": "Clean water is a blessing for the village."
+          }
+        ],
+        "adj": [
+          {
+            "en": "blessed",
+            "zh": "受到祝福的；幸福的；神聖的",
+            "example": "We feel blessed to have supportive friends."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l9-v11",
+        "base": "knee",
+        "verb": [
+          {
+            "en": "kneel",
+            "zh": "跪；跪下",
+            "example": "The gardener knelt beside the flower bed."
+          }
+        ],
+        "noun": [
+          {
+            "en": "knee",
+            "zh": "膝；膝蓋",
+            "example": "He injured his knee while playing basketball."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b3l9-v12",
+        "base": "pave",
+        "verb": [
+          {
+            "en": "pave",
+            "zh": "鋪設；為……鋪路",
+            "example": "The city plans to pave the narrow road."
+          }
+        ],
+        "noun": [
+          {
+            "en": "pavement",
+            "zh": "人行道；鋪面；路面",
+            "example": "The children drew pictures on the pavement."
+          }
+        ],
+        "adj": [
+          {
+            "en": "paved",
+            "zh": "鋪砌的；鋪設完成的",
+            "example": "A paved path leads to the lake."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l9-v13",
+        "base": "hospitable",
+        "verb": [],
+        "noun": [
+          {
+            "en": "hospitality",
+            "zh": "好客；款待；旅宿餐飲業",
+            "example": "The guests appreciated the family's warm hospitality."
+          }
+        ],
+        "adj": [
+          {
+            "en": "hospitable",
+            "zh": "好客的；適宜居住的",
+            "example": "The villagers were friendly and hospitable."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l9-v14",
+        "base": "enthusiast",
+        "verb": [],
+        "noun": [
+          {
+            "en": "enthusiast",
+            "zh": "愛好者；熱衷者",
+            "example": "He is a photography enthusiast."
+          },
+          {
+            "en": "enthusiasm",
+            "zh": "熱情；熱忱；興趣",
+            "example": "The students showed great enthusiasm for the experiment."
+          }
+        ],
+        "adj": [
+          {
+            "en": "enthusiastic",
+            "zh": "熱情的；熱心的",
+            "example": "The audience gave the singer an enthusiastic welcome."
+          }
+        ],
+        "adv": [
+          {
+            "en": "enthusiastically",
+            "zh": "熱情地；熱心地",
+            "example": "The children enthusiastically joined the game."
+          }
+        ]
+      },
+      {
+        "id": "b3l9-v15",
+        "base": "accommodate",
+        "verb": [
+          {
+            "en": "accommodate",
+            "zh": "容納；提供住宿；配合需求",
+            "example": "The hall can accommodate five hundred people."
+          }
+        ],
+        "noun": [
+          {
+            "en": "accommodations",
+            "zh": "住宿；住宿設施",
+            "example": "The hotel provides comfortable accommodations."
+          }
+        ],
+        "adj": [
+          {
+            "en": "accommodating",
+            "zh": "樂於助人的；願意配合的",
+            "example": "The staff were friendly and accommodating."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l9-v16",
+        "base": "religion",
+        "verb": [],
+        "noun": [
+          {
+            "en": "religion",
+            "zh": "宗教；宗教信仰",
+            "example": "The course explores religion and culture."
+          }
+        ],
+        "adj": [
+          {
+            "en": "religious",
+            "zh": "宗教的；虔誠的",
+            "example": "The city contains several religious buildings."
+          }
+        ],
+        "adv": [
+          {
+            "en": "religiously",
+            "zh": "在宗教上；虔誠地；一絲不苟地",
+            "example": "She follows the training schedule religiously."
+          }
+        ]
+      },
+      {
+        "id": "b3l9-v17",
+        "base": "designate",
+        "verb": [
+          {
+            "en": "designate",
+            "zh": "指定；劃定；任命",
+            "example": "The school designated this room as a study area."
+          }
+        ],
+        "noun": [
+          {
+            "en": "designation",
+            "zh": "指定；名稱；稱號",
+            "example": "The area received official designation as a nature reserve."
+          },
+          {
+            "en": "designator",
+            "zh": "指定者；指示符；標示符",
+            "example": "Each aircraft has a unique flight designator."
+          }
+        ],
+        "adj": [
+          {
+            "en": "designated",
+            "zh": "指定的；劃定的",
+            "example": "Please wait in the designated area."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b3l9-v18",
+        "base": "inherit",
+        "verb": [
+          {
+            "en": "inherit",
+            "zh": "繼承；遺傳獲得",
+            "example": "She inherited the house from her grandmother."
+          }
+        ],
+        "noun": [
+          {
+            "en": "heritage",
+            "zh": "遺產；傳統；文化傳承",
+            "example": "The festival celebrates the island's cultural heritage."
+          },
+          {
+            "en": "inheritance",
+            "zh": "遺產；繼承；遺傳",
+            "example": "He used part of his inheritance to start a business."
+          },
+          {
+            "en": "inheritor",
+            "zh": "繼承人；承襲者",
+            "example": "She became the inheritor of the family estate."
+          }
+        ],
+        "adj": [
+          {
+            "en": "heritable",
+            "zh": "可遺傳的；可繼承的",
+            "example": "Eye color is a heritable trait."
+          },
+          {
+            "en": "inheritable",
+            "zh": "可繼承的；能由繼承取得的",
+            "example": "The title is inheritable by the eldest child."
+          }
+        ],
+        "adv": []
+      }
+    ]
+  },
+  "phrases": {
+    "items": [
+      {
+        "id": "b3l9-p001",
+        "phrase": "participate in",
+        "pos": "ph.",
+        "zh": "參加",
+        "example_en": "Many students participate in the festival.",
+        "example_zh": "許多學生參加這個節慶。"
+      },
+      {
+        "id": "b3l9-p002",
+        "phrase": "it is no exaggeration to say that",
+        "pos": "ph.",
+        "zh": "毫不誇張地說",
+        "example_en": "It is no exaggeration to say that she is a star.",
+        "example_zh": "毫不誇張地說，她是明星。"
+      },
+      {
+        "id": "b3l9-p003",
+        "phrase": "not…until",
+        "pos": "ph.",
+        "zh": "直到……才",
+        "example_en": "We did not leave until noon.",
+        "example_zh": "我們直到中午才離開。"
+      },
+      {
+        "id": "b3l9-p004",
+        "phrase": "a can’t-miss event",
+        "pos": "ph.",
+        "zh": "不容錯過的活動",
+        "example_en": "The parade is a can’t-miss event.",
+        "example_zh": "這場遊行是不容錯過的活動。"
+      },
+      {
+        "id": "b3l9-p005",
+        "phrase": "can’t wait to",
+        "pos": "ph.",
+        "zh": "迫不及待要……",
+        "example_en": "I can’t wait to visit the museum.",
+        "example_zh": "我迫不及待要參觀博物館。"
+      },
+      {
+        "id": "b3l9-p006",
+        "phrase": "tennis Grand Slam singles",
+        "pos": "ph.",
+        "zh": "網球大滿貫單打",
+        "example_en": "She won a tennis Grand Slam singles title.",
+        "example_zh": "她贏得網球大滿貫單打冠軍。"
+      },
+      {
+        "id": "b3l9-p007",
+        "phrase": "set out to",
+        "pos": "ph.",
+        "zh": "開始努力做……",
+        "example_en": "They set out to solve the problem.",
+        "example_zh": "他們開始努力解決問題。"
+      },
+      {
+        "id": "b3l9-p008",
+        "phrase": "set out for",
+        "pos": "ph.",
+        "zh": "出發前往",
+        "example_en": "We set out for the mountain at dawn.",
+        "example_zh": "我們在黎明出發前往山區。"
+      },
+      {
+        "id": "b3l9-p009",
+        "phrase": "set out on a voyage",
+        "pos": "ph.",
+        "zh": "踏上航程",
+        "example_en": "The sailors set out on a voyage.",
+        "example_zh": "水手們踏上航程。"
+      },
+      {
+        "id": "b3l9-p010",
+        "phrase": "on the lunar calendar",
+        "pos": "ph.",
+        "zh": "按照農曆",
+        "example_en": "The festival falls on the lunar calendar date.",
+        "example_zh": "這個節日在農曆日期舉行。"
+      },
+      {
+        "id": "b3l9-p011",
+        "phrase": "vary from region to region",
+        "pos": "ph.",
+        "zh": "因地區而異",
+        "example_en": "Traditions vary from region to region.",
+        "example_zh": "傳統因地區而異。"
+      },
+      {
+        "id": "b3l9-p012",
+        "phrase": "cast two half-moon-shaped wooden blocks",
+        "pos": "ph.",
+        "zh": "擲兩個半月形木筊",
+        "example_en": "Visitors cast two half-moon-shaped wooden blocks.",
+        "example_zh": "遊客擲兩個半月形木筊。"
+      },
+      {
+        "id": "b3l9-p013",
+        "phrase": "over the course of",
+        "pos": "ph.",
+        "zh": "在……期間",
+        "example_en": "Skills improve over the course of a year.",
+        "example_zh": "技能在一年期間提升。"
+      },
+      {
+        "id": "b3l9-p014",
+        "phrase": "every step of the way",
+        "pos": "ph.",
+        "zh": "每一步",
+        "example_en": "Her family supported her every step of the way.",
+        "example_zh": "她的家人一路支持她。"
+      },
+      {
+        "id": "b3l9-p015",
+        "phrase": "a sedan chair",
+        "pos": "ph.",
+        "zh": "轎子",
+        "example_en": "The bride arrived in a sedan chair.",
+        "example_zh": "新娘乘轎子抵達。"
+      },
+      {
+        "id": "b3l9-p016",
+        "phrase": "banquet hall",
+        "pos": "ph.",
+        "zh": "宴會廳",
+        "example_en": "The banquet hall was beautifully decorated.",
+        "example_zh": "宴會廳裝飾得很漂亮。"
+      },
+      {
+        "id": "b3l9-p017",
+        "phrase": "a piece of ancient artwork",
+        "pos": "ph.",
+        "zh": "一件古代藝術品",
+        "example_en": "The museum displayed a piece of ancient artwork.",
+        "example_zh": "博物館展示一件古代藝術品。"
+      },
+      {
+        "id": "b3l9-p018",
+        "phrase": "over the past decade",
+        "pos": "ph.",
+        "zh": "在過去十年",
+        "example_en": "Tourism has grown over the past decade.",
+        "example_zh": "過去十年觀光業有所成長。"
+      },
+      {
+        "id": "b3l9-p019",
+        "phrase": "cause drowsiness",
+        "pos": "ph.",
+        "zh": "造成嗜睡",
+        "example_en": "This medicine may cause drowsiness.",
+        "example_zh": "這種藥可能造成嗜睡。"
+      },
+      {
+        "id": "b3l9-p020",
+        "phrase": "doze off",
+        "pos": "ph.",
+        "zh": "打瞌睡",
+        "example_en": "I dozed off during the lecture.",
+        "example_zh": "我在講座中打瞌睡。"
+      },
+      {
+        "id": "b3l9-p021",
+        "phrase": "host a special event",
+        "pos": "ph.",
+        "zh": "舉辦特別活動",
+        "example_en": "The museum will host a special event.",
+        "example_zh": "博物館將舉辦特別活動。"
+      },
+      {
+        "id": "b3l9-p022",
+        "phrase": "check forecasts",
+        "pos": "ph.",
+        "zh": "查看預報",
+        "example_en": "Please check forecasts before hiking.",
+        "example_zh": "健行前請查看預報。"
+      },
+      {
+        "id": "b3l9-p023",
+        "phrase": "heavy fog",
+        "pos": "ph.",
+        "zh": "濃霧",
+        "example_en": "Heavy fog delayed the flight.",
+        "example_zh": "濃霧使航班延誤。"
+      },
+      {
+        "id": "b3l9-p024",
+        "phrase": "road closure",
+        "pos": "ph.",
+        "zh": "道路封閉",
+        "example_en": "The road closure caused a traffic jam.",
+        "example_zh": "道路封閉造成交通堵塞。"
+      },
+      {
+        "id": "b3l9-p025",
+        "phrase": "show one’s devotion to",
+        "pos": "ph.",
+        "zh": "表達對……的虔誠",
+        "example_en": "The ceremony shows their devotion to their faith.",
+        "example_zh": "儀式表達他們對信仰的虔誠。"
+      },
+      {
+        "id": "b3l9-p026",
+        "phrase": "a spectacular and heart-warming event",
+        "pos": "ph.",
+        "zh": "壯觀又感人的活動",
+        "example_en": "The parade was a spectacular and heart-warming event.",
+        "example_zh": "這場遊行壯觀又感人。"
+      },
+      {
+        "id": "b3l9-p027",
+        "phrase": "like no other",
+        "pos": "ph.",
+        "zh": "獨一無二",
+        "example_en": "The festival offers an experience like no other.",
+        "example_zh": "這個節慶帶來獨一無二的體驗。"
+      },
+      {
+        "id": "b3l9-p028",
+        "phrase": "throngs of people",
+        "pos": "ph.",
+        "zh": "大批人群",
+        "example_en": "Throngs of people filled the square.",
+        "example_zh": "大批人群擠滿廣場。"
+      },
+      {
+        "id": "b3l9-p029",
+        "phrase": "fill the streets",
+        "pos": "ph.",
+        "zh": "擠滿街道",
+        "example_en": "Visitors fill the streets every spring.",
+        "example_zh": "每年春天遊客擠滿街道。"
+      },
+      {
+        "id": "b3l9-p030",
+        "phrase": "explosive sound of (firecrackers)",
+        "pos": "ph.",
+        "zh": "爆竹的爆炸聲",
+        "example_en": "The explosive sound of firecrackers filled the air.",
+        "example_zh": "爆竹的爆炸聲充滿空氣。"
+      },
+      {
+        "id": "b3l9-p031",
+        "phrase": "pierce the air",
+        "pos": "ph.",
+        "zh": "穿透空氣",
+        "example_en": "The bells pierced the air.",
+        "example_zh": "鐘聲穿透空氣。"
+      },
+      {
+        "id": "b3l9-p032",
+        "phrase": "send sb. off",
+        "pos": "ph.",
+        "zh": "送某人離開",
+        "example_en": "We went to the station to send her off.",
+        "example_zh": "我們到車站送她離開。"
+      },
+      {
+        "id": "b3l9-p033",
+        "phrase": "a shot of Espresso",
+        "pos": "ph.",
+        "zh": "一杯濃縮咖啡",
+        "example_en": "He ordered a shot of Espresso.",
+        "example_zh": "他點了一杯濃縮咖啡。"
+      },
+      {
+        "id": "b3l9-p034",
+        "phrase": "aside from",
+        "pos": "ph.",
+        "zh": "除了……之外",
+        "example_en": "Aside from rain, the trip was perfect.",
+        "example_zh": "除了下雨之外，旅程很完美。"
+      },
+      {
+        "id": "b3l9-p035",
+        "phrase": "be an intern at a multinational company",
+        "pos": "ph.",
+        "zh": "在跨國公司實習",
+        "example_en": "She is an intern at a multinational company.",
+        "example_zh": "她在一家跨國公司實習。"
+      },
+      {
+        "id": "b3l9-p036",
+        "phrase": "polish one’s language skills",
+        "pos": "ph.",
+        "zh": "磨練某人的語言能力",
+        "example_en": "He travels to polish his language skills.",
+        "example_zh": "他旅行以磨練語言能力。"
+      },
+      {
+        "id": "b3l9-p037",
+        "phrase": "watch the aurora through the transparent rooftop",
+        "pos": "ph.",
+        "zh": "透過透明屋頂觀看極光",
+        "example_en": "We watched the aurora through the transparent rooftop.",
+        "example_zh": "我們透過透明屋頂觀看極光。"
+      },
+      {
+        "id": "b3l9-p038",
+        "phrase": "enjoy outdoor activities",
+        "pos": "ph.",
+        "zh": "享受戶外活動",
+        "example_en": "They enjoy outdoor activities on weekends.",
+        "example_zh": "他們週末享受戶外活動。"
+      },
+      {
+        "id": "b3l9-p039",
+        "phrase": "prefer staying indoors",
+        "pos": "ph.",
+        "zh": "偏好待在室內",
+        "example_en": "I prefer staying indoors on rainy days.",
+        "example_zh": "下雨天我偏好待在室內。"
+      },
+      {
+        "id": "b3l9-p040",
+        "phrase": "fulfill one’s dream",
+        "pos": "ph.",
+        "zh": "實現某人的夢想",
+        "example_en": "She worked hard to fulfill her dream.",
+        "example_zh": "她努力實現夢想。"
+      },
+      {
+        "id": "b3l9-p041",
+        "phrase": "at the press conference",
+        "pos": "ph.",
+        "zh": "在記者會上",
+        "example_en": "He answered questions at the press conference.",
+        "example_zh": "他在記者會上回答問題。"
+      },
+      {
+        "id": "b3l9-p042",
+        "phrase": "be a full-time staff member",
+        "pos": "ph.",
+        "zh": "是全職員工",
+        "example_en": "She is a full-time staff member.",
+        "example_zh": "她是全職員工。"
+      },
+      {
+        "id": "b3l9-p043",
+        "phrase": "stand on one’s own feet",
+        "pos": "ph.",
+        "zh": "自立",
+        "example_en": "Young adults should stand on their own feet.",
+        "example_zh": "年輕人應該自立。"
+      },
+      {
+        "id": "b3l9-p044",
+        "phrase": "be determined to succeed",
+        "pos": "ph.",
+        "zh": "決心成功",
+        "example_en": "He is determined to succeed.",
+        "example_zh": "他決心成功。"
+      },
+      {
+        "id": "b3l9-p045",
+        "phrase": "along the route",
+        "pos": "ph.",
+        "zh": "沿途",
+        "example_en": "There are shops along the route.",
+        "example_zh": "沿途有商店。"
+      },
+      {
+        "id": "b3l9-p046",
+        "phrase": "receive the blessing",
+        "pos": "ph.",
+        "zh": "得到祝福",
+        "example_en": "The couple received the blessing of their families.",
+        "example_zh": "這對夫妻得到家人的祝福。"
+      },
+      {
+        "id": "b3l9-p047",
+        "phrase": "kneel down",
+        "pos": "ph.",
+        "zh": "跪下",
+        "example_en": "He knelt down to pray.",
+        "example_zh": "他跪下祈禱。"
+      },
+      {
+        "id": "b3l9-p048",
+        "phrase": "lie face down",
+        "pos": "ph.",
+        "zh": "臉朝下躺",
+        "example_en": "The swimmer lay face down on the sand.",
+        "example_zh": "游泳者臉朝下躺在沙灘上。"
+      },
+      {
+        "id": "b3l9-p049",
+        "phrase": "on the pavement",
+        "pos": "ph.",
+        "zh": "在人行道上",
+        "example_en": "A wallet was lying on the pavement.",
+        "example_zh": "一個錢包躺在人行道上。"
+      },
+      {
+        "id": "b3l9-p050",
+        "phrase": "in the meantime",
+        "pos": "ph.",
+        "zh": "在此期間",
+        "example_en": "The food is cooking; in the meantime, set the table.",
+        "example_zh": "食物正在烹煮；此期間請擺桌。"
+      },
+      {
+        "id": "b3l9-p051",
+        "phrase": "in the meanwhile",
+        "pos": "ph.",
+        "zh": "同時",
+        "example_en": "She studied; in the meanwhile, I cleaned.",
+        "example_zh": "她讀書；同時我打掃。"
+      },
+      {
+        "id": "b3l9-p052",
+        "phrase": "show one’s hospitality",
+        "pos": "ph.",
+        "zh": "展現某人的好客",
+        "example_en": "The hosts showed their hospitality.",
+        "example_zh": "主人展現好客。"
+      },
+      {
+        "id": "b3l9-p053",
+        "phrase": "be characteristic of",
+        "pos": "ph.",
+        "zh": "是……的特色",
+        "example_en": "Bright colors are characteristic of the festival.",
+        "example_zh": "鮮豔色彩是這個節慶的特色。"
+      },
+      {
+        "id": "b3l9-p054",
+        "phrase": "videos called mukbang",
+        "pos": "ph.",
+        "zh": "稱為吃播的影片",
+        "example_en": "She watches videos called mukbang.",
+        "example_zh": "她觀看稱為吃播的影片。"
+      },
+      {
+        "id": "b3l9-p055",
+        "phrase": "relieve one’s stress",
+        "pos": "ph.",
+        "zh": "紓解某人的壓力",
+        "example_en": "Music helps relieve my stress.",
+        "example_zh": "音樂幫助紓解我的壓力。"
+      },
+      {
+        "id": "b3l9-p056",
+        "phrase": "ride on a roller coaster",
+        "pos": "ph.",
+        "zh": "搭乘雲霄飛車",
+        "example_en": "We rode on a roller coaster.",
+        "example_zh": "我們搭乘雲霄飛車。"
+      },
+      {
+        "id": "b3l9-p057",
+        "phrase": "pour down nonstop",
+        "pos": "ph.",
+        "zh": "不停地下大雨",
+        "example_en": "Rain poured down nonstop.",
+        "example_zh": "雨不停地下著。"
+      },
+      {
+        "id": "b3l9-p058",
+        "phrase": "apply for the working holiday program",
+        "pos": "ph.",
+        "zh": "申請打工度假計畫",
+        "example_en": "She applied for the working holiday program.",
+        "example_zh": "她申請打工度假計畫。"
+      },
+      {
+        "id": "b3l9-p059",
+        "phrase": "cultivate working experience",
+        "pos": "ph.",
+        "zh": "累積工作經驗",
+        "example_en": "Internships cultivate working experience.",
+        "example_zh": "實習累積工作經驗。"
+      },
+      {
+        "id": "b3l9-p060",
+        "phrase": "high language competency",
+        "pos": "ph.",
+        "zh": "高語言能力",
+        "example_en": "The job requires high language competency.",
+        "example_zh": "這份工作需要高語言能力。"
+      },
+      {
+        "id": "b3l9-p061",
+        "phrase": "flexibility to adapt to a new environment",
+        "pos": "ph.",
+        "zh": "適應新環境的彈性",
+        "example_en": "He has the flexibility to adapt to a new environment.",
+        "example_zh": "他有適應新環境的彈性。"
+      },
+      {
+        "id": "b3l9-p062",
+        "phrase": "chat over coffee",
+        "pos": "ph.",
+        "zh": "邊喝咖啡邊聊天",
+        "example_en": "We chatted over coffee.",
+        "example_zh": "我們邊喝咖啡邊聊天。"
+      },
+      {
+        "id": "b3l9-p063",
+        "phrase": "relaxed atmosphere",
+        "pos": "ph.",
+        "zh": "輕鬆氣氛",
+        "example_en": "The café has a relaxed atmosphere.",
+        "example_zh": "這家咖啡館氣氛輕鬆。"
+      },
+      {
+        "id": "b3l9-p064",
+        "phrase": "lose track of time",
+        "pos": "ph.",
+        "zh": "忘記時間",
+        "example_en": "I lost track of time while reading.",
+        "example_zh": "我閱讀時忘了時間。"
+      },
+      {
+        "id": "b3l9-p065",
+        "phrase": "transform into",
+        "pos": "ph.",
+        "zh": "轉變成",
+        "example_en": "The village transformed into a tourist town.",
+        "example_zh": "村莊轉變成觀光小鎮。"
+      },
+      {
+        "id": "b3l9-p066",
+        "phrase": "all manner of people",
+        "pos": "ph.",
+        "zh": "各式各樣的人",
+        "example_en": "All manner of people joined the event.",
+        "example_zh": "各式各樣的人參加活動。"
+      },
+      {
+        "id": "b3l9-p067",
+        "phrase": "national folk custom",
+        "pos": "ph.",
+        "zh": "國家民俗",
+        "example_en": "This dance is a national folk custom.",
+        "example_zh": "這種舞蹈是國家民俗。"
+      },
+      {
+        "id": "b3l9-p068",
+        "phrase": "be looking to do",
+        "pos": "ph.",
+        "zh": "打算做……",
+        "example_en": "We are looking to expand the project.",
+        "example_zh": "我們打算擴展這項計畫。"
+      },
+      {
+        "id": "b3l9-p069",
+        "phrase": "experience Taiwan’s cultural heritage",
+        "pos": "ph.",
+        "zh": "體驗臺灣文化遺產",
+        "example_en": "Visitors experience Taiwan’s cultural heritage.",
+        "example_zh": "遊客體驗臺灣文化遺產。"
+      },
+      {
+        "id": "b3l9-p070",
+        "phrase": "at ten o’clock sharp",
+        "pos": "ph.",
+        "zh": "十點整",
+        "example_en": "The meeting starts at ten o’clock sharp.",
+        "example_zh": "會議十點整開始。"
+      },
+      {
+        "id": "b3l9-p071",
+        "phrase": "rain or shine",
+        "pos": "ph.",
+        "zh": "無論晴雨",
+        "example_en": "The race will be held rain or shine.",
+        "example_zh": "比賽無論晴雨都會舉行。"
+      },
+      {
+        "id": "b3l9-p072",
+        "phrase": "offer free entry to",
+        "pos": "ph.",
+        "zh": "提供……免費入場",
+        "example_en": "The museum offers free entry to children.",
+        "example_zh": "博物館提供兒童免費入場。"
+      },
+      {
+        "id": "b3l9-p073",
+        "phrase": "get you nowhere",
+        "pos": "ph.",
+        "zh": "對你毫無幫助",
+        "example_en": "Complaining will get you nowhere.",
+        "example_zh": "抱怨對你毫無幫助。"
+      },
+      {
+        "id": "b3l9-p074",
+        "phrase": "ingredient in season",
+        "pos": "ph.",
+        "zh": "當季食材",
+        "example_en": "The chef uses every ingredient in season.",
+        "example_zh": "主廚使用每種當季食材。"
+      },
+      {
+        "id": "b3l9-p075",
+        "phrase": "mouth-watering delicacy",
+        "pos": "ph.",
+        "zh": "令人垂涎的佳餚",
+        "example_en": "The market sells mouth-watering delicacies.",
+        "example_zh": "市場販賣令人垂涎的佳餚。"
+      },
+      {
+        "id": "b3l9-p076",
+        "phrase": "no wonder",
+        "pos": "ph.",
+        "zh": "難怪",
+        "example_en": "No wonder the restaurant is popular.",
+        "example_zh": "難怪這家餐廳很受歡迎。"
+      },
+      {
+        "id": "b3l9-p077",
+        "phrase": "mountain trail",
+        "pos": "ph.",
+        "zh": "山徑",
+        "example_en": "We followed a mountain trail.",
+        "example_zh": "我們沿著山徑前進。"
+      },
+      {
+        "id": "b3l9-p078",
+        "phrase": "escape the crowds",
+        "pos": "ph.",
+        "zh": "避開人群",
+        "example_en": "Go early to escape the crowds.",
+        "example_zh": "早點去以避開人群。"
+      },
+      {
+        "id": "b3l9-p079",
+        "phrase": "connect with nature",
+        "pos": "ph.",
+        "zh": "親近大自然",
+        "example_en": "Hiking helps us connect with nature.",
+        "example_zh": "健行幫助我們親近大自然。"
+      },
+      {
+        "id": "b3l9-p080",
+        "phrase": "depend on one’s will",
+        "pos": "ph.",
+        "zh": "取決於某人的意志",
+        "example_en": "Success can depend on one’s will.",
+        "example_zh": "成功可能取決於意志。"
+      },
+      {
+        "id": "b3l9-p081",
+        "phrase": "out of devotion to",
+        "pos": "ph.",
+        "zh": "出於對……的虔誠",
+        "example_en": "He acted out of devotion to his faith.",
+        "example_zh": "他出於對信仰的虔誠而行動。"
+      },
+      {
+        "id": "b3l9-p082",
+        "phrase": "the founding father",
+        "pos": "ph.",
+        "zh": "國父",
+        "example_en": "The statue honors the founding father.",
+        "example_zh": "這座雕像紀念國父。"
+      },
+      {
+        "id": "b3l9-p083",
+        "phrase": "without exaggeration",
+        "pos": "ph.",
+        "zh": "不誇張地",
+        "example_en": "Without exaggeration, it was unforgettable.",
+        "example_zh": "不誇張地說，那令人難忘。"
+      },
+      {
+        "id": "b3l9-p084",
+        "phrase": "physical contact",
+        "pos": "ph.",
+        "zh": "身體接觸",
+        "example_en": "Avoid physical contact when sick.",
+        "example_zh": "生病時避免身體接觸。"
+      },
+      {
+        "id": "b3l9-p085",
+        "phrase": "in the form of",
+        "pos": "ph.",
+        "zh": "以……的形式",
+        "example_en": "Help came in the form of a donation.",
+        "example_zh": "援助以捐款的形式到來。"
+      },
+      {
+        "id": "b3l9-p086",
+        "phrase": "travel agent",
+        "pos": "ph.",
+        "zh": "旅行社；旅行代理人",
+        "example_en": "The travel agent booked our flights.",
+        "example_zh": "旅行代理人替我們訂機票。"
+      },
+      {
+        "id": "b3l9-p087",
+        "phrase": "an economy class seat",
+        "pos": "ph.",
+        "zh": "經濟艙座位",
+        "example_en": "I reserved an economy class seat.",
+        "example_zh": "我預訂經濟艙座位。"
+      },
+      {
+        "id": "b3l9-p088",
+        "phrase": "transportation authorities",
+        "pos": "ph.",
+        "zh": "交通主管機關",
+        "example_en": "Transportation authorities issued a warning.",
+        "example_zh": "交通主管機關發布警告。"
+      },
+      {
+        "id": "b3l9-p089",
+        "phrase": "on behalf of",
+        "pos": "ph.",
+        "zh": "代表",
+        "example_en": "She spoke on behalf of the team.",
+        "example_zh": "她代表團隊發言。"
+      },
+      {
+        "id": "b3l9-p090",
+        "phrase": "have the authority to",
+        "pos": "ph.",
+        "zh": "有權……",
+        "example_en": "Officials have the authority to close roads.",
+        "example_zh": "官員有權封閉道路。"
+      },
+      {
+        "id": "b3l9-p091",
+        "phrase": "sign contracts with",
+        "pos": "ph.",
+        "zh": "與……簽訂合約",
+        "example_en": "The company signs contracts with suppliers.",
+        "example_zh": "公司與供應商簽訂合約。"
+      },
+      {
+        "id": "b3l9-p092",
+        "phrase": "cast the rope around the pole",
+        "pos": "ph.",
+        "zh": "把繩子繞在柱子上",
+        "example_en": "He cast the rope around the pole.",
+        "example_zh": "他把繩子繞在柱子上。"
+      },
+      {
+        "id": "b3l9-p093",
+        "phrase": "pull…tight",
+        "pos": "ph.",
+        "zh": "把……拉緊",
+        "example_en": "Pull the rope tight.",
+        "example_zh": "把繩子拉緊。"
+      },
+      {
+        "id": "b3l9-p094",
+        "phrase": "cast a spell",
+        "pos": "ph.",
+        "zh": "施法",
+        "example_en": "The witch cast a spell.",
+        "example_zh": "女巫施法。"
+      },
+      {
+        "id": "b3l9-p095",
+        "phrase": "with a powerful cast",
+        "pos": "ph.",
+        "zh": "由強大演員陣容演出",
+        "example_en": "The film was made with a powerful cast.",
+        "example_zh": "這部電影由強大演員陣容演出。"
+      },
+      {
+        "id": "b3l9-p096",
+        "phrase": "splash into water",
+        "pos": "ph.",
+        "zh": "濺入水中",
+        "example_en": "The stone splashed into water.",
+        "example_zh": "石頭濺入水中。"
+      },
+      {
+        "id": "b3l9-p097",
+        "phrase": "some distance from",
+        "pos": "ph.",
+        "zh": "距離……一段距離",
+        "example_en": "The cabin is some distance from town.",
+        "example_zh": "小屋距離城鎮一段距離。"
+      },
+      {
+        "id": "b3l9-p098",
+        "phrase": "have a splendid cast",
+        "pos": "ph.",
+        "zh": "擁有優秀演員陣容",
+        "example_en": "The drama has a splendid cast.",
+        "example_zh": "這部戲擁有優秀演員陣容。"
+      },
+      {
+        "id": "b3l9-p099",
+        "phrase": "one’s lifelong devotion to one’s faith",
+        "pos": "ph.",
+        "zh": "某人一生對信仰的虔誠",
+        "example_en": "His lifelong devotion to his faith inspired others.",
+        "example_zh": "他一生對信仰的虔誠激勵他人。"
+      },
+      {
+        "id": "b3l9-p100",
+        "phrase": "be paid off",
+        "pos": "ph.",
+        "zh": "得到回報",
+        "example_en": "Her hard work paid off.",
+        "example_zh": "她的努力得到回報。"
+      },
+      {
+        "id": "b3l9-p101",
+        "phrase": "devote oneself to N/V-ing",
+        "pos": "ph.",
+        "zh": "致力於……",
+        "example_en": "She devoted herself to teaching.",
+        "example_zh": "她致力於教學。"
+      },
+      {
+        "id": "b3l9-p102",
+        "phrase": "put on a concert",
+        "pos": "ph.",
+        "zh": "舉辦音樂會",
+        "example_en": "The band put on a concert.",
+        "example_zh": "樂團舉辦音樂會。"
+      },
+      {
+        "id": "b3l9-p103",
+        "phrase": "there is a good chance that",
+        "pos": "ph.",
+        "zh": "很有可能……",
+        "example_en": "There is a good chance that it will rain.",
+        "example_zh": "很有可能會下雨。"
+      },
+      {
+        "id": "b3l9-p104",
+        "phrase": "explode weapons of mass destruction",
+        "pos": "ph.",
+        "zh": "引爆大規模殺傷性武器",
+        "example_en": "No country should explode weapons of mass destruction.",
+        "example_zh": "任何國家都不應引爆大規模殺傷性武器。"
+      },
+      {
+        "id": "b3l9-p105",
+        "phrase": "watch flashes of lightning pierce the dark sky above",
+        "pos": "ph.",
+        "zh": "觀看閃電穿透上方黑暗天空",
+        "example_en": "We watched flashes of lightning pierce the dark sky above.",
+        "example_zh": "我們觀看閃電穿透上方黑暗天空。"
+      },
+      {
+        "id": "b3l9-p106",
+        "phrase": "pierce through the thick darkness/ the wall",
+        "pos": "ph.",
+        "zh": "穿透濃厚黑暗／牆壁",
+        "example_en": "The beam pierced through the thick darkness.",
+        "example_zh": "光束穿透濃厚黑暗。"
+      },
+      {
+        "id": "b3l9-p107",
+        "phrase": "victim of the car crash",
+        "pos": "ph.",
+        "zh": "車禍受害者",
+        "example_en": "The victim of the car crash was rescued.",
+        "example_zh": "車禍受害者獲救。"
+      },
+      {
+        "id": "b3l9-p108",
+        "phrase": "pierce a hole",
+        "pos": "ph.",
+        "zh": "刺穿一個洞",
+        "example_en": "Use a needle to pierce a hole.",
+        "example_zh": "用針刺穿一個洞。"
+      },
+      {
+        "id": "b3l9-p109",
+        "phrase": "pierce the night air",
+        "pos": "ph.",
+        "zh": "劃破夜空",
+        "example_en": "A siren pierced the night air.",
+        "example_zh": "警笛劃破夜空。"
+      },
+      {
+        "id": "b3l9-p110",
+        "phrase": "a sharp cry of fear",
+        "pos": "ph.",
+        "zh": "尖銳的恐懼叫聲",
+        "example_en": "We heard a sharp cry of fear.",
+        "example_zh": "我們聽到尖銳的恐懼叫聲。"
+      },
+      {
+        "id": "b3l9-p111",
+        "phrase": "emerge from",
+        "pos": "ph.",
+        "zh": "從……出現",
+        "example_en": "A figure emerged from the fog.",
+        "example_zh": "一個身影從霧中出現。"
+      },
+      {
+        "id": "b3l9-p112",
+        "phrase": "ask for the Lord’s blessings",
+        "pos": "ph.",
+        "zh": "祈求上帝的祝福",
+        "example_en": "They asked for the Lord’s blessings.",
+        "example_zh": "他們祈求上帝的祝福。"
+      },
+      {
+        "id": "b3l9-p113",
+        "phrase": "be equipped with snow chains",
+        "pos": "ph.",
+        "zh": "配備雪鏈",
+        "example_en": "The car is equipped with snow chains.",
+        "example_zh": "這輛車配備雪鏈。"
+      },
+      {
+        "id": "b3l9-p114",
+        "phrase": "prevent sliding on the icy pavement",
+        "pos": "ph.",
+        "zh": "防止在結冰路面滑動",
+        "example_en": "Snow chains prevent sliding on the icy pavement.",
+        "example_zh": "雪鏈防止在結冰路面滑動。"
+      },
+      {
+        "id": "b3l9-p115",
+        "phrase": "offer sb. warm hospitality",
+        "pos": "ph.",
+        "zh": "給某人熱情款待",
+        "example_en": "The hosts offered us warm hospitality.",
+        "example_zh": "主人熱情款待我們。"
+      },
+      {
+        "id": "b3l9-p116",
+        "phrase": "hospitality industry",
+        "pos": "ph.",
+        "zh": "旅館餐飲業",
+        "example_en": "The hospitality industry creates many jobs.",
+        "example_zh": "旅館餐飲業創造許多工作。"
+      },
+      {
+        "id": "b3l9-p117",
+        "phrase": "be hospitable to guests",
+        "pos": "ph.",
+        "zh": "熱情款待客人",
+        "example_en": "The family is hospitable to guests.",
+        "example_zh": "這家人熱情款待客人。"
+      },
+      {
+        "id": "b3l9-p118",
+        "phrase": "welcome sb.with open arms",
+        "pos": "ph.",
+        "zh": "張開雙臂歡迎某人",
+        "example_en": "They welcomed the visitors with open arms.",
+        "example_zh": "他們張開雙臂歡迎訪客。"
+      },
+      {
+        "id": "b3l9-p119",
+        "phrase": "cheer enthusiastically",
+        "pos": "ph.",
+        "zh": "熱烈歡呼",
+        "example_en": "Fans cheered enthusiastically.",
+        "example_zh": "粉絲熱烈歡呼。"
+      },
+      {
+        "id": "b3l9-p120",
+        "phrase": "emerge onto the stage",
+        "pos": "ph.",
+        "zh": "登上舞台",
+        "example_en": "The singer emerged onto the stage.",
+        "example_zh": "歌手登上舞台。"
+      },
+      {
+        "id": "b3l9-p121",
+        "phrase": "be enthusiastic about sth.",
+        "pos": "ph.",
+        "zh": "對某事熱衷",
+        "example_en": "Students are enthusiastic about the project.",
+        "example_zh": "學生對這項計畫很熱衷。"
+      },
+      {
+        "id": "b3l9-p122",
+        "phrase": "maintain one’s enthusiasm",
+        "pos": "ph.",
+        "zh": "保持某人的熱忱",
+        "example_en": "She maintained her enthusiasm throughout the course.",
+        "example_zh": "她在整個課程中保持熱忱。"
+      },
+      {
+        "id": "b3l9-p123",
+        "phrase": "boast a splendid range of sports facilities",
+        "pos": "ph.",
+        "zh": "擁有多樣優良運動設施",
+        "example_en": "The resort boasts a splendid range of sports facilities.",
+        "example_zh": "度假村擁有多樣優良運動設施。"
+      },
+      {
+        "id": "b3l9-p124",
+        "phrase": "a nine-hole golf course",
+        "pos": "ph.",
+        "zh": "九洞高爾夫球場",
+        "example_en": "The hotel has a nine-hole golf course.",
+        "example_zh": "飯店有九洞高爾夫球場。"
+      },
+      {
+        "id": "b3l9-p125",
+        "phrase": "accessible facilities",
+        "pos": "ph.",
+        "zh": "無障礙設施",
+        "example_en": "The building provides accessible facilities.",
+        "example_zh": "這棟建築提供無障礙設施。"
+      },
+      {
+        "id": "b3l9-p126",
+        "phrase": "religious fervor",
+        "pos": "ph.",
+        "zh": "宗教熱忱",
+        "example_en": "The pilgrims traveled with religious fervor.",
+        "example_zh": "朝聖者帶著宗教熱忱旅行。"
+      },
+      {
+        "id": "b3l9-p127",
+        "phrase": "ancient ritual",
+        "pos": "ph.",
+        "zh": "古老儀式",
+        "example_en": "The ceremony preserves an ancient ritual.",
+        "example_zh": "這項典禮保存古老儀式。"
+      },
+      {
+        "id": "b3l9-p128",
+        "phrase": "officially designate...(as)...",
+        "pos": "ph.",
+        "zh": "正式指定為……",
+        "example_en": "The government officially designated the site as a heritage area.",
+        "example_zh": "政府正式指定該地為文化遺產區。"
+      },
+      {
+        "id": "b3l9-p129",
+        "phrase": "a national emergency",
+        "pos": "ph.",
+        "zh": "國家緊急狀態",
+        "example_en": "The storm caused a national emergency.",
+        "example_zh": "暴風雨造成國家緊急狀態。"
+      },
+      {
+        "id": "b3l9-p130",
+        "phrase": "national heritage",
+        "pos": "ph.",
+        "zh": "國家遺產",
+        "example_en": "The temple is part of our national heritage.",
+        "example_zh": "這座寺廟是國家遺產的一部分。"
+      },
+      {
+        "id": "b3l9-p131",
+        "phrase": "folk song",
+        "pos": "ph.",
+        "zh": "民歌",
+        "example_en": "The children sang a folk song.",
+        "example_zh": "孩子們唱了一首民歌。"
+      },
+      {
+        "id": "b3l9-p132",
+        "phrase": "World Heritage Site",
+        "pos": "ph.",
+        "zh": "世界遺產",
+        "example_en": "The temple is a World Heritage Site.",
+        "example_zh": "這座寺廟是世界遺產。"
+      },
+      {
+        "id": "b3l9-p133",
+        "phrase": "rush into the mall at opening time on the day of the big sale",
+        "pos": "ph.",
+        "zh": "大特賣當天開門時衝進購物中心",
+        "example_en": "Shoppers rushed into the mall at opening time on the day of the big sale.",
+        "example_zh": "大特賣當天購物者在開門時衝進購物中心。"
+      },
+      {
+        "id": "b3l9-p134",
+        "phrase": "travel long distances",
+        "pos": "ph.",
+        "zh": "長途旅行",
+        "example_en": "Birds travel long distances every year.",
+        "example_zh": "鳥類每年長途遷徙。"
+      },
+      {
+        "id": "b3l9-p135",
+        "phrase": "as an act of devotion to one’s faith",
+        "pos": "ph.",
+        "zh": "作為對信仰虔誠的行動",
+        "example_en": "He fasted as an act of devotion to his faith.",
+        "example_zh": "他禁食以表達對信仰的虔誠。"
+      },
+      {
+        "id": "b3l9-p136",
+        "phrase": "warm sb.’s heart",
+        "pos": "ph.",
+        "zh": "溫暖某人的心",
+        "example_en": "The child’s kindness warmed my heart.",
+        "example_zh": "孩子的善意溫暖了我的心。"
+      },
+      {
+        "id": "b3l9-p137",
+        "phrase": "cast stones at",
+        "pos": "ph.",
+        "zh": "向……投石",
+        "example_en": "The crowd cast stones at the wall.",
+        "example_zh": "人群向牆壁投石。"
+      },
+      {
+        "id": "b3l9-p138",
+        "phrase": "burn ghost money for one’s ancestors",
+        "pos": "ph.",
+        "zh": "為祖先燒紙錢",
+        "example_en": "Families burn ghost money for their ancestors.",
+        "example_zh": "家人為祖先燒紙錢。"
+      },
+      {
+        "id": "b3l9-p139",
+        "phrase": "stroll up and down the night market",
+        "pos": "ph.",
+        "zh": "在夜市來回漫步",
+        "example_en": "We strolled up and down the night market.",
+        "example_zh": "我們在夜市來回漫步。"
+      },
+      {
+        "id": "b3l9-p140",
+        "phrase": "feast on",
+        "pos": "ph.",
+        "zh": "大吃……",
+        "example_en": "Visitors feasted on local dishes.",
+        "example_zh": "遊客大吃當地菜餚。"
+      },
+      {
+        "id": "b3l9-p141",
+        "phrase": "all manner of local snacks",
+        "pos": "ph.",
+        "zh": "各式各樣的地方小吃",
+        "example_en": "The market offers all manner of local snacks.",
+        "example_zh": "市場提供各式各樣的地方小吃。"
+      },
+      {
+        "id": "b3l9-p142",
+        "phrase": "ecological systems around the world",
+        "pos": "ph.",
+        "zh": "世界各地的生態系統",
+        "example_en": "Pollution threatens ecological systems around the world.",
+        "example_zh": "污染威脅世界各地的生態系統。"
+      },
+      {
+        "id": "b3l9-p143",
+        "phrase": "allergic to animal fur",
+        "pos": "ph.",
+        "zh": "對動物毛過敏",
+        "example_en": "She is allergic to animal fur.",
+        "example_zh": "她對動物毛過敏。"
+      },
+      {
+        "id": "b3l9-p144",
+        "phrase": "a movie featuring the super star",
+        "pos": "ph.",
+        "zh": "由超級明星主演的電影",
+        "example_en": "We watched a movie featuring the super star.",
+        "example_zh": "我們看了一部由超級明星主演的電影。"
+      },
+      {
+        "id": "b3l9-p145",
+        "phrase": "release detailed information",
+        "pos": "ph.",
+        "zh": "發布詳細資訊",
+        "example_en": "The agency will release detailed information.",
+        "example_zh": "該機構將發布詳細資訊。"
+      },
+      {
+        "id": "b3l9-p146",
+        "phrase": "make a meaningful impact on society",
+        "pos": "ph.",
+        "zh": "對社會產生有意義的影響",
+        "example_en": "Education can make a meaningful impact on society.",
+        "example_zh": "教育能對社會產生有意義的影響。"
+      }
+    ]
+  },
+  "grammar": {
+    "points": [
+      {
+        "id": "b3l9-g1",
+        "title": "Never/Seldom/Hardly/Rarely/Barely + be + S/aux. + S + V.... 否定副詞置於句首的倒裝句",
+        "examples": [
+          "Rarely does Natalie stay up late before a test.",
+          "Hardly did the police believe what the witness said.",
+          "Rarely was the teacher harsh to his students.",
+          "Never is it safe to swim near the rapids."
+        ]
+      },
+      {
+        "id": "b3l9-g2",
+        "title": "It is no exaggeration to say that",
+        "examples": [
+          "It is no exaggeration to say that Jeff Bezos is one of the richest men on earth.",
+          "It is not too much to say that many people around the world are crazy about football.",
+          "It is no exaggeration to say that J.K. Rowling is one of the best writers of fantasy novels.",
+          "It is not too much to say that everyone would be influenced by this new policy."
+        ]
+      }
+    ],
+    "sentence_structures": {
+      "items": [
+        {
+          "id": "b3l9-s001",
+          "sentence": "Every year, more than five million people *participate* in the Mazu pilgrimage.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vi + Prepositional phrase"
+        },
+        {
+          "id": "b3l9-s002",
+          "sentence": "It *is* no exaggeration to say that this event might just be the world's largest and wildest birthday party.",
+          "type": "complex",
+          "pattern": "It + Vl + C + Infinitival phrase + Noun clause (that...)"
+        },
+        {
+          "id": "b3l9-s003",
+          "sentence": "The festivities *do not end* until the participants have celebrated for nine days and journeyed over 300 kilometers in central Taiwan.",
+          "type": "complex",
+          "pattern": "S + Vi + Adverbial clause (until...)"
+        },
+        {
+          "id": "b3l9-s004",
+          "sentence": "Undoubtedly, the Mazu pilgrimage *is* a can't-miss event for visitors to Taiwan.",
+          "type": "simple",
+          "pattern": "Adverb + S + Vl + C + Prepositional phrase"
+        },
+        {
+          "id": "b3l9-s005",
+          "sentence": "The pilgrimage, which honors the sea goddess Mazu, *sets out* from Dajia's Zhenlan Temple around her birthday, the twenty-third day of the third month on Taiwan's lunar calendar.",
+          "type": "complex",
+          "pattern": "S + Relative clause (which...) + Vi (Phrasal verb) + Prepositional phrases + Appositive"
+        },
+        {
+          "id": "b3l9-s006",
+          "sentence": "The exact date and time, which vary from year to year, *are determined* earlier.",
+          "type": "complex",
+          "pattern": "Compound S + Relative clause (which...) + Passive verb phrase + Adverb"
+        },
+        {
+          "id": "b3l9-s007",
+          "sentence": "During the Lantern Festival, temple authorities *cast* two half-moon-shaped wooden blocks to decide the actual schedule.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + O + Infinitival phrase"
+        },
+        {
+          "id": "b3l9-s008",
+          "sentence": "At the chosen time, some 200,000 pilgrims *set out* from Zhenlan Temple on foot and *visit* more than 100 temples over the course of nine days.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Compound verb phrase + O + Prepositional phrases"
+        },
+        {
+          "id": "b3l9-s009",
+          "sentence": "They *are accompanied* every step of the way by a statue of Mazu, which is carried in a sedan chair.",
+          "type": "complex",
+          "pattern": "S + Passive verb phrase + Adverbial phrase + Relative clause (which...)"
+        },
+        {
+          "id": "b3l9-s010",
+          "sentence": "Although the pilgrims' strength may wane during the long journey, never do their passion and dedication *fade*.",
+          "type": "complex",
+          "pattern": "Adverbial clause (Although...) + Inverted adverb + Auxiliary + Compound S + Vi"
+        },
+        {
+          "id": "b3l9-s011",
+          "sentence": "Apart from being a chance for people to show their devotion to the goddess, this annual festival *is* a spectacular and heart-warming event.",
+          "type": "simple",
+          "pattern": "Prepositional gerund phrase + S + Vl + C"
+        },
+        {
+          "id": "b3l9-s012",
+          "sentence": "The gathering in front of Zhenlan Temple before the pilgrimage begins *is* a scene like no other.",
+          "type": "complex",
+          "pattern": "S + Adverbial clause (before...) + Vl + C"
+        },
+        {
+          "id": "b3l9-s013",
+          "sentence": "Throngs of people *fill* the streets, while the explosive sounds of drums, horns, fireworks, and firecrackers pierce the air.",
+          "type": "complex",
+          "pattern": "S + Vt + O + Adverbial clause (while...)"
+        },
+        {
+          "id": "b3l9-s014",
+          "sentence": "When the statue of Mazu finally emerges from the temple in her sedan chair, the crowd *surrounds* her, excited to send her off on her long journey.",
+          "type": "complex",
+          "pattern": "Adverbial clause (When...) + S + Vt + O + Participial phrase"
+        },
+        {
+          "id": "b3l9-s015",
+          "sentence": "Along the route, millions of people also *join in* the celebration and *come out* to receive her blessing.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Compound verb phrase + O + Infinitival phrase"
+        },
+        {
+          "id": "b3l9-s016",
+          "sentence": "Some even *kneel* or *lie* face down on the pavement to allow the sedan chair to pass over them, which symbolizes their hope for good luck.",
+          "type": "complex",
+          "pattern": "S + Compound verb phrase + Infinitival phrase + Relative clause (which...)"
+        },
+        {
+          "id": "b3l9-s017",
+          "sentence": "In the meantime, locals *show* their hospitality by enthusiastically offering free food, washing facilities, and accommodations to passing pilgrims.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Vt + O + Prepositional gerund phrase"
+        },
+        {
+          "id": "b3l9-s018",
+          "sentence": "Rarely can such generosity *be seen* during a religious event.",
+          "type": "simple",
+          "pattern": "Inverted adverb + Modal + S + Passive verb phrase + Prepositional phrase"
+        },
+        {
+          "id": "b3l9-s019",
+          "sentence": "It *reflects* not only the locals' dedication to Mazu but also the warmth and humanity that are characteristic of the Taiwanese people.",
+          "type": "complex",
+          "pattern": "S + Vt + Correlative compound O + Relative clause (that...)"
+        },
+        {
+          "id": "b3l9-s020",
+          "sentence": "Over the years, the Mazu pilgrimage *has transformed* into more than just a religious ritual, and every year it *attracts* all manner of people-young and old, foreign and Taiwanese.",
+          "type": "compound",
+          "pattern": "Adverbial phrase + S + Vl + C + and + Adverbial phrase + S + Vt + O"
+        },
+        {
+          "id": "b3l9-s021",
+          "sentence": "Thus, the Mazu pilgrimage *has been designated* as one of Taiwan's important national folk customs.",
+          "type": "simple",
+          "pattern": "Adverb + S + Passive verb phrase + C"
+        },
+        {
+          "id": "b3l9-s022",
+          "sentence": "For those who are looking to experience Taiwan's cultural heritage, participating in the Mazu pilgrimage *is* essential!",
+          "type": "complex",
+          "pattern": "Prepositional phrase with Relative clause (who...) + Gerund phrase (S) + Vl + C"
+        }
+      ]
+    }
+  },
+  "text_genre": {
+    "raw_text": "Passage Structure Analysis (5W1H Descriptive Pattern)\nIntroduction & What / How Big (Para 1): Introduces the Mazu pilgrimage as the world's largest/wildest birthday party (5+ million people, 9 days, 300+ km) and establishes its importance as a must-see event in Taiwan.\nWhen / Who / How (Para 2):\nWhen: Lunar March 23rd period, determined during Lantern Festival via wooden blocks.\nWho & How: 200,000 pilgrims on foot carrying Mazu's statue in a sedan chair across 100+ temples.\nWhere / Why / What Happens (Para 3):\nWhere & What: Starting from Dajia Zhenlan Temple; streets packed with drums, fireworks, and crowds.\nWhy & Cultural Spirit: Pilgrims seek blessings (crawling under the sedan chair), while locals show hospitality (free food, lodging) reflecting Taiwanese warmth and generosity.\nConclusion & Significance (Para 4): Summarizes the pilgrimage as a designated national folk custom and an essential cultural heritage experience."
+  }
+}
