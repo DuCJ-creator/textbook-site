@@ -213,9 +213,14 @@
       },
       {
         "id": "b3l8-v08",
-        "base": "brutal",
+        "base": "brute",
         "verb": [],
         "noun": [
+          {
+            "en": "brute",
+            "zh": "殘暴的人；野獸；麻煩事",
+            "example": "That 1,000-piece puzzle was an absolute brute to finish, but we finally got it done."
+          },
           {
             "en": "brutality",
             "zh": "殘暴；野蠻；暴行",
@@ -223,6 +228,11 @@
           }
         ],
         "adj": [
+          {
+            "en": "brute",
+            "zh": "蠻力的; 殘酷的(事實)",
+            "example": "he door was opened by brute force."
+          },
           {
             "en": "brutal",
             "zh": "殘暴的；嚴酷的；直率得傷人的",
@@ -605,10 +615,1166 @@
     ]
   },
   "phrases": {
-    "items": []
+    "items": [
+      {
+        "id": "b3l8-p001",
+        "phrase": "tourism industry",
+        "pos": "ph.",
+        "zh": "觀光產業",
+        "example_en": "The tourism industry supports many jobs.",
+        "example_zh": "觀光產業支持許多工作。"
+      },
+      {
+        "id": "b3l8-p002",
+        "phrase": "have fun doing",
+        "pos": "ph.",
+        "zh": "做……很開心",
+        "example_en": "We had fun doing the activity.",
+        "example_zh": "我們做這項活動很開心。"
+      },
+      {
+        "id": "b3l8-p003",
+        "phrase": "the highlight of",
+        "pos": "ph.",
+        "zh": "……的亮點",
+        "example_en": "The concert was the highlight of the trip.",
+        "example_zh": "音樂會是旅程的亮點。"
+      },
+      {
+        "id": "b3l8-p004",
+        "phrase": "a dark side to",
+        "pos": "ph.",
+        "zh": "……的黑暗面",
+        "example_en": "There is a dark side to fame.",
+        "example_zh": "名聲有黑暗面。"
+      },
+      {
+        "id": "b3l8-p005",
+        "phrase": "record-high temperature",
+        "pos": "ph.",
+        "zh": "破紀錄高溫",
+        "example_en": "The city experienced a record-high temperature.",
+        "example_zh": "這座城市出現破紀錄高溫。"
+      },
+      {
+        "id": "b3l8-p006",
+        "phrase": "raise concerns about",
+        "pos": "ph.",
+        "zh": "引起對……的疑慮",
+        "example_en": "The plan raised concerns about safety.",
+        "example_zh": "這項計畫引起對安全的疑慮。"
+      },
+      {
+        "id": "b3l8-p007",
+        "phrase": "crowded with tourists",
+        "pos": "ph.",
+        "zh": "擠滿遊客",
+        "example_en": "The beach was crowded with tourists.",
+        "example_zh": "海灘擠滿遊客。"
+      },
+      {
+        "id": "b3l8-p008",
+        "phrase": "be home to",
+        "pos": "ph.",
+        "zh": "是……的所在地",
+        "example_en": "The island is home to rare birds.",
+        "example_zh": "這座島是稀有鳥類的所在地。"
+      },
+      {
+        "id": "b3l8-p009",
+        "phrase": "fail a subject",
+        "pos": "ph.",
+        "zh": "某科不及格",
+        "example_en": "He failed a subject last semester.",
+        "example_zh": "他上學期有一科不及格。"
+      },
+      {
+        "id": "b3l8-p010",
+        "phrase": "strike a balance between",
+        "pos": "ph.",
+        "zh": "在……之間取得平衡",
+        "example_en": "We must strike a balance between work and rest.",
+        "example_zh": "我們必須在工作與休息之間取得平衡。"
+      },
+      {
+        "id": "b3l8-p011",
+        "phrase": "extracurricular activities",
+        "pos": "ph.",
+        "zh": "課外活動",
+        "example_en": "She enjoys extracurricular activities.",
+        "example_zh": "她喜歡課外活動。"
+      },
+      {
+        "id": "b3l8-p012",
+        "phrase": "boil down to",
+        "pos": "ph.",
+        "zh": "歸結為",
+        "example_en": "The problem boils down to poor planning.",
+        "example_zh": "問題歸結為規劃不周。"
+      },
+      {
+        "id": "b3l8-p013",
+        "phrase": "do the right thing at the right time",
+        "pos": "ph.",
+        "zh": "在適當時機做正確的事",
+        "example_en": "Leaders must do the right thing at the right time.",
+        "example_zh": "領導者必須在適當時機做正確的事。"
+      },
+      {
+        "id": "b3l8-p014",
+        "phrase": "be fully attentive in class",
+        "pos": "ph.",
+        "zh": "上課時全神貫注",
+        "example_en": "Students should be fully attentive in class.",
+        "example_zh": "學生上課時應全神貫注。"
+      },
+      {
+        "id": "b3l8-p015",
+        "phrase": "fully engage in activities",
+        "pos": "ph.",
+        "zh": "充分投入活動",
+        "example_en": "Children fully engaged in activities.",
+        "example_zh": "孩子們充分投入活動。"
+      },
+      {
+        "id": "b3l8-p016",
+        "phrase": "take part in a relay race",
+        "pos": "ph.",
+        "zh": "參加接力賽",
+        "example_en": "Our class took part in a relay race.",
+        "example_zh": "我們班參加接力賽。"
+      },
+      {
+        "id": "b3l8-p017",
+        "phrase": "from beginning to end",
+        "pos": "ph.",
+        "zh": "從頭到尾",
+        "example_en": "She read the book from beginning to end.",
+        "example_zh": "她從頭到尾讀完這本書。"
+      },
+      {
+        "id": "b3l8-p018",
+        "phrase": "filled with a lively atmosphere",
+        "pos": "ph.",
+        "zh": "充滿熱鬧氣氛",
+        "example_en": "The market was filled with a lively atmosphere.",
+        "example_zh": "市場充滿熱鬧氣氛。"
+      },
+      {
+        "id": "b3l8-p019",
+        "phrase": "due to high demand",
+        "pos": "ph.",
+        "zh": "由於需求很高",
+        "example_en": "Tickets sold out due to high demand.",
+        "example_zh": "票券因需求很高而售罄。"
+      },
+      {
+        "id": "b3l8-p020",
+        "phrase": "tourist attraction",
+        "pos": "ph.",
+        "zh": "觀光景點",
+        "example_en": "The tower is a famous tourist attraction.",
+        "example_zh": "這座塔是著名觀光景點。"
+      },
+      {
+        "id": "b3l8-p021",
+        "phrase": "live in herds",
+        "pos": "ph.",
+        "zh": "群居",
+        "example_en": "Many animals live in herds.",
+        "example_zh": "許多動物群居。"
+      },
+      {
+        "id": "b3l8-p022",
+        "phrase": "psychological torture",
+        "pos": "ph.",
+        "zh": "精神折磨",
+        "example_en": "Isolation can be psychological torture.",
+        "example_zh": "孤立可能是精神折磨。"
+      },
+      {
+        "id": "b3l8-p023",
+        "phrase": "physical abuse",
+        "pos": "ph.",
+        "zh": "身體虐待",
+        "example_en": "The shelter protects victims of physical abuse.",
+        "example_zh": "收容所保護身體虐待受害者。"
+      },
+      {
+        "id": "b3l8-p024",
+        "phrase": "sign up",
+        "pos": "ph.",
+        "zh": "報名",
+        "example_en": "I signed up for the workshop.",
+        "example_zh": "我報名參加工作坊。"
+      },
+      {
+        "id": "b3l8-p025",
+        "phrase": "long-anticipated",
+        "pos": "ph.",
+        "zh": "期待已久的",
+        "example_en": "The long-anticipated film finally opened.",
+        "example_zh": "期待已久的電影終於上映。"
+      },
+      {
+        "id": "b3l8-p026",
+        "phrase": "sports meet",
+        "pos": "ph.",
+        "zh": "運動會",
+        "example_en": "Our school held a sports meet.",
+        "example_zh": "我們學校舉行運動會。"
+      },
+      {
+        "id": "b3l8-p027",
+        "phrase": "approaching super typhoon",
+        "pos": "ph.",
+        "zh": "逼近的超級颱風",
+        "example_en": "The approaching super typhoon forced evacuations.",
+        "example_zh": "逼近的超級颱風迫使人們撤離。"
+      },
+      {
+        "id": "b3l8-p028",
+        "phrase": "car hood",
+        "pos": "ph.",
+        "zh": "汽車引擎蓋",
+        "example_en": "He checked under the car hood.",
+        "example_zh": "他檢查汽車引擎蓋下方。"
+      },
+      {
+        "id": "b3l8-p029",
+        "phrase": "movie clip",
+        "pos": "ph.",
+        "zh": "電影片段",
+        "example_en": "We watched a movie clip in class.",
+        "example_zh": "我們在課堂上觀看電影片段。"
+      },
+      {
+        "id": "b3l8-p030",
+        "phrase": "make the concept understood",
+        "pos": "ph.",
+        "zh": "使概念被理解",
+        "example_en": "The diagram made the concept understood.",
+        "example_zh": "圖表使這個概念容易理解。"
+      },
+      {
+        "id": "b3l8-p031",
+        "phrase": "take unpaid leaves",
+        "pos": "ph.",
+        "zh": "請無薪假",
+        "example_en": "Some workers take unpaid leaves to care for family.",
+        "example_zh": "有些員工請無薪假照顧家人。"
+      },
+      {
+        "id": "b3l8-p032",
+        "phrase": "abide by",
+        "pos": "ph.",
+        "zh": "遵守",
+        "example_en": "Everyone must abide by the rules.",
+        "example_zh": "每個人都必須遵守規則。"
+      },
+      {
+        "id": "b3l8-p033",
+        "phrase": "can’t afford to lose one’s job",
+        "pos": "ph.",
+        "zh": "承擔不起失去工作的後果",
+        "example_en": "He can’t afford to lose his job.",
+        "example_zh": "他承擔不起失去工作的後果。"
+      },
+      {
+        "id": "b3l8-p034",
+        "phrase": "draw attention from",
+        "pos": "ph.",
+        "zh": "吸引……的注意",
+        "example_en": "The project drew attention from investors.",
+        "example_zh": "這項計畫吸引投資人的注意。"
+      },
+      {
+        "id": "b3l8-p035",
+        "phrase": "an adequate amount of",
+        "pos": "ph.",
+        "zh": "足夠的數量",
+        "example_en": "Drink an adequate amount of water.",
+        "example_zh": "喝足夠的水。"
+      },
+      {
+        "id": "b3l8-p036",
+        "phrase": "contribute to",
+        "pos": "ph.",
+        "zh": "促成；貢獻於",
+        "example_en": "Exercise contributes to good health.",
+        "example_zh": "運動有助於健康。"
+      },
+      {
+        "id": "b3l8-p037",
+        "phrase": "worse still",
+        "pos": "ph.",
+        "zh": "更糟的是",
+        "example_en": "Worse still, the roads were closed.",
+        "example_zh": "更糟的是，道路關閉了。"
+      },
+      {
+        "id": "b3l8-p038",
+        "phrase": "better still",
+        "pos": "ph.",
+        "zh": "更好的是",
+        "example_en": "The room is cheap; better still, it is sunny.",
+        "example_zh": "房間便宜，更好的是採光充足。"
+      },
+      {
+        "id": "b3l8-p039",
+        "phrase": "take advantage of",
+        "pos": "ph.",
+        "zh": "利用",
+        "example_en": "Do not take advantage of others.",
+        "example_zh": "不要利用他人。"
+      },
+      {
+        "id": "b3l8-p040",
+        "phrase": "work overtime",
+        "pos": "ph.",
+        "zh": "加班",
+        "example_en": "Employees worked overtime to meet the deadline.",
+        "example_zh": "員工加班以趕上期限。"
+      },
+      {
+        "id": "b3l8-p041",
+        "phrase": "endure poor working conditions",
+        "pos": "ph.",
+        "zh": "忍受惡劣工作環境",
+        "example_en": "Workers should not endure poor working conditions.",
+        "example_zh": "工人不應忍受惡劣工作環境。"
+      },
+      {
+        "id": "b3l8-p042",
+        "phrase": "feel unwell",
+        "pos": "ph.",
+        "zh": "感到不適",
+        "example_en": "She felt unwell and went home.",
+        "example_zh": "她感到不適便回家了。"
+      },
+      {
+        "id": "b3l8-p043",
+        "phrase": "be denied access to",
+        "pos": "ph.",
+        "zh": "被拒絕使用／進入……",
+        "example_en": "Residents were denied access to the road.",
+        "example_zh": "居民被拒絕使用這條道路。"
+      },
+      {
+        "id": "b3l8-p044",
+        "phrase": "lack of infrastructure",
+        "pos": "ph.",
+        "zh": "缺乏基礎設施",
+        "example_en": "The area suffers from a lack of infrastructure.",
+        "example_zh": "這個地區缺乏基礎設施。"
+      },
+      {
+        "id": "b3l8-p045",
+        "phrase": "stay up late",
+        "pos": "ph.",
+        "zh": "熬夜",
+        "example_en": "Try not to stay up late.",
+        "example_zh": "盡量不要熬夜。"
+      },
+      {
+        "id": "b3l8-p046",
+        "phrase": "reach for",
+        "pos": "ph.",
+        "zh": "伸手拿",
+        "example_en": "She reached for the top shelf.",
+        "example_zh": "她伸手拿最高層架上的東西。"
+      },
+      {
+        "id": "b3l8-p047",
+        "phrase": "increase one’s income",
+        "pos": "ph.",
+        "zh": "增加某人的收入",
+        "example_en": "He took a second job to increase his income.",
+        "example_zh": "他做第二份工作以增加收入。"
+      },
+      {
+        "id": "b3l8-p048",
+        "phrase": "develop one’s second interest",
+        "pos": "ph.",
+        "zh": "培養某人的第二興趣",
+        "example_en": "She developed her second interest in photography.",
+        "example_zh": "她培養對攝影的第二興趣。"
+      },
+      {
+        "id": "b3l8-p049",
+        "phrase": "choose a slash career",
+        "pos": "ph.",
+        "zh": "選擇斜槓職涯",
+        "example_en": "Many young adults choose a slash career.",
+        "example_zh": "許多年輕人選擇斜槓職涯。"
+      },
+      {
+        "id": "b3l8-p050",
+        "phrase": "below the minimum wage",
+        "pos": "ph.",
+        "zh": "低於最低工資",
+        "example_en": "The job paid below the minimum wage.",
+        "example_zh": "這份工作薪資低於最低工資。"
+      },
+      {
+        "id": "b3l8-p051",
+        "phrase": "consumer electronics",
+        "pos": "ph.",
+        "zh": "消費性電子產品",
+        "example_en": "The store sells consumer electronics.",
+        "example_zh": "這家商店販售消費性電子產品。"
+      },
+      {
+        "id": "b3l8-p052",
+        "phrase": "lack proper documentation",
+        "pos": "ph.",
+        "zh": "缺乏適當文件",
+        "example_en": "The shipment lacked proper documentation.",
+        "example_zh": "這批貨缺乏適當文件。"
+      },
+      {
+        "id": "b3l8-p053",
+        "phrase": "be denied entry at the border",
+        "pos": "ph.",
+        "zh": "在邊境被拒絕入境",
+        "example_en": "He was denied entry at the border.",
+        "example_zh": "他在邊境被拒絕入境。"
+      },
+      {
+        "id": "b3l8-p054",
+        "phrase": "follow protocol",
+        "pos": "ph.",
+        "zh": "遵守程序",
+        "example_en": "Staff must follow protocol.",
+        "example_zh": "員工必須遵守程序。"
+      },
+      {
+        "id": "b3l8-p055",
+        "phrase": "deal with the root of the problem",
+        "pos": "ph.",
+        "zh": "處理問題根源",
+        "example_en": "We must deal with the root of the problem.",
+        "example_zh": "我們必須處理問題根源。"
+      },
+      {
+        "id": "b3l8-p056",
+        "phrase": "profit from",
+        "pos": "ph.",
+        "zh": "從……獲利",
+        "example_en": "Some companies profit from data.",
+        "example_zh": "有些公司從資料獲利。"
+      },
+      {
+        "id": "b3l8-p057",
+        "phrase": "as an alternative",
+        "pos": "ph.",
+        "zh": "作為替代方案",
+        "example_en": "We used buses as an alternative.",
+        "example_zh": "我們改搭公車作為替代方案。"
+      },
+      {
+        "id": "b3l8-p058",
+        "phrase": "roam free",
+        "pos": "ph.",
+        "zh": "自由漫遊",
+        "example_en": "The horses roam free in the field.",
+        "example_zh": "馬匹在田野自由漫遊。"
+      },
+      {
+        "id": "b3l8-p059",
+        "phrase": "take pleasure in",
+        "pos": "ph.",
+        "zh": "享受……",
+        "example_en": "She takes pleasure in reading.",
+        "example_zh": "她享受閱讀。"
+      },
+      {
+        "id": "b3l8-p060",
+        "phrase": "go about one’s life in peace",
+        "pos": "ph.",
+        "zh": "平靜地過生活",
+        "example_en": "Everyone deserves to go about life in peace.",
+        "example_zh": "每個人都應平靜地過生活。"
+      },
+      {
+        "id": "b3l8-p061",
+        "phrase": "fulfill one’s dream",
+        "pos": "ph.",
+        "zh": "實現某人的夢想",
+        "example_en": "He worked hard to fulfill his dream.",
+        "example_zh": "他努力實現夢想。"
+      },
+      {
+        "id": "b3l8-p062",
+        "phrase": "It is high time that…",
+        "pos": "ph.",
+        "zh": "早就該……",
+        "example_en": "It is high time that we acted.",
+        "example_zh": "我們早就該採取行動了。"
+      },
+      {
+        "id": "b3l8-p063",
+        "phrase": "Success never comes without effort.",
+        "pos": "ph.",
+        "zh": "成功從不會沒有努力",
+        "example_en": "Success never comes without effort.",
+        "example_zh": "成功從不會沒有努力。"
+      },
+      {
+        "id": "b3l8-p064",
+        "phrase": "play a mind-numbing game",
+        "pos": "ph.",
+        "zh": "玩令人麻木的遊戲",
+        "example_en": "He played a mind-numbing game for hours.",
+        "example_zh": "他玩了幾小時令人麻木的遊戲。"
+      },
+      {
+        "id": "b3l8-p065",
+        "phrase": "social worker",
+        "pos": "ph.",
+        "zh": "社工",
+        "example_en": "A social worker helped the family.",
+        "example_zh": "一名社工幫助這個家庭。"
+      },
+      {
+        "id": "b3l8-p066",
+        "phrase": "get rid of unnecessary stuff",
+        "pos": "ph.",
+        "zh": "丟掉不必要的東西",
+        "example_en": "We got rid of unnecessary stuff.",
+        "example_zh": "我們丟掉不必要的東西。"
+      },
+      {
+        "id": "b3l8-p067",
+        "phrase": "boost the economy",
+        "pos": "ph.",
+        "zh": "提振經濟",
+        "example_en": "Tourism can boost the economy.",
+        "example_zh": "觀光業可以提振經濟。"
+      },
+      {
+        "id": "b3l8-p068",
+        "phrase": "be vulnerable to pressure",
+        "pos": "ph.",
+        "zh": "容易受到壓力影響",
+        "example_en": "Young workers can be vulnerable to pressure.",
+        "example_zh": "年輕工作者容易受到壓力影響。"
+      },
+      {
+        "id": "b3l8-p069",
+        "phrase": "suffer terrible abuse",
+        "pos": "ph.",
+        "zh": "遭受可怕虐待",
+        "example_en": "The animals suffered terrible abuse.",
+        "example_zh": "這些動物遭受可怕虐待。"
+      },
+      {
+        "id": "b3l8-p070",
+        "phrase": "at the hands of",
+        "pos": "ph.",
+        "zh": "在……手中；受到……對待",
+        "example_en": "The victims suffered at the hands of criminals.",
+        "example_zh": "受害者受到罪犯的傷害。"
+      },
+      {
+        "id": "b3l8-p071",
+        "phrase": "be left hungry",
+        "pos": "ph.",
+        "zh": "被留下挨餓",
+        "example_en": "No child should be left hungry.",
+        "example_zh": "不應讓任何孩子挨餓。"
+      },
+      {
+        "id": "b3l8-p072",
+        "phrase": "suffer terrible injuries",
+        "pos": "ph.",
+        "zh": "遭受嚴重傷害",
+        "example_en": "Several people suffered terrible injuries.",
+        "example_zh": "數人遭受嚴重傷害。"
+      },
+      {
+        "id": "b3l8-p073",
+        "phrase": "aside from",
+        "pos": "ph.",
+        "zh": "除了……之外",
+        "example_en": "Aside from English, she studies French.",
+        "example_zh": "除了英文之外，她也學法文。"
+      },
+      {
+        "id": "b3l8-p074",
+        "phrase": "run out of money",
+        "pos": "ph.",
+        "zh": "用光錢",
+        "example_en": "We ran out of money on the trip.",
+        "example_zh": "我們旅行時用光了錢。"
+      },
+      {
+        "id": "b3l8-p075",
+        "phrase": "economy recovers",
+        "pos": "ph.",
+        "zh": "經濟復甦",
+        "example_en": "The economy recovers slowly after a crisis.",
+        "example_zh": "危機後經濟慢慢復甦。"
+      },
+      {
+        "id": "b3l8-p076",
+        "phrase": "sharing economy",
+        "pos": "ph.",
+        "zh": "共享經濟",
+        "example_en": "The sharing economy changes how people travel.",
+        "example_zh": "共享經濟改變人們旅行的方式。"
+      },
+      {
+        "id": "b3l8-p077",
+        "phrase": "discuss trade deals",
+        "pos": "ph.",
+        "zh": "討論貿易協議",
+        "example_en": "The leaders discussed trade deals.",
+        "example_zh": "領袖們討論貿易協議。"
+      },
+      {
+        "id": "b3l8-p078",
+        "phrase": "ensure economic growth in the future",
+        "pos": "ph.",
+        "zh": "確保未來經濟成長",
+        "example_en": "Education can ensure economic growth in the future.",
+        "example_zh": "教育能確保未來經濟成長。"
+      },
+      {
+        "id": "b3l8-p079",
+        "phrase": "economical on fuel",
+        "pos": "ph.",
+        "zh": "省油的",
+        "example_en": "This car is economical on fuel.",
+        "example_zh": "這輛車很省油。"
+      },
+      {
+        "id": "b3l8-p080",
+        "phrase": "satisfy the demand of sb.",
+        "pos": "ph.",
+        "zh": "滿足某人的需求",
+        "example_en": "The factory satisfies the demand of customers.",
+        "example_zh": "工廠滿足顧客的需求。"
+      },
+      {
+        "id": "b3l8-p081",
+        "phrase": "be struggling to",
+        "pos": "ph.",
+        "zh": "努力但困難地……",
+        "example_en": "The team is struggling to survive.",
+        "example_zh": "團隊努力求生但面臨困難。"
+      },
+      {
+        "id": "b3l8-p082",
+        "phrase": "on demand",
+        "pos": "ph.",
+        "zh": "按需求",
+        "example_en": "The service is available on demand.",
+        "example_zh": "這項服務可按需求提供。"
+      },
+      {
+        "id": "b3l8-p083",
+        "phrase": "demand to",
+        "pos": "ph.",
+        "zh": "要求……",
+        "example_en": "The workers demanded to see the manager.",
+        "example_zh": "工人要求見經理。"
+      },
+      {
+        "id": "b3l8-p084",
+        "phrase": "be arrested for animal cruelty",
+        "pos": "ph.",
+        "zh": "因虐待動物被捕",
+        "example_en": "The owner was arrested for animal cruelty.",
+        "example_zh": "飼主因虐待動物被捕。"
+      },
+      {
+        "id": "b3l8-p085",
+        "phrase": "make a statement",
+        "pos": "ph.",
+        "zh": "發表聲明",
+        "example_en": "The company made a statement.",
+        "example_zh": "公司發表聲明。"
+      },
+      {
+        "id": "b3l8-p086",
+        "phrase": "in restricted waters",
+        "pos": "ph.",
+        "zh": "在限制水域內",
+        "example_en": "Boats may not fish in restricted waters.",
+        "example_zh": "船隻不得在限制水域內捕魚。"
+      },
+      {
+        "id": "b3l8-p087",
+        "phrase": "same-sex marriage",
+        "pos": "ph.",
+        "zh": "同性婚姻",
+        "example_en": "The law recognizes same-sex marriage.",
+        "example_zh": "法律承認同性婚姻。"
+      },
+      {
+        "id": "b3l8-p088",
+        "phrase": "be against the law",
+        "pos": "ph.",
+        "zh": "違法",
+        "example_en": "Dumping waste is against the law.",
+        "example_zh": "傾倒廢棄物是違法的。"
+      },
+      {
+        "id": "b3l8-p089",
+        "phrase": "legal advice",
+        "pos": "ph.",
+        "zh": "法律建議",
+        "example_en": "Seek legal advice before signing.",
+        "example_zh": "簽署前尋求法律建議。"
+      },
+      {
+        "id": "b3l8-p090",
+        "phrase": "lure A into B",
+        "pos": "ph.",
+        "zh": "誘使 A 進入 B",
+        "example_en": "The scam lured victims into a fake website.",
+        "example_zh": "詐騙誘使受害者進入假網站。"
+      },
+      {
+        "id": "b3l8-p091",
+        "phrase": "cannot resist the lure of sth.",
+        "pos": "ph.",
+        "zh": "無法抗拒某物的誘惑",
+        "example_en": "He cannot resist the lure of fame.",
+        "example_zh": "他無法抗拒名聲的誘惑。"
+      },
+      {
+        "id": "b3l8-p092",
+        "phrase": "a large herd of cattle",
+        "pos": "ph.",
+        "zh": "一大群牛",
+        "example_en": "A large herd of cattle crossed the road.",
+        "example_zh": "一大群牛穿過馬路。"
+      },
+      {
+        "id": "b3l8-p093",
+        "phrase": "herd of deer",
+        "pos": "ph.",
+        "zh": "鹿群",
+        "example_en": "We saw a herd of deer.",
+        "example_zh": "我們看到一群鹿。"
+      },
+      {
+        "id": "b3l8-p094",
+        "phrase": "herd of elephants",
+        "pos": "ph.",
+        "zh": "象群",
+        "example_en": "A herd of elephants moved slowly.",
+        "example_zh": "一群大象慢慢移動。"
+      },
+      {
+        "id": "b3l8-p095",
+        "phrase": "herd instinct",
+        "pos": "ph.",
+        "zh": "群體本能",
+        "example_en": "Herd instinct can influence decisions.",
+        "example_zh": "群體本能會影響決定。"
+      },
+      {
+        "id": "b3l8-p096",
+        "phrase": "dairy farm",
+        "pos": "ph.",
+        "zh": "乳牛牧場",
+        "example_en": "The dairy farm produces fresh milk.",
+        "example_zh": "乳牛牧場生產鮮奶。"
+      },
+      {
+        "id": "b3l8-p097",
+        "phrase": "law firm",
+        "pos": "ph.",
+        "zh": "律師事務所",
+        "example_en": "She joined a law firm.",
+        "example_zh": "她加入一家律師事務所。"
+      },
+      {
+        "id": "b3l8-p098",
+        "phrase": "show no mercy",
+        "pos": "ph.",
+        "zh": "毫不留情",
+        "example_en": "The storm showed no mercy.",
+        "example_zh": "暴風雨毫不留情。"
+      },
+      {
+        "id": "b3l8-p099",
+        "phrase": "tear…to pieces",
+        "pos": "ph.",
+        "zh": "把……撕成碎片",
+        "example_en": "The dog tore the toy to pieces.",
+        "example_zh": "狗把玩具撕成碎片。"
+      },
+      {
+        "id": "b3l8-p100",
+        "phrase": "mercy killing (=euthanasia)",
+        "pos": "ph.",
+        "zh": "安樂死",
+        "example_en": "The debate concerned mercy killing.",
+        "example_zh": "這場辯論涉及安樂死。"
+      },
+      {
+        "id": "b3l8-p101",
+        "phrase": "strike A with B",
+        "pos": "ph.",
+        "zh": "用 B 打擊 A",
+        "example_en": "The tree was struck with lightning.",
+        "example_zh": "樹被閃電擊中。"
+      },
+      {
+        "id": "b3l8-p102",
+        "phrase": "strike a chord",
+        "pos": "ph.",
+        "zh": "引起共鳴",
+        "example_en": "The song struck a chord with listeners.",
+        "example_zh": "這首歌引起聽眾共鳴。"
+      },
+      {
+        "id": "b3l8-p103",
+        "phrase": "be on strike",
+        "pos": "ph.",
+        "zh": "罷工",
+        "example_en": "The workers are on strike.",
+        "example_zh": "工人正在罷工。"
+      },
+      {
+        "id": "b3l8-p104",
+        "phrase": "commit a criminal act",
+        "pos": "ph.",
+        "zh": "犯下犯罪行為",
+        "example_en": "He was punished for committing a criminal act.",
+        "example_zh": "他因犯下犯罪行為而受罰。"
+      },
+      {
+        "id": "b3l8-p105",
+        "phrase": "commit an offence",
+        "pos": "ph.",
+        "zh": "犯罪；違法",
+        "example_en": "Anyone who commits an offence may be fined.",
+        "example_zh": "違法者可能被罰款。"
+      },
+      {
+        "id": "b3l8-p106",
+        "phrase": "commit a fraud",
+        "pos": "ph.",
+        "zh": "犯詐欺罪",
+        "example_en": "The company committed a fraud.",
+        "example_zh": "這家公司犯下詐欺罪。"
+      },
+      {
+        "id": "b3l8-p107",
+        "phrase": "commit a robbery",
+        "pos": "ph.",
+        "zh": "犯下搶劫罪",
+        "example_en": "The suspect committed a robbery.",
+        "example_zh": "嫌疑犯犯下搶劫罪。"
+      },
+      {
+        "id": "b3l8-p108",
+        "phrase": "commit oneself to N./V-ing",
+        "pos": "ph.",
+        "zh": "承諾做某事",
+        "example_en": "She committed herself to helping others.",
+        "example_zh": "她承諾幫助他人。"
+      },
+      {
+        "id": "b3l8-p109",
+        "phrase": "make a commitment to",
+        "pos": "ph.",
+        "zh": "承諾……",
+        "example_en": "He made a commitment to exercise.",
+        "example_zh": "他承諾要運動。"
+      },
+      {
+        "id": "b3l8-p110",
+        "phrase": "be obedient to",
+        "pos": "ph.",
+        "zh": "服從……",
+        "example_en": "The dog is obedient to its owner.",
+        "example_zh": "這隻狗服從主人。"
+      },
+      {
+        "id": "b3l8-p111",
+        "phrase": "act in obedience to the law",
+        "pos": "ph.",
+        "zh": "依法行事",
+        "example_en": "Citizens must act in obedience to the law.",
+        "example_zh": "公民必須依法行事。"
+      },
+      {
+        "id": "b3l8-p112",
+        "phrase": "be heavily fined or sent to prison",
+        "pos": "ph.",
+        "zh": "被重罰或送進監獄",
+        "example_en": "Offenders may be heavily fined or sent to prison.",
+        "example_zh": "違法者可能被重罰或送進監獄。"
+      },
+      {
+        "id": "b3l8-p113",
+        "phrase": "be vulnerable to head injuries",
+        "pos": "ph.",
+        "zh": "容易遭受頭部傷害",
+        "example_en": "Cyclists are vulnerable to head injuries.",
+        "example_zh": "騎自行車者容易遭受頭部傷害。"
+      },
+      {
+        "id": "b3l8-p114",
+        "phrase": "be adequate for",
+        "pos": "ph.",
+        "zh": "足以應付……",
+        "example_en": "The room is adequate for two people.",
+        "example_zh": "這房間足以容納兩人。"
+      },
+      {
+        "id": "b3l8-p115",
+        "phrase": "pull over",
+        "pos": "ph.",
+        "zh": "靠邊停車",
+        "example_en": "The driver pulled over safely.",
+        "example_zh": "駕駛安全地靠邊停車。"
+      },
+      {
+        "id": "b3l8-p116",
+        "phrase": "psychological disorder",
+        "pos": "ph.",
+        "zh": "心理疾病",
+        "example_en": "The clinic treats psychological disorders.",
+        "example_zh": "這家診所治療心理疾病。"
+      },
+      {
+        "id": "b3l8-p117",
+        "phrase": "self-driving car",
+        "pos": "ph.",
+        "zh": "自動駕駛汽車",
+        "example_en": "A self-driving car uses sensors.",
+        "example_zh": "自動駕駛汽車使用感測器。"
+      },
+      {
+        "id": "b3l8-p118",
+        "phrase": "think critically",
+        "pos": "ph.",
+        "zh": "批判性思考",
+        "example_en": "Students should think critically.",
+        "example_zh": "學生應批判性思考。"
+      },
+      {
+        "id": "b3l8-p119",
+        "phrase": "replace A with B",
+        "pos": "ph.",
+        "zh": "用 B 取代 A",
+        "example_en": "We replaced plastic with glass.",
+        "example_zh": "我們用玻璃取代塑膠。"
+      },
+      {
+        "id": "b3l8-p120",
+        "phrase": "commit a crime",
+        "pos": "ph.",
+        "zh": "犯罪",
+        "example_en": "It is never right to commit a crime.",
+        "example_zh": "犯罪永遠是不對的。"
+      },
+      {
+        "id": "b3l8-p121",
+        "phrase": "life jacket",
+        "pos": "ph.",
+        "zh": "救生衣",
+        "example_en": "Wear a life jacket on the boat.",
+        "example_zh": "在船上穿救生衣。"
+      },
+      {
+        "id": "b3l8-p122",
+        "phrase": "smoke indoors",
+        "pos": "ph.",
+        "zh": "在室內抽菸",
+        "example_en": "Smoking indoors is not allowed.",
+        "example_zh": "不允許在室內抽菸。"
+      },
+      {
+        "id": "b3l8-p123",
+        "phrase": "child abuse",
+        "pos": "ph.",
+        "zh": "兒童虐待",
+        "example_en": "The law protects children from child abuse.",
+        "example_zh": "法律保護兒童免受虐待。"
+      },
+      {
+        "id": "b3l8-p124",
+        "phrase": "a huge increase in sales",
+        "pos": "ph.",
+        "zh": "銷售額大幅增加",
+        "example_en": "The product caused a huge increase in sales.",
+        "example_zh": "這項產品使銷售額大幅增加。"
+      },
+      {
+        "id": "b3l8-p125",
+        "phrase": "bring about",
+        "pos": "ph.",
+        "zh": "帶來；造成",
+        "example_en": "The reform brought about change.",
+        "example_zh": "改革帶來改變。"
+      },
+      {
+        "id": "b3l8-p126",
+        "phrase": "run a red light",
+        "pos": "ph.",
+        "zh": "闖紅燈",
+        "example_en": "The driver ran a red light.",
+        "example_zh": "駕駛闖紅燈。"
+      },
+      {
+        "id": "b3l8-p127",
+        "phrase": "power supply",
+        "pos": "ph.",
+        "zh": "電力供應",
+        "example_en": "The storm damaged the power supply.",
+        "example_zh": "暴風雨損壞電力供應。"
+      },
+      {
+        "id": "b3l8-p128",
+        "phrase": "cut off",
+        "pos": "ph.",
+        "zh": "切斷；中斷",
+        "example_en": "The storm cut off the electricity.",
+        "example_zh": "暴風雨切斷電力。"
+      },
+      {
+        "id": "b3l8-p129",
+        "phrase": "look over one’s shoulder",
+        "pos": "ph.",
+        "zh": "回頭看；提防",
+        "example_en": "He looked over his shoulder.",
+        "example_zh": "他回頭看了一眼。"
+      },
+      {
+        "id": "b3l8-p130",
+        "phrase": "work out in the gym",
+        "pos": "ph.",
+        "zh": "在健身房運動",
+        "example_en": "She works out in the gym daily.",
+        "example_zh": "她每天在健身房運動。"
+      },
+      {
+        "id": "b3l8-p131",
+        "phrase": "the destruction of local ecosystems",
+        "pos": "ph.",
+        "zh": "當地生態系統的破壞",
+        "example_en": "Pollution causes the destruction of local ecosystems.",
+        "example_zh": "污染造成當地生態系統的破壞。"
+      },
+      {
+        "id": "b3l8-p132",
+        "phrase": "be unsure about",
+        "pos": "ph.",
+        "zh": "對……不確定",
+        "example_en": "I am unsure about the answer.",
+        "example_zh": "我不確定答案。"
+      },
+      {
+        "id": "b3l8-p133",
+        "phrase": "go about",
+        "pos": "ph.",
+        "zh": "著手處理；進行",
+        "example_en": "How should we go about the task?",
+        "example_zh": "我們該如何進行這項任務？"
+      },
+      {
+        "id": "b3l8-p134",
+        "phrase": "seek advice from",
+        "pos": "ph.",
+        "zh": "向……尋求建議",
+        "example_en": "Seek advice from a professional.",
+        "example_zh": "向專業人士尋求建議。"
+      },
+      {
+        "id": "b3l8-p135",
+        "phrase": "offered free of charge",
+        "pos": "ph.",
+        "zh": "免費提供",
+        "example_en": "The service is offered free of charge.",
+        "example_zh": "這項服務免費提供。"
+      },
+      {
+        "id": "b3l8-p136",
+        "phrase": "be addicted to mobile games",
+        "pos": "ph.",
+        "zh": "沉迷手機遊戲",
+        "example_en": "He is addicted to mobile games.",
+        "example_zh": "他沉迷手機遊戲。"
+      },
+      {
+        "id": "b3l8-p137",
+        "phrase": "family conflict",
+        "pos": "ph.",
+        "zh": "家庭衝突",
+        "example_en": "Family conflict can cause stress.",
+        "example_zh": "家庭衝突可能造成壓力。"
+      },
+      {
+        "id": "b3l8-p138",
+        "phrase": "be fond of spicy food",
+        "pos": "ph.",
+        "zh": "喜愛辣食",
+        "example_en": "She is fond of spicy food.",
+        "example_zh": "她喜愛辣食。"
+      },
+      {
+        "id": "b3l8-p139",
+        "phrase": "control one’s temper",
+        "pos": "ph.",
+        "zh": "控制某人的脾氣",
+        "example_en": "Learn to control your temper.",
+        "example_zh": "學習控制自己的脾氣。"
+      },
+      {
+        "id": "b3l8-p140",
+        "phrase": "sort through one’s closet",
+        "pos": "ph.",
+        "zh": "整理某人的衣櫥",
+        "example_en": "She sorted through her closet.",
+        "example_zh": "她整理了自己的衣櫥。"
+      },
+      {
+        "id": "b3l8-p141",
+        "phrase": "get over",
+        "pos": "ph.",
+        "zh": "克服；恢復",
+        "example_en": "He got over the illness quickly.",
+        "example_zh": "他很快從疾病中恢復。"
+      },
+      {
+        "id": "b3l8-p142",
+        "phrase": "fall victims to online scams",
+        "pos": "ph.",
+        "zh": "成為網路詐騙受害者",
+        "example_en": "Many people fall victim to online scams.",
+        "example_zh": "許多人會成為網路詐騙受害者。"
+      }
+    ]
   },
   "grammar": {
-    "points": [],
+    "points": [
+      {
+        "id": "b3l8-g1",
+        "title": "N, all/most/some/... of which/whom (+ S) + V...",
+        "examples": [
+          "This course will be taught by two distinguished professors, both of whom are experts in advanced physics.",
+          "In the meeting, my colleagues and I made several proposals, none of which was/were accepted by my boss.",
+          "Hundreds of people, many of whom were tourists, died in the horrible terrorist attack."
+        ]
+      },
+      {
+        "id": "b3l8-g2",
+        "title": "It’s high time that",
+        "examples": [
+          "It’s high time that we dealt with the problem of plastic pollution.",
+          "It’s high time that we became aware of the damage we’ve done to our environment.",
+          "It’s high time that Steven controlled his temper and treated people more politely."
+        ]
+      }
+    ],
     "sentence_structures": {
       "items": [
         {
@@ -741,6 +1907,6 @@
     }
   },
   "text_genre": {
-    "raw_text": ""
+    "raw_text": "Passage Structure Analysis\nIntroduction / Problem Setup (Para 1): Highlights Thailand’s lucrative elephant tourism industry and introduces the thesis—there is a horrific dark side behind this popular activity.\nCause / Dark Reality 1: Poaching & Cruel Taming (Para 2): Details how young elephants are illegally captured (often leading to their mothers being killed) and violently abused in cages to break their spirit and make them obedient.\nCause / Dark Reality 2: Exploitation & Abuse in Slavery (Para 3): Explains the physical toll on tamed elephants—spine injuries from carrying heavy loads, starvation, and continuous beatings with bullhooks driven by tourist demand.\nSolution / Call to Action (Para 4): Emphasizes that tourist demand fuels this cruelty and urges travelers to boycott elephant rides, offering ethical alternatives like visiting national parks instead."
   }
 }
