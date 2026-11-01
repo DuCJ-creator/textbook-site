@@ -476,9 +476,456 @@
     .book-head { gap: 12px; padding: 14px; }
     .book-num { width: 38px; height: 38px; font-size: 1.3rem; }
   }
+
+  /* ===== Home redesign · glass study salon ===== */
+  body.home-page {
+    --home-glass: rgba(255, 255, 255, .64);
+    --home-glass-strong: rgba(255, 255, 255, .82);
+    --home-glass-border: rgba(255, 255, 255, .78);
+    --home-deep: #113f31;
+    --home-moss: #2f7558;
+    --home-brass: #d6a53d;
+    --home-focus: #f1bd4e;
+    position: relative;
+    overflow-x: hidden;
+    background:
+      radial-gradient(circle at 12% 9%, rgba(180, 224, 202, .58), transparent 29rem),
+      radial-gradient(circle at 91% 14%, rgba(255, 224, 137, .42), transparent 31rem),
+      radial-gradient(circle at 48% 73%, rgba(190, 218, 207, .34), transparent 34rem),
+      linear-gradient(155deg, #f6faf6 0%, #fffaf0 48%, #edf5f0 100%);
+    background-attachment: fixed;
+  }
+  body.home-page::before,
+  body.home-page::after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    width: 24rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    filter: blur(8px);
+    pointer-events: none;
+  }
+  body.home-page::before { left: -9rem; top: 32rem; background: rgba(79, 149, 115, .12); }
+  body.home-page::after { right: -10rem; top: 58rem; background: rgba(233, 185, 73, .14); }
+  body.home-page { scrollbar-color: rgba(39, 103, 73, .62) rgba(232, 243, 236, .78); scrollbar-width: thin; }
+  body.home-page::-webkit-scrollbar { width: 11px; height: 11px; }
+  body.home-page::-webkit-scrollbar-track { background: rgba(232, 243, 236, .78); }
+  body.home-page::-webkit-scrollbar-thumb { border: 3px solid rgba(232, 243, 236, .78); border-radius: 999px; background: rgba(39, 103, 73, .62); }
+  body.home-page::-webkit-scrollbar-thumb:hover { background: var(--accent-dark); }
+
+  .home-page .site-head {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 54px 20px 46px;
+    border: 1px solid rgba(255, 255, 255, .28);
+    border-top: 0;
+    border-radius: 0 0 38px 38px;
+    background:
+      linear-gradient(120deg, rgba(7, 52, 41, .96), rgba(28, 111, 82, .88)),
+      radial-gradient(circle at 78% 24%, rgba(255, 222, 128, .42), transparent 24rem);
+    box-shadow: 0 28px 80px rgba(16, 63, 46, .18), inset 0 -1px 0 rgba(255,255,255,.22);
+    backdrop-filter: blur(22px) saturate(132%);
+    -webkit-backdrop-filter: blur(22px) saturate(132%);
+  }
+  .home-page .site-head::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 25rem;
+    height: 25rem;
+    right: -6rem;
+    top: -13rem;
+    border: 1px solid rgba(255,255,255,.17);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4rem rgba(255,255,255,.035), 0 0 0 8rem rgba(255,255,255,.025);
+  }
+  .home-page .site-head .inner,
+  .home-page .wrap,
+  .home-page footer.site-foot { max-width: 1180px; }
+  .home-page .site-head h1 { max-width: 820px; text-wrap: balance; }
+  .home-page .site-head p { max-width: 690px; }
+  .home-page .first-lesson-btn {
+    border-color: rgba(255,255,255,.3);
+    background: rgba(255,255,255,.11);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.18);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+  .home-page .first-lesson-btn:hover { background: rgba(255,255,255,.2); }
+  .home-page .wrap { padding-top: 42px; }
+  .home-page .progress-strip {
+    border-color: var(--home-glass-border);
+    background: var(--home-glass);
+    box-shadow: 0 18px 55px rgba(24, 67, 48, .1), inset 0 1px 0 #fff;
+    backdrop-filter: blur(20px) saturate(130%);
+    -webkit-backdrop-filter: blur(20px) saturate(130%);
+  }
+
+  .home-page .section-title {
+    margin: 52px 0 20px;
+    align-items: center;
+    gap: 14px;
+    color: var(--home-deep);
+    font-size: clamp(1.28rem, 2.1vw, 1.65rem);
+  }
+  .home-page .section-title > span:first-child { display: inline-flex; align-items: center; gap: 9px; }
+  .home-page .section-title > span:first-child::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgba(214,165,61,.78);
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 5px rgba(233,185,73,.13);
+  }
+  .home-page .section-title .rule { background: linear-gradient(90deg, rgba(39,103,73,.25), transparent); }
+
+  /* Book covers are the page's signature object. */
+  .home-page .book-list {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: start;
+    gap: clamp(14px, 2vw, 24px);
+    margin-bottom: 48px;
+  }
+  .home-page .book-card {
+    --cover-a: #174d35;
+    --cover-b: #2e7657;
+    min-width: 0;
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  .home-page .book-card:nth-child(2) { --cover-a: #244c55; --cover-b: #4f7e7c; }
+  .home-page .book-card:nth-child(3) { --cover-a: #51442f; --cover-b: #88704b; }
+  .home-page .book-card:nth-child(4) { --cover-a: #314c43; --cover-b: #63816f; }
+  .home-page .book-card:nth-child(5) { --cover-a: #554438; --cover-b: #92715a; }
+  .home-page .book-head {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%;
+    min-height: 282px;
+    aspect-ratio: .72;
+    padding: 24px 20px 20px 28px;
+    border: 1px solid rgba(255,255,255,.34);
+    border-radius: 8px 24px 24px 8px;
+    background:
+      linear-gradient(145deg, rgba(255,255,255,.14), transparent 32%),
+      linear-gradient(145deg, var(--cover-b), var(--cover-a));
+    color: #fff;
+    box-shadow: -6px 9px 0 rgba(17,63,49,.1), 0 24px 46px rgba(17,63,49,.19), inset 1px 0 0 rgba(255,255,255,.28);
+    transform-origin: left center;
+    transition: transform .24s cubic-bezier(.2,.7,.2,1), box-shadow .24s ease, filter .24s ease;
+  }
+  .home-page .book-head::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0 auto 0 11px;
+    width: 1px;
+    background: rgba(255,255,255,.25);
+    box-shadow: 3px 0 10px rgba(0,0,0,.18);
+  }
+  .home-page .book-head::after {
+    content: "COURSE COMPANION";
+    position: absolute;
+    z-index: -1;
+    right: 15px;
+    bottom: 54px;
+    color: rgba(255,255,255,.42);
+    font: 800 .52rem/1 var(--sans);
+    letter-spacing: .18em;
+    writing-mode: vertical-rl;
+  }
+  .home-page .book-head:hover {
+    background:
+      linear-gradient(145deg, rgba(255,255,255,.2), transparent 34%),
+      linear-gradient(145deg, var(--cover-b), var(--cover-a));
+    box-shadow: -8px 12px 0 rgba(17,63,49,.09), 0 30px 54px rgba(17,63,49,.23), inset 1px 0 0 rgba(255,255,255,.32);
+    transform: translateY(-8px) rotateY(-2deg);
+  }
+  .home-page .book-head:active { transform: translateY(-3px) scale(.99); }
+  .home-page .book-head:focus-visible,
+  .home-page .tool-card:focus-visible,
+  .home-page .ext-card:focus-visible {
+    outline: 3px solid var(--home-focus);
+    outline-offset: 5px;
+  }
+  .home-page .book-num {
+    width: auto;
+    height: auto;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: rgba(255,255,255,.96);
+    font-size: clamp(3.2rem, 5vw, 4.45rem);
+    line-height: .95;
+    text-shadow: 0 2px 16px rgba(0,0,0,.18);
+  }
+  .home-page .book-num::before {
+    content: "VOLUME";
+    display: block;
+    margin-bottom: 10px;
+    font: 800 .52rem/1 var(--sans);
+    letter-spacing: .2em;
+    color: rgba(255,255,255,.65);
+  }
+  .home-page .book-meta { display: flex; flex: 1; flex-direction: column; justify-content: flex-end; margin-top: 22px; }
+  .home-page .book-meta .title { color: #fff; font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.05; }
+  .home-page .book-meta .sub { margin-top: 10px; color: rgba(255,255,255,.76); font-size: .7rem; line-height: 1.5; }
+  .home-page .book-progress-bar {
+    display: block;
+    width: calc(100% - 44px);
+    height: 4px;
+    margin-top: 18px;
+    background: rgba(255,255,255,.2);
+  }
+  .home-page .book-progress-bar .fill { background: #f5d981; box-shadow: 0 0 12px rgba(245,217,129,.38); }
+  .home-page .chevron {
+    position: absolute;
+    right: 17px;
+    bottom: 15px;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(255,255,255,.28);
+    border-radius: 50%;
+    background: rgba(255,255,255,.1);
+    color: #fff;
+  }
+  .home-page .book-card.expanded {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(180px, 220px) minmax(0, 1fr);
+    gap: 24px;
+    padding: 22px;
+    border: 1px solid var(--home-glass-border);
+    border-radius: 30px;
+    background: var(--home-glass);
+    box-shadow: 0 24px 64px rgba(17,63,49,.13), inset 0 1px 0 #fff;
+    backdrop-filter: blur(24px) saturate(130%);
+    -webkit-backdrop-filter: blur(24px) saturate(130%);
+  }
+  .home-page .book-card.expanded .book-head { min-height: 286px; aspect-ratio: auto; }
+  .home-page .book-card.expanded .chevron { transform: rotate(90deg); }
+  .home-page .lesson-list {
+    align-content: start;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    padding: 2px 0 0;
+  }
+  .home-page .lesson-item {
+    min-height: 78px;
+    padding: 13px 14px;
+    border-color: rgba(39,103,73,.14);
+    background: rgba(255,255,255,.68);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.8);
+  }
+
+  /* Tool tray: a tactile toolbox rather than a generic card grid. */
+  .home-page .tool-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 48px;
+    padding: 50px 18px 18px;
+    border: 1px solid rgba(17,63,49,.22);
+    border-radius: 28px;
+    background:
+      linear-gradient(rgba(255,255,255,.72), rgba(241,248,244,.64)),
+      repeating-linear-gradient(90deg, transparent 0 34px, rgba(17,63,49,.025) 35px 36px);
+    box-shadow: 0 28px 68px rgba(17,63,49,.13), inset 0 1px 0 #fff, inset 0 -8px 18px rgba(17,63,49,.035);
+    backdrop-filter: blur(22px) saturate(125%);
+    -webkit-backdrop-filter: blur(22px) saturate(125%);
+  }
+  .home-page .tool-grid::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    width: 116px;
+    height: 20px;
+    border: 2px solid rgba(17,63,49,.42);
+    border-bottom: 0;
+    border-radius: 13px 13px 0 0;
+    transform: translateX(-50%);
+    box-shadow: inset 0 3px 5px rgba(255,255,255,.5);
+  }
+  .home-page .tool-grid::after {
+    content: "LEARNING TOOLKIT";
+    position: absolute;
+    top: 21px;
+    left: 24px;
+    color: rgba(17,63,49,.52);
+    font: 800 .5rem/1 var(--sans);
+    letter-spacing: .18em;
+  }
+  .home-page .tool-card {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px;
+    min-height: 112px;
+    padding: 15px;
+    border-color: rgba(17,63,49,.16);
+    border-radius: 18px;
+    background: rgba(255,255,255,.76);
+    box-shadow: 0 10px 24px rgba(17,63,49,.07), inset 0 1px 0 #fff;
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease, background .18s ease;
+  }
+  .home-page .tool-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(39,103,73,.48);
+    background: rgba(255,255,255,.94);
+    box-shadow: 0 17px 30px rgba(17,63,49,.12), inset 0 1px 0 #fff;
+  }
+  .home-page .tool-icon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(39,103,73,.18);
+    border-radius: 14px;
+    background: linear-gradient(145deg, #eef7f1, #dcece3);
+    color: var(--accent-dark);
+    font: 800 .82rem/1 var(--serif);
+    box-shadow: inset 0 1px 0 #fff;
+  }
+  .home-page .tool-copy { display: block; min-width: 0; }
+  .home-page .tool-card .t-title { display: block; margin: 3px 0 0; font-size: .95rem; line-height: 1.34; }
+  .home-page .tool-kicker { display: block; color: var(--home-brass); font: 850 .52rem/1 var(--sans); letter-spacing: .13em; text-transform: uppercase; }
+  .home-page .tool-arrow { color: var(--accent); font-size: 1rem; transition: transform .18s ease; }
+  .home-page .tool-card:hover .tool-arrow { transform: translateX(3px); }
+
+  /* Resource collections sit in their own glass display cases. */
+  .home-page .resource-section {
+    position: relative;
+    overflow: hidden;
+    margin: 52px 0 0;
+    padding: clamp(20px, 3vw, 30px);
+    border: 1px solid var(--home-glass-border);
+    border-radius: 32px;
+    background: var(--home-glass);
+    box-shadow: 0 24px 64px rgba(17,63,49,.11), inset 0 1px 0 #fff;
+    backdrop-filter: blur(24px) saturate(130%);
+    -webkit-backdrop-filter: blur(24px) saturate(130%);
+  }
+  .home-page .resource-section::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 220px;
+    height: 220px;
+    right: -80px;
+    top: -110px;
+    border-radius: 50%;
+    background: rgba(233,185,73,.12);
+  }
+  .home-page .resource-section.beyond-section::after { background: rgba(73,154,116,.12); }
+  .home-page .resource-section .section-title { margin: 0 0 22px; }
+  .home-page .resource-section .section-note { margin: -12px 0 22px 22px; color: var(--ink-soft); font-size: .76rem; }
+  .home-page #gsatMockArea { margin-bottom: 0; }
+  .home-page .resource-zone .ext-card-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+  .home-page .beyond-zone .ext-card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .home-page .resource-zone .ext-card {
+    position: relative;
+    align-items: flex-start;
+    min-height: 150px;
+    padding: 18px;
+    border-color: rgba(17,63,49,.13);
+    border-radius: 20px;
+    background: rgba(255,255,255,.7);
+    box-shadow: 0 12px 28px rgba(17,63,49,.075), inset 0 1px 0 #fff;
+    transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease, background .2s ease;
+  }
+  .home-page .resource-zone .ext-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(39,103,73,.42);
+    background: rgba(255,255,255,.93);
+    box-shadow: 0 20px 36px rgba(17,63,49,.12), inset 0 1px 0 #fff;
+  }
+  .home-page .ext-card-index {
+    position: absolute;
+    top: 16px;
+    right: 17px;
+    color: rgba(17,63,49,.36);
+    font: 800 .62rem/1 var(--mono);
+  }
+  .home-page .ext-card-copy { display: block; min-width: 0; padding-right: 14px; }
+  .home-page .ext-card-kicker { display: block; margin-bottom: 28px; color: var(--home-brass); font: 850 .52rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; }
+  .home-page .ext-card-title { display: block; font-size: 1rem; line-height: 1.35; }
+  .home-page .ext-card-arrow {
+    position: absolute;
+    right: 17px;
+    bottom: 15px;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    transition: transform .18s ease, background .18s ease, color .18s ease;
+  }
+  .home-page .ext-card:hover .ext-card-arrow { transform: translateX(3px); background: var(--accent); color: #fff; }
+  .home-page footer.site-foot { margin-top: 52px; }
+
+  @media (max-width: 980px) {
+    .home-page .book-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .home-page .tool-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .home-page .resource-zone .ext-card-grid,
+    .home-page .beyond-zone .ext-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .home-page .lesson-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 660px) {
+    .home-page .site-head { padding-top: 38px; border-radius: 0 0 28px 28px; }
+    .home-page .wrap { padding: 28px 14px 0; }
+    .home-page .section-title { margin-top: 40px; }
+    .home-page .book-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .home-page .book-head { min-height: 238px; padding: 19px 15px 16px 22px; border-radius: 7px 19px 19px 7px; }
+    .home-page .book-head::after { display: none; }
+    .home-page .book-meta .sub { font-size: .63rem; }
+    .home-page .book-card.expanded { grid-template-columns: 1fr; padding: 15px; }
+    .home-page .book-card.expanded .book-head { width: min(210px, 100%); justify-self: center; }
+    .home-page .lesson-list { grid-template-columns: 1fr; }
+    .home-page .tool-grid { grid-template-columns: 1fr; padding: 47px 12px 12px; }
+    .home-page .tool-grid::after { left: 16px; }
+    .home-page .resource-section { margin-top: 40px; border-radius: 24px; }
+    .home-page .resource-zone .ext-card-grid,
+    .home-page .beyond-zone .ext-card-grid { grid-template-columns: 1fr; }
+    .home-page .resource-zone .ext-card { min-height: 132px; }
+    .home-page .resource-section .section-note { margin-left: 0; }
+  }
+  @media (max-width: 390px) {
+    .home-page .book-list { grid-template-columns: 1fr 1fr; }
+    .home-page .book-head { min-height: 215px; }
+    .home-page .book-meta .title { font-size: 1.05rem; }
+    .home-page .book-num { font-size: 2.8rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .home-page *, .home-page *::before, .home-page *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  }
+  @media (forced-colors: active) {
+    .home-page .book-head,
+    .home-page .tool-grid,
+    .home-page .resource-section { border: 1px solid CanvasText; }
+    .home-page .book-head:focus-visible,
+    .home-page .tool-card:focus-visible,
+    .home-page .ext-card:focus-visible { outline-color: Highlight; }
+  }
 </style>
 </head>
-<body class="portal-locked">
+<body class="home-page portal-locked">
 
   <div class="student-portal" id="studentPortal" role="dialog" aria-modal="true" aria-labelledby="portalTitle">
     <div class="portal-card" id="portalCard">
@@ -487,7 +934,7 @@
       <h2 id="portalTitle">Welcome!</h2>
       <p class="portal-welcome">Welcome to <strong>Shirley Du老師的高中英文充電站🔋 to Recharge⚡️</strong>，歡迎隨時來給你的英文充個電。</p>
       <p class="portal-instruction" id="portalInstruction">Enter Your School, Class, Seat No., Name and Password<br><span style="font-size:.78rem;color:var(--ink-soft);font-weight:600;">請輸入您的學校、班級、座號、姓名及鑰匙</span></p>
-      <form class="portal-form" id="portalForm">
+      <form class="portal-form" id="portalForm" novalidate>
         <div class="portal-role-switch" aria-label="選擇入口身份"><button class="portal-role-btn active" id="studentRoleBtn" type="button" data-role="student" aria-pressed="true">🎒 Student 學生</button><button class="portal-role-btn" id="teacherRoleBtn" type="button" data-role="teacher" aria-pressed="false">🍎 Teacher 杜老師</button></div>
         <div id="portalStudentFields">
           <div class="portal-field"><label for="portalStudentSchool">School 學校</label><select id="portalStudentSchool" required disabled><option value="">學校資料讀取中…</option></select></div>
@@ -589,11 +1036,17 @@
     <div class="section-title"><span>跨課總覽工具</span><span class="rule"></span></div>
     <div class="tool-grid" id="toolGrid"></div>
 
-    <div class="section-title"><span>GSAT Mock 學測英文模擬專區</span><span class="rule"></span></div>
-    <div id="gsatMockArea"></div>
+    <section class="resource-section mock-section" aria-labelledby="gsatMockTitle">
+      <div class="section-title"><span id="gsatMockTitle">GSAT Mock 學測英文模擬專區</span><span class="rule"></span></div>
+      <p class="section-note">依題型進入專屬練習，集中磨練學測作答節奏。</p>
+      <div id="gsatMockArea" class="resource-zone mock-zone"></div>
+    </section>
 
-    <div class="section-title"><span>Beyond Textbooks 教材之上</span><span class="rule"></span></div>
-    <div id="beyondTextbooksArea"></div>
+    <section class="resource-section beyond-section" aria-labelledby="beyondTextbooksTitle">
+      <div class="section-title"><span id="beyondTextbooksTitle">Beyond Textbooks 教材之上</span><span class="rule"></span></div>
+      <p class="section-note">從基礎補強到延伸探索，讓學習不只停在課本頁面。</p>
+      <div id="beyondTextbooksArea" class="resource-zone beyond-zone"></div>
+    </section>
 
   </div>
 
@@ -913,6 +1366,7 @@
       const head = document.createElement("button");
       head.type = "button";
       head.className = "book-head";
+      head.setAttribute("aria-expanded", "false");
       head.innerHTML = `
         <span class="book-num">${book.id.replace("b", "")}</span>
         <span class="book-meta">
@@ -922,7 +1376,15 @@
         <span class="book-progress-bar"><span class="fill" style="width:${pct}%"></span></span>
         <span class="chevron">▸</span>
       `;
-      head.addEventListener("click", () => card.classList.toggle("expanded"));
+      head.addEventListener("click", () => {
+        const shouldExpand = !card.classList.contains("expanded");
+        wrap.querySelectorAll(".book-card.expanded").forEach(openCard => {
+          openCard.classList.remove("expanded");
+          openCard.querySelector(".book-head")?.setAttribute("aria-expanded", "false");
+        });
+        card.classList.toggle("expanded", shouldExpand);
+        head.setAttribute("aria-expanded", String(shouldExpand));
+      });
 
       const list = document.createElement("div");
       list.className = "lesson-list";
@@ -948,15 +1410,19 @@
       wrap.appendChild(card);
     });
 
-    // 預設展開第一個有已發布課程的冊次，方便使用者立即看到內容
-    const firstWithPublished = data.books.findIndex(b => b.lessons.some(l => l.status === "published"));
-    const target = wrap.children[firstWithPublished >= 0 ? firstWithPublished : 0];
-    if (target) target.classList.add("expanded");
   }
 
   function renderTools(data) {
     const wrap = document.getElementById("toolGrid");
     wrap.innerHTML = "";
+    const toolMarks = {
+      "vocab-index": "Aa",
+      "phrase-index": "Phr",
+      "grammar-index": "S+V",
+      "vocab-bank": "Wf",
+      "phrase-bank": "Ph",
+      "grammar-bank": "¶"
+    };
     data.cross_lesson_tools.forEach(tool => {
       const comingSoon = tool.status === "coming_soon";
       const a = document.createElement("a");
@@ -967,7 +1433,9 @@
       }
       a.innerHTML = `
         ${comingSoon ? '<span class="badge">即將推出</span>' : ""}
-        <div class="t-title">${escapeHtml(tool.title)}</div>
+        <span class="tool-icon" aria-hidden="true">${escapeHtml(toolMarks[tool.id] || "↗")}</span>
+        <span class="tool-copy"><span class="tool-kicker">Study tool</span><span class="t-title">${escapeHtml(tool.title)}</span></span>
+        <span class="tool-arrow" aria-hidden="true">→</span>
       `;
       wrap.appendChild(a);
     });
