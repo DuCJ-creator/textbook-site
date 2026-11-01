@@ -59,8 +59,12 @@ const ExternalViewer = (function () {
       <div class="ext-card-grid">
         ${cards.map((c, i) => `
           <button type="button" class="ext-card" data-idx="${i}">
-            <span class="ext-card-title">${Loader.escapeHtml(c.title)}</span>
-            <span class="ext-card-arrow">→</span>
+            <span class="ext-card-index" aria-hidden="true">${String(i + 1).padStart(2, "0")}</span>
+            <span class="ext-card-copy">
+              <span class="ext-card-kicker">${container.classList.contains("mock-zone") ? "Practice mode" : "Explore more"}</span>
+              <span class="ext-card-title">${Loader.escapeHtml(c.title)}</span>
+            </span>
+            <span class="ext-card-arrow" aria-hidden="true">→</span>
           </button>
         `).join("")}
       </div>
