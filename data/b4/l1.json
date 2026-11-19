@@ -1,0 +1,485 @@
+{
+  "book": "B4",
+  "lesson": "L1",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b4l1-v01",
+        "base": "debate",
+        "verb": [
+          {
+            "en": "debate",
+            "zh": "辯論；討論；仔細考慮",
+            "example": "The students debated whether school uniforms were necessary."
+          }
+        ],
+        "noun": [
+          {
+            "en": "debate",
+            "zh": "辯論；討論；爭議",
+            "example": "The candidates took part in a public debate."
+          },
+          {
+            "en": "debater",
+            "zh": "辯論者；辯論選手",
+            "example": "She is a confident and persuasive debater."
+          }
+        ],
+        "adj": [
+          {
+            "en": "debated",
+            "zh": "受到討論的；有爭議的",
+            "example": "Climate policy remains a widely debated issue."
+          },
+          {
+            "en": "debatable",
+            "zh": "有爭議的；可討論的；不確定的",
+            "example": "Whether the plan will save money is debatable."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b4l1-v02",
+        "base": "prison",
+        "verb": [
+          {
+            "en": "imprison",
+            "zh": "監禁；關押；限制",
+            "example": "The regime imprisoned several political opponents."
+          }
+        ],
+        "noun": [
+          {
+            "en": "prison",
+            "zh": "監獄；牢房",
+            "example": "He spent three years in prison."
+          },
+          {
+            "en": "prisoner",
+            "zh": "囚犯；俘虜；受困者",
+            "example": "The prisoner was allowed to contact his family."
+          },
+          {
+            "en": "imprisonment",
+            "zh": "監禁；徒刑",
+            "example": "The crime carries a sentence of imprisonment."
+          }
+        ],
+        "adj": [
+          {
+            "en": "imprisoned",
+            "zh": "被監禁的；受困的",
+            "example": "The imprisoned journalist received international support."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b4l1-v03",
+        "base": "claim",
+        "verb": [
+          {
+            "en": "claim",
+            "zh": "聲稱；索取；奪走",
+            "example": "The company claims that its product is environmentally friendly."
+          }
+        ],
+        "noun": [
+          {
+            "en": "claim",
+            "zh": "聲稱；索賠；權利要求",
+            "example": "The insurance company reviewed her claim."
+          },
+          {
+            "en": "claimant",
+            "zh": "申索人；聲稱擁有權利者",
+            "example": "The claimant submitted additional evidence."
+          }
+        ],
+        "adj": [
+          {
+            "en": "claimed",
+            "zh": "聲稱的；自稱的；被索取的",
+            "example": "The claimed benefits were not supported by evidence."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b4l1-v04",
+        "base": "insist",
+        "verb": [
+          {
+            "en": "insist",
+            "zh": "堅持；堅決要求",
+            "example": "She insisted on paying for the meal."
+          }
+        ],
+        "noun": [
+          {
+            "en": "insistence",
+            "zh": "堅持；強烈要求",
+            "example": "At his insistence, the team checked the data again."
+          }
+        ],
+        "adj": [
+          {
+            "en": "insistent",
+            "zh": "堅持的；強烈要求的；持續不斷的",
+            "example": "The caller became increasingly insistent."
+          }
+        ],
+        "adv": [
+          {
+            "en": "insistently",
+            "zh": "堅持地；不斷要求地",
+            "example": "The child insistently asked for an answer."
+          }
+        ]
+      },
+      {
+        "id": "b4l1-v05",
+        "base": "company",
+        "verb": [
+          {
+            "en": "accompany",
+            "zh": "陪伴；伴隨；為……伴奏",
+            "example": "A teacher accompanied the students on the trip."
+          }
+        ],
+        "noun": [
+          {
+            "en": "company",
+            "zh": "公司；陪伴；同伴",
+            "example": "She works for a technology company."
+          },
+          {
+            "en": "companion",
+            "zh": "同伴；伴侶；陪伴者",
+            "example": "The dog became his constant companion."
+          },
+          {
+            "en": "companionship",
+            "zh": "陪伴；友誼；伙伴關係",
+            "example": "Many older people value companionship."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b4l1-v06",
+        "base": "mental",
+        "verb": [
+          {
+            "en": "mentalize",
+            "zh": "理解或推測心理狀態；在心中想像（專業用語）",
+            "example": "Therapy can help children mentalize their emotions."
+          }
+        ],
+        "noun": [
+          {
+            "en": "mentality",
+            "zh": "心態；思維方式；心理狀態",
+            "example": "A positive mentality helped her face the challenge."
+          },
+          {
+            "en": "mentalism",
+            "zh": "讀心表演；心理主義",
+            "example": "The performer combines magic with mentalism."
+          },
+          {
+            "en": "mentalist",
+            "zh": "讀心術表演者；心理主義者",
+            "example": "The mentalist appeared to predict the volunteer's choice."
+          }
+        ],
+        "adj": [
+          {
+            "en": "mental",
+            "zh": "心理的；精神的；智力的",
+            "example": "Regular breaks can support mental health."
+          }
+        ],
+        "adv": [
+          {
+            "en": "mentally",
+            "zh": "心理上；精神上；在心中",
+            "example": "The long exam was mentally exhausting."
+          }
+        ]
+      },
+      {
+        "id": "b4l1-v07",
+        "base": "acquire",
+        "verb": [
+          {
+            "en": "acquire",
+            "zh": "獲得；取得；學會",
+            "example": "Students acquire new skills through practice."
+          }
+        ],
+        "noun": [
+          {
+            "en": "acquisition",
+            "zh": "獲得；收購；習得",
+            "example": "The museum announced the acquisition of a rare painting."
+          },
+          {
+            "en": "acquirer",
+            "zh": "收購者；取得者；收單機構",
+            "example": "The acquirer completed the purchase of the smaller company."
+          }
+        ],
+        "adj": [
+          {
+            "en": "acquired",
+            "zh": "後天獲得的；已取得的；已收購的",
+            "example": "Language is an acquired skill."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b4l1-v08",
+        "base": "profound",
+        "verb": [],
+        "noun": [
+          {
+            "en": "profoundness",
+            "zh": "深刻；深奧；深度（較少見）",
+            "example": "The profoundness of her remarks impressed the audience."
+          }
+        ],
+        "adj": [
+          {
+            "en": "profound",
+            "zh": "深刻的；深遠的；深奧的",
+            "example": "The discovery had a profound effect on science."
+          }
+        ],
+        "adv": [
+          {
+            "en": "profoundly",
+            "zh": "深刻地；極度地",
+            "example": "The experience profoundly changed his outlook."
+          }
+        ]
+      },
+      {
+        "id": "b4l1-v09",
+        "base": "wealth",
+        "verb": [],
+        "noun": [
+          {
+            "en": "wealth",
+            "zh": "財富；豐富；大量",
+            "example": "The region has a wealth of natural resources."
+          }
+        ],
+        "adj": [
+          {
+            "en": "wealthy",
+            "zh": "富有的；富裕的",
+            "example": "The wealthy family donated money to the hospital."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b4l1-v10",
+        "base": "murder",
+        "verb": [
+          {
+            "en": "murder",
+            "zh": "謀殺；殺害",
+            "example": "The police accused him of murdering the victim."
+          }
+        ],
+        "noun": [
+          {
+            "en": "murder",
+            "zh": "謀殺；謀殺案",
+            "example": "Detectives are investigating the murder."
+          },
+          {
+            "en": "murderer",
+            "zh": "謀殺犯；殺人者",
+            "example": "The murderer was sentenced to life in prison."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b4l1-v11",
+        "base": "disgust",
+        "verb": [
+          {
+            "en": "disgust",
+            "zh": "使厭惡；使反感",
+            "example": "The cruel treatment of the animals disgusted her."
+          }
+        ],
+        "noun": [
+          {
+            "en": "disgust",
+            "zh": "厭惡；反感",
+            "example": "He turned away in disgust."
+          }
+        ],
+        "adj": [
+          {
+            "en": "disgusting",
+            "zh": "令人厭惡的；噁心的",
+            "example": "The kitchen had a disgusting smell."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b4l1-v12",
+        "base": "worship",
+        "verb": [
+          {
+            "en": "worship",
+            "zh": "崇拜；敬拜；非常仰慕",
+            "example": "People gathered to worship at the shrine."
+          }
+        ],
+        "noun": [
+          {
+            "en": "worship",
+            "zh": "崇拜；敬拜；禮拜",
+            "example": "The temple is a place of worship."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b4l1-v13",
+        "base": "intend",
+        "verb": [
+          {
+            "en": "intend",
+            "zh": "打算；意圖；意指",
+            "example": "I intend to finish the project this week."
+          }
+        ],
+        "noun": [
+          {
+            "en": "intention",
+            "zh": "意圖；打算；目的",
+            "example": "She had no intention of leaving early."
+          }
+        ],
+        "adj": [
+          {
+            "en": "intentional",
+            "zh": "故意的；有意的",
+            "example": "The damage was intentional."
+          },
+          {
+            "en": "unintentional",
+            "zh": "無意的",
+            "example": "Perhaps I hurt you, but it was quite unintential."
+          }
+        ],
+        "adv": [
+          {
+            "en": "intentionally",
+            "zh": "故意地；有意地",
+            "example": "He intentionally left the answer blank."
+          },
+          {
+            "en": "unintentionally",
+            "zh": "無意中地；偶然地",
+            "example": "They had unintentionally provided wrong information."
+          }
+        ]
+      },
+      {
+        "id": "b4l1-v14",
+        "base": "surrender",
+        "verb": [
+          {
+            "en": "surrender",
+            "zh": "投降；交出；放棄",
+            "example": "The soldiers were ordered to surrender."
+          }
+        ],
+        "noun": [
+          {
+            "en": "surrender",
+            "zh": "投降；交出；放棄",
+            "example": "The agreement called for the surrender of all weapons."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b4l1-v15",
+        "base": "guilt",
+        "verb": [],
+        "noun": [
+          {
+            "en": "guilt",
+            "zh": "罪惡感；內疚；有罪",
+            "example": "She felt guilt about breaking the promise."
+          }
+        ],
+        "adj": [
+          {
+            "en": "guilty",
+            "zh": "有罪的；內疚的",
+            "example": "The jury found the defendant guilty."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b4l1-v16",
+        "base": "rumor",
+        "verb": [
+          {
+            "en": "rumor",
+            "zh": "謠傳；傳說",
+            "example": "The actor was rumored to be leaving the show."
+          }
+        ],
+        "noun": [
+          {
+            "en": "rumor",
+            "zh": "謠言；傳聞",
+            "example": "A rumor spread quickly through the school."
+          }
+        ],
+        "adj": [
+          {
+            "en": "rumorous",
+            "zh": "充滿傳聞的；謠言紛紛的（罕見）",
+            "example": "The report relied on rumorous claims rather than facts."
+          }
+        ],
+        "adv": []
+      }
+    ]
+  },
+  "phrases": {
+    "items": []
+  },
+  "grammar": {
+    "points": [],
+    "sentence_structures": {
+      "items": []
+    }
+  },
+  "text_genre": {
+    "raw_text": ""
+  }
+}
