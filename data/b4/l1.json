@@ -471,7 +471,1048 @@
     ]
   },
   "phrases": {
-    "items": []
+    "items": [
+      {
+        "id": "b4l1-p001",
+        "phrase": "pace back and forth",
+        "pos": "ph.",
+        "zh": "來回踱步",
+        "example_en": "He paced back and forth while waiting.",
+        "example_zh": "他等待時來回踱步。"
+      },
+      {
+        "id": "b4l1-p002",
+        "phrase": "at one point",
+        "pos": "ph.",
+        "zh": "一度",
+        "example_en": "At one point, I wanted to quit.",
+        "example_zh": "一度我想放棄。"
+      },
+      {
+        "id": "b4l1-p003",
+        "phrase": "death penalty",
+        "pos": "ph.",
+        "zh": "死刑",
+        "example_en": "The court imposed the death penalty.",
+        "example_zh": "法院判處死刑。"
+      },
+      {
+        "id": "b4l1-p004",
+        "phrase": "life imprisonment",
+        "pos": "ph.",
+        "zh": "無期徒刑",
+        "example_en": "He was sentenced to life imprisonment.",
+        "example_zh": "他被判無期徒刑。"
+      },
+      {
+        "id": "b4l1-p005",
+        "phrase": "be locked away for life",
+        "pos": "ph.",
+        "zh": "終身被監禁",
+        "example_en": "The criminal was locked away for life.",
+        "example_zh": "罪犯終身被監禁。"
+      },
+      {
+        "id": "b4l1-p006",
+        "phrase": "without hesitation",
+        "pos": "ph.",
+        "zh": "毫不猶豫地",
+        "example_en": "She agreed without hesitation.",
+        "example_zh": "她毫不猶豫地同意了。"
+      },
+      {
+        "id": "b4l1-p007",
+        "phrase": "make a difference",
+        "pos": "ph.",
+        "zh": "產生影響",
+        "example_en": "Small actions can make a difference.",
+        "example_zh": "小小的行動也能產生影響。"
+      },
+      {
+        "id": "b4l1-p008",
+        "phrase": "take regular walks",
+        "pos": "ph.",
+        "zh": "定期散步",
+        "example_en": "I take regular walks for exercise.",
+        "example_zh": "我定期散步運動。"
+      },
+      {
+        "id": "b4l1-p009",
+        "phrase": "head the direction",
+        "pos": "ph.",
+        "zh": "朝某方向前進",
+        "example_en": "We headed in the direction of the station.",
+        "example_zh": "我們朝車站方向前進。"
+      },
+      {
+        "id": "b4l1-p010",
+        "phrase": "take both heart and action",
+        "pos": "ph.",
+        "zh": "振作並採取行動",
+        "example_en": "We must take both heart and action.",
+        "example_zh": "我們必須振作並採取行動。"
+      },
+      {
+        "id": "b4l1-p011",
+        "phrase": "Heimlich maneuver",
+        "pos": "ph.",
+        "zh": "哈姆立克急救法",
+        "example_en": "The nurse performed the Heimlich maneuver.",
+        "example_zh": "護士施行哈姆立克急救法。"
+      },
+      {
+        "id": "b4l1-p012",
+        "phrase": "would rather…than…",
+        "pos": "ph.",
+        "zh": "寧願……而不……",
+        "example_en": "I would rather walk than drive.",
+        "example_zh": "我寧願走路也不開車。"
+      },
+      {
+        "id": "b4l1-p013",
+        "phrase": "under any conditions",
+        "pos": "ph.",
+        "zh": "在任何情況下",
+        "example_en": "Do not open the door under any conditions.",
+        "example_zh": "任何情況下都不要開門。"
+      },
+      {
+        "id": "b4l1-p014",
+        "phrase": "prove one’s claim",
+        "pos": "ph.",
+        "zh": "證明某人的主張",
+        "example_en": "The evidence proved his claim.",
+        "example_zh": "證據證明了他的主張。"
+      },
+      {
+        "id": "b4l1-p015",
+        "phrase": "break the national record",
+        "pos": "ph.",
+        "zh": "打破全國紀錄",
+        "example_en": "She broke the national record.",
+        "example_zh": "她打破全國紀錄。"
+      },
+      {
+        "id": "b4l1-p016",
+        "phrase": "prefer to…rather than…",
+        "pos": "ph.",
+        "zh": "寧願……而不是……",
+        "example_en": "I prefer to stay rather than leave.",
+        "example_zh": "我寧願留下而不是離開。"
+      },
+      {
+        "id": "b4l1-p017",
+        "phrase": "prefer A to B",
+        "pos": "ph.",
+        "zh": "比起 B 更喜歡 A",
+        "example_en": "I prefer tea to coffee.",
+        "example_zh": "比起咖啡我更喜歡茶。"
+      },
+      {
+        "id": "b4l1-p018",
+        "phrase": "under controlled conditions",
+        "pos": "ph.",
+        "zh": "在受控條件下",
+        "example_en": "The experiment was conducted under controlled conditions.",
+        "example_zh": "實驗在受控條件下進行。"
+      },
+      {
+        "id": "b4l1-p019",
+        "phrase": "field trip",
+        "pos": "ph.",
+        "zh": "校外教學",
+        "example_en": "Our class went on a field trip.",
+        "example_zh": "我們班去校外教學。"
+      },
+      {
+        "id": "b4l1-p020",
+        "phrase": "face many challenges",
+        "pos": "ph.",
+        "zh": "面臨許多挑戰",
+        "example_en": "New businesses face many challenges.",
+        "example_zh": "新企業面臨許多挑戰。"
+      },
+      {
+        "id": "b4l1-p021",
+        "phrase": "push though",
+        "pos": "ph.",
+        "zh": "堅持到底",
+        "example_en": "She pushed though the difficult training.",
+        "example_zh": "她堅持完成艱難訓練。"
+      },
+      {
+        "id": "b4l1-p022",
+        "phrase": "a safety drill",
+        "pos": "ph.",
+        "zh": "安全演練",
+        "example_en": "The school held a safety drill.",
+        "example_zh": "學校舉行安全演練。"
+      },
+      {
+        "id": "b4l1-p023",
+        "phrase": "follow the safety rules",
+        "pos": "ph.",
+        "zh": "遵守安全規則",
+        "example_en": "Everyone must follow the safety rules.",
+        "example_zh": "每個人都必須遵守安全規則。"
+      },
+      {
+        "id": "b4l1-p024",
+        "phrase": "serve one’s sentence",
+        "pos": "ph.",
+        "zh": "服刑",
+        "example_en": "He served his sentence quietly.",
+        "example_zh": "他安靜地服刑。"
+      },
+      {
+        "id": "b4l1-p025",
+        "phrase": "wear on",
+        "pos": "ph.",
+        "zh": "時間慢慢過去",
+        "example_en": "As the hours wore on, we grew tired.",
+        "example_zh": "時間慢慢過去，我們越來越累。"
+      },
+      {
+        "id": "b4l1-p026",
+        "phrase": "fill the emptiness in one’s heart",
+        "pos": "ph.",
+        "zh": "填補某人心中的空虛",
+        "example_en": "Friends can fill the emptiness in one’s heart.",
+        "example_zh": "朋友可以填補心中的空虛。"
+      },
+      {
+        "id": "b4l1-p027",
+        "phrase": "turn away from",
+        "pos": "ph.",
+        "zh": "轉身離開；背離",
+        "example_en": "He turned away from the crowd.",
+        "example_zh": "他轉身離開人群。"
+      },
+      {
+        "id": "b4l1-p028",
+        "phrase": "means of mental escape",
+        "pos": "ph.",
+        "zh": "心靈逃避的方式",
+        "example_en": "Reading is a means of mental escape.",
+        "example_zh": "閱讀是心靈逃避的方式。"
+      },
+      {
+        "id": "b4l1-p029",
+        "phrase": "develop a huge appetite for",
+        "pos": "ph.",
+        "zh": "培養對……的強烈興趣",
+        "example_en": "She developed a huge appetite for adventure.",
+        "example_zh": "她培養出對冒險的強烈興趣。"
+      },
+      {
+        "id": "b4l1-p030",
+        "phrase": "inner growth",
+        "pos": "ph.",
+        "zh": "內在成長",
+        "example_en": "Travel can lead to inner growth.",
+        "example_zh": "旅行能帶來內在成長。"
+      },
+      {
+        "id": "b4l1-p031",
+        "phrase": "self-discipline",
+        "pos": "ph.",
+        "zh": "自律",
+        "example_en": "Success requires self-discipline.",
+        "example_zh": "成功需要自律。"
+      },
+      {
+        "id": "b4l1-p032",
+        "phrase": "around the clock",
+        "pos": "ph.",
+        "zh": "日以繼夜",
+        "example_en": "Doctors worked around the clock.",
+        "example_zh": "醫生日以繼夜工作。"
+      },
+      {
+        "id": "b4l1-p033",
+        "phrase": "from now on",
+        "pos": "ph.",
+        "zh": "從現在起",
+        "example_en": "From now on, I will be careful.",
+        "example_zh": "從現在起我會小心。"
+      },
+      {
+        "id": "b4l1-p034",
+        "phrase": "acquire profound knowledge",
+        "pos": "ph.",
+        "zh": "獲得深厚知識",
+        "example_en": "Students acquire profound knowledge through study.",
+        "example_zh": "學生透過學習獲得深厚知識。"
+      },
+      {
+        "id": "b4l1-p035",
+        "phrase": "by no means",
+        "pos": "ph.",
+        "zh": "絕不",
+        "example_en": "This is by no means easy.",
+        "example_zh": "這絕不容易。"
+      },
+      {
+        "id": "b4l1-p036",
+        "phrase": "cross one’s mind",
+        "pos": "ph.",
+        "zh": "掠過某人的心頭",
+        "example_en": "The idea never crossed my mind.",
+        "example_zh": "我從未想過這個念頭。"
+      },
+      {
+        "id": "b4l1-p037",
+        "phrase": "a busy tourist destination",
+        "pos": "ph.",
+        "zh": "繁忙的旅遊目的地",
+        "example_en": "The island is a busy tourist destination.",
+        "example_zh": "這座島是繁忙的旅遊目的地。"
+      },
+      {
+        "id": "b4l1-p038",
+        "phrase": "over the years",
+        "pos": "ph.",
+        "zh": "多年來",
+        "example_en": "Over the years, she gained experience.",
+        "example_zh": "多年來她累積了經驗。"
+      },
+      {
+        "id": "b4l1-p039",
+        "phrase": "that being so",
+        "pos": "ph.",
+        "zh": "既然如此",
+        "example_en": "That being so, we should leave now.",
+        "example_zh": "既然如此，我們現在應該離開。"
+      },
+      {
+        "id": "b4l1-p040",
+        "phrase": "steal into",
+        "pos": "ph.",
+        "zh": "悄悄進入",
+        "example_en": "A smile stole into her face.",
+        "example_zh": "她臉上悄悄浮現笑容。"
+      },
+      {
+        "id": "b4l1-p041",
+        "phrase": "come to realize",
+        "pos": "ph.",
+        "zh": "逐漸意識到",
+        "example_en": "I came to realize the truth.",
+        "example_zh": "我逐漸意識到真相。"
+      },
+      {
+        "id": "b4l1-p042",
+        "phrase": "mortal pursuit",
+        "pos": "ph.",
+        "zh": "凡人的追求",
+        "example_en": "Fame is a mortal pursuit.",
+        "example_zh": "名聲是凡人的追求。"
+      },
+      {
+        "id": "b4l1-p043",
+        "phrase": "be overcome with/by",
+        "pos": "ph.",
+        "zh": "被……壓倒",
+        "example_en": "She was overcome with joy.",
+        "example_zh": "她被喜悅淹沒。"
+      },
+      {
+        "id": "b4l1-p044",
+        "phrase": "during one’s coronation",
+        "pos": "ph.",
+        "zh": "在某人的加冕典禮期間",
+        "example_en": "The king spoke during his coronation.",
+        "example_zh": "國王在加冕典禮期間發言。"
+      },
+      {
+        "id": "b4l1-p045",
+        "phrase": "student council",
+        "pos": "ph.",
+        "zh": "學生會",
+        "example_en": "She joined the student council.",
+        "example_zh": "她加入學生會。"
+      },
+      {
+        "id": "b4l1-p046",
+        "phrase": "debate the issue of",
+        "pos": "ph.",
+        "zh": "辯論……的議題",
+        "example_en": "They debated the issue of school rules.",
+        "example_zh": "他們辯論校規議題。"
+      },
+      {
+        "id": "b4l1-p047",
+        "phrase": "have a heated debate on the issue of",
+        "pos": "ph.",
+        "zh": "就……議題激烈辯論",
+        "example_en": "They had a heated debate on the issue of safety.",
+        "example_zh": "他們就安全議題激烈辯論。"
+      },
+      {
+        "id": "b4l1-p048",
+        "phrase": "build a wind farm",
+        "pos": "ph.",
+        "zh": "建造風力發電場",
+        "example_en": "The town plans to build a wind farm.",
+        "example_zh": "城鎮計畫建造風力發電場。"
+      },
+      {
+        "id": "b4l1-p049",
+        "phrase": "receive a penalty",
+        "pos": "ph.",
+        "zh": "受到處罰",
+        "example_en": "The player received a penalty.",
+        "example_zh": "球員受到處罰。"
+      },
+      {
+        "id": "b4l1-p050",
+        "phrase": "be sentenced to 5 years’ imprisonment",
+        "pos": "ph.",
+        "zh": "被判五年徒刑",
+        "example_en": "He was sentenced to 5 years’ imprisonment.",
+        "example_zh": "他被判五年徒刑。"
+      },
+      {
+        "id": "b4l1-p051",
+        "phrase": "steal private data",
+        "pos": "ph.",
+        "zh": "竊取私人資料",
+        "example_en": "Hackers tried to steal private data.",
+        "example_zh": "駭客試圖竊取私人資料。"
+      },
+      {
+        "id": "b4l1-p052",
+        "phrase": "false imprisonment",
+        "pos": "ph.",
+        "zh": "非法監禁",
+        "example_en": "The victim sued for false imprisonment.",
+        "example_zh": "受害者因非法監禁提起訴訟。"
+      },
+      {
+        "id": "b4l1-p053",
+        "phrase": "be wrongly imprisoned",
+        "pos": "ph.",
+        "zh": "被錯誤監禁",
+        "example_en": "He was wrongly imprisoned for years.",
+        "example_zh": "他被錯誤監禁多年。"
+      },
+      {
+        "id": "b4l1-p054",
+        "phrase": "send sb. to prison",
+        "pos": "ph.",
+        "zh": "把某人送進監獄",
+        "example_en": "The judge sent him to prison.",
+        "example_zh": "法官把他送進監獄。"
+      },
+      {
+        "id": "b4l1-p055",
+        "phrase": "make a false claim about",
+        "pos": "ph.",
+        "zh": "對……提出虛假主張",
+        "example_en": "He made a false claim about the product.",
+        "example_zh": "他對產品提出虛假主張。"
+      },
+      {
+        "id": "b4l1-p056",
+        "phrase": "have a legal claim to",
+        "pos": "ph.",
+        "zh": "對……有法律請求權",
+        "example_en": "She has a legal claim to the property.",
+        "example_zh": "她對該財產有法律請求權。"
+      },
+      {
+        "id": "b4l1-p057",
+        "phrase": "lay claim to sth",
+        "pos": "ph.",
+        "zh": "宣稱對某物擁有權利",
+        "example_en": "Several groups lay claim to the land.",
+        "example_zh": "幾個團體宣稱擁有這片土地。"
+      },
+      {
+        "id": "b4l1-p058",
+        "phrase": "claim credit for sth",
+        "pos": "ph.",
+        "zh": "把某事的功勞歸於自己",
+        "example_en": "He claimed credit for the success.",
+        "example_zh": "他把成功的功勞歸於自己。"
+      },
+      {
+        "id": "b4l1-p059",
+        "phrase": "split the bill",
+        "pos": "ph.",
+        "zh": "平分帳單",
+        "example_en": "Let’s split the bill.",
+        "example_zh": "我們平分帳單吧。"
+      },
+      {
+        "id": "b4l1-p060",
+        "phrase": "insist on",
+        "pos": "ph.",
+        "zh": "堅持",
+        "example_en": "She insisted on paying.",
+        "example_zh": "她堅持付錢。"
+      },
+      {
+        "id": "b4l1-p061",
+        "phrase": "commercial property",
+        "pos": "ph.",
+        "zh": "商業不動產",
+        "example_en": "The company bought commercial property.",
+        "example_zh": "公司購買商業不動產。"
+      },
+      {
+        "id": "b4l1-p062",
+        "phrase": "intellectual property",
+        "pos": "ph.",
+        "zh": "智慧財產",
+        "example_en": "The design is intellectual property.",
+        "example_zh": "這項設計是智慧財產。"
+      },
+      {
+        "id": "b4l1-p063",
+        "phrase": "write a rap tune",
+        "pos": "ph.",
+        "zh": "寫一首饒舌歌曲",
+        "example_en": "He wrote a rap tune for the show.",
+        "example_zh": "他為表演寫了一首饒舌歌曲。"
+      },
+      {
+        "id": "b4l1-p064",
+        "phrase": "personal property",
+        "pos": "ph.",
+        "zh": "個人財產",
+        "example_en": "Keep your personal property safe.",
+        "example_zh": "保管好你的個人財產。"
+      },
+      {
+        "id": "b4l1-p065",
+        "phrase": "private property",
+        "pos": "ph.",
+        "zh": "私人財產",
+        "example_en": "This land is private property.",
+        "example_zh": "這片土地是私人財產。"
+      },
+      {
+        "id": "b4l1-p066",
+        "phrase": "traveling companion",
+        "pos": "ph.",
+        "zh": "旅伴",
+        "example_en": "My sister was my traveling companion.",
+        "example_zh": "我妹妹是我的旅伴。"
+      },
+      {
+        "id": "b4l1-p067",
+        "phrase": "mental image",
+        "pos": "ph.",
+        "zh": "心像",
+        "example_en": "The book created a vivid mental image.",
+        "example_zh": "這本書創造生動的心像。"
+      },
+      {
+        "id": "b4l1-p068",
+        "phrase": "make a mental note",
+        "pos": "ph.",
+        "zh": "記在心裡",
+        "example_en": "I made a mental note of the address.",
+        "example_zh": "我把地址記在心裡。"
+      },
+      {
+        "id": "b4l1-p069",
+        "phrase": "a clue hidden between the lines",
+        "pos": "ph.",
+        "zh": "字裡行間隱藏的線索",
+        "example_en": "There was a clue hidden between the lines.",
+        "example_zh": "字裡行間有隱藏的線索。"
+      },
+      {
+        "id": "b4l1-p070",
+        "phrase": "lose one’s mind",
+        "pos": "ph.",
+        "zh": "失去理智",
+        "example_en": "He nearly lost his mind with worry.",
+        "example_zh": "他擔心得幾乎失去理智。"
+      },
+      {
+        "id": "b4l1-p071",
+        "phrase": "sales volume",
+        "pos": "ph.",
+        "zh": "銷售量",
+        "example_en": "The product has a high sales volume.",
+        "example_zh": "這項產品銷售量很高。"
+      },
+      {
+        "id": "b4l1-p072",
+        "phrase": "decrease significantly in volume",
+        "pos": "ph.",
+        "zh": "數量大幅減少",
+        "example_en": "Orders decreased significantly in volume.",
+        "example_zh": "訂單數量大幅減少。"
+      },
+      {
+        "id": "b4l1-p073",
+        "phrase": "acquire a reputation for",
+        "pos": "ph.",
+        "zh": "獲得……的聲譽",
+        "example_en": "The restaurant acquired a reputation for quality.",
+        "example_zh": "這家餐廳獲得高品質的聲譽。"
+      },
+      {
+        "id": "b4l1-p074",
+        "phrase": "acquire a taste for",
+        "pos": "ph.",
+        "zh": "逐漸喜愛……",
+        "example_en": "He acquired a taste for spicy food.",
+        "example_zh": "他逐漸喜愛辣食。"
+      },
+      {
+        "id": "b4l1-p075",
+        "phrase": "acquisition of sth.",
+        "pos": "ph.",
+        "zh": "取得某物",
+        "example_en": "The acquisition of the company was approved.",
+        "example_zh": "公司的收購案獲得批准。"
+      },
+      {
+        "id": "b4l1-p076",
+        "phrase": "a profound thinker",
+        "pos": "ph.",
+        "zh": "深刻的思想家",
+        "example_en": "He is a profound thinker.",
+        "example_zh": "他是深刻的思想家。"
+      },
+      {
+        "id": "b4l1-p077",
+        "phrase": "have a profound influence on",
+        "pos": "ph.",
+        "zh": "對……有深遠影響",
+        "example_en": "Teachers have a profound influence on children.",
+        "example_zh": "老師對孩子有深遠影響。"
+      },
+      {
+        "id": "b4l1-p078",
+        "phrase": "person of wealth and influence",
+        "pos": "ph.",
+        "zh": "有財富與影響力的人",
+        "example_en": "He is a person of wealth and influence.",
+        "example_zh": "他是有財富與影響力的人。"
+      },
+      {
+        "id": "b4l1-p079",
+        "phrase": "attempted murder",
+        "pos": "ph.",
+        "zh": "謀殺未遂",
+        "example_en": "The suspect was charged with attempted murder.",
+        "example_zh": "嫌疑人被控謀殺未遂。"
+      },
+      {
+        "id": "b4l1-p080",
+        "phrase": "be suspected of",
+        "pos": "ph.",
+        "zh": "被懷疑……",
+        "example_en": "He was suspected of stealing.",
+        "example_zh": "他被懷疑偷竊。"
+      },
+      {
+        "id": "b4l1-p081",
+        "phrase": "commit a murder",
+        "pos": "ph.",
+        "zh": "犯下謀殺罪",
+        "example_en": "No one should commit a murder.",
+        "example_zh": "沒有人應該犯下謀殺罪。"
+      },
+      {
+        "id": "b4l1-p082",
+        "phrase": "get away with murder",
+        "pos": "ph.",
+        "zh": "逍遙法外",
+        "example_en": "The criminal thought he could get away with murder.",
+        "example_zh": "罪犯以為自己可以逍遙法外。"
+      },
+      {
+        "id": "b4l1-p083",
+        "phrase": "mass murderer",
+        "pos": "ph.",
+        "zh": "大規模殺人犯",
+        "example_en": "The mass murderer was arrested.",
+        "example_zh": "大規模殺人犯被捕。"
+      },
+      {
+        "id": "b4l1-p084",
+        "phrase": "much to one’s disgust",
+        "pos": "ph.",
+        "zh": "令某人非常厭惡的是",
+        "example_en": "Much to my disgust, the room was filthy.",
+        "example_zh": "令我非常厭惡的是，房間很髒。"
+      },
+      {
+        "id": "b4l1-p085",
+        "phrase": "give sb. a feeling of disgust",
+        "pos": "ph.",
+        "zh": "使某人感到厭惡",
+        "example_en": "The smell gave me a feeling of disgust.",
+        "example_zh": "那氣味使我感到厭惡。"
+      },
+      {
+        "id": "b4l1-p086",
+        "phrase": "in a vain attempt",
+        "pos": "ph.",
+        "zh": "徒勞地嘗試",
+        "example_en": "He shouted in a vain attempt to stop them.",
+        "example_zh": "他徒勞地大喊試圖阻止他們。"
+      },
+      {
+        "id": "b4l1-p087",
+        "phrase": "in vain",
+        "pos": "ph.",
+        "zh": "徒勞地",
+        "example_en": "They searched in vain for the key.",
+        "example_zh": "他們徒勞地尋找鑰匙。"
+      },
+      {
+        "id": "b4l1-p088",
+        "phrase": "blind worship",
+        "pos": "ph.",
+        "zh": "盲目崇拜",
+        "example_en": "Blind worship can be dangerous.",
+        "example_zh": "盲目崇拜可能很危險。"
+      },
+      {
+        "id": "b4l1-p089",
+        "phrase": "hero worship",
+        "pos": "ph.",
+        "zh": "英雄崇拜",
+        "example_en": "Hero worship is common among fans.",
+        "example_zh": "粉絲間常見英雄崇拜。"
+      },
+      {
+        "id": "b4l1-p090",
+        "phrase": "intend to",
+        "pos": "ph.",
+        "zh": "打算",
+        "example_en": "I intend to study abroad.",
+        "example_zh": "我打算出國留學。"
+      },
+      {
+        "id": "b4l1-p091",
+        "phrase": "abandon one’s efforts",
+        "pos": "ph.",
+        "zh": "放棄某人的努力",
+        "example_en": "Do not abandon your efforts.",
+        "example_zh": "不要放棄你的努力。"
+      },
+      {
+        "id": "b4l1-p092",
+        "phrase": "be at fault",
+        "pos": "ph.",
+        "zh": "有錯",
+        "example_en": "The driver was at fault.",
+        "example_zh": "駕駛有錯。"
+      },
+      {
+        "id": "b4l1-p093",
+        "phrase": "surrender A to B",
+        "pos": "ph.",
+        "zh": "把 A 交給 B",
+        "example_en": "He surrendered the weapon to the police.",
+        "example_zh": "他把武器交給警方。"
+      },
+      {
+        "id": "b4l1-p094",
+        "phrase": "surrender to the authorities",
+        "pos": "ph.",
+        "zh": "向當局投降",
+        "example_en": "The suspect surrendered to the authorities.",
+        "example_zh": "嫌疑人向當局投降。"
+      },
+      {
+        "id": "b4l1-p095",
+        "phrase": "on the run",
+        "pos": "ph.",
+        "zh": "在逃",
+        "example_en": "The thief is still on the run.",
+        "example_zh": "竊賊仍在逃。"
+      },
+      {
+        "id": "b4l1-p096",
+        "phrase": "peaceful surrender of power",
+        "pos": "ph.",
+        "zh": "和平移交權力",
+        "example_en": "The election led to a peaceful surrender of power.",
+        "example_zh": "選舉帶來和平移交權力。"
+      },
+      {
+        "id": "b4l1-p097",
+        "phrase": "be seen as",
+        "pos": "ph.",
+        "zh": "被視為",
+        "example_en": "The decision is seen as a victory.",
+        "example_zh": "這項決定被視為勝利。"
+      },
+      {
+        "id": "b4l1-p098",
+        "phrase": "a major step toward",
+        "pos": "ph.",
+        "zh": "邁向……的重要一步",
+        "example_en": "The agreement was a major step toward peace.",
+        "example_zh": "協議是邁向和平的重要一步。"
+      },
+      {
+        "id": "b4l1-p099",
+        "phrase": "unconditional surrender",
+        "pos": "ph.",
+        "zh": "無條件投降",
+        "example_en": "The army demanded unconditional surrender.",
+        "example_zh": "軍隊要求無條件投降。"
+      },
+      {
+        "id": "b4l1-p100",
+        "phrase": "surround on all sides",
+        "pos": "ph.",
+        "zh": "四面包圍",
+        "example_en": "The village was surrounded on all sides.",
+        "example_zh": "村莊四面被包圍。"
+      },
+      {
+        "id": "b4l1-p101",
+        "phrase": "feel a sense of guilt",
+        "pos": "ph.",
+        "zh": "感到罪惡感",
+        "example_en": "She felt a sense of guilt.",
+        "example_zh": "她感到罪惡感。"
+      },
+      {
+        "id": "b4l1-p102",
+        "phrase": "prove one’s guilt",
+        "pos": "ph.",
+        "zh": "證明某人的罪行",
+        "example_en": "The evidence proved his guilt.",
+        "example_zh": "證據證明他的罪行。"
+      },
+      {
+        "id": "b4l1-p103",
+        "phrase": "beyond all doubt",
+        "pos": "ph.",
+        "zh": "毫無疑問",
+        "example_en": "His identity was proved beyond all doubt.",
+        "example_zh": "他的身分毫無疑問地被證實。"
+      },
+      {
+        "id": "b4l1-p104",
+        "phrase": "be guilty of",
+        "pos": "ph.",
+        "zh": "犯有……罪",
+        "example_en": "He was guilty of fraud.",
+        "example_zh": "他犯有詐欺罪。"
+      },
+      {
+        "id": "b4l1-p105",
+        "phrase": "the accused man",
+        "pos": "ph.",
+        "zh": "被告男子",
+        "example_en": "The accused man denied the charge.",
+        "example_zh": "被告男子否認指控。"
+      },
+      {
+        "id": "b4l1-p106",
+        "phrase": "rumors flying that",
+        "pos": "ph.",
+        "zh": "謠言四起說……",
+        "example_en": "There were rumors flying that he would resign.",
+        "example_zh": "謠言四起說他將辭職。"
+      },
+      {
+        "id": "b4l1-p107",
+        "phrase": "rumor has it that",
+        "pos": "ph.",
+        "zh": "謠言說……",
+        "example_en": "Rumor has it that the store will close.",
+        "example_zh": "謠言說那家店將關門。"
+      },
+      {
+        "id": "b4l1-p108",
+        "phrase": "drunk driver",
+        "pos": "ph.",
+        "zh": "酒後駕駛者",
+        "example_en": "The drunk driver caused a crash.",
+        "example_zh": "酒後駕駛者造成車禍。"
+      },
+      {
+        "id": "b4l1-p109",
+        "phrase": "show no feelings of guilt",
+        "pos": "ph.",
+        "zh": "毫無罪惡感",
+        "example_en": "He showed no feelings of guilt.",
+        "example_zh": "他毫無罪惡感。"
+      },
+      {
+        "id": "b4l1-p110",
+        "phrase": "post a comment on Threads",
+        "pos": "ph.",
+        "zh": "在 Threads 發表留言",
+        "example_en": "She posted a comment on Threads.",
+        "example_zh": "她在 Threads 發表留言。"
+      },
+      {
+        "id": "b4l1-p111",
+        "phrase": "suffer from depression",
+        "pos": "ph.",
+        "zh": "罹患憂鬱症",
+        "example_en": "He suffers from depression.",
+        "example_zh": "他罹患憂鬱症。"
+      },
+      {
+        "id": "b4l1-p112",
+        "phrase": "donate most of one’s wealth to charity",
+        "pos": "ph.",
+        "zh": "將大部分財富捐給慈善機構",
+        "example_en": "She donated most of her wealth to charity.",
+        "example_zh": "她將大部分財富捐給慈善機構。"
+      },
+      {
+        "id": "b4l1-p113",
+        "phrase": "blind to right and wrong",
+        "pos": "ph.",
+        "zh": "對是非盲目",
+        "example_en": "He was blind to right and wrong.",
+        "example_zh": "他對是非盲目。"
+      },
+      {
+        "id": "b4l1-p114",
+        "phrase": "trespass on private property",
+        "pos": "ph.",
+        "zh": "擅闖私人土地",
+        "example_en": "Do not trespass on private property.",
+        "example_zh": "不要擅闖私人土地。"
+      },
+      {
+        "id": "b4l1-p115",
+        "phrase": "lead to legal action",
+        "pos": "ph.",
+        "zh": "導致法律行動",
+        "example_en": "The dispute may lead to legal action.",
+        "example_zh": "爭議可能導致法律行動。"
+      },
+      {
+        "id": "b4l1-p116",
+        "phrase": "against the law",
+        "pos": "ph.",
+        "zh": "違法",
+        "example_en": "Parking here is against the law.",
+        "example_zh": "在這裡停車是違法的。"
+      },
+      {
+        "id": "b4l1-p117",
+        "phrase": "be convicted of the crime",
+        "pos": "ph.",
+        "zh": "被判犯下罪行",
+        "example_en": "He was convicted of the crime.",
+        "example_zh": "他被判犯下罪行。"
+      },
+      {
+        "id": "b4l1-p118",
+        "phrase": "face life imprisonment without parole",
+        "pos": "ph.",
+        "zh": "面臨不得假釋的無期徒刑",
+        "example_en": "He faces life imprisonment without parole.",
+        "example_zh": "他面臨不得假釋的無期徒刑。"
+      },
+      {
+        "id": "b4l1-p119",
+        "phrase": "receive high praise",
+        "pos": "ph.",
+        "zh": "獲得高度讚揚",
+        "example_en": "The performance received high praise.",
+        "example_zh": "演出獲得高度讚揚。"
+      },
+      {
+        "id": "b4l1-p120",
+        "phrase": "make clear",
+        "pos": "ph.",
+        "zh": "說清楚",
+        "example_en": "Please make clear what you mean.",
+        "example_zh": "請說清楚你的意思。"
+      },
+      {
+        "id": "b4l1-p121",
+        "phrase": "handle cross-national business",
+        "pos": "ph.",
+        "zh": "處理跨國業務",
+        "example_en": "She handles cross-national business.",
+        "example_zh": "她處理跨國業務。"
+      },
+      {
+        "id": "b4l1-p122",
+        "phrase": "show signs of decay",
+        "pos": "ph.",
+        "zh": "顯示腐朽跡象",
+        "example_en": "The old building shows signs of decay.",
+        "example_zh": "老建築顯示腐朽跡象。"
+      },
+      {
+        "id": "b4l1-p123",
+        "phrase": "lifelong dedication to",
+        "pos": "ph.",
+        "zh": "一生奉獻於……",
+        "example_en": "His lifelong dedication to teaching inspired us.",
+        "example_zh": "他一生奉獻教學，激勵了我們。"
+      },
+      {
+        "id": "b4l1-p124",
+        "phrase": "the fruits of",
+        "pos": "ph.",
+        "zh": "……的成果",
+        "example_en": "We enjoyed the fruits of our labor.",
+        "example_zh": "我們享受努力的成果。"
+      },
+      {
+        "id": "b4l1-p125",
+        "phrase": "the upcoming flu season",
+        "pos": "ph.",
+        "zh": "即將到來的流感季",
+        "example_en": "Get vaccinated before the upcoming flu season.",
+        "example_zh": "在即將到來的流感季前接種疫苗。"
+      },
+      {
+        "id": "b4l1-p126",
+        "phrase": "think twice before",
+        "pos": "ph.",
+        "zh": "在……前再三思考",
+        "example_en": "Think twice before signing.",
+        "example_zh": "簽署前要再三思考。"
+      },
+      {
+        "id": "b4l1-p127",
+        "phrase": "make it to the mountaintop",
+        "pos": "ph.",
+        "zh": "抵達山頂",
+        "example_en": "We made it to the mountaintop before sunset.",
+        "example_zh": "我們在日落前抵達山頂。"
+      },
+      {
+        "id": "b4l1-p128",
+        "phrase": "shorten the period of imprisonment",
+        "pos": "ph.",
+        "zh": "縮短監禁期間",
+        "example_en": "Good behavior may shorten the period of imprisonment.",
+        "example_zh": "良好行為可能縮短監禁期間。"
+      },
+      {
+        "id": "b4l1-p129",
+        "phrase": "appetite for wealth",
+        "pos": "ph.",
+        "zh": "對財富的渴望",
+        "example_en": "His appetite for wealth never ended.",
+        "example_zh": "他對財富的渴望沒有止境。"
+      },
+      {
+        "id": "b4l1-p130",
+        "phrase": "abandon the principle",
+        "pos": "ph.",
+        "zh": "放棄原則",
+        "example_en": "We should not abandon the principle of fairness.",
+        "example_zh": "我們不應放棄公平原則。"
+      }
+    ]
   },
   "grammar": {
     "points": [],
