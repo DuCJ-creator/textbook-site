@@ -1,0 +1,1932 @@
+{
+  "book": "B4",
+  "lesson": "L2",
+  "title": "",
+  "status": "published",
+  "vocabulary": {
+    "rows": [
+      {
+        "id": "b4l2-v01",
+        "base": "flood",
+        "verb": [
+          {
+            "en": "flood",
+            "zh": "淹沒；湧入；充滿",
+            "example": "Heavy rain flooded several streets."
+          }
+        ],
+        "noun": [
+          {
+            "en": "flood",
+            "zh": "洪水；大量湧入",
+            "example": "The flood damaged many homes."
+          },
+          {
+            "en": "flooding",
+            "zh": "淹水；洪災；水患",
+            "example": "The storm caused serious flooding in the town."
+          }
+        ],
+        "adj": [
+          {
+            "en": "flooded",
+            "zh": "被淹沒的；充滿水的",
+            "example": "Residents left the flooded neighborhood."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b4l2-v02",
+        "base": "appropriate",
+        "verb": [],
+        "noun": [
+          {
+            "en": "appropriateness",
+            "zh": "適當性；合宜性",
+            "example": "The teacher questioned the appropriateness of the film."
+          }
+        ],
+        "adj": [
+          {
+            "en": "appropriate",
+            "zh": "適當的；合宜的",
+            "example": "Wear appropriate clothing for the weather."
+          },
+          {
+            "en": "inappropriate",
+            "zh": "不適當的；不合宜的",
+            "example": "His comment was inappropriate for the meeting."
+          }
+        ],
+        "adv": [
+          {
+            "en": "appropriately",
+            "zh": "適當地；合宜地",
+            "example": "The staff responded appropriately to the emergency."
+          },
+          {
+            "en": "inappropriately",
+            "zh": "不適當地；不合宜地",
+            "example": "The information was used inappropriately."
+          }
+        ]
+      },
+      {
+        "id": "b4l2-v03",
+        "base": "promise",
+        "verb": [
+          {
+            "en": "promise",
+            "zh": "承諾；保證；預示",
+            "example": "She promised to return the book tomorrow."
+          }
+        ],
+        "noun": [
+          {
+            "en": "promise",
+            "zh": "承諾；希望；前途",
+            "example": "He kept his promise to help us."
+          }
+        ],
+        "adj": [
+          {
+            "en": "promising",
+            "zh": "有希望的；有前途的",
+            "example": "The early test results are promising."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b4l2-v04",
+        "base": "arch",
+        "verb": [
+          {
+            "en": "arch",
+            "zh": "使彎成弓形；拱起",
+            "example": "The cat arched its back."
+          }
+        ],
+        "noun": [
+          {
+            "en": "arch",
+            "zh": "拱門；拱形結構；足弓",
+            "example": "We walked beneath the stone arch."
+          }
+        ],
+        "adj": [
+          {
+            "en": "arch",
+            "zh": "淘氣的；狡黠的；故作高明的",
+            "example": "She gave him an arch smile."
+          },
+          {
+            "en": "arched",
+            "zh": "拱形的；彎曲的",
+            "example": "The building has tall arched windows."
+          }
+        ],
+        "adv": [
+          {
+            "en": "archly",
+            "zh": "淘氣地；狡黠地；故作聰明地",
+            "example": "“Perhaps you forgot,” she said archly."
+          }
+        ]
+      },
+      {
+        "id": "b4l2-v05",
+        "base": "install",
+        "verb": [
+          {
+            "en": "install",
+            "zh": "安裝；設置；任命",
+            "example": "A technician installed the new software."
+          },
+          {
+            "en": "uninstall",
+            "zh": "解除安裝；移除軟體",
+            "example": "Uninstall the app if you no longer use it."
+          }
+        ],
+        "noun": [
+          {
+            "en": "installment",
+            "zh": "分期付款；一集；一部分",
+            "example": "She paid for the laptop in monthly installments."
+          },
+          {
+            "en": "uninstallment",
+            "zh": "解除安裝（極少見，通常用 uninstallation）",
+            "example": "The uninstallment of the program removed its files."
+          },
+          {
+            "en": "installation",
+            "zh": "安裝；裝置；設施",
+            "example": "The installation of the new system took two hours."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b4l2-v06",
+        "base": "mud",
+        "verb": [],
+        "noun": [
+          {
+            "en": "mud",
+            "zh": "泥；泥漿",
+            "example": "The children played in the mud after the rain."
+          }
+        ],
+        "adj": [
+          {
+            "en": "muddy",
+            "zh": "泥濘的；沾滿泥的；混濁的",
+            "example": "The path became muddy after the storm."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b4l2-v07",
+        "base": "project",
+        "verb": [
+          {
+            "en": "project",
+            "zh": "預計；投射；展現",
+            "example": "The company projects higher sales next year."
+          }
+        ],
+        "noun": [
+          {
+            "en": "project",
+            "zh": "專案；計畫；研究作業",
+            "example": "Our class is working on a science project."
+          },
+          {
+            "en": "projector",
+            "zh": "投影機；放映機",
+            "example": "The teacher connected her laptop to the projector."
+          }
+        ],
+        "adj": [
+          {
+            "en": "projected",
+            "zh": "預計的；投射出的",
+            "example": "The projected cost is higher than our budget."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b4l2-v08",
+        "base": "practice",
+        "verb": [
+          {
+            "en": "practice",
+            "zh": "練習；實行；從事",
+            "example": "You should practice speaking English every day."
+          }
+        ],
+        "noun": [
+          {
+            "en": "practice",
+            "zh": "練習；做法；慣例",
+            "example": "Regular practice improves your skills."
+          },
+          {
+            "en": "practicality",
+            "zh": "實用性；可行性",
+            "example": "We considered the practicality of the proposal."
+          }
+        ],
+        "adj": [
+          {
+            "en": "practical",
+            "zh": "實際的；實用的；可行的",
+            "example": "She offered a practical solution to the problem."
+          },
+          {
+            "en": "impractical",
+            "zh": "不切實際的；不可行的",
+            "example": "The plan is too expensive and impractical."
+          }
+        ],
+        "adv": [
+          {
+            "en": "practically",
+            "zh": "實際上；幾乎；實用地",
+            "example": "Practically everyone agreed with the decision."
+          },
+          {
+            "en": "impractically",
+            "zh": "不切實際地；不可行地",
+            "example": "The room was impractically designed."
+          }
+        ]
+      },
+      {
+        "id": "b4l2-v09",
+        "base": "issue",
+        "verb": [
+          {
+            "en": "issue",
+            "zh": "發布；發給；正式提出",
+            "example": "The office issued a new safety notice."
+          }
+        ],
+        "noun": [
+          {
+            "en": "issue",
+            "zh": "議題；問題；期號",
+            "example": "Water quality is an important public issue."
+          }
+        ],
+        "adj": [],
+        "adv": []
+      },
+      {
+        "id": "b4l2-v10",
+        "base": "nutrition",
+        "verb": [],
+        "noun": [
+          {
+            "en": "nutrition",
+            "zh": "營養；營養學",
+            "example": "Good nutrition is essential for children's growth."
+          },
+          {
+            "en": "nutrient",
+            "zh": "營養素；養分",
+            "example": "Calcium is an important nutrient for bones."
+          },
+          {
+            "en": "nutritionist",
+            "zh": "營養師；營養學家",
+            "example": "The nutritionist helped us plan balanced meals."
+          }
+        ],
+        "adj": [
+          {
+            "en": "nutritious",
+            "zh": "有營養的；營養豐富的",
+            "example": "Beans are an inexpensive and nutritious food."
+          }
+        ],
+        "adv": [
+          {
+            "en": "nutritiously",
+            "zh": "營養均衡地；以有營養的方式",
+            "example": "The school prepares its lunches nutritiously."
+          }
+        ]
+      },
+      {
+        "id": "b4l2-v11",
+        "base": "resist",
+        "verb": [
+          {
+            "en": "resist",
+            "zh": "抵抗；抗拒；忍住",
+            "example": "These plants can resist cold weather."
+          }
+        ],
+        "noun": [
+          {
+            "en": "resistance",
+            "zh": "抵抗；抗拒；阻力",
+            "example": "The bacteria developed resistance to the medicine."
+          }
+        ],
+        "adj": [
+          {
+            "en": "resistant",
+            "zh": "有抵抗力的；抗拒的；耐……的",
+            "example": "The material is resistant to heat."
+          }
+        ],
+        "adv": [
+          {
+            "en": "resistantly",
+            "zh": "抗拒地；抵抗地（少見，通常改寫）",
+            "example": "The child responded resistantly to the suggestion."
+          }
+        ]
+      },
+      {
+        "id": "b4l2-v12",
+        "base": "produce",
+        "verb": [
+          {
+            "en": "produce",
+            "zh": "生產；製造；產生",
+            "example": "The farm produces organic vegetables."
+          }
+        ],
+        "noun": [
+          {
+            "en": "product",
+            "zh": "產品；產物；結果",
+            "example": "The company launched a new product."
+          },
+          {
+            "en": "productivity",
+            "zh": "生產力；生產效率",
+            "example": "Better tools can improve productivity."
+          }
+        ],
+        "adj": [
+          {
+            "en": "productive",
+            "zh": "有生產力的；富有成效的",
+            "example": "We had a productive meeting this morning."
+          },
+          {
+            "en": "unproductive",
+            "zh": "沒有成效的；低產的",
+            "example": "The argument became repetitive and unproductive."
+          }
+        ],
+        "adv": [
+          {
+            "en": "productively",
+            "zh": "有成效地；高效率地",
+            "example": "She used the afternoon productively."
+          }
+        ]
+      },
+      {
+        "id": "b4l2-v13",
+        "base": "sufficient",
+        "verb": [],
+        "noun": [
+          {
+            "en": "sufficiency",
+            "zh": "充足；足夠；充分性",
+            "example": "The committee examined the sufficiency of the evidence."
+          }
+        ],
+        "adj": [
+          {
+            "en": "sufficient",
+            "zh": "足夠的；充分的",
+            "example": "We have sufficient food for the trip."
+          }
+        ],
+        "adv": [
+          {
+            "en": "sufficiently",
+            "zh": "充分地；足夠地",
+            "example": "The room is sufficiently large for the class."
+          }
+        ]
+      },
+      {
+        "id": "b4l2-v14",
+        "base": "finance",
+        "verb": [],
+        "noun": [
+          {
+            "en": "finance",
+            "zh": "金融；財務；資金",
+            "example": "She works in finance at an international company."
+          }
+        ],
+        "adj": [
+          {
+            "en": "financial",
+            "zh": "金融的；財務的",
+            "example": "The family is facing financial difficulties."
+          }
+        ],
+        "adv": [
+          {
+            "en": "financially",
+            "zh": "在財務上；在經濟上",
+            "example": "The business became financially stable."
+          }
+        ]
+      },
+      {
+        "id": "b4l2-v15",
+        "base": "risk",
+        "verb": [
+          {
+            "en": "risk",
+            "zh": "冒險；使遭受危險",
+            "example": "Do not risk your safety for a photograph."
+          }
+        ],
+        "noun": [
+          {
+            "en": "risk",
+            "zh": "風險；危險；可能性",
+            "example": "Smoking increases the risk of heart disease."
+          }
+        ],
+        "adj": [
+          {
+            "en": "risky",
+            "zh": "有風險的；危險的",
+            "example": "Driving in the storm would be risky."
+          }
+        ],
+        "adv": []
+      },
+      {
+        "id": "b4l2-v16",
+        "base": "geography",
+        "verb": [],
+        "noun": [
+          {
+            "en": "geography",
+            "zh": "地理學；地理環境",
+            "example": "We learned about island geography in class."
+          }
+        ],
+        "adj": [
+          {
+            "en": "geographical",
+            "zh": "地理的；地理學的",
+            "example": "The mountains form a natural geographical boundary."
+          }
+        ],
+        "adv": [
+          {
+            "en": "geographically",
+            "zh": "在地理上；按地理位置",
+            "example": "The two regions are geographically close."
+          }
+        ]
+      },
+      {
+        "id": "b4l2-v17",
+        "base": "opportune",
+        "verb": [],
+        "noun": [
+          {
+            "en": "opportuneness",
+            "zh": "適時；時機恰當（較少見）",
+            "example": "The opportuneness of the announcement increased its impact."
+          },
+          {
+            "en": "opportunity",
+            "zh": "機會；時機",
+            "example": "The internship gave her an opportunity to gain experience."
+          },
+          {
+            "en": "opportunist",
+            "zh": "機會主義者；投機取巧的人",
+            "example": "Critics described him as an opportunist."
+          }
+        ],
+        "adj": [
+          {
+            "en": "opportune",
+            "zh": "時機恰好的；適時的",
+            "example": "This is an opportune moment to discuss the plan."
+          },
+          {
+            "en": "opportunistic",
+            "zh": "機會主義的；伺機而動的",
+            "example": "The company made an opportunistic purchase during the downturn."
+          }
+        ],
+        "adv": [
+          {
+            "en": "opportunely",
+            "zh": "適時地；恰逢其時地",
+            "example": "The rain stopped opportunely before the ceremony."
+          }
+        ]
+      },
+      {
+        "id": "b4l2-v18",
+        "base": "severe",
+        "verb": [],
+        "noun": [
+          {
+            "en": "severity",
+            "zh": "嚴重性；嚴厲程度",
+            "example": "Doctors assessed the severity of the injury."
+          }
+        ],
+        "adj": [
+          {
+            "en": "severe",
+            "zh": "嚴重的；嚴厲的；劇烈的",
+            "example": "The region experienced a severe drought."
+          }
+        ],
+        "adv": [
+          {
+            "en": "severely",
+            "zh": "嚴重地；嚴厲地",
+            "example": "The bridge was severely damaged by the storm."
+          }
+        ]
+      }
+    ]
+  },
+  "phrases": {
+    "items": [
+      {
+        "id": "b4l2-p001",
+        "phrase": "instead of",
+        "pos": "ph.",
+        "zh": "而不是",
+        "example_en": "Use a bus instead of a car.",
+        "example_zh": "搭公車而不是開車。"
+      },
+      {
+        "id": "b4l2-p002",
+        "phrase": "suffer from",
+        "pos": "ph.",
+        "zh": "遭受；患有",
+        "example_en": "Many people suffer from allergies.",
+        "example_zh": "許多人患有過敏症。"
+      },
+      {
+        "id": "b4l2-p003",
+        "phrase": "terrible monsoons",
+        "pos": "ph.",
+        "zh": "可怕的季風",
+        "example_en": "Terrible monsoons damaged the villages.",
+        "example_zh": "可怕的季風摧毀村莊。"
+      },
+      {
+        "id": "b4l2-p004",
+        "phrase": "during the rainy season",
+        "pos": "ph.",
+        "zh": "在雨季",
+        "example_en": "Roads flood during the rainy season.",
+        "example_zh": "雨季時道路淹水。"
+      },
+      {
+        "id": "b4l2-p005",
+        "phrase": "get blocked",
+        "pos": "ph.",
+        "zh": "被阻塞",
+        "example_en": "The drain can get blocked by leaves.",
+        "example_zh": "排水管可能被樹葉堵住。"
+      },
+      {
+        "id": "b4l2-p006",
+        "phrase": "at a time",
+        "pos": "ph.",
+        "zh": "一次",
+        "example_en": "Please take one book at a time.",
+        "example_zh": "請一次拿一本書。"
+      },
+      {
+        "id": "b4l2-p007",
+        "phrase": "as a result",
+        "pos": "ph.",
+        "zh": "因此",
+        "example_en": "It rained; as a result, the game stopped.",
+        "example_zh": "下雨了，因此比賽停止。"
+      },
+      {
+        "id": "b4l2-p008",
+        "phrase": "be denied access to",
+        "pos": "ph.",
+        "zh": "被拒絕進入／使用",
+        "example_en": "Residents were denied access to the bridge.",
+        "example_zh": "居民被拒絕使用這座橋。"
+      },
+      {
+        "id": "b4l2-p009",
+        "phrase": "access to proper schooling",
+        "pos": "ph.",
+        "zh": "接受適當教育的機會",
+        "example_en": "Every child deserves access to proper schooling.",
+        "example_zh": "每個孩子都應有接受適當教育的機會。"
+      },
+      {
+        "id": "b4l2-p010",
+        "phrase": "come up with",
+        "pos": "ph.",
+        "zh": "想出",
+        "example_en": "She came up with a useful idea.",
+        "example_zh": "她想出一個有用的點子。"
+      },
+      {
+        "id": "b4l2-p011",
+        "phrase": "take a sick leave",
+        "pos": "ph.",
+        "zh": "請病假",
+        "example_en": "He took a sick leave yesterday.",
+        "example_zh": "他昨天請病假。"
+      },
+      {
+        "id": "b4l2-p012",
+        "phrase": "deny sb. sth",
+        "pos": "ph.",
+        "zh": "拒絕給某人某物",
+        "example_en": "The bank denied him a loan.",
+        "example_zh": "銀行拒絕給他貸款。"
+      },
+      {
+        "id": "b4l2-p013",
+        "phrase": "deny sth to sb",
+        "pos": "ph.",
+        "zh": "拒絕把某物給某人",
+        "example_en": "They denied entry to the visitors.",
+        "example_zh": "他們拒絕讓訪客入場。"
+      },
+      {
+        "id": "b4l2-p014",
+        "phrase": "deny the student permission to leave early",
+        "pos": "ph.",
+        "zh": "拒絕准許學生提早離開",
+        "example_en": "The teacher denied the student permission to leave early.",
+        "example_zh": "老師拒絕准許學生提早離開。"
+      },
+      {
+        "id": "b4l2-p015",
+        "phrase": "without a parent’s note",
+        "pos": "ph.",
+        "zh": "沒有家長便條",
+        "example_en": "Students cannot leave without a parent’s note.",
+        "example_zh": "沒有家長便條，學生不能離開。"
+      },
+      {
+        "id": "b4l2-p016",
+        "phrase": "be denied entry into",
+        "pos": "ph.",
+        "zh": "被拒絕進入",
+        "example_en": "He was denied entry into the country.",
+        "example_zh": "他被拒絕進入該國。"
+      },
+      {
+        "id": "b4l2-p017",
+        "phrase": "think up",
+        "pos": "ph.",
+        "zh": "想出",
+        "example_en": "Can you think up a solution?",
+        "example_zh": "你能想出解決方法嗎？"
+      },
+      {
+        "id": "b4l2-p018",
+        "phrase": "think of",
+        "pos": "ph.",
+        "zh": "想起；考慮",
+        "example_en": "I need to think of a better plan.",
+        "example_zh": "我需要想出更好的計畫。"
+      },
+      {
+        "id": "b4l2-p019",
+        "phrase": "conduct research",
+        "pos": "ph.",
+        "zh": "進行研究",
+        "example_en": "Scientists conduct research on disease.",
+        "example_zh": "科學家研究疾病。"
+      },
+      {
+        "id": "b4l2-p020",
+        "phrase": "in desperate need of",
+        "pos": "ph.",
+        "zh": "迫切需要",
+        "example_en": "The village is in desperate need of water.",
+        "example_zh": "村莊迫切需要水。"
+      },
+      {
+        "id": "b4l2-p021",
+        "phrase": "hack into the system",
+        "pos": "ph.",
+        "zh": "入侵系統",
+        "example_en": "Criminals hacked into the system.",
+        "example_zh": "罪犯入侵系統。"
+      },
+      {
+        "id": "b4l2-p022",
+        "phrase": "suffer from insomnia",
+        "pos": "ph.",
+        "zh": "患失眠症",
+        "example_en": "She suffers from insomnia.",
+        "example_zh": "她患有失眠症。"
+      },
+      {
+        "id": "b4l2-p023",
+        "phrase": "be sent to prison",
+        "pos": "ph.",
+        "zh": "被送進監獄",
+        "example_en": "The thief was sent to prison.",
+        "example_zh": "小偷被送進監獄。"
+      },
+      {
+        "id": "b4l2-p024",
+        "phrase": "admit one’s wrongdoing",
+        "pos": "ph.",
+        "zh": "承認自己的過錯",
+        "example_en": "He admitted his wrongdoing.",
+        "example_zh": "他承認自己的過錯。"
+      },
+      {
+        "id": "b4l2-p025",
+        "phrase": "turn over a new leaf",
+        "pos": "ph.",
+        "zh": "重新做人",
+        "example_en": "She turned over a new leaf.",
+        "example_zh": "她重新做人。"
+      },
+      {
+        "id": "b4l2-p026",
+        "phrase": "mend one’s ways",
+        "pos": "ph.",
+        "zh": "改過自新",
+        "example_en": "He promised to mend his ways.",
+        "example_zh": "他答應改過自新。"
+      },
+      {
+        "id": "b4l2-p027",
+        "phrase": "provide…with…",
+        "pos": "ph.",
+        "zh": "提供……給……",
+        "example_en": "The school provides students with computers.",
+        "example_zh": "學校提供電腦給學生。"
+      },
+      {
+        "id": "b4l2-p028",
+        "phrase": "throughout the year",
+        "pos": "ph.",
+        "zh": "全年",
+        "example_en": "The park is open throughout the year.",
+        "example_zh": "公園全年開放。"
+      },
+      {
+        "id": "b4l2-p029",
+        "phrase": "be based on",
+        "pos": "ph.",
+        "zh": "以……為基礎",
+        "example_en": "The film is based on a true story.",
+        "example_zh": "這部電影以真實故事為基礎。"
+      },
+      {
+        "id": "b4l2-p030",
+        "phrase": "be equipped with",
+        "pos": "ph.",
+        "zh": "配備",
+        "example_en": "The lab is equipped with modern tools.",
+        "example_zh": "實驗室配備現代工具。"
+      },
+      {
+        "id": "b4l2-p031",
+        "phrase": "electronic equipment",
+        "pos": "ph.",
+        "zh": "電子設備",
+        "example_en": "Handle electronic equipment carefully.",
+        "example_zh": "小心使用電子設備。"
+      },
+      {
+        "id": "b4l2-p032",
+        "phrase": "multimedia resources",
+        "pos": "ph.",
+        "zh": "多媒體資源",
+        "example_en": "Teachers use multimedia resources in class.",
+        "example_zh": "老師在課堂使用多媒體資源。"
+      },
+      {
+        "id": "b4l2-p033",
+        "phrase": "solar panel",
+        "pos": "ph.",
+        "zh": "太陽能板",
+        "example_en": "The roof has a solar panel.",
+        "example_zh": "屋頂有一塊太陽能板。"
+      },
+      {
+        "id": "b4l2-p034",
+        "phrase": "babysitting service",
+        "pos": "ph.",
+        "zh": "保母服務",
+        "example_en": "The hotel offers a babysitting service.",
+        "example_zh": "飯店提供保母服務。"
+      },
+      {
+        "id": "b4l2-p035",
+        "phrase": "apologize face to face",
+        "pos": "ph.",
+        "zh": "面對面道歉",
+        "example_en": "He apologized face to face.",
+        "example_zh": "他面對面道歉。"
+      },
+      {
+        "id": "b4l2-p036",
+        "phrase": "counter surveillance device",
+        "pos": "ph.",
+        "zh": "反監視裝置",
+        "example_en": "The team used a counter surveillance device.",
+        "example_zh": "團隊使用反監視裝置。"
+      },
+      {
+        "id": "b4l2-p037",
+        "phrase": "long-lasting battery",
+        "pos": "ph.",
+        "zh": "持久電池",
+        "example_en": "This phone has a long-lasting battery.",
+        "example_zh": "這支手機有持久電池。"
+      },
+      {
+        "id": "b4l2-p038",
+        "phrase": "document on the cloud drive",
+        "pos": "ph.",
+        "zh": "雲端硬碟上的文件",
+        "example_en": "I saved the document on the cloud drive.",
+        "example_zh": "我把文件存到雲端硬碟。"
+      },
+      {
+        "id": "b4l2-p039",
+        "phrase": "devastating tsunami",
+        "pos": "ph.",
+        "zh": "毀滅性的海嘯",
+        "example_en": "A devastating tsunami struck the coast.",
+        "example_zh": "毀滅性的海嘯襲擊海岸。"
+      },
+      {
+        "id": "b4l2-p040",
+        "phrase": "leave sb. injured",
+        "pos": "ph.",
+        "zh": "使某人受傷",
+        "example_en": "The accident left two people injured.",
+        "example_zh": "事故使兩人受傷。"
+      },
+      {
+        "id": "b4l2-p041",
+        "phrase": "hold up to 5000 people",
+        "pos": "ph.",
+        "zh": "容納多達五千人",
+        "example_en": "The hall can hold up to 5000 people.",
+        "example_zh": "大廳可容納多達五千人。"
+      },
+      {
+        "id": "b4l2-p042",
+        "phrase": "cheap accommodation",
+        "pos": "ph.",
+        "zh": "便宜住宿",
+        "example_en": "Students looked for cheap accommodation.",
+        "example_zh": "學生尋找便宜住宿。"
+      },
+      {
+        "id": "b4l2-p043",
+        "phrase": "appeal to",
+        "pos": "ph.",
+        "zh": "吸引；呼籲",
+        "example_en": "The plan appeals to young people.",
+        "example_zh": "這項計畫吸引年輕人。"
+      },
+      {
+        "id": "b4l2-p044",
+        "phrase": "make a reservation",
+        "pos": "ph.",
+        "zh": "預約",
+        "example_en": "We made a reservation at the restaurant.",
+        "example_zh": "我們在餐廳預約了座位。"
+      },
+      {
+        "id": "b4l2-p045",
+        "phrase": "luxuriously decorated",
+        "pos": "ph.",
+        "zh": "豪華裝飾的",
+        "example_en": "The room was luxuriously decorated.",
+        "example_zh": "房間裝飾得很豪華。"
+      },
+      {
+        "id": "b4l2-p046",
+        "phrase": "historical site",
+        "pos": "ph.",
+        "zh": "歷史遺址",
+        "example_en": "We visited a historical site.",
+        "example_zh": "我們參觀歷史遺址。"
+      },
+      {
+        "id": "b4l2-p047",
+        "phrase": "browse a travel website",
+        "pos": "ph.",
+        "zh": "瀏覽旅遊網站",
+        "example_en": "She browsed a travel website.",
+        "example_zh": "她瀏覽旅遊網站。"
+      },
+      {
+        "id": "b4l2-p048",
+        "phrase": "be captivated by",
+        "pos": "ph.",
+        "zh": "被……迷住",
+        "example_en": "Visitors were captivated by the view.",
+        "example_zh": "遊客被景色迷住。"
+      },
+      {
+        "id": "b4l2-p049",
+        "phrase": "create a mysterious atmosphere",
+        "pos": "ph.",
+        "zh": "營造神秘氣氛",
+        "example_en": "The lights created a mysterious atmosphere.",
+        "example_zh": "燈光營造神秘氣氛。"
+      },
+      {
+        "id": "b4l2-p050",
+        "phrase": "aside from",
+        "pos": "ph.",
+        "zh": "除了……之外",
+        "example_en": "Aside from rain, the trip was great.",
+        "example_zh": "除了下雨之外，旅程很棒。"
+      },
+      {
+        "id": "b4l2-p051",
+        "phrase": "a learning session",
+        "pos": "ph.",
+        "zh": "學習時段",
+        "example_en": "We held a learning session online.",
+        "example_zh": "我們在線上舉行學習時段。"
+      },
+      {
+        "id": "b4l2-p052",
+        "phrase": "keep abreast of",
+        "pos": "ph.",
+        "zh": "跟上；掌握最新資訊",
+        "example_en": "Keep abreast of the latest news.",
+        "example_zh": "掌握最新消息。"
+      },
+      {
+        "id": "b4l2-p053",
+        "phrase": "have a crush on",
+        "pos": "ph.",
+        "zh": "迷戀；暗戀",
+        "example_en": "She has a crush on her classmate.",
+        "example_zh": "她暗戀同學。"
+      },
+      {
+        "id": "b4l2-p054",
+        "phrase": "confess to sb",
+        "pos": "ph.",
+        "zh": "向某人坦白",
+        "example_en": "He confessed to his friend.",
+        "example_zh": "他向朋友坦白。"
+      },
+      {
+        "id": "b4l2-p055",
+        "phrase": "pluck up the courage",
+        "pos": "ph.",
+        "zh": "鼓起勇氣",
+        "example_en": "She plucked up the courage to speak.",
+        "example_zh": "她鼓起勇氣發言。"
+      },
+      {
+        "id": "b4l2-p056",
+        "phrase": "practical issue",
+        "pos": "ph.",
+        "zh": "實際問題",
+        "example_en": "Cost is a practical issue.",
+        "example_zh": "成本是實際問題。"
+      },
+      {
+        "id": "b4l2-p057",
+        "phrase": "flood-resistant crop",
+        "pos": "ph.",
+        "zh": "抗洪作物",
+        "example_en": "Scientists developed a flood-resistant crop.",
+        "example_zh": "科學家培育抗洪作物。"
+      },
+      {
+        "id": "b4l2-p058",
+        "phrase": "increase productivity",
+        "pos": "ph.",
+        "zh": "提高生產力",
+        "example_en": "New tools increase productivity.",
+        "example_zh": "新工具提高生產力。"
+      },
+      {
+        "id": "b4l2-p059",
+        "phrase": "so as to",
+        "pos": "ph.",
+        "zh": "以便",
+        "example_en": "We left early so as to arrive on time.",
+        "example_zh": "我們提早離開以便準時到達。"
+      },
+      {
+        "id": "b4l2-p060",
+        "phrase": "year-round income",
+        "pos": "ph.",
+        "zh": "全年收入",
+        "example_en": "Tourism provides year-round income.",
+        "example_zh": "觀光提供全年收入。"
+      },
+      {
+        "id": "b4l2-p061",
+        "phrase": "financial management",
+        "pos": "ph.",
+        "zh": "財務管理",
+        "example_en": "Good financial management prevents debt.",
+        "example_zh": "良好財務管理能避免負債。"
+      },
+      {
+        "id": "b4l2-p062",
+        "phrase": "at risk of",
+        "pos": "ph.",
+        "zh": "有……的危險",
+        "example_en": "The village is at risk of flooding.",
+        "example_zh": "村莊有淹水危險。"
+      },
+      {
+        "id": "b4l2-p063",
+        "phrase": "rise above",
+        "pos": "ph.",
+        "zh": "克服；超越",
+        "example_en": "She rose above her difficulties.",
+        "example_zh": "她克服困難。"
+      },
+      {
+        "id": "b4l2-p064",
+        "phrase": "overcome geographical barriers",
+        "pos": "ph.",
+        "zh": "克服地理障礙",
+        "example_en": "Technology helps overcome geographical barriers.",
+        "example_zh": "科技幫助克服地理障礙。"
+      },
+      {
+        "id": "b4l2-p065",
+        "phrase": "take it for granted",
+        "pos": "ph.",
+        "zh": "視……為理所當然",
+        "example_en": "Do not take clean water for granted.",
+        "example_zh": "不要把乾淨的水視為理所當然。"
+      },
+      {
+        "id": "b4l2-p066",
+        "phrase": "earthquake victim",
+        "pos": "ph.",
+        "zh": "地震受害者",
+        "example_en": "Aid reached every earthquake victim.",
+        "example_zh": "援助送達每位地震受害者。"
+      },
+      {
+        "id": "b4l2-p067",
+        "phrase": "a nightmare befall",
+        "pos": "ph.",
+        "zh": "噩夢降臨",
+        "example_en": "A terrible nightmare befell the town.",
+        "example_zh": "可怕的噩夢降臨城鎮。"
+      },
+      {
+        "id": "b4l2-p068",
+        "phrase": "in response to",
+        "pos": "ph.",
+        "zh": "回應……",
+        "example_en": "The city acted in response to the warning.",
+        "example_zh": "城市回應警告採取行動。"
+      },
+      {
+        "id": "b4l2-p069",
+        "phrase": "express condolences",
+        "pos": "ph.",
+        "zh": "表達慰問",
+        "example_en": "Leaders expressed condolences to the families.",
+        "example_zh": "領袖向家屬表達慰問。"
+      },
+      {
+        "id": "b4l2-p070",
+        "phrase": "pledge a donation of",
+        "pos": "ph.",
+        "zh": "承諾捐贈……",
+        "example_en": "The company pledged a donation of $10,000.",
+        "example_zh": "公司承諾捐贈一萬美元。"
+      },
+      {
+        "id": "b4l2-p071",
+        "phrase": "pass the entrance exam for college",
+        "pos": "ph.",
+        "zh": "通過大學入學考試",
+        "example_en": "She passed the entrance exam for college.",
+        "example_zh": "她通過大學入學考試。"
+      },
+      {
+        "id": "b4l2-p072",
+        "phrase": "persistence being the key to success",
+        "pos": "ph.",
+        "zh": "堅持是成功的關鍵",
+        "example_en": "He believes persistence is the key to success.",
+        "example_zh": "他相信堅持是成功的關鍵。"
+      },
+      {
+        "id": "b4l2-p073",
+        "phrase": "pouring rain",
+        "pos": "ph.",
+        "zh": "傾盆大雨",
+        "example_en": "We walked home in the pouring rain.",
+        "example_zh": "我們在傾盆大雨中走回家。"
+      },
+      {
+        "id": "b4l2-p074",
+        "phrase": "issue flood warnings",
+        "pos": "ph.",
+        "zh": "發布洪水警報",
+        "example_en": "Authorities issued flood warnings.",
+        "example_zh": "當局發布洪水警報。"
+      },
+      {
+        "id": "b4l2-p075",
+        "phrase": "low-lying area",
+        "pos": "ph.",
+        "zh": "低窪地區",
+        "example_en": "People in low-lying areas evacuated.",
+        "example_zh": "低窪地區的人撤離。"
+      },
+      {
+        "id": "b4l2-p076",
+        "phrase": "flood of",
+        "pos": "ph.",
+        "zh": "大量；洪水般的……",
+        "example_en": "A flood of calls followed the news.",
+        "example_zh": "消息後湧入大量電話。"
+      },
+      {
+        "id": "b4l2-p077",
+        "phrase": "be appropriate for",
+        "pos": "ph.",
+        "zh": "適合於",
+        "example_en": "This activity is appropriate for children.",
+        "example_zh": "這活動適合兒童。"
+      },
+      {
+        "id": "b4l2-p078",
+        "phrase": "contain violence",
+        "pos": "ph.",
+        "zh": "含有暴力內容",
+        "example_en": "The movie contains violence.",
+        "example_zh": "這部電影含有暴力內容。"
+      },
+      {
+        "id": "b4l2-p079",
+        "phrase": "promising business",
+        "pos": "ph.",
+        "zh": "有前景的企業",
+        "example_en": "They started a promising business.",
+        "example_zh": "他們創立有前景的企業。"
+      },
+      {
+        "id": "b4l2-p080",
+        "phrase": "the solar system",
+        "pos": "ph.",
+        "zh": "太陽系",
+        "example_en": "Earth is part of the solar system.",
+        "example_zh": "地球是太陽系的一部分。"
+      },
+      {
+        "id": "b4l2-p081",
+        "phrase": "solar energy",
+        "pos": "ph.",
+        "zh": "太陽能",
+        "example_en": "Solar energy is clean.",
+        "example_zh": "太陽能很乾淨。"
+      },
+      {
+        "id": "b4l2-p082",
+        "phrase": "solar eclipse",
+        "pos": "ph.",
+        "zh": "日食",
+        "example_en": "We watched a solar eclipse.",
+        "example_zh": "我們觀看日食。"
+      },
+      {
+        "id": "b4l2-p083",
+        "phrase": "panel of experts",
+        "pos": "ph.",
+        "zh": "專家小組",
+        "example_en": "A panel of experts reviewed the plan.",
+        "example_zh": "專家小組審查計畫。"
+      },
+      {
+        "id": "b4l2-p084",
+        "phrase": "install an anti-virus program",
+        "pos": "ph.",
+        "zh": "安裝防毒程式",
+        "example_en": "Install an anti-virus program first.",
+        "example_zh": "先安裝防毒程式。"
+      },
+      {
+        "id": "b4l2-p085",
+        "phrase": "be caked with mud",
+        "pos": "ph.",
+        "zh": "沾滿泥巴",
+        "example_en": "His shoes were caked with mud.",
+        "example_zh": "他的鞋子沾滿泥巴。"
+      },
+      {
+        "id": "b4l2-p086",
+        "phrase": "training session",
+        "pos": "ph.",
+        "zh": "訓練課程",
+        "example_en": "The team attended a training session.",
+        "example_zh": "團隊參加訓練課程。"
+      },
+      {
+        "id": "b4l2-p087",
+        "phrase": "project A onto B",
+        "pos": "ph.",
+        "zh": "把 A 投射到 B 上",
+        "example_en": "The projector projected the image onto the wall.",
+        "example_zh": "投影機把影像投射到牆上。"
+      },
+      {
+        "id": "b4l2-p088",
+        "phrase": "in practical terms",
+        "pos": "ph.",
+        "zh": "就實際而言",
+        "example_en": "In practical terms, the plan saves money.",
+        "example_zh": "就實際而言，這計畫省錢。"
+      },
+      {
+        "id": "b4l2-p089",
+        "phrase": "address some environmental issues",
+        "pos": "ph.",
+        "zh": "處理一些環境問題",
+        "example_en": "The project addresses some environmental issues.",
+        "example_zh": "這計畫處理一些環境問題。"
+      },
+      {
+        "id": "b4l2-p090",
+        "phrase": "wildlife protection",
+        "pos": "ph.",
+        "zh": "野生動物保護",
+        "example_en": "Wildlife protection needs public support.",
+        "example_zh": "野生動物保護需要大眾支持。"
+      },
+      {
+        "id": "b4l2-p091",
+        "phrase": "issue a statement",
+        "pos": "ph.",
+        "zh": "發布聲明",
+        "example_en": "The company issued a statement.",
+        "example_zh": "公司發布聲明。"
+      },
+      {
+        "id": "b4l2-p092",
+        "phrase": "give a refund",
+        "pos": "ph.",
+        "zh": "退款",
+        "example_en": "The store gave me a refund.",
+        "example_zh": "商店退錢給我。"
+      },
+      {
+        "id": "b4l2-p093",
+        "phrase": "poor nutrition",
+        "pos": "ph.",
+        "zh": "營養不良",
+        "example_en": "Poor nutrition harms children.",
+        "example_zh": "營養不良傷害兒童。"
+      },
+      {
+        "id": "b4l2-p094",
+        "phrase": "consist of",
+        "pos": "ph.",
+        "zh": "由……組成",
+        "example_en": "The team consists of five members.",
+        "example_zh": "團隊由五名成員組成。"
+      },
+      {
+        "id": "b4l2-p095",
+        "phrase": "maintain good personal hygiene",
+        "pos": "ph.",
+        "zh": "維持良好個人衛生",
+        "example_en": "Wash your hands to maintain good personal hygiene.",
+        "example_zh": "洗手以維持良好個人衛生。"
+      },
+      {
+        "id": "b4l2-p096",
+        "phrase": "be resistant to disease",
+        "pos": "ph.",
+        "zh": "對疾病有抵抗力",
+        "example_en": "This plant is resistant to disease.",
+        "example_zh": "這種植物對疾病有抵抗力。"
+      },
+      {
+        "id": "b4l2-p097",
+        "phrase": "be resistant to change",
+        "pos": "ph.",
+        "zh": "抗拒改變",
+        "example_en": "Some people are resistant to change.",
+        "example_zh": "有些人抗拒改變。"
+      },
+      {
+        "id": "b4l2-p098",
+        "phrase": "come to one’s rescue",
+        "pos": "ph.",
+        "zh": "來救某人",
+        "example_en": "A lifeguard came to his rescue.",
+        "example_zh": "救生員來救他。"
+      },
+      {
+        "id": "b4l2-p099",
+        "phrase": "resistance to the new attendance rule",
+        "pos": "ph.",
+        "zh": "對新出勤規定的抗拒",
+        "example_en": "There was resistance to the new attendance rule.",
+        "example_zh": "大家抗拒新的出勤規定。"
+      },
+      {
+        "id": "b4l2-p100",
+        "phrase": "increase productivity",
+        "pos": "ph.",
+        "zh": "提高生產力",
+        "example_en": "Training can increase productivity.",
+        "example_zh": "訓練可以提高生產力。"
+      },
+      {
+        "id": "b4l2-p101",
+        "phrase": "be sufficient to VR",
+        "pos": "ph.",
+        "zh": "足以做……",
+        "example_en": "The money is sufficient to cover the cost.",
+        "example_zh": "這筆錢足以支付費用。"
+      },
+      {
+        "id": "b4l2-p102",
+        "phrase": "cover all of one’s living expenses",
+        "pos": "ph.",
+        "zh": "支付某人的全部生活費",
+        "example_en": "The salary covers all of her living expenses.",
+        "example_zh": "薪水支付她全部生活費。"
+      },
+      {
+        "id": "b4l2-p103",
+        "phrase": "source of income",
+        "pos": "ph.",
+        "zh": "收入來源",
+        "example_en": "Farming is their main source of income.",
+        "example_zh": "務農是他們主要收入來源。"
+      },
+      {
+        "id": "b4l2-p104",
+        "phrase": "government housing",
+        "pos": "ph.",
+        "zh": "政府住宅",
+        "example_en": "The family applied for government housing.",
+        "example_zh": "這家人申請政府住宅。"
+      },
+      {
+        "id": "b4l2-p105",
+        "phrase": "people on low incomes",
+        "pos": "ph.",
+        "zh": "低收入者",
+        "example_en": "The program helps people on low incomes.",
+        "example_zh": "計畫幫助低收入者。"
+      },
+      {
+        "id": "b4l2-p106",
+        "phrase": "dual-income family",
+        "pos": "ph.",
+        "zh": "雙薪家庭",
+        "example_en": "A dual-income family may save more.",
+        "example_zh": "雙薪家庭可能存更多錢。"
+      },
+      {
+        "id": "b4l2-p107",
+        "phrase": "run into financial difficulties",
+        "pos": "ph.",
+        "zh": "陷入財務困難",
+        "example_en": "The company ran into financial difficulties.",
+        "example_zh": "公司陷入財務困難。"
+      },
+      {
+        "id": "b4l2-p108",
+        "phrase": "finance department",
+        "pos": "ph.",
+        "zh": "財務部門",
+        "example_en": "Contact the finance department.",
+        "example_zh": "聯絡財務部門。"
+      },
+      {
+        "id": "b4l2-p109",
+        "phrase": "at high risk of",
+        "pos": "ph.",
+        "zh": "有高度……風險",
+        "example_en": "Smokers are at high risk of disease.",
+        "example_zh": "吸菸者有高度疾病風險。"
+      },
+      {
+        "id": "b4l2-p110",
+        "phrase": "be a risk to",
+        "pos": "ph.",
+        "zh": "對……構成風險",
+        "example_en": "Pollution is a risk to public health.",
+        "example_zh": "污染對公共衛生構成風險。"
+      },
+      {
+        "id": "b4l2-p111",
+        "phrase": "run the risk of doing sth.",
+        "pos": "ph.",
+        "zh": "冒險做某事",
+        "example_en": "Do not run the risk of losing data.",
+        "example_zh": "不要冒險遺失資料。"
+      },
+      {
+        "id": "b4l2-p112",
+        "phrase": "risk one’s life to",
+        "pos": "ph.",
+        "zh": "冒生命危險去……",
+        "example_en": "He risked his life to save a child.",
+        "example_zh": "他冒生命危險救孩子。"
+      },
+      {
+        "id": "b4l2-p113",
+        "phrase": "geographical feature",
+        "pos": "ph.",
+        "zh": "地理特徵",
+        "example_en": "The mountain is a major geographical feature.",
+        "example_zh": "這座山是主要地理特徵。"
+      },
+      {
+        "id": "b4l2-p114",
+        "phrase": "a barrier to sth.",
+        "pos": "ph.",
+        "zh": "……的障礙",
+        "example_en": "Cost is a barrier to education.",
+        "example_zh": "成本是教育的障礙。"
+      },
+      {
+        "id": "b4l2-p115",
+        "phrase": "barrier between A and B",
+        "pos": "ph.",
+        "zh": "A 與 B 之間的障礙",
+        "example_en": "Language can be a barrier between people.",
+        "example_zh": "語言可能是人與人之間的障礙。"
+      },
+      {
+        "id": "b4l2-p116",
+        "phrase": "take some pressure off",
+        "pos": "ph.",
+        "zh": "減輕一些壓力",
+        "example_en": "A short break can take some pressure off.",
+        "example_zh": "短暫休息可以減輕壓力。"
+      },
+      {
+        "id": "b4l2-p117",
+        "phrase": "be severe with sb.",
+        "pos": "ph.",
+        "zh": "對某人嚴厲",
+        "example_en": "The coach is severe with lazy players.",
+        "example_zh": "教練對懶惰球員很嚴厲。"
+      },
+      {
+        "id": "b4l2-p118",
+        "phrase": "take the problem seriously",
+        "pos": "ph.",
+        "zh": "認真看待問題",
+        "example_en": "We must take the problem seriously.",
+        "example_zh": "我們必須認真看待問題。"
+      },
+      {
+        "id": "b4l2-p119",
+        "phrase": "a key issue facing human beings",
+        "pos": "ph.",
+        "zh": "人類面臨的關鍵議題",
+        "example_en": "Climate change is a key issue facing human beings.",
+        "example_zh": "氣候變遷是人類面臨的關鍵議題。"
+      },
+      {
+        "id": "b4l2-p120",
+        "phrase": "public hygiene",
+        "pos": "ph.",
+        "zh": "公共衛生",
+        "example_en": "Public hygiene protects everyone.",
+        "example_zh": "公共衛生保護每個人。"
+      },
+      {
+        "id": "b4l2-p121",
+        "phrase": "far from sufficient",
+        "pos": "ph.",
+        "zh": "遠遠不足",
+        "example_en": "The supply is far from sufficient.",
+        "example_zh": "供應遠遠不足。"
+      },
+      {
+        "id": "b4l2-p122",
+        "phrase": "sustainable energy source",
+        "pos": "ph.",
+        "zh": "永續能源來源",
+        "example_en": "Wind is a sustainable energy source.",
+        "example_zh": "風力是永續能源來源。"
+      },
+      {
+        "id": "b4l2-p123",
+        "phrase": "environmentally friendly",
+        "pos": "ph.",
+        "zh": "環境友善的",
+        "example_en": "Solar power is environmentally friendly.",
+        "example_zh": "太陽能環境友善。"
+      },
+      {
+        "id": "b4l2-p124",
+        "phrase": "economically beneficial.",
+        "pos": "ph.",
+        "zh": "經濟上有益的",
+        "example_en": "The project is economically beneficial.",
+        "example_zh": "這項計畫在經濟上有益。"
+      },
+      {
+        "id": "b4l2-p125",
+        "phrase": "a long and bitter strike",
+        "pos": "ph.",
+        "zh": "漫長而激烈的罷工",
+        "example_en": "Workers ended a long and bitter strike.",
+        "example_zh": "工人結束漫長而激烈的罷工。"
+      },
+      {
+        "id": "b4l2-p126",
+        "phrase": "have a huge impact on",
+        "pos": "ph.",
+        "zh": "對……有巨大影響",
+        "example_en": "The storm had a huge impact on farming.",
+        "example_zh": "暴風雨對農業有巨大影響。"
+      },
+      {
+        "id": "b4l2-p127",
+        "phrase": "use foul language",
+        "pos": "ph.",
+        "zh": "使用粗俗語言",
+        "example_en": "Do not use foul language.",
+        "example_zh": "不要使用粗俗語言。"
+      },
+      {
+        "id": "b4l2-p128",
+        "phrase": "set an example for",
+        "pos": "ph.",
+        "zh": "為……樹立榜樣",
+        "example_en": "Parents should set an example for children.",
+        "example_zh": "父母應為孩子樹立榜樣。"
+      },
+      {
+        "id": "b4l2-p129",
+        "phrase": "get an autograph from the celebrity",
+        "pos": "ph.",
+        "zh": "取得名人的簽名",
+        "example_en": "She got an autograph from the celebrity.",
+        "example_zh": "她取得名人的簽名。"
+      },
+      {
+        "id": "b4l2-p130",
+        "phrase": "award-winning film",
+        "pos": "ph.",
+        "zh": "得獎電影",
+        "example_en": "We watched an award-winning film.",
+        "example_zh": "我們觀看得獎電影。"
+      },
+      {
+        "id": "b4l2-p131",
+        "phrase": "a box-office hit",
+        "pos": "ph.",
+        "zh": "票房大賣",
+        "example_en": "The movie became a box-office hit.",
+        "example_zh": "這部電影成為票房大賣。"
+      },
+      {
+        "id": "b4l2-p132",
+        "phrase": "marriage counselor",
+        "pos": "ph.",
+        "zh": "婚姻諮商師",
+        "example_en": "They visited a marriage counselor.",
+        "example_zh": "他們拜訪婚姻諮商師。"
+      },
+      {
+        "id": "b4l2-p133",
+        "phrase": "empty words",
+        "pos": "ph.",
+        "zh": "空話",
+        "example_en": "Promises are empty words without action.",
+        "example_zh": "沒有行動的承諾只是空話。"
+      },
+      {
+        "id": "b4l2-p134",
+        "phrase": "put sb on a different medication",
+        "pos": "ph.",
+        "zh": "讓某人改用另一種藥物",
+        "example_en": "The doctor put her on a different medication.",
+        "example_zh": "醫生讓她改用另一種藥物。"
+      },
+      {
+        "id": "b4l2-p135",
+        "phrase": "make waves",
+        "pos": "ph.",
+        "zh": "造成轟動；掀起波瀾",
+        "example_en": "The new policy made waves.",
+        "example_zh": "新政策造成轟動。"
+      },
+      {
+        "id": "b4l2-p136",
+        "phrase": "rise above the pain of",
+        "pos": "ph.",
+        "zh": "超越……的痛苦",
+        "example_en": "She rose above the pain of loss.",
+        "example_zh": "她超越失去的痛苦。"
+      },
+      {
+        "id": "b4l2-p137",
+        "phrase": "sacrifice one’s health for wealth",
+        "pos": "ph.",
+        "zh": "為財富犧牲健康",
+        "example_en": "He sacrificed his health for wealth.",
+        "example_zh": "他為財富犧牲健康。"
+      },
+      {
+        "id": "b4l2-p138",
+        "phrase": "rise above geographical barriers",
+        "pos": "ph.",
+        "zh": "超越地理障礙",
+        "example_en": "Online learning rises above geographical barriers.",
+        "example_zh": "線上學習超越地理障礙。"
+      },
+      {
+        "id": "b4l2-p139",
+        "phrase": "hygiene facilities",
+        "pos": "ph.",
+        "zh": "衛生設施",
+        "example_en": "The camp lacks hygiene facilities.",
+        "example_zh": "營地缺乏衛生設施。"
+      },
+      {
+        "id": "b4l2-p140",
+        "phrase": "suffer from cholera",
+        "pos": "ph.",
+        "zh": "患霍亂",
+        "example_en": "Some villagers suffered from cholera.",
+        "example_zh": "一些村民患霍亂。"
+      },
+      {
+        "id": "b4l2-p141",
+        "phrase": "install solar panels",
+        "pos": "ph.",
+        "zh": "安裝太陽能板",
+        "example_en": "They installed solar panels on the roof.",
+        "example_zh": "他們在屋頂安裝太陽能板。"
+      },
+      {
+        "id": "b4l2-p142",
+        "phrase": "weather forecasting model",
+        "pos": "ph.",
+        "zh": "天氣預報模型",
+        "example_en": "The new weather forecasting model is accurate.",
+        "example_zh": "新的天氣預報模型很準確。"
+      },
+      {
+        "id": "b4l2-p143",
+        "phrase": "make reliable predictions",
+        "pos": "ph.",
+        "zh": "做出可靠預測",
+        "example_en": "Scientists can make reliable predictions.",
+        "example_zh": "科學家能做出可靠預測。"
+      }
+    ]
+  },
+  "grammar": {
+    "points": [
+      {
+        "id": "b4l2-g1",
+        "title": "If + S + V-ed/were…, S + would/could/might/should + VR…. 於現在事實相反的假設語氣，用於表達與現在事實不符或難以實現的情況。",
+        "examples": [
+          "If Jenny were a bird, she would/could fly in the sky.",
+          "If the clerk were friendly, he wouldn’t argue with customers.",
+          "If Leonard drove more carefully, he would not get traffic tickets so often."
+        ]
+      },
+      {
+        "id": "b4l2-g2",
+        "title": "It: dummy subject/ dummy object 虛主詞/虛受詞",
+        "examples": [
+          "It is customary for the Taiwanese to have a reunion dinner with their family on Chinese New Year’s Eve.",
+          "It is a common sight for people to have a barbecue around the Mid-Autumn Festival in Taiwan.",
+          "Mrs. Lai finds it a great challenge to take care of three children.",
+          "Parents think it horrible that campus bullying is getting more and more serious."
+        ]
+      }
+    ],
+    "sentence_structures": {
+      "items": [
+        {
+          "id": "b4l2-s001",
+          "sentence": "Bangladesh, a country in South Asia, *suffers from* terrible monsoons every year.",
+          "type": "simple",
+          "pattern": "S + Appositive + Vi (Phrasal verb) + O + Adverbial phrase"
+        },
+        {
+          "id": "b4l2-s002",
+          "sentence": "Around one third of the country *is flooded* during the rainy season.",
+          "type": "simple",
+          "pattern": "S + Passive verb phrase + Prepositional phrase"
+        },
+        {
+          "id": "b4l2-s003",
+          "sentence": "These major floods *cause* roads to get blocked and thousands of schools to shut their doors for months at a time.",
+          "type": "simple",
+          "pattern": "S + Vt + O + Infinitival phrase + and + O + Infinitival phrase"
+        },
+        {
+          "id": "b4l2-s004",
+          "sentence": "As a result, many children *are often denied* access to proper schooling.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Passive verb phrase + O"
+        },
+        {
+          "id": "b4l2-s005",
+          "sentence": "Fortunately, an innovative architect named Mohammed Rezwan *has come up with* an appropriate and promising solution: boat schools!",
+          "type": "simple",
+          "pattern": "Adverb + S + Participial phrase + Vt (Phrasal verb) + O + Appositive"
+        },
+        {
+          "id": "b4l2-s006",
+          "sentence": "The boat school program *was launched* in 2002 by Rezwan.",
+          "type": "simple",
+          "pattern": "S + Passive verb phrase + Prepositional phrases"
+        },
+        {
+          "id": "b4l2-s007",
+          "sentence": "Its goal *was* to provide elementary school children in Bangladesh with education throughout the year.",
+          "type": "simple",
+          "pattern": "S + Vl + Infinitival phrase (C)"
+        },
+        {
+          "id": "b4l2-s008",
+          "sentence": "The design of the boats *is based on* that of traditional local wooden boats called noka.",
+          "type": "simple",
+          "pattern": "S + Passive phrasal verb + O + Participial phrase"
+        },
+        {
+          "id": "b4l2-s009",
+          "sentence": "Each boat *is* about fifteen meters long and three meters wide.",
+          "type": "simple",
+          "pattern": "S + Vl + Compound C"
+        },
+        {
+          "id": "b4l2-s010",
+          "sentence": "On top of the boat *is* a weatherproof roof held up by arched metal beams.",
+          "type": "simple",
+          "pattern": "Inverted prepositional phrase + Vi + S + Participial phrase"
+        },
+        {
+          "id": "b4l2-s011",
+          "sentence": "If the roof were not built with such strong materials, the boat *would be damaged* by heavy monsoon rains.",
+          "type": "complex",
+          "pattern": "Adverbial clause (If...) + S + Passive modal verb phrase + Prepositional phrase"
+        },
+        {
+          "id": "b4l2-s012",
+          "sentence": "Inside, the boat school *looks* just like a regular school.",
+          "type": "simple",
+          "pattern": "Adverb + S + Vl + C"
+        },
+        {
+          "id": "b4l2-s013",
+          "sentence": "It's *equipped with* tables, chairs, a blackboard, electronic equipment, and multimedia resources, including a computer connected to the Internet.",
+          "type": "simple",
+          "pattern": "S + Passive phrasal verb + Compound O + Participial phrases"
+        },
+        {
+          "id": "b4l2-s014",
+          "sentence": "All the power needed on the boat *is supplied* by solar panels installed on the roof.",
+          "type": "simple",
+          "pattern": "S + Participial phrase + Passive verb phrase + Prepositional phrase + Participial phrase"
+        },
+        {
+          "id": "b4l2-s015",
+          "sentence": "Each boat school *can accommodate* as many as thirty students and *provide* basic education up to the fourth grade.",
+          "type": "simple",
+          "pattern": "S + Compound modal verb phrase + Compound O + Prepositional phrase"
+        },
+        {
+          "id": "b4l2-s016",
+          "sentence": "Every morning, six days a week, students *wait* at the docks near their muddy villages for the boat schools to sail by and pick them up.",
+          "type": "simple",
+          "pattern": "Adverbial phrases + S + Vi + Prepositional phrase + Infinitival phrase"
+        },
+        {
+          "id": "b4l2-s017",
+          "sentence": "Aside from traditional subjects, students also *study* environmental topics like biodiversity and water pollution.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Adverb + Vt + O"
+        },
+        {
+          "id": "b4l2-s018",
+          "sentence": "Each learning session *lasts* three hours.",
+          "type": "simple",
+          "pattern": "S + Vt + O"
+        },
+        {
+          "id": "b4l2-s019",
+          "sentence": "When the session is over, each boat *takes* the students back to their village and then *sails on* to the next village to pick up another thirty students for another session.",
+          "type": "complex",
+          "pattern": "Adverbial clause (When...) + S + Compound verb phrase + O + Infinitival phrase"
+        },
+        {
+          "id": "b4l2-s020",
+          "sentence": "After school, many students *receive* low-cost solar lanterns that enable them to study at night.",
+          "type": "complex",
+          "pattern": "Prepositional phrase + S + Vt + O + Relative clause (that...)"
+        },
+        {
+          "id": "b4l2-s021",
+          "sentence": "Also, in the evenings, the boat schools *project* educational films onto large sailcloth, which allows nearby villagers to watch from the open areas outside their homes.",
+          "type": "complex",
+          "pattern": "Adverbial phrases + S + Vt + O + Relative clause (which...)"
+        },
+        {
+          "id": "b4l2-s022",
+          "sentence": "The floating classrooms *benefit* not only children but also adults.",
+          "type": "simple",
+          "pattern": "S + Vt + Correlative compound O"
+        },
+        {
+          "id": "b4l2-s023",
+          "sentence": "They *offer* on-board training in practical issues like nutrition, health and hygiene, and human rights.",
+          "type": "simple",
+          "pattern": "S + Vt + O + Prepositional phrase"
+        },
+        {
+          "id": "b4l2-s024",
+          "sentence": "Boat schools also *teach* adults various farming techniques, such as growing flood-resistant crops.",
+          "type": "simple",
+          "pattern": "S + Adverb + Vt + IO + DO + Exemplifying phrase"
+        },
+        {
+          "id": "b4l2-s025",
+          "sentence": "Such training *makes* it possible for the villagers to increase productivity so as to ensure sufficient food and year-round income.",
+          "type": "simple",
+          "pattern": "S + Vt + O + C + Infinitival phrases"
+        },
+        {
+          "id": "b4l2-s026",
+          "sentence": "The boat schools even *offer* lessons on financial management so that people may better manage their money.",
+          "type": "complex",
+          "pattern": "S + Adverb + Vt + O + Adverbial clause (so that...)"
+        },
+        {
+          "id": "b4l2-s027",
+          "sentence": "The boat school concept *has now been adopted* by other countries at risk of flooding, including Cambodia, Nigeria, and the Philippines.",
+          "type": "simple",
+          "pattern": "S + Passive verb phrase + Prepositional phrase + Participial phrase"
+        },
+        {
+          "id": "b4l2-s028",
+          "sentence": "If these countries didn't have such an innovative program, they *would not be able* to rise above flood waters, overcome geographical barriers, and improve their people's lives.",
+          "type": "complex",
+          "pattern": "Adverbial clause (If...) + S + Modal verb phrase + Compound infinitival phrase"
+        },
+        {
+          "id": "b4l2-s029",
+          "sentence": "Indeed, boat classrooms *have created* opportunities for high-quality education for both children and adults.",
+          "type": "simple",
+          "pattern": "Adverb + S + Vt + O + Prepositional phrases"
+        },
+        {
+          "id": "b4l2-s030",
+          "sentence": "By doing so, these schools *have provided* brighter futures for people living in countries that frequently suffer from severe flooding.",
+          "type": "complex",
+          "pattern": "Prepositional gerund phrase + S + Vt + O + Participial phrase + Relative clause (that...)"
+        }
+      ]
+    }
+  },
+  "text_genre": {
+    "raw_text": "Passage Structure Analysis (Problem–Innovative Solution–Multi-Tiered Impact Pattern)\nProblem & Innovative Solution (Para 1): Introduces a severe local problem (monsoon floods shutting down schools in Bangladesh) and presents the innovative solution (Mohammed Rezwan’s boat schools).\nDesign & Features of the Solution (Para 2): Details the physical structure, capacity, and sustainable technology (solar panels, internet-connected computers) of the boat schools.\nOperation & Benefits for Primary Group (Para 3): Explains the daily schedule, curriculum (traditional + environmental topics), and evening resources (solar lanterns, film screenings) for children.\nExpanded Benefits for Secondary Group (Para 4): Shows how the program also empowers adults with practical training (nutrition, flood-resistant farming, financial management).\nGlobal Adoption & Conclusion (Para 5): Highlights the international spread of the concept and summarizes its transformative power in overcoming geographical barriers."
+  }
+}

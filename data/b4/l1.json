@@ -1515,12 +1515,250 @@
     ]
   },
   "grammar": {
-    "points": [],
+    "points": [
+      {
+        "id": "b4l1-g1",
+        "title": "S + suggest/order/recommend/insist/advise/demand that + S (+ should) + VR....「堅持、建議、命令、要求」在 that 引導的子句中,動詞須使用原形動詞或「should +原形動詞」",
+        "examples": [
+          "The police officer ordered that the robber (should) drop his weapon and lie down on the ground.",
+          "The upcoming flu season may be severe, so doctors advise that everyone (should) get a flu shot.",
+          "The doctor recommended that Tony do some weightlifting to strengthen his muscles.",
+          "The chairman proposed that the issue be discussed at the next meeting."
+        ]
+      },
+      {
+        "id": "b4l1-g2",
+        "title": "(As +) adj./adv. + as + S + V, S + V.... 讓步子句的特殊句型：儘管... 句首as可省",
+        "examples": [
+          "(As) tired as he was, he didn’t take a rest.",
+          "(As) hard as I tried, I just couldn’t make her change her mind.",
+          "Fred is a very nice guy. Yet, (as) kind and generous as he is, he isn’t really Jane’s cup of tea.",
+          "(As) rich as he is, he never looks down on the poor."
+        ]
+      }
+    ],
     "sentence_structures": {
-      "items": []
+      "items": [
+        {
+          "id": "b4l1-s001",
+          "sentence": "It *was* a dark autumn night.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b4l1-s002",
+          "sentence": "An old banker *was pacing* back and forth in his study, recalling a party from fifteen years earlier.",
+          "type": "simple",
+          "pattern": "S + Vi + Adverbial phrases + Participial phrase"
+        },
+        {
+          "id": "b4l1-s003",
+          "sentence": "At one point at that party, he and his guests *began debating* which would be the worse fate: the death penalty or life imprisonment.",
+          "type": "complex",
+          "pattern": "Adverbial phrase + Compound S + Vt + Noun clause (which...) + Appositive"
+        },
+        {
+          "id": "b4l1-s004",
+          "sentence": "The banker *believed* that being locked away for life was a much crueler punishment, so he *argued* that he would choose death without hesitation.",
+          "type": "compound-complex",
+          "pattern": "S + Vt + Noun clause (that...) + so + S + Vt + Noun clause (that...)"
+        },
+        {
+          "id": "b4l1-s005",
+          "sentence": "A young lawyer, however, *disagreed*.",
+          "type": "simple",
+          "pattern": "S + Parenthetical adverb + Vi"
+        },
+        {
+          "id": "b4l1-s006",
+          "sentence": "As terrible as life in prison would be, he *would rather live* than die.",
+          "type": "complex",
+          "pattern": "Adverbial clause (As...as...) + S + Modal verb phrase + Comparative infinitive"
+        },
+        {
+          "id": "b4l1-s007",
+          "sentence": "To him, life *was* far too precious to lose under any conditions.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vl + C + Infinitival phrase"
+        },
+        {
+          "id": "b4l1-s008",
+          "sentence": "The debate *grew* more heated, and the banker *proposed* that the lawyer prove his claim.",
+          "type": "compound-complex",
+          "pattern": "S + Vl + C + and + S + Vt + Noun clause (that...)"
+        },
+        {
+          "id": "b4l1-s009",
+          "sentence": "\"I'd *bet* you two million rubles you wouldn't last five years alone in prison!\"",
+          "type": "complex",
+          "pattern": "S + Modal + Vt + IO + DO + Noun clause"
+        },
+        {
+          "id": "b4l1-s010",
+          "sentence": "\"If you're quite serious,\" *said* the young man, \"then I *insist* we make it fifteen!\"",
+          "type": "complex",
+          "pattern": "Adverbial clause (If...) + Reporting clause + S + Vt + Noun clause"
+        },
+        {
+          "id": "b4l1-s011",
+          "sentence": "Thus, an outrageous bet *was made*.",
+          "type": "simple",
+          "pattern": "Adverb + S + Passive verb phrase"
+        },
+        {
+          "id": "b4l1-s012",
+          "sentence": "Locked up in a cabin on the banker's property, the lawyer *began serving* his sentence.",
+          "type": "simple",
+          "pattern": "Participial phrase + S + Vt + O"
+        },
+        {
+          "id": "b4l1-s013",
+          "sentence": "His only contact with the outside world *was* through a small window.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b4l1-s014",
+          "sentence": "He *was* free to request anything he desired, such as wine, tobacco, and musical instruments.",
+          "type": "complex",
+          "pattern": "S + Vl + C + Infinitival phrase + Relative clause + Exemplifying phrase"
+        },
+        {
+          "id": "b4l1-s015",
+          "sentence": "And yet, as comfortable as his life was, he *felt* terribly lonely.",
+          "type": "complex",
+          "pattern": "Connective phrase + Adverbial clause (as...as...) + S + Vl + C"
+        },
+        {
+          "id": "b4l1-s016",
+          "sentence": "As time wore on, the lawyer *realized* that material pleasures could not fill the emptiness in his heart.",
+          "type": "complex",
+          "pattern": "Adverbial clause (As...) + S + Vt + Noun clause (that...)"
+        },
+        {
+          "id": "b4l1-s017",
+          "sentence": "As a result, he *turned away* from entertainment and *searched* deeper for other sources of support and company.",
+          "type": "simple",
+          "pattern": "Adverbial phrase + S + Compound verb phrase + Prepositional phrases"
+        },
+        {
+          "id": "b4l1-s018",
+          "sentence": "Books *became* his companions and his means of mental escape.",
+          "type": "simple",
+          "pattern": "S + Vl + Compound C"
+        },
+        {
+          "id": "b4l1-s019",
+          "sentence": "Then, from the sixth year on, he *showed* a huge appetite for inner growth and self-discipline, devouring everything from history to philosophy around the clock.",
+          "type": "simple",
+          "pattern": "Adverbial phrases + S + Vt + O + Participial phrase"
+        },
+        {
+          "id": "b4l1-s020",
+          "sentence": "In just four years, hundreds of volumes *passed* through the window.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vi + Prepositional phrase"
+        },
+        {
+          "id": "b4l1-s021",
+          "sentence": "The fruits of these labors *were* quite rich.",
+          "type": "simple",
+          "pattern": "S + Vl + C"
+        },
+        {
+          "id": "b4l1-s022",
+          "sentence": "The lawyer *mastered* several languages and *acquired* profound knowledge.",
+          "type": "simple",
+          "pattern": "S + Compound verb phrase + Compound O"
+        },
+        {
+          "id": "b4l1-s023",
+          "sentence": "Such enrichment *had become* invaluable to him—far more fulfilling than any pleasure the banker's money could buy.",
+          "type": "complex",
+          "pattern": "S + Vl + C + Comparative phrase + Relative clause"
+        },
+        {
+          "id": "b4l1-s024",
+          "sentence": "The banker, too, *had changed* greatly over the years.",
+          "type": "simple",
+          "pattern": "S + Parenthetical adverb + Vi + Adverbial phrase"
+        },
+        {
+          "id": "b4l1-s025",
+          "sentence": "Once wealthy and confident, he now *stood* on the brink of ruin.",
+          "type": "simple",
+          "pattern": "Adjectival phrase + S + Adverb + Vi + Prepositional phrase"
+        },
+        {
+          "id": "b4l1-s026",
+          "sentence": "That being so, he could by no means *bear* the thought of the young man enjoying what remained of his life savings.",
+          "type": "complex",
+          "pattern": "Absolute phrase + S + Modal verb phrase + O + Gerund phrase + Noun clause (what...)"
+        },
+        {
+          "id": "b4l1-s027",
+          "sentence": "A horrible thought *crossed* his mind: he *wanted* to murder the lawyer.",
+          "type": "compound",
+          "pattern": "S + Vt + O + Colon + S + Vt + Infinitival phrase"
+        },
+        {
+          "id": "b4l1-s028",
+          "sentence": "On the night before the lawyer's release, the banker *stole into* the cabin and *found* the lawyer asleep at the table.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Compound verb phrase + O + C"
+        },
+        {
+          "id": "b4l1-s029",
+          "sentence": "Lying on the table *was* a handwritten letter addressed to him.",
+          "type": "simple",
+          "pattern": "Inverted participial phrase + Vi + S + Participial phrase"
+        },
+        {
+          "id": "b4l1-s030",
+          "sentence": "In it, the lawyer *revealed* his disgust with worldly riches.",
+          "type": "simple",
+          "pattern": "Prepositional phrase + S + Vt + O"
+        },
+        {
+          "id": "b4l1-s031",
+          "sentence": "He *had come* to see how vain all these mortal pursuits were and *hated* the foolish banker for worshipping them.",
+          "type": "complex",
+          "pattern": "S + Compound verb phrase + Noun clause (how...) + O + Prepositional gerund phrase"
+        },
+        {
+          "id": "b4l1-s032",
+          "sentence": "Finally, he *made* clear his intention to abandon the bet and surrender his claim to the banker's wealth.",
+          "type": "simple",
+          "pattern": "Adverb + S + Vt + C + O + Infinitival phrase with compound verbs"
+        },
+        {
+          "id": "b4l1-s033",
+          "sentence": "Having read the letter, the banker *was overcome* with guilt.",
+          "type": "simple",
+          "pattern": "Perfect participial phrase + S + Passive verb phrase + Prepositional phrase"
+        },
+        {
+          "id": "b4l1-s034",
+          "sentence": "He *left* it on the table and *walked out*.",
+          "type": "simple",
+          "pattern": "S + Compound verb phrase + O + Prepositional phrase"
+        },
+        {
+          "id": "b4l1-s035",
+          "sentence": "The next morning, just hours before the fifteen years were up, the lawyer *escaped* through the window and *was never heard from* again.",
+          "type": "complex",
+          "pattern": "Adverbial phrases + Adverbial clause (before...) + S + Compound verb phrase"
+        },
+        {
+          "id": "b4l1-s036",
+          "sentence": "To prevent rumors about the lawyer's disappearance, the banker *took* the letter home and *locked* it in his safe.",
+          "type": "simple",
+          "pattern": "Infinitival phrase + S + Compound verb phrase + O + Adverbial phrases"
+        }
+      ]
     }
   },
   "text_genre": {
-    "raw_text": ""
+    "raw_text": "Passage Structure Analysis (Narrative Plot Arc / Moral Transformation)\nExposition & Inciting Incident (Paras 1–3): Introduces the characters (banker and young lawyer) and the core conflict—a heated debate over life vs. death resulting in an outrageous 15-year solitary confinement bet.\nRising Action: Transformation & Contrast (Paras 4–5): Shows two contrasting trajectories over 15 years: the lawyer shifts from hollow material pleasures to profound intellectual/spiritual growth, while the banker falls into financial ruin and plots murder out of greed.\nClimax: The Twist & Discovery (Paras 6–7): On the final night, the banker sneaks in to kill the lawyer, only to find a letter revealing that the lawyer now despises worldly wealth and intends to forfeit the prize money.\nFalling Action & Resolution (Para 8): Overcome with guilt, the banker abandons his murder plan, the lawyer walks away free before the deadline, and the banker locks the letter away in shame."
   }
 }
